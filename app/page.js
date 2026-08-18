@@ -18,24 +18,26 @@ export default function Home() {
     .then((res) => res.json())
     .then((data) => {
       const formattedMatches = data.response.map((item) => ({
-        time: new Date(item.fixture.date).toLocaleTimeString("ar-MA", {
-          hour: "2-digit",
-          minute: "2-digit",
-        }),
-        
-        status: item.fixture.status.short,
-        league: item.league.name,
-      }));
-home: item.teams.home.name,
-homeLogo: item.teams.home.logo,
-away: item.teams.away.name,
-awayLogo: item.teams.away.logo,
-      setMatches(formattedMatches);
-    })
-    .catch((error) => {
-      console.error("خطأ في جلب المباريات:", error);
-    });
+  time: new Date(item.fixture.date).toLocaleTimeString("ar-MA", {
+    hour: "2-digit",
+    minute: "2-digit",
+  }),
+  home: item.teams.home.name,
+  homeLogo: item.teams.home.logo,
+  away: item.teams.away.name,
+  awayLogo: item.teams.away.logo,
+  status: item.fixture.status.short,
+  league: item.league.name,
+}));
+
+setMatches(formattedMatches);
+})
+.catch((error) => {
+  console.error("خطأ في جلب المباريات:", error);
+});
 }, []);
+      
+
   const filteredMatches = matches.filter((match) => {
   const matchesSearch =
     match.home.includes(search) ||
