@@ -1,4 +1,5 @@
 "use client";
+import { useState } from "react";
 const matches = [
   { time: "18:00", home: "ريال مدريد", away: "برشلونة", status: "لم تبدأ" },
   { time: "20:30", home: "ليفربول", away: "مانشستر سيتي", status: "لم تبدأ" },
@@ -13,6 +14,7 @@ const leagues = [
 ];
 
 export default function Home() {
+  |const [search, setSearch] = useState("");
   return (
     <main>
       <header>
