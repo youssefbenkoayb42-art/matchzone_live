@@ -325,3 +325,18 @@ footer {
     font-size: 12px;
   }
     }
+.live-status {
+  color: #ff3b30;
+  font-weight: 700;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+}
