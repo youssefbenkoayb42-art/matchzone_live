@@ -5,7 +5,7 @@ const matches = [
     time: "18:00",
     home: "ريال مدريد",
     away: "برشلونة",
-    status: "لم تبدأ",
+    status: "مباشر",
     league: "الدوري الإسباني"
   },
   {
@@ -138,7 +138,9 @@ export default function Home() {
 
                 <div className="match-time">
                   <strong>{match.time}</strong>
-                  <span>{match.status}</span>
+                  <span className={match.status === "مباشر" ? "live-status" : ""}>
+  {match.status}
+</span>
                 </div>
 
                 <div className="team">
