@@ -1,28 +1,6 @@
 "use client";
-import { useState } from "react";
-const matches = [
-  {
-    time: "18:00",
-    home: "ريال مدريد",
-    away: "برشلونة",
-    status: "مباشر",
-    league: "الدوري الإسباني"
-  },
-  {
-    time: "20:30",
-    home: "ليفربول",
-    away: "مانشستر سيتي",
-    status: "لم تبدأ",
-    league: "الدوري الإنجليزي"
-  },
-  {
-    time: "22:00",
-    home: "بايرن ميونخ",
-    away: "بوروسيا دورتموند",
-    status: "لم تبدأ",
-    league: "دوري أبطال أوروبا"
-  }
-];
+import { useState, useEffect } from "react";
+
 
 const leagues = [
   "الدوري الإسباني",
@@ -34,6 +12,28 @@ const leagues = [
 export default function Home() {
   const [search, setSearch] = useState("");
   const [selectedLeague, setSelectedLeague] = useState("الكل");
+  const [matches, setMatches] = useState([]);
+  useEffect(() => {
+  fetch("/api/football")
+    .then((res) => res.json())
+    .then((data) => {
+      const formattedMatches = data.response.map((item) => ({
+        time: new Date(item.fixture.date).toLocaleTimeString("ar-MA", {
+          hour: "2-digit",
+          minute: "2-digit",
+        }),
+        home: item.teams.home.name,
+        away: item.teams.away.name,
+        status: item.fixture.status.short,
+        league: item.league.name,
+      }));
+
+      setMatches(formattedMatches);
+    })
+    .catch((error) => {
+      console.error("خطأ في جلب المباريات:", error);
+    });
+}, []);
   const filteredMatches = matches.filter((match) => {
   const matchesSearch =
     match.home.includes(search) ||
