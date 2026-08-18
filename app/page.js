@@ -15,6 +15,10 @@ const leagues = [
 
 export default function Home() {
   |const [search, setSearch] = useState("");
+  const filteredMatches = matches.filter((match) =>
+  match.home.includes(search) ||
+  match.away.includes(search)
+);
   return (
     <main>
       <header>
@@ -28,7 +32,13 @@ export default function Home() {
           <a href="#news">الأخبار</a>
         </nav>
 
-        <button className="search">⌕ بحث</button>
+        <input
+  className="search"
+  type="text"
+  placeholder="⌕ بحث"
+  value={search}
+  onChange={(e) => setSearch(e.target.value)}
+/>
       </header>
 
       <section className="hero">
@@ -76,7 +86,7 @@ export default function Home() {
         </div>
 
         <div className="matches">
-          {matches.map((match, index) => (
+          {filteredMatches.map((match, index) => (
             <div className="match" key={index}>
 
               <div className="competition">
