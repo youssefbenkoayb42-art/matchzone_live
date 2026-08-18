@@ -1,3 +1,4 @@
+"use client";
 const matches = [
   { time: "18:00", home: "ريال مدريد", away: "برشلونة", status: "لم تبدأ" },
   { time: "20:30", home: "ليفربول", away: "مانشستر سيتي", status: "لم تبدأ" },
