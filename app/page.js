@@ -1,9 +1,27 @@
 "use client";
 import { useState } from "react";
 const matches = [
-  { time: "18:00", home: "ريال مدريد", away: "برشلونة", status: "لم تبدأ" },
-  { time: "20:30", home: "ليفربول", away: "مانشستر سيتي", status: "لم تبدأ" },
-  { time: "22:00", home: "بايرن ميونخ", away: "بوروسيا دورتموند", status: "لم تبدأ" }
+  {
+    time: "18:00",
+    home: "ريال مدريد",
+    away: "برشلونة",
+    status: "لم تبدأ",
+    league: "الدوري الإسباني"
+  },
+  {
+    time: "20:30",
+    home: "ليفربول",
+    away: "مانشستر سيتي",
+    status: "لم تبدأ",
+    league: "الدوري الإنجليزي"
+  },
+  {
+    time: "22:00",
+    home: "بايرن ميونخ",
+    away: "بوروسيا دورتموند",
+    status: "لم تبدأ",
+    league: "دوري أبطال أوروبا"
+  }
 ];
 
 const leagues = [
@@ -15,10 +33,19 @@ const leagues = [
 
 export default function Home() {
   |const [search, setSearch] = useState("");
-  const filteredMatches = matches.filter((match) =>
-  match.home.includes(search) ||
-  match.away.includes(search)
-);
+  const [selectedLeague, setSelectedLeague] = useState("الكل");
+  const filteredMatches = matches.filter((match) => {
+  const matchesSearch =
+    match.home.includes(search) ||
+    match.away.includes(search);
+
+  const matchesLeague =
+    selectedLeague === "الكل" ||
+    match.league === selectedLeague;
+
+  return matchesSearch && matchesLeague;
+});
+
   return (
     <main>
       <header>
@@ -79,10 +106,19 @@ export default function Home() {
             <p className="tag">TODAY</p>
             <h2>مباريات اليوم</h2>
           </div>
-
-          <button className="filter">
-            جميع البطولات ▾
-          </button>
+<select
+  className="filter"
+  value={selectedLeague}
+  onChange={(e) => setSelectedLeague(e.target.value)}
+>
+  <option value="الكل">جميع البطولات</option>
+  {leagues.map((league, index) => (
+    <option key={index} value={league}>
+      {league}
+    </option>
+  ))}
+</select>
+          
         </div>
 
         <div className="matches">
