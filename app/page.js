@@ -22,12 +22,14 @@ export default function Home() {
           hour: "2-digit",
           minute: "2-digit",
         }),
-        home: item.teams.home.name,
-        away: item.teams.away.name,
+        
         status: item.fixture.status.short,
         league: item.league.name,
       }));
-
+home: item.teams.home.name,
+homeLogo: item.teams.home.logo,
+away: item.teams.away.name,
+awayLogo: item.teams.away.logo,
       setMatches(formattedMatches);
     })
     .catch((error) => {
