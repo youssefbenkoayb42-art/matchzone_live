@@ -32,7 +32,7 @@ const leagues = [
 ];
 
 export default function Home() {
-  |const [search, setSearch] = useState("");
+  const [search, setSearch] = useState("");
   const [selectedLeague, setSelectedLeague] = useState("الكل");
   const filteredMatches = matches.filter((match) => {
   const matchesSearch =
