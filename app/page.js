@@ -33,6 +33,7 @@ awayScore: item.goals.away,
 }));
 
 setMatches(formattedMatches);
+      console.log("عدد المباريات:", formattedMatches.length);
 })
 .catch((error) => {
   console.error("خطأ في جلب المباريات:", error);
