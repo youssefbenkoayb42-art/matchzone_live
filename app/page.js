@@ -45,10 +45,7 @@ setMatches(formattedMatches);
     match.home.includes(search) ||
     match.away.includes(search);
 
-  const matchesLeague =
-    selectedLeague === "الكل" ||
-    match.league === selectedLeague;
-
+  const matchesLeague = true;
   return matchesSearch && matchesLeague;
 });
 
