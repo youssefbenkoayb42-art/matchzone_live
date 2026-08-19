@@ -105,94 +105,100 @@ setMatches(formattedMatches);
       <div className="ad">
         مساحة إعلانية
       </div>
+<section id="matches" className="section">
 
-      <section id="matches" className="section">
-        <div className="section-title">
-          <div>
-            <p className="tag">TODAY</p>
-            <h2>مباريات اليوم</h2>
-          </div>
-<select
-  className="filter"
-  value={selectedLeague}
-  onChange={(e) => setSelectedLeague(e.target.value)}
->
-  <option value="الكل">جميع البطولات</option>
-  {leagues.map((league, index) => (
-    <option key={index} value={league}>
-      {league}
-    </option>
-  ))}
-</select>
-          
+  <div className="section-title">
+    <div>
+      <p className="tag">TODAY</p>
+      <h2>مباريات اليوم</h2>
+    </div>
+
+    <select
+      className="filter"
+      value={selectedLeague}
+      onChange={(e) => setSelectedLeague(e.target.value)}
+    >
+      <option value="الكل">جميع البطولات</option>
+
+      {leagues.map((league, index) => (
+        <option key={index} value={league}>
+          {league}
+        </option>
+      ))}
+    </select>
+  </div>
+
+  <div className="matches">
+
+    {filteredMatches.map((match, index) => (
+      <div className="match" key={index}>
+
+        <div className="competition">
+          🏆 {match.league}
         </div>
 
-        <div className="matches">
-                  
-{filteredMatches.map((match, index) => (
-  <div className="match" key={index}>
+        <div className="teams">
 
-    <div className="competition">
-      🏆 {match.league}
-    </div>
+          <div className="team">
+            <img
+              src={match.homeLogo}
+              alt={match.home}
+              className="team-logo"
+            />
+            <strong>{match.home}</strong>
+          </div>
 
-    <div className="teams">
+          <div className="match-time">
 
-      <div className="team">
-        <img
-          src={match.homeLogo}
-          alt={match.home}
-          className="team-logo"
-        />
-        <strong>{match.home}</strong>
+            {match.status === "NS" ? (
+              <strong>{match.time}</strong>
+            ) : (
+              <strong>
+                {match.homeScore ?? 0} - {match.awayScore ?? 0}
+              </strong>
+            )}
+
+            <span
+              className={
+                match.status === "LIVE"
+                  ? "live-status"
+                  : "match-status"
+              }
+            >
+              {match.status === "LIVE"
+                ? "🔴 مباشر"
+                : match.status === "FT"
+                ? "انتهت"
+                : match.status === "NS"
+                ? "لم تبدأ"
+                : match.status}
+            </span>
+
+          </div>
+
+          <div className="team">
+            <img
+              src={match.awayLogo}
+              alt={match.away}
+              className="team-logo"
+            />
+            <strong>{match.away}</strong>
+          </div>
+
+        </div>
+
+        <button className="details">
+          تفاصيل المباراة
+        </button>
+
       </div>
-
-      <div className="match-time">
-
-        {match.status === "NS" ? (
-          <strong>{match.time}</strong>
-        ) : (
-          <strong>
-            {match.homeScore ?? 0} - {match.awayScore ?? 0}
-          </strong>
-        )}
-
-        <span
-          className={
-            match.status === "LIVE"
-              ? "live-status"
-              : "match-status"
-          }
-        >
-          {match.status === "LIVE"
-            ? "🔴 مباشر"
-            : match.status === "FT"
-            ? "انتهت"
-            : match.status === "NS"
-            ? "لم تبدأ"
-            : match.status}
-        </span>
-
-      </div>
-
-      <div className="team">
-        <img
-          src={match.awayLogo}
-          alt={match.away}
-          className="team-logo"
-        />
-        <strong>{match.away}</strong>
-      </div>
-
-    </div>
-
-    <button className="details">
-      تفاصيل المباراة
-    </button>
+    ))}
 
   </div>
-))}
-      </section>
+
+</section>
+      <section id="matches" className="section">
+      
 
       <section id="news" className="section">
 
