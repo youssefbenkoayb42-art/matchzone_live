@@ -145,9 +145,7 @@ setMatches(formattedMatches);
       />
       <strong>{match.home}</strong>
     </div>
-
-    <div className="match-time">
-<div className="match-score">
+<div className="match-time">
 
   {match.status === "NS" ? (
     <strong>{match.time}</strong>
@@ -174,6 +172,7 @@ setMatches(formattedMatches);
   </span>
 
 </div>
+    
         {match.status === "LIVE"
           ? "🔴 مباشر"
           : match.status === "FT"
