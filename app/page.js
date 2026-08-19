@@ -33,6 +33,7 @@ awayScore: item.goals.away,
 }));
 
 setMatches(formattedMatches);
+      alert("عدد المباريات: " + formattedMatches.length);
       console.log("عدد المباريات:", formattedMatches.length);
 })
 .catch((error) => {
