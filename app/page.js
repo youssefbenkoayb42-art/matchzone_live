@@ -129,36 +129,59 @@ setMatches(formattedMatches);
           {filteredMatches.map((match, index) => (
             <div className="match" key={index}>
 
-              <div className="competition">
-                ⚡ مباراة اليوم
-              </div>
+  <div className="competition">
+    🏆 {match.league}
+  </div>
 
-              <div className="teams">
+  <div className="teams">
 
-                <div className="team">
-                  <div className="team-logo">⚽</div>
-                  <strong>{match.home}</strong>
-                </div>
+    <div className="team">
+      <img
+        src={match.homeLogo}
+        alt={match.home}
+        className="team-logo"
+      />
+      <strong>{match.home}</strong>
+    </div>
 
-                <div className="match-time">
-                  <strong>{match.time}</strong>
-                  <span className={match.status === "مباشر" ? "live-status" : ""}>
-  {match.status}
-</span>
-                </div>
+    <div className="match-time">
 
-                <div className="team">
-                  <div className="team-logo">⚽</div>
-                  <strong>{match.away}</strong>
-                </div>
+      <strong>{match.time}</strong>
 
-              </div>
+      <span
+        className={
+          match.status === "LIVE"
+            ? "live-status"
+            : "match-status"
+        }
+      >
+        {match.status === "LIVE"
+          ? "🔴 مباشر"
+          : match.status === "FT"
+          ? "انتهت"
+          : match.status === "NS"
+          ? "لم تبدأ"
+          : match.status}
+      </span>
 
-              <button className="details">
-                تفاصيل المباراة
-              </button>
+    </div>
 
-            </div>
+    <div className="team">
+      <img
+        src={match.awayLogo}
+        alt={match.away}
+        className="team-logo"
+      />
+      <strong>{match.away}</strong>
+    </div>
+
+  </div>
+
+  <button className="details">
+    تفاصيل المباراة
+  </button>
+
+</div>
           ))}
         </div>
       </section>
