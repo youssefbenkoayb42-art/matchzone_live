@@ -1,3 +1,5 @@
+import "./globals.css";
+
 export const metadata = {
   title: "MatchZone",
   description: "منصة رياضية للمباريات والنتائج والأخبار",
@@ -9,4 +11,4 @@ export default function RootLayout({ children }) {
       <body>{children}</body>
     </html>
   );
-    }
+}
