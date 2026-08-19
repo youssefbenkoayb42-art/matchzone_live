@@ -197,7 +197,7 @@ setMatches(formattedMatches);
   </div>
 
 </section>
-      <section id="matches" className="section">
+      
       
 
       <section id="news" className="section">
