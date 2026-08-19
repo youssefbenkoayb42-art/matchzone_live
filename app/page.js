@@ -128,7 +128,14 @@ setMatches(formattedMatches);
   </div>
 
   <div className="matches">
-
+      
+{matches.length === 0 && (
+  <div className="empty-matches">
+    <strong>MatchZone</strong>
+    <p>عدد المباريات: 0</p>
+    <small>لم يتم جلب أي مباريات حاليًا</small>
+  </div>
+)}
     {filteredMatches.map((match, index) => (
       <div className="match" key={index}>
 
