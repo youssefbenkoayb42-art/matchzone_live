@@ -1,7 +1,8 @@
 
 export async function GET() {
   const response = await fetch(
-    "https://v3.football.api-sports.io/fixtures?date=2026-08-18",
+"https://v3.football.api-sports.io/fixtures?date=" +
+new Date().toISOString().split("T")[0],
     {
       headers: {
         "x-apisports-key": process.env.API_FOOTBALL_KEY,
