@@ -27,6 +27,8 @@ export default function Home() {
   away: item.teams.away.name,
   awayLogo: item.teams.away.logo,
   status: item.fixture.status.short,
+      homeScore: item.goals.home,
+awayScore: item.goals.away,  
   league: item.league.name,
 }));
 
@@ -145,16 +147,33 @@ setMatches(formattedMatches);
     </div>
 
     <div className="match-time">
+<div className="match-score">
 
-      <strong>{match.time}</strong>
+  {match.status === "NS" ? (
+    <strong>{match.time}</strong>
+  ) : (
+    <strong>
+      {match.homeScore ?? 0} - {match.awayScore ?? 0}
+    </strong>
+  )}
 
-      <span
-        className={
-          match.status === "LIVE"
-            ? "live-status"
-            : "match-status"
-        }
-      >
+  <span
+    className={
+      match.status === "LIVE"
+        ? "live-status"
+        : "match-status"
+    }
+  >
+    {match.status === "LIVE"
+      ? "🔴 مباشر"
+      : match.status === "FT"
+      ? "انتهت"
+      : match.status === "NS"
+      ? "لم تبدأ"
+      : match.status}
+  </span>
+
+</div>
         {match.status === "LIVE"
           ? "🔴 مباشر"
           : match.status === "FT"
