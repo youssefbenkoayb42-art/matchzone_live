@@ -128,101 +128,70 @@ setMatches(formattedMatches);
         </div>
 
         <div className="matches">
-          {filteredMatches.map((match, index) => (
-            <div className="match" key={index}>
+                  
+{filteredMatches.map((match, index) => (
+  <div className="match" key={index}>
 
-  <div className="competition">
-    🏆 {match.league}
-  </div>
-
-  <div className="teams">
-
-    <div className="team">
-      <img
-        src={match.homeLogo}
-        alt={match.home}
-        className="team-logo"
-      />
-      <strong>{match.home}</strong>
-    </div>
-<div className="match-time">
-
-  {match.status === "NS" ? (
-    <strong>{match.time}</strong>
-  ) : (
-    <strong>
-      {match.homeScore ?? 0} - {match.awayScore ?? 0}
-    </strong>
-  )}
-
-  <span
-    className={
-      match.status === "LIVE"
-        ? "live-status"
-        : "match-status"
-    }
-  >
-    {match.status === "LIVE"
-      ? "🔴 مباشر"
-      : match.status === "FT"
-      ? "انتهت"
-      : match.status === "NS"
-      ? "لم تبدأ"
-      : match.status}
-  </span>
-
-</div>
-    
-        {match.status === "LIVE"
-          ? "🔴 مباشر"
-          : match.status === "FT"
-          ? "انتهت"
-          : match.status === "NS"
-          ? "لم تبدأ"
-          : match.status}
-      </span>
-
+    <div className="competition">
+      🏆 {match.league}
     </div>
 
-    <div className="team">
-      <img
-        src={match.awayLogo}
-        alt={match.away}
-        className="team-logo"
-      />
-      <strong>{match.away}</strong>
+    <div className="teams">
+
+      <div className="team">
+        <img
+          src={match.homeLogo}
+          alt={match.home}
+          className="team-logo"
+        />
+        <strong>{match.home}</strong>
+      </div>
+
+      <div className="match-time">
+
+        {match.status === "NS" ? (
+          <strong>{match.time}</strong>
+        ) : (
+          <strong>
+            {match.homeScore ?? 0} - {match.awayScore ?? 0}
+          </strong>
+        )}
+
+        <span
+          className={
+            match.status === "LIVE"
+              ? "live-status"
+              : "match-status"
+          }
+        >
+          {match.status === "LIVE"
+            ? "🔴 مباشر"
+            : match.status === "FT"
+            ? "انتهت"
+            : match.status === "NS"
+            ? "لم تبدأ"
+            : match.status}
+        </span>
+
+      </div>
+
+      <div className="team">
+        <img
+          src={match.awayLogo}
+          alt={match.away}
+          className="team-logo"
+        />
+        <strong>{match.away}</strong>
+      </div>
+
     </div>
+
+    <button className="details">
+      تفاصيل المباراة
+    </button>
 
   </div>
-
-  <button className="details">
-    تفاصيل المباراة
-  </button>
-
-</div>
-          ))}
-        </div>
-      </section>
-
-      <section id="leagues" className="section">
-
-        <div className="section-title">
-          <div>
-            <p className="tag">LEAGUES</p>
-            <h2>أشهر البطولات</h2>
-          </div>
-        </div>
-
-        <div className="league-grid">
-          {leagues.map((league, index) => (
-            <div className="league" key={index}>
-              <div className="league-icon">🏆</div>
-              <strong>{league}</strong>
-              <small>المباريات والنتائج</small>
-            </div>
-          ))}
-        </div>
-
+))}
       </section>
 
       <section id="news" className="section">
