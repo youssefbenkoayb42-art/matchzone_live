@@ -1,3 +1,4 @@
+import "./globals.css";
 export const metadata = {
   title: "MatchZone",
   description: "منصة رياضية للمباريات والنتائج والأخبار",
