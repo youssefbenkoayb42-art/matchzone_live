@@ -18,6 +18,8 @@ export default function Home() {
     .then((res) => res.json())
     .then((data) => {
       const formattedMatches = data.response.map((item) => ({
+       id: item.fixture.id,
+        
   time: new Date(item.fixture.date).toLocaleTimeString("ar-MA", {
     hour: "2-digit",
     minute: "2-digit",
@@ -192,10 +194,9 @@ setMatches(formattedMatches);
           </div>
 
         </div>
-
-        <button className="details">
-          تفاصيل المباراة
-        </button>
+<a href={`/matches/${match.id}`} className="details">
+  تفاصيل المباراة
+</a>
 
       </div>
     ))}
