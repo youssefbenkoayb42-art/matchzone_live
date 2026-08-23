@@ -159,7 +159,20 @@ export default function MatchPage() {
                   color: "#37e28a",
                 }}
               >
-                {match.goals.home ?? 0} - {match.goals.away ?? 0}
+                <div
+  style={{
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: "8px",
+    whiteSpace: "nowrap",
+    minWidth: "110px",
+  }}
+>
+  <span>{match.goals.home ?? 0}</span>
+  <span>-</span>
+  <span>{match.goals.away ?? 0}</span>
+</div>
               </div>
 
               <p style={{ color: "#82968d", marginTop: "10px" }}>
