@@ -6,6 +6,8 @@ const LEAGUES = [
   { id: 4334, name: "Ligue 1" },
 ];
 
+const SEASON = "2026-2027";
+
 function formatMatch(event) {
   return {
     fixture: {
@@ -67,11 +69,11 @@ function formatMatch(event) {
 
 export async function GET() {
   try {
-    const season = "2026-2027";
+    const today = new Date();
 
     const requests = LEAGUES.map(async (league) => {
       const response = await fetch(
-        `https://www.thesportsdb.com/api/v1/json/123/eventsround.php?id=${league.id}&r=1&s=${season}`,
+        `https://www.thesportsdb.com/api/v1/json/123/eventsseason.php?id=${league.id}&s=${SEASON}`,
         {
           next: {
             revalidate: 300,
@@ -99,7 +101,7 @@ export async function GET() {
       ).values()
     );
 
-    // ترتيب المباريات حسب التاريخ والوقت
+    // ترتيب جميع المباريات حسب التاريخ
     uniqueEvents.sort((a, b) => {
       const dateA = new Date(
         a.strTimestamp ||
@@ -114,7 +116,24 @@ export async function GET() {
       return dateA - dateB;
     });
 
-    const matches = uniqueEvents.map(formatMatch);
+    // نعرض المباريات القريبة من اليوم:
+    // مباريات الأمس + اليوم + الأيام القادمة
+    const startDate = new Date(today);
+    startDate.setDate(startDate.getDate() - 1);
+
+    const endDate = new Date(today);
+    endDate.setDate(endDate.getDate() + 7);
+
+    const upcomingEvents = uniqueEvents.filter((event) => {
+      const eventDate = new Date(
+        event.strTimestamp ||
+          `${event.dateEvent}T${event.strTime || "00:00:00"}`
+      );
+
+      return eventDate >= startDate && eventDate <= endDate;
+    });
+
+    const matches = upcomingEvents.map(formatMatch);
 
     return Response.json({
       response: matches,
@@ -132,4 +151,4 @@ export async function GET() {
       { status: 500 }
     );
   }
-            }
+      }
