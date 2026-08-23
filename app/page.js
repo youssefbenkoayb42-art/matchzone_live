@@ -1,57 +1,93 @@
 "use client";
-import { useState, useEffect } from "react";
 
+import { useState, useEffect } from "react";
 
 const leagues = [
   "الدوري الإسباني",
   "الدوري الإنجليزي",
-  "دوري أبطال أوروبا",
-  "الدوري الإيطالي"
+  "الدوري الإيطالي",
+  "الدوري الألماني",
+  "الدوري الفرنسي",
 ];
+
+function getStatusType(status) {
+  if (status === "FT") return "finished";
+  if (status === "NS") return "upcoming";
+
+  return "live";
+}
+
+function getArabicLeague(league) {
+  const map = {
+    "Premier League": "الدوري الإنجليزي",
+    "La Liga": "الدوري الإسباني",
+    "Serie A": "الدوري الإيطالي",
+    Bundesliga: "الدوري الألماني",
+    "Ligue 1": "الدوري الفرنسي",
+  };
+
+  return map[league] || league;
+}
 
 export default function Home() {
   const [search, setSearch] = useState("");
   const [selectedLeague, setSelectedLeague] = useState("الكل");
+  const [selectedStatus, setSelectedStatus] = useState("all");
   const [matches, setMatches] = useState([]);
-  useEffect(() => {
-  fetch("/api/football")
-    .then((res) => res.json())
-    .then((data) => {
-      const formattedMatches = data.response.map((item) => ({
-       id: item.fixture.id,
-        
-  time: new Date(item.fixture.date).toLocaleTimeString("ar-MA", {
-    hour: "2-digit",
-    minute: "2-digit",
-  }),
-  home: item.teams.home.name,
-  homeLogo: item.teams.home.logo,
-  away: item.teams.away.name,
-  awayLogo: item.teams.away.logo,
-  status: item.fixture.status.short,
-      homeScore: item.goals.home,
-awayScore: item.goals.away,  
-  league: item.league.name,
-}));
 
-setMatches(formattedMatches);
-      alert("عدد المباريات: " + formattedMatches.length);
-      console.log("عدد المباريات:", formattedMatches.length);
-})
-.catch((error) => {
-  console.error("خطأ في جلب المباريات:", error);
-});
-}, []);
-      
+  useEffect(() => {
+    fetch("/api/football")
+      .then((res) => res.json())
+      .then((data) => {
+        const formattedMatches = (data.response || []).map((item) => ({
+          id: item.fixture.id,
+
+          time: new Date(item.fixture.date).toLocaleTimeString("ar-MA", {
+            hour: "2-digit",
+            minute: "2-digit",
+          }),
+
+          home: item.teams.home.name,
+          homeLogo: item.teams.home.logo,
+
+          away: item.teams.away.name,
+          awayLogo: item.teams.away.logo,
+
+          status: item.fixture.status.short,
+
+          homeScore: item.goals.home,
+          awayScore: item.goals.away,
+
+          league: item.league.name,
+          arabicLeague: getArabicLeague(item.league.name),
+        }));
+
+        setMatches(formattedMatches);
+
+        console.log("عدد المباريات:", formattedMatches.length);
+      })
+      .catch((error) => {
+        console.error("خطأ في جلب المباريات:", error);
+      });
+  }, []);
 
   const filteredMatches = matches.filter((match) => {
-  const matchesSearch =
-    match.home.includes(search) ||
-    match.away.includes(search);
+    const matchesSearch =
+      match.home.toLowerCase().includes(search.toLowerCase()) ||
+      match.away.toLowerCase().includes(search.toLowerCase());
 
-  const matchesLeague = true;
-  return matchesSearch && matchesLeague;
-});
+    const matchesLeague =
+      selectedLeague === "الكل" ||
+      match.arabicLeague === selectedLeague;
+
+    const statusType = getStatusType(match.status);
+
+    const matchesStatus =
+      selectedStatus === "all" ||
+      statusType === selectedStatus;
+
+    return matchesSearch && matchesLeague && matchesStatus;
+  });
 
   return (
     <main>
@@ -67,12 +103,12 @@ setMatches(formattedMatches);
         </nav>
 
         <input
-  className="search"
-  type="text"
-  placeholder="⌕ بحث"
-  value={search}
-  onChange={(e) => setSearch(e.target.value)}
-/>
+          className="search"
+          type="text"
+          placeholder="⌕ بحث"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
       </header>
 
       <section className="hero">
@@ -106,106 +142,218 @@ setMatches(formattedMatches);
       <div className="ad">
         مساحة إعلانية
       </div>
-<section id="matches" className="section">
 
-  <div className="section-title">
-    <div>
-      <p className="tag">TODAY</p>
-      <h2>مباريات اليوم</h2>
-    </div>
+      <section id="matches" className="section">
 
-    <select
-      className="filter"
-      value={selectedLeague}
-      onChange={(e) => setSelectedLeague(e.target.value)}
-    >
-      <option value="الكل">جميع البطولات</option>
-
-      {leagues.map((league, index) => (
-        <option key={index} value={league}>
-          {league}
-        </option>
-      ))}
-    </select>
-  </div>
-
-  <div className="matches">
-      
-{matches.length === 0 && (
-  <div className="empty-matches">
-    <strong>MatchZone</strong>
-    <p>عدد المباريات: 0</p>
-    <small>لم يتم جلب أي مباريات حاليًا</small>
-  </div>
-)}
-    {filteredMatches.map((match, index) => (
-      <div className="match" key={index}>
-
-        <div className="competition">
-          🏆 {match.league}
-        </div>
-
-        <div className="teams">
-
-          <div className="team">
-            <img
-              src={match.homeLogo}
-              alt={match.home}
-              className="team-logo"
-            />
-            <strong>{match.home}</strong>
+        <div className="section-title">
+          <div>
+            <p className="tag">TODAY</p>
+            <h2>مباريات اليوم</h2>
           </div>
 
-          <div className="match-time">
+          <select
+            className="filter"
+            value={selectedLeague}
+            onChange={(e) => setSelectedLeague(e.target.value)}
+          >
+            <option value="الكل">جميع البطولات</option>
 
-            {match.status === "NS" ? (
-              <strong>{match.time}</strong>
-            ) : (
-              <strong>
-                {match.homeScore ?? 0} - {match.awayScore ?? 0}
-              </strong>
+            {leagues.map((league) => (
+              <option key={league} value={league}>
+                {league}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        {/* فلاتر حالة المباريات */}
+
+        <div
+          style={{
+            display: "flex",
+            gap: "8px",
+            flexWrap: "wrap",
+            marginBottom: "25px",
+          }}
+        >
+          <button
+            onClick={() => setSelectedStatus("all")}
+            style={{
+              padding: "10px 16px",
+              borderRadius: "12px",
+              border: "1px solid #284238",
+              background:
+                selectedStatus === "all"
+                  ? "#37e28a"
+                  : "#10251c",
+              color:
+                selectedStatus === "all"
+                  ? "#07100d"
+                  : "#f4f8f6",
+              fontWeight: "700",
+              cursor: "pointer",
+            }}
+          >
+            الكل
+          </button>
+
+          <button
+            onClick={() => setSelectedStatus("live")}
+            style={{
+              padding: "10px 16px",
+              borderRadius: "12px",
+              border: "1px solid #284238",
+              background:
+                selectedStatus === "live"
+                  ? "#37e28a"
+                  : "#10251c",
+              color:
+                selectedStatus === "live"
+                  ? "#07100d"
+                  : "#f4f8f6",
+              fontWeight: "700",
+              cursor: "pointer",
+            }}
+          >
+            🔴 مباشر
+          </button>
+
+          <button
+            onClick={() => setSelectedStatus("upcoming")}
+            style={{
+              padding: "10px 16px",
+              borderRadius: "12px",
+              border: "1px solid #284238",
+              background:
+                selectedStatus === "upcoming"
+                  ? "#37e28a"
+                  : "#10251c",
+              color:
+                selectedStatus === "upcoming"
+                  ? "#07100d"
+                  : "#f4f8f6",
+              fontWeight: "700",
+              cursor: "pointer",
+            }}
+          >
+            ⏰ لم تبدأ
+          </button>
+
+          <button
+            onClick={() => setSelectedStatus("finished")}
+            style={{
+              padding: "10px 16px",
+              borderRadius: "12px",
+              border: "1px solid #284238",
+              background:
+                selectedStatus === "finished"
+                  ? "#37e28a"
+                  : "#10251c",
+              color:
+                selectedStatus === "finished"
+                  ? "#07100d"
+                  : "#f4f8f6",
+              fontWeight: "700",
+              cursor: "pointer",
+            }}
+          >
+            ✅ انتهت
+          </button>
+        </div>
+
+        <div className="matches">
+
+          {matches.length === 0 && (
+            <div className="empty-matches">
+              <strong>MatchZone</strong>
+              <p>عدد المباريات: 0</p>
+              <small>لم يتم جلب أي مباريات حاليًا</small>
+            </div>
+          )}
+
+          {matches.length > 0 &&
+            filteredMatches.length === 0 && (
+              <div className="empty-matches">
+                <strong>MatchZone</strong>
+                <p>لا توجد مباريات</p>
+                <small>
+                  لا توجد مباريات تطابق الفلتر المحدد حاليًا
+                </small>
+              </div>
             )}
 
-            <span
-              className={
-                match.status === "LIVE"
-                  ? "live-status"
-                  : "match-status"
-              }
-            >
-              {match.status === "LIVE"
-                ? "🔴 مباشر"
-                : match.status === "FT"
-                ? "انتهت"
-                : match.status === "NS"
-                ? "لم تبدأ"
-                : match.status}
-            </span>
+          {filteredMatches.map((match) => {
+            const statusType = getStatusType(match.status);
 
-          </div>
+            return (
+              <div className="match" key={match.id}>
 
-          <div className="team">
-            <img
-              src={match.awayLogo}
-              alt={match.away}
-              className="team-logo"
-            />
-            <strong>{match.away}</strong>
-          </div>
+                <div className="competition">
+                  🏆 {match.arabicLeague}
+                </div>
+
+                <div className="teams">
+
+                  <div className="team">
+                    <img
+                      src={match.homeLogo}
+                      alt={match.home}
+                      className="team-logo"
+                    />
+                    <strong>{match.home}</strong>
+                  </div>
+
+                  <div className="match-time">
+
+                    {statusType === "upcoming" ? (
+                      <strong>{match.time}</strong>
+                    ) : (
+                      <strong>
+                        {match.homeScore ?? 0} -{" "}
+                        {match.awayScore ?? 0}
+                      </strong>
+                    )}
+
+                    <span
+                      className={
+                        statusType === "live"
+                          ? "live-status"
+                          : "match-status"
+                      }
+                    >
+                      {statusType === "live"
+                        ? "🔴 مباشر"
+                        : statusType === "finished"
+                        ? "انتهت"
+                        : "لم تبدأ"}
+                    </span>
+
+                  </div>
+
+                  <div className="team">
+                    <img
+                      src={match.awayLogo}
+                      alt={match.away}
+                      className="team-logo"
+                    />
+                    <strong>{match.away}</strong>
+                  </div>
+
+                </div>
+
+                <a
+                  href={`/matches/${match.id}`}
+                  className="details"
+                >
+                  تفاصيل المباراة
+                </a>
+
+              </div>
+            );
+          })}
 
         </div>
-<a href={`/matches/${match.id}`} className="details">
-  تفاصيل المباراة
-</a>
-
-      </div>
-    ))}
-
-  </div>
-
-</section>
-      
-      
+      </section>
 
       <section id="news" className="section">
 
@@ -266,4 +414,4 @@ setMatches(formattedMatches);
 
     </main>
   );
-    }
+          }
