@@ -124,13 +124,14 @@ const status =
           </p>
 
           <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr auto 1fr",
-              alignItems: "center",
-              gap: "20px",
-            }}
-          >
+  style={{
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    gap: "15px",
+    flexWrap: "nowrap",
+  }}
+>
             <div>
               <img
                 src={match.teams.home.logo}
