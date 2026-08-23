@@ -65,16 +65,16 @@ export default function MatchPage() {
 
   const matchStatus = match.fixture.status.short;
 
-const isLive = ["1H", "2H", "HT", "ET", "BT", "P", "INT"].includes(
-  matchStatus
-);
+  const isLive = ["1H", "2H", "HT", "ET", "BT", "P", "INT"].includes(
+    matchStatus
+  );
 
-const status =
-  matchStatus === "FT"
-    ? "انتهت المباراة"
-    : isLive
-    ? "🔴 مباشر الآن"
-    : "لم تبدأ";
+  const status =
+    matchStatus === "FT"
+      ? "انتهت المباراة"
+      : isLive
+      ? "🔴 مباشر الآن"
+      : "لم تبدأ";
 
   return (
     <main
@@ -99,6 +99,7 @@ const status =
           ← العودة إلى المباريات
         </a>
 
+        {/* معلومات المباراة */}
         <div
           style={{
             background: "linear-gradient(145deg, #10251c, #0b1713)",
@@ -124,14 +125,15 @@ const status =
           </p>
 
           <div
-  style={{
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    gap: "15px",
-    flexWrap: "nowrap",
-  }}
->
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              gap: "15px",
+              flexWrap: "nowrap",
+            }}
+          >
+            {/* الفريق المضيف */}
             <div>
               <img
                 src={match.teams.home.logo}
@@ -142,11 +144,13 @@ const status =
                   objectFit: "contain",
                 }}
               />
+
               <h2 style={{ marginTop: "15px" }}>
                 {match.teams.home.name}
               </h2>
             </div>
 
+            {/* النتيجة */}
             <div>
               <div
                 style={{
@@ -166,6 +170,7 @@ const status =
               </p>
             </div>
 
+            {/* الفريق الضيف */}
             <div>
               <img
                 src={match.teams.away.logo}
@@ -176,12 +181,86 @@ const status =
                   objectFit: "contain",
                 }}
               />
+
               <h2 style={{ marginTop: "15px" }}>
                 {match.teams.away.name}
               </h2>
             </div>
           </div>
         </div>
+
+        {/* الفيديو */}
+        {match.video && (
+          <div
+            style={{
+              marginTop: "30px",
+              background: "linear-gradient(145deg, #10251c, #0b1713)",
+              border: "1px solid #284238",
+              borderRadius: "25px",
+              padding: "25px 20px",
+              boxShadow: "0 20px 60px #0006",
+            }}
+          >
+            <h2
+              style={{
+                color: "#37e28a",
+                textAlign: "center",
+                marginBottom: "20px",
+              }}
+            >
+              🎬 أبرز أحداث المباراة
+            </h2>
+
+            <div
+              style={{
+                position: "relative",
+                width: "100%",
+                paddingBottom: "56.25%",
+                overflow: "hidden",
+                borderRadius: "18px",
+              }}
+            >
+              <iframe
+                src={match.video.replace("watch?v=", "embed/")}
+                title="Match Highlights"
+                allowFullScreen
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "100%",
+                  border: "none",
+                }}
+              />
+            </div>
+          </div>
+        )}
+
+        {/* معلومات إضافية */}
+        {(match.fixture.venue?.name || match.eventId) && (
+          <div
+            style={{
+              marginTop: "30px",
+              background: "linear-gradient(145deg, #10251c, #0b1713)",
+              border: "1px solid #284238",
+              borderRadius: "25px",
+              padding: "25px 20px",
+              textAlign: "center",
+            }}
+          >
+            {match.fixture.venue?.name && (
+              <p style={{ color: "#c5d2cc", margin: "8px" }}>
+                🏟️ الملعب:{" "}
+                <strong>{match.fixture.venue.name}</strong>
+              </p>
+            )}
+
+            <p style={{ color: "#82968d", margin: "8px" }}>
+              🆔 رقم المباراة: {match.eventId}
+            </p>
+          </div>
+        )}
       </div>
     </main>
   );
