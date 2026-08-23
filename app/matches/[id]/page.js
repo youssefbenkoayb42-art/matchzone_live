@@ -63,12 +63,18 @@ export default function MatchPage() {
     );
   }
 
-  const status =
-    match.fixture.status.short === "FT"
-      ? "انتهت المباراة"
-      : match.fixture.status.short === "LIVE"
-      ? "🔴 مباشر الآن"
-      : "لم تبدأ";
+  const matchStatus = match.fixture.status.short;
+
+const isLive = ["1H", "2H", "HT", "ET", "BT", "P", "INT"].includes(
+  matchStatus
+);
+
+const status =
+  matchStatus === "FT"
+    ? "انتهت المباراة"
+    : isLive
+    ? "🔴 مباشر الآن"
+    : "لم تبدأ";
 
   return (
     <main
