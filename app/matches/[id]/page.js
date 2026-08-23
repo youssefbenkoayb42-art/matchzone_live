@@ -33,7 +33,15 @@ export default function MatchPage() {
 
   if (loading) {
     return (
-      <main style={{ padding: "40px", textAlign: "center" }}>
+      <main
+        style={{
+          minHeight: "100vh",
+          background: "#07100d",
+          color: "#f4f8f6",
+          padding: "40px 20px",
+          textAlign: "center",
+        }}
+      >
         <h1>جاري تحميل المباراة...</h1>
       </main>
     );
@@ -41,43 +49,133 @@ export default function MatchPage() {
 
   if (!match) {
     return (
-      <main style={{ padding: "40px", textAlign: "center" }}>
+      <main
+        style={{
+          minHeight: "100vh",
+          background: "#07100d",
+          color: "#f4f8f6",
+          padding: "40px 20px",
+          textAlign: "center",
+        }}
+      >
         <h1>لم يتم العثور على المباراة</h1>
       </main>
     );
   }
 
+  const status =
+    match.fixture.status.short === "FT"
+      ? "انتهت المباراة"
+      : match.fixture.status.short === "LIVE"
+      ? "🔴 مباشر الآن"
+      : "لم تبدأ";
+
   return (
-    <main style={{ padding: "40px", textAlign: "center" }}>
-      <h1>
-        {match.teams.home.name} ضد {match.teams.away.name}
-      </h1>
+    <main
+      style={{
+        minHeight: "100vh",
+        background: "#07100d",
+        color: "#f4f8f6",
+        padding: "40px 20px",
+      }}
+    >
+      <div style={{ maxWidth: "900px", margin: "0 auto" }}>
+        <a
+          href="/"
+          style={{
+            display: "inline-block",
+            color: "#37e28a",
+            textDecoration: "none",
+            marginBottom: "30px",
+            fontWeight: "700",
+          }}
+        >
+          ← العودة إلى المباريات
+        </a>
 
-      <p>{match.league.name}</p>
+        <div
+          style={{
+            background: "linear-gradient(145deg, #10251c, #0b1713)",
+            border: "1px solid #284238",
+            borderRadius: "25px",
+            padding: "35px 20px",
+            textAlign: "center",
+            boxShadow: "0 25px 80px #0008",
+          }}
+        >
+          <p
+            style={{
+              color: "#37e28a",
+              fontWeight: "700",
+              marginBottom: "10px",
+            }}
+          >
+            🏆 {match.league.name}
+          </p>
 
-      <div style={{ display: "flex", justifyContent: "center", gap: "30px", alignItems: "center", marginTop: "30px" }}>
-        <div>
-          <img
-            src={match.teams.home.logo}
-            alt={match.teams.home.name}
-            style={{ width: "80px", height: "80px", objectFit: "contain" }}
-          />
-          <h2>{match.teams.home.name}</h2>
-        </div>
+          <p style={{ color: "#82968d", marginBottom: "35px" }}>
+            {status}
+          </p>
 
-        <h1>
-          {match.goals.home ?? 0} - {match.goals.away ?? 0}
-        </h1>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr auto 1fr",
+              alignItems: "center",
+              gap: "20px",
+            }}
+          >
+            <div>
+              <img
+                src={match.teams.home.logo}
+                alt={match.teams.home.name}
+                style={{
+                  width: "100px",
+                  height: "100px",
+                  objectFit: "contain",
+                }}
+              />
+              <h2 style={{ marginTop: "15px" }}>
+                {match.teams.home.name}
+              </h2>
+            </div>
 
-        <div>
-          <img
-            src={match.teams.away.logo}
-            alt={match.teams.away.name}
-            style={{ width: "80px", height: "80px", objectFit: "contain" }}
-          />
-          <h2>{match.teams.away.name}</h2>
+            <div>
+              <div
+                style={{
+                  fontSize: "42px",
+                  fontWeight: "900",
+                  color: "#37e28a",
+                }}
+              >
+                {match.goals.home ?? 0} - {match.goals.away ?? 0}
+              </div>
+
+              <p style={{ color: "#82968d", marginTop: "10px" }}>
+                {new Date(match.fixture.date).toLocaleTimeString("ar-MA", {
+                  hour: "2-digit",
+                  minute: "2-digit",
+                })}
+              </p>
+            </div>
+
+            <div>
+              <img
+                src={match.teams.away.logo}
+                alt={match.teams.away.name}
+                style={{
+                  width: "100px",
+                  height: "100px",
+                  objectFit: "contain",
+                }}
+              />
+              <h2 style={{ marginTop: "15px" }}>
+                {match.teams.away.name}
+              </h2>
+            </div>
+          </div>
         </div>
       </div>
     </main>
   );
-      }
+}
