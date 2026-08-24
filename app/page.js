@@ -2,13 +2,7 @@
 
 import { useState, useEffect } from "react";
 
-const leagues = [
-  "الدوري الإسباني",
-  "الدوري الإنجليزي",
-  "الدوري الإيطالي",
-  "الدوري الألماني",
-  "الدوري الفرنسي",
-];
+
 
 function getStatusType(status) {
   if (status === "FT") return "finished";
@@ -34,7 +28,9 @@ export default function Home() {
   const [selectedLeague, setSelectedLeague] = useState("الكل");
   const [selectedStatus, setSelectedStatus] = useState("all");
   const [matches, setMatches] = useState([]);
-
+const leagues = [
+  ...new Set(matches.map((match) => match.arabicLeague)),
+].sort();
   useEffect(() => {
     fetch("/api/football")
       .then((res) => res.json())
