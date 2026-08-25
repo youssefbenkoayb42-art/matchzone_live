@@ -84,6 +84,25 @@ const leagues = [
 
     return matchesSearch && matchesLeague && matchesStatus;
   });
+  const sortedMatches = [...filteredMatches].sort((a, b) => {
+  const statusOrder = {
+    live: 1,
+    upcoming: 2,
+    finished: 3,
+  };
+
+  const statusA = getStatusType(a.status);
+  const statusB = getStatusType(b.status);
+
+  const orderDifference =
+    statusOrder[statusA] - statusOrder[statusB];
+
+  if (orderDifference !== 0) {
+    return orderDifference;
+  }
+
+  return a.time.localeCompare(b.time, "ar-MA");
+});
 
   return (
     <main>
@@ -278,7 +297,7 @@ const leagues = [
               </div>
             )}
 
-          {filteredMatches.map((match) => {
+          {sortedMatches.map((match) => {
             const statusType = getStatusType(match.status);
 
             return (
