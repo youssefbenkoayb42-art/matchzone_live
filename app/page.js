@@ -476,13 +476,76 @@ const finishedMatches = sortedMatches.filter(
             </p>
           </article>
 
-          <article>
-            <div className="news-image">📊</div>
-            <h3>الإحصائيات</h3>
-            <p>
-              إحصائيات وأرقام المباريات والفرق.
-            </p>
-          </article>
+          {/* 🧩 1. الأقسام الثلاثة بعد تفعيلها وتحويلها لروابط تعمل */}
+<div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "15px", marginBottom: "40px", direction: "rtl" }}>
+  <a href="#matches" style={{ textDecoration: "none", color: "inherit" }}>
+    <div style={{ background: "#142820", padding: "20px", borderRadius: "12px", cursor: "pointer", border: "1px solid #1e3d30" }}>
+      <h3>⚽ مباريات اليوم</h3>
+      <p style={{ fontSize: "14px", color: "#aaa", margin: "8px 0 0" }}>تابع أهم مباريات كرة القدم ومواعيدها.</p>
+    </div>
+  </a>
+
+  <a href="/leagues" style={{ textDecoration: "none", color: "inherit" }}>
+    <div style={{ background: "#142820", padding: "20px", borderRadius: "12px", cursor: "pointer", border: "1px solid #1e3d30" }}>
+      <h3>🏆 أهم البطولات</h3>
+      <p style={{ fontSize: "14px", color: "#aaa", margin: "8px 0 0" }}>اكتشف أحدث أخبار البطولات العالمية.</p>
+    </div>
+  </a>
+
+  <a href="/stats" style={{ textDecoration: "none", color: "inherit" }}>
+    <div style={{ background: "#142820", padding: "20px", borderRadius: "12px", cursor: "pointer", border: "1px solid #1e3d30" }}>
+      <h3>📊 الإحصائيات</h3>
+      <p style={{ fontSize: "14px", color: "#aaa", margin: "8px 0 0" }}>إحصائيات وأرقام المباريات والفرق.</p>
+    </div>
+  </a>
+</div>
+
+{/* 📰 2. قسم عرض الأخبار بكثرة مع صورها وعناوينها */}
+<section id="news-section" style={{ marginTop: "40px", direction: "rtl" }}>
+  <h2 style={{ borderBottom: "2px solid #1e3d30", paddingBottom: "10px", marginBottom: "20px" }}>📰 أحدث الأخبار الرياضية العالمية</h2>
+  
+  <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "20px" }}>
+    
+    {/* بطاقة خبر 1 */}
+    <div style={{ background: "#142820", borderRadius: "12px", overflow: "hidden", display: "flex", flexDirection: "column", border: "1px solid #1e3d30" }}>
+      <img src="https://unsplash.com" alt="أخبار الرياضة" style={{ width: "100%", height: "160px", objectFit: "cover" }} />
+      <div style={{ padding: "15px" }}>
+        <h4 style={{ margin: "0 0 10px 0", fontSize: "16px", lineHeight: "1.4" }}>اشتعال المنافسة في الدوريات الكبرى وسوق الانتقالات يشهد مفاجآت</h4>
+        <p style={{ fontSize: "13px", color: "#aaa", margin: "0 0 15px 0" }}>تابع آخر مستجدات الأندية العالمية والتحضيرات للمواجهات القادمة هذا الأسبوع...</p>
+        <span style={{ color: "#2ecc71", fontWeight: "bold", fontSize: "14px" }}>التفاصيل كاملة ←</span>
+      </div>
+    </div>
+
+    {/* بطاقة خبر 2 */}
+    <div style={{ background: "#142820", borderRadius: "12px", overflow: "hidden", display: "flex", flexDirection: "column", border: "1px solid #1e3d30" }}>
+      <img src="https://unsplash.com" alt="أخبار الرياضة" style={{ width: "100%", height: "160px", objectFit: "cover" }} />
+      <div style={{ padding: "15px" }}>
+        <h4 style={{ margin: "0 0 10px 0", fontSize: "16px", lineHeight: "1.4" }}>تحضيرات مكثفة للأندية الإفريقية والعربية للبطولات القادمة</h4>
+        <p style={{ fontSize: "13px", color: "#aaa", margin: "0 0 15px 0" }}>جدول مباريات ناري ينتظر الجماهير العربية مع عودة منافسات دوري الأبطال...</p>
+        <span style={{ color: "#2ecc71", fontWeight: "bold", fontSize: "14px" }}>التفاصيل كاملة ←</span>
+      </div>
+    </div>
+
+    {/* بطاقة خبر 3 */}
+    <div style={{ background: "#142820", borderRadius: "12px", overflow: "hidden", display: "flex", flexDirection: "column", border: "1px solid #1e3d30" }}>
+      <img src="https://unsplash.com" alt="أخبار الرياضة" style={{ width: "100%", height: "160px", objectFit: "cover" }} />
+      <div style={{ padding: "15px" }}>
+        <h4 style={{ margin: "0 0 10px 0", fontSize: "16px", lineHeight: "1.4" }}>إحصائيات تكشف تفوق النجوم الشباب في الملاعب الأوروبية مؤخراً</h4>
+        <p style={{ fontSize: "13px", color: "#aaa", margin: "0 0 15px 0" }}>أرقام قياسية جديدة تتحطم وصدارة الهدافين تشتعل بين أبرز مهاجمي العالم...</p>
+        <span style={{ color: "#2ecc71", fontWeight: "bold", fontSize: "14px" }}>التفاصيل كاملة ←</span>
+      </div>
+    </div>
+
+  </div>
+
+  {/* زر تحميل المزيد ليعطي مظهر كورة لايف المحترف */}
+  <div style={{ textAlign: "center", marginTop: "30px" }}>
+    <button style={{ background: "#1e3d30", color: "#fff", border: "none", padding: "12px 35px", borderRadius: "25px", cursor: "pointer", fontSize: "16px", fontWeight: "bold" }}>
+      🔄 المزيد من الأخبار الرياضية
+    </button>
+  </div>
+</section>
+
 
         </div>
 
