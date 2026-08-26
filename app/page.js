@@ -103,6 +103,22 @@ const leagues = [
 
   return a.time.localeCompare(b.time, "ar-MA");
 });
+  const liveMatches = sortedMatches.filter(
+  (match) => getStatusType(match.status) === "live"
+);
+
+const upcomingMatches = sortedMatches.filter(
+  (match) => getStatusType(match.status) === "upcoming"
+);
+
+const finishedMatches = sortedMatches.filter(
+  (match) => getStatusType(match.status) === "finished"
+);
+  const featuredMatch =
+  liveMatches[0] ||
+  upcomingMatches[0] ||
+  finishedMatches[0] ||
+  null;
 
   return (
     <main>
@@ -145,13 +161,42 @@ const leagues = [
             مباريات اليوم →
           </a>
         </div>
+<div className="hero-card">
+  {featuredMatch ? (
+    <>
+      <div className="live">
+        {getStatusType(featuredMatch.status) === "live"
+          ? "🔴 مباشر الآن"
+          : getStatusType(featuredMatch.status) === "upcoming"
+          ? "⏰ المباراة القادمة"
+          : "✅ آخر نتيجة"}
+      </div>
 
-        <div className="hero-card">
-          <div className="live">● مباشر</div>
-          <div className="score">2 — 1</div>
-          <p>MatchZone Live</p>
-          <small>تحديثات المباراة لحظة بلحظة</small>
-        </div>
+      <p>
+        {featuredMatch.home} ضد {featuredMatch.away}
+      </p>
+
+      <div className="score">
+        {getStatusType(featuredMatch.status) === "upcoming"
+          ? featuredMatch.time
+          : `${featuredMatch.homeScore ?? 0} — ${
+              featuredMatch.awayScore ?? 0
+            }`}
+      </div>
+
+      <small>
+        🏆 {featuredMatch.arabicLeague}
+      </small>
+    </>
+  ) : (
+    <>
+      <div className="live">⚽ MatchZone Live</div>
+      <div className="score">—</div>
+      <small>جاري تحميل المباريات...</small>
+    </>
+  )}
+</div>
+        
       </section>
 
       <div className="ad">
