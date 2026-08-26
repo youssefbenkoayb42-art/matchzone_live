@@ -173,15 +173,64 @@ const finishedMatches = sortedMatches.filter(
       </div>
 
       <p>
-        {featuredMatch.home} ضد {featuredMatch.away}
-      </p>
+        <div
+  style={{
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: "15px",
+    margin: "15px 0",
+  }}
+>
+  {/* الفريق الأول */}
+  <div style={{ textAlign: "center", maxWidth: "110px" }}>
+    {featuredMatch.homeLogo && (
+      <img
+        src={featuredMatch.homeLogo}
+        alt={featuredMatch.home}
+        style={{
+          width: "55px",
+          height: "55px",
+          objectFit: "contain",
+        }}
+      />
+    )}
 
-      <div className="score">
-        {getStatusType(featuredMatch.status) === "upcoming"
-          ? featuredMatch.time
-          : `${featuredMatch.homeScore ?? 0} — ${
-              featuredMatch.awayScore ?? 0
-            }`}
+    <p style={{ margin: "8px 0 0" }}>
+      {featuredMatch.home}
+    </p>
+  </div>
+
+  {/* النتيجة أو الوقت */}
+  <div>
+    <div className="score">
+      {getStatusType(featuredMatch.status) === "upcoming"
+        ? featuredMatch.time
+        : `${featuredMatch.homeScore ?? 0} — ${
+            featuredMatch.awayScore ?? 0
+          }`}
+    </div>
+  </div>
+
+  {/* الفريق الثاني */}
+  <div style={{ textAlign: "center", maxWidth: "110px" }}>
+    {featuredMatch.awayLogo && (
+      <img
+        src={featuredMatch.awayLogo}
+        alt={featuredMatch.away}
+        style={{
+          width: "55px",
+          height: "55px",
+          objectFit: "contain",
+        }}
+      />
+    )}
+
+    <p style={{ margin: "8px 0 0" }}>
+      {featuredMatch.away}
+    </p>
+  </div>
+</div>
       </div>
 
       <small>
