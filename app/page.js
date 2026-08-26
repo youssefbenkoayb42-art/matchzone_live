@@ -231,8 +231,7 @@ const finishedMatches = sortedMatches.filter(
     </p>
   </div>
 </div>
-      </div>
-
+      
       <small>
         🏆 {featuredMatch.arabicLeague}
       </small>
