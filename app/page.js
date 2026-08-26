@@ -146,22 +146,7 @@ const finishedMatches = sortedMatches.filter(
         <div className="hero-text">
           <p className="tag">MATCHZONE • SPORTS PLATFORM</p>
 
-          <h1>
-            كل المباريات
-            <br />
-            <span>في مكان واحد.</span>
-          </h1>
-
-          <p className="description">
-            تابع المباريات والنتائج والبطولات في منصة رياضية
-            عصرية وسريعة ومصممة خصيصًا لعشاق كرة القدم.
-          </p>
-
-          <a href="#matches" className="button">
-            مباريات اليوم →
-          </a>
-        </div>
-<div className="hero-card">
+          <div className="hero-card">
   {featuredMatch ? (
     <>
       <div className="live">
@@ -172,65 +157,64 @@ const finishedMatches = sortedMatches.filter(
           : "✅ آخر نتيجة"}
       </div>
 
-      <p>
-        <div
-  style={{
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    gap: "15px",
-    margin: "15px 0",
-  }}
->
-  {/* الفريق الأول */}
-  <div style={{ textAlign: "center", maxWidth: "110px" }}>
-    {featuredMatch.homeLogo && (
-      <img
-        src={featuredMatch.homeLogo}
-        alt={featuredMatch.home}
+      <div
         style={{
-          width: "55px",
-          height: "55px",
-          objectFit: "contain",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          gap: "15px",
+          margin: "15px 0",
         }}
-      />
-    )}
+      >
+        {/* الفريق الأول */}
+        <div style={{ textAlign: "center", maxWidth: "110px" }}>
+          {featuredMatch.homeLogo && (
+            <img
+              src={featuredMatch.homeLogo}
+              alt={featuredMatch.home}
+              style={{
+                width: "55px",
+                height: "55px",
+                objectFit: "contain",
+              }}
+            />
+          )}
 
-    <p style={{ margin: "8px 0 0" }}>
-      {featuredMatch.home}
-    </p>
-  </div>
+          <p style={{ margin: "8px 0 0" }}>
+            {featuredMatch.home}
+          </p>
+        </div>
 
-  {/* النتيجة أو الوقت */}
-  <div>
-    <div className="score">
-      {getStatusType(featuredMatch.status) === "upcoming"
-        ? featuredMatch.time
-        : `${featuredMatch.homeScore ?? 0} — ${
-            featuredMatch.awayScore ?? 0
-          }`}
-    </div>
-  </div>
+        {/* النتيجة أو الوقت */}
+        <div>
+          <div className="score">
+            {getStatusType(featuredMatch.status) === "upcoming"
+              ? featuredMatch.time
+              : `${featuredMatch.homeScore ?? 0} — ${
+                  featuredMatch.awayScore ?? 0
+                }`}
+          </div>
+        </div>
 
-  {/* الفريق الثاني */}
-  <div style={{ textAlign: "center", maxWidth: "110px" }}>
-    {featuredMatch.awayLogo && (
-      <img
-        src={featuredMatch.awayLogo}
-        alt={featuredMatch.away}
-        style={{
-          width: "55px",
-          height: "55px",
-          objectFit: "contain",
-        }}
-      />
-    )}
+        {/* الفريق الثاني */}
+        <div style={{ textAlign: "center", maxWidth: "110px" }}>
+          {featuredMatch.awayLogo && (
+            <img
+              src={featuredMatch.awayLogo}
+              alt={featuredMatch.away}
+              style={{
+                width: "55px",
+                height: "55px",
+                objectFit: "contain",
+              }}
+            />
+          )}
 
-    <p style={{ margin: "8px 0 0" }}>
-      {featuredMatch.away}
-    </p>
-  </div>
-</div>
+          <p style={{ margin: "8px 0 0" }}>
+            {featuredMatch.away}
+          </p>
+        </div>
+      </div>
       
       <small>
         🏆 {featuredMatch.arabicLeague}
@@ -243,6 +227,8 @@ const finishedMatches = sortedMatches.filter(
       <small>جاري تحميل المباريات...</small>
     </>
   )}
+</div>
+
 </div>
         
       </section>
