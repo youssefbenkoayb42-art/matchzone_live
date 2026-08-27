@@ -59,7 +59,8 @@ export default function HomeDesign() {
   useEffect(() => {
     async function fetchSportsNews() {
       try {
-        const res = await fetch("https://saurav.tech");
+        const res = await fetch("/api/news");
+
         const data = await res.json();
         if (data.articles) setNews(data.articles);
       } catch (error) {
