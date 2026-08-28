@@ -11,7 +11,9 @@ export default function LeaguesPage() {
     async function fetchLeaguesData() {
       try {
         // جلب جدول ترتيب الدوري الإنجليزي الممتاز الحقيقي لعام 2026 من API مفتوح
-        const res = await fetch("https://openligadb.de");
+        const res = await fetch(
+  "https://api.openligadb.de/getbltable/pl/2026"
+);
         
         if (!res.ok) {
           throw new Error("فشل في الاتصال بخادم البيانات الرياضية");
