@@ -1,6 +1,12 @@
+export const dynamic = "force-dynamic";
+
 export async function GET() {
   try {
-    const res = await fetch("https://saurav.tech");
+    // الانتقال لمزود الأخبار العالمي المستقر لضمان تدفق المقالات فوراً
+    const res = await fetch(
+      "https://saurav.tech",
+      { cache: "no-store" }
+    );
     const data = await res.json();
     return Response.json(data);
   } catch (error) {
