@@ -10,6 +10,12 @@ export async function GET() {
     const data = await res.json();
     return Response.json(data);
   } catch (error) {
-    return Response.json({ error: "فشل سحب الأخبار" }, { status: 500 });
+  return Response.json(
+  {
+    error: "فشل سحب الأخبار",
+    details: error.message,
+  },
+  { status: 500 }
+);
   }
 }
