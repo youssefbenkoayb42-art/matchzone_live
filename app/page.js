@@ -206,13 +206,159 @@ export default function HomeDesign() {
           })}
         </div>
       </section>
-      <section id="news-section" style={{ marginTop: "40px" }}> <h2 style={{ fontSize: "22px", fontWeight: "800", marginBottom: "25px" }}>📰 غيوم الأخبار والنبض الرياضي</h2> {loadingNews ? ( <p style={{ color: "#7f8c8d" }}>جاري مواءمة وسحب أحدث وكالات الأنباء الرياضية العالمية...</p> ) : ( <> <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "25px" }}> {news && news.slice(0, visibleCount).map((article, index) => ( <article key={index} style={{ background: "rgba(255,255,255,0.01)", borderRadius: "20px", overflow: "hidden", display: "flex", flexDirection: "column", border: "1px solid rgba(255,255,255,0.04)", boxShadow: "0 15px 35px rgba(0,0,0,0.2)" }}> {article.urlToImage && ( <div style={{ width: "100%", height: "160px", overflow: "hidden" }}> <img src={article.urlToImage} alt={article.title} style={{ width: "100%", height: "100%", objectFit: "cover" }} /> </div> )} <div style={{ padding: "20px", flex: 1, display: "flex", flexDirection: "column", justifyContent: "space-between" }}> <div> <h4 style={{ margin: "0 0 10px 0", fontSize: "15px", fontWeight: "700", lineHeight: "1.5", color: "#fff" }}>{article.title}</h4> <p style={{ fontSize: "13px", color: "#7f8c8d", margin: "0 0 20px 0", lineHeight: "1.6" }}>{article.description ? article.description.slice(0, 90) : "اضغط على تفاصيل القراءة لمتابعة أحدث مستجدات هذا الخبر الرياضي العاجل"}...</p> </div> <a href={article.url} target="_blank" rel="noopener noreferrer" style={{ color: "#2ecc71", textDecoration: "none", fontSize: "13px", fontWeight: "bold", display: "inline-flex", alignItems: "center", gap: "5px" }}> تحليل ونبض الخبر بالكامل ← </a> </div> </article> ))} </div> {news && visibleCount < news.length && ( <div style={{ textAlign: "center", marginTop: "40px" }}> <button onClick={loadMoreNews} style={{ background: "rgba(255,255,255,0.03)", color: "#fff", border: "1px solid rgba(255,255,255,0.08)", padding: "14px 40px", borderRadius: "30px", cursor: "pointer", fontSize: "15px", fontWeight: "bold" }}> 🔄 تحميل طوفان الأخبار الإضافية </button> </div> )} </> )} </section>
+      <section id="news-section" style={{ marginTop: "40px" }}>
+  <h2
+    style={{
+      fontSize: "22px",
+      fontWeight: "800",
+      marginBottom: "25px",
+    }}
+  >
+    📰 غيوم الأخبار والنبض الرياضي
+  </h2>
 
-      <footer style={{ marginTop: "60px", textAlign: "center", borderTop: "1px solid rgba(255,255,255,0.05)", padding: "30px 0", color: "#666" }}>
-        <p>⚽ MatchZone — منصة رياضية عصرية للمباريات والنتائج والأخبار الحية.</p>
-        <small>© 2026 MatchZone. All Rights Reserved.</small>
-      </footer>
+  {loadingNews ? (
+    <p style={{ color: "#7f8c8d" }}>
+      جاري مواءمة وسحب أحدث وكالات الأنباء الرياضية العالمية...
+    </p>
+  ) : (
+    <>
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+          gap: "25px",
+        }}
+      >
+        {news &&
+          news.slice(0, visibleCount).map((article, index) => (
+            <article
+              key={index}
+              style={{
+                background: "rgba(255,255,255,0.01)",
+                borderRadius: "20px",
+                overflow: "hidden",
+                display: "flex",
+                flexDirection: "column",
+                border: "1px solid rgba(255,255,255,0.04)",
+                boxShadow: "0 15px 35px rgba(0,0,0,0.2)",
+              }}
+            >
+              {article.image && (
+                <div
+                  style={{
+                    width: "100%",
+                    height: "160px",
+                    overflow: "hidden",
+                  }}
+                >
+                  <img
+                    src={article.image}
+                    alt={article.title}
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                    }}
+                  />
+                </div>
+              )}
 
-    </main>
-  );
-}
+              <div
+                style={{
+                  padding: "20px",
+                  flex: 1,
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "space-between",
+                }}
+              >
+                <div>
+                  <h4
+                    style={{
+                      margin: "0 0 10px 0",
+                      fontSize: "15px",
+                      fontWeight: "700",
+                      lineHeight: "1.5",
+                      color: "#fff",
+                    }}
+                  >
+                    {article.title}
+                  </h4>
+
+                  <p
+                    style={{
+                      fontSize: "13px",
+                      color: "#7f8c8d",
+                      margin: "0 0 20px 0",
+                      lineHeight: "1.6",
+                    }}
+                  >
+                    {article.description
+                      ? article.description.slice(0, 90)
+                      : "اضغط على تفاصيل القراءة لمتابعة أحدث مستجدات هذا الخبر الرياضي العاجل"}
+                    ...
+                  </p>
+                </div>
+
+                <a
+                  href={article.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    color: "#2ecc71",
+                    textDecoration: "none",
+                    fontSize: "13px",
+                    fontWeight: "bold",
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: "5px",
+                  }}
+                >
+                  تحليل ونبض الخبر بالكامل ←
+                </a>
+              </div>
+            </article>
+          ))}
+      </div>
+
+      {news && visibleCount < news.length && (
+        <div
+          style={{
+            textAlign: "center",
+            marginTop: "40px",
+          }}
+        >
+          <button
+            onClick={loadMoreNews}
+            style={{
+              background: "rgba(255,255,255,0.03)",
+              color: "#fff",
+              border: "1px solid rgba(255,255,255,0.08)",
+              padding: "14px 40px",
+              borderRadius: "30px",
+              cursor: "pointer",
+              fontSize: "15px",
+              fontWeight: "bold",
+            }}
+          >
+            🔄 تحميل طوفان الأخبار الإضافية
+          </button>
+        </div>
+      )}
+    </>
+  )}
+</section>
+
+<footer
+  style={{
+    marginTop: "60px",
+    textAlign: "center",
+    borderTop: "1px solid rgba(255,255,255,0.05)",
+    padding: "30px 0",
+    color: "#666",
+  }}
+>
+  <p>⚽ MatchZone — منصة رياضية عصرية للمباريات والنتائج والأخبار الحية.</p>
+  <small>© 2026 MatchZone. All Rights Reserved.</small>
+</footer>
