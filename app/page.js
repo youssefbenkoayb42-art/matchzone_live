@@ -362,3 +362,7 @@ export default function HomeDesign() {
   <p>⚽ MatchZone — منصة رياضية عصرية للمباريات والنتائج والأخبار الحية.</p>
   <small>© 2026 MatchZone. All Rights Reserved.</small>
 </footer>
+  
+</main>
+);
+  }
