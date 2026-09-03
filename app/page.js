@@ -185,7 +185,31 @@ export default function HomeDesign() {
             const statusType = getStatusType(match.status);
             return (
               <div key={match.id} style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.04)", padding: "20px", borderRadius: "16px", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
-                <div style={{ color: "#2ecc71", fontSize: "13px", fontWeight: "bold", marginBottom: "12px" }}>🏆 {match.arabicLeague}</div>
+                <div
+  style={{
+    color: "#2ecc71",
+    fontSize: "13px",
+    fontWeight: "bold",
+    marginBottom: "12px",
+    display: "flex",
+    alignItems: "center",
+    gap: "8px",
+  }}
+>
+  {leagueIds[match.arabicLeague] && (
+    <img
+      src={`https://www.thesportsdb.com/images/media/league/badge/${leagueIds[match.arabicLeague]}.png`}
+      alt={match.arabicLeague}
+      style={{
+        width: "28px",
+        height: "28px",
+        objectFit: "contain",
+      }}
+    />
+  )}
+
+  <span>{match.arabicLeague}</span>
+</div>
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "15px" }}>
                   <div style={{ textAlign: "center", width: "80px" }}>
                     <img src={match.homeLogo} alt={match.home} style={{ width: "35px", height: "35px", objectFit: "contain" }} />
