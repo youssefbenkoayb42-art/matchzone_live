@@ -1,154 +1,223 @@
-const LEAGUES = [
-  { id: 4328, name: "Premier League" },
-  { id: 4335, name: "La Liga" },
-  { id: 4332, name: "Serie A" },
-  { id: 4331, name: "Bundesliga" },
-  { id: 4334, name: "Ligue 1" },
-];
+export const dynamic = "force-dynamic";
 
-const SEASON = "2026-2027";
+function getStatus(status) {
+  const value = String(status || "").toLowerCase();
 
-function formatMatch(event) {
-  return {
-    fixture: {
-      id: Number(event.idEvent),
-      date:
-        event.strTimestamp ||
-        `${event.dateEvent}T${event.strTime || "00:00:00"}`,
-      status: {
-        short: event.strStatus || "NS",
-        long:
-          event.strStatus === "FT"
-            ? "Match Finished"
-            : event.strStatus || "Not Started",
-      },
-      venue: {
-        name: event.strVenue || null,
-      },
-    },
+  if (
+    value.includes("finished") ||
+    value.includes("complete") ||
+    value === "ft"
+  ) {
+    return "FT";
+  }
 
-    league: {
-      id: Number(event.idLeague),
-      name: event.strLeague || "Unknown League",
-      season: event.strSeason || null,
-      logo: event.strLeagueBadge || null,
-    },
+  if (
+    value.includes("not started") ||
+    value.includes("scheduled") ||
+    value === "ns"
+  ) {
+    return "NS";
+  }
 
-    teams: {
-      home: {
-        id: Number(event.idHomeTeam),
-        name: event.strHomeTeam,
-        logo: event.strHomeTeamBadge || null,
-      },
-      away: {
-        id: Number(event.idAwayTeam),
-        name: event.strAwayTeam,
-        logo: event.strAwayTeamBadge || null,
-      },
-    },
+  return "LIVE";
+}
 
-    goals: {
-      home:
-        event.intHomeScore !== null &&
-        event.intHomeScore !== undefined
-          ? Number(event.intHomeScore)
-          : null,
-
-      away:
-        event.intAwayScore !== null &&
-        event.intAwayScore !== undefined
-          ? Number(event.intAwayScore)
-          : null,
-    },
-
-    video: event.strVideo || null,
-
-    eventId: event.idEvent,
+function getArabicLeague(league) {
+  const map = {
+    "Premier League": "الدوري الإنجليزي",
+    "La Liga": "الدوري الإسباني",
+    "Serie A": "الدوري الإيطالي",
+    Bundesliga: "الدوري الألماني",
+    "Ligue 1": "الدوري الفرنسي",
   };
+
+  return map[league] || league;
+}
+
+function convertTheSportsDB(events = []) {
+  return events
+    .filter((event) => event.strHomeTeam && event.strAwayTeam)
+    .map((event) => ({
+      fixture: {
+        id: event.idEvent,
+        date: event.strTimestamp || `${event.dateEvent}T${event.strTime || "00:00:00"}`,
+        status: {
+          short: getStatus(event.strStatus),
+        },
+      },
+
+      teams: {
+        home: {
+          name: event.strHomeTeam,
+          logo: event.strHomeTeamBadge || null,
+        },
+        away: {
+          name: event.strAwayTeam,
+          logo: event.strAwayTeamBadge || null,
+        },
+      },
+
+      goals: {
+        home:
+          event.intHomeScore !== null && event.intHomeScore !== undefined
+            ? Number(event.intHomeScore)
+            : null,
+        away:
+          event.intAwayScore !== null && event.intAwayScore !== undefined
+            ? Number(event.intAwayScore)
+            : null,
+      },
+
+      league: {
+        id: event.idLeague,
+        name: event.strLeague,
+        logo: event.strLeagueBadge || null,
+      },
+    }));
+}
+
+function convertFootballData(matches = []) {
+  return matches
+    .filter((match) => match.homeTeam && match.awayTeam)
+    .map((match) => ({
+      fixture: {
+        id: match.id,
+        date: match.utcDate,
+        status: {
+          short: getStatus(match.status),
+        },
+      },
+
+      teams: {
+        home: {
+          name: match.homeTeam.name,
+          logo: match.homeTeam.crest || null,
+        },
+        away: {
+          name: match.awayTeam.name,
+          logo: match.awayTeam.crest || null,
+        },
+      },
+
+      goals: {
+        home:
+          match.score?.fullTime?.home !== null &&
+          match.score?.fullTime?.home !== undefined
+            ? match.score.fullTime.home
+            : null,
+
+        away:
+          match.score?.fullTime?.away !== null &&
+          match.score?.fullTime?.away !== undefined
+            ? match.score.fullTime.away
+            : null,
+      },
+
+      league: {
+        id: match.competition?.id,
+        name: match.competition?.name || "Football",
+        logo: match.competition?.emblem || null,
+      },
+    }));
 }
 
 export async function GET() {
+  const today = new Date().toISOString().split("T")[0];
+
+  // =====================================================
+  // المصدر الأول: TheSportsDB
+  // =====================================================
+
   try {
-    const today = new Date();
+    const sportsDBUrl =
+      `https://www.thesportsdb.com/api/v1/json/123/eventsday.php?d=${today}&s=Soccer`;
 
-    const requests = LEAGUES.map(async (league) => {
-      const response = await fetch(
-        `https://www.thesportsdb.com/api/v1/json/123/eventsseason.php?id=${league.id}&s=${SEASON}`,
-        {
-          next: {
-            revalidate: 300,
-          },
-        }
-      );
+    const res = await fetch(sportsDBUrl, {
+      cache: "no-store",
+    });
 
-      if (!response.ok) {
-        return [];
+    if (res.ok) {
+      const data = await res.json();
+
+      const matches = convertTheSportsDB(data.events || []);
+
+      if (matches.length > 0) {
+        console.log(
+          `TheSportsDB: تم جلب ${matches.length} مباراة`
+        );
+
+        return Response.json({
+          response: matches,
+          source: "TheSportsDB",
+        });
       }
+    }
 
-      const data = await response.json();
-
-      return data.events || [];
-    });
-
-    const results = await Promise.all(requests);
-
-    const allEvents = results.flat();
-
-    // إزالة المباريات المكررة
-    const uniqueEvents = Array.from(
-      new Map(
-        allEvents.map((event) => [event.idEvent, event])
-      ).values()
-    );
-
-    // ترتيب جميع المباريات حسب التاريخ
-    uniqueEvents.sort((a, b) => {
-      const dateA = new Date(
-        a.strTimestamp ||
-          `${a.dateEvent}T${a.strTime || "00:00:00"}`
-      );
-
-      const dateB = new Date(
-        b.strTimestamp ||
-          `${b.dateEvent}T${b.strTime || "00:00:00"}`
-      );
-
-      return dateA - dateB;
-    });
-
-    // نعرض المباريات القريبة من اليوم:
-    // مباريات الأمس + اليوم + الأيام القادمة
-    const startDate = new Date(today);
-    startDate.setDate(startDate.getDate() - 1);
-
-    const endDate = new Date(today);
-    endDate.setDate(endDate.getDate() + 7);
-
-    const upcomingEvents = uniqueEvents.filter((event) => {
-      const eventDate = new Date(
-        event.strTimestamp ||
-          `${event.dateEvent}T${event.strTime || "00:00:00"}`
-      );
-
-      return eventDate >= startDate && eventDate <= endDate;
-    });
-
-    const matches = upcomingEvents.map(formatMatch);
-
-    return Response.json({
-      response: matches,
-      total: matches.length,
-    });
+    console.log("TheSportsDB لم يرجع مباريات اليوم");
   } catch (error) {
-    console.error("TheSportsDB Error:", error);
+    console.error("خطأ TheSportsDB:", error.message);
+  }
 
-    return Response.json(
-      {
-        response: [],
-        total: 0,
-        error: "Failed to fetch matches",
-      },
-      { status: 500 }
+  // =====================================================
+  // المصدر الاحتياطي: football-data.org
+  // =====================================================
+
+  const footballDataKey = process.env.FOOTBALL_DATA_API_KEY;
+
+  if (footballDataKey) {
+    try {
+      const footballDataUrl =
+        `https://api.football-data.org/v4/matches?dateFrom=${today}&dateTo=${today}`;
+
+      const res = await fetch(footballDataUrl, {
+        headers: {
+          "X-Auth-Token": footballDataKey,
+        },
+        cache: "no-store",
+      });
+
+      if (res.ok) {
+        const data = await res.json();
+
+        const matches = convertFootballData(data.matches || []);
+
+        if (matches.length > 0) {
+          console.log(
+            `football-data.org: تم جلب ${matches.length} مباراة`
+          );
+
+          return Response.json({
+            response: matches,
+            source: "football-data.org",
+          });
+        }
+      } else {
+        console.error(
+          "football-data.org status:",
+          res.status
+        );
+      }
+    } catch (error) {
+      console.error(
+        "خطأ football-data.org:",
+        error.message
+      );
+    }
+  } else {
+    console.error(
+      "FOOTBALL_DATA_API_KEY غير موجود في Environment Variables"
     );
   }
-      }
+
+  // =====================================================
+  // لم ينجح أي مصدر
+  // =====================================================
+
+  return Response.json(
+    {
+      response: [],
+      error: "لم يتم العثور على مباريات من مصادر البيانات الحالية",
+    },
+    { status: 200 }
+  );
+    }
