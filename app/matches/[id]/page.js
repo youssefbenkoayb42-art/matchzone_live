@@ -575,7 +575,7 @@ export default async function MatchPage({ params }) {
             </h2>
 
             <div style={{ display: "grid", gap: "10px" }}>
-              {match.timeline.map((item, index) => {}
+              {match.timeline.map((item, index) => {
                 const type = String(item.type || "").toLowerCase();
                 const detail = String(item.detail || "").toLowerCase();
                 const goal = String(item.goal || "").toLowerCase();
