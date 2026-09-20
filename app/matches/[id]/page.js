@@ -146,19 +146,41 @@ export default async function MatchPage({ params }) {
         padding: "40px 20px",
       }}
     >
-      <div style={{ maxWidth: "900px", margin: "0 auto" }}>
-        <a
-          href="/"
+      <div style={{ maxWidth: "980px", margin: "0 auto" }}>
+        <div
           style={{
-            display: "inline-block",
-            color: "#37e28a",
-            textDecoration: "none",
-            marginBottom: "30px",
-            fontWeight: "700",
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            gap: "12px",
+            flexWrap: "wrap",
+            marginBottom: "22px",
           }}
         >
-          ← العودة إلى المباريات
-        </a>
+          <a
+            href="/"
+            style={{
+              display: "inline-block",
+              color: "#37e28a",
+              textDecoration: "none",
+              fontWeight: "700",
+            }}
+          >
+            ← مباريات اليوم
+          </a>
+          <span
+            style={{
+              color: "#82968d",
+              fontSize: "13px",
+              border: "1px solid #284238",
+              borderRadius: "999px",
+              padding: "7px 12px",
+              background: "#0b1713",
+            }}
+          >
+            MatchZone • تفاصيل المباراة
+          </span>
+        </div>
 
         {/* معلومات المباراة */}
         <nav
@@ -211,8 +233,31 @@ export default async function MatchPage({ params }) {
             </a>
           </p>
 
-          <p style={{ color: "#82968d", marginBottom: "35px" }}>
+          <div
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: "8px",
+              color: isLive ? "#ff6b6b" : "#82968d",
+              background: isLive ? "#35191b" : "#0b1713",
+              border: "1px solid #284238",
+              borderRadius: "999px",
+              padding: "8px 14px",
+              marginBottom: "28px",
+              fontWeight: "800",
+            }}
+          >
+            <span aria-hidden="true">{isLive ? "●" : "•"}</span>
             {status}
+          </div>
+
+          <p style={{ color: "#82968d", margin: "0 0 28px" }}>
+            {new Date(match.fixture.date).toLocaleDateString("ar-MA", {
+              weekday: "long",
+              day: "numeric",
+              month: "long",
+              year: "numeric",
+            })}
           </p>
 
           <div
@@ -229,15 +274,32 @@ export default async function MatchPage({ params }) {
           >
             {/* الفريق المضيف */}
             <div style={{ direction: "rtl", minWidth: 0, textAlign: "center" }}>
-              <img
-                src={match.teams.home.logo}
-                alt={match.teams.home.name}
+              <div
                 style={{
-                  width: "clamp(62px, 20vw, 100px)",
-                  height: "clamp(62px, 20vw, 100px)",
-                  objectFit: "contain",
+                  width: "clamp(70px, 22vw, 110px)",
+                  height: "clamp(70px, 22vw, 110px)",
+                  margin: "0 auto",
+                  display: "grid",
+                  placeItems: "center",
+                  borderRadius: "24px",
+                  background: "#07100d",
+                  border: "1px solid #284238",
                 }}
-              />
+              >
+                {match.teams.home.logo ? (
+                  <img
+                    src={match.teams.home.logo}
+                    alt={match.teams.home.name}
+                    style={{
+                      width: "80%",
+                      height: "80%",
+                      objectFit: "contain",
+                    }}
+                  />
+                ) : (
+                  <span style={{ fontSize: "34px" }} aria-hidden="true">⚽</span>
+                )}
+              </div>
 
               <h2
                 style={{
@@ -290,15 +352,32 @@ export default async function MatchPage({ params }) {
 
             {/* الفريق الضيف */}
             <div style={{ direction: "rtl", minWidth: 0, textAlign: "center" }}>
-              <img
-                src={match.teams.away.logo}
-                alt={match.teams.away.name}
+              <div
                 style={{
-                  width: "clamp(62px, 20vw, 100px)",
-                  height: "clamp(62px, 20vw, 100px)",
-                  objectFit: "contain",
+                  width: "clamp(70px, 22vw, 110px)",
+                  height: "clamp(70px, 22vw, 110px)",
+                  margin: "0 auto",
+                  display: "grid",
+                  placeItems: "center",
+                  borderRadius: "24px",
+                  background: "#07100d",
+                  border: "1px solid #284238",
                 }}
-              />
+              >
+                {match.teams.away.logo ? (
+                  <img
+                    src={match.teams.away.logo}
+                    alt={match.teams.away.name}
+                    style={{
+                      width: "80%",
+                      height: "80%",
+                      objectFit: "contain",
+                    }}
+                  />
+                ) : (
+                  <span style={{ fontSize: "34px" }} aria-hidden="true">⚽</span>
+                )}
+              </div>
 
               <h2
                 style={{
@@ -313,6 +392,46 @@ export default async function MatchPage({ params }) {
               </h2>
             </div>
           </div>
+        </div>
+
+        <div
+          style={{
+            marginTop: "24px",
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(190px, 1fr))",
+            gap: "12px",
+          }}
+        >
+          <a
+            href={`/teams/${encodeURIComponent(match.teams.home.name)}`}
+            style={{
+              textDecoration: "none",
+              color: "#f4f8f6",
+              background: "#0b1713",
+              border: "1px solid #284238",
+              borderRadius: "16px",
+              padding: "14px",
+              textAlign: "center",
+              fontWeight: "700",
+            }}
+          >
+            📊 صفحة {match.teams.home.name}
+          </a>
+          <a
+            href={`/teams/${encodeURIComponent(match.teams.away.name)}`}
+            style={{
+              textDecoration: "none",
+              color: "#f4f8f6",
+              background: "#0b1713",
+              border: "1px solid #284238",
+              borderRadius: "16px",
+              padding: "14px",
+              textAlign: "center",
+              fontWeight: "700",
+            }}
+          >
+            📊 صفحة {match.teams.away.name}
+          </a>
         </div>
 
         {/* الفيديو */}
