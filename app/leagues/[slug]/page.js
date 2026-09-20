@@ -8,8 +8,37 @@ const LEAGUES = {
 
 const BASE_URL = "https://matchzone-live.vercel.app";
 
+async function getLeague(slug) {
+  if (LEAGUES[slug]) return LEAGUES[slug];
+
+  const match = String(slug || "").match(/^league-(\\d+)$/);
+  if (!match) return null;
+
+  try {
+    const res = await fetch(
+      "https://www.thesportsdb.com/api/v1/json/123/lookupleague.php?id=" + match[1],
+      { next: { revalidate: 900 } }
+    );
+    if (!res.ok) return null;
+    const data = await res.json();
+    const item = Array.isArray(data?.leagues) ? data.leagues[0] : null;
+    if (!item?.idLeague) return null;
+
+    return {
+      id: Number(item.idLeague),
+      name: item.strLeague || "بطولة كرة القدم",
+      english: item.strLeagueAlternate || item.strLeague || "Football League",
+      country: item.strCountry || "",
+      badge: item.strBadge || item.strLogo || null,
+      description: "مباريات ونتائج ومواعيد " + (item.strLeague || "البطولة") + ".",
+    };
+  } catch {
+    return null;
+  }
+}
+
 export async function generateMetadata({ params }) {
-  const league = LEAGUES[params.slug];
+  const league = await getLeague(params.slug);
   if (!league) return { title: "البطولة غير موجودة" };
   return {
     title: league.name + " - مباريات ونتائج",
@@ -75,7 +104,7 @@ function MatchCard({ match, league, featured = false }) {
 }
 
 export default async function LeaguePage({ params }) {
-  const league = LEAGUES[params.slug];
+  const league = await getLeague(params.slug);
 
   if (!league) {
     return (
@@ -101,11 +130,11 @@ export default async function LeaguePage({ params }) {
         <a href="/leagues" style={styles.link}>← كل البطولات</a>
 
         <header style={styles.header}>
-          <div style={styles.logoBox}>🏆</div>
+          <div style={styles.logoBox}>{league.badge ? <img src={league.badge} alt="" style={styles.leagueLogo} /> : "🏆"}</div>
           <div style={{ flex: 1 }}>
             <div style={styles.eyebrow}>MATCHZONE • LEAGUE</div>
             <h1 style={styles.h1}>{league.name}</h1>
-            <p style={styles.muted}>{league.description}</p>
+            <p style={styles.muted}>{league.description}{league.country ? " • " + league.country : ""}</p>
           </div>
         </header>
 
@@ -168,7 +197,8 @@ const styles = {
   main: { minHeight: "100vh", background: "#07100d", color: "#f4f8f6", padding: "24px 16px 70px", fontFamily: "Arial, Helvetica, sans-serif" },
   container: { maxWidth: 1100, margin: "0 auto" },
   header: { display: "flex", alignItems: "center", gap: 16, marginTop: 24, padding: "26px 22px", borderRadius: 24, background: "linear-gradient(145deg,#123326,#0b1712)", border: "1px solid #1e3d30", boxShadow: "0 18px 50px rgba(0,0,0,.22)" },
-  logoBox: { width: 66, height: 66, borderRadius: 20, display: "grid", placeItems: "center", fontSize: 34, background: "rgba(46,204,113,.08)", border: "1px solid rgba(46,204,113,.18)", flexShrink: 0 },
+  logoBox: { width: 66, height: 66, borderRadius: 20, display: "grid", placeItems: "center", fontSize: 34, background: "rgba(46,204,113,.08)", border: "1px solid rgba(46,204,113,.18)", flexShrink: 0, overflow: "hidden" },
+  leagueLogo: { width: "82%", height: "82%", objectFit: "contain" },
   eyebrow: { color: "#2ecc71", fontSize: 10, fontWeight: 900, letterSpacing: 1, marginBottom: 7 },
   h1: { margin: 0, fontSize: "clamp(24px,5vw,38px)", lineHeight: 1.2 },
   h2: { margin: "35px 0 18px", fontSize: 22 },
