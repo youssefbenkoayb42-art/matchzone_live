@@ -83,6 +83,15 @@ export async function GET(request, { params }) {
             : null,
       },
 
+      events: {
+        homeGoals: event.strHomeGoalDetails || null,
+        awayGoals: event.strAwayGoalDetails || null,
+        homeYellowCards: event.strHomeYellowCards || null,
+        awayYellowCards: event.strAwayYellowCards || null,
+        homeRedCards: event.strHomeRedCards || null,
+        awayRedCards: event.strAwayRedCards || null,
+      },
+
       video: event.strVideo || null,
 
       eventId: event.idEvent,
