@@ -21,7 +21,7 @@ async function getMatch(id) {
   try {
     const response = await fetch(
       `https://www.thesportsdb.com/api/v1/json/123/lookupevent.php?id=${encodeURIComponent(id)}`,
-      { next: { revalidate: 60 } }
+      { cache: "no-store" }
     );
 
     if (!response.ok) return null;
