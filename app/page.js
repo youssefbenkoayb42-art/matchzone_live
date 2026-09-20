@@ -768,23 +768,27 @@ export default function HomeDesign() {
 
               <div
                 style={{
-                  display: "grid",
-                  gridTemplateColumns: "minmax(0,1fr) minmax(92px,auto) minmax(0,1fr)",
+                  display: "flex",
+                  flexDirection: "row",
+                  flexWrap: "nowrap",
                   alignItems: "center",
                   justifyContent: "center",
-                  gap: "clamp(10px,4vw,30px)",
+                  gap: "clamp(8px,4vw,30px)",
                   textAlign: "center",
                   width: "100%",
+                  direction: "ltr",
                 }}
               >
                 <div
                   style={{
-                    width: "100%",
+                    flex: "1 1 0",
+                    width: "0",
                     minWidth: 0,
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "center",
                     justifyContent: "center",
+                    direction: "rtl",
                   }}
                 >
                   {featuredMatch.homeLogo && (
@@ -816,8 +820,11 @@ export default function HomeDesign() {
 
                 <div
                   style={{
-                    minWidth: 0,
+                    flex: "0 0 auto",
+                    width: "92px",
+                    minWidth: "92px",
                     textAlign: "center",
+                    direction: "rtl",
                   }}
                 >
                   <div
@@ -876,12 +883,14 @@ export default function HomeDesign() {
 
                 <div
                   style={{
-                    width: "100%",
+                    flex: "1 1 0",
+                    width: "0",
                     minWidth: 0,
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "center",
                     justifyContent: "center",
+                    direction: "rtl",
                   }}
                 >
                   {featuredMatch.awayLogo && (
