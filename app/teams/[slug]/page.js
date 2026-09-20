@@ -76,8 +76,32 @@ export default async function TeamPage({ params }) {
   const upcoming = nextEvents.slice(0, 5);
   const recent = lastEvents.slice(0, 5);
 
+  const breadcrumbData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "الرئيسية",
+        item: BASE_URL,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "الفريق",
+        item: `${BASE_URL}/teams/${encodeURIComponent(teamName)}`,
+      },
+    ],
+  };
+
   return (
-    <main dir="rtl" style={styles.main}>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }}
+      />
+      <main dir="rtl" style={styles.main}>
       <div style={styles.container}>
         <a href="/" style={styles.link}>← العودة إلى المباريات</a>
 
@@ -103,7 +127,7 @@ export default async function TeamPage({ params }) {
         </section>
 
         <section>
-          <h2 style={styles.h2}>المباراة القادمة</h2>
+          <h2 style={styles.h2}>أقرب مباراة</h2>
           {upcoming.length > 0 ? (
             <div style={styles.grid}>
               <EventCard event={upcoming[0]} />
@@ -112,15 +136,19 @@ export default async function TeamPage({ params }) {
             <p style={styles.empty}>لا توجد مباراة قادمة متاحة حاليًا.</p>
           )}
 
-          <h2 style={styles.h2}>المباريات القادمة</h2>
-          {upcoming.length > 0 ? (
+          <h2 style={styles.h2}>باقي المباريات القادمة</h2>
+          {upcoming.length > 1 ? (
             <div style={styles.grid}>
-              {upcoming.map((event) => (
+              {upcoming.slice(1).map((event) => (
                 <EventCard key={event.idEvent} event={event} />
               ))}
             </div>
           ) : (
-            <p style={styles.empty}>لا توجد مواعيد قادمة متاحة حاليًا.</p>
+            <p style={styles.empty}>
+              {upcoming.length === 1
+                ? "لا توجد مباريات أخرى مجدولة حاليًا."
+                : "لا توجد مواعيد قادمة متاحة حاليًا."}
+            </p>
           )}
 
           <h2 style={styles.h2}>آخر النتائج</h2>
