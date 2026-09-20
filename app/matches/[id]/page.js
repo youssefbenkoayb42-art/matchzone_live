@@ -130,6 +130,30 @@ export default async function MatchPage({ params }) {
         </a>
 
         {/* معلومات المباراة */}
+        <nav
+          aria-label="مسار التنقل"
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            gap: "8px",
+            alignItems: "center",
+            marginBottom: "18px",
+            color: "#82968d",
+            fontSize: "14px",
+          }}
+        >
+          <a href="/" style={{ color: "#37e28a", textDecoration: "none" }}>الرئيسية</a>
+          <span>←</span>
+          <a
+            href={`/leagues/${match.league.id === 4328 ? "premier-league" : match.league.id === 4335 ? "la-liga" : match.league.id === 4332 ? "serie-a" : match.league.id === 4331 ? "bundesliga" : match.league.id === 4334 ? "ligue-1" : "leagues"}`}
+            style={{ color: "#37e28a", textDecoration: "none" }}
+          >
+            {match.league.name}
+          </a>
+          <span>←</span>
+          <span>{match.teams.home.name} ضد {match.teams.away.name}</span>
+        </nav>
+
         <div
           style={{
             background: "linear-gradient(145deg, #10251c, #0b1713)",
@@ -147,7 +171,13 @@ export default async function MatchPage({ params }) {
               marginBottom: "10px",
             }}
           >
-            🏆 {match.league.name}
+            🏆{" "}
+            <a
+              href={`/leagues/${match.league.id === 4328 ? "premier-league" : match.league.id === 4335 ? "la-liga" : match.league.id === 4332 ? "serie-a" : match.league.id === 4331 ? "bundesliga" : match.league.id === 4334 ? "ligue-1" : "leagues"}`}
+              style={{ color: "#37e28a", textDecoration: "none" }}
+            >
+              {match.league.name}
+            </a>
           </p>
 
           <p style={{ color: "#82968d", marginBottom: "35px" }}>
@@ -187,7 +217,7 @@ export default async function MatchPage({ params }) {
                   overflowWrap: "anywhere",
                 }}
               >
-                {match.teams.home.name}
+                <a href={`/teams/${encodeURIComponent(match.teams.home.name)}`} style={{ color: "inherit", textDecoration: "none" }}>{match.teams.home.name}</a>
               </h2>
             </div>
 
@@ -248,7 +278,7 @@ export default async function MatchPage({ params }) {
                   overflowWrap: "anywhere",
                 }}
               >
-                {match.teams.away.name}
+                <a href={`/teams/${encodeURIComponent(match.teams.away.name)}`} style={{ color: "inherit", textDecoration: "none" }}>{match.teams.away.name}</a>
               </h2>
             </div>
           </div>
