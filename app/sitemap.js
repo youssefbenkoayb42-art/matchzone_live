@@ -72,11 +72,23 @@ export default async function sitemap() {
       changeFrequency: "daily",
       priority: 0.7,
     },
+    {
+      url: `${BASE_URL}/standings/premier-league`,
+      lastModified: now,
+      changeFrequency: "daily",
+      priority: 0.85,
+    },
     ...leagues.map((slug) => ({
       url: `${BASE_URL}/leagues/${slug}`,
       lastModified: now,
       changeFrequency: "daily",
       priority: 0.8,
+    })),
+    ...leagues.map((slug) => ({
+      url: `${BASE_URL}/standings/${slug}`,
+      lastModified: now,
+      changeFrequency: "daily",
+      priority: 0.85,
     })),
     ...teamNames.map((team) => ({
       url: `${BASE_URL}/teams/${encodeURIComponent(team)}`,
