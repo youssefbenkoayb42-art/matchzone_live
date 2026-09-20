@@ -292,11 +292,10 @@ export default async function MatchPage({ params }) {
 
           <div
             style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              gap: "15px",
-              flexWrap: "nowrap",
+              display: "grid",
+              gridTemplateColumns: "minmax(0, 1fr) auto minmax(0, 1fr)",
+              alignItems: "start",
+              gap: "clamp(8px, 3vw, 24px)",
               direction: "ltr",
               width: "100%",
               overflow: "hidden",
@@ -336,7 +335,10 @@ export default async function MatchPage({ params }) {
                   marginTop: "15px",
                   fontSize: "clamp(14px, 4vw, 20px)",
                   lineHeight: "1.3",
-                  maxWidth: "110px",
+                  width: "100%",
+                  maxWidth: "180px",
+                  marginLeft: "auto",
+                  marginRight: "auto",
                   overflowWrap: "anywhere",
                 }}
               >
@@ -358,12 +360,13 @@ export default async function MatchPage({ params }) {
               >
                 <div
   style={{
-    display: "flex",
+    display: "inline-flex",
     alignItems: "center",
     justifyContent: "center",
     gap: "8px",
     whiteSpace: "nowrap",
     minWidth: "110px",
+    lineHeight: 1,
   }}
 >
   <span>{match.goals.home ?? 0}</span>
