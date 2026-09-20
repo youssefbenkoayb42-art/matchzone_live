@@ -578,6 +578,107 @@ export default function HomeDesign() {
         </div>
 
         {/* =========================
+            SEO NAVIGATION
+        ========================== */}
+
+        <section
+          aria-labelledby="popular-leagues"
+          style={{
+            marginBottom: "32px",
+            padding: "22px",
+            borderRadius: "22px",
+            background: "rgba(255,255,255,.025)",
+            border: "1px solid rgba(255,255,255,.06)",
+          }}
+        >
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+              gap: "12px",
+              flexWrap: "wrap",
+              marginBottom: "16px",
+            }}
+          >
+            <div>
+              <h2 id="popular-leagues" style={{ margin: 0, fontSize: "20px", fontWeight: "900" }}>
+                🏆 أهم بطولات كرة القدم
+              </h2>
+              <p style={{ margin: "7px 0 0", color: "#718078", fontSize: "12px" }}>
+                مباريات اليوم والنتائج والمواعيد لأشهر الدوريات.
+              </p>
+            </div>
+
+            <a
+              href="/leagues"
+              style={{
+                color: "#2ecc71",
+                textDecoration: "none",
+                fontSize: "12px",
+                fontWeight: "900",
+              }}
+            >
+              جميع البطولات ←
+            </a>
+          </div>
+
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit,minmax(150px,1fr))",
+              gap: "10px",
+            }}
+          >
+            {[
+              ["premier-league", "الدوري الإنجليزي"],
+              ["la-liga", "الدوري الإسباني"],
+              ["serie-a", "الدوري الإيطالي"],
+              ["bundesliga", "الدوري الألماني"],
+              ["ligue-1", "الدوري الفرنسي"],
+            ].map(([slug, name]) => (
+              <a
+                key={slug}
+                href={`/leagues/${slug}`}
+                style={{
+                  display: "block",
+                  padding: "14px 12px",
+                  borderRadius: "14px",
+                  background: "rgba(46,204,113,.05)",
+                  border: "1px solid rgba(46,204,113,.1)",
+                  color: "#dce7e1",
+                  textDecoration: "none",
+                  textAlign: "center",
+                  fontSize: "12px",
+                  fontWeight: "800",
+                }}
+              >
+                🏆 {name}
+              </a>
+            ))}
+          </div>
+
+          <a
+            href="/matches/today"
+            style={{
+              display: "block",
+              marginTop: "12px",
+              padding: "13px",
+              borderRadius: "14px",
+              background: "rgba(255,255,255,.035)",
+              border: "1px solid rgba(255,255,255,.06)",
+              color: "#cbd5d0",
+              textDecoration: "none",
+              textAlign: "center",
+              fontSize: "12px",
+              fontWeight: "900",
+            }}
+          >
+            🗓️ عرض جميع مباريات اليوم والنتائج ←
+          </a>
+        </section>
+
+        {/* =========================
             FEATURED MATCH
         ========================== */}
 
