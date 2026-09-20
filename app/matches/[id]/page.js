@@ -561,6 +561,7 @@ export default async function MatchPage({ params }) {
         {/* الخط الزمني للمباراة */}
         {match.timeline?.length > 0 && (
           <section
+            className="match-timeline"
             style={{
               marginTop: "30px",
               background: "linear-gradient(145deg, #10251c, #0b1713)",
@@ -604,6 +605,7 @@ export default async function MatchPage({ params }) {
                 return (
                   <div
                     key={String(item.time) + "-" + (item.player || "event") + "-" + index}
+                    className="match-timeline-event"
                     style={{
                       display: "grid",
                       gridTemplateColumns: "minmax(0, 1fr) auto minmax(0, 1fr)",
@@ -713,7 +715,7 @@ export default async function MatchPage({ params }) {
                 <h2 style={{ margin: "0 0 18px", fontSize: "clamp(20px, 5vw, 28px)" }}>
                   لاعبو المباراة
                 </h2>
-                <div style={{ display: "grid", gridTemplateColumns: "repeat(2, minmax(0, 1fr))", gap: "12px" }}>
+                <div className="match-lineup-grid" style={{ display: "grid", gridTemplateColumns: "repeat(2, minmax(0, 1fr))", gap: "12px" }}>
                   {[["home", match.teams.home.name], ["away", match.teams.away.name]].map(([team, teamName]) => (
                     <div key={team} style={{ background: "#07100d", border: "1px solid #284238", borderRadius: "16px", padding: "14px" }}>
                       <h3 style={{ margin: "0 0 12px", textAlign: "center", color: "#37e28a", fontSize: "15px" }}>
