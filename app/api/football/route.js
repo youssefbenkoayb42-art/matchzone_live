@@ -190,11 +190,23 @@ function formatFootballDataMatch(match) {
 }
 
 async function fetchSportsDB(date) {
-  const requests = LEAGUES.map(async (league) => {
+  /*
+    نجلب مباريات كرة القدم من اليوم وحتى الأيام القادمة.
+    استخدام eventsday مع s=Soccer يجعل المصدر يعيد
+    البطولات المتاحة في ذلك اليوم، بدل حصر الموقع
+    في خمس دوريات فقط.
+  */
+  const days = Array.from({ length: 7 }, (_, index) => {
+    const target = new Date(date + "T12:00:00Z");
+    target.setUTCDate(target.getUTCDate() + index);
+    return target.toISOString().slice(0, 10);
+  });
+
+  const requests = days.map(async (targetDate) => {
     try {
       const url =
-        `https://www.thesportsdb.com/api/v1/json/${SPORTSDB_KEY}` +
-        `/eventsday.php?d=${date}&l=${league.id}`;
+        "https://www.thesportsdb.com/api/v1/json/" + SPORTSDB_KEY +
+        "/eventsday.php?d=" + targetDate + "&s=Soccer";
 
       const response = await fetch(url, {
         next: {
@@ -213,7 +225,7 @@ async function fetchSportsDB(date) {
       );
     } catch (error) {
       console.error(
-        `TheSportsDB ${league.name}:`,
+        "TheSportsDB " + targetDate + ":",
         error
       );
 
@@ -221,46 +233,7 @@ async function fetchSportsDB(date) {
     }
   });
 
-  /*
-    نضيف أيضًا البحث العام لالتقاط
-    بطولات أخرى غير الخمس الكبرى.
-  */
-
-  const generalRequest = (async () => {
-    try {
-      const url =
-        `https://www.thesportsdb.com/api/v1/json/${SPORTSDB_KEY}` +
-        `/eventsday.php?d=${date}&s=Soccer`;
-
-      const response = await fetch(url, {
-        next: {
-          revalidate: 120,
-        },
-      });
-
-      if (!response.ok) {
-        return [];
-      }
-
-      const data = await response.json();
-
-      return (data.events || []).map(
-        formatSportsDBEvent
-      );
-    } catch (error) {
-      console.error(
-        "TheSportsDB general:",
-        error
-      );
-
-      return [];
-    }
-  })();
-
-  const results = await Promise.all([
-    ...requests,
-    generalRequest,
-  ]);
+  const results = await Promise.all(requests);
 
   return results.flat();
 }
