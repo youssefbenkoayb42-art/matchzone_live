@@ -1159,6 +1159,7 @@ export default function HomeDesign() {
                             "1fr auto 1fr",
                           alignItems: "center",
                           gap: "10px",
+                          direction: "ltr",
                         }}
                       >
                         {/* Home */}
@@ -1167,6 +1168,7 @@ export default function HomeDesign() {
                           style={{
                             textAlign: "center",
                             minWidth: 0,
+                            direction: "rtl",
                           }}
                         >
                           <div
