@@ -304,7 +304,21 @@ export default function HomeDesign() {
           </div>
 
           {matchesError && <div className="state-box error">⚠️ {matchesError}</div>}
-          {loadingMatches && <div className="state-box">⏳ جارٍ تحميل مباريات اليوم...</div>}
+          {loadingMatches && (
+            <div className="match-grid" aria-label="جارٍ تحميل مباريات اليوم" aria-busy="true">
+              {[1, 2, 3].map((item) => (
+                <div className="match-skeleton" key={item}>
+                  <span className="skeleton-line wide" />
+                  <div className="skeleton-teams">
+                    <span className="skeleton-circle" />
+                    <span className="skeleton-score" />
+                    <span className="skeleton-circle" />
+                  </div>
+                  <span className="skeleton-line button" />
+                </div>
+              ))}
+            </div>
+          )}
           {!loadingMatches && !matchesError && filteredMatches.length === 0 && (
             <div className="state-box empty-state"><span>⚽</span><strong>لا توجد مباريات مطابقة</strong><small>جرّب تغيير الفلتر أو البحث.</small></div>
           )}
