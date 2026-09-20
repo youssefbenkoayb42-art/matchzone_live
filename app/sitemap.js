@@ -8,24 +8,37 @@ const leagues = [
   "ligue-1",
 ];
 
-async function getTodayMatches() {
+async function getSitemapEvents() {
   const date = new Date().toISOString().slice(0, 10);
   const leagueIds = [4328, 4335, 4332, 4331, 4334];
 
   try {
-    const responses = await Promise.all(
-      leagueIds.map(async (leagueId) => {
-        const res = await fetch(
-          `https://www.thesportsdb.com/api/v1/json/123/eventsday.php?d=${date}&l=${leagueId}`,
-          { next: { revalidate: 300 } }
-        );
+    const requests = leagueIds.flatMap((leagueId) => [
+      fetch(
+        `https://www.thesportsdb.com/api/v1/json/123/eventsday.php?d=${date}&l=${leagueId}`,
+        { next: { revalidate: 300 } }
+      ),
+      fetch(
+        `https://www.thesportsdb.com/api/v1/json/123/eventsnextleague.php?id=${leagueId}`,
+        { next: { revalidate: 900 } }
+      ),
+      fetch(
+        `https://www.thesportsdb.com/api/v1/json/123/eventspastleague.php?id=${leagueId}`,
+        { next: { revalidate: 900 } }
+      ),
+    ]);
+
+    const responses = await Promise.all(requests);
+
+    const data = await Promise.all(
+      responses.map(async (res) => {
         if (!res.ok) return [];
-        const data = await res.json();
-        return Array.isArray(data?.events) ? data.events : [];
+        const json = await res.json();
+        return Array.isArray(json?.events) ? json.events : [];
       })
     );
 
-    return responses.flat();
+    return data.flat();
   } catch {
     return [];
   }
@@ -33,7 +46,7 @@ async function getTodayMatches() {
 
 export default async function sitemap() {
   const now = new Date();
-  const events = await getTodayMatches();
+  const events = await getSitemapEvents();
 
   const matchIds = [
     ...new Set(events.map((event) => event?.idEvent).filter(Boolean)),
