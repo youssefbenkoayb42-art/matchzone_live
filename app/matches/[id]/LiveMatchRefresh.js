@@ -27,7 +27,7 @@ export default function LiveMatchRefresh({ matchId, initialStatus, initialHome, 
         if (!response.ok) return;
 
         const data = await response.json();
-        const latest = data?.response?.[0];
+        const latest = data?.fixture ? data : data?.response?.[0];
 
         if (!latest) return;
 
