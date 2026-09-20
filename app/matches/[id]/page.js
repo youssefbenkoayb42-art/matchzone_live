@@ -1,5 +1,20 @@
 const BASE_URL = "https://matchzone-live.vercel.app";
 
+async function getTeamEvents(teamId, endpoint) {
+  try {
+    const response = await fetch(
+      `https://www.thesportsdb.com/api/v1/json/123/${endpoint}?id=${encodeURIComponent(teamId)}`,
+      { next: { revalidate: 300 } }
+    );
+
+    if (!response.ok) return [];
+    const data = await response.json();
+    return Array.isArray(data?.events) ? data.events : [];
+  } catch {
+    return [];
+  }
+}
+
 async function getMatch(id) {
   try {
     const response = await fetch(
@@ -61,6 +76,21 @@ export default async function MatchPage({ params }) {
   }
 
   const matchStatus = match.fixture.status.short;
+
+  const [nextTeamEvents, lastTeamEvents] = match.teams.home.id
+    ? await Promise.all([
+        getTeamEvents(match.teams.home.id, "eventsnext"),
+        getTeamEvents(match.teams.home.id, "eventslast"),
+      ])
+    : [[], []];
+
+  const relatedUpcoming = nextTeamEvents
+    .filter((event) => String(event?.idEvent) !== String(match.eventId))
+    .slice(0, 3);
+
+  const relatedRecent = lastTeamEvents
+    .filter((event) => String(event?.idEvent) !== String(match.eventId))
+    .slice(0, 3);
 
   const leagueSlug =
     match.league.id === 4328 ? "premier-league" :
@@ -433,6 +463,112 @@ export default async function MatchPage({ params }) {
             📊 صفحة {match.teams.away.name}
           </a>
         </div>
+
+        {/* مباريات الفريق المرتبطة */}
+        {(relatedUpcoming.length > 0 || relatedRecent.length > 0) && (
+          <section
+            style={{
+              marginTop: "30px",
+              background: "linear-gradient(145deg, #10251c, #0b1713)",
+              border: "1px solid #284238",
+              borderRadius: "25px",
+              padding: "25px 20px",
+            }}
+          >
+            <div style={{ marginBottom: "20px" }}>
+              <p style={{ color: "#37e28a", margin: "0 0 6px", fontWeight: "800" }}>
+                📅 مباريات مرتبطة
+              </p>
+              <h2 style={{ margin: 0, fontSize: "clamp(20px, 5vw, 28px)" }}>
+                مباريات {match.teams.home.name}
+              </h2>
+              <p style={{ color: "#82968d", margin: "8px 0 0", fontSize: "13px" }}>
+                تابع المواعيد القادمة وآخر النتائج وانتقل مباشرة إلى تفاصيل كل مباراة.
+              </p>
+            </div>
+
+            {relatedUpcoming.length > 0 && (
+              <>
+                <h3 style={{ margin: "0 0 12px", color: "#f4f8f6" }}>⏭️ المباريات القادمة</h3>
+                <div
+                  style={{
+                    display: "grid",
+                    gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+                    gap: "10px",
+                  }}
+                >
+                  {relatedUpcoming.map((event) => (
+                    <a
+                      key={event.idEvent}
+                      href={`/matches/${event.idEvent}`}
+                      style={{
+                        textDecoration: "none",
+                        color: "#f4f8f6",
+                        background: "#07100d",
+                        border: "1px solid #284238",
+                        borderRadius: "16px",
+                        padding: "15px",
+                        display: "grid",
+                        gap: "7px",
+                      }}
+                    >
+                      <strong style={{ textAlign: "center" }}>
+                        {event.strHomeTeam || "الفريق المضيف"}{" "}
+                        <span style={{ color: "#37e28a" }}>ضد</span>{" "}
+                        {event.strAwayTeam || "الفريق الضيف"}
+                      </strong>
+                      <span style={{ color: "#82968d", fontSize: "12px", textAlign: "center" }}>
+                        {event.dateEvent || event.strTimestamp || "موعد المباراة"}
+                        {event.strTime ? ` • ${event.strTime}` : ""}
+                      </span>
+                    </a>
+                  ))}
+                </div>
+              </>
+            )}
+
+            {relatedRecent.length > 0 && (
+              <div style={{ marginTop: "22px" }}>
+                <h3 style={{ margin: "0 0 12px", color: "#f4f8f6" }}>🏁 آخر النتائج</h3>
+                <div
+                  style={{
+                    display: "grid",
+                    gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+                    gap: "10px",
+                  }}
+                >
+                  {relatedRecent.map((event) => (
+                    <a
+                      key={event.idEvent}
+                      href={`/matches/${event.idEvent}`}
+                      style={{
+                        textDecoration: "none",
+                        color: "#f4f8f6",
+                        background: "#07100d",
+                        border: "1px solid #284238",
+                        borderRadius: "16px",
+                        padding: "15px",
+                        display: "grid",
+                        gap: "7px",
+                      }}
+                    >
+                      <strong style={{ textAlign: "center" }}>
+                        {event.strHomeTeam || "الفريق المضيف"}{" "}
+                        <span style={{ color: "#37e28a" }}>
+                          {event.intHomeScore ?? "-"} - {event.intAwayScore ?? "-"}
+                        </span>{" "}
+                        {event.strAwayTeam || "الفريق الضيف"}
+                      </strong>
+                      <span style={{ color: "#82968d", fontSize: "12px", textAlign: "center" }}>
+                        {event.dateEvent || event.strTimestamp || "تاريخ المباراة"}
+                      </span>
+                    </a>
+                  ))}
+                </div>
+              </div>
+            )}
+          </section>
+        )}
 
         {/* الفيديو */}
         {match.video && (
