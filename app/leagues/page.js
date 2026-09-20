@@ -9,16 +9,7 @@ const LEAGUES = [
 ];
 
 
-
 const FEATURED_SLUGS = new Set(LEAGUES.map(([slug]) => slug));
-
-function slugifyLeague(name) {
-  return String(name || "")
-    .toLowerCase()
-    .trim()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
-}
 
 async function getAvailableLeagues() {
   const days = Array.from({ length: 7 }, (_, index) => {
@@ -102,8 +93,10 @@ async function AvailableLeagues() {
 
         return featured ? (
           <Link key={league.id || league.name} href={"/leagues/" + featured} style={styles.discoveredCard}>{content}</Link>
+        ) : league.id ? (
+          <Link key={league.id} href={"/leagues/league-" + league.id} style={styles.discoveredCard}>{content}</Link>
         ) : (
-          <div key={league.id || league.name} style={styles.discoveredCard}>{content}</div>
+          <div key={league.name} style={styles.discoveredCard}>{content}</div>
         );
       })}
     </div>
@@ -206,8 +199,5 @@ const styles = {
   discoveredLogo: { width: 52, height: 52, minWidth: 52, borderRadius: 14, display: "grid", placeItems: "center", background: "#fff", overflow: "hidden", fontSize: 23 },
   discoveredLogoImg: { width: "82%", height: "82%", objectFit: "contain" },
   discoveredBody: { minWidth: 0, display: "flex", flexDirection: "column", gap: 3 },
-  discoveredBodyStrong: { fontSize: 14 },
-  discoveredBodySpan: { color: "#71847b", fontSize: 10 },
-  discoveredBodySmall: { color: "#2ecc71", fontSize: 9, fontWeight: 800 },
   empty: { padding: 28, borderRadius: 18, background: "rgba(255,255,255,.025)", border: "1px solid rgba(255,255,255,.06)", color: "#82968d", textAlign: "center" },
 };
