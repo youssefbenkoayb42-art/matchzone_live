@@ -57,6 +57,25 @@ export default async function sitemap() {
     ),
   ];
 
+  const discoveredLeagueIds = [
+    ...new Set(
+      events
+        .map((event) => event?.idLeague)
+        .filter(Boolean)
+        .map(String)
+    ),
+  ];
+
+  const featuredLeagueIds = new Set(["4328", "4335", "4332", "4331", "4334"]);
+  const dynamicLeagueUrls = discoveredLeagueIds
+    .filter((id) => !featuredLeagueIds.has(id))
+    .map((id) => ({
+      url: `${BASE_URL}/leagues/league-${id}`,
+      lastModified: now,
+      changeFrequency: "daily",
+      priority: 0.78,
+    }));
+
   return [
     {
       url: BASE_URL,
@@ -94,6 +113,7 @@ export default async function sitemap() {
       changeFrequency: "daily",
       priority: 0.85,
     })),
+    ...dynamicLeagueUrls,
     ...teamNames.map((team) => ({
       url: `${BASE_URL}/teams/${encodeURIComponent(team)}`,
       lastModified: now,
