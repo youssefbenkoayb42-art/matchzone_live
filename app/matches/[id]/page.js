@@ -131,21 +131,32 @@ export default function MatchPage() {
               alignItems: "center",
               gap: "15px",
               flexWrap: "nowrap",
+              direction: "ltr",
+              width: "100%",
+              overflow: "hidden",
             }}
           >
             {/* الفريق المضيف */}
-            <div>
+            <div style={{ direction: "rtl", minWidth: 0, textAlign: "center" }}>
               <img
                 src={match.teams.home.logo}
                 alt={match.teams.home.name}
                 style={{
-                  width: "100px",
-                  height: "100px",
+                  width: "clamp(62px, 20vw, 100px)",
+                  height: "clamp(62px, 20vw, 100px)",
                   objectFit: "contain",
                 }}
               />
 
-              <h2 style={{ marginTop: "15px" }}>
+              <h2
+                style={{
+                  marginTop: "15px",
+                  fontSize: "clamp(14px, 4vw, 20px)",
+                  lineHeight: "1.3",
+                  maxWidth: "110px",
+                  overflowWrap: "anywhere",
+                }}
+              >
                 {match.teams.home.name}
               </h2>
             </div>
@@ -154,9 +165,12 @@ export default function MatchPage() {
             <div>
               <div
                 style={{
-                  fontSize: "42px",
+                  fontSize: "clamp(30px, 8vw, 42px)",
                   fontWeight: "900",
                   color: "#37e28a",
+                  direction: "ltr",
+                  whiteSpace: "nowrap",
+                  minWidth: "85px",
                 }}
               >
                 <div
@@ -184,7 +198,7 @@ export default function MatchPage() {
             </div>
 
             {/* الفريق الضيف */}
-            <div>
+            <div style={{ direction: "rtl", minWidth: 0, textAlign: "center" }}>
               <img
                 src={match.teams.away.logo}
                 alt={match.teams.away.name}
@@ -195,7 +209,15 @@ export default function MatchPage() {
                 }}
               />
 
-              <h2 style={{ marginTop: "15px" }}>
+              <h2
+                style={{
+                  marginTop: "15px",
+                  fontSize: "clamp(14px, 4vw, 20px)",
+                  lineHeight: "1.3",
+                  maxWidth: "110px",
+                  overflowWrap: "anywhere",
+                }}
+              >
                 {match.teams.away.name}
               </h2>
             </div>
