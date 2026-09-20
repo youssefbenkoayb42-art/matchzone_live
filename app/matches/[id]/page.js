@@ -29,6 +29,20 @@ async function getMatch(id) {
     const event = data.events?.[0];
     if (!event) return null;
 
+    const [statsResponse, lineupResponse] = await Promise.all([
+      fetch(
+        `https://www.thesportsdb.com/api/v1/json/123/lookupeventstats.php?id=${encodeURIComponent(id)}`,
+        { next: { revalidate: 300 } }
+      ),
+      fetch(
+        `https://www.thesportsdb.com/api/v1/json/123/lookuplineup.php?id=${encodeURIComponent(id)}`,
+        { next: { revalidate: 300 } }
+      ),
+    ]);
+
+    const statsData = statsResponse.ok ? await statsResponse.json() : {};
+    const lineupData = lineupResponse.ok ? await lineupResponse.json() : {};
+
     return {
       fixture: {
         id: Number(event.idEvent),
@@ -67,6 +81,23 @@ async function getMatch(id) {
         homeRedCards: event.strHomeRedCards || null,
         awayRedCards: event.strAwayRedCards || null,
       },
+      stats: Array.isArray(statsData.eventstats)
+        ? statsData.eventstats.map((stat) => ({
+            name: stat.strStat || "إحصائية",
+            home: stat.intHome ?? null,
+            away: stat.intAway ?? null,
+          }))
+        : [],
+      lineup: Array.isArray(lineupData.lineup)
+        ? lineupData.lineup.map((player) => ({
+            name: player.strPlayer || "لاعب",
+            position: player.strPosition || null,
+            number: player.intSquadNumber || null,
+            team: player.strHome === "Yes" ? "home" : "away",
+            substitute: player.strSubstitute === "Yes",
+            image: player.strCutout || player.strThumb || null,
+          }))
+        : [],
       video: event.strVideo || null,
       eventId: event.idEvent,
     };
@@ -505,6 +536,81 @@ export default async function MatchPage({ params }) {
             📊 صفحة {match.teams.away.name}
           </a>
         </div>
+
+
+        {/* الإحصائيات والتشكيلات */}
+        {(match.stats?.length > 0 || match.lineup?.length > 0) && (
+          <section
+            style={{
+              marginTop: "30px",
+              background: "linear-gradient(145deg, #10251c, #0b1713)",
+              border: "1px solid #284238",
+              borderRadius: "25px",
+              padding: "25px 20px",
+            }}
+          >
+            {match.stats?.length > 0 && (
+              <div>
+                <p style={{ color: "#37e28a", margin: "0 0 6px", fontWeight: "800" }}>
+                  📊 إحصائيات المباراة
+                </p>
+                <h2 style={{ margin: "0 0 18px", fontSize: "clamp(20px, 5vw, 28px)" }}>
+                  مقارنة الفريقين
+                </h2>
+                <div style={{ display: "grid", gap: "10px" }}>
+                  {match.stats.map((stat) => (
+                    <div key={stat.name} style={{ background: "#07100d", border: "1px solid #284238", borderRadius: "14px", padding: "13px" }}>
+                      <div style={{ display: "grid", gridTemplateColumns: "1fr auto 1fr", gap: "10px", alignItems: "center" }}>
+                        <strong style={{ textAlign: "center" }}>{stat.home ?? "—"}</strong>
+                        <span style={{ color: "#82968d", textAlign: "center", fontSize: "13px" }}>{stat.name}</span>
+                        <strong style={{ textAlign: "center" }}>{stat.away ?? "—"}</strong>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {match.lineup?.length > 0 && (
+              <div style={{ marginTop: match.stats?.length > 0 ? "28px" : 0 }}>
+                <p style={{ color: "#37e28a", margin: "0 0 6px", fontWeight: "800" }}>
+                  👥 التشكيلات
+                </p>
+                <h2 style={{ margin: "0 0 18px", fontSize: "clamp(20px, 5vw, 28px)" }}>
+                  لاعبو المباراة
+                </h2>
+                <div style={{ display: "grid", gridTemplateColumns: "repeat(2, minmax(0, 1fr))", gap: "12px" }}>
+                  {[["home", match.teams.home.name], ["away", match.teams.away.name]].map(([team, teamName]) => (
+                    <div key={team} style={{ background: "#07100d", border: "1px solid #284238", borderRadius: "16px", padding: "14px" }}>
+                      <h3 style={{ margin: "0 0 12px", textAlign: "center", color: "#37e28a", fontSize: "15px" }}>
+                        {teamName}
+                      </h3>
+                      <div style={{ display: "grid", gap: "8px" }}>
+                        {match.lineup.filter((player) => player.team === team).map((player, index) => (
+                          <div key={player.name + index} style={{ display: "flex", alignItems: "center", gap: "8px", padding: "8px", borderRadius: "10px", background: "#0b1713" }}>
+                            {player.image ? (
+                              <img src={player.image} alt={player.name} loading="lazy" style={{ width: "34px", height: "34px", objectFit: "contain", borderRadius: "50%" }} />
+                            ) : (
+                              <span style={{ width: "34px", textAlign: "center" }}>👤</span>
+                            )}
+                            <div style={{ minWidth: 0 }}>
+                              <strong style={{ display: "block", fontSize: "13px", overflowWrap: "anywhere" }}>
+                                {(player.number ? "#" + player.number + " " : "") + player.name}
+                              </strong>
+                              <span style={{ color: "#82968d", fontSize: "11px" }}>
+                                {player.substitute ? "بديل" : (player.position || "أساسي")}
+                              </span>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </section>
+        )}
 
         {/* مباريات الفريق المرتبطة */}
         {(relatedUpcoming.length > 0 || relatedRecent.length > 0) && (
