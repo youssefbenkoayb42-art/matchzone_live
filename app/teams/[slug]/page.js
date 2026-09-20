@@ -75,6 +75,8 @@ export default async function TeamPage({ params }) {
 
   const upcoming = nextEvents.slice(0, 5);
   const recent = lastEvents.slice(0, 5);
+  const teamDisplayName = team?.strTeam || teamName;
+  const teamUrl = BASE_URL + "/teams/" + encodeURIComponent(teamName);
 
   const breadcrumbData = {
     "@context": "https://schema.org",
@@ -89,8 +91,8 @@ export default async function TeamPage({ params }) {
       {
         "@type": "ListItem",
         position: 2,
-        name: "الفريق",
-        item: `${BASE_URL}/teams/${encodeURIComponent(teamName)}`,
+        name: teamDisplayName,
+        item: teamUrl,
       },
     ],
   };
@@ -123,6 +125,9 @@ export default async function TeamPage({ params }) {
             {team?.strLeague && (
               <p style={styles.league}>🏆 {team.strLeague}</p>
             )}
+            <p style={styles.statsLine}>
+              📅 {upcoming.length} مباريات قادمة · 🏁 {recent.length} نتائج حديثة
+            </p>
           </div>
         </section>
 
@@ -182,6 +187,11 @@ const styles = {
   },
   container: { maxWidth: 1000, margin: "0 auto" },
   link: { color: "#2ecc71", textDecoration: "none", fontWeight: 800 },
+  breadcrumb: {
+    display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap",
+    marginTop: 18, marginBottom: 8, color: "#82968d", fontSize: 12,
+  },
+  breadcrumbLink: { color: "#2ecc71", textDecoration: "none", fontWeight: 800 },
   hero: {
     display: "flex",
     alignItems: "center",
@@ -201,7 +211,8 @@ const styles = {
   h1: { margin: 0, fontSize: "clamp(25px,6vw,40px)" },
   h2: { margin: "32px 0 14px" },
   muted: { color: "#82968d", lineHeight: 1.7 },
-  league: { color: "#2ecc71", fontWeight: 800, marginBottom: 0 },
+  league: { color: "#2ecc71", fontWeight: 800, marginBottom: 6 },
+  statsLine: { color: "#9aaba4", fontSize: 12, margin: "6px 0 0" },
   grid: {
     display: "grid",
     gridTemplateColumns: "repeat(auto-fit,minmax(280px,1fr))",
