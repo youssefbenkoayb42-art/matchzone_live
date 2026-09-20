@@ -9,7 +9,6 @@ export const metadata = {
   description:
     "تابع مباريات اليوم ونتائج كرة القدم ومواعيد المباريات وأهم البطولات العالمية على MatchZone.",
   applicationName: "MatchZone",
-  alternates: { canonical: "/" },
   openGraph: {
     title: "MatchZone | مباريات اليوم ونتائج كرة القدم",
     description:
