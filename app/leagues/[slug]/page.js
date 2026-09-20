@@ -55,14 +55,14 @@ function MatchCard({ match, league }) {
       <div style={styles.teams}>
         <a href={"/teams/" + encodeURIComponent(match.strHomeTeam || "")} style={styles.team}>
           <strong>{match.strHomeTeam || "الفريق المضيف"}</strong>
-          <small>المضيف</small>
+          <small style={styles.teamSmall}>المضيف</small>
         </a>
         <div style={styles.score}>
           {isFinished ? (match.intHomeScore + " - " + match.intAwayScore) : (match.strTime || "-")}
         </div>
         <a href={"/teams/" + encodeURIComponent(match.strAwayTeam || "")} style={styles.team}>
           <strong>{match.strAwayTeam || "الفريق الضيف"}</strong>
-          <small>الضيف</small>
+          <small style={styles.teamSmall}>الضيف</small>
         </a>
       </div>
       <div style={styles.meta}>
@@ -165,7 +165,7 @@ const styles = {
   competition: { color: "#2ecc71", fontSize: 12, fontWeight: 800, marginBottom: 20 },
   teams: { display: "grid", gridTemplateColumns: "1fr auto 1fr", gap: 12, alignItems: "center", textAlign: "center", direction: "ltr" },
   team: { color: "#f4f8f6", textDecoration: "none", minWidth: 0 },
-  team small: { display: "block", color: "#718078", marginTop: 5, fontSize: 11 },
+  teamSmall: { display: "block", color: "#718078", marginTop: 5, fontSize: 11 },
   score: { fontSize: 22, fontWeight: 900, whiteSpace: "nowrap" },
   meta: { color: "#718078", fontSize: 11, textAlign: "center", margin: "18px 0" },
   button: { display: "block", textAlign: "center", background: "rgba(46,204,113,.08)", border: "1px solid rgba(46,204,113,.14)", color: "#2ecc71", padding: 11, borderRadius: 11, textDecoration: "none", fontWeight: 800, fontSize: 12 },
