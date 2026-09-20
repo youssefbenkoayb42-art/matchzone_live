@@ -1,3 +1,5 @@
+import LiveMatchRefresh from "./LiveMatchRefresh";
+
 const BASE_URL = "https://matchzone-live.vercel.app";
 
 async function getTeamEvents(teamId, endpoint) {
@@ -283,6 +285,13 @@ export default async function MatchPage({ params }) {
             <span aria-hidden="true">{isLive ? "●" : "•"}</span>
             {status}
           </div>
+
+          <LiveMatchRefresh
+            matchId={match.eventId}
+            initialStatus={matchStatus}
+            initialHome={match.goals.home}
+            initialAway={match.goals.away}
+          />
 
           <div
             style={{
