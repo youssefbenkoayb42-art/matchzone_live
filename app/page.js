@@ -14,32 +14,19 @@ function getArabicLeague(league) {
 }
 
 const LEAGUE_LOGOS = {
-  "premier-league": "https://resources.premierleague.com/premierleague/photos/players/110x140/premier-league-logo.png",
-  "la-liga": "https://cdn.simpleicons.org/laliga",
-  "serie-a": "https://cdn.simpleicons.org/seriea",
-  bundesliga: "https://cdn.simpleicons.org/bundesliga",
-  "ligue-1": "https://cdn.simpleicons.org/ligue1",
-};
-
-const LEAGUE_FALLBACKS = {
-  "premier-league": "🏴",
-  "la-liga": "🇪🇸",
-  "serie-a": "🇮🇹",
-  bundesliga: "🇩🇪",
-  "ligue-1": "🇫🇷",
+  "premier-league": "/leagues/premier-league.svg",
+  "la-liga": "/leagues/la-liga.svg",
+  "serie-a": "/leagues/serie-a.svg",
+  bundesliga: "/leagues/bundesliga.svg",
+  "ligue-1": "/leagues/ligue-1.svg",
 };
 
 function LeagueLogo({ slug, name }) {
-  const [failed, setFailed] = useState(false);
-  if (failed) {
-    return <span style={{ fontSize: "20px" }}>{LEAGUE_FALLBACKS[slug] || "⚽"}</span>;
-  }
   return (
     <img
       src={LEAGUE_LOGOS[slug]}
       alt={`شعار ${name}`}
       loading="lazy"
-      onError={() => setFailed(true)}
       style={{ width: "100%", height: "100%", objectFit: "contain", display: "block" }}
     />
   );
