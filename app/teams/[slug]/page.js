@@ -29,23 +29,36 @@ async function getTeamEvents(teamId, endpoint) {
   }
 }
 
-function EventCard({ event }) {
+function EventCard({ event, featured = false }) {
   const home = event?.strHomeTeam || "الفريق المضيف";
   const away = event?.strAwayTeam || "الفريق الضيف";
   const homeScore = event?.intHomeScore ?? "-";
   const awayScore = event?.intAwayScore ?? "-";
   const time = event?.strTime || event?.strTimestamp || "";
+  const date = event?.dateEvent || "";
+  const finished = event?.intHomeScore != null && event?.intAwayScore != null;
 
   return (
-    <a href={`/matches/${event.idEvent}`} style={styles.card}>
-      <div style={styles.team}>{home}</div>
-      <div style={styles.middle}>
-        <strong style={styles.score}>
-          {homeScore} - {awayScore}
-        </strong>
-        <span style={styles.time}>{time}</span>
+    <a href={`/matches/${event.idEvent}`} style={{ ...styles.card, ...(featured ? styles.featuredCard : {}) }}>
+      <div style={styles.competition}>
+        <span>{event?.strLeague || "مباراة"}</span>
+        <span>{finished ? "FT" : "موعد المباراة"}</span>
       </div>
-      <div style={styles.team}>{away}</div>
+      <div style={styles.teamsRow}>
+        <div style={styles.teamBlock}>
+          {event?.strHomeTeamBadge ? <img src={event.strHomeTeamBadge} alt="" style={styles.eventLogo} /> : <div style={styles.eventFallback}>⚽</div>}
+          <strong style={styles.teamName}>{home}</strong>
+        </div>
+        <div style={styles.middle}>
+          <strong style={styles.score}>{homeScore} - {awayScore}</strong>
+          <span style={styles.time}>{date} {time}</span>
+        </div>
+        <div style={styles.teamBlock}>
+          {event?.strAwayTeamBadge ? <img src={event.strAwayTeamBadge} alt="" style={styles.eventLogo} /> : <div style={styles.eventFallback}>⚽</div>}
+          <strong style={styles.teamName}>{away}</strong>
+        </div>
+      </div>
+      <div style={styles.details}>عرض تفاصيل المباراة ←</div>
     </a>
   );
 }
@@ -144,10 +157,11 @@ export default async function TeamPage({ params }) {
                 <p style={styles.league}>🏆 {team.strLeague}</p>
               )}
 
-              <p style={styles.statsLine}>
-                📅 {upcoming.length} مباريات قادمة · 🏁 {recent.length} نتائج
-                حديثة
-              </p>
+              <div style={styles.statGrid}>
+                <div style={styles.statBox}><strong>{upcoming.length}</strong><span>قادمة</span></div>
+                <div style={styles.statBox}><strong>{recent.length}</strong><span>نتائج</span></div>
+                <div style={styles.statBox}><strong>⚽</strong><span>MatchZone</span></div>
+              </div>
             </div>
           </section>
 
@@ -156,7 +170,7 @@ export default async function TeamPage({ params }) {
 
             {upcoming.length > 0 ? (
               <div style={styles.grid}>
-                <EventCard event={upcoming[0]} />
+                <EventCard event={upcoming[0]} featured />
               </div>
             ) : (
               <p style={styles.empty}>لا توجد مباراة قادمة متاحة حاليًا.</p>
@@ -278,6 +292,78 @@ const styles = {
     color: "#2ecc71",
     fontWeight: 800,
     marginBottom: 6,
+  },
+  statGrid: {
+    display: "grid",
+    gridTemplateColumns: "repeat(3, minmax(0,1fr))",
+    gap: 8,
+    marginTop: 16,
+  },
+  statBox: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    gap: 3,
+    padding: "10px 8px",
+    borderRadius: 14,
+    background: "rgba(255,255,255,.045)",
+    border: "1px solid rgba(255,255,255,.06)",
+  },
+  featuredCard: {
+    padding: 20,
+    background: "linear-gradient(145deg,rgba(46,204,113,.12),rgba(255,255,255,.035))",
+    border: "1px solid rgba(46,204,113,.2)",
+  },
+  competition: {
+    display: "flex",
+    justifyContent: "space-between",
+    gap: 10,
+    color: "#82968d",
+    fontSize: 11,
+    marginBottom: 16,
+  },
+  teamsRow: {
+    display: "grid",
+    gridTemplateColumns: "1fr auto 1fr",
+    gap: 12,
+    alignItems: "center",
+    direction: "ltr",
+  },
+  teamBlock: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    gap: 8,
+    minWidth: 0,
+  },
+  eventLogo: {
+    width: 46,
+    height: 46,
+    objectFit: "contain",
+  },
+  eventFallback: {
+    width: 46,
+    height: 46,
+    display: "grid",
+    placeItems: "center",
+    borderRadius: 14,
+    background: "#10231b",
+    fontSize: 24,
+  },
+  teamName: {
+    maxWidth: "100%",
+    overflow: "hidden",
+    textOverflow: "ellipsis",
+    whiteSpace: "nowrap",
+  },
+  details: {
+    marginTop: 15,
+    paddingTop: 11,
+    borderTop: "1px solid rgba(255,255,255,.06)",
+    color: "#2ecc71",
+    textAlign: "center",
+    fontSize: 12,
+    fontWeight: 800,
   },
   statsLine: {
     color: "#9aaba4",
