@@ -634,7 +634,7 @@ export default async function MatchPage({ params }) {
                       }}
                     >
                       <span style={{ marginLeft: "5px" }}>{icon}</span>
-                      {item.time || "—}
+                      {item.time || "—"}
                     </div>
 
                     <div style={{ direction: "rtl", textAlign: item.team === "away" ? "left" : "right", minWidth: 0 }}>
