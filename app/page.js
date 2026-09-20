@@ -768,17 +768,23 @@ export default function HomeDesign() {
 
               <div
                 style={{
-                  display: "flex",
+                  display: "grid",
+                  gridTemplateColumns: "minmax(0,1fr) minmax(92px,auto) minmax(0,1fr)",
                   alignItems: "center",
                   justifyContent: "center",
-                  gap: "30px",
+                  gap: "clamp(10px,4vw,30px)",
                   textAlign: "center",
-                  flexWrap: "wrap",
+                  width: "100%",
                 }}
               >
                 <div
                   style={{
-                    width: "120px",
+                    width: "100%",
+                    minWidth: 0,
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    justifyContent: "center",
                   }}
                 >
                   {featuredMatch.homeLogo && (
@@ -790,6 +796,7 @@ export default function HomeDesign() {
                         height: "70px",
                         objectFit: "contain",
                         marginBottom: "10px",
+                        display: "block",
                       }}
                     />
                   )}
@@ -798,13 +805,21 @@ export default function HomeDesign() {
                     style={{
                       fontSize: "14px",
                       fontWeight: "800",
+                      lineHeight: "1.45",
+                      maxWidth: "100%",
+                      overflowWrap: "anywhere",
                     }}
                   >
                     {featuredMatch.home}
                   </div>
                 </div>
 
-                <div>
+                <div
+                  style={{
+                    minWidth: 0,
+                    textAlign: "center",
+                  }}
+                >
                   <div
                     style={{
                       color: "#83938b",
@@ -861,7 +876,12 @@ export default function HomeDesign() {
 
                 <div
                   style={{
-                    width: "120px",
+                    width: "100%",
+                    minWidth: 0,
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    justifyContent: "center",
                   }}
                 >
                   {featuredMatch.awayLogo && (
@@ -873,6 +893,7 @@ export default function HomeDesign() {
                         height: "70px",
                         objectFit: "contain",
                         marginBottom: "10px",
+                        display: "block",
                       }}
                     />
                   )}
@@ -881,6 +902,9 @@ export default function HomeDesign() {
                     style={{
                       fontSize: "14px",
                       fontWeight: "800",
+                      lineHeight: "1.45",
+                      maxWidth: "100%",
+                      overflowWrap: "anywhere",
                     }}
                   >
                     {featuredMatch.away}
