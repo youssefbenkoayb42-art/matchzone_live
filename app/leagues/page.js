@@ -1,151 +1,66 @@
-"use client";
+import Link from "next/link";
 
-import { useState, useEffect } from "react";
+const LEAGUES = [
+  ["premier-league", "الدوري الإنجليزي الممتاز"],
+  ["la-liga", "الدوري الإسباني"],
+  ["serie-a", "الدوري الإيطالي"],
+  ["bundesliga", "الدوري الألماني"],
+  ["ligue-1", "الدوري الفرنسي"],
+];
+
+export const metadata = {
+  title: "البطولات",
+  description: "تصفح أهم بطولات كرة القدم ومباريات اليوم والنتائج والمباريات القادمة.",
+};
 
 export default function LeaguesPage() {
-  const [standings, setStandings] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-
-  useEffect(() => {
-    async function fetchLeaguesData() {
-      try {
-        // جلب جدول ترتيب الدوري الإنجليزي الممتاز الحقيقي لعام 2026 من API مفتوح
-        const res = await fetch(
-  "https://api.openligadb.de/getbltable/pl/2026"
-);
-        
-        if (!res.ok) {
-          throw new Error("فشل في الاتصال بخادم البيانات الرياضية");
-        }
-        
-        const data = await res.json();
-        setStandings(data);
-      } catch (err) {
-        console.error("حدث خطأ أثناء جلب البيانات:", err);
-        setError("تعذر تحميل جدول الترتيب حالياً. يرجى إعادة المحاولة لاحقاً.");
-      } finally {
-        setLoading(false);
-      }
-    }
-
-    fetchLeaguesData();
-  }, []);
-
   return (
-    <main style={{ padding: "30px 20px", color: "#fff", background: "#0c1a14", minHeight: "100vh", fontFamily: "sans-serif", direction: "rtl" }}>
-      
-      {/* زر العودة للرئيسية */}
-      <a href="/" style={{ color: "#2ecc71", textDecoration: "none", fontWeight: "bold", display: "inline-block", marginBottom: "20px" }}>
-        ← العودة للرئيسية
-      </a>
+    <main style={styles.main} dir="rtl">
+      <div style={styles.container}>
+        <Link href="/" style={styles.back}>← العودة للرئيسية</Link>
 
-      {/* عنوان الصفحة */}
-      <h2 style={{ borderBottom: "2px solid #1e3d30", paddingBottom: "10px", marginBottom: "15px" }}>
-        🏆 أهم البطولات العالمية والعربية
-      </h2>
-      
+        <header style={styles.header}>
+          <div style={styles.icon}>🏆</div>
+          <div>
+            <h1 style={styles.h1}>أهم بطولات كرة القدم</h1>
+            <p style={styles.muted}>مباريات اليوم، النتائج والمباريات القادمة لأشهر الدوريات.</p>
+          </div>
+        </header>
 
-      <div style={{ display: "flex", gap: "8px", flexWrap: "wrap", marginBottom: "25px" }}>
-        {[
-          ["premier-league", "الدوري الإنجليزي"],
-          ["la-liga", "الدوري الإسباني"],
-          ["serie-a", "الدوري الإيطالي"],
-          ["bundesliga", "الدوري الألماني"],
-          ["ligue-1", "الدوري الفرنسي"],
-        ].map(([slug, name]) => (
-          <a
-            key={slug}
-            href={"/leagues/" + slug}
-            style={{
-              color: "#2ecc71",
-              textDecoration: "none",
-              background: "rgba(46,204,113,.07)",
-              border: "1px solid rgba(46,204,113,.12)",
-              padding: "9px 13px",
-              borderRadius: "12px",
-              fontSize: "12px",
-              fontWeight: "800",
-              whiteSpace: "nowrap",
-            }}
-          >
-            {name}
-          </a>
-        ))}
+        <section style={styles.grid}>
+          {LEAGUES.map(([slug, name]) => (
+            <Link key={slug} href={"/leagues/" + slug} style={styles.card}>
+              <span style={styles.cardIcon}>🏆</span>
+              <span style={styles.cardName}>{name}</span>
+              <span style={styles.cardText}>مباريات ونتائج ومواعيد البطولة</span>
+              <span style={styles.cardLink}>عرض البطولة ←</span>
+            </Link>
+          ))}
+        </section>
+
+        <nav style={styles.nav}>
+          <Link href="/matches/today" style={styles.navLink}>🗓️ مباريات اليوم</Link>
+          <Link href="/" style={styles.navLink}>⚽ MatchZone</Link>
+        </nav>
       </div>
-
-      <p style={{ color: "#aaa", fontSize: "15px", marginBottom: "30px" }}>
-        عرض حي ومباشر لجدول الترتيب، النقاط، وإحصائيات الفرق المحدثة فور نهاية كل جولة [2.1].
-      </p>
-
-      {/* قائمة التصفح بين الدوريات */}
-      <div style={{ display: "flex", gap: "10px", marginBottom: "25px", overflowX: "auto", paddingBottom: "5px" }}>
-        <button style={{ background: "#2ecc71", color: "#0c1a14", border: "none", padding: "8px 18px", borderRadius: "20px", fontWeight: "bold", cursor: "pointer", whiteSpace: "nowrap" }}>
-          🏴󠁧󠁢󠁥󠁮󠁧󠁿 الدوري الإنجليزي
-        </button>
-        <button style={{ background: "#142820", color: "#aaa", border: "1px solid #1e3d30", padding: "8px 18px", borderRadius: "20px", cursor: "not-allowed", whiteSpace: "nowrap" }}>
-          🇪🇸 الدوري الإسباني (قريباً)
-        </button>
-      </div>
-
-      {/* واجهة جدول الترتيب */}
-      <div style={{ background: "#142820", borderRadius: "12px", border: "1px solid #1e3d30", overflowX: "auto", padding: "10px" }}>
-        
-        {loading && (
-          <p style={{ textAlign: "center", color: "#aaa", padding: "20px 0" }}>🔄 جاري حساب النقاط وترتيب الأندية...</p>
-        )}
-
-        {error && (
-          <p style={{ textAlign: "center", color: "#ff4d4d", padding: "20px 0" }}>{error}</p>
-        )}
-
-        {!loading && !error && standings.length > 0 && (
-          <table style={{ width: "100%", borderCollapse: "collapse", textAlign: "right", minWidth: "500px" }}>
-            <thead>
-              <tr style={{ borderBottom: "2px solid #1e3d30", color: "#2ecc71", fontSize: "14px" }}>
-                <th style={{ padding: "12px 8px", width: "40px" }}>الترتيب</th>
-                <th style={{ padding: "12px 8px" }}>الفريق</th>
-                <th style={{ padding: "12px 8px", textAlign: "center" }}>لعب</th>
-                <th style={{ padding: "12px 8px", textAlign: "center" }}> +/-</th>
-                <th style={{ padding: "12px 8px", textAlign: "center" }}>النقاط</th>
-              </tr>
-            </thead>
-            <tbody>
-              {standings.map((team, index) => (
-                <tr 
-                  key={team.teamId || index} 
-                  style={{ 
-                    borderBottom: "1px solid #1e3d30", 
-                    fontSize: "15px",
-                    background: index < 4 ? "rgba(46, 204, 113, 0.03)" : "none"
-                  }}
-                >
-                  <td style={{ padding: "12px 8px", fontWeight: "bold", color: index < 4 ? "#2ecc71" : "#666" }}>
-                    {index + 1}
-                  </td>
-                  <td style={{ padding: "12px 8px", display: "flex", alignItems: "center", gap: "10px" }}>
-                    {team.teamIconUrl && (
-                      <img src={team.teamIconUrl} alt={team.teamName} style={{ width: "24px", height: "24px", objectFit: "contain" }} />
-                    )}
-                    <span style={{ fontWeight: "500" }}>{team.teamName}</span>
-                  </td>
-                  <td style={{ padding: "12px 8px", textAlign: "center", color: "#aaa" }}>
-                    {team.matches}
-                  </td>
-                  <td style={{ padding: "12px 8px", textAlign: "center", color: team.opponentGoals > 0 ? "#aaa" : "#ff4d4d" }}>
-                    {team.goals - team.opponentGoals}
-                  </td>
-                  <td style={{ padding: "12px 8px", textAlign: "center", fontWeight: "bold", color: "#fff" }}>
-                    {team.points}
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        )}
-
-      </div>
-
     </main>
   );
 }
+
+const styles = {
+  main: { minHeight: "100vh", background: "#07100d", color: "#f4f8f6", padding: "30px 18px 60px", fontFamily: "Arial, Helvetica, sans-serif" },
+  container: { maxWidth: 1100, margin: "0 auto" },
+  back: { color: "#2ecc71", textDecoration: "none", fontWeight: 800 },
+  header: { display: "flex", alignItems: "center", gap: 15, marginTop: 25, padding: "25px 20px", borderRadius: 22, background: "linear-gradient(145deg,#123326,#0b1712)", border: "1px solid #1e3d30" },
+  icon: { fontSize: 40 },
+  h1: { margin: 0, fontSize: "clamp(25px,5vw,40px)" },
+  muted: { color: "#82968d", margin: "8px 0 0", lineHeight: 1.7 },
+  grid: { display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(250px,1fr))", gap: 15, marginTop: 25 },
+  card: { display: "flex", flexDirection: "column", gap: 10, padding: 20, borderRadius: 20, background: "linear-gradient(145deg,#10251c,#0b1713)", border: "1px solid #1e3d30", color: "#f4f8f6", textDecoration: "none" },
+  cardIcon: { fontSize: 28 },
+  cardName: { fontSize: 18, fontWeight: 900 },
+  cardText: { color: "#82968d", fontSize: 13 },
+  cardLink: { color: "#2ecc71", fontWeight: 800, fontSize: 12, marginTop: 6 },
+  nav: { display: "flex", gap: 10, flexWrap: "wrap", marginTop: 30 },
+  navLink: { color: "#2ecc71", textDecoration: "none", padding: "10px 14px", borderRadius: 12, background: "rgba(46,204,113,.07)", border: "1px solid rgba(46,204,113,.12)", fontWeight: 800 },
+};
