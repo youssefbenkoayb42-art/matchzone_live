@@ -945,30 +945,7 @@ export default async function MatchPage({ params }) {
           </div>
         </section>
 
-        {/* معلومات إضافية */}
-        {(match.fixture.venue?.name || match.eventId) && (
-          <div
-            style={{
-              marginTop: "30px",
-              background: "linear-gradient(145deg, #10251c, #0b1713)",
-              border: "1px solid #284238",
-              borderRadius: "25px",
-              padding: "25px 20px",
-              textAlign: "center",
-            }}
-          >
-            {match.fixture.venue?.name && (
-              <p style={{ color: "#c5d2cc", margin: "8px" }}>
-                🏟️ الملعب:{" "}
-                <strong>{match.fixture.venue.name}</strong>
-              </p>
-            )}
 
-            <p style={{ color: "#82968d", margin: "8px" }}>
-              🆔 رقم المباراة: {match.eventId}
-            </p>
-          </div>
-        )}
       </div>
     </main>
     </>
