@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { notFound } from "next/navigation";
 
 const LEAGUES = [
   { slug: "premier-league", id: "4328", name: "الدوري الإنجليزي الممتاز", english: "Premier League", logo: "/leagues/premier-league.svg" },
@@ -38,7 +39,9 @@ async function getStandings(leagueId) {
 }
 
 export default async function StandingsPage({ params }) {
-  const league = LEAGUES.find((item) => item.slug === params.league) || LEAGUES[0];
+  const league = LEAGUES.find((item) => item.slug === params.league);
+  if (!league) notFound();
+
   const table = await getStandings(league.id);
 
   return (
@@ -100,7 +103,12 @@ export default async function StandingsPage({ params }) {
                         <td style={{ ...styles.td, fontWeight: 900 }}>{rank}</td>
                         <td style={styles.teamCell}>
                           {badge ? <img src={badge} alt="" style={styles.teamLogo} loading="lazy" /> : null}
-                          <span>{team?.strTeam || "فريق"}</span>
+                          <Link
+                            href={`/teams/${encodeURIComponent(team?.strTeam || "فريق")}`}
+                            style={styles.teamLink}
+                          >
+                            {team?.strTeam || "فريق"}
+                          </Link>
                         </td>
                         <td style={styles.td}>{team?.intPlayed ?? 0}</td>
                         <td style={styles.td}>{team?.intWin ?? 0}</td>
@@ -155,6 +163,7 @@ const styles = {
   td: { padding: "13px 10px", textAlign: "center", borderTop: "1px solid rgba(255,255,255,.055)", color: "#dce7e2", whiteSpace: "nowrap" },
   teamCell: { padding: "11px 12px", borderTop: "1px solid rgba(255,255,255,.055)", display: "flex", alignItems: "center", gap: 10, fontWeight: 800, whiteSpace: "nowrap" },
   teamLogo: { width: 28, height: 28, objectFit: "contain" },
+  teamLink: { color: "#f4f8f6", textDecoration: "none", fontWeight: 800 },
   points: { color: "#2ecc71", fontWeight: 900, fontSize: 14 },
   empty: { textAlign: "center", padding: "55px 20px", color: "#82968d" },
   emptyIcon: { fontSize: 36, marginBottom: 8 },
