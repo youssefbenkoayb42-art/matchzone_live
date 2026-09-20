@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+const BASE_URL = "https://matchzone-live.vercel.app";
+
 const LEAGUES = [
   { slug: "premier-league", id: "4328", name: "الدوري الإنجليزي الممتاز", english: "Premier League", logo: "/leagues/premier-league.svg" },
   { slug: "la-liga", id: "4335", name: "الدوري الإسباني", english: "LaLiga", logo: "/leagues/la-liga.svg" },
@@ -21,6 +23,11 @@ export async function generateMetadata({ params }) {
     description: league
       ? `جدول ترتيب ${league.name} مع النقاط والمباريات والانتصارات والتعادلات والخسائر.`
       : "جداول ترتيب دوريات كرة القدم.",
+    alternates: {
+      canonical: league
+        ? `${BASE_URL}/standings/${league.slug}`
+        : `${BASE_URL}/standings/${params.league}`,
+    },
   };
 }
 
