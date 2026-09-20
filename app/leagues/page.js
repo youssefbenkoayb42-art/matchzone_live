@@ -11,6 +11,7 @@ const LEAGUES = [
 export const metadata = {
   title: "أهم بطولات كرة القدم",
   description: "تصفح أهم بطولات كرة القدم مع الشعارات الرسمية والهوية البصرية لكل دوري، ومتابعة المباريات والنتائج والمواعيد.",
+  alternates: { canonical: "https://matchzone-live.vercel.app/leagues" },
 };
 
 export default function LeaguesPage() {
