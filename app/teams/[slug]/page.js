@@ -185,7 +185,7 @@ export default async function TeamPage({ params }) {
 
               {leagueName && (
                 <a
-                  href={`/leagues/${encodeURIComponent(leagueName.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, ""))}`}
+                  href={team?.idLeague ? `/leagues/league-${team.idLeague}` : "/leagues"}
                   style={styles.leagueLink}
                 >
                   🏆 {leagueName}
