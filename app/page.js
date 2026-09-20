@@ -1327,26 +1327,67 @@ export default function HomeDesign() {
                         </div>
                       </div>
 
-                      {/* Match details */}
+                      {/* SEO internal links */}
+
+                      <div
+                        style={{
+                          display: "grid",
+                          gridTemplateColumns: "1fr 1fr",
+                          gap: "8px",
+                          marginTop: "20px",
+                        }}
+                      >
+                        <a
+                          href={`/teams/${encodeURIComponent(match.home)}`}
+                        style={{
+                          display: "block",
+                          textAlign: "center",
+                          textDecoration: "none",
+                          color: "#2ecc71",
+                          background: "rgba(46,204,113,.06)",
+                          border: "1px solid rgba(46,204,113,.12)",
+                          padding: "11px 7px",
+                          borderRadius: "11px",
+                          fontSize: "10px",
+                          fontWeight: "800",
+                        }}
+                      >
+                        {match.home}
+                        </a>
+
+                        <a
+                          href={`/teams/${encodeURIComponent(match.away)}`}
+                          style={{
+                            display: "block",
+                            textAlign: "center",
+                            textDecoration: "none",
+                            color: "#2ecc71",
+                            background: "rgba(46,204,113,.06)",
+                            border: "1px solid rgba(46,204,113,.12)",
+                            padding: "11px 7px",
+                            borderRadius: "11px",
+                            fontSize: "10px",
+                            fontWeight: "800",
+                          }}
+                        >
+                          {match.away}
+                        </a>
+                      </div>
 
                       <a
                         href={`/matches/${match.id}`}
                         style={{
                           display: "block",
-                          marginTop: "20px",
+                          marginTop: "10px",
                           textAlign: "center",
                           textDecoration: "none",
                           color: "#cbd5d0",
-                          background:
-                            "rgba(255,255,255,.035)",
-                          border:
-                            "1px solid rgba(255,255,255,.06)",
+                          background: "rgba(255,255,255,.035)",
+                          border: "1px solid rgba(255,255,255,.06)",
                           padding: "11px",
                           borderRadius: "11px",
                           fontSize: "11px",
                           fontWeight: "800",
-                          transition:
-                            "background .2s",
                         }}
                       >
                         تفاصيل المباراة ←
