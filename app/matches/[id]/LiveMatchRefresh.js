@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 
 const LIVE_STATUSES = new Set(["1H", "2H", "HT", "ET", "BT", "P", "INT"]);
+const FINISHED_STATUSES = new Set(["FT", "AET", "PEN"]);
 
 export default function LiveMatchRefresh({ matchId, initialStatus, initialHome, initialAway }) {
   const router = useRouter();
@@ -52,17 +53,22 @@ export default function LiveMatchRefresh({ matchId, initialStatus, initialHome, 
     };
 
     checkMatch();
-    const interval = window.setInterval(checkMatch, 30000);
+
+    // لا حاجة لاستدعاءات إضافية بعد انتهاء المباراة.
+    // للمباريات القادمة نستخدم فحصًا أبطأ لتقليل الضغط على الـ API.
+    const interval = FINISHED_STATUSES.has(initialStatus)
+      ? null
+      : window.setInterval(checkMatch, isLive ? 30000 : 60000);
 
     return () => {
       cancelled = true;
-      window.clearInterval(interval);
+      if (interval) window.clearInterval(interval);
     };
   }, [matchId, initialStatus, initialHome, initialAway, router]);
 
   const statusText = isLive
     ? "🔴 يتم التحقق من النتيجة مباشرة"
-    : "🔄 تحديث تلقائي كل 30 ثانية";
+    : "🔄 تحديث تلقائي كل 60 ثانية";
 
   return (
     <div
