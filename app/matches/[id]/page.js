@@ -62,6 +62,33 @@ export default async function MatchPage({ params }) {
 
   const matchStatus = match.fixture.status.short;
 
+  const leagueSlug =
+    match.league.id === 4328 ? "premier-league" :
+    match.league.id === 4335 ? "la-liga" :
+    match.league.id === 4332 ? "serie-a" :
+    match.league.id === 4331 ? "bundesliga" :
+    match.league.id === 4334 ? "ligue-1" : null;
+
+  const breadcrumbData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "الرئيسية", item: BASE_URL },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: match.league.name,
+        item: leagueSlug ? BASE_URL + "/leagues/" + leagueSlug : BASE_URL + "/leagues",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: match.teams.home.name + " ضد " + match.teams.away.name,
+        item: BASE_URL + "/matches/" + id,
+      },
+    ],
+  };
+
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "SportsEvent",
@@ -106,6 +133,10 @@ export default async function MatchPage({ params }) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }}
       />
       <main
       style={{
