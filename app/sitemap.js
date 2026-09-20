@@ -9,26 +9,23 @@ const leagues = [
 ];
 
 async function getSitemapEvents() {
-  const date = new Date().toISOString().slice(0, 10);
-  const leagueIds = [4328, 4335, 4332, 4331, 4334];
+  const startDate = new Date();
+
+  const dates = Array.from({ length: 7 }, (_, index) => {
+    const target = new Date(startDate);
+    target.setUTCDate(target.getUTCDate() + index);
+    return target.toISOString().slice(0, 10);
+  });
 
   try {
-    const requests = leagueIds.flatMap((leagueId) => [
-      fetch(
-        `https://www.thesportsdb.com/api/v1/json/123/eventsday.php?d=${date}&l=${leagueId}`,
-        { next: { revalidate: 300 } }
-      ),
-      fetch(
-        `https://www.thesportsdb.com/api/v1/json/123/eventsnextleague.php?id=${leagueId}`,
-        { next: { revalidate: 900 } }
-      ),
-      fetch(
-        `https://www.thesportsdb.com/api/v1/json/123/eventspastleague.php?id=${leagueId}`,
-        { next: { revalidate: 900 } }
-      ),
-    ]);
-
-    const responses = await Promise.all(requests);
+    const responses = await Promise.all(
+      dates.map((date) =>
+        fetch(
+          `https://www.thesportsdb.com/api/v1/json/123/eventsday.php?d=${date}&s=Soccer`,
+          { next: { revalidate: 900 } }
+        )
+      )
+    );
 
     const data = await Promise.all(
       responses.map(async (res) => {
