@@ -56,7 +56,7 @@ export default async function StandingsPage({ params }) {
           <div>
             <span style={styles.eyebrow}>MATCHZONE • STANDINGS</span>
             <h1 style={styles.title}>ترتيب {league.name}</h1>
-            <p style={styles.muted}>جدول الترتيب الحالي مع النقاط ونتائج الفرق.</p>
+            <p style={styles.muted}>جدول الترتيب الحالي مع النقاط ونتائج الفرق • يتجدد تلقائيًا كل 5 دقائق.</p>
           </div>
         </header>
 
@@ -98,9 +98,16 @@ export default async function StandingsPage({ params }) {
                     const rank = Number(team?.intRank || index + 1);
                     const points = Number(team?.intPoints || 0);
                     const badge = team?.strBadge;
+                    const goalDifference = Number(team?.intGoalDifference || 0);
+                    const rankStyle =
+                      rank === 1 ? styles.firstRank :
+                      rank === 2 ? styles.secondRank :
+                      rank === 3 ? styles.thirdRank : {};
                     return (
-                      <tr key={team?.idTeam || team?.strTeam || index}>
-                        <td style={{ ...styles.td, fontWeight: 900 }}>{rank}</td>
+                      <tr key={team?.idTeam || team?.strTeam || index} style={rank <= 3 ? styles.highlightRow : undefined}>
+                        <td style={{ ...styles.td, ...rankStyle, fontWeight: 900 }}>
+                          {rank <= 3 ? ["🥇", "🥈", "🥉"][rank - 1] : rank}
+                        </td>
                         <td style={styles.teamCell}>
                           {badge ? <img src={badge} alt="" style={styles.teamLogo} loading="lazy" /> : null}
                           <Link
@@ -116,7 +123,9 @@ export default async function StandingsPage({ params }) {
                         <td style={styles.td}>{team?.intLoss ?? 0}</td>
                         <td style={styles.td}>{team?.intGoalsFor ?? 0}</td>
                         <td style={styles.td}>{team?.intGoalsAgainst ?? 0}</td>
-                        <td style={styles.td}>{team?.intGoalDifference ?? 0}</td>
+                        <td style={{ ...styles.td, color: goalDifference > 0 ? "#2ecc71" : goalDifference < 0 ? "#ff7b7b" : "#dce7e2", fontWeight: 800 }}>
+                          {goalDifference > 0 ? "+" + goalDifference : goalDifference}
+                        </td>
                         <td style={{ ...styles.td, ...styles.points }}>{points}</td>
                       </tr>
                     );
@@ -165,6 +174,10 @@ const styles = {
   teamLogo: { width: 28, height: 28, objectFit: "contain" },
   teamLink: { color: "#f4f8f6", textDecoration: "none", fontWeight: 800 },
   points: { color: "#2ecc71", fontWeight: 900, fontSize: 14 },
+  highlightRow: { background: "rgba(46,204,113,.025)" },
+  firstRank: { color: "#f5c542", fontSize: 16 },
+  secondRank: { color: "#c7d0d5", fontSize: 16 },
+  thirdRank: { color: "#c98b5a", fontSize: 16 },
   empty: { textAlign: "center", padding: "55px 20px", color: "#82968d" },
   emptyIcon: { fontSize: 36, marginBottom: 8 },
   footerLinks: { display: "flex", flexWrap: "wrap", gap: 10, alignItems: "center", marginTop: 20 },
