@@ -8,7 +8,7 @@ const leagues = [
   "ligue-1",
 ];
 
-async function getTodayMatchIds() {
+async function getTodayMatches() {
   const date = new Date().toISOString().slice(0, 10);
   const leagueIds = [4328, 4335, 4332, 4331, 4334];
 
@@ -25,9 +25,7 @@ async function getTodayMatchIds() {
       })
     );
 
-    return [...new Set(
-      responses.flat().map((event) => event?.idEvent).filter(Boolean)
-    )];
+    return responses.flat();
   } catch {
     return [];
   }
@@ -35,18 +33,56 @@ async function getTodayMatchIds() {
 
 export default async function sitemap() {
   const now = new Date();
-  const matchIds = await getTodayMatchIds();
+  const events = await getTodayMatches();
+
+  const matchIds = [
+    ...new Set(events.map((event) => event?.idEvent).filter(Boolean)),
+  ];
+
+  const teamNames = [
+    ...new Set(
+      events
+        .flatMap((event) => [event?.strHomeTeam, event?.strAwayTeam])
+        .filter(Boolean)
+    ),
+  ];
 
   return [
-    { url: BASE_URL, lastModified: now, changeFrequency: "hourly", priority: 1 },
-    { url: `${BASE_URL}/leagues`, lastModified: now, changeFrequency: "daily", priority: 0.9 },
-    { url: `${BASE_URL}/matches/today`, lastModified: now, changeFrequency: "hourly", priority: 0.95 },
-    { url: `${BASE_URL}/stats`, lastModified: now, changeFrequency: "daily", priority: 0.7 },
+    {
+      url: BASE_URL,
+      lastModified: now,
+      changeFrequency: "hourly",
+      priority: 1,
+    },
+    {
+      url: `${BASE_URL}/leagues`,
+      lastModified: now,
+      changeFrequency: "daily",
+      priority: 0.9,
+    },
+    {
+      url: `${BASE_URL}/matches/today`,
+      lastModified: now,
+      changeFrequency: "hourly",
+      priority: 0.95,
+    },
+    {
+      url: `${BASE_URL}/stats`,
+      lastModified: now,
+      changeFrequency: "daily",
+      priority: 0.7,
+    },
     ...leagues.map((slug) => ({
       url: `${BASE_URL}/leagues/${slug}`,
       lastModified: now,
       changeFrequency: "daily",
       priority: 0.8,
+    })),
+    ...teamNames.map((team) => ({
+      url: `${BASE_URL}/teams/${encodeURIComponent(team)}`,
+      lastModified: now,
+      changeFrequency: "daily",
+      priority: 0.75,
     })),
     ...matchIds.map((id) => ({
       url: `${BASE_URL}/matches/${id}`,
