@@ -557,7 +557,7 @@ export default async function MatchPage({ params }) {
 
 
         {/* الخط الزمني للمباراة */}
-        {match.timeline?.length > 0} && (
+        {match.timeline?.length > 0 && (
           <section
             style={{
               marginTop: "30px",
