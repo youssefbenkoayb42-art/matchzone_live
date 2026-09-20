@@ -21,6 +21,49 @@ const LEAGUE_LOGOS = {
   "ligue-1": "/leagues/ligue-1.svg",
 };
 
+function TeamLogo({ src, alt, size = 48 }) {
+  const [failed, setFailed] = useState(false);
+
+  if (!src || failed) {
+    return (
+      <div
+        aria-label={alt}
+        title={alt}
+        style={{
+          width: `${size}px`,
+          height: `${size}px`,
+          margin: "0 auto 8px",
+          borderRadius: "12px",
+          background: "rgba(255,255,255,.06)",
+          border: "1px solid rgba(255,255,255,.08)",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          fontSize: `${Math.max(18, Math.round(size * 0.42))}px`,
+        }}
+      >
+        ⚽
+      </div>
+    );
+  }
+
+  return (
+    <img
+      src={src}
+      alt={alt}
+      loading="lazy"
+      onError={() => setFailed(true)}
+      style={{
+        width: `${size}px`,
+        height: `${size}px`,
+        objectFit: "contain",
+        margin: "0 auto 8px",
+        display: "block",
+      }}
+    />
+  );
+}
+
 function LeagueLogo({ slug, name }) {
   return (
     <img
@@ -202,7 +245,7 @@ export default function HomeDesign() {
             <div style={{ display: "flex", flexDirection: "row", flexWrap: "nowrap", alignItems: "center", justifyContent: "center", direction: "ltr", gap: "10px" }}>
               {[["home", featuredMatch.home, featuredMatch.homeLogo], ["away", featuredMatch.away, featuredMatch.awayLogo]].map(([side, team, logo]) => (
                 <div key={side} style={{ flex: "1 1 0", width: 0, minWidth: 0, textAlign: "center" }}>
-                  {logo ? <img src={logo} alt={team} style={{ width: "62px", height: "62px", objectFit: "contain", display: "block", margin: "0 auto 8px" }} /> : <div style={{ height: "62px" }} />}
+                  <TeamLogo src={logo} alt={team} size={62} />
                   <div style={{ fontSize: "12px", fontWeight: "800", color: "#dce7e1", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{team}</div>
                 </div>
               ))}
@@ -249,9 +292,9 @@ export default function HomeDesign() {
                     <span style={{ color: getStatusType(match.status) === "live" ? "#ff4d4d" : "#8b9892", fontSize: "10px", fontWeight: "900" }}>{match.status}</span>
                   </div>
                   <div style={{ display: "grid", gridTemplateColumns: "1fr auto 1fr", alignItems: "center", gap: "10px", direction: "ltr" }}>
-                    <div style={{ textAlign: "center", minWidth: 0 }}><img src={match.homeLogo || "/logo.png"} alt={match.home} style={{ width: "48px", height: "48px", objectFit: "contain", margin: "0 auto 8px", display: "block" }} /><div style={{ fontSize: "11px", fontWeight: "800", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{match.home}</div></div>
+                    <div style={{ textAlign: "center", minWidth: 0 }}><TeamLogo src={match.homeLogo} alt={match.home} /><div style={{ fontSize: "11px", fontWeight: "800", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{match.home}</div></div>
                     <div style={{ textAlign: "center", minWidth: "65px" }}><div style={{ fontSize: "22px", fontWeight: "900" }}>{match.homeScore ?? "-"} - {match.awayScore ?? "-"}</div><div style={{ color: "#718078", fontSize: "10px", marginTop: "4px" }}>{match.time}</div></div>
-                    <div style={{ textAlign: "center", minWidth: 0 }}><img src={match.awayLogo || "/logo.png"} alt={match.away} style={{ width: "48px", height: "48px", objectFit: "contain", margin: "0 auto 8px", display: "block" }} /><div style={{ fontSize: "11px", fontWeight: "800", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{match.away}</div></div>
+                    <div style={{ textAlign: "center", minWidth: 0 }}><TeamLogo src={match.awayLogo} alt={match.away} /><div style={{ fontSize: "11px", fontWeight: "800", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{match.away}</div></div>
                   </div>
                   <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "8px", marginTop: "20px" }}>
                     <a href={`/teams/${encodeURIComponent(match.home)}`} style={{ display: "block", textAlign: "center", textDecoration: "none", color: "#2ecc71", background: "rgba(46,204,113,.06)", border: "1px solid rgba(46,204,113,.12)", padding: "11px 7px", borderRadius: "11px", fontSize: "10px", fontWeight: "800" }}>{match.home}</a>
