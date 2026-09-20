@@ -47,11 +47,12 @@ async function getTodayMatches(leagueId) {
   }
 }
 
-function MatchCard({ match, league }) {
+function MatchCard({ match, league, featured = false }) {
   const isFinished = Boolean(match.intHomeScore != null && match.intAwayScore != null);
   return (
-    <article style={styles.card}>
+    <article style={featured ? { ...styles.card, ...styles.featuredCard } : styles.card}>
       <div style={styles.competition}>{league.english}</div>
+      <div style={styles.status}>{isFinished ? "النتيجة النهائية" : "المباراة القادمة"}</div>
       <div style={styles.teams}>
         <a href={"/teams/" + encodeURIComponent(match.strHomeTeam || "")} style={styles.team}>
           <strong>{match.strHomeTeam || "الفريق المضيف"}</strong>
@@ -68,7 +69,7 @@ function MatchCard({ match, league }) {
       <div style={styles.meta}>
         {match.dateEvent || ""}{match.strTime ? " • " + match.strTime : ""}
       </div>
-      <a href={"/matches/" + match.idEvent} style={styles.button}>تفاصيل المباراة</a>
+      <a href={"/matches/" + match.idEvent} style={styles.button}>عرض تفاصيل المباراة ←</a>
     </article>
   );
 }
@@ -100,14 +101,19 @@ export default async function LeaguePage({ params }) {
         <a href="/leagues" style={styles.link}>← كل البطولات</a>
 
         <header style={styles.header}>
-          <span style={{ fontSize: 38 }}>🏆</span>
-          <div>
+          <div style={styles.logoBox}>🏆</div>
+          <div style={{ flex: 1 }}>
+            <div style={styles.eyebrow}>MATCHZONE • LEAGUE</div>
             <h1 style={styles.h1}>{league.name}</h1>
-            <p style={styles.muted}>المباريات القادمة والنتائج وآخر مباريات البطولة</p>
+            <p style={styles.muted}>{league.description}</p>
           </div>
         </header>
 
-        <p style={styles.description}>{league.description}</p>
+        <div style={styles.stats}>
+          <div style={styles.statBox}><strong>{today.length}</strong><span>اليوم</span></div>
+          <div style={styles.statBox}><strong>{upcomingMatches.length}</strong><span>قادمة</span></div>
+          <div style={styles.statBox}><strong>{recentResults.length}</strong><span>نتائج</span></div>
+        </div>
 
         <section>
           <h2 style={styles.h2}>مباريات {league.name} اليوم</h2>
@@ -119,11 +125,18 @@ export default async function LeaguePage({ params }) {
         </section>
 
         <section>
-          <h2 style={styles.h2}>المباريات القادمة</h2>
+          <h2 style={styles.h2}>المباراة القادمة</h2>
           {upcomingMatches.length === 0 ? (
             <div style={styles.empty}>لا توجد مباريات قادمة متاحة حالياً.</div>
           ) : (
-            <div style={styles.grid}>{upcomingMatches.map((match) => <MatchCard key={match.idEvent} match={match} league={league} />)}</div>
+            <MatchCard match={upcomingMatches[0]} league={league} featured />
+          )}
+
+          {upcomingMatches.length > 1 && (
+            <>
+              <h2 style={styles.h2}>باقي المباريات القادمة</h2>
+              <div style={styles.grid}>{upcomingMatches.slice(1).map((match) => <MatchCard key={match.idEvent} match={match} league={league} />)}</div>
+            </>
           )}
         </section>
 
@@ -152,23 +165,29 @@ export default async function LeaguePage({ params }) {
 }
 
 const styles = {
-  main: { minHeight: "100vh", background: "#07100d", color: "#f4f8f6", padding: "30px 18px 60px", fontFamily: "Arial, Helvetica, sans-serif" },
+  main: { minHeight: "100vh", background: "#07100d", color: "#f4f8f6", padding: "24px 16px 70px", fontFamily: "Arial, Helvetica, sans-serif" },
   container: { maxWidth: 1100, margin: "0 auto" },
-  header: { display: "flex", alignItems: "center", gap: 15, marginTop: 30, padding: "25px 20px", borderRadius: 22, background: "linear-gradient(145deg,#123326,#0b1712)", border: "1px solid #1e3d30" },
-  h1: { margin: 0, fontSize: "clamp(24px,5vw,38px)" },
+  header: { display: "flex", alignItems: "center", gap: 16, marginTop: 24, padding: "26px 22px", borderRadius: 24, background: "linear-gradient(145deg,#123326,#0b1712)", border: "1px solid #1e3d30", boxShadow: "0 18px 50px rgba(0,0,0,.22)" },
+  logoBox: { width: 66, height: 66, borderRadius: 20, display: "grid", placeItems: "center", fontSize: 34, background: "rgba(46,204,113,.08)", border: "1px solid rgba(46,204,113,.18)", flexShrink: 0 },
+  eyebrow: { color: "#2ecc71", fontSize: 10, fontWeight: 900, letterSpacing: 1, marginBottom: 7 },
+  h1: { margin: 0, fontSize: "clamp(24px,5vw,38px)", lineHeight: 1.2 },
   h2: { margin: "35px 0 18px", fontSize: 22 },
-  muted: { color: "#82968d", margin: "8px 0 0" },
-  description: { color: "#b8c6bf", lineHeight: 1.8, marginTop: 22 },
+  muted: { color: "#82968d", margin: "8px 0 0", lineHeight: 1.7 },
   link: { color: "#2ecc71", textDecoration: "none", fontWeight: 800 },
+  stats: { display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 10, marginTop: 14 },
+  statBox: { background: "rgba(255,255,255,.035)", border: "1px solid rgba(255,255,255,.07)", borderRadius: 16, padding: "15px 10px", textAlign: "center" },
+  statBoxStrong: { fontSize: 22, fontWeight: 900 },
+  card: { background: "linear-gradient(145deg,#10251c,#0b1713)", border: "1px solid #1e3d30", borderRadius: 20, padding: 18, boxShadow: "0 12px 35px rgba(0,0,0,.14)" },
+  featuredCard: { padding: 24, border: "1px solid rgba(46,204,113,.22)", background: "linear-gradient(145deg,#153b2a,#0b1713)" },
+  competition: { color: "#2ecc71", fontSize: 12, fontWeight: 800, marginBottom: 6 },
+  status: { color: "#82968d", fontSize: 11, marginBottom: 20 },
   grid: { display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(280px,1fr))", gap: 15 },
-  card: { background: "linear-gradient(145deg,#10251c,#0b1713)", border: "1px solid #1e3d30", borderRadius: 20, padding: 18 },
-  competition: { color: "#2ecc71", fontSize: 12, fontWeight: 800, marginBottom: 20 },
   teams: { display: "grid", gridTemplateColumns: "1fr auto 1fr", gap: 12, alignItems: "center", textAlign: "center", direction: "ltr" },
-  team: { color: "#f4f8f6", textDecoration: "none", minWidth: 0 },
+  team: { color: "#f4f8f6", textDecoration: "none", minWidth: 0, padding: 8, borderRadius: 12 },
   teamSmall: { display: "block", color: "#718078", marginTop: 5, fontSize: 11 },
-  score: { fontSize: 22, fontWeight: 900, whiteSpace: "nowrap" },
+  score: { fontSize: 24, fontWeight: 900, whiteSpace: "nowrap" },
   meta: { color: "#718078", fontSize: 11, textAlign: "center", margin: "18px 0" },
-  button: { display: "block", textAlign: "center", background: "rgba(46,204,113,.08)", border: "1px solid rgba(46,204,113,.14)", color: "#2ecc71", padding: 11, borderRadius: 11, textDecoration: "none", fontWeight: 800, fontSize: 12 },
+  button: { display: "block", textAlign: "center", background: "rgba(46,204,113,.08)", border: "1px solid rgba(46,204,113,.14)", color: "#2ecc71", padding: 12, borderRadius: 12, textDecoration: "none", fontWeight: 800, fontSize: 12 },
   empty: { padding: 35, borderRadius: 18, background: "rgba(255,255,255,.03)", border: "1px solid rgba(255,255,255,.06)", color: "#82968d", textAlign: "center" },
   nav: { display: "flex", gap: 8, flexWrap: "wrap", marginTop: 35 },
   navLink: { color: "#b8c6bf", textDecoration: "none", padding: "9px 12px", borderRadius: 10, background: "rgba(255,255,255,.04)" },
