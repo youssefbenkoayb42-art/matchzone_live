@@ -40,6 +40,7 @@ export default async function sitemap() {
   return [
     { url: BASE_URL, lastModified: now, changeFrequency: "hourly", priority: 1 },
     { url: `${BASE_URL}/leagues`, lastModified: now, changeFrequency: "daily", priority: 0.9 },
+    { url: `${BASE_URL}/matches/today`, lastModified: now, changeFrequency: "hourly", priority: 0.95 },
     { url: `${BASE_URL}/stats`, lastModified: now, changeFrequency: "daily", priority: 0.7 },
     ...leagues.map((slug) => ({
       url: `${BASE_URL}/leagues/${slug}`,
