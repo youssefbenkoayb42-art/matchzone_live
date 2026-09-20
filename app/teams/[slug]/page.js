@@ -66,12 +66,20 @@ function EventCard({ event, featured = false }) {
 export async function generateMetadata({ params }) {
   const { slug } = await params;
   const teamName = decodeURIComponent(slug);
+  const team = await getTeam(teamName);
+  const displayName = team?.strTeam || teamName;
 
   return {
-    title: `${teamName} | المباريات والنتائج`,
-    description: `تابع مباريات ونتائج ${teamName} والمواعيد القادمة وآخر المواجهات على MatchZone.`,
+    title: `${displayName} | المباريات والنتائج`,
+    description: `تابع مباريات ونتائج ${displayName} والمواعيد القادمة وآخر المواجهات على MatchZone.`,
     alternates: {
       canonical: `${BASE_URL}/teams/${encodeURIComponent(teamName)}`,
+    },
+    openGraph: {
+      title: `${displayName} | MatchZone`,
+      description: `مباريات ${displayName} القادمة وآخر النتائج.`,
+      url: `${BASE_URL}/teams/${encodeURIComponent(teamName)}`,
+      images: team?.strTeamBadge ? [{ url: team.strTeamBadge, alt: displayName }] : [],
     },
   };
 }
@@ -92,6 +100,10 @@ export default async function TeamPage({ params }) {
   const recent = lastEvents.slice(0, 5);
   const teamDisplayName = team?.strTeam || teamName;
   const teamUrl = `${BASE_URL}/teams/${encodeURIComponent(teamName)}`;
+  const leagueName = team?.strLeague || "";
+  const country = team?.strCountry || "";
+  const venue = team?.strStadium || "";
+  const founded = team?.intFormedYear || "";
 
   const breadcrumbData = {
     "@context": "https://schema.org",
@@ -112,12 +124,30 @@ export default async function TeamPage({ params }) {
     ],
   };
 
+  const teamSchema = {
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    name: teamDisplayName,
+    url: teamUrl,
+    sport: "Football",
+    logo: team?.strTeamBadge || undefined,
+    location: country ? { "@type": "Place", name: country } : undefined,
+    foundingDate: founded ? String(founded) : undefined,
+    memberOf: leagueName ? { "@type": "SportsOrganization", name: leagueName } : undefined,
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(breadcrumbData),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(teamSchema),
         }}
       />
 
@@ -153,9 +183,20 @@ export default async function TeamPage({ params }) {
                 المواجهات على MatchZone.
               </p>
 
-              {team?.strLeague && (
-                <p style={styles.league}>🏆 {team.strLeague}</p>
+              {leagueName && (
+                <a
+                  href={`/leagues/${encodeURIComponent(leagueName.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, ""))}`}
+                  style={styles.leagueLink}
+                >
+                  🏆 {leagueName}
+                </a>
               )}
+
+              <div style={styles.metaRow}>
+                {country && <span>🌍 {country}</span>}
+                {venue && <span>🏟️ {venue}</span>}
+                {founded && <span>📅 تأسس {founded}</span>}
+              </div>
 
               <div style={styles.statGrid}>
                 <div style={styles.statBox}><strong>{upcoming.length}</strong><span>قادمة</span></div>
@@ -288,10 +329,20 @@ const styles = {
     color: "#82968d",
     lineHeight: 1.7,
   },
-  league: {
+  leagueLink: {
+    display: "inline-block",
     color: "#2ecc71",
-    fontWeight: 800,
-    marginBottom: 6,
+    textDecoration: "none",
+    fontWeight: 900,
+    marginTop: 3,
+  },
+  metaRow: {
+    display: "flex",
+    flexWrap: "wrap",
+    gap: 8,
+    marginTop: 12,
+    color: "#a9bbb3",
+    fontSize: 12,
   },
   statGrid: {
     display: "grid",
@@ -365,11 +416,6 @@ const styles = {
     fontSize: 12,
     fontWeight: 800,
   },
-  statsLine: {
-    color: "#9aaba4",
-    fontSize: 12,
-    margin: "6px 0 0",
-  },
   grid: {
     display: "grid",
     gridTemplateColumns: "repeat(auto-fit,minmax(280px,1fr))",
@@ -388,12 +434,6 @@ const styles = {
     border: "1px solid rgba(255,255,255,.07)",
     color: "#fff",
     textDecoration: "none",
-  },
-  team: {
-    overflow: "hidden",
-    textOverflow: "ellipsis",
-    whiteSpace: "nowrap",
-    fontWeight: 800,
   },
   middle: {
     display: "flex",
