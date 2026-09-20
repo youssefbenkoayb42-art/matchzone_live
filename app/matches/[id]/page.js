@@ -200,6 +200,8 @@ export default async function MatchPage({ params }) {
     eventStatus:
       matchStatus === "FT"
         ? "https://schema.org/EventCompleted"
+        : isLive
+        ? "https://schema.org/EventInProgress"
         : "https://schema.org/EventScheduled",
     location: match.fixture.venue?.name
       ? {
