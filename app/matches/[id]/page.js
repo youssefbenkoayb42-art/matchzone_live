@@ -59,6 +59,14 @@ async function getMatch(id) {
         home: event.intHomeScore !== null && event.intHomeScore !== undefined ? Number(event.intHomeScore) : null,
         away: event.intAwayScore !== null && event.intAwayScore !== undefined ? Number(event.intAwayScore) : null,
       },
+      events: {
+        homeGoals: event.strHomeGoalDetails || null,
+        awayGoals: event.strAwayGoalDetails || null,
+        homeYellowCards: event.strHomeYellowCards || null,
+        awayYellowCards: event.strAwayYellowCards || null,
+        homeRedCards: event.strHomeRedCards || null,
+        awayRedCards: event.strAwayRedCards || null,
+      },
       video: event.strVideo || null,
       eventId: event.idEvent,
     };
