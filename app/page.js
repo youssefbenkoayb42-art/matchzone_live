@@ -805,14 +805,15 @@ export default function HomeDesign() {
             }}
           >
             <div>
-              <div
+              <h1
                 style={{
-                  fontSize: "21px",
+                  margin: 0,
+                  fontSize: "clamp(22px,5vw,30px)",
                   fontWeight: "900",
                 }}
               >
-                🗓️ مباريات اليوم
-              </div>
+                🗓️ مباريات اليوم ونتائج كرة القدم
+              </h1>
 
               <div
                 style={{
