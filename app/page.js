@@ -14,6 +14,14 @@ function getArabicLeague(league) {
   return map[league] || league || "بطولة كرة القدم";
 }
 
+const LEAGUE_LOGOS = {
+  "premier-league": "https://cdn.simpleicons.org/premierleague",
+  "la-liga": "https://cdn.simpleicons.org/laliga",
+  "serie-a": "https://cdn.simpleicons.org/seriea",
+  bundesliga: "https://cdn.simpleicons.org/bundesliga",
+  "ligue-1": "https://cdn.simpleicons.org/ligue1",
+};
+
 function getStatusType(status) {
   const value = String(status || "").toUpperCase();
 
@@ -641,19 +649,50 @@ export default function HomeDesign() {
                 key={slug}
                 href={`/leagues/${slug}`}
                 style={{
-                  display: "block",
-                  padding: "14px 12px",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  gap: "10px",
+                  minHeight: "62px",
+                  padding: "10px 12px",
                   borderRadius: "14px",
-                  background: "rgba(46,204,113,.05)",
-                  border: "1px solid rgba(46,204,113,.1)",
+                  background: "linear-gradient(145deg,rgba(46,204,113,.08),rgba(255,255,255,.025))",
+                  border: "1px solid rgba(46,204,113,.12)",
                   color: "#dce7e1",
                   textDecoration: "none",
                   textAlign: "center",
                   fontSize: "12px",
                   fontWeight: "800",
+                  boxShadow: "0 8px 20px rgba(0,0,0,.12)",
                 }}
               >
-                🏆 {name}
+                <span
+                  style={{
+                    width: "36px",
+                    height: "36px",
+                    minWidth: "36px",
+                    borderRadius: "10px",
+                    background: "#fff",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    padding: "5px",
+                    boxSizing: "border-box",
+                  }}
+                >
+                  <img
+                    src={LEAGUE_LOGOS[slug]}
+                    alt={`شعار ${name}`}
+                    loading="lazy"
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "contain",
+                      display: "block",
+                    }}
+                  />
+                </span>
+                <span>{name}</span>
               </a>
             ))}
           </div>
