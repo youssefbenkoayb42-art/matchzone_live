@@ -29,7 +29,7 @@ async function getMatch(id) {
     const event = data.events?.[0];
     if (!event) return null;
 
-    const [statsResponse, lineupResponse] = await Promise.all([
+    const [statsResponse, lineupResponse, timelineResponse] = await Promise.all([
       fetch(
         `https://www.thesportsdb.com/api/v1/json/123/lookupeventstats.php?id=${encodeURIComponent(id)}`,
         { next: { revalidate: 300 } }
@@ -38,10 +38,15 @@ async function getMatch(id) {
         `https://www.thesportsdb.com/api/v1/json/123/lookuplineup.php?id=${encodeURIComponent(id)}`,
         { next: { revalidate: 300 } }
       ),
+      fetch(
+        `https://www.thesportsdb.com/api/v1/json/123/lookuptimeline.php?id=${encodeURIComponent(id)}`,
+        { next: { revalidate: 300 } }
+      ),
     ]);
 
     const statsData = statsResponse.ok ? await statsResponse.json() : {};
     const lineupData = lineupResponse.ok ? await lineupResponse.json() : {};
+    const timelineData = timelineResponse.ok ? await timelineResponse.json() : {};
 
     return {
       fixture: {
@@ -96,6 +101,19 @@ async function getMatch(id) {
             team: player.strHome === "Yes" ? "home" : "away",
             substitute: player.strSubstitute === "Yes",
             image: player.strCutout || player.strThumb || null,
+          }))
+        : [],
+      timeline: Array.isArray(timelineData.timeline)
+        ? timelineData.timeline.map((item) => ({
+            time: item.strTime || item.intTime || "",
+            type: item.strTimeline || "حدث",
+            detail: item.strTimelineDetail || null,
+            player: item.strPlayer || null,
+            assist: item.strAssist || null,
+            team: item.strHome === "Yes" ? "home" : "away",
+            substitute: item.strSubstitute || null,
+            card: item.strCard || null,
+            goal: item.strGoal || null,
           }))
         : [],
       video: event.strVideo || null,
@@ -537,6 +555,120 @@ export default async function MatchPage({ params }) {
           </a>
         </div>
 
+
+        {/* الخط الزمني للمباراة */}
+        {\{match.timeline?.length > 0} && (
+          <section
+            style={{
+              marginTop: "30px",
+              background: "linear-gradient(145deg, #10251c, #0b1713)",
+              border: "1px solid #284238",
+              borderRadius: "25px",
+              padding: "25px 20px",
+            }}
+          >
+            <p style={{ color: "#37e28a", margin: "0 0 6px", fontWeight: "800" }}>
+              ⏱️ أحداث المباراة
+            </p>
+            <h2 style={{ margin: "0 0 20px", fontSize: "clamp(20px, 5vw, 28px)" }}>
+              الخط الزمني
+            </h2>
+
+            <div style={{ display: "grid", gap: "10px" }}>
+              {\{match.timeline.map((item, index) => {}
+                const type = String(item.type || "").toLowerCase();
+                const detail = String(item.detail || "").toLowerCase();
+                const goal = String(item.goal || "").toLowerCase();
+                const card = String(item.card || "").toLowerCase();
+
+                const isGoal =
+                  type.includes("goal") || detail.includes("goal") || goal.length > 0;
+                const isSub =
+                  type.includes("sub") || detail.includes("sub") || Boolean(item.substitute);
+                const isRed = card.includes("red") || type.includes("red");
+                const isYellow = card.includes("yellow") || type.includes("yellow");
+
+                const icon = isGoal ? "⚽" : isRed ? "🟥" : isYellow ? "🟨" : isSub ? "🔄" : "•";
+                const label = isGoal
+                  ? "هدف"
+                  : isRed
+                  ? "بطاقة حمراء"
+                  : isYellow
+                  ? "بطاقة صفراء"
+                  : isSub
+                  ? "تبديل"
+                  : item.type || "حدث";
+
+                return (
+                  <div
+                    key={String(item.time) + "-" + (item.player || "event") + "-" + index}
+                    style={{
+                      display: "grid",
+                      gridTemplateColumns: "minmax(0, 1fr) auto minmax(0, 1fr)",
+                      gap: "10px",
+                      alignItems: "center",
+                      direction: "ltr",
+                    }}
+                  >
+                    <div style={{ direction: "rtl", textAlign: item.team === "home" ? "right" : "left", minWidth: 0 }}>
+                      {item.team === "home" && (
+                        <div style={{ color: "#f4f8f6", fontWeight: "800", overflowWrap: "anywhere" }}>
+                          {item.player || label}
+                        </div>
+                      )}
+                      {item.team === "home" && item.assist && (
+                        <div style={{ color: "#82968d", fontSize: "12px" }}>تمريرة: {item.assist}</div>
+                      )}
+                    </div>
+
+                    <div
+                      style={{
+                        minWidth: "72px",
+                        textAlign: "center",
+                        background: "#07100d",
+                        border: "1px solid #284238",
+                        borderRadius: "999px",
+                        padding: "8px 10px",
+                        fontWeight: "900",
+                        whiteSpace: "nowrap",
+                      }}
+                    >
+                      <span style={{ marginLeft: "5px" }}>{icon}</span>
+                      {item.time || "—}
+                    </div>
+
+                    <div style={{ direction: "rtl", textAlign: item.team === "away" ? "left" : "right", minWidth: 0 }}>
+                      {item.team === "away" && (
+                        <div style={{ color: "#f4f8f6", fontWeight: "800", overflowWrap: "anywhere" }}>
+                          {item.player || label}
+                        </div>
+                      )}
+                      {item.team === "away" && item.assist && (
+                        <div style={{ color: "#82968d", fontSize: "12px" }}>تمريرة: {item.assist}</div>
+                      )}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+
+            <div
+              style={{
+                marginTop: "18px",
+                display: "flex",
+                justifyContent: "space-between",
+                gap: "10px",
+                color: "#82968d",
+                fontSize: "12px",
+                borderTop: "1px solid #284238",
+                paddingTop: "14px",
+              }}
+            >
+              <span>🏠 {match.teams.home.name}</span>
+              <span>✈️ {match.teams.away.name}</span>
+            </div>
+          </section>
+        )}
 
         {/* الإحصائيات والتشكيلات */}
         {(match.stats?.length > 0 || match.lineup?.length > 0) && (
