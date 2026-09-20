@@ -40,7 +40,9 @@ function EventCard({ event }) {
     <a href={`/matches/${event.idEvent}`} style={styles.card}>
       <div style={styles.team}>{home}</div>
       <div style={styles.middle}>
-        <strong style={styles.score}>{homeScore} - {awayScore}</strong>
+        <strong style={styles.score}>
+          {homeScore} - {awayScore}
+        </strong>
         <span style={styles.time}>{time}</span>
       </div>
       <div style={styles.team}>{away}</div>
@@ -76,7 +78,7 @@ export default async function TeamPage({ params }) {
   const upcoming = nextEvents.slice(0, 5);
   const recent = lastEvents.slice(0, 5);
   const teamDisplayName = team?.strTeam || teamName;
-  const teamUrl = BASE_URL + "/teams/" + encodeURIComponent(teamName);
+  const teamUrl = `${BASE_URL}/teams/${encodeURIComponent(teamName)}`;
 
   const breadcrumbData = {
     "@context": "https://schema.org",
@@ -101,79 +103,105 @@ export default async function TeamPage({ params }) {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbData),
+        }}
       />
+
       <main dir="rtl" style={styles.main}>
-      <div style={styles.container}>
-        <a href="/" style={styles.link}>← العودة إلى المباريات</a>
+        <div style={styles.container}>
+          <nav style={styles.breadcrumb} aria-label="مسار التنقل">
+            <a href="/" style={styles.breadcrumbLink}>
+              الرئيسية
+            </a>
+            <span aria-hidden="true">←</span>
+            <span>{teamDisplayName}</span>
+          </nav>
 
-        <section style={styles.hero}>
-          {team?.strTeamBadge ? (
-            <img
-              src={team.strTeamBadge}
-              alt={team.strTeam || teamName}
-              style={styles.logo}
-            />
-          ) : (
-            <div style={styles.fallback}>⚽</div>
-          )}
-          <div>
-            <h1 style={styles.h1}>{team?.strTeam || teamName}</h1>
-            <p style={styles.muted}>
-              مباريات ونتائج {team?.strTeam || teamName} على MatchZone
-            </p>
-            {team?.strLeague && (
-              <p style={styles.league}>🏆 {team.strLeague}</p>
+          <a href="/" style={styles.link}>
+            ← العودة إلى المباريات
+          </a>
+
+          <section style={styles.hero}>
+            {team?.strTeamBadge ? (
+              <img
+                src={team.strTeamBadge}
+                alt={teamDisplayName}
+                style={styles.logo}
+              />
+            ) : (
+              <div style={styles.fallback}>⚽</div>
             )}
-            <p style={styles.statsLine}>
-              📅 {upcoming.length} مباريات قادمة · 🏁 {recent.length} نتائج حديثة
-            </p>
-          </div>
-        </section>
 
-        <section>
-          <h2 style={styles.h2}>أقرب مباراة</h2>
-          {upcoming.length > 0 ? (
-            <div style={styles.grid}>
-              <EventCard event={upcoming[0]} />
+            <div style={styles.heroContent}>
+              <h1 style={styles.h1}>{teamDisplayName}</h1>
+              <p style={styles.muted}>
+                تابع مباريات ونتائج {teamDisplayName} والمواعيد القادمة وآخر
+                المواجهات على MatchZone.
+              </p>
+
+              {team?.strLeague && (
+                <p style={styles.league}>🏆 {team.strLeague}</p>
+              )}
+
+              <p style={styles.statsLine}>
+                📅 {upcoming.length} مباريات قادمة · 🏁 {recent.length} نتائج
+                حديثة
+              </p>
             </div>
-          ) : (
-            <p style={styles.empty}>لا توجد مباراة قادمة متاحة حاليًا.</p>
-          )}
+          </section>
 
-          <h2 style={styles.h2}>باقي المباريات القادمة</h2>
-          {upcoming.length > 1 ? (
-            <div style={styles.grid}>
-              {upcoming.slice(1).map((event) => (
-                <EventCard key={event.idEvent} event={event} />
-              ))}
-            </div>
-          ) : (
-            <p style={styles.empty}>
-              {upcoming.length === 1
-                ? "لا توجد مباريات أخرى مجدولة حاليًا."
-                : "لا توجد مواعيد قادمة متاحة حاليًا."}
-            </p>
-          )}
+          <section>
+            <h2 style={styles.h2}>أقرب مباراة</h2>
 
-          <h2 style={styles.h2}>آخر النتائج</h2>
-          {recent.length > 0 ? (
-            <div style={styles.grid}>
-              {recent.map((event) => (
-                <EventCard key={event.idEvent} event={event} />
-              ))}
-            </div>
-          ) : (
-            <p style={styles.empty}>لا توجد نتائج سابقة متاحة حاليًا.</p>
-          )}
-        </section>
+            {upcoming.length > 0 ? (
+              <div style={styles.grid}>
+                <EventCard event={upcoming[0]} />
+              </div>
+            ) : (
+              <p style={styles.empty}>لا توجد مباراة قادمة متاحة حاليًا.</p>
+            )}
 
-        <nav style={styles.nav}>
-          <a href="/leagues" style={styles.navLink}>تصفح البطولات</a>
-          <a href="/matches/today" style={styles.navLink}>مباريات اليوم</a>
-        </nav>
-      </div>
-    </main>
+            <h2 style={styles.h2}>باقي المباريات القادمة</h2>
+
+            {upcoming.length > 1 ? (
+              <div style={styles.grid}>
+                {upcoming.slice(1).map((event) => (
+                  <EventCard key={event.idEvent} event={event} />
+                ))}
+              </div>
+            ) : (
+              <p style={styles.empty}>
+                {upcoming.length === 1
+                  ? "لا توجد مباريات أخرى مجدولة حاليًا."
+                  : "لا توجد مواعيد قادمة متاحة حاليًا."}
+              </p>
+            )}
+
+            <h2 style={styles.h2}>آخر النتائج</h2>
+
+            {recent.length > 0 ? (
+              <div style={styles.grid}>
+                {recent.map((event) => (
+                  <EventCard key={event.idEvent} event={event} />
+                ))}
+              </div>
+            ) : (
+              <p style={styles.empty}>لا توجد نتائج سابقة متاحة حاليًا.</p>
+            )}
+          </section>
+
+          <nav style={styles.nav} aria-label="روابط MatchZone">
+            <a href="/leagues" style={styles.navLink}>
+              تصفح البطولات
+            </a>
+            <a href="/matches/today" style={styles.navLink}>
+              مباريات اليوم
+            </a>
+          </nav>
+        </div>
+      </main>
+    </>
   );
 }
 
@@ -185,34 +213,77 @@ const styles = {
     padding: "30px 18px 60px",
     fontFamily: "Arial, Helvetica, sans-serif",
   },
-  container: { maxWidth: 1000, margin: "0 auto" },
-  link: { color: "#2ecc71", textDecoration: "none", fontWeight: 800 },
-  breadcrumb: {
-    display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap",
-    marginTop: 18, marginBottom: 8, color: "#82968d", fontSize: 12,
+  container: {
+    maxWidth: 1000,
+    margin: "0 auto",
   },
-  breadcrumbLink: { color: "#2ecc71", textDecoration: "none", fontWeight: 800 },
+  link: {
+    display: "inline-block",
+    marginTop: 10,
+    color: "#2ecc71",
+    textDecoration: "none",
+    fontWeight: 800,
+  },
+  breadcrumb: {
+    display: "flex",
+    alignItems: "center",
+    gap: 8,
+    flexWrap: "wrap",
+    marginBottom: 8,
+    color: "#82968d",
+    fontSize: 12,
+  },
+  breadcrumbLink: {
+    color: "#2ecc71",
+    textDecoration: "none",
+    fontWeight: 800,
+  },
   hero: {
     display: "flex",
     alignItems: "center",
     gap: 18,
-    marginTop: 30,
+    marginTop: 24,
     padding: 25,
     borderRadius: 22,
     background: "linear-gradient(145deg,#123326,#0b1712)",
     border: "1px solid #1e3d30",
   },
+  heroContent: {
+    minWidth: 0,
+    flex: 1,
+  },
   logo: {
     width: "clamp(70px,18vw,110px)",
     height: "clamp(70px,18vw,110px)",
     objectFit: "contain",
+    flexShrink: 0,
   },
-  fallback: { fontSize: 65 },
-  h1: { margin: 0, fontSize: "clamp(25px,6vw,40px)" },
-  h2: { margin: "32px 0 14px" },
-  muted: { color: "#82968d", lineHeight: 1.7 },
-  league: { color: "#2ecc71", fontWeight: 800, marginBottom: 6 },
-  statsLine: { color: "#9aaba4", fontSize: 12, margin: "6px 0 0" },
+  fallback: {
+    fontSize: 65,
+    flexShrink: 0,
+  },
+  h1: {
+    margin: 0,
+    fontSize: "clamp(25px,6vw,40px)",
+    overflowWrap: "anywhere",
+  },
+  h2: {
+    margin: "32px 0 14px",
+  },
+  muted: {
+    color: "#82968d",
+    lineHeight: 1.7,
+  },
+  league: {
+    color: "#2ecc71",
+    fontWeight: 800,
+    marginBottom: 6,
+  },
+  statsLine: {
+    color: "#9aaba4",
+    fontSize: 12,
+    margin: "6px 0 0",
+  },
   grid: {
     display: "grid",
     gridTemplateColumns: "repeat(auto-fit,minmax(280px,1fr))",
@@ -244,8 +315,16 @@ const styles = {
     gap: 5,
     alignItems: "center",
   },
-  score: { color: "#2ecc71", fontWeight: 900, whiteSpace: "nowrap" },
-  time: { color: "#82968d", fontSize: 11, whiteSpace: "nowrap" },
+  score: {
+    color: "#2ecc71",
+    fontWeight: 900,
+    whiteSpace: "nowrap",
+  },
+  time: {
+    color: "#82968d",
+    fontSize: 11,
+    whiteSpace: "nowrap",
+  },
   empty: {
     color: "#82968d",
     padding: "18px",
