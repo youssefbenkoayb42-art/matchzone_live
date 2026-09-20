@@ -1,64 +1,61 @@
-"use client";
+const BASE_URL = "https://matchzone-live.vercel.app";
 
-import { useEffect, useState } from "react";
-import { useParams } from "next/navigation";
-
-export default function MatchPage() {
-  const params = useParams();
-  const id = params.id;
-
-  const [match, setMatch] = useState(null);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    if (!id) return;
-
-    async function getMatch() {
-      try {
-        const response = await fetch(`/api/match/${id}`);
-        const data = await response.json();
-
-        if (data.response && data.response.length > 0) {
-          setMatch(data.response[0]);
-        }
-      } catch (error) {
-        console.error("Error loading match:", error);
-      } finally {
-        setLoading(false);
-      }
-    }
-
-    getMatch();
-  }, [id]);
-
-  if (loading) {
-    return (
-      <main
-        style={{
-          minHeight: "100vh",
-          background: "#07100d",
-          color: "#f4f8f6",
-          padding: "40px 20px",
-          textAlign: "center",
-        }}
-      >
-        <h1>جاري تحميل المباراة...</h1>
-      </main>
+async function getMatch(id) {
+  try {
+    const response = await fetch(
+      `https://www.thesportsdb.com/api/v1/json/123/lookupevent.php?id=${encodeURIComponent(id)}`,
+      { next: { revalidate: 60 } }
     );
+
+    if (!response.ok) return null;
+    const data = await response.json();
+    const event = data.events?.[0];
+    if (!event) return null;
+
+    return {
+      fixture: {
+        id: Number(event.idEvent),
+        date: event.strTimestamp || `${event.dateEvent}T${event.strTime || "00:00:00"}`,
+        status: { short: event.strStatus || "NS" },
+        venue: { name: event.strVenue || null },
+      },
+      league: {
+        id: Number(event.idLeague),
+        name: event.strLeague || "كرة القدم",
+      },
+      teams: {
+        home: {
+          id: Number(event.idHomeTeam),
+          name: event.strHomeTeam || "الفريق المضيف",
+          logo: event.strHomeTeamBadge || null,
+        },
+        away: {
+          id: Number(event.idAwayTeam),
+          name: event.strAwayTeam || "الفريق الضيف",
+          logo: event.strAwayTeamBadge || null,
+        },
+      },
+      goals: {
+        home: event.intHomeScore !== null && event.intHomeScore !== undefined ? Number(event.intHomeScore) : null,
+        away: event.intAwayScore !== null && event.intAwayScore !== undefined ? Number(event.intAwayScore) : null,
+      },
+      video: event.strVideo || null,
+      eventId: event.idEvent,
+    };
+  } catch {
+    return null;
   }
+}
+
+export default async function MatchPage({ params }) {
+  const { id } = await params;
+  const match = await getMatch(id);
 
   if (!match) {
     return (
-      <main
-        style={{
-          minHeight: "100vh",
-          background: "#07100d",
-          color: "#f4f8f6",
-          padding: "40px 20px",
-          textAlign: "center",
-        }}
-      >
+      <main style={{ minHeight: "100vh", background: "#07100d", color: "#f4f8f6", padding: "40px 20px", textAlign: "center" }} dir="rtl">
         <h1>لم يتم العثور على المباراة</h1>
+        <a href="/" style={{ color: "#37e28a", textDecoration: "none", fontWeight: "700" }}>← العودة إلى المباريات</a>
       </main>
     );
   }
@@ -71,7 +68,7 @@ export default function MatchPage() {
     name: `${match.teams.home.name} vs ${match.teams.away.name}`,
     description: `مباراة ${match.teams.home.name} ضد ${match.teams.away.name} في ${match.league.name}`,
     startDate: match.fixture.date,
-    url: `https://matchzone-live.vercel.app/matches/${id}`,
+    url: `${BASE_URL}/matches/${id}`,
     homeTeam: {
       "@type": "SportsTeam",
       name: match.teams.home.name,
