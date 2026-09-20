@@ -65,6 +65,34 @@ export default function MatchPage() {
 
   const matchStatus = match.fixture.status.short;
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "SportsEvent",
+    name: `${match.teams.home.name} vs ${match.teams.away.name}`,
+    description: `مباراة ${match.teams.home.name} ضد ${match.teams.away.name} في ${match.league.name}`,
+    startDate: match.fixture.date,
+    url: `https://matchzone-live.vercel.app/matches/${id}`,
+    homeTeam: {
+      "@type": "SportsTeam",
+      name: match.teams.home.name,
+    },
+    awayTeam: {
+      "@type": "SportsTeam",
+      name: match.teams.away.name,
+    },
+    sport: "Football",
+    eventStatus:
+      matchStatus === "FT"
+        ? "https://schema.org/EventCompleted"
+        : "https://schema.org/EventScheduled",
+    location: match.fixture.venue?.name
+      ? {
+          "@type": "Place",
+          name: match.fixture.venue.name,
+        }
+      : undefined,
+  };
+
   const isLive = ["1H", "2H", "HT", "ET", "BT", "P", "INT"].includes(
     matchStatus
   );
@@ -77,7 +105,12 @@ export default function MatchPage() {
       : "لم تبدأ";
 
   return (
-    <main
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <main
       style={{
         minHeight: "100vh",
         background: "#07100d",
@@ -203,8 +236,8 @@ export default function MatchPage() {
                 src={match.teams.away.logo}
                 alt={match.teams.away.name}
                 style={{
-                  width: "100px",
-                  height: "100px",
+                  width: "clamp(62px, 20vw, 100px)",
+                  height: "clamp(62px, 20vw, 100px)",
                   objectFit: "contain",
                 }}
               />
@@ -298,5 +331,6 @@ export default function MatchPage() {
         )}
       </div>
     </main>
+    </>
   );
 }
