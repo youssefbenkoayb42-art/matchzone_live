@@ -37,6 +37,9 @@ async function getMatch(id) {
       league: {
         id: Number(event.idLeague),
         name: event.strLeague || "كرة القدم",
+        season: event.strSeason || null,
+        country: event.strCountry || null,
+        round: event.intRound || null,
       },
       teams: {
         home: {
@@ -281,14 +284,33 @@ export default async function MatchPage({ params }) {
             {status}
           </div>
 
-          <p style={{ color: "#82968d", margin: "0 0 28px" }}>
-            {new Date(match.fixture.date).toLocaleDateString("ar-MA", {
-              weekday: "long",
-              day: "numeric",
-              month: "long",
-              year: "numeric",
-            })}
-          </p>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              flexWrap: "wrap",
+              gap: "8px",
+              color: "#82968d",
+              margin: "0 0 28px",
+              fontSize: "14px",
+            }}
+          >
+            <span>
+              📅 {new Date(match.fixture.date).toLocaleDateString("ar-MA", {
+                weekday: "long",
+                day: "numeric",
+                month: "long",
+                year: "numeric",
+              })}
+            </span>
+            <span>•</span>
+            <span>
+              🕐 {new Date(match.fixture.date).toLocaleTimeString("ar-MA", {
+                hour: "2-digit",
+                minute: "2-digit",
+              })}
+            </span>
+          </div>
 
           <div
             style={{
@@ -369,9 +391,9 @@ export default async function MatchPage({ params }) {
     lineHeight: 1,
   }}
 >
-  <span>{match.goals.home ?? 0}</span>
+  <span>{match.goals.home ?? "—"}</span>
   <span>-</span>
-  <span>{match.goals.away ?? 0}</span>
+  <span>{match.goals.away ?? "—"}</span>
 </div>
               </div>
 
@@ -620,6 +642,53 @@ export default async function MatchPage({ params }) {
             </div>
           </div>
         )}
+
+        {/* معلومات المباراة */}
+        <section
+          style={{
+            marginTop: "30px",
+            background: "linear-gradient(145deg, #10251c, #0b1713)",
+            border: "1px solid #284238",
+            borderRadius: "25px",
+            padding: "25px 20px",
+          }}
+        >
+          <h2 style={{ margin: "0 0 18px", color: "#37e28a", textAlign: "center" }}>
+            📋 معلومات المباراة
+          </h2>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(170px, 1fr))",
+              gap: "10px",
+            }}
+          >
+            {match.league.season && (
+              <div style={{ background: "#07100d", border: "1px solid #284238", borderRadius: "14px", padding: "13px", textAlign: "center" }}>
+                <div style={{ color: "#82968d", fontSize: "12px" }}>الموسم</div>
+                <strong>{match.league.season}</strong>
+              </div>
+            )}
+            {match.league.country && (
+              <div style={{ background: "#07100d", border: "1px solid #284238", borderRadius: "14px", padding: "13px", textAlign: "center" }}>
+                <div style={{ color: "#82968d", fontSize: "12px" }}>الدولة</div>
+                <strong>{match.league.country}</strong>
+              </div>
+            )}
+            {match.league.round && (
+              <div style={{ background: "#07100d", border: "1px solid #284238", borderRadius: "14px", padding: "13px", textAlign: "center" }}>
+                <div style={{ color: "#82968d", fontSize: "12px" }}>الجولة</div>
+                <strong>{match.league.round}</strong>
+              </div>
+            )}
+            {match.fixture.venue?.name && (
+              <div style={{ background: "#07100d", border: "1px solid #284238", borderRadius: "14px", padding: "13px", textAlign: "center" }}>
+                <div style={{ color: "#82968d", fontSize: "12px" }}>الملعب</div>
+                <strong>{match.fixture.venue.name}</strong>
+              </div>
+            )}
+          </div>
+        </section>
 
         {/* معلومات إضافية */}
         {(match.fixture.venue?.name || match.eventId) && (
