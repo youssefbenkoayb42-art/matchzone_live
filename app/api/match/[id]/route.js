@@ -34,7 +34,7 @@ export async function GET(request, { params }) {
       });
     }
 
-    const [statsResponse, lineupResponse] = await Promise.all([
+    const [statsResponse, lineupResponse, timelineResponse] = await Promise.all([
       fetch(
         `https://www.thesportsdb.com/api/v1/json/123/lookupeventstats.php?id=${id}`,
         { next: { revalidate: 300 } }
@@ -43,10 +43,15 @@ export async function GET(request, { params }) {
         `https://www.thesportsdb.com/api/v1/json/123/lookuplineup.php?id=${id}`,
         { next: { revalidate: 300 } }
       ),
+      fetch(
+        `https://www.thesportsdb.com/api/v1/json/123/lookuptimeline.php?id=${id}`,
+        { next: { revalidate: 300 } }
+      ),
     ]);
 
     const statsData = statsResponse.ok ? await statsResponse.json() : {};
     const lineupData = lineupResponse.ok ? await lineupResponse.json() : {};
+    const timelineData = timelineResponse.ok ? await timelineResponse.json() : {};
 
     const match = {
       fixture: {
@@ -122,6 +127,20 @@ export async function GET(request, { params }) {
             team: player.strHome === "Yes" ? "home" : "away",
             substitute: player.strSubstitute === "Yes",
             image: player.strCutout || player.strThumb || null,
+          }))
+        : [],
+
+      timeline: Array.isArray(timelineData.timeline)
+        ? timelineData.timeline.map((item) => ({
+            time: item.strTime || item.intTime || "",
+            type: item.strTimeline || "حدث",
+            detail: item.strTimelineDetail || null,
+            player: item.strPlayer || null,
+            assist: item.strAssist || null,
+            team: item.strHome === "Yes" ? "home" : "away",
+            substitute: item.strSubstitute || null,
+            card: item.strCard || null,
+            goal: item.strGoal || null,
           }))
         : [],
 
