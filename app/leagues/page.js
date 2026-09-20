@@ -45,6 +45,35 @@ export default function LeaguesPage() {
         🏆 أهم البطولات العالمية والعربية
       </h2>
       
+
+      <div style={{ display: "flex", gap: "8px", flexWrap: "wrap", marginBottom: "25px" }}>
+        {[
+          ["premier-league", "الدوري الإنجليزي"],
+          ["la-liga", "الدوري الإسباني"],
+          ["serie-a", "الدوري الإيطالي"],
+          ["bundesliga", "الدوري الألماني"],
+          ["ligue-1", "الدوري الفرنسي"],
+        ].map(([slug, name]) => (
+          <a
+            key={slug}
+            href={"/leagues/" + slug}
+            style={{
+              color: "#2ecc71",
+              textDecoration: "none",
+              background: "rgba(46,204,113,.07)",
+              border: "1px solid rgba(46,204,113,.12)",
+              padding: "9px 13px",
+              borderRadius: "12px",
+              fontSize: "12px",
+              fontWeight: "800",
+              whiteSpace: "nowrap",
+            }}
+          >
+            {name}
+          </a>
+        ))}
+      </div>
+
       <p style={{ color: "#aaa", fontSize: "15px", marginBottom: "30px" }}>
         عرض حي ومباشر لجدول الترتيب، النقاط، وإحصائيات الفرق المحدثة فور نهاية كل جولة [2.1].
       </p>
