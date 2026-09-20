@@ -1,0 +1,168 @@
+import Link from "next/link";
+
+const LEAGUES = [
+  { slug: "premier-league", id: "4328", name: "الدوري الإنجليزي الممتاز", english: "Premier League", logo: "/leagues/premier-league.svg" },
+  { slug: "la-liga", id: "4335", name: "الدوري الإسباني", english: "LaLiga", logo: "/leagues/la-liga.svg" },
+  { slug: "serie-a", id: "4332", name: "الدوري الإيطالي", english: "Serie A", logo: "/leagues/serie-a.svg" },
+  { slug: "bundesliga", id: "4331", name: "الدوري الألماني", english: "Bundesliga", logo: "/leagues/bundesliga.svg" },
+  { slug: "ligue-1", id: "4334", name: "الدوري الفرنسي", english: "Ligue 1", logo: "/leagues/ligue-1.svg" },
+];
+
+export const metadata = {
+  title: "ترتيب الدوريات الكبرى",
+  description: "جداول ترتيب أهم دوريات كرة القدم مع النقاط والمباريات والانتصارات والتعادلات والخسائر.",
+};
+
+export async function generateStaticParams() {
+  return LEAGUES.map(({ slug }) => ({ league: slug }));
+}
+
+export async function generateMetadata({ params }) {
+  const league = LEAGUES.find((item) => item.slug === params.league);
+  return {
+    title: league ? `ترتيب ${league.name}` : "ترتيب الدوري",
+    description: league
+      ? `جدول ترتيب ${league.name} مع النقاط والمباريات والانتصارات والتعادلات والخسائر.`
+      : "جداول ترتيب دوريات كرة القدم.",
+  };
+}
+
+async function getStandings(leagueId) {
+  try {
+    const response = await fetch(
+      `https://www.thesportsdb.com/api/v1/json/123/lookuptable.php?l=${leagueId}`,
+      { next: { revalidate: 300 } }
+    );
+    if (!response.ok) return [];
+    const data = await response.json();
+    return Array.isArray(data?.table) ? data.table : [];
+  } catch {
+    return [];
+  }
+}
+
+export default async function StandingsPage({ params }) {
+  const league = LEAGUES.find((item) => item.slug === params.league) || LEAGUES[0];
+  const table = await getStandings(league.id);
+
+  return (
+    <main dir="rtl" style={styles.main}>
+      <div style={styles.container}>
+        <Link href="/leagues" style={styles.back}>← البطولات</Link>
+
+        <header style={styles.header}>
+          <div style={styles.logoWrap}>
+            <img src={league.logo} alt={league.name + " شعار"} style={styles.logo} />
+          </div>
+          <div>
+            <span style={styles.eyebrow}>MATCHZONE • STANDINGS</span>
+            <h1 style={styles.title}>ترتيب {league.name}</h1>
+            <p style={styles.muted}>جدول الترتيب الحالي مع النقاط ونتائج الفرق.</p>
+          </div>
+        </header>
+
+        <nav style={styles.leagueNav}>
+          {LEAGUES.map((item) => (
+            <Link
+              key={item.slug}
+              href={`/standings/${item.slug}`}
+              style={{
+                ...styles.leagueLink,
+                ...(item.slug === league.slug ? styles.activeLink : {}),
+              }}
+            >
+              {item.name}
+            </Link>
+          ))}
+        </nav>
+
+        <section style={styles.card}>
+          {table.length ? (
+            <div style={styles.tableScroll}>
+              <table style={styles.table}>
+                <thead>
+                  <tr>
+                    <th style={styles.th}>#</th>
+                    <th style={{ ...styles.th, textAlign: "right", minWidth: 180 }}>الفريق</th>
+                    <th style={styles.th}>لعب</th>
+                    <th style={styles.th}>فوز</th>
+                    <th style={styles.th}>تعادل</th>
+                    <th style={styles.th}>خسارة</th>
+                    <th style={styles.th}>له</th>
+                    <th style={styles.th}>عليه</th>
+                    <th style={styles.th}>+/-</th>
+                    <th style={styles.th}>النقاط</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {table.map((team, index) => {
+                    const rank = Number(team?.intRank || index + 1);
+                    const points = Number(team?.intPoints || 0);
+                    const badge = team?.strBadge;
+                    return (
+                      <tr key={team?.idTeam || team?.strTeam || index}>
+                        <td style={{ ...styles.td, fontWeight: 900 }}>{rank}</td>
+                        <td style={styles.teamCell}>
+                          {badge ? <img src={badge} alt="" style={styles.teamLogo} loading="lazy" /> : null}
+                          <span>{team?.strTeam || "فريق"}</span>
+                        </td>
+                        <td style={styles.td}>{team?.intPlayed ?? 0}</td>
+                        <td style={styles.td}>{team?.intWin ?? 0}</td>
+                        <td style={styles.td}>{team?.intDraw ?? 0}</td>
+                        <td style={styles.td}>{team?.intLoss ?? 0}</td>
+                        <td style={styles.td}>{team?.intGoalsFor ?? 0}</td>
+                        <td style={styles.td}>{team?.intGoalsAgainst ?? 0}</td>
+                        <td style={styles.td}>{team?.intGoalDifference ?? 0}</td>
+                        <td style={{ ...styles.td, ...styles.points }}>{points}</td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
+          ) : (
+            <div style={styles.empty}>
+              <div style={styles.emptyIcon}>📊</div>
+              <h2>لا يوجد ترتيب متاح حاليًا</h2>
+              <p>حاول تحديث الصفحة بعد قليل.</p>
+            </div>
+          )}
+        </section>
+
+        <div style={styles.footerLinks}>
+          <Link href={`/leagues/${league.slug}`} style={styles.footerLink}>⚽ مباريات {league.name}</Link>
+          <Link href="/matches/today" style={styles.footerLink}>🗓️ مباريات اليوم</Link>
+          <span style={styles.source}>مصدر البيانات: TheSportsDB</span>
+        </div>
+      </div>
+    </main>
+  );
+}
+
+const styles = {
+  main: { minHeight: "100vh", background: "radial-gradient(circle at 50% -10%, rgba(46,204,113,.13), transparent 38%), #07100d", color: "#f4f8f6", padding: "28px 14px 70px", fontFamily: "Arial, Helvetica, sans-serif" },
+  container: { maxWidth: 1100, margin: "0 auto" },
+  back: { color: "#2ecc71", textDecoration: "none", fontWeight: 800, fontSize: 14 },
+  header: { display: "flex", alignItems: "center", gap: 18, marginTop: 22, padding: "24px 20px", borderRadius: 26, background: "linear-gradient(145deg,#123326,#0b1712)", border: "1px solid #1e3d30", boxShadow: "0 18px 50px rgba(0,0,0,.22)" },
+  logoWrap: { width: 70, height: 70, minWidth: 70, display: "grid", placeItems: "center", borderRadius: 19, background: "rgba(255,255,255,.045)", border: "1px solid rgba(255,255,255,.08)" },
+  logo: { width: 50, height: 50, objectFit: "contain" },
+  eyebrow: { display: "block", color: "#2ecc71", fontSize: 10, fontWeight: 900, letterSpacing: 1.5, marginBottom: 5 },
+  title: { margin: 0, fontSize: "clamp(24px,5vw,38px)" },
+  muted: { color: "#82968d", margin: "8px 0 0", fontSize: 13, lineHeight: 1.7 },
+  leagueNav: { display: "flex", gap: 9, overflowX: "auto", padding: "18px 2px", scrollbarWidth: "thin" },
+  leagueLink: { flex: "0 0 auto", color: "#b9c8c1", textDecoration: "none", padding: "10px 13px", borderRadius: 12, background: "#0d1c16", border: "1px solid #1e3d30", fontSize: 12, fontWeight: 800 },
+  activeLink: { color: "#07100d", background: "#2ecc71", borderColor: "#2ecc71" },
+  card: { overflow: "hidden", borderRadius: 24, background: "linear-gradient(145deg,#10251c,#0a1511)", border: "1px solid #1e3d30", boxShadow: "0 12px 35px rgba(0,0,0,.18)" },
+  tableScroll: { overflowX: "auto", WebkitOverflowScrolling: "touch" },
+  table: { width: "100%", minWidth: 760, borderCollapse: "collapse", fontSize: 13 },
+  th: { padding: "15px 10px", textAlign: "center", color: "#6f8c80", background: "#0b1913", fontSize: 11, whiteSpace: "nowrap" },
+  td: { padding: "13px 10px", textAlign: "center", borderTop: "1px solid rgba(255,255,255,.055)", color: "#dce7e2", whiteSpace: "nowrap" },
+  teamCell: { padding: "11px 12px", borderTop: "1px solid rgba(255,255,255,.055)", display: "flex", alignItems: "center", gap: 10, fontWeight: 800, whiteSpace: "nowrap" },
+  teamLogo: { width: 28, height: 28, objectFit: "contain" },
+  points: { color: "#2ecc71", fontWeight: 900, fontSize: 14 },
+  empty: { textAlign: "center", padding: "55px 20px", color: "#82968d" },
+  emptyIcon: { fontSize: 36, marginBottom: 8 },
+  footerLinks: { display: "flex", flexWrap: "wrap", gap: 10, alignItems: "center", marginTop: 20 },
+  footerLink: { color: "#2ecc71", textDecoration: "none", padding: "10px 13px", borderRadius: 12, background: "rgba(46,204,113,.07)", border: "1px solid rgba(46,204,113,.12)", fontWeight: 800, fontSize: 12 },
+  source: { color: "#58766a", fontSize: 11, marginRight: "auto" },
+};
