@@ -34,6 +34,20 @@ export async function GET(request, { params }) {
       });
     }
 
+    const [statsResponse, lineupResponse] = await Promise.all([
+      fetch(
+        `https://www.thesportsdb.com/api/v1/json/123/lookupeventstats.php?id=${id}`,
+        { next: { revalidate: 300 } }
+      ),
+      fetch(
+        `https://www.thesportsdb.com/api/v1/json/123/lookuplineup.php?id=${id}`,
+        { next: { revalidate: 300 } }
+      ),
+    ]);
+
+    const statsData = statsResponse.ok ? await statsResponse.json() : {};
+    const lineupData = lineupResponse.ok ? await lineupResponse.json() : {};
+
     const match = {
       fixture: {
         id: Number(event.idEvent),
@@ -91,6 +105,25 @@ export async function GET(request, { params }) {
         homeRedCards: event.strHomeRedCards || null,
         awayRedCards: event.strAwayRedCards || null,
       },
+
+      stats: Array.isArray(statsData.eventstats)
+        ? statsData.eventstats.map((stat) => ({
+            name: stat.strStat || "إحصائية",
+            home: stat.intHome ?? null,
+            away: stat.intAway ?? null,
+          }))
+        : [],
+
+      lineup: Array.isArray(lineupData.lineup)
+        ? lineupData.lineup.map((player) => ({
+            name: player.strPlayer || "لاعب",
+            position: player.strPosition || null,
+            number: player.intSquadNumber || null,
+            team: player.strHome === "Yes" ? "home" : "away",
+            substitute: player.strSubstitute === "Yes",
+            image: player.strCutout || player.strThumb || null,
+          }))
+        : [],
 
       video: event.strVideo || null,
 
