@@ -61,6 +61,21 @@ async function getEvents(leagueId, endpoint) {
   }
 }
 
+async function getLeagueTeams(leagueName) {
+  try {
+    const res = await fetch(
+      "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=" +
+        encodeURIComponent(leagueName),
+      { next: { revalidate: 3600 } }
+    );
+    if (!res.ok) return [];
+    const data = await res.json();
+    return Array.isArray(data?.teams) ? data.teams : [];
+  } catch {
+    return [];
+  }
+}
+
 async function getTodayMatches(leagueId) {
   const date = new Date().toISOString().slice(0, 10);
   try {
@@ -115,14 +130,16 @@ export default async function LeaguePage({ params }) {
     );
   }
 
-  const [today, upcoming, results] = await Promise.all([
+  const [today, upcoming, results, teams] = await Promise.all([
     getTodayMatches(league.id),
     getEvents(league.id, "eventsnextleague"),
     getEvents(league.id, "eventspastleague"),
+    getLeagueTeams(league.english),
   ]);
 
   const upcomingMatches = upcoming.slice(0, 5);
   const recentResults = results.slice(0, 5);
+  const leagueTeams = teams.slice(0, 24);
 
   return (
     <main style={styles.main} dir="rtl">
@@ -170,6 +187,31 @@ export default async function LeaguePage({ params }) {
         </section>
 
         <section>
+          <h2 style={styles.h2}>فرق {league.name}</h2>
+          {leagueTeams.length === 0 ? (
+            <div style={styles.empty}>لا توجد قائمة فرق متاحة لهذه البطولة حالياً.</div>
+          ) : (
+            <div style={styles.teamGrid}>
+              {leagueTeams.map((team) => (
+                <a
+                  key={team.idTeam}
+                  href={"/teams/" + encodeURIComponent(team.strTeam || "")}
+                  style={styles.teamCard}
+                >
+                  {team.strTeamBadge ? (
+                    <img src={team.strTeamBadge} alt="" style={styles.teamLogo} />
+                  ) : (
+                    <div style={styles.teamFallback}>⚽</div>
+                  )}
+                  <strong>{team.strTeam}</strong>
+                  <span style={styles.teamCardSpan}>مباريات الفريق ←</span>
+                </a>
+              ))}
+            </div>
+          )}
+        </section>
+
+        <section>
           <h2 style={styles.h2}>آخر النتائج</h2>
           {recentResults.length === 0 ? (
             <div style={styles.empty}>لا توجد نتائج سابقة متاحة حالياً.</div>
@@ -212,6 +254,11 @@ const styles = {
   competition: { color: "#2ecc71", fontSize: 12, fontWeight: 800, marginBottom: 6 },
   status: { color: "#82968d", fontSize: 11, marginBottom: 20 },
   grid: { display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(280px,1fr))", gap: 15 },
+  teamGrid: { display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(150px,1fr))", gap: 10 },
+  teamCard: { display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 8, minHeight: 145, padding: 14, borderRadius: 18, background: "rgba(255,255,255,.035)", border: "1px solid rgba(255,255,255,.07)", color: "#f4f8f6", textDecoration: "none", textAlign: "center" },
+  teamLogo: { width: 54, height: 54, objectFit: "contain" },
+  teamFallback: { width: 54, height: 54, display: "grid", placeItems: "center", borderRadius: 16, background: "#10231b", fontSize: 25 },
+  teamCardSpan: { color: "#718078", fontSize: 10 },
   teams: { display: "grid", gridTemplateColumns: "1fr auto 1fr", gap: 12, alignItems: "center", textAlign: "center", direction: "ltr" },
   team: { color: "#f4f8f6", textDecoration: "none", minWidth: 0, padding: 8, borderRadius: 12 },
   teamSmall: { display: "block", color: "#718078", marginTop: 5, fontSize: 11 },
