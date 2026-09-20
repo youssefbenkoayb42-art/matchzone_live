@@ -8,10 +8,6 @@ const LEAGUES = [
   { slug: "ligue-1", id: "4334", name: "الدوري الفرنسي", english: "Ligue 1", logo: "/leagues/ligue-1.svg" },
 ];
 
-export const metadata = {
-  title: "ترتيب الدوريات الكبرى",
-  description: "جداول ترتيب أهم دوريات كرة القدم مع النقاط والمباريات والانتصارات والتعادلات والخسائر.",
-};
 
 export async function generateStaticParams() {
   return LEAGUES.map(({ slug }) => ({ league: slug }));
