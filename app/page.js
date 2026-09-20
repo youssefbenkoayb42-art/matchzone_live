@@ -211,7 +211,7 @@ export default function HomeDesign() {
         <section className="mz-hero">
           <div className="hero-copy">
             <div className="eyebrow"><span className="pulse-dot" /> LIVE FOOTBALL</div>
-            <h1>كل مباريات اليوم<br /><span>في مكان واحد.</span></h1>
+            <h1>مباريات اليوم والقادمة<br /><span>في مكان واحد.</span></h1>
             <p>نتائج مباشرة، مواعيد المباريات، أهم البطولات وآخر الأخبار الرياضية — بتجربة سريعة ومصممة للهاتف.</p>
             <div className="hero-actions">
               <a href="#matches-section" className="primary-btn">استكشف المباريات <span>←</span></a>
@@ -249,7 +249,7 @@ export default function HomeDesign() {
         </section>
 
         <section className="quick-stats">
-          <div><span>المباريات</span><strong>{matches.length}</strong><small>اليوم</small></div>
+          <div><span>المباريات</span><strong>{matches.length}</strong><small>اليوم والقادمة</small></div>
           <div><span>مباشر الآن</span><strong className="green">{liveMatches.length}</strong><small>تحديث تلقائي</small></div>
           <div><span>البطولات</span><strong>{Math.max(leagues.length - 1, 0)}</strong><small>متاحة الآن</small></div>
           <div><span>آخر تحديث</span><strong>{lastUpdated ? lastUpdated.toLocaleTimeString("ar-MA", { hour: "2-digit", minute: "2-digit" }) : "--:--"}</strong><small>يتجدد كل دقيقة</small></div>
@@ -278,9 +278,9 @@ export default function HomeDesign() {
         <section id="matches-section" className="matches-section">
           <div className="section-heading matches-heading">
             <div>
-              <span className="section-kicker">TODAY</span>
-              <h2>مباريات اليوم</h2>
-              <p>المواعيد والنتائج والحالات بشكل واضح وسريع.</p>
+              <span className="section-kicker">TODAY + UPCOMING</span>
+              <h2>مباريات اليوم والقادمة</h2>
+              <p>نتائج اليوم ومواعيد الأيام القادمة من الدوريات المتاحة مجانًا.</p>
             </div>
             <a href="/matches/today">صفحة اليوم ←</a>
           </div>
