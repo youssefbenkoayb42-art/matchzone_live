@@ -796,3 +796,83 @@ button { -webkit-tap-highlight-color: transparent; }
 @media (prefers-reduced-motion: reduce) {
   .international-card, .international-status, .international-tabs button { transition: none !important; }
 }
+
+/* Homepage international highlight */
+.international-home-section {
+  margin: 34px 0;
+  padding: 24px;
+  border: 1px solid rgba(57,229,139,.14);
+  border-radius: 24px;
+  background: linear-gradient(135deg, rgba(57,229,139,.055), rgba(255,255,255,.015));
+}
+.international-home-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+.international-home-card {
+  display: block;
+  padding: 15px;
+  border: 1px solid rgba(57,229,139,.12);
+  border-radius: 18px;
+  background: rgba(7,16,13,.72);
+  color: inherit;
+  text-decoration: none;
+  transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+.international-home-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(57,229,139,.35);
+  box-shadow: 0 0 24px rgba(57,229,139,.08);
+}
+.international-home-card.is-live {
+  border-color: rgba(255,92,103,.3);
+  box-shadow: 0 0 22px rgba(255,92,103,.06);
+}
+.international-home-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.international-home-meta span,
+.international-home-card > small {
+  color: #8fa098;
+  font-size: 10px;
+}
+.international-home-meta b {
+  font-size: 8px;
+  letter-spacing: 1px;
+  color: #39e58b;
+}
+.international-home-card.is-live .international-home-meta b { color: #ff5c67; }
+.international-home-teams {
+  display: grid;
+  grid-template-columns: 42px 1fr 42px;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+  text-align: center;
+}
+.international-home-teams strong {
+  font-size: 17px;
+  letter-spacing: .5px;
+}
+.international-home-names {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 7px;
+  text-align: center;
+  color: #dce8e2;
+  font-size: 11px;
+  line-height: 1.35;
+}
+@media (max-width: 760px) {
+  .international-home-grid { grid-template-columns: 1fr; }
+  .international-home-section { padding: 18px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .international-home-card { transition: none; }
+}
