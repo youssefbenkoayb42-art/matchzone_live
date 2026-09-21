@@ -103,6 +103,12 @@ export default function FavoritesPage() {
     [matches, favorites]
   );
 
+  const favoriteMatchGroups = useMemo(() => ({
+    live: favoriteMatches.filter((match) => getStatusType(match.status) === "live"),
+    upcoming: favoriteMatches.filter((match) => getStatusType(match.status) === "upcoming"),
+    finished: favoriteMatches.filter((match) => getStatusType(match.status) === "finished"),
+  }), [favoriteMatches]);
+
   function removeFavorite(team) {
     const next = favorites.filter((name) => name !== team);
     setFavorites(next);
@@ -171,29 +177,43 @@ export default function FavoritesPage() {
             ) : favoriteMatches.length === 0 ? (
               <div className="favorites-empty compact"><span>⚽</span><p>لا توجد مباراة لفرقك ضمن المباريات المتاحة حاليًا.</p></div>
             ) : (
-              <div className="favorites-match-grid">
-                {favoriteMatches.map((match) => (
-                  <article className={getStatusType(match.status) === "live" ? "favorites-match-card live" : "favorites-match-card"} key={match.id}>
-                    <div className="favorites-match-meta">
-                      <span>{match.league}</span>
-                      <b>{statusLabel(match.status)}</b>
+              <div className="favorites-groups">
+                {[
+                  { key: "live", title: "🔴 مباريات مباشرة الآن", matches: favoriteMatchGroups.live },
+                  { key: "upcoming", title: "🟢 المباريات القادمة", matches: favoriteMatchGroups.upcoming },
+                  { key: "finished", title: "⚪ المباريات المنتهية", matches: favoriteMatchGroups.finished },
+                ].filter((group) => group.matches.length > 0).map((group) => (
+                  <section className={`favorites-group favorites-group-${group.key}`} key={group.key}>
+                    <div className="favorites-group-heading">
+                      <strong>{group.title}</strong>
+                      <span>{group.matches.length} مباراة</span>
                     </div>
-                    <div className="favorites-match-teams">
-                      <a href={`/teams/${encodeURIComponent(match.home)}`}>
-                        <TeamBadge src={match.homeLogo} name={match.home} />
-                        <strong>{match.home}</strong>
-                      </a>
-                      <div>
-                        <strong>{match.homeScore ?? "-"} - {match.awayScore ?? "-"}</strong>
-                        <span>{formatTime(match.date)}</span>
-                      </div>
-                      <a href={`/teams/${encodeURIComponent(match.away)}`}>
-                        <TeamBadge src={match.awayLogo} name={match.away} />
-                        <strong>{match.away}</strong>
-                      </a>
+                    <div className="favorites-match-grid">
+                      {group.matches.map((match) => (
+                        <article className={getStatusType(match.status) === "live" ? "favorites-match-card live" : "favorites-match-card"} key={match.id}>
+                          <div className="favorites-match-meta">
+                            <span>{match.league}</span>
+                            <b>{statusLabel(match.status)}</b>
+                          </div>
+                          <div className="favorites-match-teams">
+                            <a href={`/teams/${encodeURIComponent(match.home)}`}>
+                              <TeamBadge src={match.homeLogo} name={match.home} />
+                              <strong>{match.home}</strong>
+                            </a>
+                            <div>
+                              <strong>{match.homeScore ?? "-"} - {match.awayScore ?? "-"}</strong>
+                              <span>{formatTime(match.date)}</span>
+                            </div>
+                            <a href={`/teams/${encodeURIComponent(match.away)}`}>
+                              <TeamBadge src={match.awayLogo} name={match.away} />
+                              <strong>{match.away}</strong>
+                            </a>
+                          </div>
+                          <a className="favorites-match-details" href={`/matches/${match.id}`}>تفاصيل المباراة ←</a>
+                        </article>
+                      ))}
                     </div>
-                    <a className="favorites-match-details" href={`/matches/${match.id}`}>تفاصيل المباراة ←</a>
-                  </article>
+                  </section>
                 ))}
               </div>
             )}
