@@ -1,5 +1,6 @@
 import "./globals.css";
 import SiteNav from "./SiteNav";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata = {
   metadataBase: new URL("https://matchzone-live.vercel.app"),
@@ -33,7 +34,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ar" dir="rtl">
-      <body><SiteNav />{children}</body>
+      <body>
+        <SiteNav />
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
