@@ -398,3 +398,65 @@ button { -webkit-tap-highlight-color: transparent; }
     white-space: nowrap;
   }
 }
+
+
+/* Favorites page */
+.favorites-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 80% 0%, rgba(46,204,113,.10), transparent 32%),
+    #050b08;
+  padding: 34px 16px 90px;
+}
+.favorites-container { max-width: 1100px; margin: auto; }
+.favorites-hero { padding: 20px 0 28px; }
+.favorites-hero h1 { margin: 7px 0; font-size: clamp(30px, 5vw, 48px); letter-spacing: -1.8px; }
+.favorites-hero p { margin: 0; color: #718079; font-size: 12px; line-height: 1.8; }
+.favorites-teams-panel, .favorites-matches {
+  margin-top: 14px;
+  padding: 20px;
+  border: 1px solid rgba(255,255,255,.06);
+  border-radius: 22px;
+  background: linear-gradient(145deg,rgba(255,255,255,.035),rgba(255,255,255,.015));
+}
+.favorites-panel-heading { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:17px; }
+.favorites-panel-heading div { display:flex; flex-direction:column; gap:4px; }
+.favorites-panel-heading strong { font-size:17px; }
+.favorites-panel-heading span { color:#687770; font-size:9px; }
+.favorites-panel-heading > a { color:#39e58b; font-size:10px; font-weight:900; }
+.favorites-team-list { display:grid; grid-template-columns:repeat(3,1fr); gap:9px; }
+.favorites-team-item { display:flex; align-items:center; justify-content:space-between; gap:8px; padding:10px; border-radius:14px; border:1px solid rgba(255,255,255,.05); background:rgba(255,255,255,.022); }
+.favorites-team-item > a { min-width:0; display:flex; align-items:center; gap:10px; }
+.favorites-team-item strong { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size:10px; }
+.favorites-team-item button { flex:0 0 auto; width:27px; height:27px; border:0; border-radius:50%; background:rgba(255,70,70,.06); color:#9b6868; cursor:pointer; font-size:17px; }
+.favorites-team-badge { width:38px; height:38px; flex:0 0 38px; border-radius:11px; object-fit:contain; background:rgba(255,255,255,.045); display:grid; place-items:center; font-size:19px; }
+.favorites-match-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:12px; }
+.favorites-match-card { padding:15px; border-radius:18px; border:1px solid rgba(255,255,255,.055); background:rgba(255,255,255,.022); }
+.favorites-match-card.live { border-color:rgba(255,70,70,.22); }
+.favorites-match-meta { display:flex; justify-content:space-between; gap:8px; margin-bottom:17px; }
+.favorites-match-meta span { color:#39c97c; font-size:9px; font-weight:900; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.favorites-match-meta b { color:#75837d; font-size:9px; white-space:nowrap; }
+.favorites-match-card.live .favorites-match-meta b { color:#ff5959; }
+.favorites-match-teams { display:grid; grid-template-columns:1fr 82px 1fr; gap:7px; align-items:center; direction:ltr; text-align:center; }
+.favorites-match-teams a { min-width:0; }
+.favorites-match-teams strong { display:block; margin-top:6px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size:10px; direction:rtl; }
+.favorites-match-teams > div { text-align:center; }
+.favorites-match-teams > div > strong { font-size:19px; direction:ltr; }
+.favorites-match-teams > div > span { display:block; margin-top:4px; color:#64736c; font-size:9px; }
+.favorites-match-details { display:block; margin-top:15px; padding:9px; border-radius:10px; text-align:center; color:#9aaba3; background:rgba(255,255,255,.025); font-size:9px; font-weight:900; }
+.favorites-empty { min-height:240px; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:30px; border:1px dashed rgba(255,255,255,.09); border-radius:22px; background:rgba(255,255,255,.018); }
+.favorites-empty span { font-size:42px; }
+.favorites-empty h2 { margin:12px 0 5px; font-size:19px; }
+.favorites-empty p { margin:0 0 15px; color:#687770; font-size:10px; }
+.favorites-empty a { padding:10px 14px; border-radius:10px; background:rgba(46,204,113,.07); color:#39e58b; font-size:10px; font-weight:900; }
+.favorites-empty.compact { min-height:120px; }
+.favorites-empty.compact span { font-size:28px; }
+.favorites-empty.compact p { margin:0; }
+
+@media (max-width: 700px) {
+  .favorites-page { padding:20px 12px 88px; }
+  .favorites-teams-panel, .favorites-matches { padding:15px; border-radius:18px; }
+  .favorites-team-list, .favorites-match-grid { grid-template-columns:1fr; }
+  .favorites-panel-heading { align-items:flex-start; }
+  .favorites-panel-heading > a { white-space:nowrap; }
+}
