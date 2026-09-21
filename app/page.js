@@ -499,10 +499,10 @@ export default function HomeDesign() {
       </div>
 
       <nav className="mobile-nav">
-        <a className="active" href="#matches-section"><span>⚽</span>المباريات</a>
-        <a href="/leagues"><span>🏆</span>البطولات</a>
-        <a href="#news-section"><span>📰</span>الأخبار</a>
-        <a href="/matches/today"><span>📅</span>اليوم</a>
+        <a className="active" href="#matches-section"><span className="mobile-nav-glyph">◉</span>المباريات</a>
+        <a href="/leagues"><span className="mobile-nav-glyph">◇</span>البطولات</a>
+        <a href="#news-section"><span className="mobile-nav-glyph">▤</span>الأخبار</a>
+        <a href="/matches/today"><span className="mobile-nav-glyph">⌁</span>اليوم</a>
       </nav>
     </main>
   );
