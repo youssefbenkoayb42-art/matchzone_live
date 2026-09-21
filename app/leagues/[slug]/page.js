@@ -140,9 +140,20 @@ export default async function LeaguePage({ params }) {
   const upcomingMatches = upcoming.slice(0, 5);
   const recentResults = results.slice(0, 5);
   const leagueTeams = teams.slice(0, 24);
+  const leagueUrl = BASE_URL + "/leagues/" + params.slug;
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "SportsOrganization",
+    name: league.name,
+    url: leagueUrl,
+    sport: "Soccer",
+    ...(league.badge ? { logo: league.badge } : {}),
+    ...(league.country ? { location: { "@type": "Country", name: league.country } } : {}),
+  };
 
   return (
     <main style={styles.main} dir="rtl">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div style={styles.container}>
         <a href="/leagues" style={styles.link}>← كل البطولات</a>
 
@@ -187,7 +198,13 @@ export default async function LeaguePage({ params }) {
         </section>
 
         <section>
-          <h2 style={styles.h2}>فرق {league.name}</h2>
+          <div style={styles.sectionHeader}>
+            <div>
+              <div style={styles.sectionKicker}>TEAMS</div>
+              <h2 style={{ ...styles.h2, marginTop: 4 }}>فرق {league.name}</h2>
+            </div>
+            <a href="/matches/today" style={styles.sectionLink}>مباريات اليوم ←</a>
+          </div>
           {leagueTeams.length === 0 ? (
             <div style={styles.empty}>لا توجد قائمة فرق متاحة لهذه البطولة حالياً.</div>
           ) : (
@@ -244,6 +261,9 @@ const styles = {
   eyebrow: { color: "#2ecc71", fontSize: 10, fontWeight: 900, letterSpacing: 1, marginBottom: 7 },
   h1: { margin: 0, fontSize: "clamp(24px,5vw,38px)", lineHeight: 1.2 },
   h2: { margin: "35px 0 18px", fontSize: 22 },
+  sectionHeader: { display: "flex", alignItems: "end", justifyContent: "space-between", gap: 12, marginTop: 10 },
+  sectionKicker: { color: "#2ecc71", fontSize: 10, fontWeight: 900, letterSpacing: 1 },
+  sectionLink: { color: "#82968d", textDecoration: "none", fontSize: 11, fontWeight: 800, whiteSpace: "nowrap" },
   muted: { color: "#82968d", margin: "8px 0 0", lineHeight: 1.7 },
   link: { color: "#2ecc71", textDecoration: "none", fontWeight: 800 },
   stats: { display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 10, marginTop: 14 },
