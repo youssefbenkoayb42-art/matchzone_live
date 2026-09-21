@@ -876,3 +876,70 @@ button { -webkit-tap-highlight-color: transparent; }
 @media (prefers-reduced-motion: reduce) {
   .international-home-card { transition: none; }
 }
+
+
+/* International competition discovery */
+.international-competitions {
+  margin: 28px 0 36px;
+}
+.international-competition-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+.international-competition-card {
+  min-height: 112px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 7px;
+  padding: 16px;
+  border: 1px solid rgba(57,229,139,.14);
+  border-radius: 18px;
+  background: linear-gradient(145deg, rgba(255,255,255,.055), rgba(255,255,255,.018));
+  color: inherit;
+  text-decoration: none;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.04), 0 12px 35px rgba(0,0,0,.12);
+  transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+.international-competition-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(57,229,139,.42);
+  box-shadow: 0 0 24px rgba(57,229,139,.08), 0 16px 38px rgba(0,0,0,.18);
+}
+.international-competition-card img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+}
+.international-competition-card strong {
+  font-size: 14px;
+  line-height: 1.35;
+}
+.international-competition-card > span:last-child {
+  color: #7cefae;
+  font-size: 10px;
+  font-weight: 800;
+}
+.competition-glyph {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(57,229,139,.45);
+  border-radius: 10px;
+  color: #39e58b;
+  font-size: 9px;
+  font-weight: 950;
+  letter-spacing: 1px;
+  box-shadow: 0 0 12px rgba(57,229,139,.15);
+}
+@media (max-width: 900px) {
+  .international-competition-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 560px) {
+  .international-competition-grid { grid-template-columns: 1fr 1fr; gap: 9px; }
+  .international-competition-card { min-height: 104px; padding: 13px; border-radius: 15px; }
+  .international-competition-card strong { font-size: 12px; }
+}
