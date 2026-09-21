@@ -943,3 +943,45 @@ button { -webkit-tap-highlight-color: transparent; }
   .international-competition-card { min-height: 104px; padding: 13px; border-radius: 15px; }
   .international-competition-card strong { font-size: 12px; }
 }
+
+
+/* Keep horizontal scrolling inside the top navigation only */
+.site-nav {
+  overflow: hidden;
+}
+.site-nav-inner {
+  min-width: 0;
+}
+.site-nav-brand {
+  flex: 0 0 auto;
+}
+.site-nav-links {
+  min-width: 0;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  flex: 1 1 auto;
+  justify-content: flex-start;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+.site-nav-links::-webkit-scrollbar {
+  display: none;
+}
+.site-nav-links a {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+main {
+  max-width: 100%;
+  overflow-x: clip;
+}
+@media (max-width: 650px) {
+  .site-nav-inner {
+    gap: 8px;
+  }
+  .site-nav-links {
+    justify-content: flex-start;
+    padding-bottom: 2px;
+  }
+}
