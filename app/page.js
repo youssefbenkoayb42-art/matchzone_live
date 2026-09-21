@@ -130,6 +130,7 @@ export default function HomeDesign() {
         : [...current, team];
       try {
         localStorage.setItem("matchzone-favorite-teams", JSON.stringify(next));
+        window.dispatchEvent(new Event("matchzone-favorites-updated"));
       } catch {}
       return next;
     });
