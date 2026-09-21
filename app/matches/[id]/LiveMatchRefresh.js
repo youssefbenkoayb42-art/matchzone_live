@@ -11,6 +11,7 @@ export default function LiveMatchRefresh({ matchId, initialStatus, initialHome, 
   const [checking, setChecking] = useState(false);
   const [lastChecked, setLastChecked] = useState(null);
   const [latestScore, setLatestScore] = useState({ home: initialHome, away: initialAway });
+  const [latestStatus, setLatestStatus] = useState(initialStatus);
 
   const isLive = useMemo(() => LIVE_STATUSES.has(initialStatus), [initialStatus]);
 
@@ -35,13 +36,14 @@ export default function LiveMatchRefresh({ matchId, initialStatus, initialHome, 
 
         setLastChecked(new Date());
 
-        const latestStatus = latest.fixture?.status?.short || "NS";
+        const nextStatus = latest.fixture?.status?.short || "NS";
         const latestHome = latest.goals?.home ?? null;
         const latestAway = latest.goals?.away ?? null;
         setLatestScore({ home: latestHome, away: latestAway });
+        setLatestStatus(nextStatus);
 
         if (
-          latestStatus !== initialStatus ||
+          nextStatus !== initialStatus ||
           latestHome !== initialHome ||
           latestAway !== initialAway
         ) {
@@ -68,9 +70,13 @@ export default function LiveMatchRefresh({ matchId, initialStatus, initialHome, 
     };
   }, [matchId, initialStatus, initialHome, initialAway, router]);
 
-  const statusText = isLive
+  const liveNow = LIVE_STATUSES.has(latestStatus);
+  const finishedNow = FINISHED_STATUSES.has(latestStatus);
+  const statusText = liveNow
     ? "🔴 تحديث مباشر كل 30 ثانية"
-    : "🔄 تحديث تلقائي كل 60 ثانية";
+    : finishedNow
+      ? "✅ المباراة انتهت"
+      : "🔄 تحديث تلقائي كل 60 ثانية";
 
   const handleManualRefresh = () => {
     if (checking) return;
@@ -89,16 +95,16 @@ export default function LiveMatchRefresh({ matchId, initialStatus, initialHome, 
         marginTop: "12px",
         padding: "8px 12px",
         borderRadius: "999px",
-        background: isLive ? "#35191b" : "#0b1713",
+        background: liveNow ? "#35191b" : "#0b1713",
         border: "1px solid #284238",
-        color: isLive ? "#ff9a9a" : "#82968d",
+        color: liveNow ? "#ff9a9a" : "#82968d",
         fontSize: "12px",
         fontWeight: "700",
       }}
     >
-      <span>{checking ? "⏳" : isLive ? "🔴" : "●"}</span>
+      <span>{checking ? "⏳" : liveNow ? "🔴" : finishedNow ? "✅" : "●"}</span>
       <span>{statusText}</span>
-      {isLive && (
+      {liveNow && (
         <strong style={{ direction: "ltr", fontSize: "14px" }}>
           {latestScore.home ?? "—"} - {latestScore.away ?? "—"}
         </strong>
