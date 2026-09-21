@@ -210,6 +210,11 @@ export default function HomeDesign() {
     matches.find((match) => getStatusType(match.status) === "upcoming") ||
     matches[0];
 
+  const internationalMatches = useMemo(
+    () => matches.filter((match) => ["international-team", "international-club"].includes(match.competitionType)),
+    [matches]
+  );
+
   const favoriteMatches = useMemo(
     () => matches.filter((match) => favoriteTeams.includes(match.home) || favoriteTeams.includes(match.away)).slice(0, 6),
     [matches, favoriteTeams]
@@ -286,6 +291,39 @@ export default function HomeDesign() {
           <div><span>البطولات</span><strong>{Math.max(leagues.length - 1, 0)}</strong><small>متاحة الآن</small></div>
           <div><span>آخر تحديث</span><strong>{lastUpdated ? lastUpdated.toLocaleTimeString("ar-MA", { hour: "2-digit", minute: "2-digit" }) : "--:--"}</strong><small>يتجدد كل دقيقة</small></div>
         </section>
+
+        {internationalMatches.length > 0 && (
+          <section className="international-home-section">
+            <div className="section-heading">
+              <div>
+                <span className="section-kicker">GLOBAL FOOTBALL</span>
+                <h2>العالمية الآن</h2>
+                <p>مباريات المنتخبات والأندية الدولية المتاحة حاليًا.</p>
+              </div>
+              <a href="/international">كل العالمية ←</a>
+            </div>
+            <div className="international-home-grid">
+              {internationalMatches.slice(0, 3).map((match) => {
+                const state = getStatusType(match.status);
+                return (
+                  <a href={`/matches/${match.id}`} className={`international-home-card ${state === "live" ? "is-live" : ""}`} key={match.id}>
+                    <div className="international-home-meta">
+                      <span>{match.competitionType === "international-team" ? "منتخبات" : "أندية دولية"}</span>
+                      <b>{state === "live" ? "LIVE" : state === "finished" ? "FT" : "NEXT"}</b>
+                    </div>
+                    <small>{match.arabicLeague}</small>
+                    <div className="international-home-teams">
+                      <TeamLogo src={match.homeLogo} alt={match.home} size={38} />
+                      <strong>{match.homeScore ?? "-"} - {match.awayScore ?? "-"}</strong>
+                      <TeamLogo src={match.awayLogo} alt={match.away} size={38} />
+                    </div>
+                    <div className="international-home-names"><span>{match.home}</span><span>{match.away}</span></div>
+                  </a>
+                );
+              })}
+            </div>
+          </section>
+        )}
 
         <section className="league-section">
           <div className="section-heading">
