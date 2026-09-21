@@ -124,6 +124,40 @@ async function getMatch(id) {
   }
 }
 
+export async function generateMetadata({ params }) {
+  const { id } = await params;
+  const match = await getMatch(id);
+
+  if (!match) {
+    return {
+      title: "المباراة غير موجودة",
+      description: "تعذر العثور على تفاصيل المباراة المطلوبة على MatchZone.",
+    };
+  }
+
+  const title = `${match.teams.home.name} ضد ${match.teams.away.name} | النتيجة والتفاصيل`;
+  const description = `تابع ${match.teams.home.name} ضد ${match.teams.away.name} في ${match.league.name}: الموعد والنتيجة وأحداث المباراة والإحصائيات والتشكيلة.`;
+  const url = \`${BASE_URL}/matches/${id}\`;
+
+  return {
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: {
+      title,
+      description,
+      url,
+      type: "article",
+      images: [match.teams.home.logo || match.teams.away.logo].filter(Boolean),
+    },
+    twitter: {
+      card: "summary",
+      title,
+      description,
+    },
+  };
+}
+
 export default async function MatchPage({ params }) {
   const { id } = await params;
   const match = await getMatch(id);
