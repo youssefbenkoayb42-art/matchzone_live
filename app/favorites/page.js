@@ -56,6 +56,8 @@ export default function FavoritesPage() {
   const [favorites, setFavorites] = useState([]);
   const [matches, setMatches] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [lastUpdated, setLastUpdated] = useState(null);
+  const [refreshing, setRefreshing] = useState(false);
 
   function loadFavorites() {
     try {
@@ -66,13 +68,32 @@ export default function FavoritesPage() {
     }
   }
 
+  async function refreshMatches(silent = false) {
+    if (!silent) setRefreshing(true);
+    try {
+      const res = await fetch("/api/football", { cache: "no-store" });
+      if (!res.ok) throw new Error("Failed to load");
+      const data = await res.json();
+      setMatches((data.response || []).map(normalizeMatch).filter((match) => match.id));
+      setLastUpdated(new Date());
+    } catch {
+      if (!matches.length) setMatches([]);
+    } finally {
+      setLoading(false);
+      setRefreshing(false);
+    }
+  }
+
   useEffect(() => {
     loadFavorites();
-    fetch("/api/football", { cache: "no-store" })
-      .then((res) => (res.ok ? res.json() : Promise.reject()))
-      .then((data) => setMatches((data.response || []).map(normalizeMatch).filter((match) => match.id)))
-      .catch(() => setMatches([]))
-      .finally(() => setLoading(false));
+    refreshMatches();
+    const timer = setInterval(() => refreshMatches(true), 30000);
+    const onStorage = () => loadFavorites();
+    window.addEventListener("storage", onStorage);
+    return () => {
+      clearInterval(timer);
+      window.removeEventListener("storage", onStorage);
+    };
   }, []);
 
   const favoriteMatches = useMemo(
@@ -138,8 +159,11 @@ export default function FavoritesPage() {
             <div className="favorites-panel-heading">
               <div>
                 <strong>مباريات فرقك</strong>
-                <span>{favoriteMatches.length} مباراة ضمن البيانات المتاحة</span>
+                <span>{favoriteMatches.length} مباراة ضمن البيانات المتاحة{lastUpdated ? ` • آخر تحديث ${lastUpdated.toLocaleTimeString("ar-MA", { hour: "2-digit", minute: "2-digit" })}` : ""}</span>
               </div>
+              <button className="favorites-refresh-button" onClick={() => refreshMatches()} disabled={refreshing}>
+                {refreshing ? "جاري التحديث..." : "↻ تحديث"}
+              </button>
             </div>
 
             {loading ? (
