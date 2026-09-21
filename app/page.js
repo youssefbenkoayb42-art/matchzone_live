@@ -113,6 +113,27 @@ export default function HomeDesign() {
   const [visibleNews, setVisibleNews] = useState(6);
   const [lastUpdated, setLastUpdated] = useState(null);
   const [refreshing, setRefreshing] = useState(false);
+  const [favoriteTeams, setFavoriteTeams] = useState([]);
+  const [favoritesOnly, setFavoritesOnly] = useState(false);
+
+  useEffect(() => {
+    try {
+      const saved = JSON.parse(localStorage.getItem("matchzone-favorite-teams") || "[]");
+      if (Array.isArray(saved)) setFavoriteTeams(saved);
+    } catch {}
+  }, []);
+
+  function toggleFavorite(team) {
+    setFavoriteTeams((current) => {
+      const next = current.includes(team)
+        ? current.filter((name) => name !== team)
+        : [...current, team];
+      try {
+        localStorage.setItem("matchzone-favorite-teams", JSON.stringify(next));
+      } catch {}
+      return next;
+    });
+  }
 
   async function fetchMatches(showLoader = true) {
     try {
@@ -173,9 +194,11 @@ export default function HomeDesign() {
         match.arabicLeague.toLowerCase().includes(query);
       const matchesLeague = selectedLeague === "الكل" || match.arabicLeague === selectedLeague;
       const matchesStatus = selectedStatus === "all" || getStatusType(match.status) === selectedStatus;
-      return matchesSearch && matchesLeague && matchesStatus;
+      const matchesFavorites =
+        !favoritesOnly || favoriteTeams.includes(match.home) || favoriteTeams.includes(match.away);
+      return matchesSearch && matchesLeague && matchesStatus && matchesFavorites;
     });
-  }, [matches, search, selectedLeague, selectedStatus]);
+  }, [matches, search, selectedLeague, selectedStatus, favoritesOnly, favoriteTeams]);
 
   const liveMatches = matches.filter((match) => getStatusType(match.status) === "live");
   const featuredMatch =
@@ -292,6 +315,9 @@ export default function HomeDesign() {
           </div>
 
           <div className="filter-row status-row">
+            <button className={favoritesOnly ? "filter-pill selected favorite-pill" : "filter-pill favorite-pill"} onClick={() => setFavoritesOnly((value) => !value)}>
+              ⭐ المفضلة ({favoriteTeams.length})
+            </button>
             {[["all", "الكل"], ["live", "🔴 مباشر"], ["upcoming", "قادمة"], ["finished", "منتهية"]].map(([value, label]) => (
               <button key={value} className={selectedStatus === value ? "filter-pill selected" : "filter-pill"} onClick={() => setSelectedStatus(value)}>{label}</button>
             ))}
@@ -334,18 +360,28 @@ export default function HomeDesign() {
                       <b className={live ? "live-label" : ""}>{live ? "● مباشر" : getStatusLabel(match.status)}</b>
                     </div>
                     <div className="match-teams">
-                      <a href={`/teams/${encodeURIComponent(match.home)}`} className="match-team">
-                        <TeamLogo src={match.homeLogo} alt={match.home} size={48} />
-                        <strong>{match.home}</strong>
-                      </a>
+                      <div className="match-team-wrap">
+                        <a href={`/teams/${encodeURIComponent(match.home)}`} className="match-team">
+                          <TeamLogo src={match.homeLogo} alt={match.home} size={48} />
+                          <strong>{match.home}</strong>
+                        </a>
+                        <button className={favoriteTeams.includes(match.home) ? "favorite-team active" : "favorite-team"} onClick={() => toggleFavorite(match.home)} aria-label={favoriteTeams.includes(match.home) ? `إزالة ${match.home} من المفضلة` : `إضافة ${match.home} إلى المفضلة`}>
+                          {favoriteTeams.includes(match.home) ? "★" : "☆"}
+                        </button>
+                      </div>
                       <div className="match-center">
                         <strong>{match.homeScore ?? "-"} - {match.awayScore ?? "-"}</strong>
                         <span>{match.time}</span>
                       </div>
-                      <a href={`/teams/${encodeURIComponent(match.away)}`} className="match-team">
-                        <TeamLogo src={match.awayLogo} alt={match.away} size={48} />
-                        <strong>{match.away}</strong>
-                      </a>
+                      <div className="match-team-wrap">
+                        <a href={`/teams/${encodeURIComponent(match.away)}`} className="match-team">
+                          <TeamLogo src={match.awayLogo} alt={match.away} size={48} />
+                          <strong>{match.away}</strong>
+                        </a>
+                        <button className={favoriteTeams.includes(match.away) ? "favorite-team active" : "favorite-team"} onClick={() => toggleFavorite(match.away)} aria-label={favoriteTeams.includes(match.away) ? `إزالة ${match.away} من المفضلة` : `إضافة ${match.away} إلى المفضلة`}>
+                          {favoriteTeams.includes(match.away) ? "★" : "☆"}
+                        </button>
+                      </div>
                     </div>
                     <a href={`/matches/${match.id}`} className="match-details">تفاصيل المباراة <span>←</span></a>
                   </article>
