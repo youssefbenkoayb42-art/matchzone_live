@@ -478,3 +478,18 @@ button { -webkit-tap-highlight-color: transparent; }
   opacity: .55;
   cursor: wait;
 }
+
+
+/* Favorite match status groups */
+.favorites-groups { display:flex; flex-direction:column; gap:22px; }
+.favorites-group { padding-top:2px; }
+.favorites-group-heading { display:flex; align-items:center; justify-content:space-between; gap:10px; margin:0 2px 10px; }
+.favorites-group-heading strong { font-size:12px; }
+.favorites-group-heading span { color:#66756e; font-size:9px; }
+.favorites-group-live .favorites-group-heading strong { color:#ff6666; }
+.favorites-group-upcoming .favorites-group-heading strong { color:#39e58b; }
+.favorites-group-finished .favorites-group-heading strong { color:#9aa7a1; }
+@media (max-width:700px) {
+  .favorites-groups { gap:18px; }
+  .favorites-group-heading strong { font-size:11px; }
+}
