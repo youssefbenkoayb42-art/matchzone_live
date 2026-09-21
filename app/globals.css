@@ -553,3 +553,92 @@ button { -webkit-tap-highlight-color: transparent; }
     font-size: 7px;
   }
 }
+
+
+/* Neon futuristic icon system */
+.nav-glyph,
+.mobile-nav-glyph {
+  position: relative;
+  display: inline-grid !important;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  color: #39e58b;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px !important;
+  font-weight: 950;
+  text-shadow: 0 0 8px rgba(57,229,139,.72);
+  filter: drop-shadow(0 0 4px rgba(57,229,139,.28));
+}
+.nav-glyph::after,
+.mobile-nav-glyph::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  border: 1px solid rgba(57,229,139,.22);
+  border-radius: 7px;
+  transform: rotate(45deg);
+  pointer-events: none;
+}
+.site-nav-links a:hover .nav-glyph,
+.site-nav-links a.active .nav-glyph,
+.mobile-nav a.active .mobile-nav-glyph {
+  color: #8affbe;
+  text-shadow: 0 0 12px rgba(57,229,139,.95);
+}
+.mobile-nav-glyph {
+  width: 25px;
+  height: 25px;
+  font-size: 15px !important;
+}
+.mobile-nav-glyph::after {
+  inset: 4px;
+  border-radius: 8px;
+}
+
+.status-glyph {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 42px;
+  height: 21px;
+  margin-left: 8px;
+  padding: 0 7px;
+  border-radius: 7px;
+  border: 1px solid currentColor;
+  font-size: 7px;
+  font-style: normal;
+  font-weight: 950;
+  letter-spacing: 1px;
+  vertical-align: middle;
+  background: rgba(255,255,255,.025);
+  box-shadow: 0 0 12px currentColor;
+}
+.favorites-group-live .status-glyph {
+  color: #ff5c67;
+  background: rgba(255,92,103,.07);
+}
+.favorites-group-upcoming .status-glyph {
+  color: #39e58b;
+  background: rgba(57,229,139,.07);
+}
+.favorites-group-finished .status-glyph {
+  color: #87958f;
+  background: rgba(135,149,143,.06);
+}
+.favorites-group-heading strong {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+@media (max-width:650px) {
+  .site-nav-links a .nav-glyph {
+    width: 20px;
+    height: 20px;
+  }
+  .status-glyph {
+    min-width: 38px;
+    height: 19px;
+    font-size: 6px;
+  }
+}
