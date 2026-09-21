@@ -188,12 +188,21 @@ export default async function MatchPage({ params }) {
     .filter((event) => String(event?.idEvent) !== String(match.eventId))
     .slice(0, 3);
 
-  const leagueSlug =
-    match.league.id === 4328 ? "premier-league" :
-    match.league.id === 4335 ? "la-liga" :
-    match.league.id === 4332 ? "serie-a" :
-    match.league.id === 4331 ? "bundesliga" :
-    match.league.id === 4334 ? "ligue-1" : null;
+  const getLeaguePath = (leagueId) => {
+    const featured = {
+      4328: "premier-league",
+      4335: "la-liga",
+      4332: "serie-a",
+      4331: "bundesliga",
+      4334: "ligue-1",
+    };
+
+    return featured[leagueId]
+      ? "/leagues/" + featured[leagueId]
+      : "/leagues/league-" + leagueId;
+  };
+
+  const leaguePath = getLeaguePath(match.league.id);
 
   const breadcrumbData = {
     "@context": "https://schema.org",
@@ -204,7 +213,7 @@ export default async function MatchPage({ params }) {
         "@type": "ListItem",
         position: 2,
         name: match.league.name,
-        item: leagueSlug ? BASE_URL + "/leagues/" + leagueSlug : BASE_URL + "/leagues",
+        item: BASE_URL + leaguePath,
       },
       {
         "@type": "ListItem",
@@ -326,7 +335,7 @@ export default async function MatchPage({ params }) {
           <a href="/" style={{ color: "#37e28a", textDecoration: "none" }}>الرئيسية</a>
           <span>←</span>
           <a
-            href={`/leagues/${match.league.id === 4328 ? "premier-league" : match.league.id === 4335 ? "la-liga" : match.league.id === 4332 ? "serie-a" : match.league.id === 4331 ? "bundesliga" : match.league.id === 4334 ? "ligue-1" : "leagues"}`}
+            href={leaguePath}
             style={{ color: "#37e28a", textDecoration: "none" }}
           >
             {match.league.name}
@@ -354,7 +363,7 @@ export default async function MatchPage({ params }) {
           >
             🏆{" "}
             <a
-              href={`/leagues/${match.league.id === 4328 ? "premier-league" : match.league.id === 4335 ? "la-liga" : match.league.id === 4332 ? "serie-a" : match.league.id === 4331 ? "bundesliga" : match.league.id === 4334 ? "ligue-1" : "leagues"}`}
+              href={leaguePath}
               style={{ color: "#37e28a", textDecoration: "none" }}
             >
               {match.league.name}
