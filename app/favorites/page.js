@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 
 function getStatusType(status) {
   const value = String(status || "").toUpperCase();
@@ -60,12 +60,17 @@ export default function FavoritesPage() {
   const [refreshing, setRefreshing] = useState(false);
   const [alerts, setAlerts] = useState([]);
   const [snapshotReady, setSnapshotReady] = useState(false);
+  const favoritesRef = useRef([]);
+  const snapshotReadyRef = useRef(false);
 
   function loadFavorites() {
     try {
       const saved = JSON.parse(localStorage.getItem("matchzone-favorite-teams") || "[]");
-      setFavorites(Array.isArray(saved) ? saved : []);
+      const next = Array.isArray(saved) ? saved : [];
+      favoritesRef.current = next;
+      setFavorites(next);
     } catch {
+      favoritesRef.current = [];
       setFavorites([]);
     }
   }
@@ -85,7 +90,7 @@ export default function FavoritesPage() {
         const newAlerts = [];
 
         nextMatches.forEach((match) => {
-          if (!favorites.includes(match.home) && !favorites.includes(match.away)) return;
+          if (!favoritesRef.current.includes(match.home) && !favoritesRef.current.includes(match.away)) return;
           const key = String(match.id);
           const current = {
             homeScore: match.homeScore,
@@ -108,11 +113,14 @@ export default function FavoritesPage() {
         });
 
         localStorage.setItem("matchzone-favorite-match-snapshots", JSON.stringify(nextSnapshot));
-        if (snapshotReady && newAlerts.length) {
+        if (snapshotReadyRef.current && newAlerts.length) {
           setAlerts(newAlerts.slice(0, 3));
           window.setTimeout(() => setAlerts([]), 7000);
         }
-        if (!snapshotReady) setSnapshotReady(true);
+        if (!snapshotReadyRef.current) {
+          snapshotReadyRef.current = true;
+          setSnapshotReady(true);
+        }
       } catch {}
 
       setMatches(nextMatches);
@@ -135,7 +143,7 @@ export default function FavoritesPage() {
       clearInterval(timer);
       window.removeEventListener("storage", onStorage);
     };
-  }, [favorites, snapshotReady]);
+  }, []);
 
   const favoriteMatches = useMemo(
     () => matches
