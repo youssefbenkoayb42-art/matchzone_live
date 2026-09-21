@@ -110,7 +110,7 @@ function MatchCard({ match }) {
   const awayScore = match?.goals?.away ?? "-";
 
   return (
-    <article
+    <article className="today-match-card"
       style={{
         background: "linear-gradient(145deg,#10251c,#0b1713)",
         border: "1px solid #284238",
@@ -118,7 +118,7 @@ function MatchCard({ match }) {
         padding: "16px",
       }}
     >
-      <div
+      <div className="today-match-card-top"
         style={{
           display: "flex",
           justifyContent: "space-between",
@@ -148,7 +148,7 @@ function MatchCard({ match }) {
         </span>
       </div>
 
-      <div
+      <div className="today-match-score-row"
         style={{
           display: "grid",
           gridTemplateColumns: "1fr auto 1fr",
@@ -178,7 +178,7 @@ function MatchCard({ match }) {
         </strong>
       </div>
 
-      <div
+      <div className="today-match-team-links"
         style={{
           display: "grid",
           gridTemplateColumns: "1fr 1fr",
@@ -243,7 +243,7 @@ function MatchSection({ title, kicker, matches }) {
   if (!matches.length) return null;
 
   return (
-    <section style={{ marginTop: "30px" }}>
+    <section className="today-match-section" style={{ marginTop: "30px" }}>
       <div style={{ marginBottom: "14px" }}>
         <p
           style={{
@@ -259,7 +259,7 @@ function MatchSection({ title, kicker, matches }) {
         <h2 style={{ margin: "5px 0 0", fontSize: "22px" }}>{title}</h2>
       </div>
 
-      <div
+      <div className="today-match-grid"
         style={{
           display: "grid",
           gridTemplateColumns: "repeat(auto-fit,minmax(280px,1fr))",
@@ -292,6 +292,7 @@ export default async function TodayMatchesPage() {
   return (
     <main
       dir="rtl"
+      className="today-matches-page"
       style={{
         minHeight: "100vh",
         background: "#07100d",
@@ -300,7 +301,7 @@ export default async function TodayMatchesPage() {
         fontFamily: "Arial, Helvetica, sans-serif",
       }}
     >
-      <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
+      <div className="today-matches-container" style={{ maxWidth: "1100px", margin: "0 auto" }}>
         <a
           href="/"
           style={{
@@ -312,9 +313,9 @@ export default async function TodayMatchesPage() {
           ← العودة إلى MatchZone
         </a>
 
-        <header style={{ margin: "30px 0 22px" }}>
+        <header className="today-matches-hero" style={{ margin: "30px 0 22px" }}>
           <p style={{ color: "#37e28a", fontWeight: "800", marginBottom: 8 }}>
-            ⚽ MATCH CENTER
+            MATCH CENTER
           </p>
           <h1 style={{ fontSize: "clamp(28px, 6vw, 46px)", margin: "8px 0" }}>
             مباريات اليوم ونتائج كرة القدم
@@ -324,7 +325,7 @@ export default async function TodayMatchesPage() {
           </p>
         </header>
 
-        <div
+        <div className="today-matches-stats"
           style={{
             display: "grid",
             gridTemplateColumns: "repeat(3,1fr)",
@@ -338,6 +339,7 @@ export default async function TodayMatchesPage() {
           ].map(([label, value]) => (
             <div
               key={label}
+              className="today-matches-stat"
               style={{
                 padding: "15px 10px",
                 textAlign: "center",
@@ -357,7 +359,7 @@ export default async function TodayMatchesPage() {
         </div>
 
         {matches.length === 0 ? (
-          <section
+          <section className="today-empty-state"
             style={{
               marginTop: "28px",
               padding: "35px 20px",
