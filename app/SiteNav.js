@@ -7,6 +7,7 @@ const links = [
   ["/matches/today", "المباريات", "⚽"],
   ["/leagues", "البطولات", "🏆"],
   ["/stats", "الإحصائيات", "📊"],
+  ["/favorites", "المفضلة", "⭐"],
 ];
 
 export default function SiteNav() {
