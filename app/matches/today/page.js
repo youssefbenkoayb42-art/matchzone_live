@@ -1,54 +1,293 @@
 const BASE_URL = "https://matchzone-live.vercel.app";
-const LEAGUES = [4328, 4335, 4332, 4331, 4334];
+
+const LIVE_STATUSES = ["LIVE", "1H", "2H", "HT", "ET", "BT", "P", "INT"];
+const FINISHED_STATUSES = ["FT", "AET", "PEN"];
+
+function getTodayKey() {
+  return new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Africa/Casablanca",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).format(new Date());
+}
+
+function normalizeStatus(match) {
+  return String(
+    match?.fixture?.status?.short ||
+      match?.fixture?.status?.long ||
+      match?.strStatus ||
+      ""
+  ).toUpperCase();
+}
+
+function isLive(match) {
+  return LIVE_STATUSES.includes(normalizeStatus(match));
+}
+
+function isFinished(match) {
+  return FINISHED_STATUSES.includes(normalizeStatus(match));
+}
+
+function statusLabel(match) {
+  if (isLive(match)) return "🔴 مباشر";
+  if (isFinished(match)) return "انتهت";
+  return match?.fixture?.date
+    ? new Date(match.fixture.date).toLocaleTimeString("ar-MA", {
+        hour: "2-digit",
+        minute: "2-digit",
+        timeZone: "Africa/Casablanca",
+      })
+    : "لم تبدأ";
+}
+
+function getLeaguePath(match) {
+  const leagueId = match?.league?.id;
+  const featured = {
+    4328: "premier-league",
+    4335: "la-liga",
+    4332: "serie-a",
+    4331: "bundesliga",
+    4334: "ligue-1",
+  };
+
+  return featured[leagueId]
+    ? `/leagues/${featured[leagueId]}`
+    : leagueId
+      ? `/leagues/league-${leagueId}`
+      : "/leagues";
+}
 
 async function getTodayMatches() {
-  const date = new Date().toISOString().slice(0, 10);
-
   try {
-    const responses = await Promise.all(
-      LEAGUES.map(async (leagueId) => {
-        const res = await fetch(
-          `https://www.thesportsdb.com/api/v1/json/123/eventsday.php?d=${date}&l=${leagueId}`,
-          { next: { revalidate: 300 } }
-        );
-        if (!res.ok) return [];
-        const data = await res.json();
-        return Array.isArray(data?.events) ? data.events : [];
-      })
-    );
-
-    const unique = new Map();
-    responses.flat().forEach((event) => {
-      if (event?.idEvent) unique.set(event.idEvent, event);
+    const res = await fetch(`${BASE_URL}/api/football`, {
+      cache: "no-store",
     });
 
-    return [...unique.values()].sort((a, b) =>
-      String(a?.strTime || "").localeCompare(String(b?.strTime || ""))
-    );
+    if (!res.ok) return [];
+
+    const data = await res.json();
+    const today = getTodayKey();
+
+    return (Array.isArray(data?.response) ? data.response : [])
+      .filter((match) => {
+        const date = match?.fixture?.date;
+        if (!date) return false;
+
+        return new Intl.DateTimeFormat("en-CA", {
+          timeZone: "Africa/Casablanca",
+          year: "numeric",
+          month: "2-digit",
+          day: "2-digit",
+        }).format(new Date(date)) === today;
+      })
+      .sort(
+        (a, b) =>
+          new Date(a?.fixture?.date || 0) -
+          new Date(b?.fixture?.date || 0)
+      );
   } catch {
     return [];
   }
 }
 
-function statusLabel(event) {
-  const status = String(event?.strStatus || "").toLowerCase();
-
-  if (["match finished", "ft", "finished"].includes(status)) return "انتهت";
-  if (["1h", "2h", "ht", "live", "in progress"].includes(status)) return "مباشر";
-  return event?.strTime ? event.strTime.slice(0, 5) : "لم تبدأ";
-}
-
 export const metadata = {
   title: "مباريات اليوم",
   description:
-    "مباريات اليوم ونتائج كرة القدم ومواعيد أهم المباريات في البطولات العالمية على MatchZone.",
+    "مباريات اليوم ونتائج كرة القدم ومواعيد البطولات المتاحة مجانًا على MatchZone.",
   alternates: {
     canonical: `${BASE_URL}/matches/today`,
   },
 };
 
+function MatchCard({ match }) {
+  const leagueName =
+    match?.arabicLeague || match?.league?.name || "كرة القدم";
+  const leaguePath = getLeaguePath(match);
+  const homeName = match?.teams?.home?.name || "المضيف";
+  const awayName = match?.teams?.away?.name || "الضيف";
+  const homeScore = match?.goals?.home ?? "-";
+  const awayScore = match?.goals?.away ?? "-";
+
+  return (
+    <article
+      style={{
+        background: "linear-gradient(145deg,#10251c,#0b1713)",
+        border: "1px solid #284238",
+        borderRadius: "18px",
+        padding: "16px",
+      }}
+    >
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          gap: "10px",
+          alignItems: "center",
+          flexWrap: "wrap",
+        }}
+      >
+        <a
+          href={leaguePath}
+          style={{
+            color: "#37e28a",
+            fontWeight: "800",
+            textDecoration: "none",
+          }}
+        >
+          {leagueName}
+        </a>
+        <span
+          style={{
+            color: isLive(match) ? "#37e28a" : "#9baaa4",
+            fontSize: "13px",
+            fontWeight: "800",
+          }}
+        >
+          {statusLabel(match)}
+        </span>
+      </div>
+
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "1fr auto 1fr",
+          alignItems: "center",
+          gap: "10px",
+          marginTop: "18px",
+          direction: "ltr",
+        }}
+      >
+        <strong style={{ textAlign: "center", direction: "rtl" }}>
+          {homeName}
+        </strong>
+
+        <span
+          style={{
+            color: "#37e28a",
+            fontSize: "22px",
+            fontWeight: "900",
+            whiteSpace: "nowrap",
+          }}
+        >
+          {homeScore} - {awayScore}
+        </span>
+
+        <strong style={{ textAlign: "center", direction: "rtl" }}>
+          {awayName}
+        </strong>
+      </div>
+
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "1fr 1fr",
+          gap: "8px",
+          marginTop: "16px",
+        }}
+      >
+        <a
+          href={`/teams/${encodeURIComponent(homeName)}`}
+          style={{
+            padding: "9px",
+            borderRadius: "10px",
+            textAlign: "center",
+            textDecoration: "none",
+            color: "#b9c9c2",
+            background: "rgba(255,255,255,.03)",
+            border: "1px solid rgba(255,255,255,.06)",
+            fontSize: "13px",
+          }}
+        >
+          {homeName}
+        </a>
+        <a
+          href={`/teams/${encodeURIComponent(awayName)}`}
+          style={{
+            padding: "9px",
+            borderRadius: "10px",
+            textAlign: "center",
+            textDecoration: "none",
+            color: "#b9c9c2",
+            background: "rgba(255,255,255,.03)",
+            border: "1px solid rgba(255,255,255,.06)",
+            fontSize: "13px",
+          }}
+        >
+          {awayName}
+        </a>
+      </div>
+
+      <a
+        href={`/matches/${match?.eventId || match?.fixture?.id}`}
+        style={{
+          display: "block",
+          marginTop: "10px",
+          padding: "11px",
+          borderRadius: "12px",
+          textAlign: "center",
+          textDecoration: "none",
+          color: "#d9e4df",
+          background: "rgba(55,226,138,.07)",
+          border: "1px solid rgba(55,226,138,.14)",
+          fontWeight: "800",
+        }}
+      >
+        تفاصيل المباراة ←
+      </a>
+    </article>
+  );
+}
+
+function MatchSection({ title, kicker, matches }) {
+  if (!matches.length) return null;
+
+  return (
+    <section style={{ marginTop: "30px" }}>
+      <div style={{ marginBottom: "14px" }}>
+        <p
+          style={{
+            margin: 0,
+            color: "#37e28a",
+            fontSize: "12px",
+            fontWeight: "900",
+            letterSpacing: "1.5px",
+          }}
+        >
+          {kicker}
+        </p>
+        <h2 style={{ margin: "5px 0 0", fontSize: "22px" }}>{title}</h2>
+      </div>
+
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fit,minmax(280px,1fr))",
+          gap: "14px",
+        }}
+      >
+        {matches.map((match) => (
+          <MatchCard
+            key={match?.eventId || match?.fixture?.id}
+            match={match}
+          />
+        ))}
+      </div>
+    </section>
+  );
+}
+
 export default async function TodayMatchesPage() {
   const matches = await getTodayMatches();
+  const live = matches.filter(isLive);
+  const finished = matches.filter(isFinished);
+  const scheduled = matches.filter(
+    (match) => !isLive(match) && !isFinished(match)
+  );
+
+  const leagueCount = new Set(
+    matches.map((match) => match?.league?.id).filter(Boolean)
+  ).size;
 
   return (
     <main
@@ -61,7 +300,7 @@ export default async function TodayMatchesPage() {
         fontFamily: "Arial, Helvetica, sans-serif",
       }}
     >
-      <div style={{ maxWidth: "1050px", margin: "0 auto" }}>
+      <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
         <a
           href="/"
           style={{
@@ -73,19 +312,54 @@ export default async function TodayMatchesPage() {
           ← العودة إلى MatchZone
         </a>
 
-        <header style={{ margin: "30px 0" }}>
-          <p style={{ color: "#37e28a", fontWeight: "800" }}>⚽ MatchZone</p>
-          <h1 style={{ fontSize: "clamp(28px, 6vw, 44px)", margin: "8px 0" }}>
+        <header style={{ margin: "30px 0 22px" }}>
+          <p style={{ color: "#37e28a", fontWeight: "800", marginBottom: 8 }}>
+            ⚽ MATCH CENTER
+          </p>
+          <h1 style={{ fontSize: "clamp(28px, 6vw, 46px)", margin: "8px 0" }}>
             مباريات اليوم ونتائج كرة القدم
           </h1>
-          <p style={{ color: "#8fa099", lineHeight: "1.8" }}>
-            جدول مباريات اليوم، المواعيد والنتائج وأبرز البطولات العالمية.
+          <p style={{ color: "#8fa099", lineHeight: "1.8", marginBottom: 0 }}>
+            مباشر، مباريات اليوم، النتائج والبطولات المتاحة مجانًا في مكان واحد.
           </p>
         </header>
+
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(3,1fr)",
+            gap: "10px",
+          }}
+        >
+          {[
+            ["مباشر", live.length],
+            ["مباريات اليوم", matches.length],
+            ["البطولات", leagueCount],
+          ].map(([label, value]) => (
+            <div
+              key={label}
+              style={{
+                padding: "15px 10px",
+                textAlign: "center",
+                borderRadius: "16px",
+                background: "#10251c",
+                border: "1px solid #284238",
+              }}
+            >
+              <strong style={{ display: "block", fontSize: "24px" }}>
+                {value}
+              </strong>
+              <span style={{ color: "#8fa099", fontSize: "12px" }}>
+                {label}
+              </span>
+            </div>
+          ))}
+        </div>
 
         {matches.length === 0 ? (
           <section
             style={{
+              marginTop: "28px",
               padding: "35px 20px",
               borderRadius: "20px",
               background: "#10251c",
@@ -93,92 +367,22 @@ export default async function TodayMatchesPage() {
               textAlign: "center",
             }}
           >
-            لا توجد مباريات متاحة حاليًا.
+            لا توجد مباريات متاحة حاليًا. جرّب تحديث الصفحة لاحقًا.
           </section>
         ) : (
-          <section
-            style={{
-              display: "grid",
-              gap: "14px",
-            }}
-          >
-            {matches.map((match) => (
-              <article
-                key={match.idEvent}
-                style={{
-                  background: "linear-gradient(145deg,#10251c,#0b1713)",
-                  border: "1px solid #284238",
-                  borderRadius: "18px",
-                  padding: "18px",
-                }}
-              >
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    gap: "12px",
-                    alignItems: "center",
-                    flexWrap: "wrap",
-                  }}
-                >
-                  <span style={{ color: "#37e28a", fontWeight: "800" }}>
-                    {match.strLeague || "كرة القدم"}
-                  </span>
-                  <span style={{ color: "#9baaa4", fontSize: "13px" }}>
-                    {statusLabel(match)}
-                  </span>
-                </div>
-
-                <div
-                  style={{
-                    display: "grid",
-                    gridTemplateColumns: "1fr auto 1fr",
-                    alignItems: "center",
-                    gap: "12px",
-                    marginTop: "18px",
-                    direction: "ltr",
-                  }}
-                >
-                  <strong style={{ textAlign: "center", direction: "rtl" }}>
-                    {match.strHomeTeam || "المضيف"}
-                  </strong>
-
-                  <span
-                    style={{
-                      color: "#37e28a",
-                      fontSize: "22px",
-                      fontWeight: "900",
-                      whiteSpace: "nowrap",
-                    }}
-                  >
-                    {match.intHomeScore ?? "-"} - {match.intAwayScore ?? "-"}
-                  </span>
-
-                  <strong style={{ textAlign: "center", direction: "rtl" }}>
-                    {match.strAwayTeam || "الضيف"}
-                  </strong>
-                </div>
-
-                <a
-                  href={`/matches/${match.idEvent}`}
-                  style={{
-                    display: "block",
-                    marginTop: "16px",
-                    padding: "11px",
-                    borderRadius: "12px",
-                    textAlign: "center",
-                    textDecoration: "none",
-                    color: "#d9e4df",
-                    background: "rgba(55,226,138,.07)",
-                    border: "1px solid rgba(55,226,138,.14)",
-                    fontWeight: "800",
-                  }}
-                >
-                  تفاصيل المباراة ←
-                </a>
-              </article>
-            ))}
-          </section>
+          <>
+            <MatchSection title="مباشر الآن" kicker="LIVE" matches={live} />
+            <MatchSection
+              title="المباريات القادمة اليوم"
+              kicker="UPCOMING"
+              matches={scheduled}
+            />
+            <MatchSection
+              title="نتائج اليوم"
+              kicker="FINISHED"
+              matches={finished}
+            />
+          </>
         )}
       </div>
     </main>
