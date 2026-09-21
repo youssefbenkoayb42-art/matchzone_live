@@ -1,6 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
 const links = [
   ["/", "الرئيسية", "⌂"],
@@ -12,6 +13,26 @@ const links = [
 
 export default function SiteNav() {
   const pathname = usePathname();
+  const [favoriteCount, setFavoriteCount] = useState(0);
+
+  useEffect(() => {
+    const loadCount = () => {
+      try {
+        const saved = JSON.parse(localStorage.getItem("matchzone-favorite-teams") || "[]");
+        setFavoriteCount(Array.isArray(saved) ? saved.length : 0);
+      } catch {
+        setFavoriteCount(0);
+      }
+    };
+
+    loadCount();
+    window.addEventListener("storage", loadCount);
+    window.addEventListener("matchzone-favorites-updated", loadCount);
+    return () => {
+      window.removeEventListener("storage", loadCount);
+      window.removeEventListener("matchzone-favorites-updated", loadCount);
+    };
+  }, []);
 
   if (pathname === "/") return null;
 
