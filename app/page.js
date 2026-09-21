@@ -206,6 +206,11 @@ export default function HomeDesign() {
     matches.find((match) => getStatusType(match.status) === "upcoming") ||
     matches[0];
 
+  const favoriteMatches = useMemo(
+    () => matches.filter((match) => favoriteTeams.includes(match.home) || favoriteTeams.includes(match.away)).slice(0, 6),
+    [matches, favoriteTeams]
+  );
+
   return (
     <main className="mz-home" dir="rtl">
       <header className="mz-header">
@@ -297,6 +302,51 @@ export default function HomeDesign() {
             ))}
           </div>
         </section>
+
+
+        {favoriteTeams.length > 0 && favoriteMatches.length > 0 && (
+          <section className="favorite-matches-section">
+            <div className="section-heading">
+              <div>
+                <span className="section-kicker">YOUR TEAMS</span>
+                <h2>مباريات فرقك المفضلة</h2>
+                <p>تظهر هنا تلقائيًا مباريات الفرق التي اخترتها ⭐</p>
+              </div>
+              <button className="favorite-section-filter" onClick={() => {
+                setFavoritesOnly(true);
+                document.getElementById("matches-section")?.scrollIntoView({ behavior: "smooth" });
+              }}>عرض الكل ←</button>
+            </div>
+            <div className="match-grid favorite-match-grid">
+              {favoriteMatches.map((match) => {
+                const live = getStatusType(match.status) === "live";
+                return (
+                  <article key={match.id} className={live ? "match-card live-card favorite-match-card" : "match-card favorite-match-card"}>
+                    <div className="match-meta">
+                      <span>{match.arabicLeague}</span>
+                      <b className={live ? "live-label" : ""}>{live ? "● مباشر" : getStatusLabel(match.status)}</b>
+                    </div>
+                    <div className="match-teams">
+                      <a href={`/teams/${encodeURIComponent(match.home)}`} className="match-team">
+                        <TeamLogo src={match.homeLogo} alt={match.home} size={44} />
+                        <strong>{match.home}</strong>
+                      </a>
+                      <div className="match-center">
+                        <strong>{match.homeScore ?? "-"} - {match.awayScore ?? "-"}</strong>
+                        <span>{match.time}</span>
+                      </div>
+                      <a href={`/teams/${encodeURIComponent(match.away)}`} className="match-team">
+                        <TeamLogo src={match.awayLogo} alt={match.away} size={44} />
+                        <strong>{match.away}</strong>
+                      </a>
+                    </div>
+                    <a href={`/matches/${match.id}`} className="match-details">تفاصيل المباراة <span>←</span></a>
+                  </article>
+                );
+              })}
+            </div>
+          </section>
+        )}
 
         <section id="matches-section" className="matches-section">
           <div className="section-heading matches-heading">
