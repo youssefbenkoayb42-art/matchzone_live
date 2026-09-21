@@ -460,3 +460,21 @@ button { -webkit-tap-highlight-color: transparent; }
   .favorites-panel-heading { align-items:flex-start; }
   .favorites-panel-heading > a { white-space:nowrap; }
 }
+
+
+.favorites-refresh-button {
+  border: 1px solid rgba(57, 229, 139, 0.18);
+  background: rgba(57, 229, 139, 0.06);
+  color: #39e58b;
+  border-radius: 10px;
+  padding: 8px 11px;
+  font: inherit;
+  font-size: 9px;
+  font-weight: 900;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.favorites-refresh-button:disabled {
+  opacity: .55;
+  cursor: wait;
+}
