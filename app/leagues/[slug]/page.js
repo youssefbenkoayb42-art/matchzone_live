@@ -99,6 +99,11 @@ function MatchCard({ match, league, featured = false }) {
       <div style={styles.status}>{isFinished ? "النتيجة النهائية" : "المباراة القادمة"}</div>
       <div style={styles.teams}>
         <a href={"/teams/" + encodeURIComponent(match.strHomeTeam || "")} style={styles.team}>
+          {match.strHomeTeamBadge ? (
+            <img src={match.strHomeTeamBadge} alt={match.strHomeTeam || "الفريق المضيف"} style={styles.matchTeamLogo} loading="lazy" />
+          ) : (
+            <span style={styles.matchTeamFallback}>⚽</span>
+          )}
           <strong>{match.strHomeTeam || "الفريق المضيف"}</strong>
           <small style={styles.teamSmall}>المضيف</small>
         </a>
@@ -106,6 +111,11 @@ function MatchCard({ match, league, featured = false }) {
           {isFinished ? (match.intHomeScore + " - " + match.intAwayScore) : (match.strTime || "-")}
         </div>
         <a href={"/teams/" + encodeURIComponent(match.strAwayTeam || "")} style={styles.team}>
+          {match.strAwayTeamBadge ? (
+            <img src={match.strAwayTeamBadge} alt={match.strAwayTeam || "الفريق الضيف"} style={styles.matchTeamLogo} loading="lazy" />
+          ) : (
+            <span style={styles.matchTeamFallback}>⚽</span>
+          )}
           <strong>{match.strAwayTeam || "الفريق الضيف"}</strong>
           <small style={styles.teamSmall}>الضيف</small>
         </a>
@@ -281,6 +291,8 @@ const styles = {
   teamCardSpan: { color: "#718078", fontSize: 10 },
   teams: { display: "grid", gridTemplateColumns: "1fr auto 1fr", gap: 12, alignItems: "center", textAlign: "center", direction: "ltr" },
   team: { color: "#f4f8f6", textDecoration: "none", minWidth: 0, padding: 8, borderRadius: 12 },
+  matchTeamLogo: { width: 52, height: 52, objectFit: "contain", display: "block", margin: "0 auto 8px" },
+  matchTeamFallback: { width: 52, height: 52, display: "grid", placeItems: "center", borderRadius: 15, background: "#10231b", fontSize: 24, margin: "0 auto 8px" },
   teamSmall: { display: "block", color: "#718078", marginTop: 5, fontSize: 11 },
   score: { fontSize: 24, fontWeight: 900, whiteSpace: "nowrap" },
   meta: { color: "#718078", fontSize: 11, textAlign: "center", margin: "18px 0" },
