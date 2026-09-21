@@ -58,6 +58,8 @@ export default function FavoritesPage() {
   const [loading, setLoading] = useState(true);
   const [lastUpdated, setLastUpdated] = useState(null);
   const [refreshing, setRefreshing] = useState(false);
+  const [alerts, setAlerts] = useState([]);
+  const [snapshotReady, setSnapshotReady] = useState(false);
 
   function loadFavorites() {
     try {
@@ -74,10 +76,49 @@ export default function FavoritesPage() {
       const res = await fetch("/api/football", { cache: "no-store" });
       if (!res.ok) throw new Error("Failed to load");
       const data = await res.json();
-      setMatches((data.response || []).map(normalizeMatch).filter((match) => match.id));
+      const nextMatches = (data.response || []).map(normalizeMatch).filter((match) => match.id);
+
+      try {
+        const raw = localStorage.getItem("matchzone-favorite-match-snapshots");
+        const previous = raw ? JSON.parse(raw) : {};
+        const nextSnapshot = {};
+        const newAlerts = [];
+
+        nextMatches.forEach((match) => {
+          if (!favorites.includes(match.home) && !favorites.includes(match.away)) return;
+          const key = String(match.id);
+          const current = {
+            homeScore: match.homeScore,
+            awayScore: match.awayScore,
+            status: match.status,
+          };
+          nextSnapshot[key] = current;
+          const old = previous[key];
+          if (old && (current.homeScore !== old.homeScore || current.awayScore !== old.awayScore)) {
+            newAlerts.push({
+              id: `${key}-goal-${Date.now()}`,
+              text: `⚽ هدف جديد: ${match.home} ${current.homeScore ?? 0} - ${current.awayScore ?? 0} ${match.away}`,
+            });
+          } else if (old && getStatusType(old.status) !== "live" && getStatusType(current.status) === "live") {
+            newAlerts.push({
+              id: `${key}-live-${Date.now()}`,
+              text: `🔴 بدأت المباراة: ${match.home} ضد ${match.away}`,
+            });
+          }
+        });
+
+        localStorage.setItem("matchzone-favorite-match-snapshots", JSON.stringify(nextSnapshot));
+        if (snapshotReady && newAlerts.length) {
+          setAlerts(newAlerts.slice(0, 3));
+          window.setTimeout(() => setAlerts([]), 7000);
+        }
+        if (!snapshotReady) setSnapshotReady(true);
+      } catch {}
+
+      setMatches(nextMatches);
       setLastUpdated(new Date());
     } catch {
-      if (!matches.length) setMatches([]);
+      // Keep the last successful data visible if a refresh temporarily fails.
     } finally {
       setLoading(false);
       setRefreshing(false);
@@ -94,7 +135,7 @@ export default function FavoritesPage() {
       clearInterval(timer);
       window.removeEventListener("storage", onStorage);
     };
-  }, []);
+  }, [favorites, snapshotReady]);
 
   const favoriteMatches = useMemo(
     () => matches
@@ -158,6 +199,12 @@ export default function FavoritesPage() {
             <p>افتح صفحة أي فريق واضغط «أضف إلى المفضلة» ليظهر هنا.</p>
             <a href="/matches/today">اكتشف مباريات اليوم ←</a>
           </section>
+        )}
+
+        {alerts.length > 0 && (
+          <div className="favorites-alerts" role="status" aria-live="polite">
+            {alerts.map((alert) => <div className="favorites-alert" key={alert.id}>{alert.text}</div>)}
+          </div>
         )}
 
         {favorites.length > 0 && (
