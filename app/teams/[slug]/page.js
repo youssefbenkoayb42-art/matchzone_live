@@ -1,4 +1,5 @@
 const BASE_URL = "https://matchzone-live.vercel.app";
+import TeamFavorite from "./TeamFavorite";
 
 async function getTeam(teamName) {
   try {
@@ -204,6 +205,8 @@ export default async function TeamPage({ params }) {
                   🏆 {leagueName}
                 </a>
               )}
+
+              <TeamFavorite teamName={teamDisplayName} />
 
               <div style={styles.metaRow}>
                 {country && <span>🌍 {country}</span>}
