@@ -163,6 +163,7 @@ export default function FavoritesPage() {
     setFavorites(next);
     try {
       localStorage.setItem("matchzone-favorite-teams", JSON.stringify(next));
+      window.dispatchEvent(new Event("matchzone-favorites-updated"));
     } catch {}
   }
 
