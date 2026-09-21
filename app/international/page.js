@@ -23,6 +23,18 @@ export default function InternationalPage() {
   const [filter, setFilter] = useState("all");
   const [loading, setLoading] = useState(true);
 
+  const competitions = useMemo(() => {
+    const map = new Map();
+    matches.forEach((match) => {
+      const id = match?.league?.id ?? match?.league?.idLeague;
+      const name = match?.league?.name || match?.league?.english || match?.arabicLeague;
+      if (id && name && !map.has(String(id))) {
+        map.set(String(id), { id: String(id), name, badge: match?.league?.logo || match?.league?.badge });
+      }
+    });
+    return Array.from(map.values()).slice(0, 16);
+  }, [matches]);
+
   useEffect(() => {
     fetch("/api/football", { cache: "no-store" })
       .then((res) => res.json())
@@ -60,6 +72,26 @@ export default function InternationalPage() {
       </section>
 
       <section className="international-content">
+        {!loading && competitions.length > 0 && (
+          <section className="international-competitions">
+            <div className="section-heading">
+              <div>
+                <span className="section-kicker">DISCOVER</span>
+                <h2>البطولات العالمية</h2>
+                <p>بطولات دولية تم اكتشافها تلقائيًا من جدول المباريات المتاح.</p>
+              </div>
+            </div>
+            <div className="international-competition-grid">
+              {competitions.map((competition) => (
+                <a key={competition.id} href={`/leagues/league-${competition.id}`} className="international-competition-card">
+                  {competition.badge ? <img src={competition.badge} alt="" loading="lazy" /> : <span className="competition-glyph">GL</span>}
+                  <strong>{competition.name}</strong>
+                  <span>فتح البطولة ←</span>
+                </a>
+              ))}
+            </div>
+          </section>
+        )}
         <div className="section-heading">
           <div>
             <span className="section-kicker">LIVE • NEXT • RESULTS</span>
