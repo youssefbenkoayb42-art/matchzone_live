@@ -20,6 +20,7 @@ export default function TeamFavorite({ teamName }) {
         ? list.filter((name) => name !== teamName)
         : [...list, teamName];
       localStorage.setItem("matchzone-favorite-teams", JSON.stringify(next));
+      window.dispatchEvent(new Event("matchzone-favorites-updated"));
       setFavorite(next.includes(teamName));
     } catch {}
   }
