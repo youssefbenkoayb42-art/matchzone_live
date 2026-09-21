@@ -104,6 +104,9 @@ export default async function TeamPage({ params }) {
   const country = team?.strCountry || "";
   const venue = team?.strStadium || "";
   const founded = team?.intFormedYear || "";
+  const leaguePath = team?.idLeague
+    ? `/leagues/league-${team.idLeague}`
+    : "/leagues";
 
   const breadcrumbData = {
     "@context": "https://schema.org",
@@ -118,6 +121,12 @@ export default async function TeamPage({ params }) {
       {
         "@type": "ListItem",
         position: 2,
+        name: leagueName || "البطولات",
+        item: `${BASE_URL}${leaguePath}`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
         name: teamDisplayName,
         item: teamUrl,
       },
@@ -158,6 +167,10 @@ export default async function TeamPage({ params }) {
               الرئيسية
             </a>
             <span aria-hidden="true">←</span>
+            <a href={leaguePath} style={styles.breadcrumbLink}>
+              {leagueName || "البطولات"}
+            </a>
+            <span aria-hidden="true">←</span>
             <span>{teamDisplayName}</span>
           </nav>
 
@@ -185,7 +198,7 @@ export default async function TeamPage({ params }) {
 
               {leagueName && (
                 <a
-                  href={team?.idLeague ? `/leagues/league-${team.idLeague}` : "/leagues"}
+                  href={leaguePath}
                   style={styles.leagueLink}
                 >
                   🏆 {leagueName}
