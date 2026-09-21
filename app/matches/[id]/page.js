@@ -137,7 +137,7 @@ export async function generateMetadata({ params }) {
 
   const title = `${match.teams.home.name} ضد ${match.teams.away.name} | النتيجة والتفاصيل`;
   const description = `تابع ${match.teams.home.name} ضد ${match.teams.away.name} في ${match.league.name}: الموعد والنتيجة وأحداث المباراة والإحصائيات والتشكيلة.`;
-  const url = \`${BASE_URL}/matches/${id}\`;
+  const url = `${BASE_URL}/matches/${id}`;
 
   return {
     title,
