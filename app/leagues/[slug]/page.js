@@ -191,7 +191,7 @@ export default async function LeaguePage({ params }) {
           )}
         </section>
 
-        <section>
+        <section id="upcoming">
           <h2 style={styles.h2}>المباراة القادمة</h2>
           {upcomingMatches.length === 0 ? (
             <div style={styles.empty}>لا توجد مباريات قادمة متاحة حالياً.</div>
@@ -207,7 +207,7 @@ export default async function LeaguePage({ params }) {
           )}
         </section>
 
-        <section>
+        <section id="teams">
           <div style={styles.sectionHeader}>
             <div>
               <div style={styles.sectionKicker}>TEAMS</div>
@@ -238,7 +238,7 @@ export default async function LeaguePage({ params }) {
           )}
         </section>
 
-        <section>
+        <section id="results">
           <h2 style={styles.h2}>آخر النتائج</h2>
           {recentResults.length === 0 ? (
             <div style={styles.empty}>لا توجد نتائج سابقة متاحة حالياً.</div>
@@ -278,7 +278,8 @@ const styles = {
   muted: { color: "#82968d", margin: "8px 0 0", lineHeight: 1.7 },
   link: { color: "#2ecc71", textDecoration: "none", fontWeight: 800 },
   stats: { display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 10, marginTop: 14 },
-  infoStrip: { display: "flex", flexWrap: "wrap", gap: 8, marginTop: 24, padding: "11px 12px", borderRadius: 14, background: "rgba(255,255,255,.025)", border: "1px solid rgba(255,255,255,.06)", color: "#8fa198", fontSize: 10 },
+  infoStrip: { display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: 8, marginTop: 24, padding: 8, borderRadius: 16, background: "rgba(255,255,255,.025)", border: "1px solid rgba(57,229,139,.08)" },
+  infoLink: { display: "flex", flexDirection: "column", gap: 3, padding: "10px 8px", borderRadius: 11, color: "#8fa198", textDecoration: "none", fontSize: 8, fontWeight: 900, letterSpacing: 1, textAlign: "center", background: "rgba(255,255,255,.025)" },
   statBox: { background: "rgba(255,255,255,.035)", border: "1px solid rgba(255,255,255,.07)", borderRadius: 16, padding: "15px 10px", textAlign: "center" },
   statBoxStrong: { fontSize: 22, fontWeight: 900 },
   card: { background: "linear-gradient(145deg,#10251c,#0b1713)", border: "1px solid #1e3d30", borderRadius: 20, padding: 18, boxShadow: "0 12px 35px rgba(0,0,0,.14)" },
