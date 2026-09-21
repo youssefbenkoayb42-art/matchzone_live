@@ -41,6 +41,60 @@ function getArabicLeague(name) {
   return map[name] || name;
 }
 
+
+function getCompetitionType(name) {
+  const value = String(name || "").toLowerCase();
+
+  const internationalClubPatterns = [
+    "champions league",
+    "uefa champions",
+    "europa league",
+    "conference league",
+    "club world cup",
+    "intercontinental",
+    "copa libertadores",
+    "copa sudamericana",
+    "concacaf champions",
+    "afc champions",
+    "caf champions",
+    "afc cup",
+    "caf confederation",
+    "recopa sudamericana",
+    "uefa super cup",
+    "international club",
+  ];
+
+  const internationalTeamPatterns = [
+    "world cup",
+    "world championship",
+    "euro",
+    "nations league",
+    "copa america",
+    "afcon",
+    "african cup",
+    "asian cup",
+    "concacaf gold cup",
+    "gold cup",
+    "copa oro",
+    "world cup qualifier",
+    "qualifying",
+    "qualification",
+    "international friendlies",
+    "international friendly",
+    "friendly international",
+  ];
+
+  if (internationalClubPatterns.some((pattern) => value.includes(pattern))) {
+    return "international-club";
+  }
+
+  if (internationalTeamPatterns.some((pattern) => value.includes(pattern))) {
+    return "international-team";
+  }
+
+  return "domestic";
+}
+
 function formatSportsDBEvent(event) {
   const date =
     event.strTimestamp ||
@@ -115,6 +169,7 @@ function formatSportsDBEvent(event) {
     },
 
     source: "TheSportsDB",
+    competitionType: getCompetitionType(event.strLeague),
     eventId: Number(event.idEvent),
   };
 }
@@ -179,6 +234,7 @@ function formatFootballDataMatch(match) {
     },
 
     source: "football-data.org",
+    competitionType: getCompetitionType(match.competition?.name),
 
     /*
       نحتفظ بمعرف المصدر الأصلي.
