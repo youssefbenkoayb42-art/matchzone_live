@@ -96,6 +96,7 @@ function normalizeMatch(item) {
     homeScore: item?.goals?.home !== undefined ? item.goals.home : null,
     awayScore: item?.goals?.away !== undefined ? item.goals.away : null,
     league: item?.league?.name || "Football",
+    competitionType: item?.competitionType || "domestic",
     arabicLeague: getArabicLeague(item?.league?.name),
   };
 }
@@ -104,6 +105,7 @@ export default function HomeDesign() {
   const [search, setSearch] = useState("");
   const [selectedLeague, setSelectedLeague] = useState("الكل");
   const [selectedStatus, setSelectedStatus] = useState("all");
+  const [selectedCompetition, setSelectedCompetition] = useState("all");
   const [matches, setMatches] = useState([]);
   const [news, setNews] = useState([]);
   const [loadingMatches, setLoadingMatches] = useState(true);
@@ -195,11 +197,12 @@ export default function HomeDesign() {
         match.arabicLeague.toLowerCase().includes(query);
       const matchesLeague = selectedLeague === "الكل" || match.arabicLeague === selectedLeague;
       const matchesStatus = selectedStatus === "all" || getStatusType(match.status) === selectedStatus;
+      const matchesCompetition = selectedCompetition === "all" || match.competitionType === selectedCompetition;
       const matchesFavorites =
         !favoritesOnly || favoriteTeams.includes(match.home) || favoriteTeams.includes(match.away);
-      return matchesSearch && matchesLeague && matchesStatus && matchesFavorites;
+      return matchesSearch && matchesLeague && matchesStatus && matchesCompetition && matchesFavorites;
     });
-  }, [matches, search, selectedLeague, selectedStatus, favoritesOnly, favoriteTeams]);
+  }, [matches, search, selectedLeague, selectedStatus, selectedCompetition, favoritesOnly, favoriteTeams]);
 
   const liveMatches = matches.filter((match) => getStatusType(match.status) === "live");
   const featuredMatch =
@@ -371,6 +374,12 @@ export default function HomeDesign() {
             </button>
             {[["all", "الكل"], ["live", "🔴 مباشر"], ["upcoming", "قادمة"], ["finished", "منتهية"]].map(([value, label]) => (
               <button key={value} className={selectedStatus === value ? "filter-pill selected" : "filter-pill"} onClick={() => setSelectedStatus(value)}>{label}</button>
+            ))}
+          </div>
+
+          <div className="filter-row competition-filter" aria-label="نوع المباريات">
+            {[["all", "كل المسابقات"], ["international-team", "المنتخبات"], ["international-club", "الأندية الدولية"], ["domestic", "الدوريات المحلية"]].map(([value, label]) => (
+              <button key={value} className={selectedCompetition === value ? "filter-pill selected" : "filter-pill"} onClick={() => setSelectedCompetition(value)}>{label}</button>
             ))}
           </div>
 
