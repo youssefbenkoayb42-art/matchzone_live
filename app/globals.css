@@ -985,3 +985,49 @@ main {
     padding-bottom: 2px;
   }
 }
+
+
+/* Match Center mobile-first layout */
+.today-matches-page { overflow-x: hidden; }
+.today-matches-container { width: 100%; }
+.today-matches-hero { position: relative; }
+.today-matches-hero h1 { letter-spacing: -1px; }
+.today-matches-stats { width: 100%; }
+.today-matches-stat { min-width: 0; }
+.today-match-section { scroll-margin-top: 76px; }
+.today-match-grid { width: 100%; }
+.today-match-card { min-width: 0; overflow: hidden; }
+.today-match-card-top > * { min-width: 0; }
+.today-match-card-top a { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.today-match-score-row { width: 100%; }
+.today-match-score-row > * { min-width: 0; }
+.today-match-team-links { width: 100%; }
+.today-match-team-links a { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.today-empty-state { overflow: hidden; }
+@media (max-width: 700px) {
+  .today-matches-page { padding: 18px 10px 88px !important; }
+  .today-matches-container { max-width: 100% !important; }
+  .today-matches-hero { margin: 22px 0 18px !important; }
+  .today-matches-hero h1 { font-size: clamp(27px, 8vw, 38px) !important; line-height: 1.18; }
+  .today-matches-hero p:last-child { font-size: 11px; line-height: 1.8 !important; }
+  .today-matches-stats { gap: 7px !important; }
+  .today-matches-stat { padding: 12px 6px !important; border-radius: 13px !important; }
+  .today-matches-stat strong { font-size: 20px !important; }
+  .today-matches-stat span { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 10px !important; }
+  .today-match-section { margin-top: 24px !important; }
+  .today-match-section h2 { font-size: 19px !important; }
+  .today-match-grid { grid-template-columns: 1fr !important; gap: 9px !important; }
+  .today-match-card { padding: 13px !important; border-radius: 16px !important; }
+  .today-match-card-top { gap: 7px !important; }
+  .today-match-score-row { grid-template-columns: minmax(0,1fr) auto minmax(0,1fr) !important; gap: 6px !important; margin-top: 14px !important; }
+  .today-match-score-row > strong { font-size: 11px !important; line-height: 1.35; }
+  .today-match-score-row > span { font-size: 20px !important; }
+  .today-match-team-links { gap: 6px !important; margin-top: 12px !important; }
+  .today-match-team-links a { padding: 8px 6px !important; font-size: 11px !important; }
+}
+@media (max-width: 360px) {
+  .today-matches-page { padding-left: 8px !important; padding-right: 8px !important; }
+  .today-match-card { padding: 11px !important; }
+  .today-match-score-row > strong { font-size: 10px !important; }
+  .today-match-score-row > span { font-size: 18px !important; }
+}
