@@ -341,3 +341,12 @@ button { -webkit-tap-highlight-color: transparent; }
     font-size: 14px;
   }
 }
+
+
+/* Favorite teams */
+.match-team-wrap { position:relative; min-width:0; text-align:center; }
+.favorite-team { position:absolute; top:-7px; right:2px; width:24px; height:24px; border:1px solid rgba(255,255,255,.08); border-radius:50%; background:rgba(5,11,8,.9); color:#64736c; cursor:pointer; font-size:13px; line-height:1; z-index:2; }
+.favorite-team:hover, .favorite-team.active { color:#ffd75a; border-color:rgba(255,215,90,.25); background:rgba(255,215,90,.08); }
+.favorite-pill { color:#b8a96a; }
+.favorite-pill.selected { color:#ffd75a; border-color:rgba(255,215,90,.28); background:rgba(255,215,90,.08); }
+@media (max-width:650px) { .favorite-team { top:-5px; right:0; } }
