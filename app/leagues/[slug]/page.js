@@ -168,7 +168,7 @@ export default async function LeaguePage({ params }) {
         <a href="/leagues" style={styles.link}>← كل البطولات</a>
 
         <header style={styles.header}>
-          <div style={styles.logoBox}>{league.badge ? <img src={league.badge} alt="" style={styles.leagueLogo} /> : "🏆"}</div>
+          <div style={styles.logoBox}>{league.badge ? <img src={league.badge} alt="" style={styles.leagueLogo} /> : <span style={styles.leagueFallback}>L</span>}</div>
           <div style={{ flex: 1 }}>
             <div style={styles.eyebrow}>MATCHZONE • LEAGUE</div>
             <h1 style={styles.h1}>{league.name}</h1>
@@ -176,7 +176,7 @@ export default async function LeaguePage({ params }) {
           </div>
         </header>
 
-        <div style={styles.stats}>
+        <div style={styles.stats} aria-label="ملخص البطولة">
           <div style={styles.statBox}><strong>{today.length}</strong><span>اليوم</span></div>
           <div style={styles.statBox}><strong>{upcomingMatches.length}</strong><span>قادمة</span></div>
           <div style={styles.statBox}><strong>{recentResults.length}</strong><span>نتائج</span></div>
@@ -228,7 +228,7 @@ export default async function LeaguePage({ params }) {
                   {team.strTeamBadge ? (
                     <img src={team.strTeamBadge} alt="" style={styles.teamLogo} />
                   ) : (
-                    <div style={styles.teamFallback}>⚽</div>
+                    <div style={styles.teamFallback}>TM</div>
                   )}
                   <strong>{team.strTeam}</strong>
                   <span style={styles.teamCardSpan}>مباريات الفريق ←</span>
@@ -266,7 +266,7 @@ const styles = {
   main: { minHeight: "100vh", background: "#07100d", color: "#f4f8f6", padding: "24px 16px 70px", fontFamily: "Arial, Helvetica, sans-serif" },
   container: { maxWidth: 1100, margin: "0 auto" },
   header: { display: "flex", alignItems: "center", gap: 16, marginTop: 24, padding: "26px 22px", borderRadius: 24, background: "linear-gradient(145deg,#123326,#0b1712)", border: "1px solid #1e3d30", boxShadow: "0 18px 50px rgba(0,0,0,.22)" },
-  logoBox: { width: 66, height: 66, borderRadius: 20, display: "grid", placeItems: "center", fontSize: 34, background: "rgba(46,204,113,.08)", border: "1px solid rgba(46,204,113,.18)", flexShrink: 0, overflow: "hidden" },
+  logoBox: { width: 66, height: 66, borderRadius: 20, display: "grid", placeItems: "center", fontSize: 34, background: "rgba(46,204,113,.08)", border: "1px solid rgba(46,204,113,.18)", flexShrink: 0, overflow: "hidden" },\n  leagueFallback: { color: "#39e58b", fontSize: 20, fontWeight: 950, letterSpacing: 2, textShadow: "0 0 12px rgba(57,229,139,.55)" },
   leagueLogo: { width: "82%", height: "82%", objectFit: "contain" },
   eyebrow: { color: "#2ecc71", fontSize: 10, fontWeight: 900, letterSpacing: 1, marginBottom: 7 },
   h1: { margin: 0, fontSize: "clamp(24px,5vw,38px)", lineHeight: 1.2 },
@@ -276,7 +276,7 @@ const styles = {
   sectionLink: { color: "#82968d", textDecoration: "none", fontSize: 11, fontWeight: 800, whiteSpace: "nowrap" },
   muted: { color: "#82968d", margin: "8px 0 0", lineHeight: 1.7 },
   link: { color: "#2ecc71", textDecoration: "none", fontWeight: 800 },
-  stats: { display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 10, marginTop: 14 },
+  stats: { display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 10, marginTop: 14 },\n  infoStrip: { display: "flex", flexWrap: "wrap", gap: 8, marginTop: 24, padding: "11px 12px", borderRadius: 14, background: "rgba(255,255,255,.025)", border: "1px solid rgba(255,255,255,.06)", color: "#8fa198", fontSize: 10 },
   statBox: { background: "rgba(255,255,255,.035)", border: "1px solid rgba(255,255,255,.07)", borderRadius: 16, padding: "15px 10px", textAlign: "center" },
   statBoxStrong: { fontSize: 22, fontWeight: 900 },
   card: { background: "linear-gradient(145deg,#10251c,#0b1713)", border: "1px solid #1e3d30", borderRadius: 20, padding: 18, boxShadow: "0 12px 35px rgba(0,0,0,.14)" },
