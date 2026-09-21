@@ -102,7 +102,7 @@ function MatchCard({ match, league, featured = false }) {
           {match.strHomeTeamBadge ? (
             <img src={match.strHomeTeamBadge} alt={match.strHomeTeam || "الفريق المضيف"} style={styles.matchTeamLogo} loading="lazy" />
           ) : (
-            <span style={styles.matchTeamFallback}>⚽</span>
+            <span style={styles.matchTeamFallback}>TM</span>
           )}
           <strong>{match.strHomeTeam || "الفريق المضيف"}</strong>
           <small style={styles.teamSmall}>المضيف</small>
@@ -114,7 +114,7 @@ function MatchCard({ match, league, featured = false }) {
           {match.strAwayTeamBadge ? (
             <img src={match.strAwayTeamBadge} alt={match.strAwayTeam || "الفريق الضيف"} style={styles.matchTeamLogo} loading="lazy" />
           ) : (
-            <span style={styles.matchTeamFallback}>⚽</span>
+            <span style={styles.matchTeamFallback}>TM</span>
           )}
           <strong>{match.strAwayTeam || "الفريق الضيف"}</strong>
           <small style={styles.teamSmall}>الضيف</small>
