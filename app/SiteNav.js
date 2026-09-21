@@ -5,10 +5,10 @@ import { useEffect, useState } from "react";
 
 const links = [
   ["/", "الرئيسية", "⌂"],
-  ["/matches/today", "المباريات", "⚽"],
-  ["/leagues", "البطولات", "🏆"],
-  ["/stats", "الإحصائيات", "📊"],
-  ["/favorites", "المفضلة", "⭐"],
+  ["/matches/today", "المباريات", "◉"],
+  ["/leagues", "البطولات", "◇"],
+  ["/stats", "الإحصائيات", "▦"],
+  ["/favorites", "المفضلة", "✦"],
 ];
 
 export default function SiteNav() {
@@ -52,7 +52,7 @@ export default function SiteNav() {
                 : pathname === href || pathname.startsWith(href + "/");
             return (
               <a key={href} href={href} className={active ? "active" : ""}>
-                <span aria-hidden="true">{icon}</span>
+                <span className="nav-glyph" aria-hidden="true">{icon}</span>
                 {label}
               </a>
             );
