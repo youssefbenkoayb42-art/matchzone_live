@@ -235,13 +235,13 @@ export default function FavoritesPage() {
             ) : (
               <div className="favorites-groups">
                 {[
-                  { key: "live", title: "🔴 مباريات مباشرة الآن", matches: favoriteMatchGroups.live },
-                  { key: "upcoming", title: "🟢 المباريات القادمة", matches: favoriteMatchGroups.upcoming },
-                  { key: "finished", title: "⚪ المباريات المنتهية", matches: favoriteMatchGroups.finished },
+                  { key: "live", title: "مباريات مباشرة الآن", glyph: "LIVE", matches: favoriteMatchGroups.live },
+                  { key: "upcoming", title: "المباريات القادمة", glyph: "NEXT", matches: favoriteMatchGroups.upcoming },
+                  { key: "finished", title: "المباريات المنتهية", glyph: "FT", matches: favoriteMatchGroups.finished },
                 ].filter((group) => group.matches.length > 0).map((group) => (
                   <section className={`favorites-group favorites-group-${group.key}`} key={group.key}>
                     <div className="favorites-group-heading">
-                      <strong>{group.title}</strong>
+                      <strong><i className="status-glyph" aria-hidden="true">{group.glyph}</i>{group.title}</strong>
                       <span>{group.matches.length} مباراة</span>
                     </div>
                     <div className="favorites-match-grid">
