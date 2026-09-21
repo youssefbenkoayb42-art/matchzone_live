@@ -524,3 +524,32 @@ button { -webkit-tap-highlight-color: transparent; }
   .favorites-alerts { top: 62px; }
   .favorites-alert { font-size: 10px; padding: 11px 12px; }
 }
+
+
+/* Favorite count badge */
+.site-nav-links a { position: relative; }
+.site-nav-badge {
+  min-width: 17px;
+  height: 17px;
+  padding: 0 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: #39e58b;
+  color: #04100a;
+  font-size: 8px;
+  font-weight: 950;
+  line-height: 1;
+}
+@media (max-width: 650px) {
+  .site-nav-badge {
+    position: absolute;
+    top: 2px;
+    right: 8px;
+    min-width: 15px;
+    height: 15px;
+    padding: 0 4px;
+    font-size: 7px;
+  }
+}
