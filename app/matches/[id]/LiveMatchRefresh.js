@@ -10,6 +10,7 @@ export default function LiveMatchRefresh({ matchId, initialStatus, initialHome, 
   const router = useRouter();
   const [checking, setChecking] = useState(false);
   const [lastChecked, setLastChecked] = useState(null);
+  const [latestScore, setLatestScore] = useState({ home: initialHome, away: initialAway });
 
   const isLive = useMemo(() => LIVE_STATUSES.has(initialStatus), [initialStatus]);
 
@@ -37,6 +38,7 @@ export default function LiveMatchRefresh({ matchId, initialStatus, initialHome, 
         const latestStatus = latest.fixture?.status?.short || "NS";
         const latestHome = latest.goals?.home ?? null;
         const latestAway = latest.goals?.away ?? null;
+        setLatestScore({ home: latestHome, away: latestAway });
 
         if (
           latestStatus !== initialStatus ||
@@ -67,8 +69,13 @@ export default function LiveMatchRefresh({ matchId, initialStatus, initialHome, 
   }, [matchId, initialStatus, initialHome, initialAway, router]);
 
   const statusText = isLive
-    ? "🔴 يتم التحقق من النتيجة مباشرة"
+    ? "🔴 تحديث مباشر كل 30 ثانية"
     : "🔄 تحديث تلقائي كل 60 ثانية";
+
+  const handleManualRefresh = () => {
+    if (checking) return;
+    router.refresh();
+  };
 
   return (
     <div
@@ -89,8 +96,31 @@ export default function LiveMatchRefresh({ matchId, initialStatus, initialHome, 
         fontWeight: "700",
       }}
     >
-      <span>{checking ? "⏳" : "●"}</span>
+      <span>{checking ? "⏳" : isLive ? "🔴" : "●"}</span>
       <span>{statusText}</span>
+      {isLive && (
+        <strong style={{ direction: "ltr", fontSize: "14px" }}>
+          {latestScore.home ?? "—"} - {latestScore.away ?? "—"}
+        </strong>
+      )}
+      <button
+        type="button"
+        onClick={handleManualRefresh}
+        disabled={checking}
+        aria-label="تحديث المباراة الآن"
+        style={{
+          border: "1px solid #365548",
+          background: "#07100d",
+          color: "#f4f8f6",
+          borderRadius: "999px",
+          padding: "5px 9px",
+          cursor: checking ? "wait" : "pointer",
+          fontSize: "11px",
+          fontWeight: "800",
+        }}
+      >
+        ↻ تحديث
+      </button>
       {lastChecked && (
         <span>
           • آخر فحص {lastChecked.toLocaleTimeString("ar-MA", {
