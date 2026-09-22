@@ -205,8 +205,17 @@ export default function HomeDesign() {
   }, [matches, search, selectedLeague, selectedStatus, selectedCompetition, favoritesOnly, favoriteTeams]);
 
   const liveMatches = matches.filter((match) => getStatusType(match.status) === "live");
+
+  const finishedMatches = useMemo(
+    () =>
+      matches
+        .filter((match) => getStatusType(match.status) === "finished")
+        .sort((a, b) => new Date(b.date || 0).getTime() - new Date(a.date || 0).getTime()),
+    [matches]
+  );
+
   const featuredMatch =
-    liveMatches[0] ||
+    finishedMatches[0] ||
     matches.find((match) => getStatusType(match.status) === "upcoming") ||
     matches[0];
 
@@ -247,9 +256,9 @@ export default function HomeDesign() {
       <div className="mz-container">
         <section className="mz-hero">
           <div className="hero-copy">
-            <div className="eyebrow"><span className="pulse-dot" /> LIVE FOOTBALL</div>
-            <h1>مباريات اليوم والقادمة<br /><span>في مكان واحد.</span></h1>
-            <p>نتائج مباشرة، مواعيد المباريات، أهم البطولات وآخر الأخبار الرياضية — بتجربة سريعة ومصممة للهاتف.</p>
+            <div className="eyebrow"><span className="pulse-dot" /> LATEST FOOTBALL RESULTS</div>
+            <h1>أبرز النتائج<br /><span>في مكان واحد.</span></h1>
+            <p>أحدث النتائج، مواعيد المباريات، أهم البطولات وآخر الأخبار الرياضية — بتجربة سريعة ومصممة للهاتف.</p>
             <div className="hero-actions">
               <a href="#matches-section" className="primary-btn">استكشف المباريات <span>←</span></a>
               <a href="/leagues" className="ghost-btn">استعرض البطولات</a>
@@ -259,7 +268,13 @@ export default function HomeDesign() {
           {featuredMatch ? (
             <div className="hero-match">
               <div className="hero-match-top">
-                <span>{getStatusType(featuredMatch.status) === "live" ? "🔴 مباشر الآن" : "⭐ أبرز مباراة"}</span>
+                <span className="hero-result-badge">
+                  {getStatusType(featuredMatch.status) === "finished"
+                    ? "FT · أبرز نتيجة"
+                    : getStatusType(featuredMatch.status) === "live"
+                      ? "LIVE · النتيجة الآن"
+                      : "NEXT · المباراة القادمة"}
+                </span>
                 <small>{featuredMatch.arabicLeague}</small>
               </div>
               <div className="hero-teams">
@@ -268,10 +283,10 @@ export default function HomeDesign() {
                   <strong>{featuredMatch.home}</strong>
                 </div>
                 <div className="hero-score">
-                  <span className={getStatusType(featuredMatch.status) === "live" ? "score-live" : ""}>{featuredMatch.homeScore ?? "-"}</span>
+                  <span className={getStatusType(featuredMatch.status) === "finished" ? "score-finished" : getStatusType(featuredMatch.status) === "live" ? "score-live" : ""}>{featuredMatch.homeScore ?? "-"}</span>
                   <b>-</b>
                   <span>{featuredMatch.awayScore ?? "-"}</span>
-                  <small>{featuredMatch.time}</small>
+                  <small>{getStatusType(featuredMatch.status) === "finished" ? "انتهت المباراة" : featuredMatch.time}</small>
                 </div>
                 <div>
                   <TeamLogo src={featuredMatch.awayLogo} alt={featuredMatch.away} size={58} />
@@ -281,7 +296,7 @@ export default function HomeDesign() {
               <a href={`/matches/${featuredMatch.id}`} className="hero-details">تفاصيل المباراة <span>←</span></a>
             </div>
           ) : (
-            <div className="hero-match empty-hero"><span>⚽</span><strong>المباريات قيد التحميل</strong></div>
+            <div className="hero-match empty-hero"><span>FT</span><strong>النتائج قيد التحميل</strong></div>
           )}
         </section>
 
