@@ -1031,3 +1031,8 @@ main {
   .today-match-score-row > strong { font-size: 10px !important; }
   .today-match-score-row > span { font-size: 18px !important; }
 }
+
+.hero-result-badge{display:inline-flex;align-items:center;min-height:22px;padding:0 9px;border-radius:7px;border:1px solid rgba(57,229,139,.28);background:rgba(57,229,139,.07);color:#39e58b!important;box-shadow:0 0 14px rgba(57,229,139,.08);letter-spacing:.6px;font-size:9px!important}
+.score-finished{color:#f3faf6;text-shadow:0 0 16px rgba(57,229,139,.18)}
+.hero-details:hover{border-color:rgba(57,229,139,.28);background:rgba(57,229,139,.09)}
+@media (max-width:650px){.hero-result-badge{min-height:20px;padding:0 7px;font-size:8px!important}}
