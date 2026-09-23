@@ -206,13 +206,33 @@ export default function HomeDesign() {
 
   const liveMatches = matches.filter((match) => getStatusType(match.status) === "live");
 
-  const finishedMatches = useMemo(
-    () =>
-      matches
-        .filter((match) => getStatusType(match.status) === "finished")
-        .sort((a, b) => new Date(b.date || 0).getTime() - new Date(a.date || 0).getTime()),
-    [matches]
-  );
+  const finishedMatches = useMemo(() => {
+    const majorLeagueScore = (name = "") => {
+      const value = name.toLowerCase();
+      if (/premier league|la liga|serie a|bundesliga|ligue 1/.test(value)) return 5;
+      if (/champions league|europa league|conference league|libertadores|club world cup/.test(value)) return 6;
+      return 0;
+    };
+
+    return matches
+      .filter((match) => getStatusType(match.status) === "finished")
+      .sort((a, b) => {
+        const score = (match) => {
+          const home = Number(match.homeScore);
+          const away = Number(match.awayScore);
+          const totalGoals = Number.isFinite(home) && Number.isFinite(away) ? home + away : 0;
+          const margin = Number.isFinite(home) && Number.isFinite(away) ? Math.abs(home - away) : 0;
+          const date = new Date(match.date || 0).getTime() || 0;
+          return (
+            majorLeagueScore(match.league) * 1000000000000 +
+            (totalGoals >= 5 ? 300000000000 : 0) +
+            (margin >= 3 ? 80000000000 : 0) +
+            date
+          );
+        };
+        return score(b) - score(a);
+      });
+  }, [matches]);
 
   const featuredMatch =
     finishedMatches[0] ||
