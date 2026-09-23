@@ -32,7 +32,7 @@ function getArabicLeague(league) {
 function TeamLogo({ src, alt, size = 48 }) {
   const [failed, setFailed] = useState(false);
   if (!src || failed) {
-    return <div className="team-logo-fallback" style={{ width: size, height: size }} aria-label={alt}>⚽</div>;
+    return <div className="team-logo-fallback" style={{ width: size, height: size }} aria-label={alt}>FC</div>;
   }
   return (
     <img
@@ -48,7 +48,7 @@ function TeamLogo({ src, alt, size = 48 }) {
 
 function LeagueLogo({ slug, name }) {
   const [failed, setFailed] = useState(false);
-  if (failed) return <span className="league-fallback">⚽</span>;
+  if (failed) return <span className="league-fallback">LG</span>;
   return (
     <img
       src={LEAGUE_LOGOS[slug]}
@@ -268,7 +268,7 @@ export default function HomeDesign() {
           </nav>
 
           <button className="refresh-btn" onClick={handleRefresh} disabled={refreshing} aria-label="تحديث المباريات">
-            {refreshing ? "⏳" : "↻"} <span>تحديث</span>
+            {refreshing ? "..." : "↻"} <span>تحديث</span>
           </button>
         </div>
       </header>
@@ -434,7 +434,7 @@ export default function HomeDesign() {
               <div>
                 <span className="section-kicker">YOUR TEAMS</span>
                 <h2>مباريات فرقك المفضلة</h2>
-                <p>تظهر هنا تلقائيًا مباريات الفرق التي اخترتها ⭐</p>
+                <p>تظهر هنا تلقائيًا مباريات الفرق التي اخترتها</p>
               </div>
               <button className="favorite-section-filter" onClick={() => {
                 setFavoritesOnly(true);
@@ -490,9 +490,9 @@ export default function HomeDesign() {
 
           <div className="filter-row status-row">
             <button className={favoritesOnly ? "filter-pill selected favorite-pill" : "filter-pill favorite-pill"} onClick={() => setFavoritesOnly((value) => !value)}>
-              ⭐ المفضلة ({favoriteTeams.length})
+              المفضلة ({favoriteTeams.length})
             </button>
-            {[["all", "الكل"], ["live", "🔴 مباشر"], ["upcoming", "قادمة"], ["finished", "منتهية"]].map(([value, label]) => (
+            {[["all", "الكل"], ["live", "LIVE مباشر"], ["upcoming", "قادمة"], ["finished", "منتهية"]].map(([value, label]) => (
               <button key={value} className={selectedStatus === value ? "filter-pill selected" : "filter-pill"} onClick={() => setSelectedStatus(value)}>{label}</button>
             ))}
           </div>
@@ -509,7 +509,7 @@ export default function HomeDesign() {
             ))}
           </div>
 
-          {matchesError && <div className="state-box error">⚠️ {matchesError}</div>}
+          {matchesError && <div className="state-box error"><span className="ui-glyph error-glyph">!</span>{matchesError}</div>}
           {loadingMatches && (
             <div className="match-grid" aria-label="جارٍ تحميل مباريات اليوم" aria-busy="true">
               {[1, 2, 3].map((item) => (
@@ -526,7 +526,7 @@ export default function HomeDesign() {
             </div>
           )}
           {!loadingMatches && !matchesError && filteredMatches.length === 0 && (
-            <div className="state-box empty-state"><span>⚽</span><strong>لا توجد مباريات مطابقة</strong><small>جرّب تغيير الفلتر أو البحث.</small></div>
+            <div className="state-box empty-state"><span className="ui-glyph">MZ</span><strong>لا توجد مباريات مطابقة</strong><small>جرّب تغيير الفلتر أو البحث.</small></div>
           )}
 
           {!loadingMatches && filteredMatches.length > 0 && (
@@ -580,7 +580,7 @@ export default function HomeDesign() {
             </div>
           </div>
 
-          {newsError && <div className="state-box error">⚠️ {newsError}</div>}
+          {newsError && <div className="state-box error"><span className="ui-glyph error-glyph">!</span>{newsError}</div>
           {loadingNews && <div className="news-grid">{[1, 2, 3].map((item) => <div className="news-skeleton" key={item} />)}</div>}
           {!loadingNews && news.length > 0 && (
             <>
