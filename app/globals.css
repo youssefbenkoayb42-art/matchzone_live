@@ -1162,3 +1162,79 @@ main {
     transition: none;
   }
 }
+
+
+/* Premium featured match card — keep team logos compact */
+.hero-match {
+  background:
+    radial-gradient(circle at 50% 100%, rgba(57,229,139,.07), transparent 42%),
+    linear-gradient(145deg, rgba(19,47,35,.94), rgba(6,15,11,.98));
+  border-color: rgba(57,229,139,.22);
+  box-shadow: 0 25px 70px rgba(0,0,0,.28), inset 0 1px 0 rgba(255,255,255,.035);
+}
+.hero-match-top {
+  margin-bottom: 22px;
+}
+.hero-match-top small {
+  color: #a4b2ab;
+  font-weight: 800;
+}
+.hero-teams {
+  grid-template-columns: 1fr 96px 1fr;
+  gap: 10px;
+}
+.hero-score {
+  position: relative;
+  min-height: 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero-score > span {
+  font-size: 31px;
+  line-height: 1;
+  text-shadow: 0 0 20px rgba(57,229,139,.12);
+}
+.hero-score b {
+  margin: 0 5px;
+  color: #73827b;
+}
+.hero-score small {
+  margin-top: 9px;
+  color: #39e58b;
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: .7px;
+}
+.hero-score .score-finished {
+  color: #f5faf7;
+}
+.hero-teams strong {
+  margin-top: 2px;
+  font-weight: 900;
+}
+.hero-details {
+  margin-top: 22px;
+  background: rgba(57,229,139,.055);
+  border-color: rgba(57,229,139,.15);
+  transition: background .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+.hero-details:hover {
+  box-shadow: 0 0 20px rgba(57,229,139,.08);
+}
+@media (max-width:650px) {
+  .hero-teams {
+    grid-template-columns: 1fr 82px 1fr;
+    gap: 6px;
+  }
+  .hero-score {
+    min-height: 68px;
+  }
+  .hero-score > span {
+    font-size: 27px;
+  }
+  .hero-score b {
+    margin: 0 3px;
+  }
+}
