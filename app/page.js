@@ -340,6 +340,53 @@ export default function HomeDesign() {
           </section>
         )}
 
+        <section className="featured-results-section">
+          <div className="section-heading">
+            <div>
+              <span className="section-kicker">LATEST RESULTS</span>
+              <h2>أبرز الأحداث</h2>
+              <p>أحدث المباريات المنتهية ونتائجها في نظرة سريعة.</p>
+            </div>
+            <button
+              className="featured-results-link"
+              onClick={() => {
+                setSelectedStatus("finished");
+                document.getElementById("matches-section")?.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              كل النتائج ←
+            </button>
+          </div>
+          {finishedMatches.length > 0 ? (
+            <div className="featured-results-grid">
+              {finishedMatches.slice(0, 4).map((match) => (
+                <a href={`/matches/${match.id}`} className="featured-result-card" key={match.id}>
+                  <div className="featured-result-meta">
+                    <span>{match.arabicLeague}</span>
+                    <b>FT</b>
+                  </div>
+                  <div className="featured-result-teams">
+                    <div>
+                      <TeamLogo src={match.homeLogo} alt={match.home} size={34} />
+                      <strong>{match.home}</strong>
+                    </div>
+                    <span className="featured-result-score">
+                      {match.homeScore ?? "-"} - {match.awayScore ?? "-"}
+                    </span>
+                    <div>
+                      <TeamLogo src={match.awayLogo} alt={match.away} size={34} />
+                      <strong>{match.away}</strong>
+                    </div>
+                  </div>
+                  <span className="featured-result-detail">تفاصيل المباراة ←</span>
+                </a>
+              ))}
+            </div>
+          ) : (
+            <div className="featured-results-empty">لا توجد نتائج منتهية متاحة حاليًا.</div>
+          )}
+        </section>
+
         <section className="league-section">
           <div className="section-heading">
             <div>
