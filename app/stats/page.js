@@ -80,7 +80,7 @@ export default function StatsPage() {
     ["ALL", "إجمالي المباريات", stats.total],
     ["LIVE", "مباشرة الآن", stats.live],
     ["NEXT", "قادمة", stats.upcoming],
-    ["✅", "منتهية", stats.finished],
+    ["FT", "منتهية", stats.finished],
     ["GOAL", "الأهداف", stats.goals],
   ];
 
@@ -116,7 +116,7 @@ export default function StatsPage() {
             marginBottom: 10,
           }}
         >
-          📊 إحصائيات مباريات اليوم
+          إحصائيات مباريات اليوم
         </h1>
 
         <p style={{ color: "#aaa", lineHeight: 1.8, marginBottom: 28 }}>
@@ -126,7 +126,7 @@ export default function StatsPage() {
 
         {loading && (
           <section style={box}>
-            <p style={message}>🔄 جاري تحميل الإحصائيات...</p>
+            <p style={message}>جاري تحميل الإحصائيات...</p>
           </section>
         )}
 
