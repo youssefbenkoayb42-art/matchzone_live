@@ -55,7 +55,7 @@ function EventCard({ event, featured = false }) {
           <span style={styles.time}>{date} {time}</span>
         </div>
         <div style={styles.teamBlock}>
-          {event?.strAwayTeamBadge ? <img src={event.strAwayTeamBadge} alt="" style={styles.eventLogo} /> : <div style={styles.eventFallback}>⚽</div>}
+          {event?.strAwayTeamBadge ? <img src={event.strAwayTeamBadge} alt="" style={styles.eventLogo} /> : <div style={styles.eventFallback}>FC</div>}
           <strong style={styles.teamName}>{away}</strong>
         </div>
       </div>
