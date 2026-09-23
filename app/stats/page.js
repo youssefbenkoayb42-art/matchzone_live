@@ -77,11 +77,11 @@ export default function StatsPage() {
   }, [matches]);
 
   const cards = [
-    ["🏟️", "إجمالي المباريات", stats.total],
-    ["🔴", "مباشرة الآن", stats.live],
-    ["⏳", "قادمة", stats.upcoming],
+    ["ALL", "إجمالي المباريات", stats.total],
+    ["LIVE", "مباشرة الآن", stats.live],
+    ["NEXT", "قادمة", stats.upcoming],
     ["✅", "منتهية", stats.finished],
-    ["⚽", "الأهداف", stats.goals],
+    ["GOAL", "الأهداف", stats.goals],
   ];
 
   return (
@@ -168,7 +168,7 @@ export default function StatsPage() {
 
             <section style={box}>
               <h2 style={{ margin: "0 0 15px", fontSize: 19 }}>
-                🏆 المباريات حسب البطولة
+                المباريات حسب البطولة
               </h2>
 
               {stats.leagues.length === 0 ? (
