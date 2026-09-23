@@ -11,7 +11,7 @@ function getStatusType(status) {
 
 function statusLabel(status) {
   const type = getStatusType(status);
-  if (type === "live") return "🔴 مباشر";
+  if (type === "live") return "LIVE مباشر";
   if (type === "finished") return "انتهت";
   return "قادمة";
 }
@@ -41,7 +41,7 @@ function normalizeMatch(item) {
 
 function TeamBadge({ src, name }) {
   const [failed, setFailed] = useState(false);
-  if (!src || failed) return <span className="favorites-team-badge">⚽</span>;
+  if (!src || failed) return <span className="favorites-team-badge">FC</span>;
   return (
     <img
       src={src}
@@ -102,12 +102,12 @@ export default function FavoritesPage() {
           if (old && (current.homeScore !== old.homeScore || current.awayScore !== old.awayScore)) {
             newAlerts.push({
               id: `${key}-goal-${Date.now()}`,
-              text: `⚽ هدف جديد: ${match.home} ${current.homeScore ?? 0} - ${current.awayScore ?? 0} ${match.away}`,
+              text: `GOAL هدف جديد: ${match.home} ${current.homeScore ?? 0} - ${current.awayScore ?? 0} ${match.away}`,
             });
           } else if (old && getStatusType(old.status) !== "live" && getStatusType(current.status) === "live") {
             newAlerts.push({
               id: `${key}-live-${Date.now()}`,
-              text: `🔴 بدأت المباراة: ${match.home} ضد ${match.away}`,
+              text: `LIVE بدأت المباراة: ${match.home} ضد ${match.away}`,
             });
           }
         });
@@ -172,7 +172,7 @@ export default function FavoritesPage() {
       <div className="favorites-container">
         <header className="favorites-hero">
           <span className="section-kicker">MY TEAMS</span>
-          <h1>فرقك المفضلة ⭐</h1>
+          <h1>فرقك المفضلة</h1>
           <p>مكان واحد لمتابعة الفرق التي تهمك ومبارياتها الحالية والقادمة.</p>
         </header>
 
@@ -203,7 +203,7 @@ export default function FavoritesPage() {
           </section>
         ) : (
           <section className="favorites-empty">
-            <span>⭐</span>
+            <span className="ui-glyph">MY</span>
             <h2>لم تضف أي فريق بعد</h2>
             <p>افتح صفحة أي فريق واضغط «أضف إلى المفضلة» ليظهر هنا.</p>
             <a href="/matches/today">اكتشف مباريات اليوم ←</a>
@@ -229,9 +229,9 @@ export default function FavoritesPage() {
             </div>
 
             {loading ? (
-              <div className="favorites-empty compact"><span>⏳</span><p>جارٍ تحميل المباريات...</p></div>
+              <div className="favorites-empty compact"><span className="ui-glyph">...</span><p>جارٍ تحميل المباريات...</p></div>
             ) : favoriteMatches.length === 0 ? (
-              <div className="favorites-empty compact"><span>⚽</span><p>لا توجد مباراة لفرقك ضمن المباريات المتاحة حاليًا.</p></div>
+              <div className="favorites-empty compact"><span className="ui-glyph">FC</span><p>لا توجد مباراة لفرقك ضمن المباريات المتاحة حاليًا.</p></div>
             ) : (
               <div className="favorites-groups">
                 {[
