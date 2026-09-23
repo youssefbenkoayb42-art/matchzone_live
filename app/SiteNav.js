@@ -52,9 +52,19 @@ export default function SiteNav() {
                 ? pathname === "/"
                 : pathname === href || pathname.startsWith(href + "/");
             return (
-              <a key={href} href={href} className={active ? "active" : ""}>
+              <a
+                key={href}
+                href={href}
+                className={active ? "active" : ""}
+                aria-current={active ? "page" : undefined}
+              >
                 <span className="nav-glyph" aria-hidden="true">{icon}</span>
                 {label}
+                {href === "/favorites" && favoriteCount > 0 ? (
+                  <span className="site-nav-badge" aria-label="عدد الفرق المفضلة">
+                    {favoriteCount > 99 ? "99+" : favoriteCount}
+                  </span>
+                ) : null}
               </a>
             );
           })}
