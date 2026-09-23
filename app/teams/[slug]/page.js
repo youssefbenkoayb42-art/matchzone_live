@@ -47,7 +47,7 @@ function EventCard({ event, featured = false }) {
       </div>
       <div style={styles.teamsRow}>
         <div style={styles.teamBlock}>
-          {event?.strHomeTeamBadge ? <img src={event.strHomeTeamBadge} alt="" style={styles.eventLogo} /> : <div style={styles.eventFallback}>⚽</div>}
+          {event?.strHomeTeamBadge ? <img src={event.strHomeTeamBadge} alt="" style={styles.eventLogo} /> : <div style={styles.eventFallback}>FC</div>}
           <strong style={styles.teamName}>{home}</strong>
         </div>
         <div style={styles.middle}>
@@ -187,7 +187,7 @@ export default async function TeamPage({ params }) {
                 style={styles.logo}
               />
             ) : (
-              <div style={styles.fallback}>⚽</div>
+              <div style={styles.fallback}>FC</div>
             )}
 
             <div style={styles.heroContent}>
@@ -202,22 +202,22 @@ export default async function TeamPage({ params }) {
                   href={leaguePath}
                   style={styles.leagueLink}
                 >
-                  🏆 {leagueName}
+                  {leagueName}
                 </a>
               )}
 
               <TeamFavorite teamName={teamDisplayName} />
 
               <div style={styles.metaRow}>
-                {country && <span>🌍 {country}</span>}
-                {venue && <span>🏟️ {venue}</span>}
-                {founded && <span>📅 تأسس {founded}</span>}
+                {country && <span><i className="ui-glyph mini-glyph">LOC</i>{country}</span>}
+                {venue && <span><i className="ui-glyph mini-glyph">VEN</i>{venue}</span>}
+                {founded && <span><i className="ui-glyph mini-glyph">EST</i>تأسس {founded}</span>}
               </div>
 
               <div style={styles.statGrid}>
                 <div style={styles.statBox}><strong>{upcoming.length}</strong><span>قادمة</span></div>
                 <div style={styles.statBox}><strong>{recent.length}</strong><span>نتائج</span></div>
-                <div style={styles.statBox}><strong>⚽</strong><span>MatchZone</span></div>
+                <div style={styles.statBox}><strong>FC</strong><span>MatchZone</span></div>
               </div>
             </div>
           </section>
