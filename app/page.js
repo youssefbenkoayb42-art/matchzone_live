@@ -327,6 +327,24 @@ export default function HomeDesign() {
           <div><span>آخر تحديث</span><strong>{lastUpdated ? lastUpdated.toLocaleTimeString("ar-MA", { hour: "2-digit", minute: "2-digit" }) : "--:--"}</strong><small>يتجدد كل دقيقة</small></div>
         </section>
 
+        <section className="matchzone-pulse" aria-label="نبض MatchZone">
+          <div className="pulse-orbit">
+            <span className="pulse-orbit-core">MZ</span>
+            <span className="pulse-ring pulse-ring-one" />
+            <span className="pulse-ring pulse-ring-two" />
+          </div>
+          <div className="pulse-copy">
+            <span className="section-kicker">MATCHZONE PULSE</span>
+            <strong>{liveMatches.length > 0 ? "الملاعب تتحرك الآن" : "المشهد جاهز للمباراة التالية"}</strong>
+            <small>{liveMatches.length > 0 ? liveMatches.length + " مباراة مباشرة · تحديث تلقائي للنتائج" : matches.length + " مباراة في مركز المتابعة · آخر مزامنة " + (lastUpdated ? lastUpdated.toLocaleTimeString("ar-MA", { hour: "2-digit", minute: "2-digit" }) : "--:--")}</small>
+          </div>
+          <div className="pulse-metrics">
+            <span><b>{internationalMatches.length}</b><small>دولية</small></span>
+            <span><b>{favoriteTeams.length}</b><small>مفضلة</small></span>
+            <span><b>{finishedMatches.length}</b><small>نتائج</small></span>
+          </div>
+          <a href="/matches/today" className="pulse-action">مركز المباريات <span>←</span></a>
+        </section>
         {internationalMatches.length > 0 && (
           <section className="international-home-section">
             <div className="section-heading">
