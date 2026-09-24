@@ -541,7 +541,7 @@ export default async function MatchPage({ params }) {
                     }}
                   />
                 ) : (
-                  <span style={{ fontSize: "34px" }} aria-hidden="true">⚽</span>
+                  <span className="team-logo-fallback" aria-hidden="true">FC</span>
                 )}
               </div>
 
