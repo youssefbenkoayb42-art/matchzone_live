@@ -110,7 +110,7 @@ export default function LeaguesPage() {
         <Link href="/" style={styles.back}>← العودة للرئيسية</Link>
 
         <header style={styles.header}>
-          <div style={styles.headerBadge}><span style={styles.headerMark}>⚽</span></div>
+          <div style={styles.headerBadge}><span style={styles.headerMark}>LG</span></div>
           <div>
             <span style={styles.eyebrow}>MATCHZONE • LEAGUES</span>
             <h1 style={styles.h1}>أهم بطولات كرة القدم</h1>
@@ -140,7 +140,7 @@ export default function LeaguesPage() {
                     <span style={styles.cardText}>مباريات ونتائج ومواعيد البطولة</span>
                   </div>
                 </Link>
-                <Link href={"/standings/" + slug} style={styles.standingsLink}>📊 جدول الترتيب <span>←</span></Link>
+                <Link href={"/standings/" + slug} style={styles.standingsLink}><span className="ui-glyph mini-glyph">TAB</span> جدول الترتيب <span>←</span></Link>
               </div>
             ))}
           </div>
@@ -158,9 +158,9 @@ export default function LeaguesPage() {
         </section>
 
         <nav style={styles.nav}>
-          <Link href="/matches/today" style={styles.navLink}>🗓️ مباريات اليوم</Link>
-          <Link href="/standings/premier-league" style={styles.navLink}>📊 ترتيب الدوريات</Link>
-          <Link href="/" style={styles.navLink}>⚽ MatchZone</Link>
+          <Link href="/matches/today" style={styles.navLink}><span className="ui-glyph mini-glyph">DATE</span> مباريات اليوم</Link>
+          <Link href="/standings/premier-league" style={styles.navLink}><span className="ui-glyph mini-glyph">TAB</span> ترتيب الدوريات</Link>
+          <Link href="/" style={styles.navLink}><span className="ui-glyph mini-glyph">MZ</span> MatchZone</Link>
         </nav>
       </div>
     </main>
