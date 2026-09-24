@@ -345,6 +345,7 @@ export default async function MatchPage({ params }) {
         </nav>
 
         <div
+          className="match-hero-card"
           style={{
             background: "linear-gradient(145deg, #10251c, #0b1713)",
             border: "1px solid #284238",
@@ -424,6 +425,7 @@ export default async function MatchPage({ params }) {
           </div>
 
           <div
+            className="match-hero-teams"
             style={{
               display: "grid",
               gridTemplateColumns: "minmax(0, 1fr) auto minmax(0, 1fr)",
@@ -604,7 +606,7 @@ export default async function MatchPage({ params }) {
         {/* الخط الزمني للمباراة */}
         {match.timeline?.length > 0 && (
           <section
-            className="match-timeline"
+            className="match-timeline match-detail-panel"
             style={{
               marginTop: "30px",
               background: "linear-gradient(145deg, #10251c, #0b1713)",
@@ -720,6 +722,7 @@ export default async function MatchPage({ params }) {
         {/* الإحصائيات والتشكيلات */}
         {(match.stats?.length > 0 || match.lineup?.length > 0) && (
           <section
+            className="match-detail-panel"
             style={{
               marginTop: "30px",
               background: "linear-gradient(145deg, #10251c, #0b1713)",
