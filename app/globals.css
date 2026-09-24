@@ -1797,3 +1797,96 @@ main {
     scroll-behavior: auto !important;
   }
 }
+
+
+/* Match detail — premium hero and data panels */
+.match-hero-card {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(57,229,139,.09), transparent 38%),
+    radial-gradient(circle at 50% 100%, rgba(57,229,139,.055), transparent 44%),
+    linear-gradient(145deg, rgba(16,37,28,.98), rgba(7,16,13,.98)) !important;
+  border-color: rgba(57,229,139,.22) !important;
+  box-shadow:
+    0 28px 90px rgba(0,0,0,.3),
+    inset 0 1px 0 rgba(255,255,255,.045),
+    0 0 35px rgba(57,229,139,.035) !important;
+}
+.match-hero-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(110deg, transparent 20%, rgba(255,255,255,.035) 50%, transparent 80%);
+  transform: translateX(-120%);
+  animation: match-hero-scan 7s linear infinite;
+}
+.match-hero-card > * {
+  position: relative;
+  z-index: 1;
+}
+.match-hero-teams {
+  isolation: isolate;
+}
+.match-hero-teams > div:first-child > div,
+.match-hero-teams > div:last-child > div {
+  background:
+    radial-gradient(circle, rgba(57,229,139,.07), transparent 68%),
+    rgba(4,12,9,.8) !important;
+  border-color: rgba(57,229,139,.2) !important;
+  box-shadow: inset 0 0 25px rgba(57,229,139,.035), 0 10px 30px rgba(0,0,0,.16);
+}
+.match-hero-teams h2 a {
+  transition: color .2s ease, text-shadow .2s ease;
+}
+.match-hero-teams h2 a:hover {
+  color: #8affbe !important;
+  text-shadow: 0 0 13px rgba(57,229,139,.35);
+}
+.match-detail-panel {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(57,229,139,.045), transparent 35%),
+    linear-gradient(145deg, rgba(16,37,28,.92), rgba(7,16,13,.98)) !important;
+  border-color: rgba(57,229,139,.16) !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.025), 0 20px 55px rgba(0,0,0,.14);
+}
+.match-detail-panel .match-timeline-event {
+  padding: 8px 0;
+  border-radius: 12px;
+  transition: background .2s ease;
+}
+.match-detail-panel .match-timeline-event:hover {
+  background: rgba(57,229,139,.025);
+}
+@keyframes match-hero-scan {
+  to { transform: translateX(120%); }
+}
+@media (max-width: 650px) {
+  .match-hero-card {
+    padding: 24px 12px !important;
+    border-radius: 20px !important;
+  }
+  .match-hero-teams {
+    grid-template-columns: minmax(0,1fr) 78px minmax(0,1fr) !important;
+    gap: 5px !important;
+  }
+  .match-hero-teams h2 {
+    font-size: 13px !important;
+    line-height: 1.35 !important;
+  }
+  .match-detail-panel {
+    border-radius: 20px !important;
+    padding: 20px 13px !important;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .match-hero-card::before,
+  .match-hero-teams h2 a,
+  .match-detail-panel .match-timeline-event {
+    animation: none !important;
+    transition: none !important;
+  }
+}
