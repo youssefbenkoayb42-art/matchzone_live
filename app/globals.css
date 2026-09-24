@@ -1782,3 +1782,18 @@ main {
   .matchzone-pulse::before,
   .pulse-ring { animation: none; }
 }
+
+
+/* Match Center mobile polish */
+@media (max-width: 620px) {
+  .match-lineup-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .match-lineup-grid,
+  .match-lineup-grid * {
+    scroll-behavior: auto !important;
+  }
+}
