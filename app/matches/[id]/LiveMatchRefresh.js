@@ -73,10 +73,10 @@ export default function LiveMatchRefresh({ matchId, initialStatus, initialHome, 
   const liveNow = LIVE_STATUSES.has(latestStatus);
   const finishedNow = FINISHED_STATUSES.has(latestStatus);
   const statusText = liveNow
-    ? "🔴 تحديث مباشر كل 30 ثانية"
+    ? "LIVE · تحديث مباشر كل 30 ثانية"
     : finishedNow
-      ? "✅ المباراة انتهت"
-      : "🔄 تحديث تلقائي كل 60 ثانية";
+      ? "FT · المباراة انتهت"
+      : "AUTO · تحديث تلقائي كل 60 ثانية";
 
   const handleManualRefresh = () => {
     if (checking) return;
@@ -102,7 +102,7 @@ export default function LiveMatchRefresh({ matchId, initialStatus, initialHome, 
         fontWeight: "700",
       }}
     >
-      <span>{checking ? "⏳" : liveNow ? "🔴" : finishedNow ? "✅" : "●"}</span>
+      <span className="ui-glyph mini-glyph">{checking ? "..." : liveNow ? "LIVE" : finishedNow ? "FT" : "AUTO"}</span>
       <span>{statusText}</span>
       {liveNow && (
         <strong style={{ direction: "ltr", fontSize: "14px" }}>
