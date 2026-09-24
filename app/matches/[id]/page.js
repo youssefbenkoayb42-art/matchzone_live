@@ -770,7 +770,7 @@ export default async function MatchPage({ params }) {
                             {player.image ? (
                               <img src={player.image} alt={player.name} loading="lazy" style={{ width: "34px", height: "34px", objectFit: "contain", borderRadius: "50%" }} />
                             ) : (
-                              <span style={{ width: "34px", textAlign: "center" }}>👤</span>
+                              <span style={{ width: "34px", textAlign: "center" }}>PLAYER</span>
                             )}
                             <div style={{ minWidth: 0 }}>
                               <strong style={{ display: "block", fontSize: "13px", overflowWrap: "anywhere" }}>
@@ -804,7 +804,7 @@ export default async function MatchPage({ params }) {
           >
             <div style={{ marginBottom: "20px" }}>
               <p style={{ color: "#37e28a", margin: "0 0 6px", fontWeight: "800" }}>
-                📅 مباريات مرتبطة
+                <span className="ui-glyph mini-glyph">DATE</span> مباريات مرتبطة
               </p>
               <h2 style={{ margin: 0, fontSize: "clamp(20px, 5vw, 28px)" }}>
                 مباريات {match.teams.home.name}
