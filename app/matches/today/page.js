@@ -30,7 +30,7 @@ function isFinished(match) {
 }
 
 function statusLabel(match) {
-  if (isLive(match)) return "🔴 مباشر";
+  if (isLive(match)) return "LIVE مباشر";
   if (isFinished(match)) return "انتهت";
   return match?.fixture?.date
     ? new Date(match.fixture.date).toLocaleTimeString("ar-MA", {
