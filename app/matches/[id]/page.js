@@ -262,7 +262,7 @@ export default async function MatchPage({ params }) {
     matchStatus === "FT"
       ? "انتهت المباراة"
       : isLive
-      ? "🔴 مباشر الآن"
+      ? "LIVE مباشر الآن"
       : "لم تبدأ";
 
   return (
@@ -361,7 +361,7 @@ export default async function MatchPage({ params }) {
               marginBottom: "10px",
             }}
           >
-            🏆{" "}
+            <span className="ui-glyph mini-glyph">LG</span>{" "}
             <a
               href={leaguePath}
               style={{ color: "#37e28a", textDecoration: "none" }}
@@ -407,7 +407,7 @@ export default async function MatchPage({ params }) {
             }}
           >
             <span>
-              📅 {new Date(match.fixture.date).toLocaleDateString("ar-MA", {
+              <span className="ui-glyph mini-glyph">DATE</span>{" "}{new Date(match.fixture.date).toLocaleDateString("ar-MA", {
                 weekday: "long",
                 day: "numeric",
                 month: "long",
@@ -416,7 +416,7 @@ export default async function MatchPage({ params }) {
             </span>
             <span>•</span>
             <span>
-              🕐 {new Date(match.fixture.date).toLocaleTimeString("ar-MA", {
+              <span className="ui-glyph mini-glyph">TIME</span>{" "}{new Date(match.fixture.date).toLocaleTimeString("ar-MA", {
                 hour: "2-digit",
                 minute: "2-digit",
               })}
@@ -459,7 +459,7 @@ export default async function MatchPage({ params }) {
                     }}
                   />
                 ) : (
-                  <span style={{ fontSize: "34px" }} aria-hidden="true">⚽</span>
+                  <span className="team-logo-fallback">FC</span>
                 )}
               </div>
 
@@ -581,7 +581,7 @@ export default async function MatchPage({ params }) {
               fontWeight: "700",
             }}
           >
-            📊 صفحة {match.teams.home.name}
+            <span className="ui-glyph mini-glyph">FC</span>{" "}صفحة {match.teams.home.name}
           </a>
           <a
             href={`/teams/${encodeURIComponent(match.teams.away.name)}`}
@@ -596,7 +596,7 @@ export default async function MatchPage({ params }) {
               fontWeight: "700",
             }}
           >
-            📊 صفحة {match.teams.away.name}
+            <span className="ui-glyph mini-glyph">FC</span>{" "}صفحة {match.teams.away.name}
           </a>
         </div>
 
@@ -614,7 +614,7 @@ export default async function MatchPage({ params }) {
             }}
           >
             <p style={{ color: "#37e28a", margin: "0 0 6px", fontWeight: "800" }}>
-              ⏱️ أحداث المباراة
+              <span className="ui-glyph mini-glyph">LIVE</span>{" "}أحداث المباراة
             </p>
             <h2 style={{ margin: "0 0 20px", fontSize: "clamp(20px, 5vw, 28px)" }}>
               الخط الزمني
@@ -634,7 +634,7 @@ export default async function MatchPage({ params }) {
                 const isRed = card.includes("red") || type.includes("red");
                 const isYellow = card.includes("yellow") || type.includes("yellow");
 
-                const icon = isGoal ? "⚽" : isRed ? "🟥" : isYellow ? "🟨" : isSub ? "🔄" : "•";
+                const icon = isGoal ? "GOAL" : isRed ? "RED" : isYellow ? "YEL" : isSub ? "SUB" : "EVT";
                 const label = isGoal
                   ? "هدف"
                   : isRed
@@ -711,8 +711,8 @@ export default async function MatchPage({ params }) {
                 paddingTop: "14px",
               }}
             >
-              <span>🏠 {match.teams.home.name}</span>
-              <span>✈️ {match.teams.away.name}</span>
+              <span><span className="ui-glyph mini-glyph">H</span>{match.teams.home.name}</span>
+              <span><span className="ui-glyph mini-glyph">A</span>{match.teams.away.name}</span>
             </div>
           </section>
         )}
@@ -731,7 +731,7 @@ export default async function MatchPage({ params }) {
             {match.stats?.length > 0 && (
               <div>
                 <p style={{ color: "#37e28a", margin: "0 0 6px", fontWeight: "800" }}>
-                  📊 إحصائيات المباراة
+                  <span className="ui-glyph mini-glyph">STAT</span>{" "}إحصائيات المباراة
                 </p>
                 <h2 style={{ margin: "0 0 18px", fontSize: "clamp(20px, 5vw, 28px)" }}>
                   مقارنة الفريقين
@@ -753,7 +753,7 @@ export default async function MatchPage({ params }) {
             {match.lineup?.length > 0 && (
               <div style={{ marginTop: match.stats?.length > 0 ? "28px" : 0 }}>
                 <p style={{ color: "#37e28a", margin: "0 0 6px", fontWeight: "800" }}>
-                  👥 التشكيلات
+                  <span className="ui-glyph mini-glyph">XI</span>{" "}التشكيلات
                 </p>
                 <h2 style={{ margin: "0 0 18px", fontSize: "clamp(20px, 5vw, 28px)" }}>
                   لاعبو المباراة
@@ -816,7 +816,7 @@ export default async function MatchPage({ params }) {
 
             {relatedUpcoming.length > 0 && (
               <>
-                <h3 style={{ margin: "0 0 12px", color: "#f4f8f6" }}>⏭️ المباريات القادمة</h3>
+                <h3 style={{ margin: "0 0 12px", color: "#f4f8f6" }}>المباريات القادمة</h3>
                 <div
                   style={{
                     display: "grid",
@@ -856,7 +856,7 @@ export default async function MatchPage({ params }) {
 
             {relatedRecent.length > 0 && (
               <div style={{ marginTop: "22px" }}>
-                <h3 style={{ margin: "0 0 12px", color: "#f4f8f6" }}>🏁 آخر النتائج</h3>
+                <h3 style={{ margin: "0 0 12px", color: "#f4f8f6" }}>آخر النتائج</h3>
                 <div
                   style={{
                     display: "grid",
@@ -916,7 +916,7 @@ export default async function MatchPage({ params }) {
                 marginBottom: "20px",
               }}
             >
-              🎬 أبرز أحداث المباراة
+              <span className="ui-glyph mini-glyph">HD</span>{" "}أبرز أحداث المباراة
             </h2>
 
             <div
@@ -956,7 +956,7 @@ export default async function MatchPage({ params }) {
           }}
         >
           <h2 style={{ margin: "0 0 18px", color: "#37e28a", textAlign: "center" }}>
-            📋 معلومات المباراة
+            <span className="ui-glyph mini-glyph">INFO</span>{" "}معلومات المباراة
           </h2>
           <div
             style={{
