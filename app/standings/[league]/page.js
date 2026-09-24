@@ -142,7 +142,7 @@ export default async function StandingsPage({ params }) {
             </div>
           ) : (
             <div style={styles.empty}>
-              <div style={styles.emptyIcon}>📊</div>
+              <div style={styles.emptyIcon}><span className="ui-glyph">TAB</span></div>
               <h2>لا يوجد ترتيب متاح حاليًا</h2>
               <p>حاول تحديث الصفحة بعد قليل.</p>
             </div>
@@ -150,8 +150,8 @@ export default async function StandingsPage({ params }) {
         </section>
 
         <div style={styles.footerLinks}>
-          <Link href={`/leagues/${league.slug}`} style={styles.footerLink}>⚽ مباريات {league.name}</Link>
-          <Link href="/matches/today" style={styles.footerLink}>🗓️ مباريات اليوم</Link>
+          <Link href={`/leagues/${league.slug}`} style={styles.footerLink}><span className="ui-glyph mini-glyph">FC</span> مباريات {league.name}</Link>
+          <Link href="/matches/today" style={styles.footerLink}><span className="ui-glyph mini-glyph">DATE</span> مباريات اليوم</Link>
           <span style={styles.source}>مصدر البيانات: TheSportsDB</span>
         </div>
       </div>
