@@ -650,8 +650,7 @@ export default async function MatchPage({ params }) {
                 return (
                   <div
                     key={String(item.time) + "-" + (item.player || "event") + "-" + index}
-                    className="match-timeline-event"
-                    style={{
+                    className={\`match-timeline-event timeline-${isGoal ? "goal" : isRed ? "red" : isYellow ? "yellow" : isSub ? "sub" : "event"} team-${item.team || "neutral"}\`}\n                    style={{
                       display: "grid",
                       gridTemplateColumns: "minmax(0, 1fr) auto minmax(0, 1fr)",
                       gap: "10px",
@@ -666,7 +665,7 @@ export default async function MatchPage({ params }) {
                         </div>
                       )}
                       {item.team === "home" && item.assist && (
-                        <div style={{ color: "#82968d", fontSize: "12px" }}>تمريرة: {item.assist}</div>
+                        <div className="timeline-assist">تمريرة: {item.assist}</div>
                       )}
                     </div>
 
@@ -682,8 +681,9 @@ export default async function MatchPage({ params }) {
                         whiteSpace: "nowrap",
                       }}
                     >
-                      <span style={{ marginLeft: "5px" }}>{icon}</span>
-                      {item.time || "—"}
+                      <span className="timeline-event-icon">{icon}</span>
+                      <span className="timeline-event-time">{item.time || "—"}</span>
+                      <span className="timeline-event-label">{label}</span>
                     </div>
 
                     <div style={{ direction: "rtl", textAlign: item.team === "away" ? "left" : "right", minWidth: 0 }}>
