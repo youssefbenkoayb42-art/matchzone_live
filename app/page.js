@@ -598,7 +598,7 @@ export default function HomeDesign() {
             </div>
           </div>
 
-          {newsError && <div className="state-box error"><span className="ui-glyph error-glyph">!</span>{newsError}</div>
+          {newsError && <div className="state-box error"><span className="ui-glyph error-glyph">!</span>{newsError}</div>}
           {loadingNews && <div className="news-grid">{[1, 2, 3].map((item) => <div className="news-skeleton" key={item} />)}</div>}
           {!loadingNews && news.length > 0 && (
             <>
