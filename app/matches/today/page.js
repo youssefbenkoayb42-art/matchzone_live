@@ -100,175 +100,98 @@ export const metadata = {
   },
 };
 
+function teamLogo(team) {
+  return team?.logo || team?.strTeamBadge || team?.badge || "";
+}
+
 function MatchCard({ match }) {
   const leagueName =
-    match?.arabicLeague || match?.league?.name || "كرة القدم";
+    match?.arabicLeague || match?.league?.name || match?.strLeague || "كرة القدم";
   const leaguePath = getLeaguePath(match);
-  const homeName = match?.teams?.home?.name || "المضيف";
-  const awayName = match?.teams?.away?.name || "الضيف";
-  const homeScore = match?.goals?.home ?? "-";
-  const awayScore = match?.goals?.away ?? "-";
+  const homeName = match?.teams?.home?.name || match?.strHomeTeam || "المضيف";
+  const awayName = match?.teams?.away?.name || match?.strAwayTeam || "الضيف";
+  const homeScore = match?.goals?.home ?? match?.intHomeScore ?? "-";
+  const awayScore = match?.goals?.away ?? match?.intAwayScore ?? "-";
+  const homeLogo = teamLogo(match?.teams?.home);
+  const awayLogo = teamLogo(match?.teams?.away);
+  const live = isLive(match);
+  const finished = isFinished(match);
+  const eventId = match?.eventId || match?.idEvent || match?.fixture?.id;
 
   return (
-    <article className="today-match-card"
-      style={{
-        background: "linear-gradient(145deg,#10251c,#0b1713)",
-        border: "1px solid #284238",
-        borderRadius: "18px",
-        padding: "16px",
-      }}
-    >
-      <div className="today-match-card-top"
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          gap: "10px",
-          alignItems: "center",
-          flexWrap: "wrap",
-        }}
-      >
-        <a
-          href={leaguePath}
-          style={{
-            color: "#37e28a",
-            fontWeight: "800",
-            textDecoration: "none",
-          }}
-        >
-          {leagueName}
+    <article className={`today-match-card ${live ? "is-live" : ""} ${finished ? "is-finished" : ""}`}>
+      <div className="today-match-card-top">
+        <a href={leaguePath} className="today-league-link">
+          <span className="today-league-mark">LG</span>
+          <span>{leagueName}</span>
         </a>
-        <span
-          style={{
-            color: isLive(match) ? "#37e28a" : "#9baaa4",
-            fontSize: "13px",
-            fontWeight: "800",
-          }}
-        >
-          {statusLabel(match)}
+        <span className={`today-status ${live ? "is-live" : ""} ${finished ? "is-finished" : ""}`}>
+          {live ? "LIVE" : finished ? "FT" : "NEXT"}
         </span>
       </div>
 
-      <div className="today-match-score-row"
-        style={{
-          display: "grid",
-          gridTemplateColumns: "1fr auto 1fr",
-          alignItems: "center",
-          gap: "10px",
-          marginTop: "18px",
-          direction: "ltr",
-        }}
-      >
-        <strong style={{ textAlign: "center", direction: "rtl" }}>
-          {homeName}
-        </strong>
-
-        <span
-          style={{
-            color: "#37e28a",
-            fontSize: "22px",
-            fontWeight: "900",
-            whiteSpace: "nowrap",
-          }}
-        >
-          {homeScore} - {awayScore}
-        </span>
-
-        <strong style={{ textAlign: "center", direction: "rtl" }}>
-          {awayName}
-        </strong>
+      <div className="today-match-time">
+        {statusLabel(match)}
       </div>
 
-      <div className="today-match-team-links"
-        style={{
-          display: "grid",
-          gridTemplateColumns: "1fr 1fr",
-          gap: "8px",
-          marginTop: "16px",
-        }}
-      >
-        <a
-          href={`/teams/${encodeURIComponent(homeName)}`}
-          style={{
-            padding: "9px",
-            borderRadius: "10px",
-            textAlign: "center",
-            textDecoration: "none",
-            color: "#b9c9c2",
-            background: "rgba(255,255,255,.03)",
-            border: "1px solid rgba(255,255,255,.06)",
-            fontSize: "13px",
-          }}
-        >
+      <div className="today-match-score-row">
+        <div className="today-team">
+          {homeLogo ? (
+            <img src={homeLogo} alt="" className="today-team-logo" loading="lazy" />
+          ) : (
+            <span className="today-team-logo-fallback">FC</span>
+          )}
+          <strong>{homeName}</strong>
+        </div>
+
+        <div className={`today-score ${live ? "is-live" : ""}`}>
+          <span>{homeScore}</span>
+          <b>:</b>
+          <span>{awayScore}</span>
+        </div>
+
+        <div className="today-team">
+          {awayLogo ? (
+            <img src={awayLogo} alt="" className="today-team-logo" loading="lazy" />
+          ) : (
+            <span className="today-team-logo-fallback">FC</span>
+          )}
+          <strong>{awayName}</strong>
+        </div>
+      </div>
+
+      <div className="today-match-actions">
+        <a href={`/teams/${encodeURIComponent(homeName)}`} className="today-team-link">
           {homeName}
         </a>
-        <a
-          href={`/teams/${encodeURIComponent(awayName)}`}
-          style={{
-            padding: "9px",
-            borderRadius: "10px",
-            textAlign: "center",
-            textDecoration: "none",
-            color: "#b9c9c2",
-            background: "rgba(255,255,255,.03)",
-            border: "1px solid rgba(255,255,255,.06)",
-            fontSize: "13px",
-          }}
-        >
+        <a href={`/matches/${eventId}`} className="today-details-link">
+          تفاصيل المباراة <span>←</span>
+        </a>
+        <a href={`/teams/${encodeURIComponent(awayName)}`} className="today-team-link">
           {awayName}
         </a>
       </div>
-
-      <a
-        href={`/matches/${match?.eventId || match?.fixture?.id}`}
-        style={{
-          display: "block",
-          marginTop: "10px",
-          padding: "11px",
-          borderRadius: "12px",
-          textAlign: "center",
-          textDecoration: "none",
-          color: "#d9e4df",
-          background: "rgba(55,226,138,.07)",
-          border: "1px solid rgba(55,226,138,.14)",
-          fontWeight: "800",
-        }}
-      >
-        تفاصيل المباراة ←
-      </a>
     </article>
   );
 }
 
-function MatchSection({ title, kicker, matches }) {
+function MatchSection({ title, kicker, matches, tone = "default" }) {
   if (!matches.length) return null;
 
   return (
-    <section className="today-match-section" style={{ marginTop: "30px" }}>
-      <div style={{ marginBottom: "14px" }}>
-        <p
-          style={{
-            margin: 0,
-            color: "#37e28a",
-            fontSize: "12px",
-            fontWeight: "900",
-            letterSpacing: "1.5px",
-          }}
-        >
-          {kicker}
-        </p>
-        <h2 style={{ margin: "5px 0 0", fontSize: "22px" }}>{title}</h2>
+    <section className={`today-match-section tone-${tone}`}>
+      <div className="today-section-heading">
+        <div>
+          <p>{kicker}</p>
+          <h2>{title}</h2>
+        </div>
+        <span>{matches.length} مباراة</span>
       </div>
 
-      <div className="today-match-grid"
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit,minmax(280px,1fr))",
-          gap: "14px",
-        }}
-      >
+      <div className="today-match-grid">
         {matches.map((match) => (
           <MatchCard
-            key={match?.eventId || match?.fixture?.id}
+            key={match?.eventId || match?.idEvent || match?.fixture?.id}
             match={match}
           />
         ))}
