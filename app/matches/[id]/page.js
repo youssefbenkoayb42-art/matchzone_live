@@ -650,7 +650,8 @@ export default async function MatchPage({ params }) {
                 return (
                   <div
                     key={String(item.time) + "-" + (item.player || "event") + "-" + index}
-                    className={`match-timeline-event timeline-${isGoal ? "goal" : isRed ? "red" : isYellow ? "yellow" : isSub ? "sub" : "event"} team-${item.team || "neutral"}`}\n                    style={{
+                    className={`match-timeline-event timeline-${isGoal ? "goal" : isRed ? "red" : isYellow ? "yellow" : isSub ? "sub" : "event"} team-${item.team || "neutral"}`}
+                    style={{
                       display: "grid",
                       gridTemplateColumns: "minmax(0, 1fr) auto minmax(0, 1fr)",
                       gap: "10px",
