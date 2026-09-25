@@ -2511,3 +2511,165 @@ main {
     display: none !important;
   }
 }
+
+
+/* League command strip + standings hub */
+.league-command-strip {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 10% 50%, rgba(57,229,139,.055), transparent 24%),
+    linear-gradient(145deg, rgba(255,255,255,.035), rgba(255,255,255,.012)) !important;
+}
+.league-command-link {
+  position: relative;
+  min-width: 0;
+  border: 1px solid rgba(57,229,139,.08) !important;
+  transition: transform .2s ease, border-color .2s ease, background .2s ease, box-shadow .2s ease;
+}
+.league-command-link strong {
+  color: #dce7e2;
+  font-size: 11px;
+}
+.league-command-link small {
+  color: #5f7469;
+  font-size: 8px;
+  font-weight: 800;
+}
+.league-command-link:hover {
+  transform: translateY(-2px);
+  color: #8affbe !important;
+  border-color: rgba(57,229,139,.24) !important;
+  background: rgba(57,229,139,.055) !important;
+  box-shadow: 0 10px 28px rgba(0,0,0,.14), 0 0 18px rgba(57,229,139,.04);
+}
+@media (max-width: 650px) {
+  .league-command-strip {
+    grid-template-columns: repeat(2, minmax(0,1fr)) !important;
+    gap: 6px !important;
+    padding: 6px !important;
+    margin-top: 14px !important;
+  }
+  .league-command-link {
+    padding: 9px 6px !important;
+  }
+}
+
+.standings-page-shell {
+  position: relative;
+  overflow-x: clip;
+  background:
+    radial-gradient(circle at 8% 8%, rgba(57,229,139,.06), transparent 25%),
+    radial-gradient(circle at 92% 45%, rgba(57,229,139,.035), transparent 22%);
+}
+.standings-page-container {
+  position: relative;
+  z-index: 1;
+}
+.standings-page-hero {
+  position: relative;
+  overflow: hidden;
+  border-color: rgba(57,229,139,.22) !important;
+  background:
+    radial-gradient(circle at 10% 50%, rgba(57,229,139,.09), transparent 30%),
+    linear-gradient(145deg, rgba(18,51,38,.98), rgba(7,16,13,.98)) !important;
+  box-shadow: 0 25px 75px rgba(0,0,0,.26), inset 0 1px 0 rgba(255,255,255,.035);
+}
+.standings-page-hero::after {
+  content: "";
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  inset-inline-end: -105px;
+  top: -115px;
+  border: 1px solid rgba(57,229,139,.11);
+  border-radius: 50%;
+  box-shadow: 0 0 55px rgba(57,229,139,.035);
+  pointer-events: none;
+}
+.standings-page-hero > * {
+  position: relative;
+  z-index: 1;
+}
+.standings-league-nav {
+  scrollbar-width: none !important;
+  -webkit-overflow-scrolling: touch;
+}
+.standings-league-nav::-webkit-scrollbar {
+  display: none;
+}
+.standings-table-card {
+  position: relative;
+  border-color: rgba(57,229,139,.16) !important;
+  background:
+    radial-gradient(circle at 50% 0, rgba(57,229,139,.055), transparent 38%),
+    linear-gradient(145deg, rgba(16,37,28,.96), rgba(7,16,13,.98)) !important;
+  box-shadow: 0 22px 65px rgba(0,0,0,.22), inset 0 1px 0 rgba(255,255,255,.035);
+}
+.standings-table-card table {
+  direction: rtl;
+}
+.standings-table-card tbody tr {
+  transition: background .18s ease;
+}
+.standings-table-card tbody tr:hover {
+  background: rgba(57,229,139,.045) !important;
+}
+.standings-table-card tbody td {
+  border-color: rgba(57,229,139,.065) !important;
+}
+.standings-table-card thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  box-shadow: inset 0 -1px 0 rgba(57,229,139,.08);
+}
+.standings-rank {
+  display: inline-grid;
+  place-items: center;
+  min-width: 31px;
+  height: 27px;
+  padding: 0 7px;
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 8px;
+  color: #91a49b;
+  background: rgba(255,255,255,.025);
+  font: 950 9px Arial, sans-serif;
+  letter-spacing: .5px;
+}
+.standings-rank-top {
+  border-color: rgba(57,229,139,.3);
+  color: #8affbe;
+  background: rgba(57,229,139,.075);
+  box-shadow: 0 0 14px rgba(57,229,139,.055);
+}
+.standings-table-card td:last-child {
+  text-shadow: 0 0 11px rgba(57,229,139,.18);
+}
+.standings-footer-links {
+  border-top: 1px solid rgba(57,229,139,.07);
+  padding-top: 14px;
+}
+@media (max-width: 650px) {
+  .standings-page-shell {
+    padding-inline: 12px !important;
+  }
+  .standings-page-hero {
+    align-items: flex-start !important;
+    padding: 19px 16px !important;
+    border-radius: 20px !important;
+  }
+  .standings-page-hero .logoWrap {
+    width: 58px !important;
+    height: 58px !important;
+  }
+  .standings-table-card {
+    border-radius: 20px !important;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .league-command-link,
+  .standings-table-card tbody tr {
+    transition: none !important;
+  }
+}
