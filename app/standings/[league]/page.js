@@ -52,11 +52,11 @@ export default async function StandingsPage({ params }) {
   const table = await getStandings(league.id);
 
   return (
-    <main dir="rtl" style={styles.main}>
-      <div style={styles.container}>
+    <main dir="rtl" style={styles.main} className="standings-page-shell">
+      <div style={styles.container} className="standings-page-container">
         <Link href="/leagues" style={styles.back}>← البطولات</Link>
 
-        <header style={styles.header}>
+        <header style={styles.header} className="standings-page-hero">
           <div style={styles.logoWrap}>
             <img src={league.logo} alt={league.name + " شعار"} style={styles.logo} />
           </div>
@@ -67,7 +67,7 @@ export default async function StandingsPage({ params }) {
           </div>
         </header>
 
-        <nav style={styles.leagueNav}>
+        <nav style={styles.leagueNav} className="standings-league-nav">
           {LEAGUES.map((item) => (
             <Link
               key={item.slug}
@@ -82,7 +82,7 @@ export default async function StandingsPage({ params }) {
           ))}
         </nav>
 
-        <section style={styles.card}>
+        <section style={styles.card} className="standings-table-card">
           {table.length ? (
             <div style={styles.tableScroll}>
               <table style={styles.table}>
@@ -113,7 +113,7 @@ export default async function StandingsPage({ params }) {
                     return (
                       <tr key={team?.idTeam || team?.strTeam || index} style={rank <= 3 ? styles.highlightRow : undefined}>
                         <td style={{ ...styles.td, ...rankStyle, fontWeight: 900 }}>
-                          {rank <= 3 ? ["🥇", "🥈", "🥉"][rank - 1] : rank}
+                          <span className={rank <= 3 ? "standings-rank standings-rank-top" : "standings-rank"}>{String(rank).padStart(2, "0")}</span>
                         </td>
                         <td style={styles.teamCell}>
                           {badge ? <img src={badge} alt="" style={styles.teamLogo} loading="lazy" /> : null}
@@ -149,7 +149,7 @@ export default async function StandingsPage({ params }) {
           )}
         </section>
 
-        <div style={styles.footerLinks}>
+        <div style={styles.footerLinks} className="standings-footer-links">
           <Link href={`/leagues/${league.slug}`} style={styles.footerLink}><span className="ui-glyph mini-glyph">FC</span> مباريات {league.name}</Link>
           <Link href="/matches/today" style={styles.footerLink}><span className="ui-glyph mini-glyph">DATE</span> مباريات اليوم</Link>
           <span style={styles.source}>مصدر البيانات: TheSportsDB</span>
