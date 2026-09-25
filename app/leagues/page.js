@@ -72,7 +72,7 @@ async function AvailableLeagues() {
   }
 
   return (
-    <div style={styles.discoveredGrid}>
+    <div style={styles.discoveredGrid} className="leagues-discovered-grid">
       {leagues.map((league) => {
         const featured = Array.from(FEATURED_SLUGS).find((slug) => {
           const item = LEAGUES.find(([value]) => value === slug);
@@ -81,7 +81,7 @@ async function AvailableLeagues() {
         const content = (
           <>
             <div style={styles.discoveredLogo}>
-              {league.logo ? <img src={league.logo} alt="" style={styles.discoveredLogoImg} /> : "🏆"}
+              {league.logo ? <img src={league.logo} alt="" style={styles.discoveredLogoImg} /> : <span className="ui-glyph">LG</span>}
             </div>
             <div style={styles.discoveredBody}>
               <strong>{league.name}</strong>
@@ -92,11 +92,11 @@ async function AvailableLeagues() {
         );
 
         return featured ? (
-          <Link key={league.id || league.name} href={"/leagues/" + featured} style={styles.discoveredCard}>{content}</Link>
+          <Link key={league.id || league.name} href={"/leagues/" + featured} style={styles.discoveredCard} className="league-discovered-card">{content}</Link>
         ) : league.id ? (
-          <Link key={league.id} href={"/leagues/league-" + league.id} style={styles.discoveredCard}>{content}</Link>
+          <Link key={league.id} href={"/leagues/league-" + league.id} style={styles.discoveredCard} className="league-discovered-card">{content}</Link>
         ) : (
-          <div key={league.name} style={styles.discoveredCard}>{content}</div>
+          <div key={league.name} style={styles.discoveredCard} className="league-discovered-card">{content}</div>
         );
       })}
     </div>
@@ -105,7 +105,7 @@ async function AvailableLeagues() {
 
 export default function LeaguesPage() {
   return (
-    <main style={styles.main} dir="rtl">
+    <main style={styles.main} className="leagues-directory-page" dir="rtl">
       <div style={styles.container}>
         <Link href="/" style={styles.back}>← العودة للرئيسية</Link>
 
@@ -127,11 +127,11 @@ export default function LeaguesPage() {
             <span style={styles.count}>{LEAGUES.length} بطولات</span>
           </div>
 
-          <div style={styles.grid}>
+          <div style={styles.grid} className="leagues-directory-grid">
             {LEAGUES.map(([slug, name, englishName, logo]) => (
-              <div key={slug} style={styles.card}>
-                <Link href={"/leagues/" + slug} style={styles.cardMain}>
-                  <div style={styles.logoWrap}>
+              <div key={slug} style={styles.card} className="league-directory-card">
+                <Link href={"/leagues/" + slug} style={styles.cardMain} className="league-directory-main">
+                  <div style={styles.logoWrap} className="league-directory-logo-wrap">
                     <img src={logo} alt={name + " شعار"} style={styles.logo} />
                   </div>
                   <div style={styles.cardBody}>
