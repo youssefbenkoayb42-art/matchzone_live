@@ -2953,3 +2953,68 @@ main {
     transition: none !important;
   }
 }
+
+
+/* League performance metrics */
+.standings-metric-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 9px;
+  margin: 0 0 12px;
+}
+.standings-metric-strip > div {
+  min-width: 0;
+  padding: 12px 13px;
+  border: 1px solid rgba(57,229,139,.1);
+  border-radius: 15px;
+  background:
+    linear-gradient(145deg, rgba(57,229,139,.055), rgba(255,255,255,.018));
+  box-shadow: inset 0 0 18px rgba(57,229,139,.018);
+}
+.standings-metric-strip span {
+  display: block;
+  color: #39e58b;
+  font-size: 7px;
+  font-weight: 950;
+  letter-spacing: 1px;
+}
+.standings-metric-strip strong {
+  display: block;
+  margin-top: 5px;
+  overflow: hidden;
+  color: #eef8f3;
+  font-size: clamp(15px, 2vw, 21px);
+  font-weight: 950;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.standings-metric-strip small {
+  display: block;
+  margin-top: 4px;
+  overflow: hidden;
+  color: #6f8379;
+  font-size: 8px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+@media (max-width: 760px) {
+  .standings-metric-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 420px) {
+  .standings-metric-strip {
+    gap: 7px;
+  }
+  .standings-metric-strip > div {
+    padding: 10px;
+  }
+  .standings-metric-strip strong {
+    font-size: 14px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .standings-metric-strip > div {
+    transition: none !important;
+  }
+}
