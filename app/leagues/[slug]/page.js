@@ -94,7 +94,7 @@ async function getTodayMatches(leagueId) {
 function MatchCard({ match, league, featured = false }) {
   const isFinished = Boolean(match.intHomeScore != null && match.intAwayScore != null);
   return (
-    <article style={featured ? { ...styles.card, ...styles.featuredCard } : styles.card}>
+    <article className={featured ? "league-match-card league-match-card-featured" : "league-match-card"} style={featured ? { ...styles.card, ...styles.featuredCard } : styles.card}>
       <div style={styles.competition}>{league.english}</div>
       <div style={styles.status}>{isFinished ? "النتيجة النهائية" : "المباراة القادمة"}</div>
       <div style={styles.teams}>
@@ -162,12 +162,12 @@ export default async function LeaguePage({ params }) {
   };
 
   return (
-    <main style={styles.main} dir="rtl">
+    <main style={styles.main} className="league-page-shell" dir="rtl">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <div style={styles.container}>
+      <div style={styles.container} className="league-page-container">
         <a href="/leagues" style={styles.link}>← كل البطولات</a>
 
-        <header style={styles.header}>
+        <header style={styles.header} className="league-page-hero">
           <div style={styles.logoBox}>{league.badge ? <img src={league.badge} alt="" style={styles.leagueLogo} /> : <span style={styles.leagueFallback}>L</span>}</div>
           <div style={{ flex: 1 }}>
             <div style={styles.eyebrow}>MATCHZONE • LEAGUE</div>
@@ -176,14 +176,14 @@ export default async function LeaguePage({ params }) {
           </div>
         </header>
 
-        <div style={styles.stats} aria-label="ملخص البطولة">
+        <div style={styles.stats} className="league-page-stats" aria-label="ملخص البطولة">
           <div style={styles.statBox}><strong>{today.length}</strong><span>اليوم</span></div>
           <div style={styles.statBox}><strong>{upcomingMatches.length}</strong><span>قادمة</span></div>
           <div style={styles.statBox}><strong>{recentResults.length}</strong><span>نتائج</span></div>
         </div>
 
-        <section>
-          <h2 style={styles.h2}>مباريات {league.name} اليوم</h2>
+        <section className="league-page-section">
+          <div className="league-section-heading"><div><span>LIVE / TODAY</span><strong>مباريات {league.name} اليوم</strong></div><small>{today.length} مباراة</small></div>
           {today.length === 0 ? (
             <div style={styles.empty}>لا توجد مباريات مسجلة لهذه البطولة اليوم.</div>
           ) : (
@@ -191,8 +191,8 @@ export default async function LeaguePage({ params }) {
           )}
         </section>
 
-        <section id="upcoming">
-          <h2 style={styles.h2}>المباراة القادمة</h2>
+        <section id="upcoming" className="league-page-section">
+          <div className="league-section-heading"><div><span>NEXT</span><strong>المباراة القادمة</strong></div><small>{upcomingMatches.length} مباريات متاحة</small></div>
           {upcomingMatches.length === 0 ? (
             <div style={styles.empty}>لا توجد مباريات قادمة متاحة حالياً.</div>
           ) : (
@@ -201,13 +201,13 @@ export default async function LeaguePage({ params }) {
 
           {upcomingMatches.length > 1 && (
             <>
-              <h2 style={styles.h2}>باقي المباريات القادمة</h2>
+              <div className="league-section-heading"><div><span>UPCOMING</span><strong>باقي المباريات القادمة</strong></div><small>أقرب المواعيد</small></div>
               <div style={styles.grid}>{upcomingMatches.slice(1).map((match) => <MatchCard key={match.idEvent} match={match} league={league} />)}</div>
             </>
           )}
         </section>
 
-        <section id="teams">
+        <section id="teams" className="league-page-section">
           <div style={styles.sectionHeader}>
             <div>
               <div style={styles.sectionKicker}>TEAMS</div>
@@ -223,6 +223,7 @@ export default async function LeaguePage({ params }) {
                 <a
                   key={team.idTeam}
                   href={"/teams/" + encodeURIComponent(team.strTeam || "")}
+                  className="league-team-card"
                   style={styles.teamCard}
                 >
                   {team.strTeamBadge ? (
@@ -238,8 +239,8 @@ export default async function LeaguePage({ params }) {
           )}
         </section>
 
-        <section id="results">
-          <h2 style={styles.h2}>آخر النتائج</h2>
+        <section id="results" className="league-page-section">
+          <div className="league-section-heading"><div><span>RESULTS</span><strong>آخر النتائج</strong></div><small>أحدث النتائج</small></div>
           {recentResults.length === 0 ? (
             <div style={styles.empty}>لا توجد نتائج سابقة متاحة حالياً.</div>
           ) : (
@@ -247,7 +248,7 @@ export default async function LeaguePage({ params }) {
           )}
         </section>
 
-        <nav style={styles.nav} aria-label="تصفح البطولات">
+        <nav style={styles.nav} className="league-related-nav" aria-label="تصفح البطولات">
           {Object.entries(LEAGUES).filter(([slug]) => slug !== params.slug).map(([slug, item]) => (
             <a key={slug} href={"/leagues/" + slug} style={styles.navLink}>{item.name}</a>
           ))}
