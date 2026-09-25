@@ -2064,3 +2064,90 @@ main {
   .match-stat-values strong { font-size: 15px; }
   .match-stat-values span { font-size: 11px; }
 }
+
+
+/* League directory — premium discovery cards */
+.leagues-directory-page {
+  position: relative;
+  overflow: hidden;
+}
+.leagues-directory-page::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 8% 18%, rgba(57,229,139,.055), transparent 25%),
+    radial-gradient(circle at 92% 62%, rgba(57,229,139,.035), transparent 24%);
+}
+.leagues-directory-page .league-directory-card,
+.leagues-directory-page .league-discovered-card {
+  position: relative;
+  overflow: hidden;
+  transition: transform .22s ease, border-color .22s ease, box-shadow .22s ease;
+}
+.leagues-directory-page .league-directory-card::before,
+.leagues-directory-page .league-discovered-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(120deg, transparent 25%, rgba(255,255,255,.035) 50%, transparent 75%);
+  transform: translateX(-120%);
+  transition: transform .55s ease;
+}
+.leagues-directory-page .league-directory-card:hover,
+.leagues-directory-page .league-discovered-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(57,229,139,.28);
+  box-shadow: 0 20px 50px rgba(0,0,0,.22), 0 0 24px rgba(57,229,139,.045);
+}
+.leagues-directory-page .league-directory-card:hover::before,
+.leagues-directory-page .league-discovered-card:hover::before {
+  transform: translateX(120%);
+}
+.leagues-directory-page .league-directory-card:hover .league-directory-logo-wrap {
+  border-color: rgba(57,229,139,.2);
+  box-shadow: inset 0 0 22px rgba(57,229,139,.045), 0 0 20px rgba(57,229,139,.04);
+}
+.leagues-directory-page .league-discovered-card {
+  isolation: isolate;
+}
+.leagues-directory-page .league-discovered-card > * {
+  position: relative;
+  z-index: 1;
+}
+.leagues-directory-page .league-discovered-card img {
+  transition: transform .22s ease;
+}
+.leagues-directory-page .league-discovered-card:hover img {
+  transform: scale(1.06);
+}
+@media (max-width: 650px) {
+  .leagues-directory-page {
+    padding-inline: 12px !important;
+  }
+  .leagues-directory-page header {
+    align-items: flex-start !important;
+    padding: 21px 17px !important;
+  }
+  .leagues-directory-page .league-directory-card {
+    min-height: 235px !important;
+    padding: 15px !important;
+    border-radius: 20px !important;
+  }
+  .leagues-directory-page .league-directory-logo-wrap {
+    height: 105px !important;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .leagues-directory-page .league-directory-card,
+  .leagues-directory-page .league-discovered-card,
+  .leagues-directory-page .league-discovered-card img {
+    transition: none !important;
+  }
+  .leagues-directory-page .league-directory-card::before,
+  .leagues-directory-page .league-discovered-card::before {
+    display: none !important;
+  }
+}
