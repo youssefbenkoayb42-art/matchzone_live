@@ -2747,3 +2747,65 @@ main {
   .standings-legend span { font-size:7px; padding:5px 7px; }
   .standings-status { min-width:44px; font-size:6px; }
 }
+
+
+/* Standings form guide */
+.standings-form {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  min-width: 118px;
+}
+.standings-form-pill {
+  display: inline-grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 7px;
+  border: 1px solid rgba(255,255,255,.08);
+  background: rgba(255,255,255,.025);
+  color: #8b9b93;
+  font: 950 7px Arial, sans-serif;
+  letter-spacing: .2px;
+  box-shadow: inset 0 0 10px rgba(255,255,255,.02);
+}
+.standings-form-w {
+  color: #39e58b;
+  border-color: rgba(57,229,139,.2);
+  background: rgba(57,229,139,.065);
+  text-shadow: 0 0 8px rgba(57,229,139,.45);
+}
+.standings-form-d {
+  color: #f5c542;
+  border-color: rgba(245,197,66,.2);
+  background: rgba(245,197,66,.055);
+  text-shadow: 0 0 8px rgba(245,197,66,.35);
+}
+.standings-form-l {
+  color: #ff6872;
+  border-color: rgba(255,104,114,.2);
+  background: rgba(255,104,114,.055);
+  text-shadow: 0 0 8px rgba(255,104,114,.35);
+}
+.standings-form-empty {
+  color: #52625a;
+  font-size: 12px;
+}
+@media (max-width: 650px) {
+  .standings-form {
+    min-width: 106px;
+    gap: 3px;
+  }
+  .standings-form-pill {
+    width: 20px;
+    height: 20px;
+    border-radius: 6px;
+    font-size: 6px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .standings-form-pill {
+    transition: none !important;
+  }
+}
