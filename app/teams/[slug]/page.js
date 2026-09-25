@@ -161,7 +161,7 @@ export default async function TeamPage({ params }) {
         }}
       />
 
-      <main dir="rtl" style={styles.main}>
+      <main dir="rtl" style={styles.main} className="team-page-shell">
         <div style={styles.container}>
           <nav style={styles.breadcrumb} aria-label="مسار التنقل">
             <a href="/" style={styles.breadcrumbLink}>
@@ -179,7 +179,7 @@ export default async function TeamPage({ params }) {
             ← العودة إلى المباريات
           </a>
 
-          <section style={styles.hero}>
+          <section style={styles.hero} className="team-page-hero">
             {team?.strTeamBadge ? (
               <img
                 src={team.strTeamBadge}
