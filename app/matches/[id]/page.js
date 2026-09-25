@@ -740,16 +740,29 @@ export default async function MatchPage({ params }) {
                 <h2 style={{ margin: "0 0 18px", fontSize: "clamp(20px, 5vw, 28px)" }}>
                   مقارنة الفريقين
                 </h2>
-                <div style={{ display: "grid", gap: "10px" }}>
-                  {match.stats.map((stat) => (
-                    <div key={stat.name} style={{ background: "#07100d", border: "1px solid #284238", borderRadius: "14px", padding: "13px" }}>
-                      <div style={{ display: "grid", gridTemplateColumns: "1fr auto 1fr", gap: "10px", alignItems: "center" }}>
-                        <strong style={{ textAlign: "center" }}>{stat.home ?? "—"}</strong>
-                        <span style={{ color: "#82968d", textAlign: "center", fontSize: "13px" }}>{stat.name}</span>
-                        <strong style={{ textAlign: "center" }}>{stat.away ?? "—"}</strong>
+                <div className="match-stats-grid">
+                  {match.stats.map((stat, index) => {
+                    const home = Number(stat.home);
+                    const away = Number(stat.away);
+                    const hasNumbers = Number.isFinite(home) && Number.isFinite(away);
+                    const total = hasNumbers ? Math.abs(home) + Math.abs(away) : 0;
+                    const homePct = total > 0 ? Math.round((Math.abs(home) / total) * 100) : 50;
+                    const awayPct = total > 0 ? 100 - homePct : 50;
+
+                    return (
+                      <div className="match-stat-card" key={stat.name + index}>
+                        <div className="match-stat-values">
+                          <strong>{stat.home ?? "—"}</strong>
+                          <span>{stat.name}</span>
+                          <strong>{stat.away ?? "—"}</strong>
+                        </div>
+                        <div className="match-stat-bars" aria-hidden="true">
+                          <span className="stat-bar stat-bar-home" style={{ width: homePct + "%" }} />
+                          <span className="stat-bar stat-bar-away" style={{ width: awayPct + "%" }} />
+                        </div>
                       </div>
-                    </div>
-                  ))}
+                    );
+                  })}
                 </div>
               </div>
             )}
