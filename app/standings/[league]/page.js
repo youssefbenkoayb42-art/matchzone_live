@@ -98,6 +98,45 @@ export default async function StandingsPage({ params }) {
 
   const [table, recentForm] = await Promise.all([getStandings(league.id), getRecentForm(league.id)]);
 
+  const rankedTeams = table
+    .map((team, index) => ({
+      team,
+      rank: Number(team?.intRank || index + 1),
+      goalsFor: Number(team?.intGoalsFor || 0),
+      goalsAgainst: Number(team?.intGoalsAgainst || 0),
+      goalDifference: Number(team?.intGoalDifference || 0),
+      form: recentForm[String(team?.idTeam)] || [],
+    }))
+    .filter((item) => item.team?.strTeam);
+
+  const bestAttack = rankedTeams.length
+    ? rankedTeams.reduce((best, item) => item.goalsFor > best.goalsFor ? item : best, rankedTeams[0])
+    : null;
+  const strongestDefense = rankedTeams.length
+    ? rankedTeams.reduce((best, item) => item.goalsAgainst < best.goalsAgainst ? item : best, rankedTeams[0])
+    : null;
+  const bestDifference = rankedTeams.length
+    ? rankedTeams.reduce((best, item) => item.goalDifference > best.goalDifference ? item : best, rankedTeams[0])
+    : null;
+
+  const getStreak = (form) => {
+    if (!form?.length) return { label: "لا بيانات", result: "none", count: 0 };
+    const first = form[0].result;
+    let count = 0;
+    for (const item of form) {
+      if (item.result !== first) break;
+      count += 1;
+    }
+    const labels = { W: "انتصارات متتالية", D: "تعادلات متتالية", L: "خسائر متتالية" };
+    return { label: labels[first] || "سلسلة", result: first.toLowerCase(), count };
+  };
+
+  const streakLeader = rankedTeams
+    .map((item) => ({ ...item, streak: getStreak(item.form) }))
+    .filter((item) => item.streak.count > 0)
+    .sort((a, b) => b.streak.count - a.streak.count)[0] || null;
+
+
   return (
     <main dir="rtl" style={styles.main} className="standings-page-shell">
       <div style={styles.container} className="standings-page-container">
@@ -133,6 +172,43 @@ export default async function StandingsPage({ params }) {
             </Link>
           ))}
         </nav>
+
+
+        <section className="standings-intelligence" aria-label="تحليلات البطولة">
+          <div className="standings-intelligence-head">
+            <div>
+              <span>MATCHZONE • FOOTBALL INTELLIGENCE</span>
+              <strong>قراءة سريعة للمشهد</strong>
+            </div>
+            <small>مؤشرات مستخرجة من جدول البطولة وآخر النتائج المتاحة</small>
+          </div>
+          <div className="standings-intelligence-grid">
+            <div className="standings-insight-card">
+              <span className="standings-insight-code">ATTACK</span>
+              <small>أفضل هجوم</small>
+              <strong>{bestAttack?.team?.strTeam || "—"}</strong>
+              <b>{bestAttack ? bestAttack.goalsFor + " هدف" : "—"}</b>
+            </div>
+            <div className="standings-insight-card">
+              <span className="standings-insight-code">DEFENCE</span>
+              <small>أقوى دفاع</small>
+              <strong>{strongestDefense?.team?.strTeam || "—"}</strong>
+              <b>{strongestDefense ? strongestDefense.goalsAgainst + " هدف عليه" : "—"}</b>
+            </div>
+            <div className="standings-insight-card">
+              <span className="standings-insight-code">GOAL DIFF</span>
+              <small>أفضل فارق أهداف</small>
+              <strong>{bestDifference?.team?.strTeam || "—"}</strong>
+              <b>{bestDifference ? (bestDifference.goalDifference > 0 ? "+" : "") + bestDifference.goalDifference : "—"}</b>
+            </div>
+            <div className="standings-insight-card">
+              <span className="standings-insight-code">STREAK</span>
+              <small>أطول سلسلة حالية</small>
+              <strong>{streakLeader?.team?.strTeam || "—"}</strong>
+              <b>{streakLeader ? streakLeader.streak.count + " " + streakLeader.streak.label : "—"}</b>
+            </div>
+          </div>
+        </section>
 
         <section style={styles.card} className="standings-table-card">
           {table.length ? (
