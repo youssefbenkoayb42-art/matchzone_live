@@ -136,6 +136,22 @@ export default async function StandingsPage({ params }) {
     .filter((item) => item.streak.count > 0)
     .sort((a, b) => b.streak.count - a.streak.count)[0] || null;
 
+  const totalGoals = rankedTeams.reduce((sum, item) => sum + item.goalsFor, 0);
+  const totalPlayed = rankedTeams.reduce((sum, item) => sum + Number(item.team?.intPlayed || 0), 0);
+  const leagueGoalsPerMatch = totalPlayed > 0 ? (totalGoals / totalPlayed).toFixed(2) : "0.00";
+  const formPoints = (form) =>
+    (form || []).reduce((sum, item) => sum + (item.result === "W" ? 3 : item.result === "D" ? 1 : 0), 0);
+  const momentumLeader = rankedTeams
+    .map((item) => ({ ...item, recentPoints: formPoints(item.form) }))
+    .sort((a, b) => b.recentPoints - a.recentPoints || a.rank - b.rank)[0] || null;
+  const efficiencyLeader = rankedTeams
+    .map((item) => {
+      const played = Number(item.team?.intPlayed || 0);
+      const points = Number(item.team?.intPoints || 0);
+      return { ...item, ppg: played > 0 ? points / played : 0 };
+    })
+    .sort((a, b) => b.ppg - a.ppg || a.rank - b.rank)[0] || null;
+
 
   return (
     <main dir="rtl" style={styles.main} className="standings-page-shell">
@@ -181,6 +197,12 @@ export default async function StandingsPage({ params }) {
               <strong>قراءة سريعة للمشهد</strong>
             </div>
             <small>مؤشرات مستخرجة من جدول البطولة وآخر النتائج المتاحة</small>
+          </div>
+          <div className="standings-metric-strip" aria-label="مؤشرات البطولة">
+            <div><span>GOALS</span><strong>{totalGoals}</strong><small>أهداف مسجلة</small></div>
+            <div><span>AVG</span><strong>{leagueGoalsPerMatch}</strong><small>هدف لكل مباراة</small></div>
+            <div><span>MOMENTUM</span><strong>{momentumLeader?.team?.strTeam || "—"}</strong><small>{momentumLeader ? momentumLeader.recentPoints + " نقاط من آخر 5" : "لا بيانات"}</small></div>
+            <div><span>EFFICIENCY</span><strong>{efficiencyLeader?.team?.strTeam || "—"}</strong><small>{efficiencyLeader ? efficiencyLeader.ppg.toFixed(2) + " نقطة/مباراة" : "لا بيانات"}</small></div>
           </div>
           <div className="standings-intelligence-grid">
             <div className="standings-insight-card">
