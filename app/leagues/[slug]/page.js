@@ -182,6 +182,29 @@ export default async function LeaguePage({ params }) {
           <div style={styles.statBox}><strong>{recentResults.length}</strong><span>نتائج</span></div>
         </div>
 
+        <nav style={styles.infoStrip} className="league-command-strip" aria-label="مركز البطولة">
+          <a href={"/standings/" + params.slug} style={styles.infoLink} className="league-command-link">
+            <span className="ui-glyph mini-glyph">TAB</span>
+            <strong>الترتيب</strong>
+            <small>النقاط والمراكز</small>
+          </a>
+          <a href="#teams" style={styles.infoLink} className="league-command-link">
+            <span className="ui-glyph mini-glyph">FC</span>
+            <strong>الفرق</strong>
+            <small>{leagueTeams.length} فريقًا</small>
+          </a>
+          <a href="#upcoming" style={styles.infoLink} className="league-command-link">
+            <span className="ui-glyph mini-glyph">NEXT</span>
+            <strong>القادمة</strong>
+            <small>أقرب المواجهات</small>
+          </a>
+          <a href="#results" style={styles.infoLink} className="league-command-link">
+            <span className="ui-glyph mini-glyph">FT</span>
+            <strong>النتائج</strong>
+            <small>آخر المباريات</small>
+          </a>
+        </nav>
+
         <section className="league-page-section">
           <div className="league-section-heading"><div><span>LIVE / TODAY</span><strong>مباريات {league.name} اليوم</strong></div><small>{today.length} مباراة</small></div>
           {today.length === 0 ? (
