@@ -64,6 +64,11 @@ export default async function StandingsPage({ params }) {
             <span style={styles.eyebrow}>MATCHZONE • STANDINGS</span>
             <h1 style={styles.title}>ترتيب {league.name}</h1>
             <p style={styles.muted}>جدول الترتيب الحالي مع النقاط ونتائج الفرق • يتجدد تلقائيًا كل 5 دقائق.</p>
+            <div className="standings-legend" aria-label="مفتاح حالات الترتيب">
+              <span><i className="standings-dot standings-dot-top" /> القمة</span>
+              <span><i className="standings-dot standings-dot-europe" /> المراكز الأولى</span>
+              <span><i className="standings-dot standings-dot-risk" /> مؤخرة الجدول</span>
+            </div>
           </div>
         </header>
 
@@ -90,6 +95,7 @@ export default async function StandingsPage({ params }) {
                   <tr>
                     <th style={styles.th}>#</th>
                     <th style={{ ...styles.th, textAlign: "right", minWidth: 180 }}>الفريق</th>
+                    <th style={styles.th}>الحالة</th>
                     <th style={styles.th}>لعب</th>
                     <th style={styles.th}>فوز</th>
                     <th style={styles.th}>تعادل</th>
@@ -98,18 +104,30 @@ export default async function StandingsPage({ params }) {
                     <th style={styles.th}>عليه</th>
                     <th style={styles.th}>+/-</th>
                     <th style={styles.th}>النقاط</th>
+                    <th style={styles.th}>معدل النقاط</th>
                   </tr>
                 </thead>
                 <tbody>
                   {table.map((team, index) => {
                     const rank = Number(team?.intRank || index + 1);
                     const points = Number(team?.intPoints || 0);
+                    const played = Number(team?.intPlayed || 0);
+                    const pointsPerGame = played > 0 ? (points / played).toFixed(2) : "0.00";
                     const badge = team?.strBadge;
                     const goalDifference = Number(team?.intGoalDifference || 0);
                     const rankStyle =
                       rank === 1 ? styles.firstRank :
                       rank === 2 ? styles.secondRank :
                       rank === 3 ? styles.thirdRank : {};
+                    const status =
+                      rank === 1 ? "قمة" :
+                      rank <= 4 ? "أوروبي" :
+                      rank >= table.length - 2 ? "خطر" : "مستقر";
+                    const statusClass =
+                      rank === 1 ? "standings-status standings-status-top" :
+                      rank <= 4 ? "standings-status standings-status-europe" :
+                      rank >= table.length - 2 ? "standings-status standings-status-risk" :
+                      "standings-status";
                     return (
                       <tr key={team?.idTeam || team?.strTeam || index} style={rank <= 3 ? styles.highlightRow : undefined}>
                         <td style={{ ...styles.td, ...rankStyle, fontWeight: 900 }}>
@@ -124,6 +142,7 @@ export default async function StandingsPage({ params }) {
                             {team?.strTeam || "فريق"}
                           </Link>
                         </td>
+                        <td style={styles.td}><span className={statusClass}>{status}</span></td>
                         <td style={styles.td}>{team?.intPlayed ?? 0}</td>
                         <td style={styles.td}>{team?.intWin ?? 0}</td>
                         <td style={styles.td}>{team?.intDraw ?? 0}</td>
@@ -134,6 +153,7 @@ export default async function StandingsPage({ params }) {
                           {goalDifference > 0 ? "+" + goalDifference : goalDifference}
                         </td>
                         <td style={{ ...styles.td, ...styles.points }}>{points}</td>
+                        <td style={{ ...styles.td, color: "#8ff4b8", fontWeight: 800 }}>{pointsPerGame}</td>
                       </tr>
                     );
                   })}
@@ -174,7 +194,7 @@ const styles = {
   activeLink: { color: "#07100d", background: "#2ecc71", borderColor: "#2ecc71" },
   card: { overflow: "hidden", borderRadius: 24, background: "linear-gradient(145deg,#10251c,#0a1511)", border: "1px solid #1e3d30", boxShadow: "0 12px 35px rgba(0,0,0,.18)" },
   tableScroll: { overflowX: "auto", WebkitOverflowScrolling: "touch" },
-  table: { width: "100%", minWidth: 760, borderCollapse: "collapse", fontSize: 13 },
+  table: { width: "100%", minWidth: 900, borderCollapse: "collapse", fontSize: 13 },
   th: { padding: "15px 10px", textAlign: "center", color: "#6f8c80", background: "#0b1913", fontSize: 11, whiteSpace: "nowrap" },
   td: { padding: "13px 10px", textAlign: "center", borderTop: "1px solid rgba(255,255,255,.055)", color: "#dce7e2", whiteSpace: "nowrap" },
   teamCell: { padding: "11px 12px", borderTop: "1px solid rgba(255,255,255,.055)", display: "flex", alignItems: "center", gap: 10, fontWeight: 800, whiteSpace: "nowrap" },
