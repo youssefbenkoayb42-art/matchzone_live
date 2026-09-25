@@ -31,6 +31,53 @@ export async function generateMetadata({ params }) {
   };
 }
 
+
+async function getRecentForm(leagueId) {
+  try {
+    const response = await fetch(
+      `https://www.thesportsdb.com/api/v1/json/123/eventspastleague.php?id=${leagueId}`,
+      { next: { revalidate: 300 } }
+    );
+    if (!response.ok) return {};
+    const data = await response.json();
+    const events = Array.isArray(data?.events) ? data.events : [];
+    const finished = events
+      .filter((event) => event?.idEvent && event?.idHomeTeam && event?.idAwayTeam && event?.intHomeScore != null && event?.intAwayScore != null)
+      .sort((a, b) => {
+        const aTime = new Date((a.dateEvent || "") + "T" + (a.strTime || "00:00:00")).getTime();
+        const bTime = new Date((b.dateEvent || "") + "T" + (b.strTime || "00:00:00")).getTime();
+        return bTime - aTime;
+      });
+
+    const form = {};
+    for (const event of finished) {
+      const homeId = String(event.idHomeTeam);
+      const awayId = String(event.idAwayTeam);
+      const homeScore = Number(event.intHomeScore);
+      const awayScore = Number(event.intAwayScore);
+      if (!form[homeId]) form[homeId] = [];
+      if (!form[awayId]) form[awayId] = [];
+      if (form[homeId].length < 5) {
+        form[homeId].push({
+          result: homeScore > awayScore ? "W" : homeScore < awayScore ? "L" : "D",
+          opponent: event.strAwayTeam || "الخصم",
+          score: homeScore + "-" + awayScore,
+        });
+      }
+      if (form[awayId].length < 5) {
+        form[awayId].push({
+          result: awayScore > homeScore ? "W" : awayScore < homeScore ? "L" : "D",
+          opponent: event.strHomeTeam || "الخصم",
+          score: awayScore + "-" + homeScore,
+        });
+      }
+    }
+    return form;
+  } catch {
+    return {};
+  }
+}
+
 async function getStandings(leagueId) {
   try {
     const response = await fetch(
@@ -49,7 +96,7 @@ export default async function StandingsPage({ params }) {
   const league = LEAGUES.find((item) => item.slug === params.league);
   if (!league) notFound();
 
-  const table = await getStandings(league.id);
+  const [table, recentForm] = await Promise.all([getStandings(league.id), getRecentForm(league.id)]);
 
   return (
     <main dir="rtl" style={styles.main} className="standings-page-shell">
@@ -96,6 +143,7 @@ export default async function StandingsPage({ params }) {
                     <th style={styles.th}>#</th>
                     <th style={{ ...styles.th, textAlign: "right", minWidth: 180 }}>الفريق</th>
                     <th style={styles.th}>الحالة</th>
+                    <th style={styles.th}>آخر 5</th>
                     <th style={styles.th}>لعب</th>
                     <th style={styles.th}>فوز</th>
                     <th style={styles.th}>تعادل</th>
@@ -128,6 +176,7 @@ export default async function StandingsPage({ params }) {
                       rank <= 4 ? "standings-status standings-status-europe" :
                       rank >= table.length - 2 ? "standings-status standings-status-risk" :
                       "standings-status";
+                    const form = recentForm[String(team?.idTeam)] || [];
                     return (
                       <tr key={team?.idTeam || team?.strTeam || index} style={rank <= 3 ? styles.highlightRow : undefined}>
                         <td style={{ ...styles.td, ...rankStyle, fontWeight: 900 }}>
@@ -143,6 +192,20 @@ export default async function StandingsPage({ params }) {
                           </Link>
                         </td>
                         <td style={styles.td}><span className={statusClass}>{status}</span></td>
+                        <td style={styles.formCell}>
+                          <div className="standings-form" aria-label={"آخر " + form.length + " نتائج لـ " + (team?.strTeam || "الفريق")}>
+                            {form.length ? form.map((item, formIndex) => (
+                              <span
+                                key={formIndex}
+                                className={"standings-form-pill standings-form-" + item.result.toLowerCase()}
+                                title={item.result + " • " + item.opponent + " • " + item.score}
+                                aria-label={item.result + " ضد " + item.opponent + " بنتيجة " + item.score}
+                              >
+                                {item.result}
+                              </span>
+                            )) : <span className="standings-form-empty">—</span>}
+                          </div>
+                        </td>
                         <td style={styles.td}>{team?.intPlayed ?? 0}</td>
                         <td style={styles.td}>{team?.intWin ?? 0}</td>
                         <td style={styles.td}>{team?.intDraw ?? 0}</td>
@@ -194,9 +257,10 @@ const styles = {
   activeLink: { color: "#07100d", background: "#2ecc71", borderColor: "#2ecc71" },
   card: { overflow: "hidden", borderRadius: 24, background: "linear-gradient(145deg,#10251c,#0a1511)", border: "1px solid #1e3d30", boxShadow: "0 12px 35px rgba(0,0,0,.18)" },
   tableScroll: { overflowX: "auto", WebkitOverflowScrolling: "touch" },
-  table: { width: "100%", minWidth: 900, borderCollapse: "collapse", fontSize: 13 },
+  table: { width: "100%", minWidth: 980, borderCollapse: "collapse", fontSize: 13 },
   th: { padding: "15px 10px", textAlign: "center", color: "#6f8c80", background: "#0b1913", fontSize: 11, whiteSpace: "nowrap" },
   td: { padding: "13px 10px", textAlign: "center", borderTop: "1px solid rgba(255,255,255,.055)", color: "#dce7e2", whiteSpace: "nowrap" },
+  formCell: { padding: "10px 8px", borderTop: "1px solid rgba(255,255,255,.055)", textAlign: "center", whiteSpace: "nowrap" },
   teamCell: { padding: "11px 12px", borderTop: "1px solid rgba(255,255,255,.055)", display: "flex", alignItems: "center", gap: 10, fontWeight: 800, whiteSpace: "nowrap" },
   teamLogo: { width: 28, height: 28, objectFit: "contain" },
   teamLink: { color: "#f4f8f6", textDecoration: "none", fontWeight: 800 },
