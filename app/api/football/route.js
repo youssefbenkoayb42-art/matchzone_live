@@ -371,9 +371,9 @@ async function fetchFootballData(date) {
 function normalizeTeamName(name) {
   return String(name || "")
     .normalize("NFD")
-    .replace(/[\\u0300-\\u036f]/g, "")
+    .replace(/[\u0300-\u036f]/g, "")
     .toLowerCase()
-    .replace(/\\b(fc|cf|sc|afc|ac|club)\\b/g, "")
+    .replace(/\b(fc|cf|sc|afc|ac|club)\b/g, "")
     .replace(/[^a-z0-9]+/g, "")
     .trim();
 }
