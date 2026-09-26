@@ -388,6 +388,112 @@ function getSourcePriority(match) {
   return priorities[match?.source] || 99;
 }
 
+function mergeMatchRecords(primary, secondary) {
+  const merged = {
+    ...primary,
+    fixture: {
+      ...(primary.fixture || {}),
+      ...(secondary.fixture || {}),
+      status: {
+        ...(primary.fixture?.status || {}),
+        ...(secondary.fixture?.status || {}),
+      },
+    },
+    teams: {
+      home: {
+        ...(primary.teams?.home || {}),
+        ...(secondary.teams?.home || {}),
+      },
+      away: {
+        ...(primary.teams?.away || {}),
+        ...(secondary.teams?.away || {}),
+      },
+    },
+    goals: {
+      ...(primary.goals || {}),
+      ...(secondary.goals || {}),
+    },
+    league: {
+      ...(primary.league || {}),
+      ...(secondary.league || {}),
+    },
+  };
+
+  for (const side of ["home", "away"]) {
+    if (!merged.teams[side].logo) {
+      merged.teams[side].logo =
+        primary.teams?.[side]?.logo ||
+        secondary.teams?.[side]?.logo ||
+        null;
+    }
+
+    if (!merged.teams[side].id) {
+      merged.teams[side].id =
+        primary.teams?.[side]?.id ||
+        secondary.teams?.[side]?.id ||
+        null;
+    }
+
+    if (!merged.teams[side].name) {
+      merged.teams[side].name =
+        primary.teams?.[side]?.name ||
+        secondary.teams?.[side]?.name ||
+        "Unknown";
+    }
+  }
+
+  if (!merged.league.logo) {
+    merged.league.logo =
+      primary.league?.logo ||
+      secondary.league?.logo ||
+      null;
+  }
+
+  if (!merged.league.id) {
+    merged.league.id =
+      primary.league?.id ||
+      secondary.league?.id ||
+      null;
+  }
+
+  const sourceList = [
+    ...(Array.isArray(primary.sources)
+      ? primary.sources
+      : primary.source
+        ? [primary.source]
+        : []),
+    ...(Array.isArray(secondary.sources)
+      ? secondary.sources
+      : secondary.source
+        ? [secondary.source]
+        : []),
+  ];
+
+  merged.sources = Array.from(new Set(sourceList));
+  merged.source = primary.source || secondary.source;
+
+  const externalIds = {
+    ...(primary.externalIds || {}),
+    ...(secondary.externalIds || {}),
+  };
+
+  if (primary.externalId != null) {
+    externalIds[primary.source || "primary"] =
+      primary.externalId;
+  }
+
+  if (secondary.externalId != null) {
+    externalIds[secondary.source || "secondary"] =
+      secondary.externalId;
+  }
+
+  if (Object.keys(externalIds).length > 0) {
+    merged.externalIds = externalIds;
+  }
+
+  return merged;
+}
+
 function removeDuplicates(matches) {
   const grouped = new Map();
 
@@ -413,17 +519,35 @@ function removeDuplicates(matches) {
 
     const existing = grouped.get(key);
 
+    if (!existing) {
+      grouped.set(key, {
+        ...match,
+        sources: match.source
+          ? [match.source]
+          : [],
+      });
+      continue;
+    }
+
     if (
-      !existing ||
       getSourcePriority(match) <
-        getSourcePriority(existing)
+      getSourcePriority(existing)
     ) {
-      grouped.set(key, match);
+      grouped.set(
+        key,
+        mergeMatchRecords(match, existing)
+      );
+    } else {
+      grouped.set(
+        key,
+        mergeMatchRecords(existing, match)
+      );
     }
   }
 
   return Array.from(grouped.values());
 }
+
 function sortMatches(matches) {
   return matches.sort((a, b) => {
     const dateA = new Date(
