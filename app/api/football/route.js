@@ -390,71 +390,64 @@ function getSourcePriority(match) {
 
 function mergeMatchRecords(primary, secondary) {
   const merged = {
+    ...secondary,
     ...primary,
     fixture: {
-      ...(primary.fixture || {}),
       ...(secondary.fixture || {}),
+      ...(primary.fixture || {}),
       status: {
-        ...(primary.fixture?.status || {}),
         ...(secondary.fixture?.status || {}),
+        ...(primary.fixture?.status || {}),
       },
     },
     teams: {
       home: {
-        ...(primary.teams?.home || {}),
         ...(secondary.teams?.home || {}),
+        ...(primary.teams?.home || {}),
       },
       away: {
-        ...(primary.teams?.away || {}),
         ...(secondary.teams?.away || {}),
+        ...(primary.teams?.away || {}),
       },
     },
     goals: {
-      ...(primary.goals || {}),
       ...(secondary.goals || {}),
+      ...(primary.goals || {}),
     },
     league: {
-      ...(primary.league || {}),
       ...(secondary.league || {}),
+      ...(primary.league || {}),
     },
   };
 
   for (const side of ["home", "away"]) {
-    if (!merged.teams[side].logo) {
-      merged.teams[side].logo =
-        primary.teams?.[side]?.logo ||
-        secondary.teams?.[side]?.logo ||
-        null;
-    }
+    const primaryTeam = primary.teams?.[side] || {};
+    const secondaryTeam = secondary.teams?.[side] || {};
 
-    if (!merged.teams[side].id) {
-      merged.teams[side].id =
-        primary.teams?.[side]?.id ||
-        secondary.teams?.[side]?.id ||
-        null;
-    }
+    merged.teams[side].logo =
+      primaryTeam.logo || secondaryTeam.logo || null;
 
-    if (!merged.teams[side].name) {
-      merged.teams[side].name =
-        primary.teams?.[side]?.name ||
-        secondary.teams?.[side]?.name ||
-        "Unknown";
-    }
+    merged.teams[side].id =
+      primaryTeam.id || secondaryTeam.id || null;
+
+    merged.teams[side].name =
+      primaryTeam.name || secondaryTeam.name || "Unknown";
   }
 
-  if (!merged.league.logo) {
-    merged.league.logo =
-      primary.league?.logo ||
-      secondary.league?.logo ||
-      null;
-  }
+  merged.league.logo =
+    primary.league?.logo ||
+    secondary.league?.logo ||
+    null;
 
-  if (!merged.league.id) {
-    merged.league.id =
-      primary.league?.id ||
-      secondary.league?.id ||
-      null;
-  }
+  merged.league.id =
+    primary.league?.id ||
+    secondary.league?.id ||
+    null;
+
+  merged.league.name =
+    primary.league?.name ||
+    secondary.league?.name ||
+    "Unknown";
 
   const sourceList = [
     ...(Array.isArray(primary.sources)
@@ -473,8 +466,8 @@ function mergeMatchRecords(primary, secondary) {
   merged.source = primary.source || secondary.source;
 
   const externalIds = {
-    ...(primary.externalIds || {}),
     ...(secondary.externalIds || {}),
+    ...(primary.externalIds || {}),
   };
 
   if (primary.externalId != null) {
