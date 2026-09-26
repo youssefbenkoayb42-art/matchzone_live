@@ -368,36 +368,62 @@ async function fetchFootballData(date) {
   }
 }
 
-function removeDuplicates(matches) {
-  const seen = new Set();
-
-  return matches.filter((match) => {
-    const home =
-      match.teams?.home?.name
-        ?.toLowerCase()
-        .trim();
-
-    const away =
-      match.teams?.away?.name
-        ?.toLowerCase()
-        .trim();
-
-    const date =
-      match.fixture?.date?.slice(0, 10);
-
-    const key =
-      `${date}-${home}-${away}`;
-
-    if (seen.has(key)) {
-      return false;
-    }
-
-    seen.add(key);
-
-    return true;
-  });
+function normalizeTeamName(name) {
+  return String(name || "")
+    .normalize("NFD")
+    .replace(/[\\u0300-\\u036f]/g, "")
+    .toLowerCase()
+    .replace(/\\b(fc|cf|sc|afc|ac|club)\\b/g, "")
+    .replace(/[^a-z0-9]+/g, "")
+    .trim();
 }
 
+function getSourcePriority(match) {
+  const priorities = {
+    TheSportsDB: 1,
+    "football-data.org": 2,
+    "openfootball/football.json": 3,
+  };
+
+  return priorities[match?.source] || 99;
+}
+
+function removeDuplicates(matches) {
+  const grouped = new Map();
+
+  for (const match of matches) {
+    const home = normalizeTeamName(
+      match.teams?.home?.name
+    );
+
+    const away = normalizeTeamName(
+      match.teams?.away?.name
+    );
+
+    const date =
+      match.fixture?.date?.slice(0, 10) ||
+      "unknown-date";
+
+    if (!home || !away) {
+      continue;
+    }
+
+    const key =
+      date + "-" + home + "-" + away;
+
+    const existing = grouped.get(key);
+
+    if (
+      !existing ||
+      getSourcePriority(match) <
+        getSourcePriority(existing)
+    ) {
+      grouped.set(key, match);
+    }
+  }
+
+  return Array.from(grouped.values());
+}
 function sortMatches(matches) {
   return matches.sort((a, b) => {
     const dateA = new Date(
