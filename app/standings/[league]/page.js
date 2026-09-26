@@ -1,5 +1,10 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import {
+  buildOpenFootballForm,
+  getOpenFootballMatches,
+  getOpenFootballStandings,
+} from "@/lib/openfootball";
 
 const BASE_URL = "https://matchzone-live.vercel.app";
 
@@ -32,7 +37,19 @@ export async function generateMetadata({ params }) {
 }
 
 
-async function getRecentForm(leagueId) {
+async function getRecentForm(leagueSlug, leagueId) {
+  try {
+    const openFootballMatches = await getOpenFootballMatches({
+      slugs: [leagueSlug],
+    });
+
+    if (openFootballMatches.length) {
+      return buildOpenFootballForm(openFootballMatches);
+    }
+  } catch {
+    // fallback to TheSportsDB below
+  }
+
   try {
     const response = await fetch(
       `https://www.thesportsdb.com/api/v1/json/123/eventspastleague.php?id=${leagueId}`,
@@ -78,7 +95,16 @@ async function getRecentForm(leagueId) {
   }
 }
 
-async function getStandings(leagueId) {
+async function getStandings(leagueSlug, leagueId) {
+  try {
+    const openFootballTable = await getOpenFootballStandings(leagueSlug);
+    if (openFootballTable.length) {
+      return openFootballTable;
+    }
+  } catch {
+    // fallback to TheSportsDB below
+  }
+
   try {
     const response = await fetch(
       `https://www.thesportsdb.com/api/v1/json/123/lookuptable.php?l=${leagueId}`,
@@ -96,7 +122,7 @@ export default async function StandingsPage({ params }) {
   const league = LEAGUES.find((item) => item.slug === params.league);
   if (!league) notFound();
 
-  const [table, recentForm] = await Promise.all([getStandings(league.id), getRecentForm(league.id)]);
+  const [table, recentForm] = await Promise.all([getStandings(league.slug, league.id), getRecentForm(league.slug, league.id)]);
 
   const rankedTeams = table
     .map((team, index) => ({
@@ -105,7 +131,7 @@ export default async function StandingsPage({ params }) {
       goalsFor: Number(team?.intGoalsFor || 0),
       goalsAgainst: Number(team?.intGoalsAgainst || 0),
       goalDifference: Number(team?.intGoalDifference || 0),
-      form: recentForm[String(team?.idTeam)] || [],
+      form: recentForm[team?.strTeam] || recentForm[String(team?.idTeam)] || [],
     }))
     .filter((item) => item.team?.strTeam);
 
@@ -138,7 +164,7 @@ export default async function StandingsPage({ params }) {
 
   const totalGoals = rankedTeams.reduce((sum, item) => sum + item.goalsFor, 0);
   const totalPlayed = rankedTeams.reduce((sum, item) => sum + Number(item.team?.intPlayed || 0), 0);
-  const leagueGoalsPerMatch = totalPlayed > 0 ? (totalGoals / totalPlayed).toFixed(2) : "0.00";
+  const leagueGoalsPerMatch = totalPlayed > 0 ? (totalGoals / (totalPlayed / 2)).toFixed(2) : "0.00";
   const formPoints = (form) =>
     (form || []).reduce((sum, item) => sum + (item.result === "W" ? 3 : item.result === "D" ? 1 : 0), 0);
   const momentumLeader = rankedTeams
