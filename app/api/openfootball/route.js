@@ -3,7 +3,7 @@ import {
   OPENFOOTBALL_LEAGUES,
   getOpenFootballLeagueData,
   getOpenFootballMatches,
-} from "@/lib/openfootball";
+} from "../../../lib/openfootball";
 
 export const revalidate = 86400;
 
