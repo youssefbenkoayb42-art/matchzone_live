@@ -507,4 +507,3 @@ export async function GET() {
       }
     );
   }
-    }
