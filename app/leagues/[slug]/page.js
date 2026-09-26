@@ -1,3 +1,5 @@
+import { getOpenFootballLeagueData } from "../../../lib/openfootball";
+
 const LEAGUES = {
   "premier-league": { id: 4328, name: "الدوري الإنجليزي الممتاز", english: "Premier League", description: "مباريات ونتائج الدوري الإنجليزي الممتاز ومواعيد أهم المواجهات." },
   "la-liga": { id: 4335, name: "الدوري الإسباني", english: "La Liga", description: "مباريات ونتائج الدوري الإسباني ومواعيد أهم المواجهات." },
@@ -76,6 +78,74 @@ async function getLeagueTeams(leagueName) {
   }
 }
 
+function adaptOpenFootballMatch(match) {
+  const isFinished = match?.fixture?.status?.short === "FT";
+  return {
+    idEvent: match?.eventId || null,
+    strHomeTeam: match?.teams?.home?.name || "",
+    strAwayTeam: match?.teams?.away?.name || "",
+    strHomeTeamBadge: match?.teams?.home?.logo || null,
+    strAwayTeamBadge: match?.teams?.away?.logo || null,
+    intHomeScore: match?.goals?.home ?? null,
+    intAwayScore: match?.goals?.away ?? null,
+    dateEvent: match?.fixture?.date || "",
+    strTime: match?.fixture?.date
+      ? new Date(match.fixture.date).toISOString().slice(11, 16)
+      : "",
+    source: match?.source || "openfootball/football.json",
+    openFootball: true,
+    isFinished,
+  };
+}
+
+function sortLeagueMatches(matches) {
+  return [...matches].sort((a, b) => {
+    const aDate = new Date(
+      a?.fixture?.date || a?.dateEvent || "2100-01-01"
+    ).getTime();
+    const bDate = new Date(
+      b?.fixture?.date || b?.dateEvent || "2100-01-01"
+    ).getTime();
+    return aDate - bDate;
+  });
+}
+
+async function getOpenFootballFallback(slug) {
+  if (!["premier-league", "la-liga", "serie-a", "bundesliga", "ligue-1"].includes(slug)) {
+    return { today: [], upcoming: [], results: [] };
+  }
+
+  try {
+    const data = await getOpenFootballLeagueData(slug);
+    const matches = Array.isArray(data?.matches)
+      ? data.matches
+      : [];
+
+    const todayKey = new Date().toISOString().slice(0, 10);
+    const today = matches.filter(
+      (match) => match?.fixture?.date === todayKey
+    );
+    const upcoming = matches.filter(
+      (match) =>
+        !match?.goals ||
+        match?.fixture?.status?.short !== "FT"
+    );
+    const results = matches.filter(
+      (match) => match?.fixture?.status?.short === "FT"
+    );
+
+    return {
+      today: sortLeagueMatches(today).map(adaptOpenFootballMatch),
+      upcoming: sortLeagueMatches(upcoming).map(adaptOpenFootballMatch),
+      results: sortLeagueMatches(results)
+        .reverse()
+        .map(adaptOpenFootballMatch),
+    };
+  } catch {
+    return { today: [], upcoming: [], results: [] };
+  }
+}
+
 async function getTodayMatches(leagueId) {
   const date = new Date().toISOString().slice(0, 10);
   try {
@@ -123,7 +193,11 @@ function MatchCard({ match, league, featured = false }) {
       <div style={styles.meta}>
         {match.dateEvent || ""}{match.strTime ? " • " + match.strTime : ""}
       </div>
-      <a href={"/matches/" + match.idEvent} style={styles.button}>عرض تفاصيل المباراة ←</a>
+      {match.idEvent ? (
+        <a href={"/matches/" + match.idEvent} style={styles.button}>عرض تفاصيل المباراة ←</a>
+      ) : (
+        <a href="/matches/today" style={styles.button}>مركز المباريات ←</a>
+      )}
     </article>
   );
 }
@@ -140,12 +214,25 @@ export default async function LeaguePage({ params }) {
     );
   }
 
-  const [today, upcoming, results, teams] = await Promise.all([
+  const [todayFromSportsDb, upcomingFromSportsDb, resultsFromSportsDb, teams, openFootballFallback] = await Promise.all([
     getTodayMatches(league.id),
     getEvents(league.id, "eventsnextleague"),
     getEvents(league.id, "eventspastleague"),
     getLeagueTeams(league.english),
+    getOpenFootballFallback(params.slug),
   ]);
+
+  const today = todayFromSportsDb.length
+    ? todayFromSportsDb
+    : openFootballFallback.today;
+
+  const upcoming = upcomingFromSportsDb.length
+    ? upcomingFromSportsDb
+    : openFootballFallback.upcoming;
+
+  const results = resultsFromSportsDb.length
+    ? resultsFromSportsDb
+    : openFootballFallback.results;
 
   const upcomingMatches = upcoming.slice(0, 5);
   const recentResults = results.slice(0, 5);
