@@ -4,7 +4,7 @@ import {
   buildOpenFootballForm,
   getOpenFootballMatches,
   getOpenFootballStandings,
-} from "@/lib/openfootball";
+} from "../../../lib/openfootball";
 
 const BASE_URL = "https://matchzone-live.vercel.app";
 
