@@ -1,4 +1,4 @@
-import { getOpenFootballMatches } from "@/lib/openfootball";
+import { getOpenFootballMatches } from "../../../lib/openfootball";
 
 export const dynamic = "force-dynamic";
 
@@ -507,3 +507,5 @@ export async function GET() {
       }
     );
   }
+
+}
