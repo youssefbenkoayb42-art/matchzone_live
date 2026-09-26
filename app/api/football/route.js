@@ -1,3 +1,5 @@
+import { getOpenFootballMatches } from "@/lib/openfootball";
+
 export const dynamic = "force-dynamic";
 
 const SPORTSDB_KEY = "123";
@@ -294,6 +296,24 @@ async function fetchSportsDB(date) {
   return results.flat();
 }
 
+async function fetchOpenFootball(date) {
+  const from = new Date(date + "T00:00:00Z");
+  from.setUTCDate(from.getUTCDate() - 3);
+
+  const to = new Date(date + "T00:00:00Z");
+  to.setUTCDate(to.getUTCDate() + 7);
+
+  try {
+    return await getOpenFootballMatches({
+      from: from.toISOString().slice(0, 10),
+      to: to.toISOString().slice(0, 10),
+    });
+  } catch (error) {
+    console.error("OpenFootball error:", error);
+    return [];
+  }
+}
+
 async function fetchFootballData(date) {
   const token =
     process.env.FOOTBALL_DATA_API_KEY;
@@ -402,14 +422,17 @@ export async function GET() {
     const [
       sportsDBMatches,
       footballDataMatches,
+      openFootballMatches,
     ] = await Promise.all([
       fetchSportsDB(date),
       fetchFootballData(date),
+      fetchOpenFootball(date),
     ]);
 
     const allMatches = [
       ...sportsDBMatches,
       ...footballDataMatches,
+      ...openFootballMatches,
     ];
 
     const uniqueMatches =
@@ -450,6 +473,9 @@ export async function GET() {
 
           "football-data.org":
             footballDataMatches.length,
+
+          "openfootball/football.json":
+            openFootballMatches.length,
         },
 
         updatedAt:
