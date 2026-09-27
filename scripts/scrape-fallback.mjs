@@ -152,11 +152,13 @@ function matchFromFeed(record, leagueKey, sourcePath) {
         id: record.AU || null,
         name: record.AE,
         logo: flashscoreLogo(record.OB),
+      flashscoreLogo: flashscoreLogo(record.OB),
       },
       away: {
         id: record.AV || null,
         name: record.AF,
         logo: flashscoreLogo(record.AW),
+      flashscoreLogo: flashscoreLogo(record.AW),
       },
     },
     goals: {
