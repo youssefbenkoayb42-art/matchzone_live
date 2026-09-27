@@ -1,7 +1,4408 @@
 {
-  "updatedAt": "2026-09-27T14:40:15.840Z",
-  "source": "flashscore-html",
+  "updatedAt": "2026-09-27T15:07:39.637Z",
+  "source": "flashscore-feed",
   "leagueCount": 52,
-  "matchCount": 0,
-  "matches": []
+  "matchCount": 110,
+  "matches": [
+    {
+      "fixture": {
+        "id": "fs-AsVxpzQQ",
+        "date": "2026-09-25T00:30:00.000Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "1",
+          "name": "Atl. Nacional",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Millonarios",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": 1,
+        "away": 1
+      },
+      "league": {
+        "id": "flashscore-colombia-primera-a",
+        "name": "COLOMBIA: Primera A - Clausura",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "AsVxpzQQ",
+      "externalIds": {
+        "Flashscore Feed": "AsVxpzQQ"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/AsVxpzQQ/",
+      "sourcePath": "/football/colombia/primera-a/"
+    },
+    {
+      "fixture": {
+        "id": "fs-0rrduJrn",
+        "date": "2026-09-24T20:00:00.000Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "3",
+          "name": "Amal Tiznit",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "IR Tanger",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": 1,
+        "away": 3
+      },
+      "league": {
+        "id": "flashscore-morocco-botola",
+        "name": "MOROCCO: Botola Pro",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "0rrduJrn",
+      "externalIds": {
+        "Flashscore Feed": "0rrduJrn"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/0rrduJrn/",
+      "sourcePath": "/football/morocco/botola-pro/"
+    },
+    {
+      "fixture": {
+        "id": "fs-MNThRu6l",
+        "date": "2026-09-25T18:30:00.000Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "0",
+          "name": "Girona",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Albacete",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": 2,
+        "away": 0
+      },
+      "league": {
+        "id": "flashscore-spain-segunda",
+        "name": "SPAIN: LaLiga2",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "MNThRu6l",
+      "externalIds": {
+        "Flashscore Feed": "MNThRu6l"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/MNThRu6l/",
+      "sourcePath": "/football/spain/laliga2/"
+    },
+    {
+      "fixture": {
+        "id": "fs-jPd1bs9U",
+        "date": "2026-09-25T22:30:00.000Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "0",
+          "name": "Novorizontino",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Sao Bernardo",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "flashscore-brazil-serie-b",
+        "name": "BRAZIL: Serie B",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "jPd1bs9U",
+      "externalIds": {
+        "Flashscore Feed": "jPd1bs9U"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/jPd1bs9U/",
+      "sourcePath": "/football/brazil/serie-b/"
+    },
+    {
+      "fixture": {
+        "id": "fs-AVG6RuwH",
+        "date": "2026-09-25T23:30:00.000Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "0",
+          "name": "Vila Nova FC",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Londrina",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": 2,
+        "away": 0
+      },
+      "league": {
+        "id": "flashscore-brazil-serie-b",
+        "name": "BRAZIL: Serie B",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "AVG6RuwH",
+      "externalIds": {
+        "Flashscore Feed": "AVG6RuwH"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/AVG6RuwH/",
+      "sourcePath": "/football/brazil/serie-b/"
+    },
+    {
+      "fixture": {
+        "id": "fs-UiFjVNwh",
+        "date": "2026-09-26T19:30:00.000Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "1",
+          "name": "Nautico",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Sport Recife",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": 3,
+        "away": 1
+      },
+      "league": {
+        "id": "flashscore-brazil-serie-b",
+        "name": "BRAZIL: Serie B",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "UiFjVNwh",
+      "externalIds": {
+        "Flashscore Feed": "UiFjVNwh"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/UiFjVNwh/",
+      "sourcePath": "/football/brazil/serie-b/"
+    },
+    {
+      "fixture": {
+        "id": "fs-hhVIGOOb",
+        "date": "2026-09-26T19:30:00.000Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "2",
+          "name": "Operario-PR",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Ceara",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": 2,
+        "away": 2
+      },
+      "league": {
+        "id": "flashscore-brazil-serie-b",
+        "name": "BRAZIL: Serie B",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "hhVIGOOb",
+      "externalIds": {
+        "Flashscore Feed": "hhVIGOOb"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/hhVIGOOb/",
+      "sourcePath": "/football/brazil/serie-b/"
+    },
+    {
+      "fixture": {
+        "id": "fs-YVWYCtON",
+        "date": "2026-09-26T21:30:00.000Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "1",
+          "name": "Goias",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Atletico GO",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 1
+      },
+      "league": {
+        "id": "flashscore-brazil-serie-b",
+        "name": "BRAZIL: Serie B",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "YVWYCtON",
+      "externalIds": {
+        "Flashscore Feed": "YVWYCtON"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/YVWYCtON/",
+      "sourcePath": "/football/brazil/serie-b/"
+    },
+    {
+      "fixture": {
+        "id": "fs-ljPGxhI0",
+        "date": "2026-09-25T23:10:00.000Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "0",
+          "name": "Chico",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Dep. Pasto",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": 3,
+        "away": 0
+      },
+      "league": {
+        "id": "flashscore-colombia-primera-a",
+        "name": "COLOMBIA: Primera A - Clausura",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "ljPGxhI0",
+      "externalIds": {
+        "Flashscore Feed": "ljPGxhI0"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/ljPGxhI0/",
+      "sourcePath": "/football/colombia/primera-a/"
+    },
+    {
+      "fixture": {
+        "id": "fs-M3NOzWnD",
+        "date": "2026-09-26T01:15:00.000Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "3",
+          "name": "Once Caldas",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Bucaramanga",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": 1,
+        "away": 3
+      },
+      "league": {
+        "id": "flashscore-colombia-primera-a",
+        "name": "COLOMBIA: Primera A - Clausura",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "M3NOzWnD",
+      "externalIds": {
+        "Flashscore Feed": "M3NOzWnD"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/M3NOzWnD/",
+      "sourcePath": "/football/colombia/primera-a/"
+    },
+    {
+      "fixture": {
+        "id": "fs-xEhjBCOP",
+        "date": "2026-09-26T21:00:00.000Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "0",
+          "name": "Pereira",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Inter Bogotá",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "flashscore-colombia-primera-a",
+        "name": "COLOMBIA: Primera A - Clausura",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "xEhjBCOP",
+      "externalIds": {
+        "Flashscore Feed": "xEhjBCOP"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/xEhjBCOP/",
+      "sourcePath": "/football/colombia/primera-a/"
+    },
+    {
+      "fixture": {
+        "id": "fs-l4I1W5D6",
+        "date": "2026-09-26T01:00:00.000Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "2",
+          "name": "Atlante",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Monterrey",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": 4,
+        "away": 2
+      },
+      "league": {
+        "id": "flashscore-mexico-liga-mx",
+        "name": "MEXICO: Liga MX - Apertura",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "l4I1W5D6",
+      "externalIds": {
+        "Flashscore Feed": "l4I1W5D6"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/l4I1W5D6/",
+      "sourcePath": "/football/mexico/liga-mx/"
+    },
+    {
+      "fixture": {
+        "id": "fs-MHG9UqrJ",
+        "date": "2026-09-26T03:00:00.000Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "3",
+          "name": "Club Tijuana",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Atlas",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": 2,
+        "away": 3
+      },
+      "league": {
+        "id": "flashscore-mexico-liga-mx",
+        "name": "MEXICO: Liga MX - Apertura",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "MHG9UqrJ",
+      "externalIds": {
+        "Flashscore Feed": "MHG9UqrJ"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/MHG9UqrJ/",
+      "sourcePath": "/football/mexico/liga-mx/"
+    },
+    {
+      "fixture": {
+        "id": "fs-88o4wcDb",
+        "date": "2026-09-26T16:00:00.000Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "1",
+          "name": "Union Touarga",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "FUS Rabat",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": 2,
+        "away": 1
+      },
+      "league": {
+        "id": "flashscore-morocco-botola",
+        "name": "MOROCCO: Botola Pro",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "88o4wcDb",
+      "externalIds": {
+        "Flashscore Feed": "88o4wcDb"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/88o4wcDb/",
+      "sourcePath": "/football/morocco/botola-pro/"
+    },
+    {
+      "fixture": {
+        "id": "fs-vZ4vNyTH",
+        "date": "2026-09-26T18:00:00.000Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "6",
+          "name": "Difaa El Jadidi",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "COD Meknes",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": 2,
+        "away": 6
+      },
+      "league": {
+        "id": "flashscore-morocco-botola",
+        "name": "MOROCCO: Botola Pro",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "vZ4vNyTH",
+      "externalIds": {
+        "Flashscore Feed": "vZ4vNyTH"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/vZ4vNyTH/",
+      "sourcePath": "/football/morocco/botola-pro/"
+    },
+    {
+      "fixture": {
+        "id": "fs-pW7nLFcU",
+        "date": "2026-09-26T20:00:00.000Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "3",
+          "name": "Wydad AC",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Widad Temara",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": 1,
+        "away": 3
+      },
+      "league": {
+        "id": "flashscore-morocco-botola",
+        "name": "MOROCCO: Botola Pro",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "pW7nLFcU",
+      "externalIds": {
+        "Flashscore Feed": "pW7nLFcU"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/pW7nLFcU/",
+      "sourcePath": "/football/morocco/botola-pro/"
+    },
+    {
+      "fixture": {
+        "id": "fs-rB3DoAi3",
+        "date": "2026-09-26T12:00:00.000Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "1",
+          "name": "Ceuta",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Real Sociedad B",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": 3,
+        "away": 1
+      },
+      "league": {
+        "id": "flashscore-spain-segunda",
+        "name": "SPAIN: LaLiga2",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "rB3DoAi3",
+      "externalIds": {
+        "Flashscore Feed": "rB3DoAi3"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/rB3DoAi3/",
+      "sourcePath": "/football/spain/laliga2/"
+    },
+    {
+      "fixture": {
+        "id": "fs-UeabUzLc",
+        "date": "2026-09-26T14:15:00.000Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "3",
+          "name": "Granada CF",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Andorra",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": 2,
+        "away": 3
+      },
+      "league": {
+        "id": "flashscore-spain-segunda",
+        "name": "SPAIN: LaLiga2",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "UeabUzLc",
+      "externalIds": {
+        "Flashscore Feed": "UeabUzLc"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/UeabUzLc/",
+      "sourcePath": "/football/spain/laliga2/"
+    },
+    {
+      "fixture": {
+        "id": "fs-G4BRN6ad",
+        "date": "2026-09-26T16:30:00.000Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "1",
+          "name": "Celta Vigo B",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Sabadell",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": 1,
+        "away": 1
+      },
+      "league": {
+        "id": "flashscore-spain-segunda",
+        "name": "SPAIN: LaLiga2",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "G4BRN6ad",
+      "externalIds": {
+        "Flashscore Feed": "G4BRN6ad"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/G4BRN6ad/",
+      "sourcePath": "/football/spain/laliga2/"
+    },
+    {
+      "fixture": {
+        "id": "fs-vs9QuuLs",
+        "date": "2026-09-26T16:30:00.000Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "1",
+          "name": "Tenerife",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Cadiz CF",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": 1,
+        "away": 1
+      },
+      "league": {
+        "id": "flashscore-spain-segunda",
+        "name": "SPAIN: LaLiga2",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "vs9QuuLs",
+      "externalIds": {
+        "Flashscore Feed": "vs9QuuLs"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/vs9QuuLs/",
+      "sourcePath": "/football/spain/laliga2/"
+    },
+    {
+      "fixture": {
+        "id": "fs-4EN47Koo",
+        "date": "2026-09-27T14:00:00.000Z",
+        "status": {
+          "short": "LIVE"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "0",
+          "name": "Criciuma",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Avai",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "flashscore-brazil-serie-b",
+        "name": "BRAZIL: Serie B",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "4EN47Koo",
+      "externalIds": {
+        "Flashscore Feed": "4EN47Koo"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/4EN47Koo/",
+      "sourcePath": "/football/brazil/serie-b/"
+    },
+    {
+      "fixture": {
+        "id": "fs-25DbT184",
+        "date": "2026-09-27T19:00:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "CRB",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Cuiaba",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-brazil-serie-b",
+        "name": "BRAZIL: Serie B",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "25DbT184",
+      "externalIds": {
+        "Flashscore Feed": "25DbT184"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/25DbT184/",
+      "sourcePath": "/football/brazil/serie-b/"
+    },
+    {
+      "fixture": {
+        "id": "fs-0IYQE2gB",
+        "date": "2026-09-27T21:30:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Fortaleza",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Athletic Club",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-brazil-serie-b",
+        "name": "BRAZIL: Serie B",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "0IYQE2gB",
+      "externalIds": {
+        "Flashscore Feed": "0IYQE2gB"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/0IYQE2gB/",
+      "sourcePath": "/football/brazil/serie-b/"
+    },
+    {
+      "fixture": {
+        "id": "fs-tQL8vEml",
+        "date": "2026-09-26T23:15:00.000Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "1",
+          "name": "Cucuta",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Llaneros",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": 2,
+        "away": 1
+      },
+      "league": {
+        "id": "flashscore-colombia-primera-a",
+        "name": "COLOMBIA: Primera A - Clausura",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "tQL8vEml",
+      "externalIds": {
+        "Flashscore Feed": "tQL8vEml"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/tQL8vEml/",
+      "sourcePath": "/football/colombia/primera-a/"
+    },
+    {
+      "fixture": {
+        "id": "fs-vN2dkV16",
+        "date": "2026-09-27T01:20:00.000Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "0",
+          "name": "Junior",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Ind. Medellin",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": 2,
+        "away": 0
+      },
+      "league": {
+        "id": "flashscore-colombia-primera-a",
+        "name": "COLOMBIA: Primera A - Clausura",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "vN2dkV16",
+      "externalIds": {
+        "Flashscore Feed": "vN2dkV16"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/vN2dkV16/",
+      "sourcePath": "/football/colombia/primera-a/"
+    },
+    {
+      "fixture": {
+        "id": "fs-S0AAbZvK",
+        "date": "2026-09-27T21:00:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Jaguares de Cordoba",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Alianza",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-colombia-primera-a",
+        "name": "COLOMBIA: Primera A - Clausura",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "S0AAbZvK",
+      "externalIds": {
+        "Flashscore Feed": "S0AAbZvK"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/S0AAbZvK/",
+      "sourcePath": "/football/colombia/primera-a/"
+    },
+    {
+      "fixture": {
+        "id": "fs-vydsqqcC",
+        "date": "2026-09-26T22:50:00.000Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "3",
+          "name": "Cruz Azul",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Toluca",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": 3,
+        "away": 3
+      },
+      "league": {
+        "id": "flashscore-mexico-liga-mx",
+        "name": "MEXICO: Liga MX - Apertura",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "vydsqqcC",
+      "externalIds": {
+        "Flashscore Feed": "vydsqqcC"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/vydsqqcC/",
+      "sourcePath": "/football/mexico/liga-mx/"
+    },
+    {
+      "fixture": {
+        "id": "fs-SE3ehmzQ",
+        "date": "2026-09-26T23:07:00.000Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "2",
+          "name": "Guadalajara Chivas",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Queretaro",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 2
+      },
+      "league": {
+        "id": "flashscore-mexico-liga-mx",
+        "name": "MEXICO: Liga MX - Apertura",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "SE3ehmzQ",
+      "externalIds": {
+        "Flashscore Feed": "SE3ehmzQ"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/SE3ehmzQ/",
+      "sourcePath": "/football/mexico/liga-mx/"
+    },
+    {
+      "fixture": {
+        "id": "fs-bcfRnRcm",
+        "date": "2026-09-27T03:05:00.000Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "0",
+          "name": "Santos Laguna",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Pachuca",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": 1,
+        "away": 0
+      },
+      "league": {
+        "id": "flashscore-mexico-liga-mx",
+        "name": "MEXICO: Liga MX - Apertura",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "bcfRnRcm",
+      "externalIds": {
+        "Flashscore Feed": "bcfRnRcm"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/bcfRnRcm/",
+      "sourcePath": "/football/mexico/liga-mx/"
+    },
+    {
+      "fixture": {
+        "id": "fs-WAhZp5Sa",
+        "date": "2026-09-27T03:10:00.000Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "0",
+          "name": "Tigres UANL",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Puebla",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": 1,
+        "away": 0
+      },
+      "league": {
+        "id": "flashscore-mexico-liga-mx",
+        "name": "MEXICO: Liga MX - Apertura",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "WAhZp5Sa",
+      "externalIds": {
+        "Flashscore Feed": "WAhZp5Sa"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/WAhZp5Sa/",
+      "sourcePath": "/football/mexico/liga-mx/"
+    },
+    {
+      "fixture": {
+        "id": "fs-WrElsNRO",
+        "date": "2026-09-27T18:00:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "UNAM Pumas",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Atl. San Luis",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-mexico-liga-mx",
+        "name": "MEXICO: Liga MX - Apertura",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "WrElsNRO",
+      "externalIds": {
+        "Flashscore Feed": "WrElsNRO"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/WrElsNRO/",
+      "sourcePath": "/football/mexico/liga-mx/"
+    },
+    {
+      "fixture": {
+        "id": "fs-nLBqJSRq",
+        "date": "2026-09-27T16:00:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Moghreb Tetouan",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Berkane",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-morocco-botola",
+        "name": "MOROCCO: Botola Pro",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "nLBqJSRq",
+      "externalIds": {
+        "Flashscore Feed": "nLBqJSRq"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/nLBqJSRq/",
+      "sourcePath": "/football/morocco/botola-pro/"
+    },
+    {
+      "fixture": {
+        "id": "fs-W81WOcb5",
+        "date": "2026-09-27T18:00:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Maghreb Fez",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Renaissance Zemamra",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-morocco-botola",
+        "name": "MOROCCO: Botola Pro",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "W81WOcb5",
+      "externalIds": {
+        "Flashscore Feed": "W81WOcb5"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/W81WOcb5/",
+      "sourcePath": "/football/morocco/botola-pro/"
+    },
+    {
+      "fixture": {
+        "id": "fs-GYlCyyrB",
+        "date": "2026-09-27T20:00:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Kawkab Marrakech",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Hassania Agadir",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-morocco-botola",
+        "name": "MOROCCO: Botola Pro",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "GYlCyyrB",
+      "externalIds": {
+        "Flashscore Feed": "GYlCyyrB"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/GYlCyyrB/",
+      "sourcePath": "/football/morocco/botola-pro/"
+    },
+    {
+      "fixture": {
+        "id": "fs-08COfwKq",
+        "date": "2026-09-27T10:00:00.000Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "0",
+          "name": "Gangwon",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Incheon",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "flashscore-south-korea-k-league-1",
+        "name": "SOUTH KOREA: K League 1",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "08COfwKq",
+      "externalIds": {
+        "Flashscore Feed": "08COfwKq"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/08COfwKq/",
+      "sourcePath": "/football/south-korea/k-league-1/"
+    },
+    {
+      "fixture": {
+        "id": "fs-WlRXwJkf",
+        "date": "2026-09-27T12:00:00.000Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "1",
+          "name": "Valladolid",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Cordoba",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": 3,
+        "away": 1
+      },
+      "league": {
+        "id": "flashscore-spain-segunda",
+        "name": "SPAIN: LaLiga2",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "WlRXwJkf",
+      "externalIds": {
+        "Flashscore Feed": "WlRXwJkf"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/WlRXwJkf/",
+      "sourcePath": "/football/spain/laliga2/"
+    },
+    {
+      "fixture": {
+        "id": "fs-G4V8Nc5D",
+        "date": "2026-09-27T14:15:00.000Z",
+        "status": {
+          "short": "LIVE"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "1",
+          "name": "Mallorca",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Almeria",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 1
+      },
+      "league": {
+        "id": "flashscore-spain-segunda",
+        "name": "SPAIN: LaLiga2",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "G4V8Nc5D",
+      "externalIds": {
+        "Flashscore Feed": "G4V8Nc5D"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/G4V8Nc5D/",
+      "sourcePath": "/football/spain/laliga2/"
+    },
+    {
+      "fixture": {
+        "id": "fs-riDJPSUq",
+        "date": "2026-09-27T16:30:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Burgos CF",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Eldense",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-spain-segunda",
+        "name": "SPAIN: LaLiga2",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "riDJPSUq",
+      "externalIds": {
+        "Flashscore Feed": "riDJPSUq"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/riDJPSUq/",
+      "sourcePath": "/football/spain/laliga2/"
+    },
+    {
+      "fixture": {
+        "id": "fs-jy7LqlMF",
+        "date": "2026-09-27T16:30:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Eibar",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Las Palmas",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-spain-segunda",
+        "name": "SPAIN: LaLiga2",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "jy7LqlMF",
+      "externalIds": {
+        "Flashscore Feed": "jy7LqlMF"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/jy7LqlMF/",
+      "sourcePath": "/football/spain/laliga2/"
+    },
+    {
+      "fixture": {
+        "id": "fs-8bIfo1cK",
+        "date": "2026-09-27T19:00:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Oviedo",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Gijon",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-spain-segunda",
+        "name": "SPAIN: LaLiga2",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "8bIfo1cK",
+      "externalIds": {
+        "Flashscore Feed": "8bIfo1cK"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/8bIfo1cK/",
+      "sourcePath": "/football/spain/laliga2/"
+    },
+    {
+      "fixture": {
+        "id": "fs-h8OvjEB6",
+        "date": "2026-09-26T23:30:00.000Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "2",
+          "name": "Atlanta Utd",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "New York City",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": 2,
+        "away": 2
+      },
+      "league": {
+        "id": "flashscore-usa-mls",
+        "name": "USA: MLS",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "h8OvjEB6",
+      "externalIds": {
+        "Flashscore Feed": "h8OvjEB6"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/h8OvjEB6/",
+      "sourcePath": "/football/usa/mls/"
+    },
+    {
+      "fixture": {
+        "id": "fs-YFRRxgDM",
+        "date": "2026-09-26T23:30:00.000Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "1",
+          "name": "CF Montreal",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "FC Cincinnati",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": 3,
+        "away": 1
+      },
+      "league": {
+        "id": "flashscore-usa-mls",
+        "name": "USA: MLS",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "YFRRxgDM",
+      "externalIds": {
+        "Flashscore Feed": "YFRRxgDM"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/YFRRxgDM/",
+      "sourcePath": "/football/usa/mls/"
+    },
+    {
+      "fixture": {
+        "id": "fs-ENCmlhtJ",
+        "date": "2026-09-26T23:30:00.000Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "1",
+          "name": "Charlotte",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Chicago Fire",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 1
+      },
+      "league": {
+        "id": "flashscore-usa-mls",
+        "name": "USA: MLS",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "ENCmlhtJ",
+      "externalIds": {
+        "Flashscore Feed": "ENCmlhtJ"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/ENCmlhtJ/",
+      "sourcePath": "/football/usa/mls/"
+    },
+    {
+      "fixture": {
+        "id": "fs-QFe56Zem",
+        "date": "2026-09-26T23:30:00.000Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "2",
+          "name": "Philadelphia Union",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Orlando City",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": 4,
+        "away": 2
+      },
+      "league": {
+        "id": "flashscore-usa-mls",
+        "name": "USA: MLS",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "QFe56Zem",
+      "externalIds": {
+        "Flashscore Feed": "QFe56Zem"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/QFe56Zem/",
+      "sourcePath": "/football/usa/mls/"
+    },
+    {
+      "fixture": {
+        "id": "fs-bTgD4DQa",
+        "date": "2026-09-27T00:30:00.000Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "3",
+          "name": "Austin FC",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "San Diego FC",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": 3,
+        "away": 3
+      },
+      "league": {
+        "id": "flashscore-usa-mls",
+        "name": "USA: MLS",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "bTgD4DQa",
+      "externalIds": {
+        "Flashscore Feed": "bTgD4DQa"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/bTgD4DQa/",
+      "sourcePath": "/football/usa/mls/"
+    },
+    {
+      "fixture": {
+        "id": "fs-femM2ieC",
+        "date": "2026-09-27T00:30:00.000Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "0",
+          "name": "FC Dallas",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Los Angeles FC",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": 1,
+        "away": 0
+      },
+      "league": {
+        "id": "flashscore-usa-mls",
+        "name": "USA: MLS",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "femM2ieC",
+      "externalIds": {
+        "Flashscore Feed": "femM2ieC"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/femM2ieC/",
+      "sourcePath": "/football/usa/mls/"
+    },
+    {
+      "fixture": {
+        "id": "fs-0hjU0VPO",
+        "date": "2026-09-27T00:30:00.000Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "2",
+          "name": "Houston Dynamo",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Sporting Kansas City",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 2
+      },
+      "league": {
+        "id": "flashscore-usa-mls",
+        "name": "USA: MLS",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "0hjU0VPO",
+      "externalIds": {
+        "Flashscore Feed": "0hjU0VPO"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/0hjU0VPO/",
+      "sourcePath": "/football/usa/mls/"
+    },
+    {
+      "fixture": {
+        "id": "fs-UaSdXWzp",
+        "date": "2026-09-27T00:30:00.000Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "0",
+          "name": "Nashville SC",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Toronto FC",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": 2,
+        "away": 0
+      },
+      "league": {
+        "id": "flashscore-usa-mls",
+        "name": "USA: MLS",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "UaSdXWzp",
+      "externalIds": {
+        "Flashscore Feed": "UaSdXWzp"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/UaSdXWzp/",
+      "sourcePath": "/football/usa/mls/"
+    },
+    {
+      "fixture": {
+        "id": "fs-46GvLYAt",
+        "date": "2026-09-27T00:30:00.000Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "1",
+          "name": "Seattle Sounders",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Minnesota United",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": 3,
+        "away": 1
+      },
+      "league": {
+        "id": "flashscore-usa-mls",
+        "name": "USA: MLS",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "46GvLYAt",
+      "externalIds": {
+        "Flashscore Feed": "46GvLYAt"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/46GvLYAt/",
+      "sourcePath": "/football/usa/mls/"
+    },
+    {
+      "fixture": {
+        "id": "fs-CWJnJCug",
+        "date": "2026-09-27T01:30:00.000Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "0",
+          "name": "Real Salt Lake",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "New England Revolution",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": 3,
+        "away": 0
+      },
+      "league": {
+        "id": "flashscore-usa-mls",
+        "name": "USA: MLS",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "CWJnJCug",
+      "externalIds": {
+        "Flashscore Feed": "CWJnJCug"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/CWJnJCug/",
+      "sourcePath": "/football/usa/mls/"
+    },
+    {
+      "fixture": {
+        "id": "fs-8bDeHjA5",
+        "date": "2026-09-27T02:30:00.000Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "2",
+          "name": "Los Angeles Galaxy",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Colorado Rapids",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": 3,
+        "away": 2
+      },
+      "league": {
+        "id": "flashscore-usa-mls",
+        "name": "USA: MLS",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "8bDeHjA5",
+      "externalIds": {
+        "Flashscore Feed": "8bDeHjA5"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/8bDeHjA5/",
+      "sourcePath": "/football/usa/mls/"
+    },
+    {
+      "fixture": {
+        "id": "fs-tCB3FUvI",
+        "date": "2026-09-27T02:30:00.000Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "1",
+          "name": "San Jose Earthquakes",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Portland Timbers",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": 3,
+        "away": 1
+      },
+      "league": {
+        "id": "flashscore-usa-mls",
+        "name": "USA: MLS",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "tCB3FUvI",
+      "externalIds": {
+        "Flashscore Feed": "tCB3FUvI"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/tCB3FUvI/",
+      "sourcePath": "/football/usa/mls/"
+    },
+    {
+      "fixture": {
+        "id": "fs-QRL5VA5d",
+        "date": "2026-09-27T02:30:00.000Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "3",
+          "name": "Vancouver Whitecaps",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "DC United",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": 3,
+        "away": 3
+      },
+      "league": {
+        "id": "flashscore-usa-mls",
+        "name": "USA: MLS",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "QRL5VA5d",
+      "externalIds": {
+        "Flashscore Feed": "QRL5VA5d"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/QRL5VA5d/",
+      "sourcePath": "/football/usa/mls/"
+    },
+    {
+      "fixture": {
+        "id": "fs-bq1tgD2s",
+        "date": "2026-09-27T23:05:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Fortaleza",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Deportes Tolima",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-colombia-primera-a",
+        "name": "COLOMBIA: Primera A - Clausura",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "bq1tgD2s",
+      "externalIds": {
+        "Flashscore Feed": "bq1tgD2s"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/bq1tgD2s/",
+      "sourcePath": "/football/colombia/primera-a/"
+    },
+    {
+      "fixture": {
+        "id": "fs-S6sivyJO",
+        "date": "2026-09-28T01:10:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Dep. Cali",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Aguilas",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-colombia-primera-a",
+        "name": "COLOMBIA: Primera A - Clausura",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "S6sivyJO",
+      "externalIds": {
+        "Flashscore Feed": "S6sivyJO"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/S6sivyJO/",
+      "sourcePath": "/football/colombia/primera-a/"
+    },
+    {
+      "fixture": {
+        "id": "fs-nelb1QCt",
+        "date": "2026-09-28T01:00:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Club Leon",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Juarez",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-mexico-liga-mx",
+        "name": "MEXICO: Liga MX - Apertura",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "nelb1QCt",
+      "externalIds": {
+        "Flashscore Feed": "nelb1QCt"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/nelb1QCt/",
+      "sourcePath": "/football/mexico/liga-mx/"
+    },
+    {
+      "fixture": {
+        "id": "fs-fLi6a4sg",
+        "date": "2026-09-28T03:10:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Necaxa",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Club America",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-mexico-liga-mx",
+        "name": "MEXICO: Liga MX - Apertura",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "fLi6a4sg",
+      "externalIds": {
+        "Flashscore Feed": "fLi6a4sg"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/fLi6a4sg/",
+      "sourcePath": "/football/mexico/liga-mx/"
+    },
+    {
+      "fixture": {
+        "id": "fs-8vS0PJz1",
+        "date": "2026-09-28T18:30:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Leganes",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Castellon",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-spain-segunda",
+        "name": "SPAIN: LaLiga2",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "8vS0PJz1",
+      "externalIds": {
+        "Flashscore Feed": "8vS0PJz1"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/8vS0PJz1/",
+      "sourcePath": "/football/spain/laliga2/"
+    },
+    {
+      "fixture": {
+        "id": "fs-0ER4D89U",
+        "date": "2026-09-27T23:00:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Columbus Crew",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Inter Miami",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-usa-mls",
+        "name": "USA: MLS",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "0ER4D89U",
+      "externalIds": {
+        "Flashscore Feed": "0ER4D89U"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/0ER4D89U/",
+      "sourcePath": "/football/usa/mls/"
+    },
+    {
+      "fixture": {
+        "id": "fs-6yXAIpfn",
+        "date": "2026-09-28T22:30:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "America MG",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Juventude",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-brazil-serie-b",
+        "name": "BRAZIL: Serie B",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "6yXAIpfn",
+      "externalIds": {
+        "Flashscore Feed": "6yXAIpfn"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/6yXAIpfn/",
+      "sourcePath": "/football/brazil/serie-b/"
+    },
+    {
+      "fixture": {
+        "id": "fs-rJH0bv4t",
+        "date": "2026-09-29T20:30:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Pereira",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Santa Fe",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-colombia-primera-a",
+        "name": "COLOMBIA: Primera A - Clausura",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "rJH0bv4t",
+      "externalIds": {
+        "Flashscore Feed": "rJH0bv4t"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/rJH0bv4t/",
+      "sourcePath": "/football/colombia/primera-a/"
+    },
+    {
+      "fixture": {
+        "id": "fs-ragg03vI",
+        "date": "2026-09-29T22:30:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Botafogo SP",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Ponte Preta",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-brazil-serie-b",
+        "name": "BRAZIL: Serie B",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "ragg03vI",
+      "externalIds": {
+        "Flashscore Feed": "ragg03vI"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/ragg03vI/",
+      "sourcePath": "/football/brazil/serie-b/"
+    },
+    {
+      "fixture": {
+        "id": "fs-tGbl9eIb",
+        "date": "2026-09-30T01:05:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Ind. Medellin",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Millonarios",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-colombia-primera-a",
+        "name": "COLOMBIA: Primera A - Clausura",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "tGbl9eIb",
+      "externalIds": {
+        "Flashscore Feed": "tGbl9eIb"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/tGbl9eIb/",
+      "sourcePath": "/football/colombia/primera-a/"
+    },
+    {
+      "fixture": {
+        "id": "fs-UyulX15s",
+        "date": "2026-10-01T01:00:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Atl. Nacional",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Junior",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-colombia-primera-a",
+        "name": "COLOMBIA: Primera A - Clausura",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "UyulX15s",
+      "externalIds": {
+        "Flashscore Feed": "UyulX15s"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/UyulX15s/",
+      "sourcePath": "/football/colombia/primera-a/"
+    },
+    {
+      "fixture": {
+        "id": "fs-6VEYBeYP",
+        "date": "2026-09-30T23:30:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "New York Red Bulls",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "St. Louis City",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-usa-mls",
+        "name": "USA: MLS",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "6VEYBeYP",
+      "externalIds": {
+        "Flashscore Feed": "6VEYBeYP"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/6VEYBeYP/",
+      "sourcePath": "/football/usa/mls/"
+    },
+    {
+      "fixture": {
+        "id": "fs-tjqXUEq9",
+        "date": "2026-10-01T23:30:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Athletic Club",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Sport Recife",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-brazil-serie-b",
+        "name": "BRAZIL: Serie B",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "tjqXUEq9",
+      "externalIds": {
+        "Flashscore Feed": "tjqXUEq9"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/tjqXUEq9/",
+      "sourcePath": "/football/brazil/serie-b/"
+    },
+    {
+      "fixture": {
+        "id": "fs-hWDAR0fE",
+        "date": "2026-10-02T00:00:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Novorizontino",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Goias",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-brazil-serie-b",
+        "name": "BRAZIL: Serie B",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "hWDAR0fE",
+      "externalIds": {
+        "Flashscore Feed": "hWDAR0fE"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/hWDAR0fE/",
+      "sourcePath": "/football/brazil/serie-b/"
+    },
+    {
+      "fixture": {
+        "id": "fs-E9rwETdc",
+        "date": "2026-10-02T01:00:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Inter Bogotá",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Once Caldas",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-colombia-primera-a",
+        "name": "COLOMBIA: Primera A - Clausura",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "E9rwETdc",
+      "externalIds": {
+        "Flashscore Feed": "E9rwETdc"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/E9rwETdc/",
+      "sourcePath": "/football/colombia/primera-a/"
+    },
+    {
+      "fixture": {
+        "id": "fs-C0j6pyNk",
+        "date": "2026-10-02T16:00:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "FUS Rabat",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Amal Tiznit",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-morocco-botola",
+        "name": "MOROCCO: Botola Pro",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "C0j6pyNk",
+      "externalIds": {
+        "Flashscore Feed": "C0j6pyNk"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/C0j6pyNk/",
+      "sourcePath": "/football/morocco/botola-pro/"
+    },
+    {
+      "fixture": {
+        "id": "fs-KQgErFi2",
+        "date": "2026-10-02T18:00:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Widad Temara",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Union Touarga",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-morocco-botola",
+        "name": "MOROCCO: Botola Pro",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "KQgErFi2",
+      "externalIds": {
+        "Flashscore Feed": "KQgErFi2"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/KQgErFi2/",
+      "sourcePath": "/football/morocco/botola-pro/"
+    },
+    {
+      "fixture": {
+        "id": "fs-CKt06Iq9",
+        "date": "2026-10-02T20:00:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "IR Tanger",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Moghreb Tetouan",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-morocco-botola",
+        "name": "MOROCCO: Botola Pro",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "CKt06Iq9",
+      "externalIds": {
+        "Flashscore Feed": "CKt06Iq9"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/CKt06Iq9/",
+      "sourcePath": "/football/morocco/botola-pro/"
+    },
+    {
+      "fixture": {
+        "id": "fs-Uo8Llz4C",
+        "date": "2026-10-02T18:30:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Eldense",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Oviedo",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-spain-segunda",
+        "name": "SPAIN: LaLiga2",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "Uo8Llz4C",
+      "externalIds": {
+        "Flashscore Feed": "Uo8Llz4C"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/Uo8Llz4C/",
+      "sourcePath": "/football/spain/laliga2/"
+    },
+    {
+      "fixture": {
+        "id": "fs-tGoizjbf",
+        "date": "2026-10-02T01:30:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Seattle Sounders",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Sporting Kansas City",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-usa-mls",
+        "name": "USA: MLS",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "tGoizjbf",
+      "externalIds": {
+        "Flashscore Feed": "tGoizjbf"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/tGoizjbf/",
+      "sourcePath": "/football/usa/mls/"
+    },
+    {
+      "fixture": {
+        "id": "fs-AuUfNnEO",
+        "date": "2026-10-03T12:00:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Fomboni (Com)",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "15 de Agosto (Gnq)",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-caf-champions-league",
+        "name": "AFRICA: CAF Champions League - Qualification",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "AuUfNnEO",
+      "externalIds": {
+        "Flashscore Feed": "AuUfNnEO"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/AuUfNnEO/",
+      "sourcePath": "/football/africa/caf-champions-league/"
+    },
+    {
+      "fixture": {
+        "id": "fs-8WQSXpbe",
+        "date": "2026-10-02T22:15:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Independiente",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Instituto",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-argentina-liga-profesional",
+        "name": "ARGENTINA: Liga Profesional - Clausura",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "8WQSXpbe",
+      "externalIds": {
+        "Flashscore Feed": "8WQSXpbe"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/8WQSXpbe/",
+      "sourcePath": "/football/argentina/liga-profesional/"
+    },
+    {
+      "fixture": {
+        "id": "fs-ltZzWOS7",
+        "date": "2026-10-03T00:30:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Boca Juniors",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Union de Santa Fe",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-argentina-liga-profesional",
+        "name": "ARGENTINA: Liga Profesional - Clausura",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "ltZzWOS7",
+      "externalIds": {
+        "Flashscore Feed": "ltZzWOS7"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/ltZzWOS7/",
+      "sourcePath": "/football/argentina/liga-profesional/"
+    },
+    {
+      "fixture": {
+        "id": "fs-UJIic1R6",
+        "date": "2026-10-03T00:30:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Ind. Rivadavia",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Gimnasia L.P.",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-argentina-liga-profesional",
+        "name": "ARGENTINA: Liga Profesional - Clausura",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "UJIic1R6",
+      "externalIds": {
+        "Flashscore Feed": "UJIic1R6"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/UJIic1R6/",
+      "sourcePath": "/football/argentina/liga-profesional/"
+    },
+    {
+      "fixture": {
+        "id": "fs-tzMMgSKE",
+        "date": "2026-10-03T17:45:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Defensa y Justicia",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "San Lorenzo",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-argentina-liga-profesional",
+        "name": "ARGENTINA: Liga Profesional - Clausura",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "tzMMgSKE",
+      "externalIds": {
+        "Flashscore Feed": "tzMMgSKE"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/tzMMgSKE/",
+      "sourcePath": "/football/argentina/liga-profesional/"
+    },
+    {
+      "fixture": {
+        "id": "fs-OMFqaNdf",
+        "date": "2026-10-03T20:00:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Atl. Tucuman",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Barracas Central",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-argentina-liga-profesional",
+        "name": "ARGENTINA: Liga Profesional - Clausura",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "OMFqaNdf",
+      "externalIds": {
+        "Flashscore Feed": "OMFqaNdf"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/OMFqaNdf/",
+      "sourcePath": "/football/argentina/liga-profesional/"
+    },
+    {
+      "fixture": {
+        "id": "fs-8p61npDl",
+        "date": "2026-10-03T20:00:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Newells Old Boys",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Lanus",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-argentina-liga-profesional",
+        "name": "ARGENTINA: Liga Profesional - Clausura",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "8p61npDl",
+      "externalIds": {
+        "Flashscore Feed": "8p61npDl"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/8p61npDl/",
+      "sourcePath": "/football/argentina/liga-profesional/"
+    },
+    {
+      "fixture": {
+        "id": "fs-lrsn7Bi2",
+        "date": "2026-10-02T22:30:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Sao Bernardo",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "CRB",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-brazil-serie-b",
+        "name": "BRAZIL: Serie B",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "lrsn7Bi2",
+      "externalIds": {
+        "Flashscore Feed": "lrsn7Bi2"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/lrsn7Bi2/",
+      "sourcePath": "/football/brazil/serie-b/"
+    },
+    {
+      "fixture": {
+        "id": "fs-lGnuThEL",
+        "date": "2026-10-02T23:30:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Londrina",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Criciuma",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-brazil-serie-b",
+        "name": "BRAZIL: Serie B",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "lGnuThEL",
+      "externalIds": {
+        "Flashscore Feed": "lGnuThEL"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/lGnuThEL/",
+      "sourcePath": "/football/brazil/serie-b/"
+    },
+    {
+      "fixture": {
+        "id": "fs-Wv8lKInl",
+        "date": "2026-10-02T23:45:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Juventude",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Operario-PR",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-brazil-serie-b",
+        "name": "BRAZIL: Serie B",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "Wv8lKInl",
+      "externalIds": {
+        "Flashscore Feed": "Wv8lKInl"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/Wv8lKInl/",
+      "sourcePath": "/football/brazil/serie-b/"
+    },
+    {
+      "fixture": {
+        "id": "fs-pnYANWyq",
+        "date": "2026-10-03T00:35:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Fortaleza",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Nautico",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-brazil-serie-b",
+        "name": "BRAZIL: Serie B",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "pnYANWyq",
+      "externalIds": {
+        "Flashscore Feed": "pnYANWyq"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/pnYANWyq/",
+      "sourcePath": "/football/brazil/serie-b/"
+    },
+    {
+      "fixture": {
+        "id": "fs-b9vRJly8",
+        "date": "2026-10-03T14:00:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Avai",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Ceara",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-brazil-serie-b",
+        "name": "BRAZIL: Serie B",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "b9vRJly8",
+      "externalIds": {
+        "Flashscore Feed": "b9vRJly8"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/b9vRJly8/",
+      "sourcePath": "/football/brazil/serie-b/"
+    },
+    {
+      "fixture": {
+        "id": "fs-hCyJLA6e",
+        "date": "2026-10-03T19:00:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Atletico GO",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "America MG",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-brazil-serie-b",
+        "name": "BRAZIL: Serie B",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "hCyJLA6e",
+      "externalIds": {
+        "Flashscore Feed": "hCyJLA6e"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/hCyJLA6e/",
+      "sourcePath": "/football/brazil/serie-b/"
+    },
+    {
+      "fixture": {
+        "id": "fs-0dHIPvPQ",
+        "date": "2026-10-03T20:00:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Cuiaba",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Ponte Preta",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-brazil-serie-b",
+        "name": "BRAZIL: Serie B",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "0dHIPvPQ",
+      "externalIds": {
+        "Flashscore Feed": "0dHIPvPQ"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/0dHIPvPQ/",
+      "sourcePath": "/football/brazil/serie-b/"
+    },
+    {
+      "fixture": {
+        "id": "fs-GUrv9XMk",
+        "date": "2026-10-03T21:30:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Botafogo SP",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Vila Nova FC",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-brazil-serie-b",
+        "name": "BRAZIL: Serie B",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "GUrv9XMk",
+      "externalIds": {
+        "Flashscore Feed": "GUrv9XMk"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/GUrv9XMk/",
+      "sourcePath": "/football/brazil/serie-b/"
+    },
+    {
+      "fixture": {
+        "id": "fs-dfczKt7c",
+        "date": "2026-10-03T00:45:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Dep. Cali",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Alianza",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-colombia-primera-a",
+        "name": "COLOMBIA: Primera A - Clausura",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "dfczKt7c",
+      "externalIds": {
+        "Flashscore Feed": "dfczKt7c"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/dfczKt7c/",
+      "sourcePath": "/football/colombia/primera-a/"
+    },
+    {
+      "fixture": {
+        "id": "fs-GMnU3UGa",
+        "date": "2026-10-03T19:00:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Aguilas",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Jaguares de Cordoba",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-colombia-primera-a",
+        "name": "COLOMBIA: Primera A - Clausura",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "GMnU3UGa",
+      "externalIds": {
+        "Flashscore Feed": "GMnU3UGa"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/GMnU3UGa/",
+      "sourcePath": "/football/colombia/primera-a/"
+    },
+    {
+      "fixture": {
+        "id": "fs-8dqM5jnm",
+        "date": "2026-10-03T21:05:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Deportes Tolima",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Chico",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-colombia-primera-a",
+        "name": "COLOMBIA: Primera A - Clausura",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "8dqM5jnm",
+      "externalIds": {
+        "Flashscore Feed": "8dqM5jnm"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/8dqM5jnm/",
+      "sourcePath": "/football/colombia/primera-a/"
+    },
+    {
+      "fixture": {
+        "id": "fs-Kpp84dEL",
+        "date": "2026-10-03T16:00:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Hassania Agadir",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Maghreb Fez",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-morocco-botola",
+        "name": "MOROCCO: Botola Pro",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "Kpp84dEL",
+      "externalIds": {
+        "Flashscore Feed": "Kpp84dEL"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/Kpp84dEL/",
+      "sourcePath": "/football/morocco/botola-pro/"
+    },
+    {
+      "fixture": {
+        "id": "fs-bDGw34fE",
+        "date": "2026-10-03T18:00:00.000Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Berkane",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "FAR Rabat",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-morocco-botola",
+        "name": "MOROCCO: Botola Pro",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "bDGw34fE",
+      "externalIds": {
+        "Flashscore Feed": "bDGw34fE"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/bDGw34fE/",
+      "sourcePath": "/football/morocco/botola-pro/"
+    },
+    {
+      "fixture": {
+        "id": "fs-l0zvazxq",
+        "date": "2026-10-03T18:00:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "COD Meknes",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Kawkab Marrakech",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-morocco-botola",
+        "name": "MOROCCO: Botola Pro",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "l0zvazxq",
+      "externalIds": {
+        "Flashscore Feed": "l0zvazxq"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/l0zvazxq/",
+      "sourcePath": "/football/morocco/botola-pro/"
+    },
+    {
+      "fixture": {
+        "id": "fs-MDYocE6e",
+        "date": "2026-10-03T18:00:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Difaa El Jadidi",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Wydad AC",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-morocco-botola",
+        "name": "MOROCCO: Botola Pro",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "MDYocE6e",
+      "externalIds": {
+        "Flashscore Feed": "MDYocE6e"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/MDYocE6e/",
+      "sourcePath": "/football/morocco/botola-pro/"
+    },
+    {
+      "fixture": {
+        "id": "fs-Uwxfehy8",
+        "date": "2026-10-03T20:00:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Raja Casablanca",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Renaissance Zemamra",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-morocco-botola",
+        "name": "MOROCCO: Botola Pro",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "Uwxfehy8",
+      "externalIds": {
+        "Flashscore Feed": "Uwxfehy8"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/Uwxfehy8/",
+      "sourcePath": "/football/morocco/botola-pro/"
+    },
+    {
+      "fixture": {
+        "id": "fs-42PuxcK6",
+        "date": "2026-10-03T12:00:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Albacete",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Eibar",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-spain-segunda",
+        "name": "SPAIN: LaLiga2",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "42PuxcK6",
+      "externalIds": {
+        "Flashscore Feed": "42PuxcK6"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/42PuxcK6/",
+      "sourcePath": "/football/spain/laliga2/"
+    },
+    {
+      "fixture": {
+        "id": "fs-CSSmzykJ",
+        "date": "2026-10-03T14:15:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Almeria",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Burgos CF",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-spain-segunda",
+        "name": "SPAIN: LaLiga2",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "CSSmzykJ",
+      "externalIds": {
+        "Flashscore Feed": "CSSmzykJ"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/CSSmzykJ/",
+      "sourcePath": "/football/spain/laliga2/"
+    },
+    {
+      "fixture": {
+        "id": "fs-vZKZcvsQ",
+        "date": "2026-10-03T16:30:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Cadiz CF",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Leganes",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-spain-segunda",
+        "name": "SPAIN: LaLiga2",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "vZKZcvsQ",
+      "externalIds": {
+        "Flashscore Feed": "vZKZcvsQ"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/vZKZcvsQ/",
+      "sourcePath": "/football/spain/laliga2/"
+    },
+    {
+      "fixture": {
+        "id": "fs-xM26SEkA",
+        "date": "2026-10-03T16:30:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Sabadell",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Andorra",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-spain-segunda",
+        "name": "SPAIN: LaLiga2",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "xM26SEkA",
+      "externalIds": {
+        "Flashscore Feed": "xM26SEkA"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/xM26SEkA/",
+      "sourcePath": "/football/spain/laliga2/"
+    },
+    {
+      "fixture": {
+        "id": "fs-2JOyunHs",
+        "date": "2026-10-03T10:00:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Veres-Rivne",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Kudrivka",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-ukraine-premier-league",
+        "name": "UKRAINE: Premier League",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "2JOyunHs",
+      "externalIds": {
+        "Flashscore Feed": "2JOyunHs"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/2JOyunHs/",
+      "sourcePath": "/football/ukraine/premier-league/"
+    },
+    {
+      "fixture": {
+        "id": "fs-SfMz1qSs",
+        "date": "2026-10-04T17:45:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Huracan",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Aldosivi",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-argentina-liga-profesional",
+        "name": "ARGENTINA: Liga Profesional - Clausura",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "SfMz1qSs",
+      "externalIds": {
+        "Flashscore Feed": "SfMz1qSs"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/SfMz1qSs/",
+      "sourcePath": "/football/argentina/liga-profesional/"
+    },
+    {
+      "fixture": {
+        "id": "fs-06NKZ6Tr",
+        "date": "2026-10-04T20:00:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Talleres Cordoba",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Belgrano",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-argentina-liga-profesional",
+        "name": "ARGENTINA: Liga Profesional - Clausura",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "06NKZ6Tr",
+      "externalIds": {
+        "Flashscore Feed": "06NKZ6Tr"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/06NKZ6Tr/",
+      "sourcePath": "/football/argentina/liga-profesional/"
+    },
+    {
+      "fixture": {
+        "id": "fs-CQwgKk1t",
+        "date": "2026-10-04T19:00:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Dep. Pasto",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Fortaleza",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-colombia-primera-a",
+        "name": "COLOMBIA: Primera A - Clausura",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "CQwgKk1t",
+      "externalIds": {
+        "Flashscore Feed": "CQwgKk1t"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/CQwgKk1t/",
+      "sourcePath": "/football/colombia/primera-a/"
+    },
+    {
+      "fixture": {
+        "id": "fs-lzox28oC",
+        "date": "2026-10-04T21:05:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Cucuta",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Pereira",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-colombia-primera-a",
+        "name": "COLOMBIA: Primera A - Clausura",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "lzox28oC",
+      "externalIds": {
+        "Flashscore Feed": "lzox28oC"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/lzox28oC/",
+      "sourcePath": "/football/colombia/primera-a/"
+    },
+    {
+      "fixture": {
+        "id": "fs-bLlo5elg",
+        "date": "2026-10-04T12:00:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Real Sociedad B",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Granada CF",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-spain-segunda",
+        "name": "SPAIN: LaLiga2",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "bLlo5elg",
+      "externalIds": {
+        "Flashscore Feed": "bLlo5elg"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/bLlo5elg/",
+      "sourcePath": "/football/spain/laliga2/"
+    },
+    {
+      "fixture": {
+        "id": "fs-WYng3ZI5",
+        "date": "2026-10-04T14:15:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Gijon",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Celta Vigo B",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-spain-segunda",
+        "name": "SPAIN: LaLiga2",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "WYng3ZI5",
+      "externalIds": {
+        "Flashscore Feed": "WYng3ZI5"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/WYng3ZI5/",
+      "sourcePath": "/football/spain/laliga2/"
+    },
+    {
+      "fixture": {
+        "id": "fs-z565hI4m",
+        "date": "2026-10-04T16:30:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Castellon",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Ceuta",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-spain-segunda",
+        "name": "SPAIN: LaLiga2",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "z565hI4m",
+      "externalIds": {
+        "Flashscore Feed": "z565hI4m"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/z565hI4m/",
+      "sourcePath": "/football/spain/laliga2/"
+    },
+    {
+      "fixture": {
+        "id": "fs-hOow7HJt",
+        "date": "2026-10-04T16:30:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Las Palmas",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Valladolid",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-spain-segunda",
+        "name": "SPAIN: LaLiga2",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "hOow7HJt",
+      "externalIds": {
+        "Flashscore Feed": "hOow7HJt"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/hOow7HJt/",
+      "sourcePath": "/football/spain/laliga2/"
+    },
+    {
+      "fixture": {
+        "id": "fs-2a6TnEYO",
+        "date": "2026-10-04T19:00:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Girona",
+          "logo": null
+        },
+        "away": {
+          "id": null,
+          "name": "Mallorca",
+          "logo": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-spain-segunda",
+        "name": "SPAIN: LaLiga2",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "2a6TnEYO",
+      "externalIds": {
+        "Flashscore Feed": "2a6TnEYO"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/2a6TnEYO/",
+      "sourcePath": "/football/spain/laliga2/"
+    }
+  ]
 }
