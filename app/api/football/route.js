@@ -390,11 +390,48 @@ function getSourcePriority(match) {
   return priorities[match?.source] || 99;
 }
 
+function isUsableTeamLogo(value) {
+  const logo = String(value || "").trim();
+  return /^https?:\/\//i.test(logo) || logo.startsWith("/");
+}
+
 function getFlashscoreTeamLogo(team) {
   // Flashscore team IDs are NOT logo filenames. Only use the real logo
   // URL captured from OB/AW in the feed; never manufacture an _h.png URL.
   const logo = String(team?.flashscoreLogo || "").trim();
-  return /^https?:\/\//i.test(logo) ? logo : null;
+  return isUsableTeamLogo(logo) ? logo : null;
+}
+
+function teamLogoPriority(team, value) {
+  const logo = String(value || "").trim();
+  if (!isUsableTeamLogo(logo)) return -1;
+
+  // Our scraper's local logo is the strongest signal because it was
+  // resolved for this exact team and committed under public/teams.
+  if (logo.startsWith("/teams/")) return 100;
+
+  const source = String(team?.logoSource || "").toLowerCase();
+  if (source.includes("flashscore")) return 90;
+  if (source.includes("football-data")) return 80;
+
+  // A real Flashscore URL is preferred over generic provider badges.
+  if (/static\\.flashscore\\.com/i.test(logo)) return 70;
+  if (source.includes("sportsdb")) return 50;
+
+  return 40;
+}
+
+function chooseTeamLogo(teamCandidates) {
+  const candidates = teamCandidates
+    .filter(Boolean)
+    .filter((item) => isUsableTeamLogo(item.logo))
+    .map((item) => ({
+      logo: String(item.logo).trim(),
+      score: teamLogoPriority(item, item.logo),
+    }))
+    .sort((a, b) => b.score - a.score);
+
+  return candidates[0]?.logo || null;
 }
 
 function getLocalLeagueLogo(name = "") {
@@ -451,15 +488,19 @@ function mergeMatchRecords(primary, secondary) {
           : null;
 
     const logoCandidates = [
-      primaryTeam.logo,
-      secondaryTeam.logo,
-      primaryTeam.flashscoreLogo,
-      secondaryTeam.flashscoreLogo,
-      getFlashscoreTeamLogo(flashscoreTeam),
-    ].filter((value) => /^https?:\/\//i.test(String(value || "")));
+      { logo: primaryTeam.logo, ...primaryTeam },
+      { logo: secondaryTeam.logo, ...secondaryTeam },
+      { logo: primaryTeam.flashscoreLogo, ...primaryTeam, logoSource: primaryTeam.logoSource || "Flashscore feed" },
+      { logo: secondaryTeam.flashscoreLogo, ...secondaryTeam, logoSource: secondaryTeam.logoSource || "Flashscore feed" },
+      { logo: getFlashscoreTeamLogo(flashscoreTeam), ...flashscoreTeam, logoSource: "Flashscore feed" },
+    ].filter((item) => isUsableTeamLogo(item.logo));
 
-    merged.teams[side].logo = logoCandidates[0] || null;
-    merged.teams[side].logoCandidates = Array.from(new Set(logoCandidates));
+    const uniqueLogoCandidates = Array.from(
+      new Set(logoCandidates.map((item) => String(item.logo).trim()))
+    );
+
+    merged.teams[side].logo = chooseTeamLogo(logoCandidates);
+    merged.teams[side].logoCandidates = uniqueLogoCandidates;
 
     merged.teams[side].flashscoreId =
       flashscoreTeam?.id ||
@@ -480,6 +521,7 @@ function mergeMatchRecords(primary, secondary) {
   merged.league.logo =
     primary.league?.logo ||
     secondary.league?.logo ||
+    getLocalLeagueLogo(primary.league?.name || secondary.league?.name) ||
     null;
 
   merged.league.id =
