@@ -101,7 +101,10 @@ export const metadata = {
 };
 
 function teamLogo(team) {
-  return team?.logo || team?.strTeamBadge || team?.badge || "";
+  const candidates = Array.isArray(team?.logoCandidates)
+    ? team.logoCandidates
+    : [team?.logo, team?.flashscoreLogo, team?.strTeamBadge, team?.badge].filter(Boolean);
+  return candidates[0] || "";
 }
 
 function MatchCard({ match }) {
