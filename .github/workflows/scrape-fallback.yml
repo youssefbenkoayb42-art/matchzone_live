@@ -22,11 +22,11 @@ jobs:
           node-version: 20
           cache: npm
 
-      - name: Install dependencies
-        run: npm ci
+      - name: Install scraper dependencies
+        run: npm install --prefix scripts --no-package-lock
 
       - name: Scrape football fallback
-        run: npm run scrape:fallback
+        run: node scripts/scrape-fallback.mjs
         env:
           SCRAPER_USER_AGENT: "MatchZone/1.0 (+https://matchzone-live.vercel.app/)"
 
