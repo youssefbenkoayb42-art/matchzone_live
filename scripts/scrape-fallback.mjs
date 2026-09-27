@@ -539,16 +539,27 @@ function mergeTeam(existingTeam, incomingTeam, side) {
     normalizeName(existing.name) === normalizeName(incoming.name);
 
   const incomingLogo = cleanTeamLogo(incoming.logo || incoming.flashscoreLogo);
+  const incomingFilename = String(incoming.logoFilename || "").trim();
+  const hasIncomingLogoSignal = Boolean(incomingFilename);
   const existingLogo = sameIdentity ? cleanTeamLogo(existing.logo || existing.flashscoreLogo) : null;
+
+  // Flashscore's OB/AW fields are side-specific. If the fresh feed explicitly
+  // supplied a filename (including its placeholder "1"/"0"), never resurrect
+  // an older logo from the same team record. A stale logo here can otherwise
+  // put the home badge on the away side forever when AW is invalid.
+  const mergedLogo = incomingLogo || (hasIncomingLogoSignal ? null : existingLogo);
+  const mergedFlashscoreLogo =
+    cleanTeamLogo(incoming.flashscoreLogo) ||
+    (hasIncomingLogoSignal ? null : (sameIdentity ? cleanTeamLogo(existing.flashscoreLogo) : null));
 
   return {
     ...existing,
     ...incoming,
     id: incoming.id || existing.id || null,
     name: incoming.name || existing.name || "",
-    logo: incomingLogo || existingLogo || null,
-    flashscoreLogo: cleanTeamLogo(incoming.flashscoreLogo) || (sameIdentity ? cleanTeamLogo(existing.flashscoreLogo) : null),
-    logoFilename: incoming.logoFilename || (sameIdentity ? existing.logoFilename : null),
+    logo: mergedLogo,
+    flashscoreLogo: mergedFlashscoreLogo,
+    logoFilename: incomingFilename || (sameIdentity ? existing.logoFilename : null),
     logoSide: side,
   };
 }
