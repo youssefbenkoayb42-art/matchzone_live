@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-09-27T20:35:11.014Z",
+  "updatedAt": "2026-09-27T21:28:35.627Z",
   "source": "flashscore-feed",
   "leagueCount": 52,
-  "matchCount": 110,
-  "detailMatchCount": 51,
+  "matchCount": 116,
+  "detailMatchCount": 52,
   "matches": [
     {
       "fixture": {
@@ -17,19 +17,20 @@
         "home": {
           "id": "1",
           "name": "Atl. Nacional",
-          "logo": "https://static.flashscore.com/res/image/data/I7bqaK6k-6kduDy6P.png",
+          "logo": "/teams/atlnacional.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/I7bqaK6k-6kduDy6P.png",
           "logoFilename": "I7bqaK6k-6kduDy6P.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Millonarios",
-          "logo": "https://r2.thesportsdb.com/images/media/team/badge/mc73ix1629122587.png",
+          "logo": "/teams/millonarios.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "TheSportsDB"
+          "logoSource": "Flashscore → GitHub local"
         }
       },
       "goals": {
@@ -874,19 +875,20 @@
         "home": {
           "id": "3",
           "name": "Amal Tiznit",
-          "logo": "https://static.flashscore.com/res/image/data/jsHyRaA6-YHmX153g.png",
+          "logo": "/teams/amaltiznit.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/jsHyRaA6-YHmX153g.png",
           "logoFilename": "jsHyRaA6-YHmX153g.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "IR Tanger",
-          "logo": "https://r2.thesportsdb.com/images/media/team/badge/mv4lnb1551975475.png",
+          "logo": "/teams/irtanger.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "TheSportsDB"
+          "logoSource": "Flashscore → GitHub local"
         }
       },
       "goals": {
@@ -1266,19 +1268,20 @@
         "home": {
           "id": "0",
           "name": "Girona",
-          "logo": "https://static.flashscore.com/res/image/data/Iw3DqQoe-4297a0ys.png",
+          "logo": "/teams/girona.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/Iw3DqQoe-4297a0ys.png",
           "logoFilename": "Iw3DqQoe-4297a0ys.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Albacete",
-          "logo": "https://r2.thesportsdb.com/images/media/team/badge/17oqja1616436316.png",
+          "logo": "/teams/albacete.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "TheSportsDB"
+          "logoSource": "Flashscore → GitHub local"
         }
       },
       "goals": {
@@ -2205,15 +2208,16 @@
         "home": {
           "id": "0",
           "name": "Novorizontino",
-          "logo": "https://static.flashscore.com/res/image/data/plaFSegT-AP3c0ay7.png",
+          "logo": "/teams/novorizontino.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/plaFSegT-AP3c0ay7.png",
           "logoFilename": "plaFSegT-AP3c0ay7.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Sao Bernardo",
-          "logo": "https://r2.thesportsdb.com/images/media/team/badge/0kt1ah1688106304.png",
+          "logo": "/teams/saobernardo.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -3037,7 +3041,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T20:34:32.559Z",
+        "updatedAt": "2026-09-27T21:26:26.920Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_jPd1bs9U",
@@ -3057,15 +3061,16 @@
         "home": {
           "id": "0",
           "name": "Vila Nova FC",
-          "logo": "https://static.flashscore.com/res/image/data/hWxFjziC-hlPnAf3r.png",
+          "logo": "/teams/vilanova.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/hWxFjziC-hlPnAf3r.png",
           "logoFilename": "hWxFjziC-hlPnAf3r.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Londrina",
-          "logo": "https://r2.thesportsdb.com/images/media/team/badge/xp2z9j1740846583.png",
+          "logo": "/teams/londrina.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -3963,7 +3968,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T20:34:33.272Z",
+        "updatedAt": "2026-09-27T21:26:29.234Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_AVG6RuwH",
@@ -3983,15 +3988,16 @@
         "home": {
           "id": "1",
           "name": "Nautico",
-          "logo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-fezSJdFa.png",
+          "logo": "/teams/nautico.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-fezSJdFa.png",
           "logoFilename": "WrU0J0Qq-fezSJdFa.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Sport Recife",
-          "logo": "https://r2.thesportsdb.com/images/media/team/badge/tyrbls1545421563.png",
+          "logo": "/teams/sportrecife.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -4888,7 +4894,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T20:34:33.976Z",
+        "updatedAt": "2026-09-27T21:26:31.547Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_UiFjVNwh",
@@ -4908,15 +4914,16 @@
         "home": {
           "id": "2",
           "name": "Operario-PR",
-          "logo": "https://static.flashscore.com/res/image/data/6XnLr1hT-GxV9h1lf.png",
+          "logo": "/teams/operariopr.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/6XnLr1hT-GxV9h1lf.png",
           "logoFilename": "6XnLr1hT-GxV9h1lf.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Ceara",
-          "logo": "https://r2.thesportsdb.com/images/media/team/badge/rxxvyp1464886685.png",
+          "logo": "/teams/ceara.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -5853,7 +5860,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T20:34:34.682Z",
+        "updatedAt": "2026-09-27T21:26:33.860Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_hhVIGOOb",
@@ -5873,15 +5880,16 @@
         "home": {
           "id": "1",
           "name": "Goias",
-          "logo": "https://static.flashscore.com/res/image/data/f7S2jqjC-2eGLPjs8.png",
+          "logo": "/teams/goias.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/f7S2jqjC-2eGLPjs8.png",
           "logoFilename": "f7S2jqjC-2eGLPjs8.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Atletico GO",
-          "logo": "https://r2.thesportsdb.com/images/media/team/badge/l7382k1766505911.png",
+          "logo": "/teams/atleticogo.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -6751,7 +6759,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T20:34:44.719Z",
+        "updatedAt": "2026-09-27T21:27:06.250Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_YVWYCtON",
@@ -6771,15 +6779,16 @@
         "home": {
           "id": "0",
           "name": "Chico",
-          "logo": "https://static.flashscore.com/res/image/data/xpPcZWWH-hjn5AE5Q.png",
+          "logo": "/teams/chico.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/xpPcZWWH-hjn5AE5Q.png",
           "logoFilename": "xpPcZWWH-hjn5AE5Q.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Dep. Pasto",
-          "logo": "https://r2.thesportsdb.com/images/media/team/badge/zlmyh31576159327.png",
+          "logo": "/teams/deppasto.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -7630,7 +7639,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T20:34:36.106Z",
+        "updatedAt": "2026-09-27T21:26:38.485Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_ljPGxhI0",
@@ -7650,15 +7659,16 @@
         "home": {
           "id": "3",
           "name": "Once Caldas",
-          "logo": "https://static.flashscore.com/res/image/data/pEjyC27k-0xyt4W2g.png",
+          "logo": "/teams/oncecaldas.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/pEjyC27k-0xyt4W2g.png",
           "logoFilename": "pEjyC27k-0xyt4W2g.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Bucaramanga",
-          "logo": "https://r2.thesportsdb.com/images/media/team/badge/rtjs411576157184.png",
+          "logo": "/teams/bucaramanga.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -8628,7 +8638,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T20:34:36.852Z",
+        "updatedAt": "2026-09-27T21:26:40.795Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_M3NOzWnD",
@@ -8648,15 +8658,16 @@
         "home": {
           "id": "0",
           "name": "Pereira",
-          "logo": "https://static.flashscore.com/res/image/data/WWZlhzXH-nouesssi.png",
+          "logo": "/teams/pereira.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/WWZlhzXH-nouesssi.png",
           "logoFilename": "WWZlhzXH-nouesssi.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Inter Bogotá",
-          "logo": "https://r2.thesportsdb.com/images/media/team/badge/jujchi1767716318.png",
+          "logo": "/teams/interbogota.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -9592,7 +9603,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T20:34:46.821Z",
+        "updatedAt": "2026-09-27T21:27:13.183Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_xEhjBCOP",
@@ -9612,15 +9623,16 @@
         "home": {
           "id": "2",
           "name": "Atlante",
-          "logo": "https://static.flashscore.com/res/image/data/Gnf7VRQq-MVPKYVvK.png",
+          "logo": "/teams/atlante.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/Gnf7VRQq-MVPKYVvK.png",
           "logoFilename": "Gnf7VRQq-MVPKYVvK.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Monterrey",
-          "logo": "https://r2.thesportsdb.com/images/media/team/badge/yglj911721542561.png",
+          "logo": "/teams/monterrey.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -10570,7 +10582,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T20:34:38.265Z",
+        "updatedAt": "2026-09-27T21:26:45.419Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_l4I1W5D6",
@@ -10590,15 +10602,16 @@
         "home": {
           "id": "3",
           "name": "Club Tijuana",
-          "logo": "https://static.flashscore.com/res/image/data/CxOLsUWH-OtymR74A.png",
+          "logo": "/teams/tijuana.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/CxOLsUWH-OtymR74A.png",
           "logoFilename": "CxOLsUWH-OtymR74A.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Atlas",
-          "logo": "https://r2.thesportsdb.com/images/media/team/badge/svvyvw1473541813.png",
+          "logo": "/teams/atlas.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -11481,7 +11494,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T20:34:38.966Z",
+        "updatedAt": "2026-09-27T21:26:47.731Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_MHG9UqrJ",
@@ -11501,15 +11514,16 @@
         "home": {
           "id": "1",
           "name": "Union Touarga",
-          "logo": "https://static.flashscore.com/res/image/data/4CAs0Boe-W6bUbbPE.png",
+          "logo": "/teams/uniontouarga.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/4CAs0Boe-W6bUbbPE.png",
           "logoFilename": "4CAs0Boe-W6bUbbPE.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "FUS Rabat",
-          "logo": "https://r2.thesportsdb.com/images/media/team/badge/vxk3aj1551518378.png",
+          "logo": "/teams/fusrabat.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -11874,7 +11888,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T20:34:39.667Z",
+        "updatedAt": "2026-09-27T21:26:50.042Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_88o4wcDb",
@@ -11894,15 +11908,16 @@
         "home": {
           "id": "6",
           "name": "Difaa El Jadidi",
-          "logo": "https://static.flashscore.com/res/image/data/r7LKEBle-zLWTcQkh.png",
+          "logo": "/teams/difaaeljadidi.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/r7LKEBle-zLWTcQkh.png",
           "logoFilename": "r7LKEBle-zLWTcQkh.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "COD Meknes",
-          "logo": "https://r2.thesportsdb.com/images/media/team/badge/fp6qrh1580335119.png",
+          "logo": "/teams/codmeknes.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -12358,7 +12373,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T20:34:40.389Z",
+        "updatedAt": "2026-09-27T21:26:52.352Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_vZ4vNyTH",
@@ -12378,15 +12393,16 @@
         "home": {
           "id": "3",
           "name": "Wydad AC",
-          "logo": "https://static.flashscore.com/res/image/data/CC9Gx2lC-Gtyfdpte.png",
+          "logo": "/teams/wydad.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/CC9Gx2lC-Gtyfdpte.png",
           "logoFilename": "CC9Gx2lC-Gtyfdpte.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Widad Temara",
-          "logo": "https://r2.thesportsdb.com/images/media/team/badge/5vkykt1609282577.png",
+          "logo": "/teams/widadtemara.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -12783,7 +12799,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T20:34:52.467Z",
+        "updatedAt": "2026-09-27T21:27:34.004Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_pW7nLFcU",
@@ -12803,15 +12819,16 @@
         "home": {
           "id": "1",
           "name": "Ceuta",
-          "logo": "https://static.flashscore.com/res/image/data/MwK5O35k-U144u08h.png",
+          "logo": "/teams/ceuta.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/MwK5O35k-U144u08h.png",
           "logoFilename": "MwK5O35k-U144u08h.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Real Sociedad B",
-          "logo": "https://r2.thesportsdb.com/images/media/team/badge/hliq4n1579632023.png",
+          "logo": "/teams/realsociedadb.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -13198,8 +13215,8 @@
           {
             "name": "Passes",
             "key": "passes",
-            "home": "86% (410/479)",
-            "away": "66% (138/208)",
+            "home": "85% (413/484)",
+            "away": "64% (133/207)",
             "period": "match"
           },
           {
@@ -13268,7 +13285,7 @@
           {
             "name": "Touches in opposition box",
             "key": "touches in opposition box",
-            "home": "47",
+            "home": "49",
             "away": "6",
             "period": "match"
           },
@@ -13296,21 +13313,21 @@
           {
             "name": "Long passes",
             "key": "long passes",
-            "home": "51% (20/39)",
-            "away": "29% (16/55)",
+            "home": "43% (17/40)",
+            "away": "22% (12/55)",
             "period": "match"
           },
           {
             "name": "Passes in final third",
             "key": "passes in final third",
-            "home": "75% (113/150)",
-            "away": "39% (18/46)",
+            "home": "75% (115/154)",
+            "away": "33% (15/46)",
             "period": "match"
           },
           {
             "name": "Crosses",
             "key": "crosses",
-            "home": "30% (8/27)",
+            "home": "21% (5/24)",
             "away": "14% (1/7)",
             "period": "match"
           },
@@ -13338,14 +13355,14 @@
           {
             "name": "Tackles",
             "key": "tackles",
-            "home": "54% (7/13)",
-            "away": "57% (8/14)",
+            "home": "67% (8/12)",
+            "away": "53% (8/15)",
             "period": "match"
           },
           {
             "name": "Duels won",
             "key": "duels won",
-            "home": "58",
+            "home": "57",
             "away": "38",
             "period": "match"
           },
@@ -13353,14 +13370,14 @@
             "name": "Clearances",
             "key": "clearances",
             "home": "16",
-            "away": "23",
+            "away": "24",
             "period": "match"
           },
           {
             "name": "Interceptions",
             "key": "interceptions",
             "home": "7",
-            "away": "10",
+            "away": "9",
             "period": "match"
           },
           {
@@ -13450,7 +13467,7 @@
           {
             "name": "Passes",
             "key": "passes",
-            "home": "82% (199/244)",
+            "home": "80% (199/249)",
             "away": "74% (105/142)",
             "period": "match"
           },
@@ -13527,21 +13544,21 @@
           {
             "name": "Long passes",
             "key": "long passes",
-            "home": "44% (11/25)",
-            "away": "37% (10/27)",
+            "home": "28% (7/25)",
+            "away": "33% (9/27)",
             "period": "match"
           },
           {
             "name": "Passes in final third",
             "key": "passes in final third",
-            "home": "66% (49/74)",
+            "home": "64% (49/77)",
             "away": "38% (8/21)",
             "period": "match"
           },
           {
             "name": "Crosses",
             "key": "crosses",
-            "home": "17% (2/12)",
+            "home": "18% (2/11)",
             "away": "0% (0/3)",
             "period": "match"
           },
@@ -13569,7 +13586,7 @@
           {
             "name": "Tackles",
             "key": "tackles",
-            "home": "50% (5/10)",
+            "home": "56% (5/9)",
             "away": "71% (5/7)",
             "period": "match"
           },
@@ -13583,7 +13600,7 @@
           {
             "name": "Clearances",
             "key": "clearances",
-            "home": "8",
+            "home": "7",
             "away": "14",
             "period": "match"
           },
@@ -13591,7 +13608,7 @@
             "name": "Interceptions",
             "key": "interceptions",
             "home": "5",
-            "away": "8",
+            "away": "7",
             "period": "match"
           },
           {
@@ -13674,8 +13691,8 @@
           {
             "name": "Passes",
             "key": "passes",
-            "home": "90% (211/235)",
-            "away": "50% (33/66)",
+            "home": "91% (214/235)",
+            "away": "43% (28/65)",
             "period": "match"
           },
           {
@@ -13723,7 +13740,7 @@
           {
             "name": "Touches in opposition box",
             "key": "touches in opposition box",
-            "home": "27",
+            "home": "29",
             "away": "3",
             "period": "match"
           },
@@ -13744,21 +13761,21 @@
           {
             "name": "Long passes",
             "key": "long passes",
-            "home": "64% (9/14)",
-            "away": "21% (6/28)",
+            "home": "67% (10/15)",
+            "away": "11% (3/28)",
             "period": "match"
           },
           {
             "name": "Passes in final third",
             "key": "passes in final third",
-            "home": "84% (64/76)",
-            "away": "40% (10/25)",
+            "home": "86% (66/77)",
+            "away": "28% (7/25)",
             "period": "match"
           },
           {
             "name": "Crosses",
             "key": "crosses",
-            "home": "40% (6/15)",
+            "home": "23% (3/13)",
             "away": "25% (1/4)",
             "period": "match"
           },
@@ -13786,22 +13803,22 @@
           {
             "name": "Tackles",
             "key": "tackles",
-            "home": "67% (2/3)",
-            "away": "43% (3/7)",
+            "home": "100% (3/3)",
+            "away": "38% (3/8)",
             "period": "match"
           },
           {
             "name": "Duels won",
             "key": "duels won",
-            "home": "32",
+            "home": "31",
             "away": "21",
             "period": "match"
           },
           {
             "name": "Clearances",
             "key": "clearances",
-            "home": "8",
-            "away": "9",
+            "home": "9",
+            "away": "10",
             "period": "match"
           },
           {
@@ -13840,7 +13857,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T20:34:41.818Z",
+        "updatedAt": "2026-09-27T21:26:56.972Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_rB3DoAi3",
@@ -13860,15 +13877,16 @@
         "home": {
           "id": "3",
           "name": "Granada CF",
-          "logo": "https://static.flashscore.com/res/image/data/SMiBGH8k-p6WBruc4.png",
+          "logo": "/teams/granada.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/SMiBGH8k-p6WBruc4.png",
           "logoFilename": "SMiBGH8k-p6WBruc4.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Andorra",
-          "logo": "https://r2.thesportsdb.com/images/media/team/badge/l5qspn1552847356.png",
+          "logo": "/teams/andorra.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -14890,7 +14908,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T20:34:42.518Z",
+        "updatedAt": "2026-09-27T21:26:59.282Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_UeabUzLc",
@@ -14910,15 +14928,16 @@
         "home": {
           "id": "1",
           "name": "Celta Vigo B",
-          "logo": "https://static.flashscore.com/res/image/data/vo9MFPBN-ChrYvuzD.png",
+          "logo": "/teams/celtavigob.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/vo9MFPBN-ChrYvuzD.png",
           "logoFilename": "vo9MFPBN-ChrYvuzD.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Sabadell",
-          "logo": "https://r2.thesportsdb.com/images/media/team/badge/21mapu1690094066.png",
+          "logo": "/teams/sabadell.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -15841,7 +15860,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T20:34:43.226Z",
+        "updatedAt": "2026-09-27T21:27:01.629Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_G4BRN6ad",
@@ -15861,15 +15880,16 @@
         "home": {
           "id": "1",
           "name": "Tenerife",
-          "logo": "https://static.flashscore.com/res/image/data/rPA6TR86-EPWyZtpb.png",
+          "logo": "/teams/tenerife.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/rPA6TR86-EPWyZtpb.png",
           "logoFilename": "rPA6TR86-EPWyZtpb.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Cadiz CF",
-          "logo": "https://r2.thesportsdb.com/images/media/team/badge/e2phzp1639408503.png",
+          "logo": "/teams/cadiz.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -16744,7 +16764,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T20:34:44.005Z",
+        "updatedAt": "2026-09-27T21:27:03.940Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_vs9QuuLs",
@@ -16764,15 +16784,16 @@
         "home": {
           "id": "0",
           "name": "Criciuma",
-          "logo": "https://static.flashscore.com/res/image/data/zyP05jWH-tOGtU4eT.png",
+          "logo": "/teams/criciuma.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/zyP05jWH-tOGtU4eT.png",
           "logoFilename": "zyP05jWH-tOGtU4eT.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Avai",
-          "logo": "https://r2.thesportsdb.com/images/media/team/badge/bblkat1766506007.png",
+          "logo": "/teams/avai.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -17686,7 +17707,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T20:34:45.420Z",
+        "updatedAt": "2026-09-27T21:27:08.560Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_4EN47Koo",
@@ -17699,22 +17720,23 @@
         "id": "fs-25DbT184",
         "date": "2026-09-27T19:00:00.000Z",
         "status": {
-          "short": "LIVE"
+          "short": "FT"
         }
       },
       "teams": {
         "home": {
           "id": "0",
           "name": "CRB",
-          "logo": "https://static.flashscore.com/res/image/data/UudlC76k-CWl52SGk.png",
+          "logo": "/teams/crb.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/UudlC76k-CWl52SGk.png",
           "logoFilename": "UudlC76k-CWl52SGk.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Cuiaba",
-          "logo": "https://r2.thesportsdb.com/images/media/team/badge/ykbxfa1766506334.png",
+          "logo": "/teams/cuiaba.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -17722,7 +17744,7 @@
         }
       },
       "goals": {
-        "home": 2,
+        "home": 3,
         "away": 0
       },
       "league": {
@@ -17923,56 +17945,121 @@
             "scoreHome": null,
             "scoreAway": null,
             "rawType": "1"
+          },
+          {
+            "id": "25DbT184-16",
+            "minute": "75'",
+            "type": "goal",
+            "team": null,
+            "player": "Crystopher Ribeiro",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "25DbT184-17",
+            "minute": "80'",
+            "type": "yellow",
+            "team": null,
+            "player": "Pedro H.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "25DbT184-18",
+            "minute": "81'",
+            "type": "goal",
+            "team": null,
+            "player": "Ygor Catatau",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "25DbT184-19",
+            "minute": "81'",
+            "type": "goal",
+            "team": null,
+            "player": "Lucas Lovat",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "25DbT184-20",
+            "minute": "88'",
+            "type": "goal",
+            "team": null,
+            "player": "Douglas Baggio",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
           }
         ],
         "statistics": [
           {
             "name": "Expected goals (xG)",
             "key": "expected goals (xg)",
-            "home": "1.02",
-            "away": "0.39",
+            "home": "2.56",
+            "away": "0.55",
             "period": "match"
           },
           {
             "name": "Ball possession",
             "key": "possession",
-            "home": "57%",
-            "away": "43%",
+            "home": "52%",
+            "away": "48%",
             "period": "match"
           },
           {
             "name": "Total shots",
             "key": "shots",
-            "home": "20",
-            "away": "7",
+            "home": "28",
+            "away": "13",
             "period": "match"
           },
           {
             "name": "Shots on target",
             "key": "shots_on_target",
-            "home": "8",
-            "away": "2",
+            "home": "10",
+            "away": "4",
             "period": "match"
           },
           {
             "name": "Big chances",
             "key": "big chances",
-            "home": "0",
+            "home": "3",
             "away": "0",
             "period": "match"
           },
           {
             "name": "Corner kicks",
             "key": "corners",
-            "home": "5",
-            "away": "3",
+            "home": "7",
+            "away": "7",
             "period": "match"
           },
           {
             "name": "Passes",
             "key": "passes",
-            "home": "87% (360/416)",
-            "away": "81% (250/310)",
+            "home": "86% (423/490)",
+            "away": "83% (366/441)",
             "period": "match"
           },
           {
@@ -17985,36 +18072,36 @@
           {
             "name": "xG on target (xGOT)",
             "key": "xg on target (xgot)",
-            "home": "0.74",
-            "away": "0.25",
+            "home": "1.57",
+            "away": "0.60",
             "period": "match"
           },
           {
             "name": "Shots off target",
-            "key": "shots",
-            "home": "7",
-            "away": "2",
-            "period": "match"
-          },
-          {
-            "name": "Blocked shots",
-            "key": "shots",
-            "home": "5",
-            "away": "3",
-            "period": "match"
-          },
-          {
-            "name": "Shots inside the box",
             "key": "shots",
             "home": "11",
             "away": "4",
             "period": "match"
           },
           {
+            "name": "Blocked shots",
+            "key": "shots",
+            "home": "7",
+            "away": "5",
+            "period": "match"
+          },
+          {
+            "name": "Shots inside the box",
+            "key": "shots",
+            "home": "16",
+            "away": "7",
+            "period": "match"
+          },
+          {
             "name": "Shots outside the box",
             "key": "shots",
-            "home": "9",
-            "away": "3",
+            "home": "12",
+            "away": "6",
             "period": "match"
           },
           {
@@ -18027,14 +18114,14 @@
           {
             "name": "Touches in opposition box",
             "key": "touches in opposition box",
-            "home": "22",
-            "away": "4",
+            "home": "28",
+            "away": "10",
             "period": "match"
           },
           {
             "name": "Accurate through passes",
             "key": "accurate through passes",
-            "home": "0",
+            "home": "2",
             "away": "0",
             "period": "match"
           },
@@ -18042,83 +18129,83 @@
             "name": "Offsides",
             "key": "offsides",
             "home": "0",
-            "away": "1",
+            "away": "2",
             "period": "match"
           },
           {
             "name": "Free kicks",
             "key": "free kicks",
             "home": "12",
-            "away": "6",
+            "away": "8",
             "period": "match"
           },
           {
             "name": "Long passes",
             "key": "long passes",
-            "home": "62% (23/37)",
-            "away": "56% (30/54)",
+            "home": "63% (27/43)",
+            "away": "58% (42/73)",
             "period": "match"
           },
           {
             "name": "Passes in final third",
             "key": "passes in final third",
-            "home": "69% (68/98)",
-            "away": "60% (44/73)",
+            "home": "73% (92/126)",
+            "away": "64% (72/113)",
             "period": "match"
           },
           {
             "name": "Crosses",
             "key": "crosses",
-            "home": "23% (3/13)",
-            "away": "8% (1/12)",
+            "home": "38% (6/16)",
+            "away": "18% (4/22)",
             "period": "match"
           },
           {
             "name": "Expected assists (xA)",
             "key": "expected assists (xa)",
-            "home": "1.08",
-            "away": "0.11",
+            "home": "2.09",
+            "away": "0.40",
             "period": "match"
           },
           {
             "name": "Throw ins",
             "key": "throw ins",
-            "home": "12",
-            "away": "17",
+            "home": "13",
+            "away": "24",
             "period": "match"
           },
           {
             "name": "Fouls",
             "key": "fouls",
-            "home": "6",
+            "home": "8",
             "away": "12",
             "period": "match"
           },
           {
             "name": "Tackles",
             "key": "tackles",
-            "home": "54% (7/13)",
+            "home": "60% (9/15)",
             "away": "82% (9/11)",
             "period": "match"
           },
           {
             "name": "Duels won",
             "key": "duels won",
-            "home": "39",
-            "away": "29",
+            "home": "45",
+            "away": "34",
             "period": "match"
           },
           {
             "name": "Clearances",
             "key": "clearances",
-            "home": "15",
-            "away": "16",
+            "home": "21",
+            "away": "17",
             "period": "match"
           },
           {
             "name": "Interceptions",
             "key": "interceptions",
-            "home": "7",
+            "home": "8",
             "away": "8",
             "period": "match"
           },
@@ -18139,29 +18226,29 @@
           {
             "name": "Goalkeeper saves",
             "key": "goalkeeper saves",
-            "home": "2",
-            "away": "6",
+            "home": "4",
+            "away": "7",
             "period": "match"
           },
           {
             "name": "xGOT faced",
             "key": "xgot faced",
-            "home": "0.25",
-            "away": "0.74",
+            "home": "0.60",
+            "away": "1.57",
             "period": "match"
           },
           {
             "name": "Goals prevented",
             "key": "goals prevented",
-            "home": "0.25",
-            "away": "-1.26",
+            "home": "0.60",
+            "away": "-1.43",
             "period": "match"
           },
           {
             "name": "Goal kicks",
             "key": "goal kicks",
-            "home": "4",
-            "away": "10",
+            "home": "6",
+            "away": "14",
             "period": "match"
           },
           {
@@ -18190,6 +18277,13 @@
             "key": "shots_on_target",
             "home": "6",
             "away": "1",
+            "period": "match"
+          },
+          {
+            "name": "Big chances",
+            "key": "big chances",
+            "home": "0",
+            "away": "0",
             "period": "match"
           },
           {
@@ -18253,6 +18347,20 @@
             "key": "touches in opposition box",
             "home": "14",
             "away": "3",
+            "period": "match"
+          },
+          {
+            "name": "Accurate through passes",
+            "key": "accurate through passes",
+            "home": "0",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Offsides",
+            "key": "offsides",
+            "home": "0",
+            "away": "1",
             "period": "match"
           },
           {
@@ -18363,43 +18471,43 @@
           {
             "name": "Expected goals (xG)",
             "key": "expected goals (xg)",
-            "home": "0.42",
-            "away": "0.19",
+            "home": "1.96",
+            "away": "0.35",
             "period": "match"
           },
           {
             "name": "Ball possession",
             "key": "possession",
-            "home": "37%",
-            "away": "63%",
+            "home": "36%",
+            "away": "64%",
             "period": "match"
           },
           {
             "name": "Total shots",
             "key": "shots",
-            "home": "7",
-            "away": "3",
+            "home": "15",
+            "away": "9",
             "period": "match"
           },
           {
             "name": "Shots on target",
             "key": "shots_on_target",
-            "home": "2",
-            "away": "1",
+            "home": "4",
+            "away": "3",
             "period": "match"
           },
           {
             "name": "Corner kicks",
             "key": "corners",
-            "home": "0",
-            "away": "2",
+            "home": "2",
+            "away": "6",
             "period": "match"
           },
           {
             "name": "Passes",
             "key": "passes",
-            "home": "83% (74/89)",
-            "away": "83% (121/145)",
+            "home": "84% (137/163)",
+            "away": "86% (237/276)",
             "period": "match"
           },
           {
@@ -18412,36 +18520,36 @@
           {
             "name": "xG on target (xGOT)",
             "key": "xg on target (xgot)",
-            "home": "0.35",
-            "away": "0.20",
+            "home": "1.18",
+            "away": "0.55",
             "period": "match"
           },
           {
             "name": "Shots off target",
             "key": "shots",
-            "home": "3",
-            "away": "1",
+            "home": "7",
+            "away": "3",
             "period": "match"
           },
           {
             "name": "Blocked shots",
             "key": "shots",
-            "home": "2",
-            "away": "1",
+            "home": "4",
+            "away": "3",
             "period": "match"
           },
           {
             "name": "Shots inside the box",
             "key": "shots",
-            "home": "4",
-            "away": "1",
+            "home": "9",
+            "away": "4",
             "period": "match"
           },
           {
             "name": "Shots outside the box",
             "key": "shots",
-            "home": "3",
-            "away": "2",
+            "home": "6",
+            "away": "5",
             "period": "match"
           },
           {
@@ -18454,124 +18562,103 @@
           {
             "name": "Touches in opposition box",
             "key": "touches in opposition box",
-            "home": "8",
-            "away": "1",
-            "period": "match"
-          },
-          {
-            "name": "Offsides",
-            "key": "offsides",
-            "home": "0",
-            "away": "0",
-            "period": "match"
-          },
-          {
-            "name": "Free kicks",
-            "key": "free kicks",
-            "home": "6",
-            "away": "2",
+            "home": "14",
+            "away": "7",
             "period": "match"
           },
           {
             "name": "Long passes",
             "key": "long passes",
-            "home": "27% (3/11)",
-            "away": "63% (12/19)",
+            "home": "41% (7/17)",
+            "away": "63% (24/38)",
             "period": "match"
           },
           {
             "name": "Passes in final third",
             "key": "passes in final third",
-            "home": "68% (15/22)",
-            "away": "76% (32/42)",
+            "home": "78% (39/50)",
+            "away": "73% (60/82)",
             "period": "match"
           },
           {
             "name": "Crosses",
             "key": "crosses",
-            "home": "50% (1/2)",
-            "away": "17% (1/6)",
+            "home": "80% (4/5)",
+            "away": "25% (4/16)",
             "period": "match"
           },
           {
             "name": "Expected assists (xA)",
             "key": "expected assists (xa)",
-            "home": "0.42",
-            "away": "0.06",
+            "home": "1.43",
+            "away": "0.35",
             "period": "match"
           },
           {
             "name": "Throw ins",
             "key": "throw ins",
-            "home": "4",
-            "away": "10",
-            "period": "match"
-          },
-          {
-            "name": "Fouls",
-            "key": "fouls",
-            "home": "2",
-            "away": "6",
+            "home": "5",
+            "away": "17",
             "period": "match"
           },
           {
             "name": "Tackles",
             "key": "tackles",
-            "home": "57% (4/7)",
+            "home": "67% (6/9)",
             "away": "100% (1/1)",
             "period": "match"
           },
           {
             "name": "Duels won",
             "key": "duels won",
-            "home": "17",
-            "away": "9",
+            "home": "23",
+            "away": "14",
             "period": "match"
           },
           {
             "name": "Clearances",
             "key": "clearances",
-            "home": "6",
-            "away": "3",
+            "home": "12",
+            "away": "4",
             "period": "match"
           },
           {
             "name": "Interceptions",
             "key": "interceptions",
-            "home": "5",
+            "home": "6",
             "away": "1",
             "period": "match"
           },
           {
             "name": "Goalkeeper saves",
             "key": "goalkeeper saves",
-            "home": "1",
-            "away": "1",
+            "home": "3",
+            "away": "2",
             "period": "match"
           },
           {
             "name": "xGOT faced",
             "key": "xgot faced",
-            "home": "0.20",
-            "away": "0.35",
+            "home": "0.55",
+            "away": "1.18",
             "period": "match"
           },
           {
             "name": "Goals prevented",
             "key": "goals prevented",
-            "home": "0.20",
-            "away": "-0.65",
+            "home": "0.55",
+            "away": "-0.82",
             "period": "match"
           },
           {
             "name": "Goal kicks",
             "key": "goal kicks",
-            "home": "3",
-            "away": "5",
+            "home": "5",
+            "away": "9",
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T20:34:46.121Z",
+        "updatedAt": "2026-09-27T21:27:10.871Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_25DbT184",
@@ -18591,15 +18678,16 @@
         "home": {
           "id": null,
           "name": "Fortaleza",
-          "logo": "https://static.flashscore.com/res/image/data/WWeFYMPq-AmIcMWyl.png",
+          "logo": "/teams/fortaleza.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/WWeFYMPq-AmIcMWyl.png",
           "logoFilename": "WWeFYMPq-AmIcMWyl.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Athletic Club",
-          "logo": "https://r2.thesportsdb.com/images/media/team/badge/myl7c31677056352.png",
+          "logo": "/teams/athletic.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -18648,15 +18736,16 @@
         "home": {
           "id": "1",
           "name": "Cucuta",
-          "logo": "https://static.flashscore.com/res/image/data/dtGebzCN-hjn5AE5Q.png",
+          "logo": "/teams/cucuta.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/dtGebzCN-hjn5AE5Q.png",
           "logoFilename": "dtGebzCN-hjn5AE5Q.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Llaneros",
-          "logo": "https://r2.thesportsdb.com/images/media/team/badge/q1w56m1615832197.png",
+          "logo": "/teams/llaneros.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -19624,7 +19713,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T20:34:47.520Z",
+        "updatedAt": "2026-09-27T21:27:15.494Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_tQL8vEml",
@@ -19644,15 +19733,16 @@
         "home": {
           "id": "0",
           "name": "Junior",
-          "logo": "https://static.flashscore.com/res/image/data/CxEu5jjC-WvCEcmg7.png",
+          "logo": "/teams/junior.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/CxEu5jjC-WvCEcmg7.png",
           "logoFilename": "CxEu5jjC-WvCEcmg7.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Ind. Medellin",
-          "logo": "https://r2.thesportsdb.com/images/media/team/badge/mzezh31783226830.png",
+          "logo": "/teams/indmedellin.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -20608,7 +20698,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T20:34:48.221Z",
+        "updatedAt": "2026-09-27T21:27:17.805Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_vN2dkV16",
@@ -20621,22 +20711,23 @@
         "id": "fs-S0AAbZvK",
         "date": "2026-09-27T21:00:00.000Z",
         "status": {
-          "short": "NS"
+          "short": "LIVE"
         }
       },
       "teams": {
         "home": {
-          "id": null,
+          "id": "0",
           "name": "Jaguares de Cordoba",
-          "logo": "https://static.flashscore.com/res/image/data/0Cg5eagT-jqTIQW5H.png",
+          "logo": "/teams/jaguaresdecordoba.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/0Cg5eagT-jqTIQW5H.png",
           "logoFilename": "0Cg5eagT-jqTIQW5H.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Alianza",
-          "logo": "https://r2.thesportsdb.com/images/media/team/badge/4qhii21589297781.png",
+          "logo": "/teams/alianza.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -20644,8 +20735,8 @@
         }
       },
       "goals": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 0
       },
       "league": {
         "id": "flashscore-colombia-primera-a",
@@ -20663,13 +20754,259 @@
       "sourceUrl": "https://www.flashscore.com/match/S0AAbZvK/",
       "sourcePath": "/football/colombia/primera-a/",
       "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
+        "events": [
+          {
+            "id": "S0AAbZvK-1",
+            "minute": "15'",
+            "type": "goal",
+            "team": null,
+            "player": "Beltran J.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          }
+        ],
+        "statistics": [
+          {
+            "name": "Expected goals (xG)",
+            "key": "expected goals (xg)",
+            "home": "0.38",
+            "away": "0.17",
+            "period": "match"
+          },
+          {
+            "name": "Ball possession",
+            "key": "possession",
+            "home": "54%",
+            "away": "46%",
+            "period": "match"
+          },
+          {
+            "name": "Total shots",
+            "key": "shots",
+            "home": "3",
+            "away": "3",
+            "period": "match"
+          },
+          {
+            "name": "Shots on target",
+            "key": "shots_on_target",
+            "home": "2",
+            "away": "3",
+            "period": "match"
+          },
+          {
+            "name": "Big chances",
+            "key": "big chances",
+            "home": "1",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Corner kicks",
+            "key": "corners",
+            "home": "0",
+            "away": "1",
+            "period": "match"
+          },
+          {
+            "name": "Passes",
+            "key": "passes",
+            "home": "85% (116/137)",
+            "away": "83% (101/122)",
+            "period": "match"
+          },
+          {
+            "name": "xG on target (xGOT)",
+            "key": "xg on target (xgot)",
+            "home": "0.75",
+            "away": "0.11",
+            "period": "match"
+          },
+          {
+            "name": "Shots off target",
+            "key": "shots",
+            "home": "1",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Blocked shots",
+            "key": "shots",
+            "home": "0",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Shots inside the box",
+            "key": "shots",
+            "home": "1",
+            "away": "2",
+            "period": "match"
+          },
+          {
+            "name": "Shots outside the box",
+            "key": "shots",
+            "home": "2",
+            "away": "1",
+            "period": "match"
+          },
+          {
+            "name": "Hit the woodwork",
+            "key": "hit the woodwork",
+            "home": "0",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Touches in opposition box",
+            "key": "touches in opposition box",
+            "home": "5",
+            "away": "3",
+            "period": "match"
+          },
+          {
+            "name": "Accurate through passes",
+            "key": "accurate through passes",
+            "home": "0",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Offsides",
+            "key": "offsides",
+            "home": "1",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Free kicks",
+            "key": "free kicks",
+            "home": "3",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Long passes",
+            "key": "long passes",
+            "home": "56% (9/16)",
+            "away": "44% (7/16)",
+            "period": "match"
+          },
+          {
+            "name": "Passes in final third",
+            "key": "passes in final third",
+            "home": "78% (35/45)",
+            "away": "71% (17/24)",
+            "period": "match"
+          },
+          {
+            "name": "Crosses",
+            "key": "crosses",
+            "home": "0% (0/6)",
+            "away": "50% (1/2)",
+            "period": "match"
+          },
+          {
+            "name": "Expected assists (xA)",
+            "key": "expected assists (xa)",
+            "home": "0.42",
+            "away": "0.09",
+            "period": "match"
+          },
+          {
+            "name": "Throw ins",
+            "key": "throw ins",
+            "home": "3",
+            "away": "2",
+            "period": "match"
+          },
+          {
+            "name": "Fouls",
+            "key": "fouls",
+            "home": "0",
+            "away": "3",
+            "period": "match"
+          },
+          {
+            "name": "Tackles",
+            "key": "tackles",
+            "home": "100% (5/5)",
+            "away": "100% (4/4)",
+            "period": "match"
+          },
+          {
+            "name": "Duels won",
+            "key": "duels won",
+            "home": "13",
+            "away": "7",
+            "period": "match"
+          },
+          {
+            "name": "Clearances",
+            "key": "clearances",
+            "home": "1",
+            "away": "6",
+            "period": "match"
+          },
+          {
+            "name": "Interceptions",
+            "key": "interceptions",
+            "home": "2",
+            "away": "2",
+            "period": "match"
+          },
+          {
+            "name": "Errors leading to shot",
+            "key": "errors leading to shot",
+            "home": "0",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Errors leading to goal",
+            "key": "errors leading to goal",
+            "home": "0",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Goalkeeper saves",
+            "key": "goalkeeper saves",
+            "home": "3",
+            "away": "1",
+            "period": "match"
+          },
+          {
+            "name": "xGOT faced",
+            "key": "xgot faced",
+            "home": "0.11",
+            "away": "0.75",
+            "period": "match"
+          },
+          {
+            "name": "Goals prevented",
+            "key": "goals prevented",
+            "home": "0.11",
+            "away": "-0.25",
+            "period": "match"
+          },
+          {
+            "name": "Goal kicks",
+            "key": "goal kicks",
+            "home": "2",
+            "away": "2",
+            "period": "match"
+          }
+        ],
+        "updatedAt": "2026-09-27T21:28:27.156Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
-          "events": null,
-          "statistics": null
+          "events": "df_sui_1_S0AAbZvK",
+          "statistics": "df_st_1_S0AAbZvK"
         }
       }
     },
@@ -20685,15 +21022,16 @@
         "home": {
           "id": "3",
           "name": "Cruz Azul",
-          "logo": "https://static.flashscore.com/res/image/data/KAF9lqRq-0pHVJYjM.png",
+          "logo": "/teams/cruzazul.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/KAF9lqRq-0pHVJYjM.png",
           "logoFilename": "KAF9lqRq-0pHVJYjM.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Toluca",
-          "logo": "https://r2.thesportsdb.com/images/media/team/badge/y64wy91523913186.png",
+          "logo": "/teams/toluca.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -21669,7 +22007,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T20:34:48.919Z",
+        "updatedAt": "2026-09-27T21:27:22.426Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_vydsqqcC",
@@ -21689,15 +22027,16 @@
         "home": {
           "id": "2",
           "name": "Guadalajara Chivas",
-          "logo": "https://static.flashscore.com/res/image/data/n9R8QrCN-0rbG5js3.png",
+          "logo": "/teams/guadalajarachivas.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/n9R8QrCN-0rbG5js3.png",
           "logoFilename": "n9R8QrCN-0rbG5js3.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Queretaro",
-          "logo": "https://r2.thesportsdb.com/images/media/team/badge/024n481781543211.png",
+          "logo": "/teams/queretaro.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -22575,7 +22914,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T20:34:49.620Z",
+        "updatedAt": "2026-09-27T21:27:24.736Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_SE3ehmzQ",
@@ -22595,15 +22934,16 @@
         "home": {
           "id": "0",
           "name": "Santos Laguna",
-          "logo": "https://static.flashscore.com/res/image/data/UcvERb5k-zFZbB1JF.png",
+          "logo": "/teams/santoslaguna.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/UcvERb5k-zFZbB1JF.png",
           "logoFilename": "UcvERb5k-zFZbB1JF.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Pachuca",
-          "logo": "https://r2.thesportsdb.com/images/media/team/badge/k9duyw1747334895.png",
+          "logo": "/teams/pachuca.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -23500,7 +23840,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T20:34:50.320Z",
+        "updatedAt": "2026-09-27T21:27:27.046Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_bcfRnRcm",
@@ -23520,15 +23860,16 @@
         "home": {
           "id": "0",
           "name": "Tigres UANL",
-          "logo": "https://static.flashscore.com/res/image/data/dlj3qbQq-W6vdbCVa.png",
+          "logo": "/teams/tigresuanl.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/dlj3qbQq-W6vdbCVa.png",
           "logoFilename": "dlj3qbQq-W6vdbCVa.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Puebla",
-          "logo": "https://r2.thesportsdb.com/images/media/team/badge/h0jgg51593451845.png",
+          "logo": "/teams/puebla.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -24352,7 +24693,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T20:34:51.044Z",
+        "updatedAt": "2026-09-27T21:27:29.381Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_WAhZp5Sa",
@@ -24372,15 +24713,16 @@
         "home": {
           "id": "3",
           "name": "UNAM Pumas",
-          "logo": "https://static.flashscore.com/res/image/data/YD3Bg1Qq-dG08RUsN.png",
+          "logo": "/teams/unampumas.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/YD3Bg1Qq-dG08RUsN.png",
           "logoFilename": "YD3Bg1Qq-dG08RUsN.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Atl. San Luis",
-          "logo": "https://r2.thesportsdb.com/images/media/team/badge/9kgjme1593448412.png",
+          "logo": "/teams/atlsanluis.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -25298,7 +25640,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T20:34:51.767Z",
+        "updatedAt": "2026-09-27T21:27:31.692Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_WrElsNRO",
@@ -25318,15 +25660,16 @@
         "home": {
           "id": "0",
           "name": "Moghreb Tetouan",
-          "logo": "https://static.flashscore.com/res/image/data/0zS1aRRq-xExOnmQQ.png",
+          "logo": "/teams/moghrebtetouan.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/0zS1aRRq-xExOnmQQ.png",
           "logoFilename": "0zS1aRRq-xExOnmQQ.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Berkane",
-          "logo": null,
+          "logo": "/teams/berkane.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -25631,7 +25974,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T20:34:53.186Z",
+        "updatedAt": "2026-09-27T21:27:36.316Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_nLBqJSRq",
@@ -25651,15 +25994,16 @@
         "home": {
           "id": "1",
           "name": "Maghreb Fez",
-          "logo": "https://static.flashscore.com/res/image/data/pGJqy86k-63LcsWgs.png",
+          "logo": "/teams/maghrebfez.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/pGJqy86k-63LcsWgs.png",
           "logoFilename": "pGJqy86k-63LcsWgs.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Renaissance Zemamra",
-          "logo": null,
+          "logo": "/teams/renaissancezemamra.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -26017,7 +26361,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T20:34:53.890Z",
+        "updatedAt": "2026-09-27T21:27:38.628Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_W81WOcb5",
@@ -26037,15 +26381,16 @@
         "home": {
           "id": "1",
           "name": "Kawkab Marrakech",
-          "logo": "https://static.flashscore.com/res/image/data/p0XoC4Rq-63LcsWgs.png",
+          "logo": "/teams/kawkabmarrakech.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/p0XoC4Rq-63LcsWgs.png",
           "logoFilename": "p0XoC4Rq-63LcsWgs.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Hassania Agadir",
-          "logo": null,
+          "logo": "/teams/hassaniaagadir.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -26053,7 +26398,7 @@
         }
       },
       "goals": {
-        "home": 0,
+        "home": 1,
         "away": 1
       },
       "league": {
@@ -26078,7 +26423,7 @@
             "minute": "3'",
             "type": "yellow",
             "team": null,
-            "player": "Moumadi H.",
+            "player": "Riahi I.",
             "assist": null,
             "playerIn": null,
             "playerOut": null,
@@ -26101,10 +26446,36 @@
           },
           {
             "id": "GYlCyyrB-3",
-            "minute": "34'",
+            "minute": "33'",
             "type": "goal",
             "team": null,
-            "player": null,
+            "player": "Essallami S.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "GYlCyyrB-5",
+            "minute": "62'",
+            "type": "goal",
+            "team": null,
+            "player": "Rafa H.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "GYlCyyrB-6",
+            "minute": "63'",
+            "type": "goal",
+            "team": null,
+            "player": "Essallami S.",
             "assist": null,
             "playerIn": null,
             "playerOut": null,
@@ -26117,40 +26488,110 @@
           {
             "name": "Ball possession",
             "key": "possession",
-            "home": "55%",
-            "away": "45%",
+            "home": "49%",
+            "away": "51%",
             "period": "match"
           },
           {
             "name": "Total shots",
             "key": "shots",
-            "home": "6",
-            "away": "3",
+            "home": "13",
+            "away": "5",
             "period": "match"
           },
           {
             "name": "Shots on target",
             "key": "shots_on_target",
-            "home": "3",
+            "home": "6",
             "away": "2",
             "period": "match"
           },
           {
             "name": "Corner kicks",
             "key": "corners",
-            "home": "1",
-            "away": "0",
+            "home": "4",
+            "away": "3",
             "period": "match"
           },
           {
             "name": "Shots off target",
             "key": "shots",
-            "home": "3",
+            "home": "7",
+            "away": "3",
+            "period": "match"
+          },
+          {
+            "name": "Ball possession",
+            "key": "possession",
+            "home": "50%",
+            "away": "50%",
+            "period": "match"
+          },
+          {
+            "name": "Total shots",
+            "key": "shots",
+            "home": "9",
+            "away": "4",
+            "period": "match"
+          },
+          {
+            "name": "Shots on target",
+            "key": "shots_on_target",
+            "home": "4",
+            "away": "2",
+            "period": "match"
+          },
+          {
+            "name": "Corner kicks",
+            "key": "corners",
+            "home": "2",
+            "away": "1",
+            "period": "match"
+          },
+          {
+            "name": "Shots off target",
+            "key": "shots",
+            "home": "5",
+            "away": "2",
+            "period": "match"
+          },
+          {
+            "name": "Ball possession",
+            "key": "possession",
+            "home": "46%",
+            "away": "54%",
+            "period": "match"
+          },
+          {
+            "name": "Total shots",
+            "key": "shots",
+            "home": "4",
+            "away": "1",
+            "period": "match"
+          },
+          {
+            "name": "Shots on target",
+            "key": "shots_on_target",
+            "home": "2",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Corner kicks",
+            "key": "corners",
+            "home": "2",
+            "away": "2",
+            "period": "match"
+          },
+          {
+            "name": "Shots off target",
+            "key": "shots",
+            "home": "2",
             "away": "1",
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T20:35:08.881Z",
+        "updatedAt": "2026-09-27T21:28:29.467Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_GYlCyyrB",
@@ -26170,15 +26611,16 @@
         "home": {
           "id": "0",
           "name": "Gangwon",
-          "logo": "https://static.flashscore.com/res/image/data/A36AKtA6-U904kONG.png",
+          "logo": "/teams/gangwon.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/A36AKtA6-U904kONG.png",
           "logoFilename": "A36AKtA6-U904kONG.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Incheon",
-          "logo": null,
+          "logo": "/teams/incheon.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -26582,7 +27024,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T20:34:55.340Z",
+        "updatedAt": "2026-09-27T21:27:43.252Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_08COfwKq",
@@ -26602,15 +27044,16 @@
         "home": {
           "id": "1",
           "name": "Valladolid",
-          "logo": "https://static.flashscore.com/res/image/data/fTto7LkC-4YF9PAyB.png",
+          "logo": "/teams/valladolid.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/fTto7LkC-4YF9PAyB.png",
           "logoFilename": "fTto7LkC-4YF9PAyB.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Cordoba",
-          "logo": null,
+          "logo": "/teams/cordoba.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -27593,7 +28036,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T20:34:56.086Z",
+        "updatedAt": "2026-09-27T21:27:45.562Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_WlRXwJkf",
@@ -27613,15 +28056,16 @@
         "home": {
           "id": "1",
           "name": "Mallorca",
-          "logo": "https://static.flashscore.com/res/image/data/Eeg4cBjC-nDyT2xMM.png",
+          "logo": "/teams/mallorca.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/Eeg4cBjC-nDyT2xMM.png",
           "logoFilename": "Eeg4cBjC-nDyT2xMM.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Almeria",
-          "logo": null,
+          "logo": "/teams/almeria.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -28572,7 +29016,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T20:34:56.824Z",
+        "updatedAt": "2026-09-27T21:27:47.873Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_G4V8Nc5D",
@@ -28592,15 +29036,16 @@
         "home": {
           "id": "0",
           "name": "Burgos CF",
-          "logo": "https://static.flashscore.com/res/image/data/jPhpmDU0-IoNgvMPR.png",
+          "logo": "/teams/burgos.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/jPhpmDU0-IoNgvMPR.png",
           "logoFilename": "jPhpmDU0-IoNgvMPR.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Eldense",
-          "logo": null,
+          "logo": "/teams/eldense.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -29483,7 +29928,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T20:34:57.536Z",
+        "updatedAt": "2026-09-27T21:27:50.183Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_riDJPSUq",
@@ -29503,15 +29948,16 @@
         "home": {
           "id": "2",
           "name": "Eibar",
-          "logo": "https://static.flashscore.com/res/image/data/n3rngiU0-d6gaf9ua.png",
+          "logo": "/teams/eibar.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/n3rngiU0-d6gaf9ua.png",
           "logoFilename": "n3rngiU0-d6gaf9ua.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Las Palmas",
-          "logo": null,
+          "logo": "/teams/laspalmas.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -30501,7 +30947,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T20:34:58.239Z",
+        "updatedAt": "2026-09-27T21:27:52.494Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_jy7LqlMF",
@@ -30514,22 +30960,23 @@
         "id": "fs-8bIfo1cK",
         "date": "2026-09-27T19:00:00.000Z",
         "status": {
-          "short": "LIVE"
+          "short": "FT"
         }
       },
       "teams": {
         "home": {
           "id": "0",
           "name": "Oviedo",
-          "logo": "https://static.flashscore.com/res/image/data/ziVpaDjC-IDZgZhUt.png",
+          "logo": "/teams/oviedo.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/ziVpaDjC-IDZgZhUt.png",
           "logoFilename": "ziVpaDjC-IDZgZhUt.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Gijon",
-          "logo": null,
+          "logo": "/teams/gijon.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -30537,7 +30984,7 @@
         }
       },
       "goals": {
-        "home": 1,
+        "home": 2,
         "away": 0
       },
       "league": {
@@ -30699,41 +31146,210 @@
             "scoreHome": null,
             "scoreAway": null,
             "rawType": "2"
+          },
+          {
+            "id": "8bIfo1cK-13",
+            "minute": "71'",
+            "type": "goal",
+            "team": null,
+            "player": "Mingo V.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "8bIfo1cK-14",
+            "minute": "71'",
+            "type": "goal",
+            "team": null,
+            "player": "Aldasoro A.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "8bIfo1cK-15",
+            "minute": "73'",
+            "type": "yellow",
+            "team": null,
+            "player": "Loum M.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "8bIfo1cK-16",
+            "minute": "73'",
+            "type": "yellow",
+            "team": null,
+            "player": "Martinez I.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "8bIfo1cK-17",
+            "minute": "74'",
+            "type": "goal",
+            "team": null,
+            "player": "Calvo D.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": "22",
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "8bIfo1cK-18",
+            "minute": "74'",
+            "type": "yellow",
+            "team": null,
+            "player": "Dunabeitia A.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": "22",
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "8bIfo1cK-19",
+            "minute": "76'",
+            "type": "yellow",
+            "team": null,
+            "player": "Gelabert Pina C.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": "66",
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "8bIfo1cK-20",
+            "minute": "76'",
+            "type": "yellow",
+            "team": null,
+            "player": "Yanez R.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": "22",
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "8bIfo1cK-21",
+            "minute": "77'",
+            "type": "goal",
+            "team": null,
+            "player": "Ahmed A.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "8bIfo1cK-22",
+            "minute": "77'",
+            "type": "goal",
+            "team": null,
+            "player": "Perez E.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "8bIfo1cK-23",
+            "minute": "82'",
+            "type": "goal",
+            "team": null,
+            "player": "Mingo V.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "8bIfo1cK-24",
+            "minute": "90'",
+            "type": "yellow",
+            "team": null,
+            "player": "Cuenca A.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": "67",
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "8bIfo1cK-25",
+            "minute": "90'",
+            "type": "goal",
+            "team": null,
+            "player": "Ahmed A.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": "67",
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
           }
         ],
         "statistics": [
           {
             "name": "Expected goals (xG)",
             "key": "expected goals (xg)",
-            "home": "1.21",
-            "away": "0.55",
+            "home": "1.80",
+            "away": "0.58",
             "period": "match"
           },
           {
             "name": "Ball possession",
             "key": "possession",
-            "home": "46%",
-            "away": "54%",
+            "home": "48%",
+            "away": "52%",
             "period": "match"
           },
           {
             "name": "Total shots",
             "key": "shots",
-            "home": "11",
-            "away": "10",
+            "home": "16",
+            "away": "11",
             "period": "match"
           },
           {
             "name": "Shots on target",
             "key": "shots_on_target",
-            "home": "4",
+            "home": "6",
             "away": "3",
             "period": "match"
           },
           {
             "name": "Big chances",
             "key": "big chances",
-            "home": "1",
+            "home": "3",
             "away": "0",
             "period": "match"
           },
@@ -30741,69 +31357,76 @@
             "name": "Corner kicks",
             "key": "corners",
             "home": "5",
-            "away": "2",
+            "away": "4",
             "period": "match"
           },
           {
             "name": "Passes",
             "key": "passes",
-            "home": "78% (200/258)",
-            "away": "84% (257/307)",
+            "home": "78% (292/374)",
+            "away": "82% (328/401)",
             "period": "match"
           },
           {
             "name": "Yellow cards",
             "key": "yellow cards",
-            "home": "2",
-            "away": "3",
+            "home": "4",
+            "away": "6",
+            "period": "match"
+          },
+          {
+            "name": "Red cards",
+            "key": "red cards",
+            "home": "0",
+            "away": "1",
             "period": "match"
           },
           {
             "name": "xG on target (xGOT)",
             "key": "xg on target (xgot)",
-            "home": "0.64",
+            "home": "0.97",
             "away": "0.21",
             "period": "match"
           },
           {
             "name": "Shots off target",
             "key": "shots",
-            "home": "3",
-            "away": "2",
+            "home": "4",
+            "away": "3",
             "period": "match"
           },
           {
             "name": "Blocked shots",
             "key": "shots",
-            "home": "4",
+            "home": "6",
             "away": "5",
             "period": "match"
           },
           {
             "name": "Shots inside the box",
             "key": "shots",
-            "home": "5",
+            "home": "8",
             "away": "6",
             "period": "match"
           },
           {
             "name": "Shots outside the box",
             "key": "shots",
-            "home": "6",
-            "away": "4",
+            "home": "8",
+            "away": "5",
             "period": "match"
           },
           {
             "name": "Hit the woodwork",
             "key": "hit the woodwork",
-            "home": "0",
+            "home": "1",
             "away": "0",
             "period": "match"
           },
           {
             "name": "Touches in opposition box",
             "key": "touches in opposition box",
-            "home": "13",
+            "home": "20",
             "away": "14",
             "period": "match"
           },
@@ -30824,78 +31447,78 @@
           {
             "name": "Free kicks",
             "key": "free kicks",
-            "home": "12",
-            "away": "4",
+            "home": "19",
+            "away": "7",
             "period": "match"
           },
           {
             "name": "Long passes",
             "key": "long passes",
-            "home": "47% (20/43)",
-            "away": "56% (22/39)",
+            "home": "37% (22/60)",
+            "away": "47% (25/53)",
             "period": "match"
           },
           {
             "name": "Passes in final third",
             "key": "passes in final third",
-            "home": "56% (40/71)",
-            "away": "67% (39/58)",
+            "home": "58% (60/104)",
+            "away": "64% (47/74)",
             "period": "match"
           },
           {
             "name": "Crosses",
             "key": "crosses",
-            "home": "29% (5/17)",
-            "away": "42% (5/12)",
+            "home": "33% (7/21)",
+            "away": "31% (5/16)",
             "period": "match"
           },
           {
             "name": "Expected assists (xA)",
             "key": "expected assists (xa)",
-            "home": "0.62",
-            "away": "0.36",
+            "home": "1.28",
+            "away": "0.37",
             "period": "match"
           },
           {
             "name": "Throw ins",
             "key": "throw ins",
-            "home": "21",
-            "away": "19",
+            "home": "27",
+            "away": "25",
             "period": "match"
           },
           {
             "name": "Fouls",
             "key": "fouls",
-            "home": "4",
-            "away": "12",
+            "home": "7",
+            "away": "19",
             "period": "match"
           },
           {
             "name": "Tackles",
             "key": "tackles",
-            "home": "75% (12/16)",
-            "away": "71% (10/14)",
+            "home": "67% (18/27)",
+            "away": "73% (11/15)",
             "period": "match"
           },
           {
             "name": "Duels won",
             "key": "duels won",
-            "home": "42",
-            "away": "40",
+            "home": "62",
+            "away": "54",
             "period": "match"
           },
           {
             "name": "Clearances",
             "key": "clearances",
-            "home": "25",
-            "away": "14",
+            "home": "33",
+            "away": "15",
             "period": "match"
           },
           {
             "name": "Interceptions",
             "key": "interceptions",
-            "home": "3",
-            "away": "4",
+            "home": "7",
+            "away": "10",
             "period": "match"
           },
           {
@@ -30916,28 +31539,28 @@
             "name": "Goalkeeper saves",
             "key": "goalkeeper saves",
             "home": "3",
-            "away": "3",
+            "away": "4",
             "period": "match"
           },
           {
             "name": "xGOT faced",
             "key": "xgot faced",
             "home": "0.21",
-            "away": "0.64",
+            "away": "0.97",
             "period": "match"
           },
           {
             "name": "Goals prevented",
             "key": "goals prevented",
             "home": "0.21",
-            "away": "-0.36",
+            "away": "-1.03",
             "period": "match"
           },
           {
             "name": "Goal kicks",
             "key": "goal kicks",
-            "home": "2",
-            "away": "7",
+            "home": "4",
+            "away": "8",
             "period": "match"
           },
           {
@@ -30945,13 +31568,6 @@
             "key": "expected goals (xg)",
             "home": "1.17",
             "away": "0.27",
-            "period": "match"
-          },
-          {
-            "name": "Ball possession",
-            "key": "possession",
-            "home": "48%",
-            "away": "52%",
             "period": "match"
           },
           {
@@ -30966,6 +31582,13 @@
             "key": "shots_on_target",
             "home": "3",
             "away": "1",
+            "period": "match"
+          },
+          {
+            "name": "Big chances",
+            "key": "big chances",
+            "home": "1",
+            "away": "0",
             "period": "match"
           },
           {
@@ -31025,6 +31648,13 @@
             "period": "match"
           },
           {
+            "name": "Hit the woodwork",
+            "key": "hit the woodwork",
+            "home": "0",
+            "away": "0",
+            "period": "match"
+          },
+          {
             "name": "Touches in opposition box",
             "key": "touches in opposition box",
             "home": "11",
@@ -31042,7 +31672,7 @@
             "name": "Long passes",
             "key": "long passes",
             "home": "42% (13/31)",
-            "away": "52% (14/27)",
+            "away": "50% (13/26)",
             "period": "match"
           },
           {
@@ -31091,7 +31721,7 @@
             "name": "Duels won",
             "key": "duels won",
             "home": "24",
-            "away": "28",
+            "away": "29",
             "period": "match"
           },
           {
@@ -31139,35 +31769,28 @@
           {
             "name": "Expected goals (xG)",
             "key": "expected goals (xg)",
-            "home": "0.04",
-            "away": "0.28",
-            "period": "match"
-          },
-          {
-            "name": "Ball possession",
-            "key": "possession",
-            "home": "42%",
-            "away": "58%",
+            "home": "0.63",
+            "away": "0.31",
             "period": "match"
           },
           {
             "name": "Total shots",
             "key": "shots",
-            "home": "2",
-            "away": "4",
+            "home": "7",
+            "away": "5",
             "period": "match"
           },
           {
             "name": "Shots on target",
             "key": "shots_on_target",
-            "home": "1",
+            "home": "3",
             "away": "2",
             "period": "match"
           },
           {
             "name": "Big chances",
             "key": "big chances",
-            "home": "0",
+            "home": "2",
             "away": "0",
             "period": "match"
           },
@@ -31175,62 +31798,62 @@
             "name": "Corner kicks",
             "key": "corners",
             "home": "1",
-            "away": "1",
+            "away": "3",
             "period": "match"
           },
           {
             "name": "Passes",
             "key": "passes",
-            "home": "81% (67/83)",
-            "away": "84% (98/116)",
+            "home": "80% (159/199)",
+            "away": "80% (169/210)",
             "period": "match"
           },
           {
             "name": "Yellow cards",
             "key": "yellow cards",
-            "home": "1",
-            "away": "1",
+            "home": "3",
+            "away": "4",
             "period": "match"
           },
           {
             "name": "xG on target (xGOT)",
             "key": "xg on target (xgot)",
-            "home": "0.03",
+            "home": "0.36",
             "away": "0.16",
             "period": "match"
           },
           {
             "name": "Shots off target",
             "key": "shots",
-            "home": "1",
-            "away": "1",
+            "home": "2",
+            "away": "2",
             "period": "match"
           },
           {
             "name": "Blocked shots",
             "key": "shots",
-            "home": "0",
+            "home": "2",
             "away": "1",
             "period": "match"
           },
           {
             "name": "Shots inside the box",
             "key": "shots",
-            "home": "0",
+            "home": "3",
             "away": "2",
             "period": "match"
           },
           {
             "name": "Shots outside the box",
             "key": "shots",
-            "home": "2",
-            "away": "2",
+            "home": "4",
+            "away": "3",
             "period": "match"
           },
           {
             "name": "Touches in opposition box",
             "key": "touches in opposition box",
-            "home": "2",
+            "home": "9",
             "away": "5",
             "period": "match"
           },
@@ -31251,78 +31874,78 @@
           {
             "name": "Free kicks",
             "key": "free kicks",
-            "home": "7",
-            "away": "2",
+            "home": "14",
+            "away": "5",
             "period": "match"
           },
           {
             "name": "Long passes",
             "key": "long passes",
-            "home": "58% (7/12)",
-            "away": "67% (8/12)",
+            "home": "31% (9/29)",
+            "away": "44% (12/27)",
             "period": "match"
           },
           {
             "name": "Passes in final third",
             "key": "passes in final third",
-            "home": "64% (14/22)",
-            "away": "75% (18/24)",
+            "home": "62% (34/55)",
+            "away": "65% (26/40)",
             "period": "match"
           },
           {
             "name": "Crosses",
             "key": "crosses",
-            "home": "40% (2/5)",
-            "away": "50% (3/6)",
+            "home": "44% (4/9)",
+            "away": "30% (3/10)",
             "period": "match"
           },
           {
             "name": "Expected assists (xA)",
             "key": "expected assists (xa)",
-            "home": "0.08",
-            "away": "0.17",
+            "home": "0.74",
+            "away": "0.18",
             "period": "match"
           },
           {
             "name": "Throw ins",
             "key": "throw ins",
-            "home": "10",
-            "away": "7",
+            "home": "16",
+            "away": "13",
             "period": "match"
           },
           {
             "name": "Fouls",
             "key": "fouls",
-            "home": "2",
-            "away": "7",
+            "home": "5",
+            "away": "14",
             "period": "match"
           },
           {
             "name": "Tackles",
             "key": "tackles",
-            "home": "50% (3/6)",
-            "away": "100% (5/5)",
+            "home": "53% (9/17)",
+            "away": "100% (6/6)",
             "period": "match"
           },
           {
             "name": "Duels won",
             "key": "duels won",
-            "home": "18",
-            "away": "12",
+            "home": "38",
+            "away": "25",
             "period": "match"
           },
           {
             "name": "Clearances",
             "key": "clearances",
-            "home": "14",
-            "away": "4",
+            "home": "22",
+            "away": "5",
             "period": "match"
           },
           {
             "name": "Interceptions",
             "key": "interceptions",
-            "home": "3",
-            "away": "2",
+            "home": "7",
+            "away": "8",
             "period": "match"
           },
           {
@@ -31336,32 +31959,25 @@
             "name": "Goalkeeper saves",
             "key": "goalkeeper saves",
             "home": "2",
-            "away": "1",
+            "away": "2",
             "period": "match"
           },
           {
             "name": "xGOT faced",
             "key": "xgot faced",
             "home": "0.16",
-            "away": "0.03",
+            "away": "0.36",
             "period": "match"
           },
           {
             "name": "Goals prevented",
             "key": "goals prevented",
             "home": "0.16",
-            "away": "0.03",
-            "period": "match"
-          },
-          {
-            "name": "Goal kicks",
-            "key": "goal kicks",
-            "home": "0",
-            "away": "3",
+            "away": "-0.64",
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T20:34:58.943Z",
+        "updatedAt": "2026-09-27T21:27:54.804Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_8bIfo1cK",
@@ -31381,15 +31997,16 @@
         "home": {
           "id": "2",
           "name": "Atlanta Utd",
-          "logo": "https://static.flashscore.com/res/image/data/0GgDTRle-GxTXAzv3.png",
+          "logo": "/teams/atlantautd.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/0GgDTRle-GxTXAzv3.png",
           "logoFilename": "0GgDTRle-GxTXAzv3.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "New York City",
-          "logo": null,
+          "logo": "/teams/newyorkcity.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -32240,7 +32857,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T20:34:59.643Z",
+        "updatedAt": "2026-09-27T21:27:57.114Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_h8OvjEB6",
@@ -32260,15 +32877,16 @@
         "home": {
           "id": "1",
           "name": "CF Montreal",
-          "logo": "https://static.flashscore.com/res/image/data/vwHVLET0-hfMSf4LN.png",
+          "logo": "/teams/montreal.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/vwHVLET0-hfMSf4LN.png",
           "logoFilename": "vwHVLET0-hfMSf4LN.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "FC Cincinnati",
-          "logo": null,
+          "logo": "/teams/cincinnati.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -33152,7 +33770,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T20:35:00.344Z",
+        "updatedAt": "2026-09-27T21:27:59.423Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_YFRRxgDM",
@@ -33172,15 +33790,16 @@
         "home": {
           "id": "1",
           "name": "Charlotte",
-          "logo": "https://static.flashscore.com/res/image/data/YHLXh45k-0lw00xPr.png",
+          "logo": "/teams/charlotte.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/YHLXh45k-0lw00xPr.png",
           "logoFilename": "YHLXh45k-0lw00xPr.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Chicago Fire",
-          "logo": null,
+          "logo": "/teams/chicagofire.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -34131,7 +34750,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T20:35:01.043Z",
+        "updatedAt": "2026-09-27T21:28:01.733Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_ENCmlhtJ",
@@ -34151,15 +34770,16 @@
         "home": {
           "id": "2",
           "name": "Philadelphia Union",
-          "logo": "https://static.flashscore.com/res/image/data/hQpmY0Qq-AFpqya1j.png",
+          "logo": "/teams/philadelphiaunion.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/hQpmY0Qq-AFpqya1j.png",
           "logoFilename": "hQpmY0Qq-AFpqya1j.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Orlando City",
-          "logo": null,
+          "logo": "/teams/orlandocity.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -35149,7 +35769,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T20:35:01.745Z",
+        "updatedAt": "2026-09-27T21:28:04.043Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_QFe56Zem",
@@ -35169,15 +35789,16 @@
         "home": {
           "id": "3",
           "name": "Austin FC",
-          "logo": "https://static.flashscore.com/res/image/data/hzGDoHUH-b7NYdTs6.png",
+          "logo": "/teams/austin.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/hzGDoHUH-b7NYdTs6.png",
           "logoFilename": "hzGDoHUH-b7NYdTs6.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "San Diego FC",
-          "logo": null,
+          "logo": "/teams/sandiego.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -36076,7 +36697,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T20:35:02.456Z",
+        "updatedAt": "2026-09-27T21:28:06.356Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_bTgD4DQa",
@@ -36096,15 +36717,16 @@
         "home": {
           "id": "0",
           "name": "FC Dallas",
-          "logo": "https://static.flashscore.com/res/image/data/jHAzzjXH-h6S6xFbF.png",
+          "logo": "/teams/dallas.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/jHAzzjXH-h6S6xFbF.png",
           "logoFilename": "jHAzzjXH-h6S6xFbF.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Los Angeles FC",
-          "logo": null,
+          "logo": "/teams/losangeles.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -37002,7 +37624,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T20:35:03.205Z",
+        "updatedAt": "2026-09-27T21:28:08.667Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_femM2ieC",
@@ -37022,15 +37644,16 @@
         "home": {
           "id": "2",
           "name": "Houston Dynamo",
-          "logo": "https://static.flashscore.com/res/image/data/AVAdquCN-88w2wUnG.png",
+          "logo": "/teams/houstondynamo.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/AVAdquCN-88w2wUnG.png",
           "logoFilename": "AVAdquCN-88w2wUnG.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Sporting Kansas City",
-          "logo": null,
+          "logo": "/teams/sportingkansascity.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -37297,7 +37920,7 @@
           {
             "name": "Expected goals (xG)",
             "key": "expected goals (xg)",
-            "home": "1.28",
+            "home": "1.41",
             "away": "1.20",
             "period": "match"
           },
@@ -37318,14 +37941,14 @@
           {
             "name": "Shots on target",
             "key": "shots_on_target",
-            "home": "4",
+            "home": "3",
             "away": "4",
             "period": "match"
           },
           {
             "name": "Big chances",
             "key": "big chances",
-            "home": "0",
+            "home": "1",
             "away": "2",
             "period": "match"
           },
@@ -37339,8 +37962,8 @@
           {
             "name": "Passes",
             "key": "passes",
-            "home": "91% (429/469)",
-            "away": "90% (402/448)",
+            "home": "91% (426/469)",
+            "away": "89% (410/459)",
             "period": "match"
           },
           {
@@ -37360,14 +37983,14 @@
           {
             "name": "xG on target (xGOT)",
             "key": "xg on target (xgot)",
-            "home": "1.35",
+            "home": "0.94",
             "away": "1.25",
             "period": "match"
           },
           {
             "name": "Shots off target",
             "key": "shots",
-            "home": "6",
+            "home": "7",
             "away": "3",
             "period": "match"
           },
@@ -37430,29 +38053,29 @@
           {
             "name": "Long passes",
             "key": "long passes",
-            "home": "68% (19/28)",
-            "away": "41% (9/22)",
+            "home": "62% (16/26)",
+            "away": "36% (9/25)",
             "period": "match"
           },
           {
             "name": "Passes in final third",
             "key": "passes in final third",
-            "home": "86% (114/132)",
-            "away": "83% (85/103)",
+            "home": "85% (111/131)",
+            "away": "80% (83/104)",
             "period": "match"
           },
           {
             "name": "Crosses",
             "key": "crosses",
-            "home": "27% (4/15)",
-            "away": "30% (3/10)",
+            "home": "29% (5/17)",
+            "away": "27% (3/11)",
             "period": "match"
           },
           {
             "name": "Expected assists (xA)",
             "key": "expected assists (xa)",
-            "home": "1.35",
-            "away": "1.95",
+            "home": "1.47",
+            "away": "1.92",
             "period": "match"
           },
           {
@@ -37473,28 +38096,28 @@
             "name": "Tackles",
             "key": "tackles",
             "home": "67% (10/15)",
-            "away": "67% (12/18)",
+            "away": "57% (8/14)",
             "period": "match"
           },
           {
             "name": "Duels won",
             "key": "duels won",
-            "home": "45",
-            "away": "32",
+            "home": "44",
+            "away": "29",
             "period": "match"
           },
           {
             "name": "Clearances",
             "key": "clearances",
-            "home": "16",
-            "away": "19",
+            "home": "15",
+            "away": "22",
             "period": "match"
           },
           {
             "name": "Interceptions",
             "key": "interceptions",
             "home": "11",
-            "away": "7",
+            "away": "8",
             "period": "match"
           },
           {
@@ -37515,21 +38138,21 @@
             "name": "Goalkeeper saves",
             "key": "goalkeeper saves",
             "home": "2",
-            "away": "4",
+            "away": "3",
             "period": "match"
           },
           {
             "name": "xGOT faced",
             "key": "xgot faced",
             "home": "1.25",
-            "away": "1.35",
+            "away": "0.94",
             "period": "match"
           },
           {
             "name": "Goals prevented",
             "key": "goals prevented",
             "home": "-0.75",
-            "away": "1.35",
+            "away": "0.94",
             "period": "match"
           },
           {
@@ -37542,15 +38165,15 @@
           {
             "name": "Expected goals (xG)",
             "key": "expected goals (xg)",
-            "home": "0.46",
+            "home": "0.53",
             "away": "0.38",
             "period": "match"
           },
           {
             "name": "Ball possession",
             "key": "possession",
-            "home": "58%",
-            "away": "42%",
+            "home": "57%",
+            "away": "43%",
             "period": "match"
           },
           {
@@ -37584,8 +38207,8 @@
           {
             "name": "Passes",
             "key": "passes",
-            "home": "91% (234/257)",
-            "away": "86% (159/184)",
+            "home": "90% (232/258)",
+            "away": "84% (160/191)",
             "period": "match"
           },
           {
@@ -37598,7 +38221,7 @@
           {
             "name": "xG on target (xGOT)",
             "key": "xg on target (xgot)",
-            "home": "0.58",
+            "home": "0.86",
             "away": "1.15",
             "period": "match"
           },
@@ -37654,29 +38277,29 @@
           {
             "name": "Long passes",
             "key": "long passes",
-            "home": "59% (10/17)",
-            "away": "20% (2/10)",
+            "home": "50% (8/16)",
+            "away": "20% (3/15)",
             "period": "match"
           },
           {
             "name": "Passes in final third",
             "key": "passes in final third",
-            "home": "83% (53/64)",
-            "away": "64% (21/33)",
+            "home": "80% (52/65)",
+            "away": "54% (19/35)",
             "period": "match"
           },
           {
             "name": "Crosses",
             "key": "crosses",
-            "home": "33% (2/6)",
+            "home": "29% (2/7)",
             "away": "20% (1/5)",
             "period": "match"
           },
           {
             "name": "Expected assists (xA)",
             "key": "expected assists (xa)",
-            "home": "0.33",
-            "away": "0.73",
+            "home": "0.42",
+            "away": "0.70",
             "period": "match"
           },
           {
@@ -37697,14 +38320,14 @@
             "name": "Tackles",
             "key": "tackles",
             "home": "60% (6/10)",
-            "away": "60% (6/10)",
+            "away": "67% (4/6)",
             "period": "match"
           },
           {
             "name": "Duels won",
             "key": "duels won",
-            "home": "21",
-            "away": "18",
+            "home": "20",
+            "away": "15",
             "period": "match"
           },
           {
@@ -37739,14 +38362,14 @@
             "name": "xGOT faced",
             "key": "xgot faced",
             "home": "1.15",
-            "away": "0.58",
+            "away": "0.86",
             "period": "match"
           },
           {
             "name": "Goals prevented",
             "key": "goals prevented",
             "home": "-0.85",
-            "away": "0.58",
+            "away": "0.86",
             "period": "match"
           },
           {
@@ -37759,7 +38382,7 @@
           {
             "name": "Expected goals (xG)",
             "key": "expected goals (xg)",
-            "home": "0.82",
+            "home": "0.88",
             "away": "0.82",
             "period": "match"
           },
@@ -37778,10 +38401,17 @@
             "period": "match"
           },
           {
+            "name": "Shots on target",
+            "key": "shots_on_target",
+            "home": "1",
+            "away": "2",
+            "period": "match"
+          },
+          {
             "name": "Passes",
             "key": "passes",
-            "home": "92% (195/212)",
-            "away": "92% (243/264)",
+            "home": "92% (194/211)",
+            "away": "93% (250/268)",
             "period": "match"
           },
           {
@@ -37794,14 +38424,14 @@
           {
             "name": "xG on target (xGOT)",
             "key": "xg on target (xgot)",
-            "home": "0.77",
+            "home": "0.08",
             "away": "0.10",
             "period": "match"
           },
           {
             "name": "Shots off target",
             "key": "shots",
-            "home": "5",
+            "home": "6",
             "away": "3",
             "period": "match"
           },
@@ -37850,28 +38480,28 @@
           {
             "name": "Long passes",
             "key": "long passes",
-            "home": "82% (9/11)",
-            "away": "58% (7/12)",
+            "home": "80% (8/10)",
+            "away": "60% (6/10)",
             "period": "match"
           },
           {
             "name": "Passes in final third",
             "key": "passes in final third",
-            "home": "90% (61/68)",
-            "away": "91% (64/70)",
+            "home": "89% (59/66)",
+            "away": "93% (64/69)",
             "period": "match"
           },
           {
             "name": "Crosses",
             "key": "crosses",
-            "home": "22% (2/9)",
-            "away": "40% (2/5)",
+            "home": "30% (3/10)",
+            "away": "33% (2/6)",
             "period": "match"
           },
           {
             "name": "Expected assists (xA)",
             "key": "expected assists (xa)",
-            "home": "1.02",
+            "home": "1.05",
             "away": "1.22",
             "period": "match"
           },
@@ -37893,7 +38523,7 @@
             "name": "Tackles",
             "key": "tackles",
             "home": "80% (4/5)",
-            "away": "75% (6/8)",
+            "away": "50% (4/8)",
             "period": "match"
           },
           {
@@ -37906,36 +38536,36 @@
           {
             "name": "Clearances",
             "key": "clearances",
-            "home": "6",
-            "away": "15",
+            "home": "5",
+            "away": "18",
             "period": "match"
           },
           {
             "name": "Interceptions",
             "key": "interceptions",
             "home": "4",
-            "away": "1",
+            "away": "2",
             "period": "match"
           },
           {
             "name": "Goalkeeper saves",
             "key": "goalkeeper saves",
             "home": "2",
-            "away": "2",
+            "away": "1",
             "period": "match"
           },
           {
             "name": "xGOT faced",
             "key": "xgot faced",
             "home": "0.10",
-            "away": "0.77",
+            "away": "0.08",
             "period": "match"
           },
           {
             "name": "Goals prevented",
             "key": "goals prevented",
             "home": "0.10",
-            "away": "0.77",
+            "away": "0.08",
             "period": "match"
           },
           {
@@ -37946,7 +38576,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T20:35:03.931Z",
+        "updatedAt": "2026-09-27T21:28:10.978Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_0hjU0VPO",
@@ -37966,15 +38596,16 @@
         "home": {
           "id": "0",
           "name": "Nashville SC",
-          "logo": "https://static.flashscore.com/res/image/data/0n9oUmiT-tnwDCzLD.png",
+          "logo": "/teams/nashville.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/0n9oUmiT-tnwDCzLD.png",
           "logoFilename": "0n9oUmiT-tnwDCzLD.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Toronto FC",
-          "logo": null,
+          "logo": "/teams/toronto.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -38805,7 +39436,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T20:35:04.630Z",
+        "updatedAt": "2026-09-27T21:28:13.288Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_UaSdXWzp",
@@ -38825,15 +39456,16 @@
         "home": {
           "id": "1",
           "name": "Seattle Sounders",
-          "logo": "https://static.flashscore.com/res/image/data/zP5RaY76-Y5BuxdGt.png",
+          "logo": "/teams/seattlesounders.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/zP5RaY76-Y5BuxdGt.png",
           "logoFilename": "zP5RaY76-Y5BuxdGt.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Minnesota United",
-          "logo": null,
+          "logo": "/teams/minnesotaunited.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -39757,7 +40389,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T20:35:05.346Z",
+        "updatedAt": "2026-09-27T21:28:15.599Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_46GvLYAt",
@@ -39777,15 +40409,16 @@
         "home": {
           "id": "0",
           "name": "Real Salt Lake",
-          "logo": "https://static.flashscore.com/res/image/data/dUopT5UH-xhRqHy1g.png",
+          "logo": "/teams/realsaltlake.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/dUopT5UH-xhRqHy1g.png",
           "logoFilename": "dUopT5UH-xhRqHy1g.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "New England Revolution",
-          "logo": null,
+          "logo": "/teams/newenglandrevolution.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -40676,7 +41309,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T20:35:06.046Z",
+        "updatedAt": "2026-09-27T21:28:17.910Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_CWJnJCug",
@@ -40696,15 +41329,16 @@
         "home": {
           "id": "2",
           "name": "Los Angeles Galaxy",
-          "logo": "https://static.flashscore.com/res/image/data/MwKFeQ86-fyzFgPy8.png",
+          "logo": "/teams/losangelesgalaxy.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/MwKFeQ86-fyzFgPy8.png",
           "logoFilename": "MwKFeQ86-fyzFgPy8.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Colorado Rapids",
-          "logo": null,
+          "logo": "/teams/coloradorapids.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -41635,7 +42269,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T20:35:06.745Z",
+        "updatedAt": "2026-09-27T21:28:20.222Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_8bDeHjA5",
@@ -41655,15 +42289,16 @@
         "home": {
           "id": "1",
           "name": "San Jose Earthquakes",
-          "logo": "https://static.flashscore.com/res/image/data/6ZJJvliC-UuBN762q.png",
+          "logo": "/teams/sanjoseearthquakes.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/6ZJJvliC-UuBN762q.png",
           "logoFilename": "6ZJJvliC-UuBN762q.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Portland Timbers",
-          "logo": null,
+          "logo": "/teams/portlandtimbers.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -42573,7 +43208,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T20:35:07.447Z",
+        "updatedAt": "2026-09-27T21:28:22.535Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_tCB3FUvI",
@@ -42593,15 +43228,16 @@
         "home": {
           "id": "3",
           "name": "Vancouver Whitecaps",
-          "logo": "https://static.flashscore.com/res/image/data/h4rRBzU0-M1jIRGkS.png",
+          "logo": "/teams/vancouverwhitecaps.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/h4rRBzU0-M1jIRGkS.png",
           "logoFilename": "h4rRBzU0-M1jIRGkS.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "DC United",
-          "logo": null,
+          "logo": "/teams/dcunited.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -43464,7 +44100,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T20:35:08.153Z",
+        "updatedAt": "2026-09-27T21:28:24.845Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_QRL5VA5d",
@@ -43484,15 +44120,16 @@
         "home": {
           "id": null,
           "name": "Fortaleza",
-          "logo": "https://static.flashscore.com/res/image/data/Ecz8EXVH-IVYXEpED.png",
+          "logo": "/teams/fortaleza.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/Ecz8EXVH-IVYXEpED.png",
           "logoFilename": "Ecz8EXVH-IVYXEpED.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "GitHub local"
         },
         "away": {
           "id": null,
           "name": "Deportes Tolima",
-          "logo": null,
+          "logo": "/teams/deportestolima.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -43541,15 +44178,16 @@
         "home": {
           "id": null,
           "name": "Dep. Cali",
-          "logo": "https://static.flashscore.com/res/image/data/zNqhWFQq-2eGA9cib.png",
+          "logo": "/teams/depcali.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/zNqhWFQq-2eGA9cib.png",
           "logoFilename": "zNqhWFQq-2eGA9cib.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Aguilas",
-          "logo": null,
+          "logo": "/teams/aguilas.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -43598,15 +44236,16 @@
         "home": {
           "id": null,
           "name": "Club Leon",
-          "logo": "https://static.flashscore.com/res/image/data/WdtRY4iT-OSiYNR3p.png",
+          "logo": "/teams/leon.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/WdtRY4iT-OSiYNR3p.png",
           "logoFilename": "WdtRY4iT-OSiYNR3p.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Juarez",
-          "logo": null,
+          "logo": "/teams/juarez.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -43655,15 +44294,16 @@
         "home": {
           "id": null,
           "name": "Necaxa",
-          "logo": "https://static.flashscore.com/res/image/data/f3CzIwSq-IFA1tboe.png",
+          "logo": "/teams/necaxa.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/f3CzIwSq-IFA1tboe.png",
           "logoFilename": "f3CzIwSq-IFA1tboe.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Club America",
-          "logo": null,
+          "logo": "/teams/america.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -43712,15 +44352,16 @@
         "home": {
           "id": null,
           "name": "Leganes",
-          "logo": "https://static.flashscore.com/res/image/data/AowBBF6k-zBFXR8iF.png",
+          "logo": "/teams/leganes.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/AowBBF6k-zBFXR8iF.png",
           "logoFilename": "AowBBF6k-zBFXR8iF.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Castellon",
-          "logo": null,
+          "logo": "/teams/castellon.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -43769,15 +44410,16 @@
         "home": {
           "id": null,
           "name": "Columbus Crew",
-          "logo": "https://static.flashscore.com/res/image/data/z94JGZTH-UwKTVGeG.png",
+          "logo": "/teams/columbuscrew.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/z94JGZTH-UwKTVGeG.png",
           "logoFilename": "z94JGZTH-UwKTVGeG.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Inter Miami",
-          "logo": null,
+          "logo": "/teams/intermiami.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -43826,15 +44468,16 @@
         "home": {
           "id": null,
           "name": "America MG",
-          "logo": "https://static.flashscore.com/res/image/data/GtpcHiiT-v5wBaFPD.png",
+          "logo": "/teams/americamg.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/GtpcHiiT-v5wBaFPD.png",
           "logoFilename": "GtpcHiiT-v5wBaFPD.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Juventude",
-          "logo": null,
+          "logo": "/teams/juventude.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -43883,18 +44526,20 @@
         "home": {
           "id": null,
           "name": "Pereira",
-          "logo": "https://static.flashscore.com/res/image/data/UacjBalC-AaS9a4Ho.png",
+          "logo": "/teams/pereira.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/UacjBalC-AaS9a4Ho.png",
           "logoFilename": "UacjBalC-AaS9a4Ho.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "GitHub local"
         },
         "away": {
           "id": null,
           "name": "Santa Fe",
-          "logo": null,
+          "logo": "/teams/santafe.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
-          "logoSide": "away"
+          "logoSide": "away",
+          "logoSource": "GitHub local"
         }
       },
       "goals": {
@@ -43939,18 +44584,20 @@
         "home": {
           "id": null,
           "name": "Botafogo SP",
-          "logo": "https://static.flashscore.com/res/image/data/4OGSgN96-pM8eqsw3.png",
+          "logo": "/teams/botafogosp.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/4OGSgN96-pM8eqsw3.png",
           "logoFilename": "4OGSgN96-pM8eqsw3.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Ponte Preta",
-          "logo": null,
+          "logo": "/teams/pontepreta.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
-          "logoSide": "away"
+          "logoSide": "away",
+          "logoSource": "GitHub local"
         }
       },
       "goals": {
@@ -43995,15 +44642,16 @@
         "home": {
           "id": null,
           "name": "Ind. Medellin",
-          "logo": "https://static.flashscore.com/res/image/data/I7bqaK6k-6kduDy6P.png",
+          "logo": "/teams/indmedellin.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/I7bqaK6k-6kduDy6P.png",
           "logoFilename": "I7bqaK6k-6kduDy6P.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Millonarios",
-          "logo": "https://r2.thesportsdb.com/images/media/team/badge/mc73ix1629122587.png",
+          "logo": "/teams/millonarios.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -44052,18 +44700,20 @@
         "home": {
           "id": null,
           "name": "Atl. Nacional",
-          "logo": "https://static.flashscore.com/res/image/data/StROSU5k-zLpFRlja.png",
+          "logo": "/teams/atlnacional.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/StROSU5k-zLpFRlja.png",
           "logoFilename": "StROSU5k-zLpFRlja.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "GitHub local"
         },
         "away": {
           "id": null,
           "name": "Junior",
-          "logo": null,
+          "logo": "/teams/junior.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
-          "logoSide": "away"
+          "logoSide": "away",
+          "logoSource": "GitHub local"
         }
       },
       "goals": {
@@ -44108,18 +44758,20 @@
         "home": {
           "id": null,
           "name": "New York Red Bulls",
-          "logo": "https://static.flashscore.com/res/image/data/OAtXEIVH-jmLPWdtA.png",
+          "logo": "/teams/newyorkredbulls.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/OAtXEIVH-jmLPWdtA.png",
           "logoFilename": "OAtXEIVH-jmLPWdtA.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "St. Louis City",
-          "logo": null,
+          "logo": "/teams/stlouiscity.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
-          "logoSide": "away"
+          "logoSide": "away",
+          "logoSource": "GitHub local"
         }
       },
       "goals": {
@@ -44164,15 +44816,16 @@
         "home": {
           "id": null,
           "name": "Athletic Club",
-          "logo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-fezSJdFa.png",
+          "logo": "/teams/athletic.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-fezSJdFa.png",
           "logoFilename": "WrU0J0Qq-fezSJdFa.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Sport Recife",
-          "logo": "https://r2.thesportsdb.com/images/media/team/badge/tyrbls1545421563.png",
+          "logo": "/teams/sportrecife.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -44221,18 +44874,20 @@
         "home": {
           "id": null,
           "name": "Novorizontino",
-          "logo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
+          "logo": "/teams/novorizontino.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
           "logoFilename": "YqfJ3686-G2OQQubE.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "GitHub local"
         },
         "away": {
           "id": null,
           "name": "Goias",
-          "logo": null,
+          "logo": "/teams/goias.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
-          "logoSide": "away"
+          "logoSide": "away",
+          "logoSource": "GitHub local"
         }
       },
       "goals": {
@@ -44277,18 +44932,20 @@
         "home": {
           "id": null,
           "name": "Inter Bogotá",
-          "logo": "https://static.flashscore.com/res/image/data/C0qt1olC-bsEYFgtQ.png",
+          "logo": "/teams/interbogota.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/C0qt1olC-bsEYFgtQ.png",
           "logoFilename": "C0qt1olC-bsEYFgtQ.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Once Caldas",
-          "logo": null,
+          "logo": "/teams/oncecaldas.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
-          "logoSide": "away"
+          "logoSide": "away",
+          "logoSource": "GitHub local"
         }
       },
       "goals": {
@@ -44333,18 +44990,20 @@
         "home": {
           "id": null,
           "name": "FUS Rabat",
-          "logo": "https://static.flashscore.com/res/image/data/KMjBLrUH-8ExDw68E.png",
+          "logo": "/teams/fusrabat.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/KMjBLrUH-8ExDw68E.png",
           "logoFilename": "KMjBLrUH-8ExDw68E.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Amal Tiznit",
-          "logo": null,
+          "logo": "/teams/amaltiznit.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
-          "logoSide": "away"
+          "logoSide": "away",
+          "logoSource": "GitHub local"
         }
       },
       "goals": {
@@ -44389,18 +45048,20 @@
         "home": {
           "id": null,
           "name": "Widad Temara",
-          "logo": "https://static.flashscore.com/res/image/data/4nyD8Ole-Q1R9dE24.png",
+          "logo": "/teams/widadtemara.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/4nyD8Ole-Q1R9dE24.png",
           "logoFilename": "4nyD8Ole-Q1R9dE24.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Union Touarga",
-          "logo": null,
+          "logo": "/teams/uniontouarga.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
-          "logoSide": "away"
+          "logoSide": "away",
+          "logoSource": "GitHub local"
         }
       },
       "goals": {
@@ -44445,18 +45106,20 @@
         "home": {
           "id": null,
           "name": "IR Tanger",
-          "logo": "https://static.flashscore.com/res/image/data/4xK80JVH-4OKT8C33.png",
+          "logo": "/teams/irtanger.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/4xK80JVH-4OKT8C33.png",
           "logoFilename": "4xK80JVH-4OKT8C33.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "GitHub local"
         },
         "away": {
           "id": null,
           "name": "Moghreb Tetouan",
-          "logo": null,
+          "logo": "/teams/moghrebtetouan.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
-          "logoSide": "away"
+          "logoSide": "away",
+          "logoSource": "GitHub local"
         }
       },
       "goals": {
@@ -44501,18 +45164,20 @@
         "home": {
           "id": null,
           "name": "Eldense",
-          "logo": "https://static.flashscore.com/res/image/data/8CuFFxlC-Y7pkY0PJ.png",
+          "logo": "/teams/eldense.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/8CuFFxlC-Y7pkY0PJ.png",
           "logoFilename": "8CuFFxlC-Y7pkY0PJ.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Oviedo",
-          "logo": null,
+          "logo": "/teams/oviedo.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
-          "logoSide": "away"
+          "logoSide": "away",
+          "logoSource": "GitHub local"
         }
       },
       "goals": {
@@ -44557,15 +45222,16 @@
         "home": {
           "id": null,
           "name": "Seattle Sounders",
-          "logo": "https://static.flashscore.com/res/image/data/AVAdquCN-88w2wUnG.png",
+          "logo": "/teams/seattlesounders.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/AVAdquCN-88w2wUnG.png",
           "logoFilename": "AVAdquCN-88w2wUnG.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "GitHub local"
         },
         "away": {
           "id": null,
           "name": "Sporting Kansas City",
-          "logo": null,
+          "logo": "/teams/sportingkansascity.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -44614,10 +45280,11 @@
         "home": {
           "id": null,
           "name": "Fomboni (Com)",
-          "logo": "https://static.flashscore.com/res/image/data/GpsGB0DN-zmJd7cVA.png",
+          "logo": "/teams/fombonicom.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/GpsGB0DN-zmJd7cVA.png",
           "logoFilename": "GpsGB0DN-zmJd7cVA.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
@@ -44669,18 +45336,20 @@
         "home": {
           "id": null,
           "name": "Independiente",
-          "logo": "https://static.flashscore.com/res/image/data/IuZoU3iT-ImUFDktI.png",
+          "logo": "/teams/independiente.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/IuZoU3iT-ImUFDktI.png",
           "logoFilename": "IuZoU3iT-ImUFDktI.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Instituto",
-          "logo": null,
+          "logo": "/teams/instituto.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
-          "logoSide": "away"
+          "logoSide": "away",
+          "logoSource": "GitHub local"
         }
       },
       "goals": {
@@ -44725,18 +45394,20 @@
         "home": {
           "id": null,
           "name": "Boca Juniors",
-          "logo": "https://static.flashscore.com/res/image/data/xCI9eFAN-OS9FbeGg.png",
+          "logo": "/teams/bocajuniors.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/xCI9eFAN-OS9FbeGg.png",
           "logoFilename": "xCI9eFAN-OS9FbeGg.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Union de Santa Fe",
-          "logo": null,
+          "logo": "/teams/uniondesantafe.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
-          "logoSide": "away"
+          "logoSide": "away",
+          "logoSource": "GitHub local"
         }
       },
       "goals": {
@@ -44781,18 +45452,20 @@
         "home": {
           "id": null,
           "name": "Ind. Rivadavia",
-          "logo": "https://static.flashscore.com/res/image/data/8UYpvw86-0hVt0N0n.png",
+          "logo": "/teams/indrivadavia.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/8UYpvw86-0hVt0N0n.png",
           "logoFilename": "8UYpvw86-0hVt0N0n.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Gimnasia L.P.",
-          "logo": null,
+          "logo": "/teams/gimnasialp.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
-          "logoSide": "away"
+          "logoSide": "away",
+          "logoSource": "GitHub local"
         }
       },
       "goals": {
@@ -44837,18 +45510,20 @@
         "home": {
           "id": null,
           "name": "Defensa y Justicia",
-          "logo": "https://static.flashscore.com/res/image/data/bVaqpoWH-YyppIBwT.png",
+          "logo": "/teams/defensayjusticia.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/bVaqpoWH-YyppIBwT.png",
           "logoFilename": "bVaqpoWH-YyppIBwT.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "San Lorenzo",
-          "logo": null,
+          "logo": "/teams/sanlorenzo.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
-          "logoSide": "away"
+          "logoSide": "away",
+          "logoSource": "GitHub local"
         }
       },
       "goals": {
@@ -44893,18 +45568,20 @@
         "home": {
           "id": null,
           "name": "Atl. Tucuman",
-          "logo": "https://static.flashscore.com/res/image/data/YVxbV1iT-KxCl9RDG.png",
+          "logo": "/teams/atltucuman.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/YVxbV1iT-KxCl9RDG.png",
           "logoFilename": "YVxbV1iT-KxCl9RDG.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Barracas Central",
-          "logo": null,
+          "logo": "/teams/barracascentral.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
-          "logoSide": "away"
+          "logoSide": "away",
+          "logoSource": "GitHub local"
         }
       },
       "goals": {
@@ -44949,18 +45626,20 @@
         "home": {
           "id": null,
           "name": "Newells Old Boys",
-          "logo": "https://static.flashscore.com/res/image/data/I7GXcZiT-rRPTjfbN.png",
+          "logo": "/teams/newellsoldboys.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/I7GXcZiT-rRPTjfbN.png",
           "logoFilename": "I7GXcZiT-rRPTjfbN.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Lanus",
-          "logo": null,
+          "logo": "/teams/lanus.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
-          "logoSide": "away"
+          "logoSide": "away",
+          "logoSource": "GitHub local"
         }
       },
       "goals": {
@@ -45005,18 +45684,20 @@
         "home": {
           "id": null,
           "name": "Sao Bernardo",
-          "logo": "https://static.flashscore.com/res/image/data/8biwxljT-6oItt2Br.png",
+          "logo": "/teams/saobernardo.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/8biwxljT-6oItt2Br.png",
           "logoFilename": "8biwxljT-6oItt2Br.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "CRB",
-          "logo": null,
+          "logo": "/teams/crb.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
-          "logoSide": "away"
+          "logoSide": "away",
+          "logoSource": "GitHub local"
         }
       },
       "goals": {
@@ -45061,18 +45742,20 @@
         "home": {
           "id": null,
           "name": "Londrina",
-          "logo": "https://static.flashscore.com/res/image/data/MJNZGxXH-0tyg52jq.png",
+          "logo": "/teams/londrina.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/MJNZGxXH-0tyg52jq.png",
           "logoFilename": "MJNZGxXH-0tyg52jq.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Criciuma",
-          "logo": null,
+          "logo": "/teams/criciuma.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
-          "logoSide": "away"
+          "logoSide": "away",
+          "logoSource": "GitHub local"
         }
       },
       "goals": {
@@ -45117,18 +45800,20 @@
         "home": {
           "id": null,
           "name": "Juventude",
-          "logo": "https://static.flashscore.com/res/image/data/p0AtzGQq-vm8qH06L.png",
+          "logo": "/teams/juventude.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/p0AtzGQq-vm8qH06L.png",
           "logoFilename": "p0AtzGQq-vm8qH06L.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Operario-PR",
-          "logo": null,
+          "logo": "/teams/operariopr.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
-          "logoSide": "away"
+          "logoSide": "away",
+          "logoSource": "GitHub local"
         }
       },
       "goals": {
@@ -45173,18 +45858,20 @@
         "home": {
           "id": null,
           "name": "Fortaleza",
-          "logo": "https://static.flashscore.com/res/image/data/ADXIEPCN-4S2Tm4eJ.png",
+          "logo": "/teams/fortaleza.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/ADXIEPCN-4S2Tm4eJ.png",
           "logoFilename": "ADXIEPCN-4S2Tm4eJ.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "GitHub local"
         },
         "away": {
           "id": null,
           "name": "Nautico",
-          "logo": null,
+          "logo": "/teams/nautico.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
-          "logoSide": "away"
+          "logoSide": "away",
+          "logoSource": "GitHub local"
         }
       },
       "goals": {
@@ -45229,15 +45916,16 @@
         "home": {
           "id": null,
           "name": "Avai",
-          "logo": "https://static.flashscore.com/res/image/data/6XnLr1hT-GxV9h1lf.png",
+          "logo": "/teams/avai.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/6XnLr1hT-GxV9h1lf.png",
           "logoFilename": "6XnLr1hT-GxV9h1lf.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Ceara",
-          "logo": "https://r2.thesportsdb.com/images/media/team/badge/rxxvyp1464886685.png",
+          "logo": "/teams/ceara.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -45286,18 +45974,20 @@
         "home": {
           "id": null,
           "name": "Atletico GO",
-          "logo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
+          "logo": "/teams/atleticogo.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
           "logoFilename": "K2MlyGoe-nHqWQgSo.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "America MG",
-          "logo": null,
+          "logo": "/teams/americamg.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
-          "logoSide": "away"
+          "logoSide": "away",
+          "logoSource": "GitHub local"
         }
       },
       "goals": {
@@ -45342,18 +46032,20 @@
         "home": {
           "id": null,
           "name": "Cuiaba",
-          "logo": "https://static.flashscore.com/res/image/data/4OGSgN96-pM8eqsw3.png",
+          "logo": "/teams/cuiaba.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/4OGSgN96-pM8eqsw3.png",
           "logoFilename": "4OGSgN96-pM8eqsw3.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Ponte Preta",
-          "logo": null,
+          "logo": "/teams/pontepreta.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
-          "logoSide": "away"
+          "logoSide": "away",
+          "logoSource": "GitHub local"
         }
       },
       "goals": {
@@ -45398,18 +46090,20 @@
         "home": {
           "id": null,
           "name": "Botafogo SP",
-          "logo": "https://static.flashscore.com/res/image/data/M5AhQV5k-OjIDDdYc.png",
+          "logo": "/teams/botafogosp.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/M5AhQV5k-OjIDDdYc.png",
           "logoFilename": "M5AhQV5k-OjIDDdYc.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "GitHub local"
         },
         "away": {
           "id": null,
           "name": "Vila Nova FC",
-          "logo": null,
+          "logo": "/teams/vilanova.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
-          "logoSide": "away"
+          "logoSide": "away",
+          "logoSource": "GitHub local"
         }
       },
       "goals": {
@@ -45454,15 +46148,16 @@
         "home": {
           "id": null,
           "name": "Dep. Cali",
-          "logo": "https://static.flashscore.com/res/image/data/0Cg5eagT-jqTIQW5H.png",
+          "logo": "/teams/depcali.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/0Cg5eagT-jqTIQW5H.png",
           "logoFilename": "0Cg5eagT-jqTIQW5H.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "GitHub local"
         },
         "away": {
           "id": null,
           "name": "Alianza",
-          "logo": "https://r2.thesportsdb.com/images/media/team/badge/4qhii21589297781.png",
+          "logo": "/teams/alianza.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -45511,18 +46206,20 @@
         "home": {
           "id": null,
           "name": "Aguilas",
-          "logo": "https://static.flashscore.com/res/image/data/l4lKktDN-K401txJG.png",
+          "logo": "/teams/aguilas.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/l4lKktDN-K401txJG.png",
           "logoFilename": "l4lKktDN-K401txJG.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Jaguares de Cordoba",
-          "logo": null,
+          "logo": "/teams/jaguaresdecordoba.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
-          "logoSide": "away"
+          "logoSide": "away",
+          "logoSource": "GitHub local"
         }
       },
       "goals": {
@@ -45567,18 +46264,20 @@
         "home": {
           "id": null,
           "name": "Deportes Tolima",
-          "logo": "https://static.flashscore.com/res/image/data/Cj1rt4me-zi9oOsF3.png",
+          "logo": "/teams/deportestolima.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/Cj1rt4me-zi9oOsF3.png",
           "logoFilename": "Cj1rt4me-zi9oOsF3.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Chico",
-          "logo": null,
+          "logo": "/teams/chico.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
-          "logoSide": "away"
+          "logoSide": "away",
+          "logoSource": "GitHub local"
         }
       },
       "goals": {
@@ -45623,18 +46322,20 @@
         "home": {
           "id": null,
           "name": "Hassania Agadir",
-          "logo": "https://static.flashscore.com/res/image/data/hrtwQ6lC-pAEmCR0A.png",
+          "logo": "/teams/hassaniaagadir.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/hrtwQ6lC-pAEmCR0A.png",
           "logoFilename": "hrtwQ6lC-pAEmCR0A.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Maghreb Fez",
-          "logo": null,
+          "logo": "/teams/maghrebfez.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
-          "logoSide": "away"
+          "logoSide": "away",
+          "logoSource": "GitHub local"
         }
       },
       "goals": {
@@ -45679,18 +46380,20 @@
         "home": {
           "id": null,
           "name": "Berkane",
-          "logo": "https://static.flashscore.com/res/image/data/Mm90dOkC-EyoH1qCf.png",
+          "logo": "/teams/berkane.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/Mm90dOkC-EyoH1qCf.png",
           "logoFilename": "Mm90dOkC-EyoH1qCf.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "FAR Rabat",
-          "logo": null,
+          "logo": "/teams/farrabat.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
-          "logoSide": "away"
+          "logoSide": "away",
+          "logoSource": "GitHub local"
         }
       },
       "goals": {
@@ -45715,7 +46418,7 @@
       "details": {
         "events": [],
         "statistics": [],
-        "updatedAt": "2026-09-27T20:35:10.563Z",
+        "updatedAt": "2026-09-27T21:28:33.624Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_bDGw34fE",
@@ -45735,18 +46438,20 @@
         "home": {
           "id": null,
           "name": "COD Meknes",
-          "logo": "https://static.flashscore.com/res/image/data/b3sNSqS0-hInMHhg7.png",
+          "logo": "/teams/codmeknes.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/b3sNSqS0-hInMHhg7.png",
           "logoFilename": "b3sNSqS0-hInMHhg7.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Kawkab Marrakech",
-          "logo": null,
+          "logo": "/teams/kawkabmarrakech.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
-          "logoSide": "away"
+          "logoSide": "away",
+          "logoSource": "GitHub local"
         }
       },
       "goals": {
@@ -45791,18 +46496,20 @@
         "home": {
           "id": null,
           "name": "Difaa El Jadidi",
-          "logo": "https://static.flashscore.com/res/image/data/Y7MV6X5k-GSoKqW7o.png",
+          "logo": "/teams/difaaeljadidi.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/Y7MV6X5k-GSoKqW7o.png",
           "logoFilename": "Y7MV6X5k-GSoKqW7o.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "GitHub local"
         },
         "away": {
           "id": null,
           "name": "Wydad AC",
-          "logo": null,
+          "logo": "/teams/wydad.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
-          "logoSide": "away"
+          "logoSide": "away",
+          "logoSource": "GitHub local"
         }
       },
       "goals": {
@@ -45847,15 +46554,16 @@
         "home": {
           "id": null,
           "name": "Raja Casablanca",
-          "logo": "https://static.flashscore.com/res/image/data/pGJqy86k-63LcsWgs.png",
+          "logo": "/teams/rajacasablanca.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/pGJqy86k-63LcsWgs.png",
           "logoFilename": "pGJqy86k-63LcsWgs.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Renaissance Zemamra",
-          "logo": null,
+          "logo": "/teams/renaissancezemamra.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -45904,18 +46612,20 @@
         "home": {
           "id": null,
           "name": "Albacete",
-          "logo": "https://static.flashscore.com/res/image/data/drsSo7UH-4U3vjZKk.png",
+          "logo": "/teams/albacete.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/drsSo7UH-4U3vjZKk.png",
           "logoFilename": "drsSo7UH-4U3vjZKk.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "GitHub local"
         },
         "away": {
           "id": null,
           "name": "Eibar",
-          "logo": null,
+          "logo": "/teams/eibar.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
-          "logoSide": "away"
+          "logoSide": "away",
+          "logoSource": "GitHub local"
         }
       },
       "goals": {
@@ -45960,18 +46670,20 @@
         "home": {
           "id": null,
           "name": "Almeria",
-          "logo": "https://static.flashscore.com/res/image/data/8G2Evj86-0ME49KyM.png",
+          "logo": "/teams/almeria.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/8G2Evj86-0ME49KyM.png",
           "logoFilename": "8G2Evj86-0ME49KyM.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Burgos CF",
-          "logo": null,
+          "logo": "/teams/burgos.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
-          "logoSide": "away"
+          "logoSide": "away",
+          "logoSource": "GitHub local"
         }
       },
       "goals": {
@@ -46016,18 +46728,20 @@
         "home": {
           "id": null,
           "name": "Cadiz CF",
-          "logo": "https://static.flashscore.com/res/image/data/C4WkaSlC-Q3zX1dyT.png",
+          "logo": "/teams/cadiz.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/C4WkaSlC-Q3zX1dyT.png",
           "logoFilename": "C4WkaSlC-Q3zX1dyT.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Leganes",
-          "logo": null,
+          "logo": "/teams/leganes.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
-          "logoSide": "away"
+          "logoSide": "away",
+          "logoSource": "GitHub local"
         }
       },
       "goals": {
@@ -46072,15 +46786,16 @@
         "home": {
           "id": null,
           "name": "Sabadell",
-          "logo": "https://static.flashscore.com/res/image/data/SMiBGH8k-p6WBruc4.png",
+          "logo": "/teams/sabadell.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/SMiBGH8k-p6WBruc4.png",
           "logoFilename": "SMiBGH8k-p6WBruc4.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Andorra",
-          "logo": "https://r2.thesportsdb.com/images/media/team/badge/l5qspn1552847356.png",
+          "logo": "/teams/andorra.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
@@ -46129,18 +46844,20 @@
         "home": {
           "id": null,
           "name": "Veres-Rivne",
-          "logo": "https://static.flashscore.com/res/image/data/CUoqynU0-pUOna96L.png",
+          "logo": "/teams/veresrivne.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/CUoqynU0-pUOna96L.png",
           "logoFilename": "CUoqynU0-pUOna96L.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Kudrivka",
-          "logo": null,
+          "logo": "/teams/kudrivka.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
-          "logoSide": "away"
+          "logoSide": "away",
+          "logoSource": "GitHub local"
         }
       },
       "goals": {
@@ -46185,18 +46902,20 @@
         "home": {
           "id": null,
           "name": "Huracan",
-          "logo": "https://static.flashscore.com/res/image/data/pbQeONmC-Eew7tmfb.png",
+          "logo": "/teams/huracan.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/pbQeONmC-Eew7tmfb.png",
           "logoFilename": "pbQeONmC-Eew7tmfb.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Aldosivi",
-          "logo": null,
+          "logo": "/teams/aldosivi.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
-          "logoSide": "away"
+          "logoSide": "away",
+          "logoSource": "GitHub local"
         }
       },
       "goals": {
@@ -46241,18 +46960,20 @@
         "home": {
           "id": null,
           "name": "Talleres Cordoba",
-          "logo": "https://static.flashscore.com/res/image/data/htqgPrT0-jXvNrLYt.png",
+          "logo": "/teams/tallerescordoba.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/htqgPrT0-jXvNrLYt.png",
           "logoFilename": "htqgPrT0-jXvNrLYt.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Belgrano",
-          "logo": null,
+          "logo": "/teams/belgrano.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
-          "logoSide": "away"
+          "logoSide": "away",
+          "logoSource": "GitHub local"
         }
       },
       "goals": {
@@ -46297,18 +47018,20 @@
         "home": {
           "id": null,
           "name": "Dep. Pasto",
-          "logo": "https://static.flashscore.com/res/image/data/6qGiPaSq-lrqyzouB.png",
+          "logo": "/teams/deppasto.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/6qGiPaSq-lrqyzouB.png",
           "logoFilename": "6qGiPaSq-lrqyzouB.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Fortaleza",
-          "logo": null,
+          "logo": "/teams/fortaleza.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
-          "logoSide": "away"
+          "logoSide": "away",
+          "logoSource": "GitHub local"
         }
       },
       "goals": {
@@ -46353,18 +47076,20 @@
         "home": {
           "id": null,
           "name": "Cucuta",
-          "logo": "https://static.flashscore.com/res/image/data/vTF4Iv6k-rysGeGXN.png",
+          "logo": "/teams/cucuta.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/vTF4Iv6k-rysGeGXN.png",
           "logoFilename": "vTF4Iv6k-rysGeGXN.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "GitHub local"
         },
         "away": {
           "id": null,
           "name": "Pereira",
-          "logo": null,
+          "logo": "/teams/pereira.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
-          "logoSide": "away"
+          "logoSide": "away",
+          "logoSource": "GitHub local"
         }
       },
       "goals": {
@@ -46409,18 +47134,20 @@
         "home": {
           "id": null,
           "name": "Real Sociedad B",
-          "logo": "https://static.flashscore.com/res/image/data/QmKG7dT0-pEzOUfJL.png",
+          "logo": "/teams/realsociedadb.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/QmKG7dT0-pEzOUfJL.png",
           "logoFilename": "QmKG7dT0-pEzOUfJL.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Granada CF",
-          "logo": null,
+          "logo": "/teams/granada.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
-          "logoSide": "away"
+          "logoSide": "away",
+          "logoSource": "GitHub local"
         }
       },
       "goals": {
@@ -46465,18 +47192,20 @@
         "home": {
           "id": null,
           "name": "Gijon",
-          "logo": "https://static.flashscore.com/res/image/data/OYnX3M6k-xd1MqkTp.png",
+          "logo": "/teams/gijon.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/OYnX3M6k-xd1MqkTp.png",
           "logoFilename": "OYnX3M6k-xd1MqkTp.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Celta Vigo B",
-          "logo": null,
+          "logo": "/teams/celtavigob.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
-          "logoSide": "away"
+          "logoSide": "away",
+          "logoSource": "GitHub local"
         }
       },
       "goals": {
@@ -46521,18 +47250,20 @@
         "home": {
           "id": null,
           "name": "Castellon",
-          "logo": "https://static.flashscore.com/res/image/data/r1QAXB7k-xpqBFn5c.png",
+          "logo": "/teams/castellon.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/r1QAXB7k-xpqBFn5c.png",
           "logoFilename": "r1QAXB7k-xpqBFn5c.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Ceuta",
-          "logo": null,
+          "logo": "/teams/ceuta.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
-          "logoSide": "away"
+          "logoSide": "away",
+          "logoSource": "GitHub local"
         }
       },
       "goals": {
@@ -46577,18 +47308,20 @@
         "home": {
           "id": null,
           "name": "Las Palmas",
-          "logo": "https://static.flashscore.com/res/image/data/GvWsl3Sq-htRvrFH6.png",
+          "logo": "/teams/laspalmas.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/GvWsl3Sq-htRvrFH6.png",
           "logoFilename": "GvWsl3Sq-htRvrFH6.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
         },
         "away": {
           "id": null,
           "name": "Valladolid",
-          "logo": null,
+          "logo": "/teams/valladolid.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
-          "logoSide": "away"
+          "logoSide": "away",
+          "logoSource": "GitHub local"
         }
       },
       "goals": {
@@ -46633,18 +47366,20 @@
         "home": {
           "id": null,
           "name": "Girona",
-          "logo": "https://static.flashscore.com/res/image/data/WKsw8cne-rmDEjevK.png",
+          "logo": "/teams/girona.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/WKsw8cne-rmDEjevK.png",
           "logoFilename": "WKsw8cne-rmDEjevK.png",
-          "logoSide": "home"
+          "logoSide": "home",
+          "logoSource": "GitHub local"
         },
         "away": {
           "id": null,
           "name": "Mallorca",
-          "logo": null,
+          "logo": "/teams/mallorca.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
-          "logoSide": "away"
+          "logoSide": "away",
+          "logoSource": "GitHub local"
         }
       },
       "goals": {
@@ -46675,6 +47410,324 @@
           "events": null,
           "statistics": null
         }
+      }
+    },
+    {
+      "fixture": {
+        "id": "fs-GENB2d3n",
+        "date": "2026-10-04T22:15:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Argentinos Jrs",
+          "logo": "/teams/argentinosjrs.png",
+          "flashscoreLogo": "https://static.flashscore.com/res/image/data/EgYDLGoe-ENHpchZ2.png",
+          "logoFilename": "EgYDLGoe-ENHpchZ2.png",
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
+        },
+        "away": {
+          "id": null,
+          "name": "Tigre",
+          "logo": "/teams/tigre.png",
+          "flashscoreLogo": null,
+          "logoFilename": "1",
+          "logoSide": "away",
+          "logoSource": "GitHub local"
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-argentina-liga-profesional",
+        "name": "ARGENTINA: Liga Profesional - Clausura",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "GENB2d3n",
+      "externalIds": {
+        "Flashscore Feed": "GENB2d3n"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/GENB2d3n/",
+      "sourcePath": "/football/argentina/liga-profesional/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null
+      }
+    },
+    {
+      "fixture": {
+        "id": "fs-GGhIr2CD",
+        "date": "2026-10-05T00:30:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Estudiantes Rio Cuarto",
+          "logo": "/teams/estudiantesriocuarto.png",
+          "flashscoreLogo": "https://static.flashscore.com/res/image/data/Wp6MmpQq-OCiVKiPK.png",
+          "logoFilename": "Wp6MmpQq-OCiVKiPK.png",
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
+        },
+        "away": {
+          "id": null,
+          "name": "Racing Club",
+          "logo": "/teams/racing.png",
+          "flashscoreLogo": null,
+          "logoFilename": "1",
+          "logoSide": "away",
+          "logoSource": "GitHub local"
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-argentina-liga-profesional",
+        "name": "ARGENTINA: Liga Profesional - Clausura",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "GGhIr2CD",
+      "externalIds": {
+        "Flashscore Feed": "GGhIr2CD"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/GGhIr2CD/",
+      "sourcePath": "/football/argentina/liga-profesional/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null
+      }
+    },
+    {
+      "fixture": {
+        "id": "fs-x2FVi6kR",
+        "date": "2026-10-05T19:45:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Dep. Riestra",
+          "logo": "/teams/depriestra.png",
+          "flashscoreLogo": "https://static.flashscore.com/res/image/data/0hgWrqXH-E7RqoQaq.png",
+          "logoFilename": "0hgWrqXH-E7RqoQaq.png",
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
+        },
+        "away": {
+          "id": null,
+          "name": "Central Cordoba",
+          "logo": "/teams/centralcordoba.png",
+          "flashscoreLogo": null,
+          "logoFilename": "1",
+          "logoSide": "away",
+          "logoSource": "GitHub local"
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-argentina-liga-profesional",
+        "name": "ARGENTINA: Liga Profesional - Clausura",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "x2FVi6kR",
+      "externalIds": {
+        "Flashscore Feed": "x2FVi6kR"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/x2FVi6kR/",
+      "sourcePath": "/football/argentina/liga-profesional/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null
+      }
+    },
+    {
+      "fixture": {
+        "id": "fs-M1bq0nGO",
+        "date": "2026-10-04T23:10:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Bucaramanga",
+          "logo": "/teams/bucaramanga.png",
+          "flashscoreLogo": "https://static.flashscore.com/res/image/data/StROSU5k-zLpFRlja.png",
+          "logoFilename": "StROSU5k-zLpFRlja.png",
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
+        },
+        "away": {
+          "id": null,
+          "name": "Junior",
+          "logo": "/teams/junior.png",
+          "flashscoreLogo": null,
+          "logoFilename": "1",
+          "logoSide": "away",
+          "logoSource": "GitHub local"
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-colombia-primera-a",
+        "name": "COLOMBIA: Primera A - Clausura",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "M1bq0nGO",
+      "externalIds": {
+        "Flashscore Feed": "M1bq0nGO"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/M1bq0nGO/",
+      "sourcePath": "/football/colombia/primera-a/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null
+      }
+    },
+    {
+      "fixture": {
+        "id": "fs-Um5ldwFj",
+        "date": "2026-10-05T01:15:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Llaneros",
+          "logo": "/teams/llaneros.png",
+          "flashscoreLogo": "https://static.flashscore.com/res/image/data/OCsMaKUH-hSZHTo4B.png",
+          "logoFilename": "OCsMaKUH-hSZHTo4B.png",
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
+        },
+        "away": {
+          "id": null,
+          "name": "America De Cali",
+          "logo": "/teams/americadecali.png",
+          "flashscoreLogo": null,
+          "logoFilename": "1",
+          "logoSide": "away",
+          "logoSource": "GitHub local"
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-colombia-primera-a",
+        "name": "COLOMBIA: Primera A - Clausura",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "Um5ldwFj",
+      "externalIds": {
+        "Flashscore Feed": "Um5ldwFj"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/Um5ldwFj/",
+      "sourcePath": "/football/colombia/primera-a/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null
+      }
+    },
+    {
+      "fixture": {
+        "id": "fs-ML4DjdZa",
+        "date": "2026-10-05T18:30:00.000Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": null,
+          "name": "Cordoba",
+          "logo": "/teams/cordoba.png",
+          "flashscoreLogo": "https://static.flashscore.com/res/image/data/S8MpS386-UBV6BGsc.png",
+          "logoFilename": "S8MpS386-UBV6BGsc.png",
+          "logoSide": "home",
+          "logoSource": "Flashscore → GitHub local"
+        },
+        "away": {
+          "id": null,
+          "name": "Tenerife",
+          "logo": "/teams/tenerife.png",
+          "flashscoreLogo": null,
+          "logoFilename": "1",
+          "logoSide": "away",
+          "logoSource": "GitHub local"
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "league": {
+        "id": "flashscore-spain-segunda",
+        "name": "SPAIN: LaLiga2",
+        "logo": null
+      },
+      "source": "Flashscore Feed",
+      "sources": [
+        "Flashscore Feed"
+      ],
+      "externalId": "ML4DjdZa",
+      "externalIds": {
+        "Flashscore Feed": "ML4DjdZa"
+      },
+      "sourceUrl": "https://www.flashscore.com/match/ML4DjdZa/",
+      "sourcePath": "/football/spain/laliga2/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null
       }
     }
   ]
