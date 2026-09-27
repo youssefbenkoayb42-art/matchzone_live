@@ -1,4 +1,5 @@
 import { getOpenFootballMatches } from "../lib/openfootball";
+import { getFallbackMatches } from "../lib/fallback-matches";
 
 const BASE_URL = "https://matchzone-live.vercel.app";
 
@@ -67,13 +68,17 @@ async function getSitemapEvents() {
 
 export default async function sitemap() {
   const now = new Date();
-  const [events, openFootballTeams] = await Promise.all([
+  const [events, openFootballTeams, fallbackMatches] = await Promise.all([
     getSitemapEvents(),
     getOpenFootballTeams(),
+    getFallbackMatches(),
   ]);
 
   const matchIds = [
-    ...new Set(events.map((event) => event?.idEvent).filter(Boolean)),
+    ...new Set([
+      ...events.map((event) => event?.idEvent).filter(Boolean),
+      ...fallbackMatches.map((match) => match?.fixture?.id).filter(Boolean),
+    ].map(String)),
   ];
 
   const teamNames = [
@@ -82,6 +87,10 @@ export default async function sitemap() {
         .flatMap((event) => [event?.strHomeTeam, event?.strAwayTeam])
         .filter(Boolean),
       ...openFootballTeams,
+      ...fallbackMatches.flatMap((match) => [
+        match?.teams?.home?.name,
+        match?.teams?.away?.name,
+      ]).filter(Boolean),
     ]),
   ];
 
