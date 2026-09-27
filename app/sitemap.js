@@ -118,6 +118,12 @@ export default async function sitemap() {
       priority: 0.9,
     },
     {
+      url: `${BASE_URL}/results`,
+      lastModified: now,
+      changeFrequency: "hourly",
+      priority: 0.93,
+    },
+    {
       url: `${BASE_URL}/matches/today`,
       lastModified: now,
       changeFrequency: "hourly",
