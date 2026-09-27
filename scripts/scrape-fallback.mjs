@@ -69,6 +69,8 @@ const FEED_HOSTS = [
 ];
 
 const FEED_DAYS = [-2, -1, 0, 1, 2, 3, 4, 5, 6, 7];
+const SPORTSDB_BASE = "https://www.thesportsdb.com/api/v1/json/123";
+const logoCache = new Map();
 
 
 function sleep(ms) {
@@ -372,6 +374,67 @@ async function fetchDetailFeed(path) {
   throw lastError || new Error("all detail hosts failed");
 }
 
+async function fetchSportsDBLogo(teamName) {
+  const name = String(teamName || "").trim();
+  if (!name) return null;
+  const cacheKey = normalizeName(name);
+  if (logoCache.has(cacheKey)) return logoCache.get(cacheKey);
+  try {
+    const url = SPORTSDB_BASE + "/searchteams.php?t=" + encodeURIComponent(name);
+    const response = await fetch(url, {
+      headers: { "User-Agent": USER_AGENT, Accept: "application/json" }
+    });
+    if (!response.ok) throw new Error("TheSportsDB HTTP " + response.status);
+    const data = await response.json();
+    const teams = Array.isArray(data?.teams) ? data.teams : [];
+    const wanted = normalizeName(name);
+    const best = teams.find((team) => normalizeName(team?.strTeam) === wanted) || teams[0];
+    const logo = best?.strBadge || best?.strTeamBadge || null;
+    logoCache.set(cacheKey, logo || null);
+    return logo || null;
+  } catch (error) {
+    console.warn("[scraper] logo lookup failed", name, error.message);
+    logoCache.set(cacheKey, null);
+    return null;
+  }
+}
+
+async function enrichTeamLogos(matches) {
+  const result = matches.map((match) => ({ ...match, teams: {
+    home: { ...(match.teams?.home || {}) },
+    away: { ...(match.teams?.away || {}) },
+  }}));
+  const unique = new Map();
+  for (const match of result) {
+    for (const side of ["home", "away"]) {
+      const team = match.teams?.[side];
+      if (!team?.name) continue;
+      if (team.logo || team.flashscoreLogo) continue;
+      const key = normalizeName(team.name);
+      if (!unique.has(key)) unique.set(key, team.name);
+    }
+  }
+  console.log("[scraper] enriching missing team logos:", unique.size);
+  for (const [key, name] of unique) {
+    const logo = await fetchSportsDBLogo(name);
+    if (logo) logoCache.set(key, logo);
+    await sleep(250);
+  }
+  for (const match of result) {
+    for (const side of ["home", "away"]) {
+      const team = match.teams?.[side];
+      if (!team?.name) continue;
+      if (team.logo || team.flashscoreLogo) continue;
+      const logo = logoCache.get(normalizeName(team.name)) || null;
+      if (logo) {
+        team.logo = logo;
+        team.logoSource = "TheSportsDB";
+      }
+    }
+  }
+  return result;
+}
+
 async function scrapeMatchDetails(matches) {
   const targets = matches.filter((match) => ["FT", "LIVE"].includes(String(match.fixture?.status?.short || "").toUpperCase()));
   const details = new Map();
@@ -520,9 +583,10 @@ async function main() {
   }
 
   const baseMerged = dedupe([...(previous.matches || []), ...scraped]).slice(-5000);
+  const enrichedBase = await enrichTeamLogos(baseMerged);
   const detailMap = await scrapeMatchDetails(scraped);
 
-  const merged = baseMerged.map((match) => {
+  const merged = enrichedBase.map((match) => {
     const id = String(match.externalId || "").trim();
     const freshDetails = detailMap.get(id);
     if (!freshDetails) {
