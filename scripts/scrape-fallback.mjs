@@ -73,6 +73,7 @@ const FEED_DAYS = [-2, -1, 0, 1, 2, 3, 4, 5, 6, 7];
 const SPORTSDB_BASE = "https://www.thesportsdb.com/api/v1/json/123";
 const FOOTBALL_DATA_BASE = "https://api.football-data.org/v4";
 const FOOTBALL_DATA_API_KEY = String(process.env.FOOTBALL_DATA_API_KEY || "").trim();
+// GitHub Actions supplies this through secrets.FOOTBALL_DATA_API_KEY; local runs may set it directly.
 const VERCEL_TEAM_CDN = "https://matchzone-live.vercel.app/teams";
 const logoCache = new Map();
 const localLogoCache = new Map();
