@@ -31,18 +31,30 @@ jobs:
       - name: Install Chromium for Playwright
         run: cd scripts && npx playwright install --with-deps chromium
 
+      - name: Verify Football-Data API secret
+        env:
+          FOOTBALL_DATA_API_KEY: ${{ secrets.FOOTBALL_DATA_API_KEY }}
+        run: |
+          if [ -z "$FOOTBALL_DATA_API_KEY" ]; then
+            echo "FOOTBALL_DATA_API_KEY is missing from GitHub Actions secrets."
+            exit 1
+          fi
+          echo "Football-Data API secret is available."
+
       - name: Scrape football fallback
-        run: node scripts/scrape-fallback.mjs
         env:
           SCRAPER_USER_AGENT: "MatchZone/1.0 (+https://matchzone-live.vercel.app/)"
-          # Vercel environment variables are not exposed to GitHub Actions.
-          # The same token must therefore be added as a GitHub Actions secret.
+          # The scraper runs in GitHub Actions, so it reads the token from
+          # GitHub Actions Secrets, not from Vercel Environment Variables.
           FOOTBALL_DATA_API_KEY: ${{ secrets.FOOTBALL_DATA_API_KEY }}
+        run: node scripts/scrape-fallback.mjs
 
-      - name: Commit datastore when changed
+      - name: Commit datastore and static team logos
         run: |
           git config user.name "matchzone-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # Team logos are stored under public/teams and become static
+          # Vercel-served assets after the commit/deployment.
           git add data/scraped-matches.json public/teams
           if git diff --cached --quiet; then
             echo "No scraper changes."
