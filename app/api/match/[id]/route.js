@@ -26,7 +26,14 @@ export async function GET(request, { params }) {
             ...match.fixture,
             status: {
               short: match.fixture?.status?.short || "FT",
-              long: "Match Finished",
+              long: (() => {
+                const status = String(match.fixture?.status?.short || "FT").toUpperCase();
+                if (status === "LIVE") return "Match Live";
+                if (status === "NS") return "Not Started";
+                if (status === "AET") return "After Extra Time";
+                if (status === "PEN") return "After Penalties";
+                return "Match Finished";
+              })(),
             },
           },
           events: {},
