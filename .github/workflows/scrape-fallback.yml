@@ -2,6 +2,10 @@ name: MatchZone fallback scraper
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - "scripts/scrape-fallback.mjs"
+      - "scripts/package.json"
   schedule:
     - cron: "17 */2 * * *"
 
