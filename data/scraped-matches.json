@@ -16,7 +16,7 @@
         "home": {
           "id": "1",
           "name": "Atl. Nacional",
-          "logo": null
+          "logo": "https://static.flashscore.com/res/image/data/1_h.png"
         },
         "away": {
           "id": null,
@@ -56,7 +56,7 @@
         "home": {
           "id": "3",
           "name": "Amal Tiznit",
-          "logo": null
+          "logo": "https://static.flashscore.com/res/image/data/3_h.png"
         },
         "away": {
           "id": null,
@@ -96,7 +96,7 @@
         "home": {
           "id": "0",
           "name": "Girona",
-          "logo": null
+          "logo": "https://static.flashscore.com/res/image/data/0_h.png"
         },
         "away": {
           "id": null,
@@ -136,7 +136,7 @@
         "home": {
           "id": "0",
           "name": "Novorizontino",
-          "logo": null
+          "logo": "https://static.flashscore.com/res/image/data/0_h.png"
         },
         "away": {
           "id": null,
@@ -176,7 +176,7 @@
         "home": {
           "id": "0",
           "name": "Vila Nova FC",
-          "logo": null
+          "logo": "https://static.flashscore.com/res/image/data/0_h.png"
         },
         "away": {
           "id": null,
@@ -216,7 +216,7 @@
         "home": {
           "id": "1",
           "name": "Nautico",
-          "logo": null
+          "logo": "https://static.flashscore.com/res/image/data/1_h.png"
         },
         "away": {
           "id": null,
@@ -256,7 +256,7 @@
         "home": {
           "id": "2",
           "name": "Operario-PR",
-          "logo": null
+          "logo": "https://static.flashscore.com/res/image/data/2_h.png"
         },
         "away": {
           "id": null,
@@ -296,7 +296,7 @@
         "home": {
           "id": "1",
           "name": "Goias",
-          "logo": null
+          "logo": "https://static.flashscore.com/res/image/data/1_h.png"
         },
         "away": {
           "id": null,
@@ -336,7 +336,7 @@
         "home": {
           "id": "0",
           "name": "Chico",
-          "logo": null
+          "logo": "https://static.flashscore.com/res/image/data/0_h.png"
         },
         "away": {
           "id": null,
@@ -376,7 +376,7 @@
         "home": {
           "id": "3",
           "name": "Once Caldas",
-          "logo": null
+          "logo": "https://static.flashscore.com/res/image/data/3_h.png"
         },
         "away": {
           "id": null,
@@ -416,7 +416,7 @@
         "home": {
           "id": "0",
           "name": "Pereira",
-          "logo": null
+          "logo": "https://static.flashscore.com/res/image/data/0_h.png"
         },
         "away": {
           "id": null,
@@ -456,7 +456,7 @@
         "home": {
           "id": "2",
           "name": "Atlante",
-          "logo": null
+          "logo": "https://static.flashscore.com/res/image/data/2_h.png"
         },
         "away": {
           "id": null,
@@ -496,7 +496,7 @@
         "home": {
           "id": "3",
           "name": "Club Tijuana",
-          "logo": null
+          "logo": "https://static.flashscore.com/res/image/data/3_h.png"
         },
         "away": {
           "id": null,
@@ -536,7 +536,7 @@
         "home": {
           "id": "1",
           "name": "Union Touarga",
-          "logo": null
+          "logo": "https://static.flashscore.com/res/image/data/1_h.png"
         },
         "away": {
           "id": null,
@@ -576,7 +576,7 @@
         "home": {
           "id": "6",
           "name": "Difaa El Jadidi",
-          "logo": null
+          "logo": "https://static.flashscore.com/res/image/data/6_h.png"
         },
         "away": {
           "id": null,
@@ -616,7 +616,7 @@
         "home": {
           "id": "3",
           "name": "Wydad AC",
-          "logo": null
+          "logo": "https://static.flashscore.com/res/image/data/3_h.png"
         },
         "away": {
           "id": null,
@@ -656,7 +656,7 @@
         "home": {
           "id": "1",
           "name": "Ceuta",
-          "logo": null
+          "logo": "https://static.flashscore.com/res/image/data/1_h.png"
         },
         "away": {
           "id": null,
@@ -696,7 +696,7 @@
         "home": {
           "id": "3",
           "name": "Granada CF",
-          "logo": null
+          "logo": "https://static.flashscore.com/res/image/data/3_h.png"
         },
         "away": {
           "id": null,
@@ -736,7 +736,7 @@
         "home": {
           "id": "1",
           "name": "Celta Vigo B",
-          "logo": null
+          "logo": "https://static.flashscore.com/res/image/data/1_h.png"
         },
         "away": {
           "id": null,
@@ -776,7 +776,7 @@
         "home": {
           "id": "1",
           "name": "Tenerife",
-          "logo": null
+          "logo": "https://static.flashscore.com/res/image/data/1_h.png"
         },
         "away": {
           "id": null,
@@ -816,7 +816,7 @@
         "home": {
           "id": "0",
           "name": "Criciuma",
-          "logo": null
+          "logo": "https://static.flashscore.com/res/image/data/0_h.png"
         },
         "away": {
           "id": null,
@@ -936,7 +936,7 @@
         "home": {
           "id": "1",
           "name": "Cucuta",
-          "logo": null
+          "logo": "https://static.flashscore.com/res/image/data/1_h.png"
         },
         "away": {
           "id": null,
@@ -976,7 +976,7 @@
         "home": {
           "id": "0",
           "name": "Junior",
-          "logo": null
+          "logo": "https://static.flashscore.com/res/image/data/0_h.png"
         },
         "away": {
           "id": null,
@@ -1056,7 +1056,7 @@
         "home": {
           "id": "3",
           "name": "Cruz Azul",
-          "logo": null
+          "logo": "https://static.flashscore.com/res/image/data/3_h.png"
         },
         "away": {
           "id": null,
@@ -1096,7 +1096,7 @@
         "home": {
           "id": "2",
           "name": "Guadalajara Chivas",
-          "logo": null
+          "logo": "https://static.flashscore.com/res/image/data/2_h.png"
         },
         "away": {
           "id": null,
@@ -1136,7 +1136,7 @@
         "home": {
           "id": "0",
           "name": "Santos Laguna",
-          "logo": null
+          "logo": "https://static.flashscore.com/res/image/data/0_h.png"
         },
         "away": {
           "id": null,
@@ -1176,7 +1176,7 @@
         "home": {
           "id": "0",
           "name": "Tigres UANL",
-          "logo": null
+          "logo": "https://static.flashscore.com/res/image/data/0_h.png"
         },
         "away": {
           "id": null,
@@ -1376,7 +1376,7 @@
         "home": {
           "id": "0",
           "name": "Gangwon",
-          "logo": null
+          "logo": "https://static.flashscore.com/res/image/data/0_h.png"
         },
         "away": {
           "id": null,
@@ -1416,7 +1416,7 @@
         "home": {
           "id": "1",
           "name": "Valladolid",
-          "logo": null
+          "logo": "https://static.flashscore.com/res/image/data/1_h.png"
         },
         "away": {
           "id": null,
@@ -1456,7 +1456,7 @@
         "home": {
           "id": "1",
           "name": "Mallorca",
-          "logo": null
+          "logo": "https://static.flashscore.com/res/image/data/1_h.png"
         },
         "away": {
           "id": null,
@@ -1616,7 +1616,7 @@
         "home": {
           "id": "2",
           "name": "Atlanta Utd",
-          "logo": null
+          "logo": "https://static.flashscore.com/res/image/data/2_h.png"
         },
         "away": {
           "id": null,
@@ -1656,7 +1656,7 @@
         "home": {
           "id": "1",
           "name": "CF Montreal",
-          "logo": null
+          "logo": "https://static.flashscore.com/res/image/data/1_h.png"
         },
         "away": {
           "id": null,
@@ -1696,7 +1696,7 @@
         "home": {
           "id": "1",
           "name": "Charlotte",
-          "logo": null
+          "logo": "https://static.flashscore.com/res/image/data/1_h.png"
         },
         "away": {
           "id": null,
@@ -1736,7 +1736,7 @@
         "home": {
           "id": "2",
           "name": "Philadelphia Union",
-          "logo": null
+          "logo": "https://static.flashscore.com/res/image/data/2_h.png"
         },
         "away": {
           "id": null,
@@ -1776,7 +1776,7 @@
         "home": {
           "id": "3",
           "name": "Austin FC",
-          "logo": null
+          "logo": "https://static.flashscore.com/res/image/data/3_h.png"
         },
         "away": {
           "id": null,
@@ -1816,7 +1816,7 @@
         "home": {
           "id": "0",
           "name": "FC Dallas",
-          "logo": null
+          "logo": "https://static.flashscore.com/res/image/data/0_h.png"
         },
         "away": {
           "id": null,
@@ -1856,7 +1856,7 @@
         "home": {
           "id": "2",
           "name": "Houston Dynamo",
-          "logo": null
+          "logo": "https://static.flashscore.com/res/image/data/2_h.png"
         },
         "away": {
           "id": null,
@@ -1896,7 +1896,7 @@
         "home": {
           "id": "0",
           "name": "Nashville SC",
-          "logo": null
+          "logo": "https://static.flashscore.com/res/image/data/0_h.png"
         },
         "away": {
           "id": null,
@@ -1936,7 +1936,7 @@
         "home": {
           "id": "1",
           "name": "Seattle Sounders",
-          "logo": null
+          "logo": "https://static.flashscore.com/res/image/data/1_h.png"
         },
         "away": {
           "id": null,
@@ -1976,7 +1976,7 @@
         "home": {
           "id": "0",
           "name": "Real Salt Lake",
-          "logo": null
+          "logo": "https://static.flashscore.com/res/image/data/0_h.png"
         },
         "away": {
           "id": null,
@@ -2016,7 +2016,7 @@
         "home": {
           "id": "2",
           "name": "Los Angeles Galaxy",
-          "logo": null
+          "logo": "https://static.flashscore.com/res/image/data/2_h.png"
         },
         "away": {
           "id": null,
@@ -2056,7 +2056,7 @@
         "home": {
           "id": "1",
           "name": "San Jose Earthquakes",
-          "logo": null
+          "logo": "https://static.flashscore.com/res/image/data/1_h.png"
         },
         "away": {
           "id": null,
@@ -2096,7 +2096,7 @@
         "home": {
           "id": "3",
           "name": "Vancouver Whitecaps",
-          "logo": null
+          "logo": "https://static.flashscore.com/res/image/data/3_h.png"
         },
         "away": {
           "id": null,
@@ -4404,5 +4404,7 @@
       "sourceUrl": "https://www.flashscore.com/match/2a6TnEYO/",
       "sourcePath": "/football/spain/laliga2/"
     }
-  ]
+  ],
+  "logoSource": "Flashscore CDN",
+  "logoUpdatedAt": "2026-09-27T15:22:57.456Z"
 }
