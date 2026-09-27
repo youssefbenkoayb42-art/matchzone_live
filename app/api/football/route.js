@@ -627,7 +627,7 @@ export async function GET() {
 
           "openfootball/football.json":
             openFootballMatches.length,
-          "Flashscore HTML fallback": Math.max(0, uniqueMatches.length - allMatches.length),
+          "Flashscore HTML fallback": fallbackStatus.count,
         },
 
         updatedAt:
