@@ -384,9 +384,20 @@ function getSourcePriority(match) {
     TheSportsDB: 1,
     "football-data.org": 2,
     "openfootball/football.json": 3,
+    "Flashscore Feed": 4,
   };
 
   return priorities[match?.source] || 99;
+}
+
+function getLocalLeagueLogo(name = "") {
+  const value = String(name).toLowerCase();
+  if (value.includes("premier league")) return "/leagues/premier-league.svg";
+  if (value.includes("la liga") || value.includes("laliga")) return "/leagues/la-liga.svg";
+  if (value.includes("serie a")) return "/leagues/serie-a.svg";
+  if (value.includes("bundesliga")) return "/leagues/bundesliga.svg";
+  if (value.includes("ligue 1")) return "/leagues/ligue-1.svg";
+  return null;
 }
 
 function mergeMatchRecords(primary, secondary) {
@@ -573,7 +584,7 @@ export async function GET() {
       fetchOpenFootball(date),
     ]);
 
-    const allMatches = [
+      const allMatches = [
       ...sportsDBMatches,
       ...footballDataMatches,
       ...openFootballMatches,
@@ -581,13 +592,14 @@ export async function GET() {
 
     let uniqueMatches = removeDuplicates(allMatches);
 
-    // Repository-backed scraper fallback: only enrich when the live providers
-    // return too little data. This keeps API results authoritative when healthy.
+    // Always merge the repository-backed Flashscore feed. Primary providers
+    // keep priority when the same fixture exists in more than one source.
     const fallbackStatus = await getFallbackStatus();
-    if (uniqueMatches.length < 10) {
-      const fallbackMatches = await getFallbackMatches();
-      uniqueMatches = removeDuplicates([...uniqueMatches, ...fallbackMatches]);
-    }
+    const fallbackMatches = await getFallbackMatches();
+    uniqueMatches = removeDuplicates([
+      ...uniqueMatches,
+      ...fallbackMatches,
+    ]);
 
     const sortedMatches =
       sortMatches(uniqueMatches);
@@ -598,10 +610,13 @@ export async function GET() {
 
         league: {
           ...match.league,
-
           name:
             match.league?.name ||
             "Football",
+          logo:
+            match.league?.logo ||
+            getLocalLeagueLogo(match.league?.name) ||
+            null,
         },
 
         arabicLeague:
@@ -627,7 +642,7 @@ export async function GET() {
 
           "openfootball/football.json":
             openFootballMatches.length,
-          "Flashscore HTML fallback": fallbackStatus.count,
+          "Flashscore Feed fallback": fallbackStatus.count,
         },
 
         updatedAt:
