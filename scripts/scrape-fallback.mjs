@@ -71,6 +71,9 @@ const FEED_HOSTS = [
 
 const FEED_DAYS = [-2, -1, 0, 1, 2, 3, 4, 5, 6, 7];
 const SPORTSDB_BASE = "https://www.thesportsdb.com/api/v1/json/123";
+const FOOTBALL_DATA_BASE = "https://api.football-data.org/v4";
+const FOOTBALL_DATA_API_KEY = String(process.env.FOOTBALL_DATA_API_KEY || "").trim();
+const VERCEL_TEAM_CDN = "https://matchzone-live.vercel.app/teams";
 const logoCache = new Map();
 const localLogoCache = new Map();
 let sportsDbRateLimited = false;
@@ -105,6 +108,7 @@ async function loadLocalTeamLogos() {
     localLogoCache.set(match[1], "/teams/" + entry.name);
   }
   console.log("[scraper] local team logos:", localLogoCache.size);
+  console.log("[scraper] Vercel team CDN:", VERCEL_TEAM_CDN);
 }
 
 async function saveLocalTeamLogo(teamName, logoUrl) {
@@ -457,6 +461,119 @@ async function fetchDetailFeed(path) {
   throw lastError || new Error("all detail hosts failed");
 }
 
+async function fetchFootballDataMatches(dateFrom, dateTo, retry = true) {
+  if (!FOOTBALL_DATA_API_KEY) {
+    console.warn("[scraper] FOOTBALL_DATA_API_KEY is not available in GitHub Actions; skipping official logo lookup.");
+    return [];
+  }
+
+  const url =
+    FOOTBALL_DATA_BASE +
+    "/matches?dateFrom=" +
+    encodeURIComponent(dateFrom) +
+    "&dateTo=" +
+    encodeURIComponent(dateTo);
+
+  try {
+    const response = await fetch(url, {
+      headers: {
+        "X-Auth-Token": FOOTBALL_DATA_API_KEY,
+        Accept: "application/json",
+        "User-Agent": USER_AGENT,
+      },
+    });
+
+    if (response.status === 429) {
+      console.warn("[scraper] Football-Data.org returned 429; waiting 60 seconds before retry.");
+      if (!retry) return [];
+      await sleep(60000);
+      return fetchFootballDataMatches(dateFrom, dateTo, false);
+    }
+
+    if (!response.ok) {
+      throw new Error("Football-Data.org HTTP " + response.status);
+    }
+
+    const data = await response.json();
+    return Array.isArray(data?.matches) ? data.matches : [];
+  } catch (error) {
+    console.warn("[scraper] Football-Data.org lookup failed:", error.message);
+    return [];
+  }
+}
+
+function footballDataNameCandidates(team) {
+  return new Set(
+    [
+      team?.name,
+      team?.shortName,
+      String(team?.name || "").replace(/\bFC\b/gi, "").trim(),
+    ]
+      .filter(Boolean)
+      .map(normalizeName)
+      .filter(Boolean)
+  );
+}
+
+async function enrichFromFootballData(matches) {
+  if (!FOOTBALL_DATA_API_KEY || !matches.length) return matches;
+
+  const dates = matches
+    .map((match) => String(match.fixture?.date || "").slice(0, 10))
+    .filter(Boolean)
+    .sort();
+
+  if (!dates.length) return matches;
+
+  const dateFrom = dates[0];
+  const dateTo = dates[dates.length - 1];
+  console.log("[scraper] official Football-Data.org logo window:", dateFrom, "to", dateTo);
+
+  // One broad request is intentionally used instead of one request per club.
+  // The free plan is limited to 10 requests/minute, so batching is essential.
+  const apiMatches = await fetchFootballDataMatches(dateFrom, dateTo);
+  const byName = new Map();
+
+  for (const item of apiMatches) {
+    for (const side of ["homeTeam", "awayTeam"]) {
+      const apiTeam = item?.[side];
+      if (!apiTeam?.crest) continue;
+      for (const key of footballDataNameCandidates(apiTeam)) {
+        if (!byName.has(key)) {
+          byName.set(key, {
+            name: apiTeam.name,
+            crest: apiTeam.crest,
+            id: apiTeam.id || null,
+          });
+        }
+      }
+    }
+  }
+
+  console.log("[scraper] Football-Data.org teams with usable crests:", byName.size);
+
+  for (const match of matches) {
+    for (const side of ["home", "away"]) {
+      const team = match.teams?.[side];
+      if (!team?.name) continue;
+      if (team.logo && String(team.logo).startsWith("/")) continue;
+      if (cleanTeamLogo(team.logo || team.flashscoreLogo)) continue;
+
+      const apiTeam = byName.get(normalizeName(team.name));
+      if (!apiTeam) continue;
+
+      const localPath = await saveLocalTeamLogo(team.name, apiTeam.crest);
+      if (localPath) {
+        team.logo = localPath;
+        team.logoSource = "Football-Data.org → GitHub local";
+        team.footballDataId = apiTeam.id;
+      }
+    }
+  }
+
+  return matches;
+}
+
 async function fetchSportsDBLogo(teamName) {
   const name = String(teamName || "").trim();
   if (!name) return null;
@@ -527,9 +644,30 @@ async function enrichTeamLogos(matches) {
     },
   }));
 
+  // STEP 1: local GitHub repository cache. No external logo request is made
+  // when the logo is already committed under public/teams.
   await loadLocalTeamLogos();
 
+  for (const match of result) {
+    for (const side of ["home", "away"]) {
+      const team = match.teams?.[side];
+      if (!team?.name) continue;
+      const key = normalizeName(team.name);
+      const localLogo = localLogoCache.get(key);
+      if (localLogo) {
+        team.logo = localLogo;
+        team.logoSource = "GitHub local";
+      }
+    }
+  }
+
+  // STEP 2: official Football-Data.org API for teams still missing.
+  // Its crest is downloaded into GitHub, so future runs become local.
+  await enrichFromFootballData(result);
+
   const unique = new Map();
+
+  // STEP 3: Flashscore feed first, then TheSportsDB as the final fallback.
   for (const match of result) {
     for (const side of ["home", "away"]) {
       const team = match.teams?.[side];
@@ -539,16 +677,16 @@ async function enrichTeamLogos(matches) {
       const localLogo = localLogoCache.get(key);
       if (localLogo) {
         team.logo = localLogo;
-        team.logoSource = "GitHub local";
+        team.logoSource = team.logoSource || "GitHub local";
         continue;
       }
 
-      const flashscoreLogoUrl = cleanTeamLogo(team.logo || team.flashscoreLogo);
+      const flashscoreLogoUrl = cleanTeamLogo(team.flashscoreLogo || team.logo);
       if (flashscoreLogoUrl) {
         const localPath = await saveLocalTeamLogo(team.name, flashscoreLogoUrl);
         if (localPath) {
           team.logo = localPath;
-          team.logoSource = "GitHub local";
+          team.logoSource = "Flashscore → GitHub local";
           continue;
         }
       }
@@ -557,13 +695,13 @@ async function enrichTeamLogos(matches) {
     }
   }
 
-  console.log("[scraper] teams needing external logo lookup:", unique.size);
+  console.log("[scraper] teams needing final fallback lookup:", unique.size);
 
   for (const [key, name] of unique) {
     if (localLogoCache.has(key)) continue;
     const logo = await fetchSportsDBLogo(name);
     if (logo) logoCache.set(key, logo);
-    await sleep(250);
+    await sleep(2000);
   }
 
   for (const match of result) {
@@ -574,13 +712,7 @@ async function enrichTeamLogos(matches) {
       const localLogo = localLogoCache.get(key);
       if (localLogo) {
         team.logo = localLogo;
-        team.logoSource = "GitHub local";
-        continue;
-      }
-      const logo = logoCache.get(key) || null;
-      if (logo) {
-        team.logo = logo;
-        team.logoSource = "GitHub local";
+        team.logoSource = team.logoSource || "GitHub local";
       }
     }
   }
@@ -629,7 +761,7 @@ async function scrapeMatchDetails(matches) {
         }
       });
     }
-    await sleep(450);
+    await sleep(2000);
   }
   console.log("[scraper] saved details for", details.size, "matches");
   return details;
