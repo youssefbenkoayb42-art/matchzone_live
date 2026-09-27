@@ -1,4 +1,5 @@
 import { getOpenFootballMatches } from "../../../lib/openfootball";
+import { getFallbackMatches, getFallbackStatus } from "../../../lib/fallback-matches";
 
 export const dynamic = "force-dynamic";
 
@@ -578,8 +579,15 @@ export async function GET() {
       ...openFootballMatches,
     ];
 
-    const uniqueMatches =
-      removeDuplicates(allMatches);
+    let uniqueMatches = removeDuplicates(allMatches);
+
+    // Repository-backed scraper fallback: only enrich when the live providers
+    // return too little data. This keeps API results authoritative when healthy.
+    const fallbackStatus = await getFallbackStatus();
+    if (uniqueMatches.length < 10) {
+      const fallbackMatches = await getFallbackMatches();
+      uniqueMatches = removeDuplicates([...uniqueMatches, ...fallbackMatches]);
+    }
 
     const sortedMatches =
       sortMatches(uniqueMatches);
@@ -619,10 +627,12 @@ export async function GET() {
 
           "openfootball/football.json":
             openFootballMatches.length,
+          "Flashscore HTML fallback": Math.max(0, uniqueMatches.length - allMatches.length),
         },
 
         updatedAt:
           new Date().toISOString(),
+        fallback: fallbackStatus,
       },
       {
         headers: {
