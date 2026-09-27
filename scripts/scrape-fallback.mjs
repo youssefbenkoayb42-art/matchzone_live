@@ -138,7 +138,20 @@ function flashscoreLogo(filename) {
 
 function cleanTeamLogo(value) {
   const logo = String(value || "").trim();
-  return /^https?:\/\//i.test(logo) ? logo : null;
+  if (!/^https?:\/\//i.test(logo)) return null;
+
+  // Flashscore may return placeholder values such as "1" in OB/AW.
+  // They are not real team logos and must never be persisted.
+  try {
+    const pathname = new URL(logo).pathname.toLowerCase();
+    const filename = pathname.split("/").pop() || "";
+    if (!filename || filename === "1" || filename === "0") return null;
+    if (!/\.(png|jpg|jpeg|webp|svg)$/i.test(filename)) return null;
+  } catch {
+    return null;
+  }
+
+  return logo;
 }
 
 function buildTeam(side, id, name, logoFilename) {
