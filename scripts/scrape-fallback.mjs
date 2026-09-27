@@ -421,8 +421,35 @@ async function fetchSportsDBLogo(teamName) {
   }
 }
 
+function repairDuplicateTeamLogos(matches) {
+  return matches.map((match) => {
+    const home = { ...(match.teams?.home || {}) };
+    const away = { ...(match.teams?.away || {}) };
+    const homeLogo = cleanTeamLogo(home.logo || home.flashscoreLogo);
+    const awayLogo = cleanTeamLogo(away.logo || away.flashscoreLogo);
+    const differentTeams =
+      String(home.id || "") !== String(away.id || "") ||
+      normalizeName(home.name) !== normalizeName(away.name);
+
+    // A legacy scrape could have copied the home badge into the away slot.
+    // Keep the current home badge, but remove the stale away badge so the
+    // enrichment step can fetch the real away team's badge.
+    if (differentTeams && homeLogo && awayLogo && homeLogo === awayLogo) {
+      away.logo = null;
+      away.flashscoreLogo = null;
+      away.logoFilename = null;
+      away.logoSource = null;
+    }
+
+    return {
+      ...match,
+      teams: { home, away },
+    };
+  });
+}
+
 async function enrichTeamLogos(matches) {
-  const result = matches.map((match) => ({ ...match, teams: {
+  const result = repairDuplicateTeamLogos(matches).map((match) => ({ ...match, teams: {
     home: { ...(match.teams?.home || {}) },
     away: { ...(match.teams?.away || {}) },
   }}));
@@ -645,7 +672,10 @@ async function main() {
   }
 
   const baseMerged = dedupe([...(previous.matches || []), ...scraped]).slice(-5000);
-  const enrichedBase = await enrichTeamLogos(baseMerged);
+  // Repair legacy duplicated badges before logo enrichment so a stale home
+  // badge cannot block the lookup of the real away-team badge.
+  const repairedBase = repairDuplicateTeamLogos(baseMerged);
+  const enrichedBase = await enrichTeamLogos(repairedBase);
   const detailMap = await scrapeMatchDetails(scraped);
 
   const merged = enrichedBase.map((match) => {
