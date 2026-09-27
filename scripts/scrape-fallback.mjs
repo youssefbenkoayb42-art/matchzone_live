@@ -1,7 +1,5 @@
 import fs from "node:fs/promises";
 import path from "node:path";
-import * as cheerio from "cheerio";
-import { chromium } from "playwright";
 
 const BASE = "https://www.flashscore.com";
 const OUTPUT = path.join(process.cwd(), "data", "scraped-matches.json");
@@ -72,60 +70,6 @@ const FEED_HOSTS = [
 
 const FEED_DAYS = [-2, -1, 0, 1, 2, 3, 4, 5, 6, 7];
 
-const LEAGUES = [
-  ["england-premier-league", "https://www.flashscore.com/football/england/premier-league/"],
-  ["england-championship", "https://www.flashscore.com/football/england/championship/"],
-  ["spain-laliga", "https://www.flashscore.com/football/spain/laliga/"],
-  ["spain-segunda", "https://www.flashscore.com/football/spain/laliga2/"],
-  ["italy-serie-a", "https://www.flashscore.com/football/italy/serie-a/"],
-  ["italy-serie-b", "https://www.flashscore.com/football/italy/serie-b/"],
-  ["germany-bundesliga", "https://www.flashscore.com/football/germany/bundesliga/"],
-  ["germany-2-bundesliga", "https://www.flashscore.com/football/germany/2-bundesliga/"],
-  ["france-ligue-1", "https://www.flashscore.com/football/france/ligue-1/"],
-  ["france-ligue-2", "https://www.flashscore.com/football/france/ligue-2/"],
-  ["netherlands-eredivisie", "https://www.flashscore.com/football/netherlands/eredivisie/"],
-  ["portugal-liga-portugal", "https://www.flashscore.com/football/portugal/liga-portugal/"],
-  ["belgium-jupiler", "https://www.flashscore.com/football/belgium/jupiler-pro-league/"],
-  ["scotland-premiership", "https://www.flashscore.com/football/scotland/premiership/"],
-  ["turkey-super-lig", "https://www.flashscore.com/football/turkey/super-lig/"],
-  ["greece-super-league", "https://www.flashscore.com/football/greece/super-league/"],
-  ["austria-bundesliga", "https://www.flashscore.com/football/austria/bundesliga/"],
-  ["switzerland-super-league", "https://www.flashscore.com/football/switzerland/super-league/"],
-  ["denmark-superliga", "https://www.flashscore.com/football/denmark/superliga/"],
-  ["norway-eliteserien", "https://www.flashscore.com/football/norway/eliteserien/"],
-  ["sweden-allsvenskan", "https://www.flashscore.com/football/sweden/allsvenskan/"],
-  ["poland-ekstraklasa", "https://www.flashscore.com/football/poland/ekstraklasa/"],
-  ["czech-first-league", "https://www.flashscore.com/football/czech-republic/chance-liga/"],
-  ["croatia-hnl", "https://www.flashscore.com/football/croatia/hnl/"],
-  ["serbia-super-liga", "https://www.flashscore.com/football/serbia/super-liga/"],
-  ["romania-superliga", "https://www.flashscore.com/football/romania/superliga/"],
-  ["ukraine-premier-league", "https://www.flashscore.com/football/ukraine/premier-league/"],
-  ["russia-premier-league", "https://www.flashscore.com/football/russia/premier-league/"],
-  ["usa-mls", "https://www.flashscore.com/football/usa/mls/"],
-  ["mexico-liga-mx", "https://www.flashscore.com/football/mexico/liga-mx/"],
-  ["brazil-serie-a", "https://www.flashscore.com/football/brazil/serie-a/"],
-  ["brazil-serie-b", "https://www.flashscore.com/football/brazil/serie-b/"],
-  ["argentina-liga-profesional", "https://www.flashscore.com/football/argentina/liga-profesional/"],
-  ["colombia-primera-a", "https://www.flashscore.com/football/colombia/primera-a/"],
-  ["chile-primera", "https://www.flashscore.com/football/chile/primera-division/"],
-  ["ecuador-ligapro", "https://www.flashscore.com/football/ecuador/liga-pro/"],
-  ["uruguay-primera", "https://www.flashscore.com/football/uruguay/primera-division/"],
-  ["saudi-pro-league", "https://www.flashscore.com/football/saudi-arabia/saudi-professional-league/"],
-  ["uae-pro-league", "https://www.flashscore.com/football/united-arab-emirates/uae-league/"],
-  ["qatar-stars-league", "https://www.flashscore.com/football/qatar/qsl/"],
-  ["japan-j1-league", "https://www.flashscore.com/football/japan/j1-league/"],
-  ["south-korea-k-league-1", "https://www.flashscore.com/football/south-korea/k-league-1/"],
-  ["australia-a-league", "https://www.flashscore.com/football/australia/a-league/"],
-  ["morocco-botola", "https://www.flashscore.com/football/morocco/botola-pro/"],
-  ["egypt-premier-league", "https://www.flashscore.com/football/egypt/premier-league/"],
-  ["south-africa-premiership", "https://www.flashscore.com/football/south-africa/premiership/"],
-  ["champions-league", "https://www.flashscore.com/football/europe/champions-league/"],
-  ["europa-league", "https://www.flashscore.com/football/europe/europa-league/"],
-  ["conference-league", "https://www.flashscore.com/football/europe/europa-conference-league/"],
-  ["copa-libertadores", "https://www.flashscore.com/football/south-america/copa-libertadores/"],
-  ["caf-champions-league", "https://www.flashscore.com/football/africa/caf-champions-league/"],
-  ["afc-champions-league", "https://www.flashscore.com/football/asia/afc-champions-league-elite/"],
-];
 
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
