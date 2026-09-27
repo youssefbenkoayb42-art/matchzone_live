@@ -1,6 +1,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import * as cheerio from "cheerio";
+import { chromium } from "playwright";
 
 const BASE = "https://www.flashscore.com";
 const OUTPUT = path.join(process.cwd(), "data", "scraped-matches.json");
@@ -157,31 +158,41 @@ function extractMatches(html, leagueKey, sourceUrl) {
   return matches;
 }
 
-async function fetchLeague(leagueKey, url) {
-  const headers = {
-    "User-Agent": USER_AGENT,
-    Accept: "text/html,application/xhtml+xml",
-    "Accept-Language": "en-US,en;q=0.9",
-  };
-
-  const urls = [url, `${url}results/`];
+async function fetchLeague(leagueKey, url, browser) {
   const all = [];
+  const urls = [url, `${url}results/`];
+  const context = await browser.newContext({
+    userAgent: USER_AGENT,
+    locale: "en-US",
+    viewport: { width: 1365, height: 900 },
+    extraHTTPHeaders: {
+      Accept: "text/html,application/xhtml+xml",
+      "Accept-Language": "en-US,en;q=0.9",
+    },
+  });
+  const page = await context.newPage();
 
-  for (const target of urls) {
-    try {
-      const response = await fetch(target, { headers });
-      if (!response.ok) {
-        console.warn("[scraper]", leagueKey, response.status, target);
-        continue;
+  try {
+    for (const target of urls) {
+      try {
+        await page.goto(target, { waitUntil: "domcontentloaded", timeout: 30000 });
+        await page.waitForTimeout(2500);
+        for (let i = 0; i < 3; i += 1) {
+          await page.mouse.wheel(0, 1800);
+          await page.waitForTimeout(700);
+        }
+        const html = await page.content();
+        const found = extractMatches(html, leagueKey, target);
+        console.log("[scraper]", leagueKey, "rendered", found.length, target);
+        all.push(...found);
+      } catch (error) {
+        console.warn("[scraper]", leagueKey, error.message);
       }
-      const html = await response.text();
-      all.push(...extractMatches(html, leagueKey, target));
-    } catch (error) {
-      console.warn("[scraper]", leagueKey, error.message);
+      await sleep(900);
     }
-    await sleep(900);
+  } finally {
+    await context.close();
   }
-
   return all;
 }
 
@@ -223,11 +234,14 @@ async function main() {
     previous = JSON.parse(await fs.readFile(OUTPUT, "utf8"));
   } catch {}
 
+  const browser = await chromium.launch({ headless: true });
   const scraped = [];
   for (const [leagueKey, url] of LEAGUES) {
     console.log("[scraper] fetching", leagueKey);
-    scraped.push(...(await fetchLeague(leagueKey, url)));
+    scraped.push(...(await fetchLeague(leagueKey, url, browser)));
   }
+
+  await browser.close();
 
   const merged = dedupe([...(previous.matches || []), ...scraped]).slice(-5000);
 
