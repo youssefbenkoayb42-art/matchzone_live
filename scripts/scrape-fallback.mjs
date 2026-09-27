@@ -64,6 +64,69 @@ const LEAGUES = [
   ["afc-champions-league", "https://www.flashscore.com/football/asia/afc-champions-league-elite/"],
 ];
 
+
+const FEED_HOSTS = [
+  "https://local-global.flashscore.ninja/2/x/feed",
+  "https://2.flashscore.ninja/2/x/feed",
+];
+
+const FEED_DAYS = [-2, -1, 0, 1, 2, 3, 4, 5, 6, 7];
+
+const LEAGUES = [
+  ["england-premier-league", "https://www.flashscore.com/football/england/premier-league/"],
+  ["england-championship", "https://www.flashscore.com/football/england/championship/"],
+  ["spain-laliga", "https://www.flashscore.com/football/spain/laliga/"],
+  ["spain-segunda", "https://www.flashscore.com/football/spain/laliga2/"],
+  ["italy-serie-a", "https://www.flashscore.com/football/italy/serie-a/"],
+  ["italy-serie-b", "https://www.flashscore.com/football/italy/serie-b/"],
+  ["germany-bundesliga", "https://www.flashscore.com/football/germany/bundesliga/"],
+  ["germany-2-bundesliga", "https://www.flashscore.com/football/germany/2-bundesliga/"],
+  ["france-ligue-1", "https://www.flashscore.com/football/france/ligue-1/"],
+  ["france-ligue-2", "https://www.flashscore.com/football/france/ligue-2/"],
+  ["netherlands-eredivisie", "https://www.flashscore.com/football/netherlands/eredivisie/"],
+  ["portugal-liga-portugal", "https://www.flashscore.com/football/portugal/liga-portugal/"],
+  ["belgium-jupiler", "https://www.flashscore.com/football/belgium/jupiler-pro-league/"],
+  ["scotland-premiership", "https://www.flashscore.com/football/scotland/premiership/"],
+  ["turkey-super-lig", "https://www.flashscore.com/football/turkey/super-lig/"],
+  ["greece-super-league", "https://www.flashscore.com/football/greece/super-league/"],
+  ["austria-bundesliga", "https://www.flashscore.com/football/austria/bundesliga/"],
+  ["switzerland-super-league", "https://www.flashscore.com/football/switzerland/super-league/"],
+  ["denmark-superliga", "https://www.flashscore.com/football/denmark/superliga/"],
+  ["norway-eliteserien", "https://www.flashscore.com/football/norway/eliteserien/"],
+  ["sweden-allsvenskan", "https://www.flashscore.com/football/sweden/allsvenskan/"],
+  ["poland-ekstraklasa", "https://www.flashscore.com/football/poland/ekstraklasa/"],
+  ["czech-first-league", "https://www.flashscore.com/football/czech-republic/chance-liga/"],
+  ["croatia-hnl", "https://www.flashscore.com/football/croatia/hnl/"],
+  ["serbia-super-liga", "https://www.flashscore.com/football/serbia/super-liga/"],
+  ["romania-superliga", "https://www.flashscore.com/football/romania/superliga/"],
+  ["ukraine-premier-league", "https://www.flashscore.com/football/ukraine/premier-league/"],
+  ["russia-premier-league", "https://www.flashscore.com/football/russia/premier-league/"],
+  ["usa-mls", "https://www.flashscore.com/football/usa/mls/"],
+  ["mexico-liga-mx", "https://www.flashscore.com/football/mexico/liga-mx/"],
+  ["brazil-serie-a", "https://www.flashscore.com/football/brazil/serie-a/"],
+  ["brazil-serie-b", "https://www.flashscore.com/football/brazil/serie-b/"],
+  ["argentina-liga-profesional", "https://www.flashscore.com/football/argentina/liga-profesional/"],
+  ["colombia-primera-a", "https://www.flashscore.com/football/colombia/primera-a/"],
+  ["chile-primera", "https://www.flashscore.com/football/chile/primera-division/"],
+  ["ecuador-ligapro", "https://www.flashscore.com/football/ecuador/liga-pro/"],
+  ["uruguay-primera", "https://www.flashscore.com/football/uruguay/primera-division/"],
+  ["saudi-pro-league", "https://www.flashscore.com/football/saudi-arabia/saudi-professional-league/"],
+  ["uae-pro-league", "https://www.flashscore.com/football/united-arab-emirates/uae-league/"],
+  ["qatar-stars-league", "https://www.flashscore.com/football/qatar/qsl/"],
+  ["japan-j1-league", "https://www.flashscore.com/football/japan/j1-league/"],
+  ["south-korea-k-league-1", "https://www.flashscore.com/football/south-korea/k-league-1/"],
+  ["australia-a-league", "https://www.flashscore.com/football/australia/a-league/"],
+  ["morocco-botola", "https://www.flashscore.com/football/morocco/botola-pro/"],
+  ["egypt-premier-league", "https://www.flashscore.com/football/egypt/premier-league/"],
+  ["south-africa-premiership", "https://www.flashscore.com/football/south-africa/premiership/"],
+  ["champions-league", "https://www.flashscore.com/football/europe/champions-league/"],
+  ["europa-league", "https://www.flashscore.com/football/europe/europa-league/"],
+  ["conference-league", "https://www.flashscore.com/football/europe/europa-conference-league/"],
+  ["copa-libertadores", "https://www.flashscore.com/football/south-america/copa-libertadores/"],
+  ["caf-champions-league", "https://www.flashscore.com/football/africa/caf-champions-league/"],
+  ["afc-champions-league", "https://www.flashscore.com/football/asia/afc-champions-league-elite/"],
+];
+
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
@@ -78,122 +141,152 @@ function normalizeName(value) {
     .trim();
 }
 
-function parseDateTime(value) {
-  const text = String(value || "").replace(/\s+/g, " ").trim();
-  const match = text.match(/(\d{1,2})\.(\d{1,2})\.\s*(\d{1,2}):(\d{2})/);
-  if (match) {
-    const [, day, month, hour, minute] = match;
-    const now = new Date();
-    const year = now.getFullYear();
-    const date = new Date(Date.UTC(year, Number(month) - 1, Number(day), Number(hour), Number(minute)));
-    return date.toISOString();
-  }
-  const timeOnly = text.match(/^(\d{1,2}):(\d{2})$/);
-  if (timeOnly) {
-    const now = new Date();
-    now.setUTCHours(Number(timeOnly[1]), Number(timeOnly[2]), 0, 0);
-    return now.toISOString();
-  }
-  return new Date().toISOString();
-}
+function parseFeed(text) {
+  const rows = [];
+  let currentTournament = null;
 
-function numericScore(value) {
-  const n = Number(String(value || "").replace(/[^0-9-]/g, ""));
-  return Number.isFinite(n) ? n : null;
-}
+  for (const block of String(text || "").split("~")) {
+    const record = {};
+    for (const cell of block.split("¬")) {
+      const index = cell.indexOf("÷");
+      if (index <= 0) continue;
+      record[cell.slice(0, index)] = cell.slice(index + 1);
+    }
 
-function extractMatches(html, leagueKey, sourceUrl) {
-  const $ = cheerio.load(html);
-  const matches = [];
+    if (record.ZL) {
+      currentTournament = {
+        name: record.ZA || record.AC || "",
+        path: record.ZL,
+        country: record.ZY || "",
+      };
+      continue;
+    }
 
-  $(".event__match").each((_, element) => {
-    const row = $(element);
-    const id =
-      row.attr("id")?.replace(/^g_1_/, "") ||
-      row.attr("data-event-id") ||
-      row.find("[data-event-id]").first().attr("data-event-id");
+    if (!record.AA || !record.AE || !record.AF) continue;
 
-    const participants = row.find(".event__participant").map((__, node) => $(node).text().trim()).get();
-    const scores = row.find(".event__score").map((__, node) => $(node).text().trim()).get();
-    const time = row.find(".event__time").first().text().trim();
-    const statusText = row.find(".event__stage").first().text().trim().toUpperCase();
-    const href = row.find("a").first().attr("href") || "";
-
-    if (!participants[0] || !participants[1]) return;
-
-    const homeScore = numericScore(scores[0]);
-    const awayScore = numericScore(scores[1]);
-    const finished =
-      /FT|FINISHED|AET|PEN/.test(statusText) ||
-      (homeScore !== null && awayScore !== null && !/\d{1,2}:\d{2}/.test(time));
-
-    const date = parseDateTime(time);
-    const stableId =
-      id ||
-      "fallback-" +
-        Buffer.from(
-          [date.slice(0, 10), normalizeName(participants[0]), normalizeName(participants[1])].join("|")
-        ).toString("base64url");
-
-    matches.push({
-      fixture: {
-        id: "fs-" + stableId,
-        date,
-        status: { short: finished ? "FT" : "NS" },
-      },
-      teams: {
-        home: { id: null, name: participants[0], logo: null },
-        away: { id: null, name: participants[1], logo: null },
-      },
-      goals: { home: homeScore, away: awayScore },
-      league: { id: "flashscore-" + leagueKey, name: leagueKey, logo: null },
-      source: "Flashscore HTML",
-      sources: ["Flashscore HTML"],
-      externalId: stableId,
-      externalIds: { "Flashscore HTML": stableId },
-      sourceUrl: new URL(href || sourceUrl, BASE).toString(),
+    rows.push({
+      ...record,
+      tournament: currentTournament,
     });
-  });
+  }
 
-  return matches;
+  return rows;
 }
 
-async function fetchLeague(leagueKey, url, browser) {
-  const all = [];
-  const urls = [url, `${url}results/`];
-  const context = await browser.newContext({
-    userAgent: USER_AGENT,
-    locale: "en-US",
-    viewport: { width: 1365, height: 900 },
-    extraHTTPHeaders: {
-      Accept: "text/html,application/xhtml+xml",
+function pathForLeague(url) {
+  return new URL(url).pathname;
+}
+
+function statusFromCode(code) {
+  if (code === "3") return "FT";
+  if (code === "2") return "LIVE";
+  return "NS";
+}
+
+function matchFromFeed(record, leagueKey, sourcePath) {
+  const timestamp = Number(record.AD || 0);
+  const date = timestamp > 0 ? new Date(timestamp * 1000).toISOString() : new Date().toISOString();
+  const homeScore = record.AG === undefined || record.AG === "" ? null : Number(record.AG);
+  const awayScore = record.AH === undefined || record.AH === "" ? null : Number(record.AH);
+  const status = statusFromCode(record.AB);
+
+  return {
+    fixture: {
+      id: "fs-" + record.AA,
+      date,
+      status: { short: status },
+    },
+    teams: {
+      home: { id: record.AU || null, name: record.AE, logo: null },
+      away: { id: record.AV || null, name: record.AF, logo: null },
+    },
+    goals: {
+      home: Number.isFinite(homeScore) ? homeScore : null,
+      away: Number.isFinite(awayScore) ? awayScore : null,
+    },
+    league: {
+      id: "flashscore-" + leagueKey,
+      name: record.tournament?.name || leagueKey,
+      logo: null,
+    },
+    source: "Flashscore Feed",
+    sources: ["Flashscore Feed"],
+    externalId: record.AA,
+    externalIds: { "Flashscore Feed": record.AA },
+    sourceUrl: "https://www.flashscore.com/match/" + record.AA + "/",
+    sourcePath,
+  };
+}
+
+async function fetchFeed(url) {
+  const response = await fetch(url, {
+    headers: {
+      "User-Agent": USER_AGENT,
+      Accept: "*/*",
       "Accept-Language": "en-US,en;q=0.9",
+      Referer: "https://www.flashscore.com/",
+      Origin: "https://www.flashscore.com",
+      "x-fsign": "SW9D1eZo",
+      "x-requested-with": "XMLHttpRequest",
+      "x-referer": "https://www.flashscore.com/",
+      "x-geoip": "1",
+      Pragma: "no-cache",
+      "Cache-Control": "no-cache",
     },
   });
-  const page = await context.newPage();
 
-  try {
-    for (const target of urls) {
-      try {
-        await page.goto(target, { waitUntil: "domcontentloaded", timeout: 30000 });
-        await page.waitForTimeout(2500);
-        for (let i = 0; i < 3; i += 1) {
-          await page.mouse.wheel(0, 1800);
-          await page.waitForTimeout(700);
-        }
-        const html = await page.content();
-        const found = extractMatches(html, leagueKey, target);
-        console.log("[scraper]", leagueKey, "rendered", found.length, target);
-        all.push(...found);
-      } catch (error) {
-        console.warn("[scraper]", leagueKey, error.message);
-      }
-      await sleep(900);
-    }
-  } finally {
-    await context.close();
+  if (!response.ok) {
+    throw new Error("feed HTTP " + response.status);
   }
-  return all;
+
+  const text = await response.text();
+  if (!text || text.length < 100) {
+    throw new Error("feed returned an empty/short payload");
+  }
+
+  return text;
+}
+
+async function scrapeInternalFeed() {
+  const wanted = new Map(
+    LEAGUES.map(([leagueKey, url]) => [pathForLeague(url), { leagueKey, url }])
+  );
+  const collected = [];
+
+  for (const day of FEED_DAYS) {
+    let loaded = false;
+
+    for (const host of FEED_HOSTS) {
+      const endpoint = host + "/f_1_" + day + "_3_en_1";
+      try {
+        const raw = await fetchFeed(endpoint);
+        const rows = parseFeed(raw);
+        let found = 0;
+
+        for (const row of rows) {
+          const path = row.tournament?.path;
+          const league = wanted.get(path);
+          if (!league) continue;
+          collected.push(matchFromFeed(row, league.leagueKey, path));
+          found += 1;
+        }
+
+        console.log("[scraper] feed day", day, "loaded", rows.length, "rows; matched", found);
+        loaded = true;
+        break;
+      } catch (error) {
+        console.warn("[scraper] feed failed", endpoint, error.message);
+      }
+    }
+
+    if (!loaded) {
+      console.warn("[scraper] all feed hosts failed for day", day);
+    }
+
+    await sleep(1200);
+  }
+
+  return collected;
 }
 
 function dedupe(matches) {
@@ -229,25 +322,54 @@ function dedupe(matches) {
 async function main() {
   await fs.mkdir(path.dirname(OUTPUT), { recursive: true });
 
-  let previous = { updatedAt: null, source: "flashscore-html", matches: [] };
+  let previous = { updatedAt: null, source: "flashscore-feed", matches: [] };
   try {
     previous = JSON.parse(await fs.readFile(OUTPUT, "utf8"));
   } catch {}
 
-  const browser = await chromium.launch({ headless: true });
-  const scraped = [];
-  for (const [leagueKey, url] of LEAGUES) {
-    console.log("[scraper] fetching", leagueKey);
-    scraped.push(...(await fetchLeague(leagueKey, url, browser)));
+  let scraped = [];
+  try {
+    scraped = await scrapeInternalFeed();
+  } catch (error) {
+    console.warn("[scraper] internal feed failed:", error.message);
   }
 
-  await browser.close();
+  if (scraped.length === 0) {
+    console.warn("[scraper] internal feed returned 0 matches; falling back to Playwright.");
+    const browser = await chromium.launch({ headless: true });
+    try {
+      // Playwright fallback is intentionally kept as a safety net.
+      // The primary path is the lightweight internal feed above.
+      for (const [leagueKey, url] of LEAGUES) {
+        const context = await browser.newContext({
+          userAgent: USER_AGENT,
+          locale: "en-US",
+          viewport: { width: 1365, height: 900 },
+        });
+        const page = await context.newPage();
+        try {
+          await page.goto(url, { waitUntil: "domcontentloaded", timeout: 30000 });
+          await page.waitForTimeout(5000);
+          const html = await page.content();
+          const found = extractMatches(html, leagueKey, url);
+          console.log("[scraper] playwright", leagueKey, "rendered", found.length);
+          scraped.push(...found);
+        } catch (error) {
+          console.warn("[scraper] playwright", leagueKey, error.message);
+        } finally {
+          await context.close();
+        }
+      }
+    } finally {
+      await browser.close();
+    }
+  }
 
   const merged = dedupe([...(previous.matches || []), ...scraped]).slice(-5000);
 
   const payload = {
     updatedAt: new Date().toISOString(),
-    source: "flashscore-html",
+    source: scraped.some((m) => m.source === "Flashscore Feed") ? "flashscore-feed" : "flashscore-html",
     leagueCount: LEAGUES.length,
     matchCount: merged.length,
     matches: merged,
