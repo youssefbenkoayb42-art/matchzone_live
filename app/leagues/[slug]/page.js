@@ -43,9 +43,18 @@ export async function generateMetadata({ params }) {
   const league = await getLeague(params.slug);
   if (!league) return { title: "البطولة غير موجودة" };
   return {
-    title: league.name + " - مباريات ونتائج",
-    description: league.description,
+    title: league.name + " | مباريات ونتائج ومواعيد",
+    description: league.description + " تابع المباريات القادمة والنتائج وآخر مباريات البطولة على MatchZone.",
+    keywords: [league.name, league.english, "مباريات " + league.name, "نتائج " + league.name, "ترتيب " + league.name, "مواعيد " + league.name, "MatchZone"],
     alternates: { canonical: BASE_URL + "/leagues/" + params.slug },
+    robots: { index: true, follow: true },
+    openGraph: {
+      title: league.name + " | MatchZone",
+      description: league.description,
+      type: "website",
+      url: BASE_URL + "/leagues/" + params.slug,
+      ...(league.badge ? { images: [{ url: league.badge }] } : {}),
+    },
   };
 }
 
