@@ -3,6 +3,7 @@ import path from "node:path";
 
 const BASE = "https://www.flashscore.com";
 const OUTPUT = path.join(process.cwd(), "data", "scraped-matches.json");
+const TEAM_LOGO_DIR = path.join(process.cwd(), "public", "teams");
 const USER_AGENT =
   process.env.SCRAPER_USER_AGENT ||
   "MatchZone/1.0 (+https://matchzone-live.vercel.app/)";
@@ -71,10 +72,70 @@ const FEED_HOSTS = [
 const FEED_DAYS = [-2, -1, 0, 1, 2, 3, 4, 5, 6, 7];
 const SPORTSDB_BASE = "https://www.thesportsdb.com/api/v1/json/123";
 const logoCache = new Map();
+const localLogoCache = new Map();
+let sportsDbRateLimited = false;
 
 
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+function logoExtensionFromUrl(value) {
+  try {
+    const pathname = new URL(String(value || "")).pathname.toLowerCase();
+    const match = pathname.match(/\.(png|jpg|jpeg|webp|svg)$/i);
+    return match ? match[1].toLowerCase() : "png";
+  } catch {
+    return "png";
+  }
+}
+
+function localLogoKey(teamName) {
+  return normalizeName(teamName);
+}
+
+async function loadLocalTeamLogos() {
+  await fs.mkdir(TEAM_LOGO_DIR, { recursive: true });
+  localLogoCache.clear();
+  const entries = await fs.readdir(TEAM_LOGO_DIR, { withFileTypes: true });
+  for (const entry of entries) {
+    if (!entry.isFile()) continue;
+    const match = entry.name.match(/^(.+)\.(png|jpg|jpeg|webp|svg)$/i);
+    if (!match) continue;
+    localLogoCache.set(match[1], "/teams/" + entry.name);
+  }
+  console.log("[scraper] local team logos:", localLogoCache.size);
+}
+
+async function saveLocalTeamLogo(teamName, logoUrl) {
+  const key = localLogoKey(teamName);
+  if (!key || !logoUrl) return null;
+  const existing = localLogoCache.get(key);
+  if (existing) return existing;
+
+  try {
+    const response = await fetch(logoUrl, {
+      headers: {
+        "User-Agent": USER_AGENT,
+        Accept: "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+        Referer: "https://www.flashscore.com/",
+      },
+    });
+    if (!response.ok) throw new Error("logo HTTP " + response.status);
+    const buffer = Buffer.from(await response.arrayBuffer());
+    if (!buffer.length) throw new Error("empty logo");
+
+    const extension = logoExtensionFromUrl(logoUrl);
+    const filename = key + "." + extension;
+    const filePath = path.join(TEAM_LOGO_DIR, filename);
+    await fs.writeFile(filePath, buffer);
+    const publicPath = "/teams/" + filename;
+    localLogoCache.set(key, publicPath);
+    return publicPath;
+  } catch (error) {
+    console.warn("[scraper] local logo download failed", teamName, error.message);
+    return null;
+  }
 }
 
 function normalizeName(value) {
@@ -400,7 +461,10 @@ async function fetchSportsDBLogo(teamName) {
   const name = String(teamName || "").trim();
   if (!name) return null;
   const cacheKey = normalizeName(name);
+  const localLogo = localLogoCache.get(cacheKey);
+  if (localLogo) return localLogo;
   if (logoCache.has(cacheKey)) return logoCache.get(cacheKey);
+  if (sportsDbRateLimited) return null;
   try {
     const url = SPORTSDB_BASE + "/searchteams.php?t=" + encodeURIComponent(name);
     const response = await fetch(url, {
@@ -412,10 +476,16 @@ async function fetchSportsDBLogo(teamName) {
     const wanted = normalizeName(name);
     const best = teams.find((team) => normalizeName(team?.strTeam) === wanted) || teams[0];
     const logo = best?.strBadge || best?.strTeamBadge || null;
-    logoCache.set(cacheKey, logo || null);
-    return logo || null;
+    const localLogoPath = logo ? await saveLocalTeamLogo(name, logo) : null;
+    logoCache.set(cacheKey, localLogoPath || null);
+    return localLogoPath || null;
   } catch (error) {
-    console.warn("[scraper] logo lookup failed", name, error.message);
+    if (String(error?.message || "").includes("429")) {
+      sportsDbRateLimited = true;
+      console.warn("[scraper] TheSportsDB rate limit reached; stopping further logo requests for this run.");
+    } else {
+      console.warn("[scraper] logo lookup failed", name, error.message);
+    }
     logoCache.set(cacheKey, null);
     return null;
   }
@@ -449,38 +519,72 @@ function repairDuplicateTeamLogos(matches) {
 }
 
 async function enrichTeamLogos(matches) {
-  const result = repairDuplicateTeamLogos(matches).map((match) => ({ ...match, teams: {
-    home: { ...(match.teams?.home || {}) },
-    away: { ...(match.teams?.away || {}) },
-  }}));
+  const result = repairDuplicateTeamLogos(matches).map((match) => ({
+    ...match,
+    teams: {
+      home: { ...(match.teams?.home || {}) },
+      away: { ...(match.teams?.away || {}) },
+    },
+  }));
+
+  await loadLocalTeamLogos();
+
   const unique = new Map();
   for (const match of result) {
     for (const side of ["home", "away"]) {
       const team = match.teams?.[side];
       if (!team?.name) continue;
-      if (team.logo || team.flashscoreLogo) continue;
+
       const key = normalizeName(team.name);
+      const localLogo = localLogoCache.get(key);
+      if (localLogo) {
+        team.logo = localLogo;
+        team.logoSource = "GitHub local";
+        continue;
+      }
+
+      const flashscoreLogoUrl = cleanTeamLogo(team.logo || team.flashscoreLogo);
+      if (flashscoreLogoUrl) {
+        const localPath = await saveLocalTeamLogo(team.name, flashscoreLogoUrl);
+        if (localPath) {
+          team.logo = localPath;
+          team.logoSource = "GitHub local";
+          continue;
+        }
+      }
+
       if (!unique.has(key)) unique.set(key, team.name);
     }
   }
-  console.log("[scraper] enriching missing team logos:", unique.size);
+
+  console.log("[scraper] teams needing external logo lookup:", unique.size);
+
   for (const [key, name] of unique) {
+    if (localLogoCache.has(key)) continue;
     const logo = await fetchSportsDBLogo(name);
     if (logo) logoCache.set(key, logo);
     await sleep(250);
   }
+
   for (const match of result) {
     for (const side of ["home", "away"]) {
       const team = match.teams?.[side];
       if (!team?.name) continue;
-      if (team.logo || team.flashscoreLogo) continue;
-      const logo = logoCache.get(normalizeName(team.name)) || null;
+      const key = normalizeName(team.name);
+      const localLogo = localLogoCache.get(key);
+      if (localLogo) {
+        team.logo = localLogo;
+        team.logoSource = "GitHub local";
+        continue;
+      }
+      const logo = logoCache.get(key) || null;
       if (logo) {
         team.logo = logo;
-        team.logoSource = "TheSportsDB";
+        team.logoSource = "GitHub local";
       }
     }
   }
+
   return result;
 }
 
@@ -665,6 +769,7 @@ function dedupe(matches) {
 
 async function main() {
   await fs.mkdir(path.dirname(OUTPUT), { recursive: true });
+  await loadLocalTeamLogos();
 
   let previous = { updatedAt: null, source: "flashscore-feed", matches: [] };
   try {
