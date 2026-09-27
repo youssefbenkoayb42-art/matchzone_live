@@ -1,5 +1,44 @@
+import { getFallbackMatches } from "../../../lib/fallback-matches";
+
+function isFallbackId(id) {
+  return String(id || "").startsWith("fs-");
+}
+
 export async function GET(request, { params }) {
   const { id } = await params;
+
+  if (isFallbackId(id)) {
+    const matches = await getFallbackMatches();
+    const match = matches.find((item) => String(item?.fixture?.id) === String(id));
+
+    if (!match) {
+      return Response.json({
+        response: [],
+        errors: { message: "لم يتم العثور على المباراة الاحتياطية" },
+      });
+    }
+
+    return Response.json({
+      response: [
+        {
+          ...match,
+          fixture: {
+            ...match.fixture,
+            status: {
+              short: match.fixture?.status?.short || "FT",
+              long: "Match Finished",
+            },
+          },
+          events: {},
+          stats: [],
+          lineup: [],
+          timeline: [],
+          video: null,
+          eventId: match.externalId || id,
+        },
+      ],
+    });
+  }
 
   try {
     const response = await fetch(
