@@ -42,7 +42,17 @@
         "Flashscore Feed": "AsVxpzQQ"
       },
       "sourceUrl": "https://www.flashscore.com/match/AsVxpzQQ/",
-      "sourcePath": "/football/colombia/primera-a/"
+      "sourcePath": "/football/colombia/primera-a/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -82,7 +92,17 @@
         "Flashscore Feed": "0rrduJrn"
       },
       "sourceUrl": "https://www.flashscore.com/match/0rrduJrn/",
-      "sourcePath": "/football/morocco/botola-pro/"
+      "sourcePath": "/football/morocco/botola-pro/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -122,7 +142,17 @@
         "Flashscore Feed": "MNThRu6l"
       },
       "sourceUrl": "https://www.flashscore.com/match/MNThRu6l/",
-      "sourcePath": "/football/spain/laliga2/"
+      "sourcePath": "/football/spain/laliga2/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -162,7 +192,17 @@
         "Flashscore Feed": "jPd1bs9U"
       },
       "sourceUrl": "https://www.flashscore.com/match/jPd1bs9U/",
-      "sourcePath": "/football/brazil/serie-b/"
+      "sourcePath": "/football/brazil/serie-b/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -202,7 +242,17 @@
         "Flashscore Feed": "AVG6RuwH"
       },
       "sourceUrl": "https://www.flashscore.com/match/AVG6RuwH/",
-      "sourcePath": "/football/brazil/serie-b/"
+      "sourcePath": "/football/brazil/serie-b/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -242,7 +292,17 @@
         "Flashscore Feed": "UiFjVNwh"
       },
       "sourceUrl": "https://www.flashscore.com/match/UiFjVNwh/",
-      "sourcePath": "/football/brazil/serie-b/"
+      "sourcePath": "/football/brazil/serie-b/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -282,7 +342,17 @@
         "Flashscore Feed": "hhVIGOOb"
       },
       "sourceUrl": "https://www.flashscore.com/match/hhVIGOOb/",
-      "sourcePath": "/football/brazil/serie-b/"
+      "sourcePath": "/football/brazil/serie-b/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -322,7 +392,17 @@
         "Flashscore Feed": "YVWYCtON"
       },
       "sourceUrl": "https://www.flashscore.com/match/YVWYCtON/",
-      "sourcePath": "/football/brazil/serie-b/"
+      "sourcePath": "/football/brazil/serie-b/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -362,7 +442,17 @@
         "Flashscore Feed": "ljPGxhI0"
       },
       "sourceUrl": "https://www.flashscore.com/match/ljPGxhI0/",
-      "sourcePath": "/football/colombia/primera-a/"
+      "sourcePath": "/football/colombia/primera-a/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -402,7 +492,17 @@
         "Flashscore Feed": "M3NOzWnD"
       },
       "sourceUrl": "https://www.flashscore.com/match/M3NOzWnD/",
-      "sourcePath": "/football/colombia/primera-a/"
+      "sourcePath": "/football/colombia/primera-a/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -442,7 +542,17 @@
         "Flashscore Feed": "xEhjBCOP"
       },
       "sourceUrl": "https://www.flashscore.com/match/xEhjBCOP/",
-      "sourcePath": "/football/colombia/primera-a/"
+      "sourcePath": "/football/colombia/primera-a/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -482,7 +592,17 @@
         "Flashscore Feed": "l4I1W5D6"
       },
       "sourceUrl": "https://www.flashscore.com/match/l4I1W5D6/",
-      "sourcePath": "/football/mexico/liga-mx/"
+      "sourcePath": "/football/mexico/liga-mx/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -522,7 +642,17 @@
         "Flashscore Feed": "MHG9UqrJ"
       },
       "sourceUrl": "https://www.flashscore.com/match/MHG9UqrJ/",
-      "sourcePath": "/football/mexico/liga-mx/"
+      "sourcePath": "/football/mexico/liga-mx/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -562,7 +692,17 @@
         "Flashscore Feed": "88o4wcDb"
       },
       "sourceUrl": "https://www.flashscore.com/match/88o4wcDb/",
-      "sourcePath": "/football/morocco/botola-pro/"
+      "sourcePath": "/football/morocco/botola-pro/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -602,7 +742,17 @@
         "Flashscore Feed": "vZ4vNyTH"
       },
       "sourceUrl": "https://www.flashscore.com/match/vZ4vNyTH/",
-      "sourcePath": "/football/morocco/botola-pro/"
+      "sourcePath": "/football/morocco/botola-pro/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -642,7 +792,17 @@
         "Flashscore Feed": "pW7nLFcU"
       },
       "sourceUrl": "https://www.flashscore.com/match/pW7nLFcU/",
-      "sourcePath": "/football/morocco/botola-pro/"
+      "sourcePath": "/football/morocco/botola-pro/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -682,7 +842,17 @@
         "Flashscore Feed": "rB3DoAi3"
       },
       "sourceUrl": "https://www.flashscore.com/match/rB3DoAi3/",
-      "sourcePath": "/football/spain/laliga2/"
+      "sourcePath": "/football/spain/laliga2/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -722,7 +892,17 @@
         "Flashscore Feed": "UeabUzLc"
       },
       "sourceUrl": "https://www.flashscore.com/match/UeabUzLc/",
-      "sourcePath": "/football/spain/laliga2/"
+      "sourcePath": "/football/spain/laliga2/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -762,7 +942,17 @@
         "Flashscore Feed": "G4BRN6ad"
       },
       "sourceUrl": "https://www.flashscore.com/match/G4BRN6ad/",
-      "sourcePath": "/football/spain/laliga2/"
+      "sourcePath": "/football/spain/laliga2/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -802,7 +992,17 @@
         "Flashscore Feed": "vs9QuuLs"
       },
       "sourceUrl": "https://www.flashscore.com/match/vs9QuuLs/",
-      "sourcePath": "/football/spain/laliga2/"
+      "sourcePath": "/football/spain/laliga2/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -842,7 +1042,17 @@
         "Flashscore Feed": "4EN47Koo"
       },
       "sourceUrl": "https://www.flashscore.com/match/4EN47Koo/",
-      "sourcePath": "/football/brazil/serie-b/"
+      "sourcePath": "/football/brazil/serie-b/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -882,7 +1092,17 @@
         "Flashscore Feed": "25DbT184"
       },
       "sourceUrl": "https://www.flashscore.com/match/25DbT184/",
-      "sourcePath": "/football/brazil/serie-b/"
+      "sourcePath": "/football/brazil/serie-b/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -922,7 +1142,17 @@
         "Flashscore Feed": "0IYQE2gB"
       },
       "sourceUrl": "https://www.flashscore.com/match/0IYQE2gB/",
-      "sourcePath": "/football/brazil/serie-b/"
+      "sourcePath": "/football/brazil/serie-b/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -962,7 +1192,17 @@
         "Flashscore Feed": "tQL8vEml"
       },
       "sourceUrl": "https://www.flashscore.com/match/tQL8vEml/",
-      "sourcePath": "/football/colombia/primera-a/"
+      "sourcePath": "/football/colombia/primera-a/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -1002,7 +1242,17 @@
         "Flashscore Feed": "vN2dkV16"
       },
       "sourceUrl": "https://www.flashscore.com/match/vN2dkV16/",
-      "sourcePath": "/football/colombia/primera-a/"
+      "sourcePath": "/football/colombia/primera-a/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -1042,7 +1292,17 @@
         "Flashscore Feed": "S0AAbZvK"
       },
       "sourceUrl": "https://www.flashscore.com/match/S0AAbZvK/",
-      "sourcePath": "/football/colombia/primera-a/"
+      "sourcePath": "/football/colombia/primera-a/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -1082,7 +1342,17 @@
         "Flashscore Feed": "vydsqqcC"
       },
       "sourceUrl": "https://www.flashscore.com/match/vydsqqcC/",
-      "sourcePath": "/football/mexico/liga-mx/"
+      "sourcePath": "/football/mexico/liga-mx/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -1122,7 +1392,17 @@
         "Flashscore Feed": "SE3ehmzQ"
       },
       "sourceUrl": "https://www.flashscore.com/match/SE3ehmzQ/",
-      "sourcePath": "/football/mexico/liga-mx/"
+      "sourcePath": "/football/mexico/liga-mx/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -1162,7 +1442,17 @@
         "Flashscore Feed": "bcfRnRcm"
       },
       "sourceUrl": "https://www.flashscore.com/match/bcfRnRcm/",
-      "sourcePath": "/football/mexico/liga-mx/"
+      "sourcePath": "/football/mexico/liga-mx/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -1202,7 +1492,17 @@
         "Flashscore Feed": "WAhZp5Sa"
       },
       "sourceUrl": "https://www.flashscore.com/match/WAhZp5Sa/",
-      "sourcePath": "/football/mexico/liga-mx/"
+      "sourcePath": "/football/mexico/liga-mx/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -1242,7 +1542,17 @@
         "Flashscore Feed": "WrElsNRO"
       },
       "sourceUrl": "https://www.flashscore.com/match/WrElsNRO/",
-      "sourcePath": "/football/mexico/liga-mx/"
+      "sourcePath": "/football/mexico/liga-mx/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -1282,7 +1592,17 @@
         "Flashscore Feed": "nLBqJSRq"
       },
       "sourceUrl": "https://www.flashscore.com/match/nLBqJSRq/",
-      "sourcePath": "/football/morocco/botola-pro/"
+      "sourcePath": "/football/morocco/botola-pro/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -1322,7 +1642,17 @@
         "Flashscore Feed": "W81WOcb5"
       },
       "sourceUrl": "https://www.flashscore.com/match/W81WOcb5/",
-      "sourcePath": "/football/morocco/botola-pro/"
+      "sourcePath": "/football/morocco/botola-pro/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -1362,7 +1692,17 @@
         "Flashscore Feed": "GYlCyyrB"
       },
       "sourceUrl": "https://www.flashscore.com/match/GYlCyyrB/",
-      "sourcePath": "/football/morocco/botola-pro/"
+      "sourcePath": "/football/morocco/botola-pro/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -1402,7 +1742,17 @@
         "Flashscore Feed": "08COfwKq"
       },
       "sourceUrl": "https://www.flashscore.com/match/08COfwKq/",
-      "sourcePath": "/football/south-korea/k-league-1/"
+      "sourcePath": "/football/south-korea/k-league-1/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -1442,7 +1792,17 @@
         "Flashscore Feed": "WlRXwJkf"
       },
       "sourceUrl": "https://www.flashscore.com/match/WlRXwJkf/",
-      "sourcePath": "/football/spain/laliga2/"
+      "sourcePath": "/football/spain/laliga2/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -1482,7 +1842,17 @@
         "Flashscore Feed": "G4V8Nc5D"
       },
       "sourceUrl": "https://www.flashscore.com/match/G4V8Nc5D/",
-      "sourcePath": "/football/spain/laliga2/"
+      "sourcePath": "/football/spain/laliga2/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -1522,7 +1892,17 @@
         "Flashscore Feed": "riDJPSUq"
       },
       "sourceUrl": "https://www.flashscore.com/match/riDJPSUq/",
-      "sourcePath": "/football/spain/laliga2/"
+      "sourcePath": "/football/spain/laliga2/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -1562,7 +1942,17 @@
         "Flashscore Feed": "jy7LqlMF"
       },
       "sourceUrl": "https://www.flashscore.com/match/jy7LqlMF/",
-      "sourcePath": "/football/spain/laliga2/"
+      "sourcePath": "/football/spain/laliga2/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -1602,7 +1992,17 @@
         "Flashscore Feed": "8bIfo1cK"
       },
       "sourceUrl": "https://www.flashscore.com/match/8bIfo1cK/",
-      "sourcePath": "/football/spain/laliga2/"
+      "sourcePath": "/football/spain/laliga2/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -1642,7 +2042,17 @@
         "Flashscore Feed": "h8OvjEB6"
       },
       "sourceUrl": "https://www.flashscore.com/match/h8OvjEB6/",
-      "sourcePath": "/football/usa/mls/"
+      "sourcePath": "/football/usa/mls/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -1682,7 +2092,17 @@
         "Flashscore Feed": "YFRRxgDM"
       },
       "sourceUrl": "https://www.flashscore.com/match/YFRRxgDM/",
-      "sourcePath": "/football/usa/mls/"
+      "sourcePath": "/football/usa/mls/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -1722,7 +2142,17 @@
         "Flashscore Feed": "ENCmlhtJ"
       },
       "sourceUrl": "https://www.flashscore.com/match/ENCmlhtJ/",
-      "sourcePath": "/football/usa/mls/"
+      "sourcePath": "/football/usa/mls/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -1762,7 +2192,17 @@
         "Flashscore Feed": "QFe56Zem"
       },
       "sourceUrl": "https://www.flashscore.com/match/QFe56Zem/",
-      "sourcePath": "/football/usa/mls/"
+      "sourcePath": "/football/usa/mls/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -1802,7 +2242,17 @@
         "Flashscore Feed": "bTgD4DQa"
       },
       "sourceUrl": "https://www.flashscore.com/match/bTgD4DQa/",
-      "sourcePath": "/football/usa/mls/"
+      "sourcePath": "/football/usa/mls/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -1842,7 +2292,17 @@
         "Flashscore Feed": "femM2ieC"
       },
       "sourceUrl": "https://www.flashscore.com/match/femM2ieC/",
-      "sourcePath": "/football/usa/mls/"
+      "sourcePath": "/football/usa/mls/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -1882,7 +2342,17 @@
         "Flashscore Feed": "0hjU0VPO"
       },
       "sourceUrl": "https://www.flashscore.com/match/0hjU0VPO/",
-      "sourcePath": "/football/usa/mls/"
+      "sourcePath": "/football/usa/mls/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -1922,7 +2392,17 @@
         "Flashscore Feed": "UaSdXWzp"
       },
       "sourceUrl": "https://www.flashscore.com/match/UaSdXWzp/",
-      "sourcePath": "/football/usa/mls/"
+      "sourcePath": "/football/usa/mls/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -1962,7 +2442,17 @@
         "Flashscore Feed": "46GvLYAt"
       },
       "sourceUrl": "https://www.flashscore.com/match/46GvLYAt/",
-      "sourcePath": "/football/usa/mls/"
+      "sourcePath": "/football/usa/mls/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -2002,7 +2492,17 @@
         "Flashscore Feed": "CWJnJCug"
       },
       "sourceUrl": "https://www.flashscore.com/match/CWJnJCug/",
-      "sourcePath": "/football/usa/mls/"
+      "sourcePath": "/football/usa/mls/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -2042,7 +2542,17 @@
         "Flashscore Feed": "8bDeHjA5"
       },
       "sourceUrl": "https://www.flashscore.com/match/8bDeHjA5/",
-      "sourcePath": "/football/usa/mls/"
+      "sourcePath": "/football/usa/mls/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -2082,7 +2592,17 @@
         "Flashscore Feed": "tCB3FUvI"
       },
       "sourceUrl": "https://www.flashscore.com/match/tCB3FUvI/",
-      "sourcePath": "/football/usa/mls/"
+      "sourcePath": "/football/usa/mls/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -2122,7 +2642,17 @@
         "Flashscore Feed": "QRL5VA5d"
       },
       "sourceUrl": "https://www.flashscore.com/match/QRL5VA5d/",
-      "sourcePath": "/football/usa/mls/"
+      "sourcePath": "/football/usa/mls/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -2162,7 +2692,17 @@
         "Flashscore Feed": "bq1tgD2s"
       },
       "sourceUrl": "https://www.flashscore.com/match/bq1tgD2s/",
-      "sourcePath": "/football/colombia/primera-a/"
+      "sourcePath": "/football/colombia/primera-a/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -2202,7 +2742,17 @@
         "Flashscore Feed": "S6sivyJO"
       },
       "sourceUrl": "https://www.flashscore.com/match/S6sivyJO/",
-      "sourcePath": "/football/colombia/primera-a/"
+      "sourcePath": "/football/colombia/primera-a/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -2242,7 +2792,17 @@
         "Flashscore Feed": "nelb1QCt"
       },
       "sourceUrl": "https://www.flashscore.com/match/nelb1QCt/",
-      "sourcePath": "/football/mexico/liga-mx/"
+      "sourcePath": "/football/mexico/liga-mx/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -2282,7 +2842,17 @@
         "Flashscore Feed": "fLi6a4sg"
       },
       "sourceUrl": "https://www.flashscore.com/match/fLi6a4sg/",
-      "sourcePath": "/football/mexico/liga-mx/"
+      "sourcePath": "/football/mexico/liga-mx/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -2322,7 +2892,17 @@
         "Flashscore Feed": "8vS0PJz1"
       },
       "sourceUrl": "https://www.flashscore.com/match/8vS0PJz1/",
-      "sourcePath": "/football/spain/laliga2/"
+      "sourcePath": "/football/spain/laliga2/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -2362,7 +2942,17 @@
         "Flashscore Feed": "0ER4D89U"
       },
       "sourceUrl": "https://www.flashscore.com/match/0ER4D89U/",
-      "sourcePath": "/football/usa/mls/"
+      "sourcePath": "/football/usa/mls/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -2402,7 +2992,17 @@
         "Flashscore Feed": "6yXAIpfn"
       },
       "sourceUrl": "https://www.flashscore.com/match/6yXAIpfn/",
-      "sourcePath": "/football/brazil/serie-b/"
+      "sourcePath": "/football/brazil/serie-b/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -2442,7 +3042,17 @@
         "Flashscore Feed": "rJH0bv4t"
       },
       "sourceUrl": "https://www.flashscore.com/match/rJH0bv4t/",
-      "sourcePath": "/football/colombia/primera-a/"
+      "sourcePath": "/football/colombia/primera-a/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -2482,7 +3092,17 @@
         "Flashscore Feed": "ragg03vI"
       },
       "sourceUrl": "https://www.flashscore.com/match/ragg03vI/",
-      "sourcePath": "/football/brazil/serie-b/"
+      "sourcePath": "/football/brazil/serie-b/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -2522,7 +3142,17 @@
         "Flashscore Feed": "tGbl9eIb"
       },
       "sourceUrl": "https://www.flashscore.com/match/tGbl9eIb/",
-      "sourcePath": "/football/colombia/primera-a/"
+      "sourcePath": "/football/colombia/primera-a/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -2562,7 +3192,17 @@
         "Flashscore Feed": "UyulX15s"
       },
       "sourceUrl": "https://www.flashscore.com/match/UyulX15s/",
-      "sourcePath": "/football/colombia/primera-a/"
+      "sourcePath": "/football/colombia/primera-a/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -2602,7 +3242,17 @@
         "Flashscore Feed": "6VEYBeYP"
       },
       "sourceUrl": "https://www.flashscore.com/match/6VEYBeYP/",
-      "sourcePath": "/football/usa/mls/"
+      "sourcePath": "/football/usa/mls/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -2642,7 +3292,17 @@
         "Flashscore Feed": "tjqXUEq9"
       },
       "sourceUrl": "https://www.flashscore.com/match/tjqXUEq9/",
-      "sourcePath": "/football/brazil/serie-b/"
+      "sourcePath": "/football/brazil/serie-b/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -2682,7 +3342,17 @@
         "Flashscore Feed": "hWDAR0fE"
       },
       "sourceUrl": "https://www.flashscore.com/match/hWDAR0fE/",
-      "sourcePath": "/football/brazil/serie-b/"
+      "sourcePath": "/football/brazil/serie-b/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -2722,7 +3392,17 @@
         "Flashscore Feed": "E9rwETdc"
       },
       "sourceUrl": "https://www.flashscore.com/match/E9rwETdc/",
-      "sourcePath": "/football/colombia/primera-a/"
+      "sourcePath": "/football/colombia/primera-a/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -2762,7 +3442,17 @@
         "Flashscore Feed": "C0j6pyNk"
       },
       "sourceUrl": "https://www.flashscore.com/match/C0j6pyNk/",
-      "sourcePath": "/football/morocco/botola-pro/"
+      "sourcePath": "/football/morocco/botola-pro/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -2802,7 +3492,17 @@
         "Flashscore Feed": "KQgErFi2"
       },
       "sourceUrl": "https://www.flashscore.com/match/KQgErFi2/",
-      "sourcePath": "/football/morocco/botola-pro/"
+      "sourcePath": "/football/morocco/botola-pro/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -2842,7 +3542,17 @@
         "Flashscore Feed": "CKt06Iq9"
       },
       "sourceUrl": "https://www.flashscore.com/match/CKt06Iq9/",
-      "sourcePath": "/football/morocco/botola-pro/"
+      "sourcePath": "/football/morocco/botola-pro/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -2882,7 +3592,17 @@
         "Flashscore Feed": "Uo8Llz4C"
       },
       "sourceUrl": "https://www.flashscore.com/match/Uo8Llz4C/",
-      "sourcePath": "/football/spain/laliga2/"
+      "sourcePath": "/football/spain/laliga2/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -2922,7 +3642,17 @@
         "Flashscore Feed": "tGoizjbf"
       },
       "sourceUrl": "https://www.flashscore.com/match/tGoizjbf/",
-      "sourcePath": "/football/usa/mls/"
+      "sourcePath": "/football/usa/mls/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -2962,7 +3692,17 @@
         "Flashscore Feed": "AuUfNnEO"
       },
       "sourceUrl": "https://www.flashscore.com/match/AuUfNnEO/",
-      "sourcePath": "/football/africa/caf-champions-league/"
+      "sourcePath": "/football/africa/caf-champions-league/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -3002,7 +3742,17 @@
         "Flashscore Feed": "8WQSXpbe"
       },
       "sourceUrl": "https://www.flashscore.com/match/8WQSXpbe/",
-      "sourcePath": "/football/argentina/liga-profesional/"
+      "sourcePath": "/football/argentina/liga-profesional/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -3042,7 +3792,17 @@
         "Flashscore Feed": "ltZzWOS7"
       },
       "sourceUrl": "https://www.flashscore.com/match/ltZzWOS7/",
-      "sourcePath": "/football/argentina/liga-profesional/"
+      "sourcePath": "/football/argentina/liga-profesional/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -3082,7 +3842,17 @@
         "Flashscore Feed": "UJIic1R6"
       },
       "sourceUrl": "https://www.flashscore.com/match/UJIic1R6/",
-      "sourcePath": "/football/argentina/liga-profesional/"
+      "sourcePath": "/football/argentina/liga-profesional/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -3122,7 +3892,17 @@
         "Flashscore Feed": "tzMMgSKE"
       },
       "sourceUrl": "https://www.flashscore.com/match/tzMMgSKE/",
-      "sourcePath": "/football/argentina/liga-profesional/"
+      "sourcePath": "/football/argentina/liga-profesional/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -3162,7 +3942,17 @@
         "Flashscore Feed": "OMFqaNdf"
       },
       "sourceUrl": "https://www.flashscore.com/match/OMFqaNdf/",
-      "sourcePath": "/football/argentina/liga-profesional/"
+      "sourcePath": "/football/argentina/liga-profesional/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -3202,7 +3992,17 @@
         "Flashscore Feed": "8p61npDl"
       },
       "sourceUrl": "https://www.flashscore.com/match/8p61npDl/",
-      "sourcePath": "/football/argentina/liga-profesional/"
+      "sourcePath": "/football/argentina/liga-profesional/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -3242,7 +4042,17 @@
         "Flashscore Feed": "lrsn7Bi2"
       },
       "sourceUrl": "https://www.flashscore.com/match/lrsn7Bi2/",
-      "sourcePath": "/football/brazil/serie-b/"
+      "sourcePath": "/football/brazil/serie-b/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -3282,7 +4092,17 @@
         "Flashscore Feed": "lGnuThEL"
       },
       "sourceUrl": "https://www.flashscore.com/match/lGnuThEL/",
-      "sourcePath": "/football/brazil/serie-b/"
+      "sourcePath": "/football/brazil/serie-b/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -3322,7 +4142,17 @@
         "Flashscore Feed": "Wv8lKInl"
       },
       "sourceUrl": "https://www.flashscore.com/match/Wv8lKInl/",
-      "sourcePath": "/football/brazil/serie-b/"
+      "sourcePath": "/football/brazil/serie-b/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -3362,7 +4192,17 @@
         "Flashscore Feed": "pnYANWyq"
       },
       "sourceUrl": "https://www.flashscore.com/match/pnYANWyq/",
-      "sourcePath": "/football/brazil/serie-b/"
+      "sourcePath": "/football/brazil/serie-b/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -3402,7 +4242,17 @@
         "Flashscore Feed": "b9vRJly8"
       },
       "sourceUrl": "https://www.flashscore.com/match/b9vRJly8/",
-      "sourcePath": "/football/brazil/serie-b/"
+      "sourcePath": "/football/brazil/serie-b/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -3442,7 +4292,17 @@
         "Flashscore Feed": "hCyJLA6e"
       },
       "sourceUrl": "https://www.flashscore.com/match/hCyJLA6e/",
-      "sourcePath": "/football/brazil/serie-b/"
+      "sourcePath": "/football/brazil/serie-b/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -3482,7 +4342,17 @@
         "Flashscore Feed": "0dHIPvPQ"
       },
       "sourceUrl": "https://www.flashscore.com/match/0dHIPvPQ/",
-      "sourcePath": "/football/brazil/serie-b/"
+      "sourcePath": "/football/brazil/serie-b/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -3522,7 +4392,17 @@
         "Flashscore Feed": "GUrv9XMk"
       },
       "sourceUrl": "https://www.flashscore.com/match/GUrv9XMk/",
-      "sourcePath": "/football/brazil/serie-b/"
+      "sourcePath": "/football/brazil/serie-b/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -3562,7 +4442,17 @@
         "Flashscore Feed": "dfczKt7c"
       },
       "sourceUrl": "https://www.flashscore.com/match/dfczKt7c/",
-      "sourcePath": "/football/colombia/primera-a/"
+      "sourcePath": "/football/colombia/primera-a/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -3602,7 +4492,17 @@
         "Flashscore Feed": "GMnU3UGa"
       },
       "sourceUrl": "https://www.flashscore.com/match/GMnU3UGa/",
-      "sourcePath": "/football/colombia/primera-a/"
+      "sourcePath": "/football/colombia/primera-a/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -3642,7 +4542,17 @@
         "Flashscore Feed": "8dqM5jnm"
       },
       "sourceUrl": "https://www.flashscore.com/match/8dqM5jnm/",
-      "sourcePath": "/football/colombia/primera-a/"
+      "sourcePath": "/football/colombia/primera-a/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -3682,7 +4592,17 @@
         "Flashscore Feed": "Kpp84dEL"
       },
       "sourceUrl": "https://www.flashscore.com/match/Kpp84dEL/",
-      "sourcePath": "/football/morocco/botola-pro/"
+      "sourcePath": "/football/morocco/botola-pro/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -3722,7 +4642,17 @@
         "Flashscore Feed": "bDGw34fE"
       },
       "sourceUrl": "https://www.flashscore.com/match/bDGw34fE/",
-      "sourcePath": "/football/morocco/botola-pro/"
+      "sourcePath": "/football/morocco/botola-pro/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -3762,7 +4692,17 @@
         "Flashscore Feed": "l0zvazxq"
       },
       "sourceUrl": "https://www.flashscore.com/match/l0zvazxq/",
-      "sourcePath": "/football/morocco/botola-pro/"
+      "sourcePath": "/football/morocco/botola-pro/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -3802,7 +4742,17 @@
         "Flashscore Feed": "MDYocE6e"
       },
       "sourceUrl": "https://www.flashscore.com/match/MDYocE6e/",
-      "sourcePath": "/football/morocco/botola-pro/"
+      "sourcePath": "/football/morocco/botola-pro/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -3842,7 +4792,17 @@
         "Flashscore Feed": "Uwxfehy8"
       },
       "sourceUrl": "https://www.flashscore.com/match/Uwxfehy8/",
-      "sourcePath": "/football/morocco/botola-pro/"
+      "sourcePath": "/football/morocco/botola-pro/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -3882,7 +4842,17 @@
         "Flashscore Feed": "42PuxcK6"
       },
       "sourceUrl": "https://www.flashscore.com/match/42PuxcK6/",
-      "sourcePath": "/football/spain/laliga2/"
+      "sourcePath": "/football/spain/laliga2/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -3922,7 +4892,17 @@
         "Flashscore Feed": "CSSmzykJ"
       },
       "sourceUrl": "https://www.flashscore.com/match/CSSmzykJ/",
-      "sourcePath": "/football/spain/laliga2/"
+      "sourcePath": "/football/spain/laliga2/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -3962,7 +4942,17 @@
         "Flashscore Feed": "vZKZcvsQ"
       },
       "sourceUrl": "https://www.flashscore.com/match/vZKZcvsQ/",
-      "sourcePath": "/football/spain/laliga2/"
+      "sourcePath": "/football/spain/laliga2/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -4002,7 +4992,17 @@
         "Flashscore Feed": "xM26SEkA"
       },
       "sourceUrl": "https://www.flashscore.com/match/xM26SEkA/",
-      "sourcePath": "/football/spain/laliga2/"
+      "sourcePath": "/football/spain/laliga2/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -4042,7 +5042,17 @@
         "Flashscore Feed": "2JOyunHs"
       },
       "sourceUrl": "https://www.flashscore.com/match/2JOyunHs/",
-      "sourcePath": "/football/ukraine/premier-league/"
+      "sourcePath": "/football/ukraine/premier-league/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -4082,7 +5092,17 @@
         "Flashscore Feed": "SfMz1qSs"
       },
       "sourceUrl": "https://www.flashscore.com/match/SfMz1qSs/",
-      "sourcePath": "/football/argentina/liga-profesional/"
+      "sourcePath": "/football/argentina/liga-profesional/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -4122,7 +5142,17 @@
         "Flashscore Feed": "06NKZ6Tr"
       },
       "sourceUrl": "https://www.flashscore.com/match/06NKZ6Tr/",
-      "sourcePath": "/football/argentina/liga-profesional/"
+      "sourcePath": "/football/argentina/liga-profesional/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -4162,7 +5192,17 @@
         "Flashscore Feed": "CQwgKk1t"
       },
       "sourceUrl": "https://www.flashscore.com/match/CQwgKk1t/",
-      "sourcePath": "/football/colombia/primera-a/"
+      "sourcePath": "/football/colombia/primera-a/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -4202,7 +5242,17 @@
         "Flashscore Feed": "lzox28oC"
       },
       "sourceUrl": "https://www.flashscore.com/match/lzox28oC/",
-      "sourcePath": "/football/colombia/primera-a/"
+      "sourcePath": "/football/colombia/primera-a/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -4242,7 +5292,17 @@
         "Flashscore Feed": "bLlo5elg"
       },
       "sourceUrl": "https://www.flashscore.com/match/bLlo5elg/",
-      "sourcePath": "/football/spain/laliga2/"
+      "sourcePath": "/football/spain/laliga2/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -4282,7 +5342,17 @@
         "Flashscore Feed": "WYng3ZI5"
       },
       "sourceUrl": "https://www.flashscore.com/match/WYng3ZI5/",
-      "sourcePath": "/football/spain/laliga2/"
+      "sourcePath": "/football/spain/laliga2/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -4322,7 +5392,17 @@
         "Flashscore Feed": "z565hI4m"
       },
       "sourceUrl": "https://www.flashscore.com/match/z565hI4m/",
-      "sourcePath": "/football/spain/laliga2/"
+      "sourcePath": "/football/spain/laliga2/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -4362,7 +5442,17 @@
         "Flashscore Feed": "hOow7HJt"
       },
       "sourceUrl": "https://www.flashscore.com/match/hOow7HJt/",
-      "sourcePath": "/football/spain/laliga2/"
+      "sourcePath": "/football/spain/laliga2/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     },
     {
       "fixture": {
@@ -4402,9 +5492,21 @@
         "Flashscore Feed": "2a6TnEYO"
       },
       "sourceUrl": "https://www.flashscore.com/match/2a6TnEYO/",
-      "sourcePath": "/football/spain/laliga2/"
+      "sourcePath": "/football/spain/laliga2/",
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "Flashscore detail feed",
+        "sourceEndpoints": {
+          "events": null,
+          "statistics": null
+        }
+      }
     }
   ],
   "logoSource": "Flashscore CDN",
-  "logoUpdatedAt": "2026-09-27T15:22:57.456Z"
+  "logoUpdatedAt": "2026-09-27T15:22:57.456Z",
+  "detailMatchCount": 0,
+  "detailsSchemaVersion": 1
 }
