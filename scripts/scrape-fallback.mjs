@@ -127,6 +127,13 @@ function statusFromCode(code) {
   return "NS";
 }
 
+function flashscoreLogo(filename) {
+  const value = String(filename || "").trim();
+  if (!value) return null;
+  if (/^https?:\/\//i.test(value)) return value;
+  return "https://static.flashscore.com/res/image/data/" + value;
+}
+
 function matchFromFeed(record, leagueKey, sourcePath) {
   const timestamp = Number(record.AD || 0);
   const date = timestamp > 0 ? new Date(timestamp * 1000).toISOString() : new Date().toISOString();
@@ -141,8 +148,16 @@ function matchFromFeed(record, leagueKey, sourcePath) {
       status: { short: status },
     },
     teams: {
-      home: { id: record.AU || null, name: record.AE, logo: null },
-      away: { id: record.AV || null, name: record.AF, logo: null },
+      home: {
+        id: record.AU || null,
+        name: record.AE,
+        logo: flashscoreLogo(record.OB),
+      },
+      away: {
+        id: record.AV || null,
+        name: record.AF,
+        logo: flashscoreLogo(record.AW),
+      },
     },
     goals: {
       home: Number.isFinite(homeScore) ? homeScore : null,
@@ -233,6 +248,41 @@ async function scrapeInternalFeed() {
   return collected;
 }
 
+function mergeFeedMatches(existing, incoming) {
+  return {
+    ...existing,
+    ...incoming,
+    fixture: {
+      ...(existing.fixture || {}),
+      ...(incoming.fixture || {}),
+      status: {
+        ...(existing.fixture?.status || {}),
+        ...(incoming.fixture?.status || {}),
+      },
+    },
+    teams: {
+      home: {
+        ...(existing.teams?.home || {}),
+        ...(incoming.teams?.home || {}),
+        logo: incoming.teams?.home?.logo || existing.teams?.home?.logo || null,
+      },
+      away: {
+        ...(existing.teams?.away || {}),
+        ...(incoming.teams?.away || {}),
+        logo: incoming.teams?.away?.logo || existing.teams?.away?.logo || null,
+      },
+    },
+    goals: {
+      ...(existing.goals || {}),
+      ...(incoming.goals || {}),
+    },
+    league: {
+      ...(existing.league || {}),
+      ...(incoming.league || {}),
+    },
+  };
+}
+
 function dedupe(matches) {
   const byId = new Map();
   const byFixture = new Map();
@@ -245,14 +295,25 @@ function dedupe(matches) {
       normalizeName(match.teams?.away?.name),
     ].join("|");
 
-    if (byId.has(id)) continue;
+    if (byId.has(id)) {
+      const merged = mergeFeedMatches(byId.get(id), match);
+      byId.set(id, merged);
+      byFixture.set(fixtureKey, merged);
+      continue;
+    }
+
     if (byFixture.has(fixtureKey)) {
       const existing = byFixture.get(fixtureKey);
-      if (existing.fixture.status.short !== "FT" && match.fixture.status.short === "FT") {
-        byId.delete(existing.fixture.id);
-        byId.set(id, match);
-        byFixture.set(fixtureKey, match);
-      }
+      const merged = mergeFeedMatches(existing, match);
+      const oldId = String(existing.fixture?.id || "");
+      const chosenId =
+        existing.fixture?.status?.short !== "FT" && match.fixture?.status?.short === "FT"
+          ? id
+          : oldId;
+
+      byId.delete(oldId);
+      byId.set(chosenId, merged);
+      byFixture.set(fixtureKey, merged);
       continue;
     }
 
