@@ -20,105 +20,12 @@ async function getTeamEvents(teamId, endpoint) {
 async function getMatch(id) {
   try {
     const response = await fetch(
-      `https://www.thesportsdb.com/api/v1/json/123/lookupevent.php?id=${encodeURIComponent(id)}`,
+      `${BASE_URL}/api/match/${encodeURIComponent(id)}`,
       { cache: "no-store" }
     );
-
     if (!response.ok) return null;
     const data = await response.json();
-    const event = data.events?.[0];
-    if (!event) return null;
-
-    const [statsResponse, lineupResponse, timelineResponse] = await Promise.all([
-      fetch(
-        `https://www.thesportsdb.com/api/v1/json/123/lookupeventstats.php?id=${encodeURIComponent(id)}`,
-        { next: { revalidate: 300 } }
-      ),
-      fetch(
-        `https://www.thesportsdb.com/api/v1/json/123/lookuplineup.php?id=${encodeURIComponent(id)}`,
-        { next: { revalidate: 300 } }
-      ),
-      fetch(
-        `https://www.thesportsdb.com/api/v1/json/123/lookuptimeline.php?id=${encodeURIComponent(id)}`,
-        { next: { revalidate: 300 } }
-      ),
-    ]);
-
-    const statsData = statsResponse.ok ? await statsResponse.json() : {};
-    const lineupData = lineupResponse.ok ? await lineupResponse.json() : {};
-    const timelineData = timelineResponse.ok ? await timelineResponse.json() : {};
-
-    return {
-      fixture: {
-        id: Number(event.idEvent),
-        date: event.strTimestamp || `${event.dateEvent}T${event.strTime || "00:00:00"}`,
-        status: { short: event.strStatus || "NS" },
-        venue: { name: event.strVenue || null },
-      },
-      league: {
-        id: Number(event.idLeague),
-        name: event.strLeague || "كرة القدم",
-        season: event.strSeason || null,
-        country: event.strCountry || null,
-        round: event.intRound || null,
-      },
-      teams: {
-        home: {
-          id: Number(event.idHomeTeam),
-          name: event.strHomeTeam || "الفريق المضيف",
-          logo: event.strHomeTeamBadge || null,
-        },
-        away: {
-          id: Number(event.idAwayTeam),
-          name: event.strAwayTeam || "الفريق الضيف",
-          logo: event.strAwayTeamBadge || null,
-        },
-      },
-      goals: {
-        home: event.intHomeScore !== null && event.intHomeScore !== undefined ? Number(event.intHomeScore) : null,
-        away: event.intAwayScore !== null && event.intAwayScore !== undefined ? Number(event.intAwayScore) : null,
-      },
-      events: {
-        homeGoals: event.strHomeGoalDetails || null,
-        awayGoals: event.strAwayGoalDetails || null,
-        homeYellowCards: event.strHomeYellowCards || null,
-        awayYellowCards: event.strAwayYellowCards || null,
-        homeRedCards: event.strHomeRedCards || null,
-        awayRedCards: event.strAwayRedCards || null,
-      },
-      stats: Array.isArray(statsData.eventstats)
-        ? statsData.eventstats.map((stat) => ({
-            name: stat.strStat || "إحصائية",
-            home: stat.intHome ?? null,
-            away: stat.intAway ?? null,
-          }))
-        : [],
-      lineup: Array.isArray(lineupData.lineup)
-        ? lineupData.lineup.map((player) => ({
-            name: player.strPlayer || "لاعب",
-            position: player.strPosition || null,
-            number: player.intSquadNumber || null,
-            team: player.strHome === "Yes" ? "home" : "away",
-            substitute: player.strSubstitute === "Yes",
-            image: player.strCutout || player.strThumb || null,
-          }))
-        : [],
-      timeline: Array.isArray(timelineData.timeline)
-        ? timelineData.timeline.map((item) => ({
-            time: item.strTime || item.intTime || "",
-            type: item.strTimeline || "حدث",
-            detail: item.strTimelineDetail || null,
-            player: item.strPlayer || null,
-            assist: item.strAssist || null,
-            team: item.strHome === "Yes" ? "home" : "away",
-            substitute: item.strSubstitute || null,
-            card: item.strCard || null,
-            goal: item.strGoal || null,
-          }))
-        : [],
-      video: event.strVideo || null,
-      eventId: event.idEvent,
-    };
+    return data?.response?.[0] || null;
   } catch {
     return null;
   }
