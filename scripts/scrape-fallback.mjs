@@ -164,7 +164,7 @@ async function fetchLeague(leagueKey, url) {
     "Accept-Language": "en-US,en;q=0.9",
   };
 
-  const urls = [url, url.replace(/\/$/, "") + "results/"];
+  const urls = [url, `${url}results/`];
   const all = [];
 
   for (const target of urls) {
