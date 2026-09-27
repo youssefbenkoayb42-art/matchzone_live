@@ -1,3 +1,5 @@
+import { getOpenFootballMatches } from "../lib/openfootball";
+
 const BASE_URL = "https://matchzone-live.vercel.app";
 
 const leagues = [
@@ -7,6 +9,28 @@ const leagues = [
   "bundesliga",
   "ligue-1",
 ];
+
+async function getOpenFootballTeams() {
+  try {
+    const matches = await getOpenFootballMatches({
+      from: "2026-07-01",
+      to: "2027-06-30",
+    });
+
+    return [
+      ...new Set(
+        matches
+          .flatMap((match) => [
+            match?.teams?.home?.name,
+            match?.teams?.away?.name,
+          ])
+          .filter(Boolean)
+      ),
+    ];
+  } catch {
+    return [];
+  }
+}
 
 async function getSitemapEvents() {
   const startDate = new Date();
@@ -43,18 +67,22 @@ async function getSitemapEvents() {
 
 export default async function sitemap() {
   const now = new Date();
-  const events = await getSitemapEvents();
+  const [events, openFootballTeams] = await Promise.all([
+    getSitemapEvents(),
+    getOpenFootballTeams(),
+  ]);
 
   const matchIds = [
     ...new Set(events.map((event) => event?.idEvent).filter(Boolean)),
   ];
 
   const teamNames = [
-    ...new Set(
-      events
+    ...new Set([
+      ...events
         .flatMap((event) => [event?.strHomeTeam, event?.strAwayTeam])
-        .filter(Boolean)
-    ),
+        .filter(Boolean),
+      ...openFootballTeams,
+    ]),
   ];
 
   const discoveredLeagueIds = [
@@ -94,6 +122,12 @@ export default async function sitemap() {
       lastModified: now,
       changeFrequency: "hourly",
       priority: 0.95,
+    },
+    {
+      url: `${BASE_URL}/international`,
+      lastModified: now,
+      changeFrequency: "daily",
+      priority: 0.82,
     },
     {
       url: `${BASE_URL}/stats`,
