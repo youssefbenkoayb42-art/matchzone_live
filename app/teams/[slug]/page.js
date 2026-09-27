@@ -1,3 +1,5 @@
+import { getOpenFootballMatches } from "../../../lib/openfootball";
+
 const BASE_URL = "https://matchzone-live.vercel.app";
 import TeamFavorite from "./TeamFavorite";
 
@@ -27,6 +29,82 @@ async function getTeamEvents(teamId, endpoint) {
     return Array.isArray(data?.events) ? data.events : [];
   } catch {
     return [];
+  }
+}
+
+function normalizeTeamName(name) {
+  return String(name || "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\\u0300-\\u036f]/g, "")
+    .replace(/\\b(fc|cf|sc|afc|ac|club)\\b/g, "")
+    .replace(/[^a-z0-9]/g, "");
+}
+
+function adaptOpenFootballEvent(match) {
+  return {
+    idEvent: match?.eventId || match?.fixture?.id,
+    strHomeTeam: match?.teams?.home?.name || "",
+    strAwayTeam: match?.teams?.away?.name || "",
+    intHomeScore: match?.goals?.home ?? null,
+    intAwayScore: match?.goals?.away ?? null,
+    strTime: match?.fixture?.date
+      ? new Date(match.fixture.date).toISOString().slice(11, 16)
+      : "",
+    dateEvent: match?.fixture?.date?.slice(0, 10) || "",
+    strLeague: match?.league?.name || "",
+    openFootball: true,
+  };
+}
+
+async function getOpenFootballTeamEvents(teamName) {
+  const normalized = normalizeTeamName(teamName);
+  if (!normalized) return { upcoming: [], recent: [] };
+
+  try {
+    const matches = await getOpenFootballMatches({
+      from: "2026-07-01",
+      to: "2027-06-30",
+    });
+
+    const teamMatches = matches
+      .filter((match) => {
+        const home = normalizeTeamName(match?.teams?.home?.name);
+        const away = normalizeTeamName(match?.teams?.away?.name);
+        return home === normalized || away === normalized;
+      })
+      .sort((a, b) =>
+        String(b?.fixture?.date || "").localeCompare(
+          String(a?.fixture?.date || "")
+        )
+      );
+
+    const recent = teamMatches
+      .filter(
+        (match) =>
+          match?.goals?.home != null &&
+          match?.goals?.away != null
+      )
+      .slice(0, 5)
+      .map(adaptOpenFootballEvent);
+
+    const upcoming = teamMatches
+      .filter(
+        (match) =>
+          match?.goals?.home == null ||
+          match?.goals?.away == null
+      )
+      .sort((a, b) =>
+        String(a?.fixture?.date || "").localeCompare(
+          String(b?.fixture?.date || "")
+        )
+      )
+      .slice(0, 5)
+      .map(adaptOpenFootballEvent);
+
+    return { upcoming, recent };
+  } catch {
+    return { upcoming: [], recent: [] };
   }
 }
 
@@ -97,8 +175,20 @@ export default async function TeamPage({ params }) {
       ])
     : [[], []];
 
-  const upcoming = nextEvents.slice(0, 5);
-  const recent = lastEvents.slice(0, 5);
+  const openFootballFallback =
+    nextEvents.length === 0 || lastEvents.length === 0
+      ? await getOpenFootballTeamEvents(teamDisplayName || teamName)
+      : { upcoming: [], recent: [] };
+
+  const upcoming =
+    nextEvents.length > 0
+      ? nextEvents.slice(0, 5)
+      : openFootballFallback.upcoming;
+
+  const recent =
+    lastEvents.length > 0
+      ? lastEvents.slice(0, 5)
+      : openFootballFallback.recent;
   const teamDisplayName = team?.strTeam || teamName;
   const teamUrl = `${BASE_URL}/teams/${encodeURIComponent(teamName)}`;
   const leagueName = team?.strLeague || "";
