@@ -390,6 +390,13 @@ function getSourcePriority(match) {
   return priorities[match?.source] || 99;
 }
 
+function getFlashscoreTeamLogo(team) {
+  if (team?.logo) return team.logo;
+  const id = String(team?.id || "").trim();
+  if (!id) return null;
+  return "https://static.flashscore.com/res/image/data/" + id + "_h.png";
+}
+
 function getLocalLeagueLogo(name = "") {
   const value = String(name).toLowerCase();
   if (value.includes("premier league")) return "/leagues/premier-league.svg";
@@ -437,7 +444,9 @@ function mergeMatchRecords(primary, secondary) {
     const secondaryTeam = secondary.teams?.[side] || {};
 
     merged.teams[side].logo =
-      primaryTeam.logo || secondaryTeam.logo || null;
+      primaryTeam.logo ||
+      secondaryTeam.logo ||
+      getFlashscoreTeamLogo(primaryTeam.source === "Flashscore Feed" ? primaryTeam : secondaryTeam);
 
     merged.teams[side].id =
       primaryTeam.id || secondaryTeam.id || null;
@@ -607,6 +616,18 @@ export async function GET() {
     const formattedMatches =
       sortedMatches.map((match) => ({
         ...match,
+
+        teams: {
+          ...match.teams,
+          home: {
+            ...match.teams?.home,
+            logo: getFlashscoreTeamLogo(match.teams?.home),
+          },
+          away: {
+            ...match.teams?.away,
+            logo: getFlashscoreTeamLogo(match.teams?.away),
+          },
+        },
 
         league: {
           ...match.league,
