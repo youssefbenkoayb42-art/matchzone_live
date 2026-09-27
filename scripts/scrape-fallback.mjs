@@ -335,34 +335,7 @@ async function main() {
   }
 
   if (scraped.length === 0) {
-    console.warn("[scraper] internal feed returned 0 matches; falling back to Playwright.");
-    const browser = await chromium.launch({ headless: true });
-    try {
-      // Playwright fallback is intentionally kept as a safety net.
-      // The primary path is the lightweight internal feed above.
-      for (const [leagueKey, url] of LEAGUES) {
-        const context = await browser.newContext({
-          userAgent: USER_AGENT,
-          locale: "en-US",
-          viewport: { width: 1365, height: 900 },
-        });
-        const page = await context.newPage();
-        try {
-          await page.goto(url, { waitUntil: "domcontentloaded", timeout: 30000 });
-          await page.waitForTimeout(5000);
-          const html = await page.content();
-          const found = extractMatches(html, leagueKey, url);
-          console.log("[scraper] playwright", leagueKey, "rendered", found.length);
-          scraped.push(...found);
-        } catch (error) {
-          console.warn("[scraper] playwright", leagueKey, error.message);
-        } finally {
-          await context.close();
-        }
-      }
-    } finally {
-      await browser.close();
-    }
+    console.warn("[scraper] internal feed returned 0 matches. Keeping the previous datastore intact.");
   }
 
   const merged = dedupe([...(previous.matches || []), ...scraped]).slice(-5000);
