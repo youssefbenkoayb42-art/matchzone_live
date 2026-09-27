@@ -18,13 +18,19 @@ function sortNewestFirst(matches) {
 export async function GET() {
   try {
     const fallback = await getFallbackMatches();
-    const finished = sortNewestFirst(fallback.filter(isFinished));
+    const finished = sortNewestFirst(
+      fallback.filter(isFinished)
+    );
 
     return Response.json(
       {
         response: finished,
         results: finished.length,
-        source: "fallback-datastore",
+        source: "flashscore-feed-fallback",
+        fallback: {
+          updatedAt: new Date().toISOString(),
+          count: finished.length,
+        },
         updatedAt: new Date().toISOString(),
       },
       {
