@@ -391,10 +391,10 @@ function getSourcePriority(match) {
 }
 
 function getFlashscoreTeamLogo(team) {
-  if (team?.logo) return team.logo;
-  const id = String(team?.flashscoreId || team?.id || "").trim();
-  if (!id || !/^[A-Za-z0-9]+$/.test(id)) return null;
-  return "https://static.flashscore.com/res/image/data/" + id + "_h.png";
+  // Flashscore team IDs are NOT logo filenames. Only use the real logo
+  // URL captured from OB/AW in the feed; never manufacture an _h.png URL.
+  const logo = String(team?.flashscoreLogo || "").trim();
+  return /^https?:\/\//i.test(logo) ? logo : null;
 }
 
 function getLocalLeagueLogo(name = "") {
@@ -450,16 +450,25 @@ function mergeMatchRecords(primary, secondary) {
           ? secondaryTeam
           : null;
 
-    merged.teams[side].logo =
-      primaryTeam.logo ||
-      secondaryTeam.logo ||
-      getFlashscoreTeamLogo(flashscoreTeam);
+    const logoCandidates = [
+      primaryTeam.logo,
+      secondaryTeam.logo,
+      primaryTeam.flashscoreLogo,
+      secondaryTeam.flashscoreLogo,
+      getFlashscoreTeamLogo(flashscoreTeam),
+    ].filter((value) => /^https?:\/\//i.test(String(value || "")));
+
+    merged.teams[side].logo = logoCandidates[0] || null;
+    merged.teams[side].logoCandidates = Array.from(new Set(logoCandidates));
 
     merged.teams[side].flashscoreId =
       flashscoreTeam?.id ||
       primaryTeam.flashscoreId ||
       secondaryTeam.flashscoreId ||
       null;
+
+    merged.teams[side].flashscoreLogo =
+      flashscoreTeam?.logo || flashscoreTeam?.flashscoreLogo || null;
 
     merged.teams[side].id =
       primaryTeam.id || secondaryTeam.id || null;
@@ -636,17 +645,23 @@ export async function GET() {
             ...match.teams?.home,
             logo:
               match.teams?.home?.logo ||
-              (match.sources?.includes("Flashscore Feed")
-                ? getFlashscoreTeamLogo(match.teams?.home)
+              (Array.isArray(match.teams?.home?.logoCandidates)
+                ? match.teams.home.logoCandidates[0]
                 : null),
+            logoCandidates: Array.isArray(match.teams?.home?.logoCandidates)
+              ? match.teams.home.logoCandidates
+              : [match.teams?.home?.logo].filter(Boolean),
           },
           away: {
             ...match.teams?.away,
             logo:
               match.teams?.away?.logo ||
-              (match.sources?.includes("Flashscore Feed")
-                ? getFlashscoreTeamLogo(match.teams?.away)
+              (Array.isArray(match.teams?.away?.logoCandidates)
+                ? match.teams.away.logoCandidates[0]
                 : null),
+            logoCandidates: Array.isArray(match.teams?.away?.logoCandidates)
+              ? match.teams.away.logoCandidates
+              : [match.teams?.away?.logo].filter(Boolean),
           },
         },
 
