@@ -12,7 +12,7 @@ const LEAGUES = [
 const FEATURED_SLUGS = new Set(LEAGUES.map(([slug]) => slug));
 
 async function getAvailableLeagues() {
-  const days = Array.from({ length: 7 }, (_, index) => {
+  const days = Array.from({ length: 10 }, (_, index) => {
     const date = new Date();
     date.setUTCDate(date.getUTCDate() + index);
     return date.toISOString().slice(0, 10);
@@ -52,7 +52,7 @@ async function getAvailableLeagues() {
 
     return Array.from(map.values())
       .sort((a, b) => b.matches - a.matches || a.name.localeCompare(b.name))
-      .slice(0, 24);
+      .slice(0, 40);
   } catch {
     return [];
   }
@@ -68,7 +68,7 @@ async function AvailableLeagues() {
   const leagues = await getAvailableLeagues();
 
   if (!leagues.length) {
-    return <div style={styles.empty}>تعذر اكتشاف بطولات إضافية من المصدر المجاني حالياً.</div>;
+    return <div style={styles.empty}>لا توجد بطولات إضافية مكتشفة في نافذة البيانات الحالية.</div>;
   }
 
   return (
@@ -86,7 +86,7 @@ async function AvailableLeagues() {
             <div style={styles.discoveredBody}>
               <strong>{league.name}</strong>
               <span>{league.country || "كرة القدم"}</span>
-              <small>{league.matches} مباراة في نافذة البيانات الحالية</small>
+              <small>{league.matches} مباراة مكتشفة في نافذة البيانات</small>
             </div>
           </>
         );
@@ -149,10 +149,10 @@ export default function LeaguesPage() {
         <section style={styles.section}>
           <div style={styles.sectionHead}>
             <div>
-              <span style={styles.sectionKicker}>FREE COVERAGE</span>
-              <h2 style={styles.sectionTitle}>بطولات تظهر في بيانات المباريات</h2>
+              <span style={styles.sectionKicker}>AUTO DISCOVERY</span>
+              <h2 style={styles.sectionTitle}>بطولات يكتشفها MatchZone تلقائيًا</h2>
             </div>
-            <span style={styles.count}>7 أيام</span>
+            <span style={styles.count}>10 أيام</span>
           </div>
           <AvailableLeagues />
         </section>
