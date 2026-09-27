@@ -1,4 +1,4 @@
-import { getFallbackMatches } from "../../../lib/fallback-matches";
+import { getFallbackMatches } from "../../../../lib/fallback-matches";
 
 function isFallbackId(id) {
   return String(id || "").startsWith("fs-");
