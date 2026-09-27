@@ -14,18 +14,18 @@ jobs:
     timeout-minutes: 20
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
-          node-version: 20
+          node-version: 22
 
       - name: Install scraper dependencies
         run: npm install --prefix scripts --no-package-lock
 
       - name: Install Chromium for Playwright
-        run: npx playwright install --with-deps chromium --prefix scripts
+        run: cd scripts && npx playwright install --with-deps chromium
 
       - name: Scrape football fallback
         run: node scripts/scrape-fallback.mjs
