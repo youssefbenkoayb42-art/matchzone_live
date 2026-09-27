@@ -254,12 +254,64 @@ export default async function LeaguePage({ params }) {
     url: leagueUrl,
     sport: "Soccer",
     ...(league.badge ? { logo: league.badge } : {}),
-    ...(league.country ? { location: { "@type": "Country", name: league.country } } : {}),
+    ...(league.country
+      ? { location: { "@type": "Country", name: league.country } }
+      : {}),
   };
+
+  const eventMatches = [...today, ...upcomingMatches, ...recentResults]
+    .filter(Boolean)
+    .slice(0, 12);
+
+  const eventJsonLd = eventMatches.length
+    ? {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        name: "مباريات " + league.name,
+        numberOfItems: eventMatches.length,
+        itemListElement: eventMatches.map((match, index) => ({
+          "@type": "ListItem",
+          position: index + 1,
+          item: {
+            "@type": "SportsEvent",
+            name:
+              (match.strHomeTeam || "الفريق المضيف") +
+              " ضد " +
+              (match.strAwayTeam || "الفريق الضيف"),
+            sport: "Soccer",
+            ...(match.dateEvent
+              ? { startDate: match.strTime
+                  ? match.dateEvent + "T" + match.strTime
+                  : match.dateEvent }
+              : {}),
+            ...(match.strStatus
+              ? { eventStatus: match.strStatus }
+              : {}),
+            url: match.idEvent
+              ? BASE_URL + "/matches/" + match.idEvent
+              : BASE_URL + "/matches/today",
+            homeTeam: {
+              "@type": "SportsTeam",
+              name: match.strHomeTeam || "الفريق المضيف",
+            },
+            awayTeam: {
+              "@type": "SportsTeam",
+              name: match.strAwayTeam || "الفريق الضيف",
+            },
+          },
+        })),
+      }
+    : null;
 
   return (
     <main style={styles.main} className="league-page-shell" dir="rtl">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      {eventJsonLd ? (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(eventJsonLd) }}
+        />
+      ) : null}
       <div style={styles.container} className="league-page-container">
         <a href="/leagues" style={styles.link}>← كل البطولات</a>
 
