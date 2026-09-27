@@ -30,16 +30,24 @@ function getArabicLeague(league) {
 }
 
 function TeamLogo({ src, alt, size = 48 }) {
-  const [failed, setFailed] = useState(false);
-  if (!src || failed) {
+  const candidates = Array.from(
+    new Set(
+      (Array.isArray(src) ? src : [src]).filter(Boolean)
+    )
+  );
+  const [index, setIndex] = useState(0);
+  const current = candidates[index];
+
+  if (!current) {
     return <div className="team-logo-fallback" style={{ width: size, height: size }} aria-label={alt}>FC</div>;
   }
+
   return (
     <img
-      src={src}
+      src={current}
       alt={alt}
       loading="lazy"
-      onError={() => setFailed(true)}
+      onError={() => setIndex((value) => value + 1)}
       className="team-logo-img"
       style={{ width: size, height: size }}
     />
@@ -106,9 +114,13 @@ function normalizeMatch(item) {
     time: formatTime(item?.fixture?.date),
     date: item?.fixture?.date,
     home: item?.teams?.home?.name || "الفريق المضيف",
-    homeLogo: item?.teams?.home?.logo || null,
+    homeLogo:
+      item?.teams?.home?.logoCandidates ||
+      [item?.teams?.home?.logo].filter(Boolean),
     away: item?.teams?.away?.name || "الفريق الضيف",
-    awayLogo: item?.teams?.away?.logo || null,
+    awayLogo:
+      item?.teams?.away?.logoCandidates ||
+      [item?.teams?.away?.logo].filter(Boolean),
     status: item?.fixture?.status?.short || "NS",
     homeScore: item?.goals?.home !== undefined ? item.goals.home : null,
     awayScore: item?.goals?.away !== undefined ? item.goals.away : null,
