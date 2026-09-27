@@ -443,10 +443,17 @@ function mergeMatchRecords(primary, secondary) {
     const primaryTeam = primary.teams?.[side] || {};
     const secondaryTeam = secondary.teams?.[side] || {};
 
+    const flashscoreTeam =
+      primary.source === "Flashscore Feed"
+        ? primaryTeam
+        : secondary.source === "Flashscore Feed"
+          ? secondaryTeam
+          : null;
+
     merged.teams[side].logo =
       primaryTeam.logo ||
       secondaryTeam.logo ||
-      getFlashscoreTeamLogo(primaryTeam.source === "Flashscore Feed" ? primaryTeam : secondaryTeam);
+      getFlashscoreTeamLogo(flashscoreTeam);
 
     merged.teams[side].id =
       primaryTeam.id || secondaryTeam.id || null;
@@ -621,11 +628,19 @@ export async function GET() {
           ...match.teams,
           home: {
             ...match.teams?.home,
-            logo: getFlashscoreTeamLogo(match.teams?.home),
+            logo:
+              match.teams?.home?.logo ||
+              (match.source === "Flashscore Feed"
+                ? getFlashscoreTeamLogo(match.teams?.home)
+                : null),
           },
           away: {
             ...match.teams?.away,
-            logo: getFlashscoreTeamLogo(match.teams?.away),
+            logo:
+              match.teams?.away?.logo ||
+              (match.source === "Flashscore Feed"
+                ? getFlashscoreTeamLogo(match.teams?.away)
+                : null),
           },
         },
 
