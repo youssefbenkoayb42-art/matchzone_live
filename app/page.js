@@ -60,6 +60,23 @@ function LeagueLogo({ slug, name }) {
   );
 }
 
+function CompetitionBadge({ src, name }) {
+  const [failed, setFailed] = useState(false);
+  if (!src || failed) {
+    const label = String(name || "كرة").trim().slice(0, 2).toUpperCase();
+    return <span className="competition-badge-fallback" aria-hidden="true">{label || "⚽"}</span>;
+  }
+  return (
+    <img
+      src={src}
+      alt=""
+      loading="lazy"
+      onError={() => setFailed(true)}
+      className="competition-badge"
+    />
+  );
+}
+
 function getStatusType(status) {
   const value = String(status || "").toUpperCase();
   if (["LIVE", "1H", "2H", "HT", "ET", "P"].includes(value)) return "live";
@@ -96,6 +113,7 @@ function normalizeMatch(item) {
     homeScore: item?.goals?.home !== undefined ? item.goals.home : null,
     awayScore: item?.goals?.away !== undefined ? item.goals.away : null,
     league: item?.league?.name || "Football",
+    leagueLogo: item?.league?.logo || null,
     competitionType: item?.competitionType || "domestic",
     arabicLeague: getArabicLeague(item?.league?.name),
   };
@@ -400,7 +418,7 @@ export default function HomeDesign() {
               {finishedMatches.slice(0, 4).map((match) => (
                 <a href={`/matches/${match.id}`} className="featured-result-card" key={match.id}>
                   <div className="featured-result-meta">
-                    <span>{match.arabicLeague}</span>
+                    <span className="match-competition"><CompetitionBadge src={match.leagueLogo} name={match.league} />{match.arabicLeague}</span>
                     <b>FT</b>
                   </div>
                   <div className="featured-result-teams">
@@ -465,7 +483,7 @@ export default function HomeDesign() {
                 return (
                   <article key={match.id} className={live ? "match-card live-card favorite-match-card" : "match-card favorite-match-card"}>
                     <div className="match-meta">
-                      <span>{match.arabicLeague}</span>
+                      <span className="match-competition"><CompetitionBadge src={match.leagueLogo} name={match.league} />{match.arabicLeague}</span>
                       <b className={live ? "live-label" : ""}>{live ? "● مباشر" : getStatusLabel(match.status)}</b>
                     </div>
                     <div className="match-teams">
