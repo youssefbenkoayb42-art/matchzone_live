@@ -112,11 +112,12 @@ async function loadLocalTeamLogos() {
   console.log("[scraper] Vercel team CDN:", VERCEL_TEAM_CDN);
 }
 
-async function saveLocalTeamLogo(teamName, logoUrl) {
+async function saveLocalTeamLogo(teamName, logoUrl, options = {}) {
   const key = localLogoKey(teamName);
   if (!key || !logoUrl) return null;
+  const overwrite = Boolean(options.overwrite);
   const existing = localLogoCache.get(key);
-  if (existing) return existing;
+  if (existing && !overwrite) return existing;
 
   try {
     const response = await fetch(logoUrl, {
@@ -645,15 +646,34 @@ async function enrichTeamLogos(matches) {
     },
   }));
 
-  // STEP 1: local GitHub repository cache. No external logo request is made
-  // when the logo is already committed under public/teams.
+  // STEP 1: load the repository cache, but do NOT let an old cached badge
+  // override a fresh side-specific Flashscore badge. This prevents a legacy
+  // generic-name cache such as "Berkane" from keeping the wrong crest.
   await loadLocalTeamLogos();
+
+  const refreshedFlashscoreLogos = new Set();
 
   for (const match of result) {
     for (const side of ["home", "away"]) {
       const team = match.teams?.[side];
       if (!team?.name) continue;
+
       const key = normalizeName(team.name);
+      const freshFlashscoreLogo = cleanTeamLogo(team.flashscoreLogo);
+
+      if (freshFlashscoreLogo && !refreshedFlashscoreLogos.has(key)) {
+        const localPath = await saveLocalTeamLogo(team.name, freshFlashscoreLogo, {
+          overwrite: true,
+        });
+
+        if (localPath) {
+          refreshedFlashscoreLogos.add(key);
+          team.logo = localPath;
+          team.logoSource = "Flashscore → GitHub local (fresh)";
+          continue;
+        }
+      }
+
       const localLogo = localLogoCache.get(key);
       if (localLogo) {
         team.logo = localLogo;
