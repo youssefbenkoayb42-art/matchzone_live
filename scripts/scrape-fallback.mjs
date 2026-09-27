@@ -136,6 +136,23 @@ function flashscoreLogo(filename) {
   return "https://static.flashscore.com/res/image/data/" + value;
 }
 
+function cleanTeamLogo(value) {
+  const logo = String(value || "").trim();
+  return /^https?:\/\//i.test(logo) ? logo : null;
+}
+
+function buildTeam(side, id, name, logoFilename) {
+  const logo = cleanTeamLogo(flashscoreLogo(logoFilename));
+  return {
+    id: id || null,
+    name: name || "",
+    logo,
+    flashscoreLogo: logo,
+    logoFilename: String(logoFilename || "").trim() || null,
+    logoSide: side,
+  };
+}
+
 function matchFromFeed(record, leagueKey, sourcePath) {
   const timestamp = Number(record.AD || 0);
   const date = timestamp > 0 ? new Date(timestamp * 1000).toISOString() : new Date().toISOString();
@@ -150,18 +167,10 @@ function matchFromFeed(record, leagueKey, sourcePath) {
       status: { short: status },
     },
     teams: {
-      home: {
-        id: record.AU || null,
-        name: record.AE,
-        logo: flashscoreLogo(record.OB),
-      flashscoreLogo: flashscoreLogo(record.OB),
-      },
-      away: {
-        id: record.AV || null,
-        name: record.AF,
-        logo: flashscoreLogo(record.AW),
-      flashscoreLogo: flashscoreLogo(record.AW),
-      },
+      // Explicit Flashscore mapping: AU/AE/OB = home, AV/AF/AW = away.
+      // Never infer team side from DOM/logo order.
+      home: buildTeam("home", record.AU, record.AE, record.OB),
+      away: buildTeam("away", record.AV, record.AF, record.AW),
     },
     goals: {
       home: Number.isFinite(homeScore) ? homeScore : null,
@@ -482,7 +491,56 @@ async function scrapeMatchDetails(matches) {
   return details;
 }
 
+function mergeTeam(existingTeam, incomingTeam, side) {
+  const existing = existingTeam || {};
+  const incoming = incomingTeam || {};
+  const sameIdentity =
+    String(existing.id || "") === String(incoming.id || "") &&
+    normalizeName(existing.name) === normalizeName(incoming.name);
+
+  const incomingLogo = cleanTeamLogo(incoming.logo || incoming.flashscoreLogo);
+  const existingLogo = sameIdentity ? cleanTeamLogo(existing.logo || existing.flashscoreLogo) : null;
+
+  return {
+    ...existing,
+    ...incoming,
+    id: incoming.id || existing.id || null,
+    name: incoming.name || existing.name || "",
+    logo: incomingLogo || existingLogo || null,
+    flashscoreLogo: cleanTeamLogo(incoming.flashscoreLogo) || (sameIdentity ? cleanTeamLogo(existing.flashscoreLogo) : null),
+    logoFilename: incoming.logoFilename || (sameIdentity ? existing.logoFilename : null),
+    logoSide: side,
+  };
+}
+
 function mergeFeedMatches(existing, incoming) {
+  const home = mergeTeam(existing.teams?.home, incoming.teams?.home, "home");
+  const away = mergeTeam(existing.teams?.away, incoming.teams?.away, "away");
+
+  // Never allow a stale/incorrect shared logo to be copied to both sides.
+  if (home.logo && away.logo && home.logo === away.logo) {
+    const incomingHome = cleanTeamLogo(incoming.teams?.home?.logo);
+    const incomingAway = cleanTeamLogo(incoming.teams?.away?.logo);
+    if (incomingHome && incomingAway && incomingHome !== incomingAway) {
+      home.logo = incomingHome;
+      away.logo = incomingAway;
+    } else if (incomingHome) {
+      home.logo = incomingHome;
+      away.logo = null;
+      away.flashscoreLogo = null;
+      away.logoFilename = null;
+    } else if (incomingAway) {
+      away.logo = incomingAway;
+      home.logo = null;
+      home.flashscoreLogo = null;
+      home.logoFilename = null;
+    } else {
+      away.logo = null;
+      away.flashscoreLogo = null;
+      away.logoFilename = null;
+    }
+  }
+
   return {
     ...existing,
     ...incoming,
@@ -494,18 +552,7 @@ function mergeFeedMatches(existing, incoming) {
         ...(incoming.fixture?.status || {}),
       },
     },
-    teams: {
-      home: {
-        ...(existing.teams?.home || {}),
-        ...(incoming.teams?.home || {}),
-        logo: incoming.teams?.home?.logo || existing.teams?.home?.logo || null,
-      },
-      away: {
-        ...(existing.teams?.away || {}),
-        ...(incoming.teams?.away || {}),
-        logo: incoming.teams?.away?.logo || existing.teams?.away?.logo || null,
-      },
-    },
+    teams: { home, away },
     goals: {
       ...(existing.goals || {}),
       ...(incoming.goals || {}),
@@ -530,7 +577,9 @@ function dedupe(matches) {
     const id = String(match.fixture?.id || "");
     const fixtureKey = [
       match.fixture?.date?.slice(0, 10),
+      String(match.teams?.home?.id || ""),
       normalizeName(match.teams?.home?.name),
+      String(match.teams?.away?.id || ""),
       normalizeName(match.teams?.away?.name),
     ].join("|");
 
