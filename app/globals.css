@@ -363,7 +363,7 @@ button { -webkit-tap-highlight-color: transparent; }
 .hero-match-top { position:relative; display:flex; justify-content:space-between; align-items:center; margin-bottom:25px; }
 .hero-match-top span { color:#39e58b; font-size:11px; font-weight:950; }
 .hero-match-top small { color:#71827a; font-size:10px; }
-.hero-teams { position:relative; display:grid; grid-template-columns:1fr 90px 1fr; align-items:center; gap:8px; text-align:center; direction:rtl; }
+.hero-teams { position:relative; display:grid; grid-template-columns:1fr 90px 1fr; align-items:center; gap:8px; text-align:center; direction:ltr; }
 .hero-teams > div:not(.hero-score) { min-width:0; }
 .hero-teams strong { display:block; font-size:11px; color:#dce7e2; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; }
 .team-logo-img { object-fit:contain; display:block; margin:0 auto 8px; }
@@ -438,12 +438,12 @@ button { -webkit-tap-highlight-color: transparent; }
 .match-card.live-card { border-color:rgba(255,70,70,.2); box-shadow:inset 0 0 0 1px rgba(255,70,70,.025); }
 .international-home-teams,
 .featured-result-teams {
-  direction: rtl;
+  direction: ltr;
 }
 
 .international-home-names,
 .featured-result-teams {
-  direction: rtl;
+  direction: ltr;
 }
 
 .match-competition { display:inline-flex; align-items:center; gap:6px; min-width:0; }
@@ -453,7 +453,7 @@ button { -webkit-tap-highlight-color: transparent; }
 .match-meta span { color:#39c97c; font-size:9px; font-weight:900; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
 .match-meta b { color:#687770; font-size:9px; white-space:nowrap; }
 .match-meta b.live-label { color:#ff5959; }
-.match-teams { display:grid; grid-template-columns:1fr 75px 1fr; align-items:center; gap:7px; direction:rtl; }
+.match-teams { display:grid; grid-template-columns:1fr 75px 1fr; align-items:center; gap:7px; direction:ltr; }
 .match-team { min-width:0; text-align:center; }
 .match-team strong { display:block; color:#dce5e1; font-size:10px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; direction:rtl; }
 .match-center { text-align:center; }
