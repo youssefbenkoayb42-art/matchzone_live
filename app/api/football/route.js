@@ -392,8 +392,8 @@ function getSourcePriority(match) {
 
 function getFlashscoreTeamLogo(team) {
   if (team?.logo) return team.logo;
-  const id = String(team?.id || "").trim();
-  if (!id) return null;
+  const id = String(team?.flashscoreId || team?.id || "").trim();
+  if (!id || !/^[A-Za-z0-9]+$/.test(id)) return null;
   return "https://static.flashscore.com/res/image/data/" + id + "_h.png";
 }
 
@@ -454,6 +454,12 @@ function mergeMatchRecords(primary, secondary) {
       primaryTeam.logo ||
       secondaryTeam.logo ||
       getFlashscoreTeamLogo(flashscoreTeam);
+
+    merged.teams[side].flashscoreId =
+      flashscoreTeam?.id ||
+      primaryTeam.flashscoreId ||
+      secondaryTeam.flashscoreId ||
+      null;
 
     merged.teams[side].id =
       primaryTeam.id || secondaryTeam.id || null;
@@ -630,7 +636,7 @@ export async function GET() {
             ...match.teams?.home,
             logo:
               match.teams?.home?.logo ||
-              (match.source === "Flashscore Feed"
+              (match.sources?.includes("Flashscore Feed")
                 ? getFlashscoreTeamLogo(match.teams?.home)
                 : null),
           },
@@ -638,7 +644,7 @@ export async function GET() {
             ...match.teams?.away,
             logo:
               match.teams?.away?.logo ||
-              (match.source === "Flashscore Feed"
+              (match.sources?.includes("Flashscore Feed")
                 ? getFlashscoreTeamLogo(match.teams?.away)
                 : null),
           },
