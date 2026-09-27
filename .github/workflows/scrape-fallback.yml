@@ -46,4 +46,15 @@ jobs:
             exit 0
           fi
           git commit -m "Update MatchZone fallback match data"
-          git push
+
+          # The scraper can run while another GitHub commit lands on main.
+          # Rebase on the latest main before pushing to avoid non-fast-forward failures.
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git rebase origin/main && git push && exit 0
+            git rebase --abort || true
+            sleep $((attempt * 3))
+          done
+
+          echo "Could not push scraper update after 3 attempts."
+          exit 1
