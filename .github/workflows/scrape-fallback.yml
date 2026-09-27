@@ -40,7 +40,7 @@ jobs:
         run: |
           git config user.name "matchzone-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/scraped-matches.json
+          git add data/scraped-matches.json public/teams
           if git diff --cached --quiet; then
             echo "No scraper changes."
             exit 0
