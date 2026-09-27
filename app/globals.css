@@ -436,6 +436,9 @@ button { -webkit-tap-highlight-color: transparent; }
 .match-card { padding:15px; border-radius:18px; border:1px solid rgba(255,255,255,.055); background:linear-gradient(145deg,rgba(255,255,255,.038),rgba(255,255,255,.017)); transition:transform .2s,border-color .2s; }
 .match-card:hover { transform:translateY(-2px); border-color:rgba(57,229,139,.18); }
 .match-card.live-card { border-color:rgba(255,70,70,.2); box-shadow:inset 0 0 0 1px rgba(255,70,70,.025); }
+.match-competition { display:inline-flex; align-items:center; gap:6px; min-width:0; }
+.competition-badge { width:18px; height:18px; object-fit:contain; border-radius:5px; background:#fff; padding:2px; flex:0 0 auto; }
+.competition-badge-fallback { width:18px; height:18px; display:inline-grid; place-items:center; border-radius:5px; background:rgba(57,229,139,.09); color:#39e58b; border:1px solid rgba(57,229,139,.15); font-size:7px; font-weight:950; flex:0 0 auto; }
 .match-meta { display:flex; justify-content:space-between; align-items:center; gap:8px; margin-bottom:18px; }
 .match-meta span { color:#39c97c; font-size:9px; font-weight:900; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
 .match-meta b { color:#687770; font-size:9px; white-space:nowrap; }
