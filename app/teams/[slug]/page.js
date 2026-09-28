@@ -1,581 +1,278 @@
-import { getOpenFootballMatches } from "../../../lib/openfootball";
+import Link from "next/link";
+import {
+  getTeamById,
+  getTeamMatches,
+  getMatchSnapshotMeta,
+} from "../../../lib/match-snapshot";
 
-const BASE_URL = "https://matchzone-live.vercel.app";
-import TeamFavorite from "./TeamFavorite";
+export const dynamic = "force-dynamic";
 
-async function getTeam(teamName) {
-  try {
-    const res = await fetch(
-      "https://www.thesportsdb.com/api/v1/json/123/searchteams.php?t=" +
-        encodeURIComponent(teamName),
-      { next: { revalidate: 3600 } }
-    );
-    if (!res.ok) return null;
-    const data = await res.json();
-    return Array.isArray(data?.teams) ? data.teams[0] : null;
-  } catch {
-    return null;
-  }
+const FINISHED = ["FT", "AET", "PEN", "FINISHED"];
+
+function isFinished(match) {
+  return FINISHED.includes(
+    String(match?.fixture?.status?.short || "").toUpperCase()
+  );
 }
 
-async function getTeamEvents(teamId, endpoint) {
-  try {
-    const res = await fetch(
-      `https://www.thesportsdb.com/api/v1/json/123/${endpoint}?id=${encodeURIComponent(teamId)}`,
-      { next: { revalidate: 300 } }
-    );
-    if (!res.ok) return [];
-    const data = await res.json();
-    return Array.isArray(data?.events) ? data.events : [];
-  } catch {
-    return [];
-  }
+function formatDate(value) {
+  if (!value) return "الموعد غير متاح";
+  const date = new Date(value);
+  if (!Number.isFinite(date.getTime())) return "الموعد غير متاح";
+
+  return date.toLocaleString("ar-MA", {
+    weekday: "short",
+    day: "numeric",
+    month: "short",
+    hour: "2-digit",
+    minute: "2-digit",
+  });
 }
 
-function normalizeTeamName(name) {
-  return String(name || "")
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\\u0300-\\u036f]/g, "")
-    .replace(/\\b(fc|cf|sc|afc|ac|club)\\b/g, "")
-    .replace(/[^a-z0-9]/g, "");
+function TeamLogo({ team }) {
+  return (
+    <div className="mz-team-card-logo">
+      {team?.logo ? (
+        <img src={team.logo} alt="" width="64" height="64" />
+      ) : (
+        <span>FC</span>
+      )}
+    </div>
+  );
 }
 
-function adaptOpenFootballEvent(match) {
-  return {
-    idEvent: match?.eventId || match?.fixture?.id,
-    strHomeTeam: match?.teams?.home?.name || "",
-    strAwayTeam: match?.teams?.away?.name || "",
-    intHomeScore: match?.goals?.home ?? null,
-    intAwayScore: match?.goals?.away ?? null,
-    strTime: match?.fixture?.date
-      ? new Date(match.fixture.date).toISOString().slice(11, 16)
-      : "",
-    dateEvent: match?.fixture?.date?.slice(0, 10) || "",
-    strLeague: match?.league?.name || "",
-    openFootball: true,
-  };
-}
-
-async function getOpenFootballTeamEvents(teamName) {
-  const normalized = normalizeTeamName(teamName);
-  if (!normalized) return { upcoming: [], recent: [] };
-
-  try {
-    const matches = await getOpenFootballMatches({
-      from: "2026-07-01",
-      to: "2027-06-30",
-    });
-
-    const teamMatches = matches
-      .filter((match) => {
-        const home = normalizeTeamName(match?.teams?.home?.name);
-        const away = normalizeTeamName(match?.teams?.away?.name);
-        return home === normalized || away === normalized;
-      })
-      .sort((a, b) =>
-        String(b?.fixture?.date || "").localeCompare(
-          String(a?.fixture?.date || "")
-        )
-      );
-
-    const recent = teamMatches
-      .filter(
-        (match) =>
-          match?.goals?.home != null &&
-          match?.goals?.away != null
-      )
-      .slice(0, 5)
-      .map(adaptOpenFootballEvent);
-
-    const upcoming = teamMatches
-      .filter(
-        (match) =>
-          match?.goals?.home == null ||
-          match?.goals?.away == null
-      )
-      .sort((a, b) =>
-        String(a?.fixture?.date || "").localeCompare(
-          String(b?.fixture?.date || "")
-        )
-      )
-      .slice(0, 5)
-      .map(adaptOpenFootballEvent);
-
-    return { upcoming, recent };
-  } catch {
-    return { upcoming: [], recent: [] };
-  }
-}
-
-function EventCard({ event, featured = false }) {
-  const home = event?.strHomeTeam || "الفريق المضيف";
-  const away = event?.strAwayTeam || "الفريق الضيف";
-  const homeScore = event?.intHomeScore ?? "-";
-  const awayScore = event?.intAwayScore ?? "-";
-  const time = event?.strTime || event?.strTimestamp || "";
-  const date = event?.dateEvent || "";
-  const finished = event?.intHomeScore != null && event?.intAwayScore != null;
+function MatchRow({ match }) {
+  const status = String(match?.fixture?.status?.short || "NS").toUpperCase();
+  const finished = FINISHED.includes(status);
+  const home = match?.teams?.home;
+  const away = match?.teams?.away;
 
   return (
-    <a href={`/matches/${event.idEvent}`} style={{ ...styles.card, ...(featured ? styles.featuredCard : {}) }}>
-      <div style={styles.competition}>
-        <span>{event?.strLeague || "مباراة"}</span>
-        <span>{finished ? "FT" : "موعد المباراة"}</span>
+    <Link
+      href={"/matches/" + encodeURIComponent(String(match?.fixture?.id || ""))}
+      className="mz-team-match"
+    >
+      <div className="mz-team-match-date">{formatDate(match?.fixture?.date)}</div>
+
+      <div className="mz-team-match-teams">
+        <span>{home?.name || "الفريق المضيف"}</span>
+        <strong>
+          {finished
+            ? (match?.goals?.home ?? "—") + " : " + (match?.goals?.away ?? "—")
+            : "— : —"}
+        </strong>
+        <span>{away?.name || "الفريق الضيف"}</span>
       </div>
-      <div style={styles.teamsRow}>
-        <div style={styles.teamBlock}>
-          {event?.strHomeTeamBadge ? <img src={event.strHomeTeamBadge} alt="" style={styles.eventLogo} /> : <div style={styles.eventFallback}>FC</div>}
-          <strong style={styles.teamName}>{home}</strong>
-        </div>
-        <div style={styles.middle}>
-          <strong style={styles.score}>{homeScore} - {awayScore}</strong>
-          <span style={styles.time}>{date} {time}</span>
-        </div>
-        <div style={styles.teamBlock}>
-          {event?.strAwayTeamBadge ? <img src={event.strAwayTeamBadge} alt="" style={styles.eventLogo} /> : <div style={styles.eventFallback}>FC</div>}
-          <strong style={styles.teamName}>{away}</strong>
-        </div>
-      </div>
-      <div style={styles.details}>عرض تفاصيل المباراة ←</div>
-    </a>
+
+      <span className="mz-team-match-status">
+        {finished ? "انتهت" : status === "LIVE" ? "مباشر" : "قادمة"}
+      </span>
+    </Link>
   );
 }
 
 export async function generateMetadata({ params }) {
-  const { slug } = await params;
-  const teamName = decodeURIComponent(slug);
-  const team = await getTeam(teamName);
-  const displayName = team?.strTeam || teamName;
+  const { slug: id } = await params;
+  const team = await getTeamById(id);
+
+  if (!team) {
+    return {
+      title: "الفريق غير موجود | MatchZone",
+      description: "تعذر العثور على الفريق المطلوب في بيانات MatchZone الحالية.",
+    };
+  }
+
+  const title = team.name + " | المباريات والنتائج والإحصائيات | MatchZone";
+  const description =
+    "صفحة " +
+    team.name +
+    " في MatchZone: آخر النتائج، المباريات القادمة، السجل والإحصائيات المتاحة.";
 
   return {
-    title: `${displayName} | المباريات والنتائج`,
-    description: `تابع مباريات ونتائج ${displayName} والمواعيد القادمة وآخر المواجهات على MatchZone.`,
+    title,
+    description,
     alternates: {
-      canonical: `${BASE_URL}/teams/${encodeURIComponent(teamName)}`,
+      canonical: "https://matchzone-live.vercel.app/teams/" + encodeURIComponent(id),
     },
     openGraph: {
-      title: `${displayName} | MatchZone`,
-      description: `مباريات ${displayName} القادمة وآخر النتائج.`,
-      url: `${BASE_URL}/teams/${encodeURIComponent(teamName)}`,
-      images: team?.strTeamBadge ? [{ url: team.strTeamBadge, alt: displayName }] : [],
+      title,
+      description,
+      type: "website",
+      url: "https://matchzone-live.vercel.app/teams/" + encodeURIComponent(id),
+      images: team.logo ? [team.logo] : undefined,
     },
   };
 }
 
-export default async function TeamPage({ params }) {
-  const { slug } = await params;
-  const teamName = decodeURIComponent(slug);
-  const team = await getTeam(teamName);
+export default async function TeamDetailPage({ params }) {
+  const { slug: id } = await params;
 
-  const [nextEvents, lastEvents] = team?.idTeam
-    ? await Promise.all([
-        getTeamEvents(team.idTeam, "eventsnext"),
-        getTeamEvents(team.idTeam, "eventslast"),
-      ])
-    : [[], []];
+  const [team, matches, meta] = await Promise.all([
+    getTeamById(id),
+    getTeamMatches(id),
+    getMatchSnapshotMeta(),
+  ]);
 
-  const openFootballFallback =
-    nextEvents.length === 0 || lastEvents.length === 0
-      ? await getOpenFootballTeamEvents(teamDisplayName || teamName)
-      : { upcoming: [], recent: [] };
+  if (!team) {
+    return (
+      <main className="mz-team-detail-page" dir="rtl">
+        <div className="mz-teams-shell">
+          <section className="mz-team-section">
+            <span className="mz-catalog-kicker">404 • TEAM</span>
+            <h1>الفريق غير موجود</h1>
+            <p>قد تكون هوية الفريق قد تغيرت أو لم تعد موجودة في لقطة البيانات الحالية.</p>
+            <Link href="/teams" className="mz-catalog-back">← العودة إلى دليل الفرق</Link>
+          </section>
+        </div>
+      </main>
+    );
+  }
 
-  const upcoming =
-    nextEvents.length > 0
-      ? nextEvents.slice(0, 5)
-      : openFootballFallback.upcoming;
+  const ordered = [...matches].sort(
+    (a, b) =>
+      new Date(b?.fixture?.date || 0).getTime() -
+      new Date(a?.fixture?.date || 0).getTime()
+  );
 
-  const recent =
-    lastEvents.length > 0
-      ? lastEvents.slice(0, 5)
-      : openFootballFallback.recent;
-  const teamDisplayName = team?.strTeam || teamName;
-  const teamUrl = `${BASE_URL}/teams/${encodeURIComponent(teamName)}`;
-  const leagueName = team?.strLeague || "";
-  const country = team?.strCountry || "";
-  const venue = team?.strStadium || "";
-  const founded = team?.intFormedYear || "";
-  const leaguePath = team?.idLeague
-    ? `/leagues/league-${team.idLeague}`
-    : "/leagues";
+  const results = ordered.filter(isFinished).slice(0, 10);
+  const upcoming = [...ordered]
+    .filter((match) => !isFinished(match))
+    .sort(
+      (a, b) =>
+        new Date(a?.fixture?.date || 0).getTime() -
+        new Date(b?.fixture?.date || 0).getTime()
+    )
+    .slice(0, 10);
 
-  const breadcrumbData = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "الرئيسية",
-        item: BASE_URL,
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: leagueName || "البطولات",
-        item: `${BASE_URL}${leaguePath}`,
-      },
-      {
-        "@type": "ListItem",
-        position: 3,
-        name: teamDisplayName,
-        item: teamUrl,
-      },
-    ],
-  };
+  const leagues = (team.leagueIds || [])
+    .map((leagueId) =>
+      (meta.leagues || []).find((league) => String(league.id) === String(leagueId))
+    )
+    .filter(Boolean);
 
-  const teamSchema = {
+  const structuredData = {
     "@context": "https://schema.org",
     "@type": "SportsTeam",
-    name: teamDisplayName,
-    url: teamUrl,
+    name: team.name,
+    url:
+      "https://matchzone-live.vercel.app/teams/" +
+      encodeURIComponent(String(id)),
     sport: "Football",
-    logo: team?.strTeamBadge || undefined,
-    location: country ? { "@type": "Place", name: country } : undefined,
-    foundingDate: founded ? String(founded) : undefined,
-    memberOf: leagueName ? { "@type": "SportsOrganization", name: leagueName } : undefined,
+    logo: team.logo || undefined,
   };
 
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(breadcrumbData),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(teamSchema),
-        }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
 
-      <main dir="rtl" style={styles.main} className="team-page-shell">
-        <div style={styles.container}>
-          <nav style={styles.breadcrumb} aria-label="مسار التنقل">
-            <a href="/" style={styles.breadcrumbLink}>
-              الرئيسية
-            </a>
-            <span aria-hidden="true">←</span>
-            <a href={leaguePath} style={styles.breadcrumbLink}>
-              {leagueName || "البطولات"}
-            </a>
-            <span aria-hidden="true">←</span>
-            <span>{teamDisplayName}</span>
-          </nav>
+      <main className="mz-team-detail-page" dir="rtl">
+        <div className="mz-teams-shell">
+          <Link href="/teams" className="mz-catalog-back">
+            ← دليل الفرق
+          </Link>
 
-          <a href="/" style={styles.link}>
-            ← العودة إلى المباريات
-          </a>
-
-          <section style={styles.hero} className="team-page-hero">
-            {team?.strTeamBadge ? (
-              <img
-                src={team.strTeamBadge}
-                alt={teamDisplayName}
-                style={styles.logo}
-              />
-            ) : (
-              <div style={styles.fallback}>FC</div>
-            )}
-
-            <div style={styles.heroContent}>
-              <h1 style={styles.h1}>{teamDisplayName}</h1>
-              <p style={styles.muted}>
-                تابع مباريات ونتائج {teamDisplayName} والمواعيد القادمة وآخر
-                المواجهات على MatchZone.
+          <section className="mz-team-detail-hero">
+            <TeamLogo team={team} />
+            <div>
+              <span className="mz-catalog-kicker">MATCHZONE • TEAM</span>
+              <h1>{team.name}</h1>
+              <p>
+                {team.provider || "مزود البيانات"} · {team.providerId || team.id}
               </p>
-
-              {leagueName && (
-                <a
-                  href={leaguePath}
-                  style={styles.leagueLink}
-                >
-                  {leagueName}
-                </a>
-              )}
-
-              <TeamFavorite teamName={teamDisplayName} />
-
-              <div style={styles.metaRow}>
-                {country && <span><i className="ui-glyph mini-glyph">LOC</i>{country}</span>}
-                {venue && <span><i className="ui-glyph mini-glyph">VEN</i>{venue}</span>}
-                {founded && <span><i className="ui-glyph mini-glyph">EST</i>تأسس {founded}</span>}
-              </div>
-
-              <div style={styles.statGrid}>
-                <div style={styles.statBox}><strong>{upcoming.length}</strong><span>قادمة</span></div>
-                <div style={styles.statBox}><strong>{recent.length}</strong><span>نتائج</span></div>
-                <div style={styles.statBox}><strong>FC</strong><span>MatchZone</span></div>
-              </div>
+              {leagues.length > 0 ? (
+                <div className="mz-team-leagues">
+                  {leagues.slice(0, 6).map((league) => (
+                    <Link
+                      key={league.id}
+                      href={"/leagues/catalog/" + encodeURIComponent(String(league.id))}
+                    >
+                      {league.name}
+                    </Link>
+                  ))}
+                </div>
+              ) : null}
             </div>
           </section>
 
-          <section>
-            <h2 style={styles.h2}>أقرب مباراة</h2>
+          <section className="mz-team-stat-grid" aria-label="إحصائيات الفريق">
+            <div><strong>{team.stats.played}</strong><span>لعب</span></div>
+            <div><strong>{team.stats.wins}</strong><span>فوز</span></div>
+            <div><strong>{team.stats.draws}</strong><span>تعادل</span></div>
+            <div><strong>{team.stats.losses}</strong><span>هزيمة</span></div>
+            <div><strong>{team.stats.points}</strong><span>نقاط</span></div>
+            <div><strong>{team.stats.goalDifference}</strong><span>فرق الأهداف</span></div>
+          </section>
+
+          <section className="mz-team-section">
+            <div className="mz-section-heading">
+              <div>
+                <span className="mz-catalog-kicker">UPCOMING</span>
+                <h2>المباريات القادمة</h2>
+              </div>
+              <span>{team.upcomingCount} مباراة</span>
+            </div>
 
             {upcoming.length > 0 ? (
-              <div style={styles.grid}>
-                <EventCard event={upcoming[0]} featured />
-              </div>
-            ) : (
-              <p style={styles.empty}>لا توجد مباراة قادمة متاحة حاليًا.</p>
-            )}
-
-            <h2 style={styles.h2}>باقي المباريات القادمة</h2>
-
-            {upcoming.length > 1 ? (
-              <div style={styles.grid}>
-                {upcoming.slice(1).map((event) => (
-                  <EventCard key={event.idEvent} event={event} />
+              <div className="mz-team-match-list">
+                {upcoming.map((match) => (
+                  <MatchRow
+                    key={String(match?.fixture?.id || "")}
+                    match={match}
+                  />
                 ))}
               </div>
             ) : (
-              <p style={styles.empty}>
-                {upcoming.length === 1
-                  ? "لا توجد مباريات أخرى مجدولة حاليًا."
-                  : "لا توجد مواعيد قادمة متاحة حاليًا."}
-              </p>
-            )}
-
-            <h2 style={styles.h2}>آخر النتائج</h2>
-
-            {recent.length > 0 ? (
-              <div style={styles.grid}>
-                {recent.map((event) => (
-                  <EventCard key={event.idEvent} event={event} />
-                ))}
-              </div>
-            ) : (
-              <p style={styles.empty}>لا توجد نتائج سابقة متاحة حاليًا.</p>
+              <p className="mz-empty-state">لا توجد مباراة قادمة في اللقطة الحالية.</p>
             )}
           </section>
 
-          <nav style={styles.nav} aria-label="روابط MatchZone">
-            <a href="/leagues" style={styles.navLink}>
-              تصفح البطولات
-            </a>
-            <a href="/matches/today" style={styles.navLink}>
-              مباريات اليوم
-            </a>
-          </nav>
+          <section className="mz-team-section">
+            <div className="mz-section-heading">
+              <div>
+                <span className="mz-catalog-kicker">RESULTS</span>
+                <h2>آخر النتائج</h2>
+              </div>
+              <span>{team.finishedCount} مباراة مكتملة</span>
+            </div>
+
+            {results.length > 0 ? (
+              <div className="mz-team-match-list">
+                {results.map((match) => (
+                  <MatchRow
+                    key={String(match?.fixture?.id || "")}
+                    match={match}
+                  />
+                ))}
+              </div>
+            ) : (
+              <p className="mz-empty-state">لا توجد نتائج مكتملة في اللقطة الحالية.</p>
+            )}
+          </section>
+
+          <section className="mz-team-section">
+            <div className="mz-section-heading">
+              <div>
+                <span className="mz-catalog-kicker">TEAM STATS</span>
+                <h2>إحصائيات الفريق</h2>
+              </div>
+            </div>
+
+            <div className="mz-team-stat-details">
+              <div><span>الأهداف المسجلة</span><strong>{team.stats.goalsFor}</strong></div>
+              <div><span>الأهداف المستقبلة</span><strong>{team.stats.goalsAgainst}</strong></div>
+              <div><span>فرق الأهداف</span><strong>{team.stats.goalDifference}</strong></div>
+              <div><span>الشباك النظيفة</span><strong>{team.stats.cleanSheets}</strong></div>
+            </div>
+
+            <p className="mz-team-note">
+              الإحصائيات محسوبة من مباريات الفريق الموجودة حاليًا في لقطة MatchZone.
+            </p>
+          </section>
         </div>
       </main>
     </>
   );
 }
-
-const styles = {
-  main: {
-    minHeight: "100vh",
-    background: "#07100d",
-    color: "#f4f8f6",
-    padding: "30px 18px 60px",
-    fontFamily: "Arial, Helvetica, sans-serif",
-  },
-  container: {
-    maxWidth: 1000,
-    margin: "0 auto",
-  },
-  link: {
-    display: "inline-block",
-    marginTop: 10,
-    color: "#2ecc71",
-    textDecoration: "none",
-    fontWeight: 800,
-  },
-  breadcrumb: {
-    display: "flex",
-    alignItems: "center",
-    gap: 8,
-    flexWrap: "wrap",
-    marginBottom: 8,
-    color: "#82968d",
-    fontSize: 12,
-  },
-  breadcrumbLink: {
-    color: "#2ecc71",
-    textDecoration: "none",
-    fontWeight: 800,
-  },
-  hero: {
-    display: "flex",
-    alignItems: "center",
-    gap: 18,
-    marginTop: 24,
-    padding: 25,
-    borderRadius: 22,
-    background: "linear-gradient(145deg,#123326,#0b1712)",
-    border: "1px solid #1e3d30",
-  },
-  heroContent: {
-    minWidth: 0,
-    flex: 1,
-  },
-  logo: {
-    width: "clamp(70px,18vw,110px)",
-    height: "clamp(70px,18vw,110px)",
-    objectFit: "contain",
-    flexShrink: 0,
-  },
-  fallback: {
-    fontSize: 65,
-    flexShrink: 0,
-  },
-  h1: {
-    margin: 0,
-    fontSize: "clamp(25px,6vw,40px)",
-    overflowWrap: "anywhere",
-  },
-  h2: {
-    margin: "32px 0 14px",
-  },
-  muted: {
-    color: "#82968d",
-    lineHeight: 1.7,
-  },
-  leagueLink: {
-    display: "inline-block",
-    color: "#2ecc71",
-    textDecoration: "none",
-    fontWeight: 900,
-    marginTop: 3,
-  },
-  metaRow: {
-    display: "flex",
-    flexWrap: "wrap",
-    gap: 8,
-    marginTop: 12,
-    color: "#a9bbb3",
-    fontSize: 12,
-  },
-  statGrid: {
-    display: "grid",
-    gridTemplateColumns: "repeat(3, minmax(0,1fr))",
-    gap: 8,
-    marginTop: 16,
-  },
-  statBox: {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    gap: 3,
-    padding: "10px 8px",
-    borderRadius: 14,
-    background: "rgba(255,255,255,.045)",
-    border: "1px solid rgba(255,255,255,.06)",
-  },
-  featuredCard: {
-    padding: 20,
-    background: "linear-gradient(145deg,rgba(46,204,113,.12),rgba(255,255,255,.035))",
-    border: "1px solid rgba(46,204,113,.2)",
-  },
-  competition: {
-    display: "flex",
-    justifyContent: "space-between",
-    gap: 10,
-    color: "#82968d",
-    fontSize: 11,
-    marginBottom: 16,
-  },
-  teamsRow: {
-    display: "grid",
-    gridTemplateColumns: "1fr auto 1fr",
-    gap: 12,
-    alignItems: "center",
-    direction: "ltr",
-  },
-  teamBlock: {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    gap: 8,
-    minWidth: 0,
-  },
-  eventLogo: {
-    width: 46,
-    height: 46,
-    objectFit: "contain",
-  },
-  eventFallback: {
-    width: 46,
-    height: 46,
-    display: "grid",
-    placeItems: "center",
-    borderRadius: 14,
-    background: "#10231b",
-    fontSize: 24,
-  },
-  teamName: {
-    maxWidth: "100%",
-    overflow: "hidden",
-    textOverflow: "ellipsis",
-    whiteSpace: "nowrap",
-  },
-  details: {
-    marginTop: 15,
-    paddingTop: 11,
-    borderTop: "1px solid rgba(255,255,255,.06)",
-    color: "#2ecc71",
-    textAlign: "center",
-    fontSize: 12,
-    fontWeight: 800,
-  },
-  grid: {
-    display: "grid",
-    gridTemplateColumns: "repeat(auto-fit,minmax(280px,1fr))",
-    gap: 12,
-  },
-  card: {
-    display: "grid",
-    gridTemplateColumns: "1fr auto 1fr",
-    gap: 10,
-    alignItems: "center",
-    textAlign: "center",
-    direction: "ltr",
-    padding: 18,
-    borderRadius: 18,
-    background: "rgba(255,255,255,.035)",
-    border: "1px solid rgba(255,255,255,.07)",
-    color: "#fff",
-    textDecoration: "none",
-  },
-  middle: {
-    display: "flex",
-    flexDirection: "column",
-    gap: 5,
-    alignItems: "center",
-  },
-  score: {
-    color: "#2ecc71",
-    fontWeight: 900,
-    whiteSpace: "nowrap",
-  },
-  time: {
-    color: "#82968d",
-    fontSize: 11,
-    whiteSpace: "nowrap",
-  },
-  empty: {
-    color: "#82968d",
-    padding: "18px",
-    borderRadius: 16,
-    background: "rgba(255,255,255,.025)",
-  },
-  nav: {
-    display: "flex",
-    gap: 10,
-    flexWrap: "wrap",
-    marginTop: 35,
-  },
-  navLink: {
-    color: "#2ecc71",
-    textDecoration: "none",
-    padding: "11px 15px",
-    borderRadius: 12,
-    background: "rgba(46,204,113,.07)",
-    border: "1px solid rgba(46,204,113,.12)",
-    fontWeight: 800,
-  },
-};
