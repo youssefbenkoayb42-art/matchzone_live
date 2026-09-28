@@ -309,3 +309,5 @@ main().catch((error) => {
   console.error("[CLEAN-SCRAPER] FAILED:", error);
   process.exit(1);
 });
+
+// CLEAN ID-ONLY REBUILD TRIGGER
