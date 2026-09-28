@@ -408,7 +408,7 @@ async function fetchOpenFootballMatches(from, to) {
     });
 
     const files = Array.isArray(directory)
-      ? directory.filter((item) => item?.type === "file" && /\\.json$/i.test(item?.name))
+      ? directory.filter((item) => item?.type === "file" && /\.json$/i.test(item?.name))
       : [];
 
     for (const file of files) {
@@ -435,13 +435,13 @@ async function fetchOpenFootballMatches(from, to) {
 
           const identity = (name) =>
             "openfootball:" +
-            normalizeTeamForSearch(name).replace(/\\s+/g, "-");
+            normalizeTeamForSearch(name).replace(/\s+/g, "-");
 
           output.push({
             fixture: {
               id:
                 "openfootball-" +
-                encodeURIComponent(file.name.replace(/\\.json$/i, "")) +
+                encodeURIComponent(file.name.replace(/\.json$/i, "")) +
                 "-" +
                 date +
                 "-" +
@@ -451,7 +451,7 @@ async function fetchOpenFootballMatches(from, to) {
               providerMatchId:
                 file.name + ":" + date + ":" + team1 + ":" + team2,
               date: item.time
-                ? date + "T" + String(item.time).replace(/\\s*UTC.*$/i, "") + ":00Z"
+                ? date + "T" + String(item.time).replace(/\s*UTC.*$/i, "") + ":00Z"
                 : date + "T12:00:00Z",
               status: { short: hasScore ? "FT" : "NS" },
             },
@@ -482,7 +482,7 @@ async function fetchOpenFootballMatches(from, to) {
               away: hasScore ? Number(ft[1]) : null,
             },
             league: {
-              id: "openfootball:" + file.name.replace(/\\.json$/i, ""),
+              id: "openfootball:" + file.name.replace(/\.json$/i, ""),
               name: String(data?.name || file.name).trim(),
               logo: null,
             },
