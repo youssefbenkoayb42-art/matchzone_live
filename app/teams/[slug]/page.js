@@ -126,8 +126,11 @@ export async function generateMetadata({ params }) {
   };
 }
 
-export default async function TeamDetailPage({ params }) {
+export default async function TeamDetailPage({ params, searchParams }) {
   const { slug: id } = await params;
+  const query = await searchParams;
+  const selectedLeague = String(query?.league || "all");
+  const selectedStatus = String(query?.status || "all");
 
   const [team, matches, meta] = await Promise.all([
     getTeamById(id),
@@ -155,6 +158,20 @@ export default async function TeamDetailPage({ params }) {
       new Date(b?.fixture?.date || 0).getTime() -
       new Date(a?.fixture?.date || 0).getTime()
   );
+
+  const filteredMatches = ordered.filter((match) => {
+    const leagueOk =
+      selectedLeague === "all" ||
+      String(match?.league?.id || "") === selectedLeague;
+
+    const finished = isFinished(match);
+    const statusOk =
+      selectedStatus === "all" ||
+      (selectedStatus === "finished" && finished) ||
+      (selectedStatus === "upcoming" && !finished);
+
+    return leagueOk && statusOk;
+  });
 
   const results = ordered.filter(isFinished).slice(0, 10);
   const upcoming = [...ordered]
@@ -290,8 +307,52 @@ export default async function TeamDetailPage({ params }) {
                 <span className="mz-catalog-kicker">HISTORY</span>
                 <h2>سجل مباريات الفريق</h2>
               </div>
-              <span>{matches.length} مباراة</span>
+              <span>{filteredMatches.length} مباراة</span>
             </div>
+
+            <div className="mz-team-filters" aria-label="تصفية مباريات الفريق">
+              <Link
+                href={"/teams/" + encodeURIComponent(String(id))}
+                className={selectedStatus === "all" && selectedLeague === "all" ? "active" : ""}
+              >
+                الكل
+              </Link>
+              <Link
+                href={"/teams/" + encodeURIComponent(String(id)) + "?status=finished"}
+                className={selectedStatus === "finished" && selectedLeague === "all" ? "active" : ""}
+              >
+                النتائج
+              </Link>
+              <Link
+                href={"/teams/" + encodeURIComponent(String(id)) + "?status=upcoming"}
+                className={selectedStatus === "upcoming" && selectedLeague === "all" ? "active" : ""}
+              >
+                القادمة
+              </Link>
+              {leagues.slice(0, 8).map((league) => (
+                <Link
+                  key={"filter-" + league.id}
+                  href={"/teams/" + encodeURIComponent(String(id)) + "?league=" + encodeURIComponent(String(league.id))}
+                  className={selectedLeague === String(league.id) && selectedStatus === "all" ? "active" : ""}
+                >
+                  {league.name}
+                </Link>
+              ))}
+            </div>
+
+            {filteredMatches.length ? (
+              <div className="mz-team-match-list">
+                {filteredMatches.slice(0, 60).map((match) => (
+                  <MatchRow
+                    key={"history-" + String(match?.fixture?.id || "")}
+                    match={match}
+                  />
+                ))}
+              </div>
+            ) : (
+              <p className="mz-empty-state">لا توجد مباريات تطابق الفلتر الحالي.</p>
+            )}
+          </section>
             {ordered.length ? (
               <div className="mz-team-match-list">
                 {ordered.slice(0, 60).map((match) => (
