@@ -1,6 +1,3 @@
-import fs from "node:fs/promises";
-import path from "node:path";
-
 export const dynamic = "force-dynamic";
 
 const API = "https://api.football-data.org/v4";
@@ -38,7 +35,7 @@ function url(value) {
   return /^https:\/\//i.test(valueString) ? valueString : null;
 }
 
-function team(team, owners) {
+function team(team) {
   const id = Number.isInteger(team?.id) ? team.id : null;
   const name = String(team?.name || team?.shortName || "Unknown Team").trim();
   const crest = url(team?.crest);
@@ -56,22 +53,6 @@ function team(team, owners) {
     };
   }
 
-  const owner = owners.get(crest);
-  if (owner && owner !== id) {
-    const safe = avatar(name);
-    return {
-      id,
-      footballDataId: id,
-      name,
-      logo: safe,
-      logoPath: safe,
-      logoSource: "UI Avatars",
-      logoQuality: "collision-sanitized",
-    };
-  }
-
-  owners.set(crest, id);
-
   return {
     id,
     footballDataId: id,
@@ -83,26 +64,9 @@ function team(team, owners) {
   };
 }
 
-function format(match, owners) {
-  const home = team(match.homeTeam, owners);
-  const away = team(match.awayTeam, owners);
-
-  if (
-    home.footballDataId &&
-    away.footballDataId &&
-    home.footballDataId !== away.footballDataId &&
-    home.logo === away.logo
-  ) {
-    home.logo = avatar(home.name);
-    home.logoPath = home.logo;
-    home.logoSource = "UI Avatars";
-    home.logoQuality = "fixture-collision-sanitized";
-
-    away.logo = avatar(away.name);
-    away.logoPath = away.logo;
-    away.logoSource = "UI Avatars";
-    away.logoQuality = "fixture-collision-sanitized";
-  }
+function format(match) {
+  const home = team(match.homeTeam);
+  const away = team(match.awayTeam);
 
   return {
     fixture: {
@@ -157,12 +121,54 @@ async function fetchMatches() {
     throw new Error("Football-Data HTTP " + response.status);
   }
 
-  const data = await response.json();
+  const raw = Array.isArray(data?.matches) ? data.matches : [];
+  const matches = raw.map(format);
   const owners = new Map();
+  const collidedIds = new Set();
 
-  return (Array.isArray(data?.matches) ? data.matches : []).map((match) =>
-    format(match, owners)
-  );
+  for (const match of matches) {
+    for (const side of ["home", "away"]) {
+      const item = match.teams[side];
+      const id = Number(item?.footballDataId || item?.id || 0);
+      const logo = String(item?.logo || "").trim();
+      if (!id || !logo || logo.startsWith("https://ui-avatars.com/")) continue;
+      const owner = owners.get(logo);
+      if (owner && owner !== id) {
+        collidedIds.add(owner);
+        collidedIds.add(id);
+      } else {
+        owners.set(logo, id);
+      }
+    }
+  }
+
+  for (const match of matches) {
+    for (const side of ["home", "away"]) {
+      const item = match.teams[side];
+      const id = Number(item?.footballDataId || item?.id || 0);
+      if (!collidedIds.has(id)) continue;
+      const safe = avatar(item.name);
+      item.logo = safe;
+      item.logoPath = safe;
+      item.logoSource = "UI Avatars";
+      item.logoQuality = "collision-sanitized";
+    }
+
+    const home = match.teams.home;
+    const away = match.teams.away;
+    if (home.logo === away.logo && home.footballDataId !== away.footballDataId) {
+      home.logo = avatar(home.name);
+      home.logoPath = home.logo;
+      home.logoSource = "UI Avatars";
+      home.logoQuality = "fixture-collision-sanitized";
+      away.logo = avatar(away.name);
+      away.logoPath = away.logo;
+      away.logoSource = "UI Avatars";
+      away.logoQuality = "fixture-collision-sanitized";
+    }
+  }
+
+  return matches;
 }
 
 export async function GET() {
