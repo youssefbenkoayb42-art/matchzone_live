@@ -404,6 +404,83 @@ async function fetchJson(url, options = {}) {
   throw new Error("Request failed after retries");
 }
 
+async function listOpenFootballWorldFiles(pathPart = "", depth = 0, limit = 250) {
+  if (depth > 4) return [];
+  try {
+    const directory = await fetchJson(OPENFOOTBALL_WORLD_API + (pathPart ? "/" + pathPart : ""), { headers: { Accept: "application/vnd.github+json" } });
+    if (!Array.isArray(directory)) return [];
+    const files = [];
+    for (const item of directory) {
+      if (files.length >= limit) break;
+      if (item?.type === "file" && /\.txt$/i.test(item?.name || "")) {
+        files.push({ name: item.name, path: item.path, download_url: item.download_url });
+      } else if (item?.type === "dir") {
+        files.push(...await listOpenFootballWorldFiles(item.path, depth + 1, limit - files.length));
+      }
+    }
+    return files.slice(0, limit);
+  } catch (error) {
+    console.warn("[OpenFootball World] directory skipped", pathPart || "/", "-", error.message);
+    return [];
+  }
+}
+
+async function fetchOpenFootballWorldMatches(from, to) {
+  const output = [];
+  const catalog = [];
+  const seen = new Set();
+  for (const [root, region] of OPENFOOTBALL_WORLD_ROOTS) {
+    const files = await listOpenFootballWorldFiles(root);
+    for (const file of files) {
+      if (seen.has(file.path)) continue;
+      seen.add(file.path);
+      const season = file.name.match(/20\d{2}(?:-\d{2})?/)?.[0] || null;
+      const league = {
+        id: "openfootball-world:" + file.path.replace(/\.txt$/i, "").replace(/[^a-zA-Z0-9]+/g, "-").toLowerCase(),
+        name: file.name.replace(/\.txt$/i, ""), region, season, source: "openfootball-world", file: file.path,
+      };
+      catalog.push(league);
+      if (season && !/2026(?:-27)?|2025-26/.test(file.name)) continue;
+      try {
+        const response = await fetch(file.download_url, { headers: { Accept: "text/plain", "User-Agent": "MatchZone/3.0" } });
+        if (!response.ok) continue;
+        const lines = (await response.text()).split(/\r?\n/);
+        let currentDate = null;
+        const title = lines.find((line) => /^=\s*/.test(line))?.replace(/^=\s*/, "").trim() || league.name;
+        league.name = title;
+        for (const raw of lines) {
+          const dateMatch = raw.match(/^\s{2,}(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)\s+([A-Z][a-z]{2})\s+(\d{1,2})(?:\s+(\d{4}))?\s*$/);
+          if (dateMatch) {
+            const year = dateMatch[3] || season?.slice(0, 4);
+            if (year) currentDate = new Date(Date.parse(year + "-" + dateMatch[1] + "-" + dateMatch[2] + "T12:00:00Z"));
+            continue;
+          }
+          if (!currentDate || Number.isNaN(currentDate.getTime())) continue;
+          if (currentDate < new Date(isoDay(from) + "T00:00:00Z") || currentDate > new Date(isoDay(to) + "T23:59:59Z")) continue;
+          const m = raw.match(/^\s{4,}(?:(\d{1,2}):(\d{2})\s+)?(.+?)\s+v\s+(.+?)\s+(\d+)\s*-\s*(\d+)(?:\s*\([^)]*\))?\s*$/);
+          if (!m) continue;
+          const [, hh, mm, homeName, awayName, hs, as] = m;
+          const home = homeName.trim(), away = awayName.trim(), day = isoDay(currentDate);
+          const externalId = file.path + ":" + day + ":" + home + ":" + away;
+          const identity = (name) => "openfootball-world:" + file.path + ":" + normalizeTeamForSearch(name).replace(/\s+/g, "-");
+          const time = hh && mm ? hh.padStart(2, "0") + ":" + mm : "12:00";
+          output.push({
+            fixture: { id: "openfootball-world-" + encodeURIComponent(externalId), providerMatchId: externalId, date: day + "T" + time + ":00Z", status: { short: "FT" } },
+            teams: {
+              home: { id: identity(home), provider: "openfootball-world", identity: identity(home), name: home, logo: avatar(home), logoPath: avatar(home), logoSource: "UI Avatars", logoQuality: "schedule-only" },
+              away: { id: identity(away), provider: "openfootball-world", identity: identity(away), name: away, logo: avatar(away), logoPath: avatar(away), logoSource: "UI Avatars", logoQuality: "schedule-only" },
+            },
+            goals: { home: Number(hs), away: Number(as) },
+            league: { id: league.id, name: league.name, logo: null, region, season },
+            competitionType: "open-data", source: "openfootball-world", externalId, externalIds: { "openfootball-world": file.path },
+            details: { events: [], statistics: [], updatedAt: null, source: "openfootball-world" },
+          });
+        }
+      } catch (error) { console.warn("[OpenFootball World] file skipped", file.path, "-", error.message); }
+    }
+  }
+  return { matches: output, catalog };
+}
 async function fetchOpenFootballMatches(from, to) {
   /*
    * OpenFootball is public-domain/CC0-style open data. It has no team IDs,
