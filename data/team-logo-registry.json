@@ -1,6 +1,92 @@
 {
   "version": 1,
-  "updatedAt": null,
-  "teams": {},
-  "providerIndex": {}
+  "updatedAt": "2026-09-28T13:11:24.245Z",
+  "teams": {
+    "flashscore:1": {
+      "canonicalId": "flashscore:1",
+      "name": "Atl. Nacional",
+      "provider": "flashscore",
+      "providerId": "1",
+      "logoUrl": "https://static.flashscore.com/res/image/data/I7bqaK6k-6kduDy6P.png",
+      "logoPath": "/teams/flashscore_1.png",
+      "sha256": "052bb213ee5fcbe130158f40a69fc3a395f8009f5188710f483e73c1ecf1f2c9",
+      "bytes": 2051,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T13:08:56.147Z"
+    },
+    "flashscore:3": {
+      "canonicalId": "flashscore:3",
+      "name": "Amal Tiznit",
+      "provider": "flashscore",
+      "providerId": "3",
+      "logoUrl": "https://static.flashscore.com/res/image/data/jsHyRaA6-YHmX153g.png",
+      "logoPath": "/teams/flashscore_3.png",
+      "sha256": "0f3595afce987ab1fad87b2b31087efec3d44545811a07c093f4e070742fcec4",
+      "bytes": 1820,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T13:08:56.213Z"
+    },
+    "flashscore:0": {
+      "canonicalId": "flashscore:0",
+      "name": "Girona",
+      "provider": "flashscore",
+      "providerId": "0",
+      "logoUrl": "https://static.flashscore.com/res/image/data/Iw3DqQoe-4297a0ys.png",
+      "logoPath": "/teams/flashscore_0.png",
+      "sha256": "ffd68e696d0184f0d83ffd422ceb1fdb438a8d5770918d9b55f88432a3058d50",
+      "bytes": 1495,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T13:08:56.273Z"
+    },
+    "flashscore:2": {
+      "canonicalId": "flashscore:2",
+      "name": "Operario-PR",
+      "provider": "flashscore",
+      "providerId": "2",
+      "logoUrl": "https://static.flashscore.com/res/image/data/6XnLr1hT-GxV9h1lf.png",
+      "logoPath": "/teams/flashscore_2.png",
+      "sha256": "1f9b3145bf947590516b24a11a2e734607d1625fffcb13c0f3bd76666d1762a7",
+      "bytes": 1827,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T13:08:56.329Z"
+    },
+    "flashscore:6": {
+      "canonicalId": "flashscore:6",
+      "name": "Difaa El Jadidi",
+      "provider": "flashscore",
+      "providerId": "6",
+      "logoUrl": "https://static.flashscore.com/res/image/data/r7LKEBle-zLWTcQkh.png",
+      "logoPath": "/teams/flashscore_6.png",
+      "sha256": "bfb1f88ee5f05a9157dfe34e2a75c248690ba8d762666654ba4e1cac1ed20336",
+      "bytes": 2183,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T13:08:56.393Z"
+    },
+    "flashscore:4": {
+      "canonicalId": "flashscore:4",
+      "name": "Necaxa",
+      "provider": "flashscore",
+      "providerId": "4",
+      "logoUrl": "https://static.flashscore.com/res/image/data/f3CzIwSq-IFA1tboe.png",
+      "logoPath": "/teams/flashscore_4.png",
+      "sha256": "32b3a33a99d7fce74e1aa66f247ae30d48ebfaad199252625b08686d0b410160",
+      "bytes": 2479,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T13:08:56.449Z"
+    }
+  },
+  "providerIndex": {
+    "flashscore:1": "flashscore:1",
+    "flashscore:3": "flashscore:3",
+    "flashscore:0": "flashscore:0",
+    "flashscore:2": "flashscore:2",
+    "flashscore:6": "flashscore:6",
+    "flashscore:4": "flashscore:4"
+  }
 }

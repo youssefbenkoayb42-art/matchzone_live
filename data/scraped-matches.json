@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-28T12:31:33.231Z",
+  "updatedAt": "2026-09-28T13:11:24.228Z",
   "source": "flashscore-feed",
   "leagueCount": 52,
   "matchCount": 116,
@@ -17,11 +17,13 @@
         "home": {
           "id": "1",
           "name": "Atl. Nacional",
-          "logo": "/teams/atlnacional.png",
+          "logo": "/teams/flashscore_1.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/I7bqaK6k-6kduDy6P.png",
           "logoFilename": "I7bqaK6k-6kduDy6P.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "Flashscore ID → GitHub registry",
+          "logoPath": "/teams/flashscore_1.png",
+          "teamIdentityId": "flashscore:1"
         },
         "away": {
           "id": null,
@@ -30,7 +32,7 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache"
         }
       },
       "goals": {
@@ -875,11 +877,13 @@
         "home": {
           "id": "3",
           "name": "Amal Tiznit",
-          "logo": "/teams/amaltiznit.png",
+          "logo": "/teams/flashscore_3.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/jsHyRaA6-YHmX153g.png",
           "logoFilename": "jsHyRaA6-YHmX153g.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "Flashscore ID → GitHub registry",
+          "logoPath": "/teams/flashscore_3.png",
+          "teamIdentityId": "flashscore:3"
         },
         "away": {
           "id": null,
@@ -888,7 +892,7 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache"
         }
       },
       "goals": {
@@ -1268,11 +1272,13 @@
         "home": {
           "id": "0",
           "name": "Girona",
-          "logo": "/teams/girona.png",
+          "logo": "/teams/flashscore_0.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/Iw3DqQoe-4297a0ys.png",
           "logoFilename": "Iw3DqQoe-4297a0ys.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "Flashscore ID → GitHub registry",
+          "logoPath": "/teams/flashscore_0.png",
+          "teamIdentityId": "flashscore:0"
         },
         "away": {
           "id": null,
@@ -1281,7 +1287,7 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache"
         }
       },
       "goals": {
@@ -2208,11 +2214,14 @@
         "home": {
           "id": "0",
           "name": "Novorizontino",
-          "logo": "/teams/novorizontino.png",
+          "logo": "/teams/flashscore_0.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/plaFSegT-AP3c0ay7.png",
           "logoFilename": "plaFSegT-AP3c0ay7.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "0",
+          "logoPath": "/teams/flashscore_0.png",
+          "teamIdentityId": "flashscore:0"
         },
         "away": {
           "id": null,
@@ -2221,7 +2230,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -3048,7 +3058,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:29:07.786Z",
+        "updatedAt": "2026-09-28T13:09:00.307Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_jPd1bs9U",
@@ -3068,11 +3078,14 @@
         "home": {
           "id": "0",
           "name": "Vila Nova FC",
-          "logo": "/teams/vilanova.png",
+          "logo": "/teams/flashscore_0.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/hWxFjziC-hlPnAf3r.png",
           "logoFilename": "hWxFjziC-hlPnAf3r.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "0",
+          "logoPath": "/teams/flashscore_0.png",
+          "teamIdentityId": "flashscore:0"
         },
         "away": {
           "id": null,
@@ -3081,7 +3094,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -3982,7 +3996,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:29:10.095Z",
+        "updatedAt": "2026-09-28T13:09:02.621Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_AVG6RuwH",
@@ -4002,11 +4016,14 @@
         "home": {
           "id": "1",
           "name": "Nautico",
-          "logo": "/teams/nautico.png",
+          "logo": "/teams/flashscore_1.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-fezSJdFa.png",
           "logoFilename": "WrU0J0Qq-fezSJdFa.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "1",
+          "logoPath": "/teams/flashscore_1.png",
+          "teamIdentityId": "flashscore:1"
         },
         "away": {
           "id": null,
@@ -4015,7 +4032,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -4908,7 +4926,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:29:12.464Z",
+        "updatedAt": "2026-09-28T13:09:04.928Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_UiFjVNwh",
@@ -4928,11 +4946,14 @@
         "home": {
           "id": "2",
           "name": "Operario-PR",
-          "logo": "/teams/operariopr.png",
+          "logo": "/teams/flashscore_2.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/6XnLr1hT-GxV9h1lf.png",
           "logoFilename": "6XnLr1hT-GxV9h1lf.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "Flashscore ID → GitHub registry",
+          "flashscoreId": "2",
+          "logoPath": "/teams/flashscore_2.png",
+          "teamIdentityId": "flashscore:2"
         },
         "away": {
           "id": null,
@@ -4941,7 +4962,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -5874,7 +5896,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:29:14.776Z",
+        "updatedAt": "2026-09-28T13:09:07.235Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_hhVIGOOb",
@@ -5894,11 +5916,14 @@
         "home": {
           "id": "1",
           "name": "Goias",
-          "logo": "/teams/goias.png",
+          "logo": "/teams/flashscore_1.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/f7S2jqjC-2eGLPjs8.png",
           "logoFilename": "f7S2jqjC-2eGLPjs8.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "1",
+          "logoPath": "/teams/flashscore_1.png",
+          "teamIdentityId": "flashscore:1"
         },
         "away": {
           "id": null,
@@ -5907,7 +5932,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -6773,7 +6799,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:29:47.768Z",
+        "updatedAt": "2026-09-28T13:09:39.736Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_YVWYCtON",
@@ -6793,11 +6819,14 @@
         "home": {
           "id": "0",
           "name": "Chico",
-          "logo": "/teams/chico.png",
+          "logo": "/teams/flashscore_0.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/xpPcZWWH-hjn5AE5Q.png",
           "logoFilename": "xpPcZWWH-hjn5AE5Q.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "0",
+          "logoPath": "/teams/flashscore_0.png",
+          "teamIdentityId": "flashscore:0"
         },
         "away": {
           "id": null,
@@ -6806,7 +6835,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -7653,7 +7683,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:29:19.482Z",
+        "updatedAt": "2026-09-28T13:09:11.848Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_ljPGxhI0",
@@ -7673,11 +7703,14 @@
         "home": {
           "id": "3",
           "name": "Once Caldas",
-          "logo": "/teams/oncecaldas.png",
+          "logo": "/teams/flashscore_3.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/pEjyC27k-0xyt4W2g.png",
           "logoFilename": "pEjyC27k-0xyt4W2g.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "3",
+          "logoPath": "/teams/flashscore_3.png",
+          "teamIdentityId": "flashscore:3"
         },
         "away": {
           "id": null,
@@ -7686,7 +7719,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -8652,7 +8686,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:29:21.815Z",
+        "updatedAt": "2026-09-28T13:09:14.209Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_M3NOzWnD",
@@ -8672,11 +8706,14 @@
         "home": {
           "id": "0",
           "name": "Pereira",
-          "logo": "/teams/pereira.png",
+          "logo": "/teams/flashscore_0.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/WWZlhzXH-nouesssi.png",
           "logoFilename": "WWZlhzXH-nouesssi.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "0",
+          "logoPath": "/teams/flashscore_0.png",
+          "teamIdentityId": "flashscore:0"
         },
         "away": {
           "id": null,
@@ -8685,7 +8722,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -9617,7 +9655,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:29:57.097Z",
+        "updatedAt": "2026-09-28T13:09:48.964Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_xEhjBCOP",
@@ -9637,11 +9675,14 @@
         "home": {
           "id": "2",
           "name": "Atlante",
-          "logo": "/teams/atlante.png",
+          "logo": "/teams/flashscore_2.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/Gnf7VRQq-MVPKYVvK.png",
           "logoFilename": "Gnf7VRQq-MVPKYVvK.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "2",
+          "logoPath": "/teams/flashscore_2.png",
+          "teamIdentityId": "flashscore:2"
         },
         "away": {
           "id": null,
@@ -9650,7 +9691,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -9848,7 +9890,7 @@
             "minute": "82'",
             "type": "yellow",
             "team": null,
-            "player": "de la Rosa R.",
+            "player": "Salcedo C.",
             "assist": null,
             "playerIn": null,
             "playerOut": null,
@@ -9926,15 +9968,15 @@
           {
             "name": "Expected goals (xG)",
             "key": "expected goals (xg)",
-            "home": "1.86",
-            "away": "1.09",
+            "home": "2.61",
+            "away": "1.39",
             "period": "match"
           },
           {
             "name": "Ball possession",
             "key": "possession",
-            "home": "41%",
-            "away": "59%",
+            "home": "40%",
+            "away": "60%",
             "period": "match"
           },
           {
@@ -9954,8 +9996,8 @@
           {
             "name": "Big chances",
             "key": "big chances",
-            "home": "2",
-            "away": "1",
+            "home": "4",
+            "away": "2",
             "period": "match"
           },
           {
@@ -9968,8 +10010,8 @@
           {
             "name": "Passes",
             "key": "passes",
-            "home": "76% (283/373)",
-            "away": "82% (446/544)",
+            "home": "76% (285/376)",
+            "away": "83% (470/564)",
             "period": "match"
           },
           {
@@ -9982,8 +10024,8 @@
           {
             "name": "xG on target (xGOT)",
             "key": "xg on target (xgot)",
-            "home": "3.32",
-            "away": "1.99",
+            "home": "3.89",
+            "away": "2.96",
             "period": "match"
           },
           {
@@ -10032,7 +10074,7 @@
             "name": "Touches in opposition box",
             "key": "touches in opposition box",
             "home": "12",
-            "away": "22",
+            "away": "25",
             "period": "match"
           },
           {
@@ -10052,36 +10094,36 @@
           {
             "name": "Free kicks",
             "key": "free kicks",
-            "home": "10",
-            "away": "8",
+            "home": "9",
+            "away": "9",
             "period": "match"
           },
           {
             "name": "Long passes",
             "key": "long passes",
-            "home": "41% (18/44)",
-            "away": "57% (47/82)",
+            "home": "40% (19/47)",
+            "away": "61% (51/84)",
             "period": "match"
           },
           {
             "name": "Passes in final third",
             "key": "passes in final third",
-            "home": "61% (48/79)",
-            "away": "61% (63/104)",
+            "home": "62% (48/78)",
+            "away": "63% (66/105)",
             "period": "match"
           },
           {
             "name": "Crosses",
             "key": "crosses",
             "home": "7% (1/14)",
-            "away": "40% (8/20)",
+            "away": "37% (7/19)",
             "period": "match"
           },
           {
             "name": "Expected assists (xA)",
             "key": "expected assists (xa)",
-            "home": "0.89",
-            "away": "0.76",
+            "home": "0.88",
+            "away": "0.81",
             "period": "match"
           },
           {
@@ -10094,36 +10136,36 @@
           {
             "name": "Fouls",
             "key": "fouls",
-            "home": "8",
-            "away": "10",
+            "home": "9",
+            "away": "9",
             "period": "match"
           },
           {
             "name": "Tackles",
             "key": "tackles",
-            "home": "50% (10/20)",
+            "home": "59% (13/22)",
             "away": "80% (4/5)",
             "period": "match"
           },
           {
             "name": "Duels won",
             "key": "duels won",
-            "home": "54",
-            "away": "33",
+            "home": "56",
+            "away": "36",
             "period": "match"
           },
           {
             "name": "Clearances",
             "key": "clearances",
-            "home": "35",
+            "home": "34",
             "away": "16",
             "period": "match"
           },
           {
             "name": "Interceptions",
             "key": "interceptions",
-            "home": "11",
-            "away": "12",
+            "home": "9",
+            "away": "18",
             "period": "match"
           },
           {
@@ -10150,15 +10192,15 @@
           {
             "name": "xGOT faced",
             "key": "xgot faced",
-            "home": "1.99",
-            "away": "3.32",
+            "home": "2.96",
+            "away": "3.89",
             "period": "match"
           },
           {
             "name": "Goals prevented",
             "key": "goals prevented",
-            "home": "-0.01",
-            "away": "-0.68",
+            "home": "0.96",
+            "away": "-0.11",
             "period": "match"
           },
           {
@@ -10171,15 +10213,15 @@
           {
             "name": "Expected goals (xG)",
             "key": "expected goals (xg)",
-            "home": "1.08",
-            "away": "0.40",
+            "home": "1.17",
+            "away": "0.54",
             "period": "match"
           },
           {
             "name": "Ball possession",
             "key": "possession",
-            "home": "47%",
-            "away": "53%",
+            "home": "46%",
+            "away": "54%",
             "period": "match"
           },
           {
@@ -10200,7 +10242,7 @@
             "name": "Big chances",
             "key": "big chances",
             "home": "1",
-            "away": "1",
+            "away": "2",
             "period": "match"
           },
           {
@@ -10213,8 +10255,8 @@
           {
             "name": "Passes",
             "key": "passes",
-            "home": "82% (181/222)",
-            "away": "81% (201/249)",
+            "home": "81% (183/225)",
+            "away": "83% (223/268)",
             "period": "match"
           },
           {
@@ -10227,8 +10269,8 @@
           {
             "name": "xG on target (xGOT)",
             "key": "xg on target (xgot)",
-            "home": "1.34",
-            "away": "0.91",
+            "home": "1.29",
+            "away": "1.13",
             "period": "match"
           },
           {
@@ -10270,7 +10312,7 @@
             "name": "Touches in opposition box",
             "key": "touches in opposition box",
             "home": "8",
-            "away": "8",
+            "away": "9",
             "period": "match"
           },
           {
@@ -10283,36 +10325,36 @@
           {
             "name": "Free kicks",
             "key": "free kicks",
-            "home": "5",
+            "home": "4",
             "away": "2",
             "period": "match"
           },
           {
             "name": "Long passes",
             "key": "long passes",
-            "home": "53% (10/19)",
-            "away": "58% (26/45)",
+            "home": "55% (11/20)",
+            "away": "63% (29/46)",
             "period": "match"
           },
           {
             "name": "Passes in final third",
             "key": "passes in final third",
-            "home": "66% (25/38)",
-            "away": "65% (24/37)",
+            "home": "68% (26/38)",
+            "away": "70% (26/37)",
             "period": "match"
           },
           {
             "name": "Crosses",
             "key": "crosses",
             "home": "13% (1/8)",
-            "away": "67% (4/6)",
+            "away": "60% (3/5)",
             "period": "match"
           },
           {
             "name": "Expected assists (xA)",
             "key": "expected assists (xa)",
             "home": "0.83",
-            "away": "0.34",
+            "away": "0.40",
             "period": "match"
           },
           {
@@ -10326,13 +10368,13 @@
             "name": "Fouls",
             "key": "fouls",
             "home": "2",
-            "away": "5",
+            "away": "4",
             "period": "match"
           },
           {
             "name": "Tackles",
             "key": "tackles",
-            "home": "60% (6/10)",
+            "home": "73% (8/11)",
             "away": "75% (3/4)",
             "period": "match"
           },
@@ -10340,7 +10382,7 @@
             "name": "Duels won",
             "key": "duels won",
             "home": "29",
-            "away": "16",
+            "away": "18",
             "period": "match"
           },
           {
@@ -10353,8 +10395,8 @@
           {
             "name": "Interceptions",
             "key": "interceptions",
-            "home": "6",
-            "away": "5",
+            "home": "4",
+            "away": "9",
             "period": "match"
           },
           {
@@ -10374,15 +10416,15 @@
           {
             "name": "xGOT faced",
             "key": "xgot faced",
-            "home": "0.91",
-            "away": "1.34",
+            "home": "1.13",
+            "away": "1.29",
             "period": "match"
           },
           {
             "name": "Goals prevented",
             "key": "goals prevented",
-            "home": "-0.09",
-            "away": "0.34",
+            "home": "0.13",
+            "away": "0.29",
             "period": "match"
           },
           {
@@ -10395,8 +10437,8 @@
           {
             "name": "Expected goals (xG)",
             "key": "expected goals (xg)",
-            "home": "0.78",
-            "away": "0.69",
+            "home": "1.44",
+            "away": "0.85",
             "period": "match"
           },
           {
@@ -10423,7 +10465,7 @@
           {
             "name": "Big chances",
             "key": "big chances",
-            "home": "1",
+            "home": "3",
             "away": "0",
             "period": "match"
           },
@@ -10438,7 +10480,7 @@
             "name": "Passes",
             "key": "passes",
             "home": "68% (102/151)",
-            "away": "83% (245/295)",
+            "away": "83% (247/296)",
             "period": "match"
           },
           {
@@ -10451,8 +10493,8 @@
           {
             "name": "xG on target (xGOT)",
             "key": "xg on target (xgot)",
-            "home": "1.98",
-            "away": "1.08",
+            "home": "2.60",
+            "away": "1.83",
             "period": "match"
           },
           {
@@ -10487,28 +10529,28 @@
             "name": "Touches in opposition box",
             "key": "touches in opposition box",
             "home": "4",
-            "away": "14",
+            "away": "16",
             "period": "match"
           },
           {
             "name": "Free kicks",
             "key": "free kicks",
             "home": "5",
-            "away": "6",
+            "away": "7",
             "period": "match"
           },
           {
             "name": "Long passes",
             "key": "long passes",
-            "home": "32% (8/25)",
-            "away": "57% (21/37)",
+            "home": "30% (8/27)",
+            "away": "58% (22/38)",
             "period": "match"
           },
           {
             "name": "Passes in final third",
             "key": "passes in final third",
-            "home": "56% (23/41)",
-            "away": "58% (39/67)",
+            "home": "55% (22/40)",
+            "away": "59% (40/68)",
             "period": "match"
           },
           {
@@ -10521,8 +10563,8 @@
           {
             "name": "Expected assists (xA)",
             "key": "expected assists (xa)",
-            "home": "0.06",
-            "away": "0.42",
+            "home": "0.05",
+            "away": "0.41",
             "period": "match"
           },
           {
@@ -10535,28 +10577,28 @@
           {
             "name": "Fouls",
             "key": "fouls",
-            "home": "6",
+            "home": "7",
             "away": "5",
             "period": "match"
           },
           {
             "name": "Tackles",
             "key": "tackles",
-            "home": "40% (4/10)",
+            "home": "45% (5/11)",
             "away": "100% (1/1)",
             "period": "match"
           },
           {
             "name": "Duels won",
             "key": "duels won",
-            "home": "25",
-            "away": "17",
+            "home": "27",
+            "away": "18",
             "period": "match"
           },
           {
             "name": "Clearances",
             "key": "clearances",
-            "home": "29",
+            "home": "28",
             "away": "8",
             "period": "match"
           },
@@ -10564,7 +10606,7 @@
             "name": "Interceptions",
             "key": "interceptions",
             "home": "5",
-            "away": "7",
+            "away": "9",
             "period": "match"
           },
           {
@@ -10577,15 +10619,15 @@
           {
             "name": "xGOT faced",
             "key": "xgot faced",
-            "home": "1.08",
-            "away": "1.98",
+            "home": "1.83",
+            "away": "2.60",
             "period": "match"
           },
           {
             "name": "Goals prevented",
             "key": "goals prevented",
-            "home": "0.08",
-            "away": "-1.02",
+            "home": "0.83",
+            "away": "-0.40",
             "period": "match"
           },
           {
@@ -10596,7 +10638,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:29:26.555Z",
+        "updatedAt": "2026-09-28T13:09:18.828Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_l4I1W5D6",
@@ -10616,11 +10658,14 @@
         "home": {
           "id": "3",
           "name": "Club Tijuana",
-          "logo": "/teams/tijuana.png",
+          "logo": "/teams/flashscore_3.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/CxOLsUWH-OtymR74A.png",
           "logoFilename": "CxOLsUWH-OtymR74A.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "3",
+          "logoPath": "/teams/flashscore_3.png",
+          "teamIdentityId": "flashscore:3"
         },
         "away": {
           "id": null,
@@ -10629,7 +10674,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -11508,7 +11554,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:29:28.902Z",
+        "updatedAt": "2026-09-28T13:09:21.175Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_MHG9UqrJ",
@@ -11528,11 +11574,14 @@
         "home": {
           "id": "1",
           "name": "Union Touarga",
-          "logo": "/teams/uniontouarga.png",
+          "logo": "/teams/flashscore_1.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/4CAs0Boe-W6bUbbPE.png",
           "logoFilename": "4CAs0Boe-W6bUbbPE.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "1",
+          "logoPath": "/teams/flashscore_1.png",
+          "teamIdentityId": "flashscore:1"
         },
         "away": {
           "id": null,
@@ -11541,7 +11590,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -11902,7 +11952,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:29:31.209Z",
+        "updatedAt": "2026-09-28T13:09:23.481Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_88o4wcDb",
@@ -11922,11 +11972,14 @@
         "home": {
           "id": "6",
           "name": "Difaa El Jadidi",
-          "logo": "/teams/difaaeljadidi.png",
+          "logo": "/teams/flashscore_6.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/r7LKEBle-zLWTcQkh.png",
           "logoFilename": "r7LKEBle-zLWTcQkh.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "Flashscore ID → GitHub registry",
+          "flashscoreId": "6",
+          "logoPath": "/teams/flashscore_6.png",
+          "teamIdentityId": "flashscore:6"
         },
         "away": {
           "id": null,
@@ -11935,7 +11988,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -12387,7 +12441,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:29:33.593Z",
+        "updatedAt": "2026-09-28T13:09:25.792Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_vZ4vNyTH",
@@ -12407,11 +12461,14 @@
         "home": {
           "id": "3",
           "name": "Wydad AC",
-          "logo": "/teams/wydad.png",
+          "logo": "/teams/flashscore_3.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/CC9Gx2lC-Gtyfdpte.png",
           "logoFilename": "CC9Gx2lC-Gtyfdpte.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "3",
+          "logoPath": "/teams/flashscore_3.png",
+          "teamIdentityId": "flashscore:3"
         },
         "away": {
           "id": null,
@@ -12420,7 +12477,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -12813,7 +12871,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:30:18.017Z",
+        "updatedAt": "2026-09-28T13:10:09.755Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_pW7nLFcU",
@@ -12833,11 +12891,14 @@
         "home": {
           "id": "1",
           "name": "Ceuta",
-          "logo": "/teams/ceuta.png",
+          "logo": "/teams/flashscore_1.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/MwK5O35k-U144u08h.png",
           "logoFilename": "MwK5O35k-U144u08h.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "1",
+          "logoPath": "/teams/flashscore_1.png",
+          "teamIdentityId": "flashscore:1"
         },
         "away": {
           "id": null,
@@ -12846,7 +12907,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -13871,7 +13933,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:29:38.363Z",
+        "updatedAt": "2026-09-28T13:09:30.418Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_rB3DoAi3",
@@ -13891,11 +13953,14 @@
         "home": {
           "id": "3",
           "name": "Granada CF",
-          "logo": "/teams/granada.png",
+          "logo": "/teams/flashscore_3.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/SMiBGH8k-p6WBruc4.png",
           "logoFilename": "SMiBGH8k-p6WBruc4.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "3",
+          "logoPath": "/teams/flashscore_3.png",
+          "teamIdentityId": "flashscore:3"
         },
         "away": {
           "id": null,
@@ -13904,7 +13969,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -14922,7 +14988,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:29:40.750Z",
+        "updatedAt": "2026-09-28T13:09:32.724Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_UeabUzLc",
@@ -14942,11 +15008,14 @@
         "home": {
           "id": "1",
           "name": "Celta Vigo B",
-          "logo": "/teams/celtavigob.png",
+          "logo": "/teams/flashscore_1.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/vo9MFPBN-ChrYvuzD.png",
           "logoFilename": "vo9MFPBN-ChrYvuzD.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "1",
+          "logoPath": "/teams/flashscore_1.png",
+          "teamIdentityId": "flashscore:1"
         },
         "away": {
           "id": null,
@@ -14955,7 +15024,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -15874,7 +15944,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:29:43.096Z",
+        "updatedAt": "2026-09-28T13:09:35.053Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_G4BRN6ad",
@@ -15894,11 +15964,14 @@
         "home": {
           "id": "1",
           "name": "Tenerife",
-          "logo": "/teams/tenerife.png",
+          "logo": "/teams/flashscore_1.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/rPA6TR86-EPWyZtpb.png",
           "logoFilename": "rPA6TR86-EPWyZtpb.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "1",
+          "logoPath": "/teams/flashscore_1.png",
+          "teamIdentityId": "flashscore:1"
         },
         "away": {
           "id": null,
@@ -15907,7 +15980,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -16778,7 +16852,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:29:45.441Z",
+        "updatedAt": "2026-09-28T13:09:37.414Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_vs9QuuLs",
@@ -16798,11 +16872,14 @@
         "home": {
           "id": "0",
           "name": "Criciuma",
-          "logo": "/teams/criciuma.png",
+          "logo": "/teams/flashscore_0.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/zyP05jWH-tOGtU4eT.png",
           "logoFilename": "zyP05jWH-tOGtU4eT.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "0",
+          "logoPath": "/teams/flashscore_0.png",
+          "teamIdentityId": "flashscore:0"
         },
         "away": {
           "id": null,
@@ -16811,7 +16888,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -17721,7 +17799,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:29:50.076Z",
+        "updatedAt": "2026-09-28T13:09:42.043Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_4EN47Koo",
@@ -17741,11 +17819,14 @@
         "home": {
           "id": "0",
           "name": "CRB",
-          "logo": "/teams/crb.png",
+          "logo": "/teams/flashscore_0.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/UudlC76k-CWl52SGk.png",
           "logoFilename": "UudlC76k-CWl52SGk.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "0",
+          "logoPath": "/teams/flashscore_0.png",
+          "teamIdentityId": "flashscore:0"
         },
         "away": {
           "id": null,
@@ -17754,7 +17835,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -18672,7 +18754,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:29:52.398Z",
+        "updatedAt": "2026-09-28T13:09:44.350Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_25DbT184",
@@ -18692,11 +18774,14 @@
         "home": {
           "id": "2",
           "name": "Fortaleza",
-          "logo": "/teams/fortaleza.png",
+          "logo": "/teams/flashscore_2.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/WWeFYMPq-AmIcMWyl.png",
           "logoFilename": "WWeFYMPq-AmIcMWyl.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "2",
+          "logoPath": "/teams/flashscore_2.png",
+          "teamIdentityId": "flashscore:2"
         },
         "away": {
           "id": null,
@@ -18705,7 +18790,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -19552,7 +19638,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:31:11.578Z",
+        "updatedAt": "2026-09-28T13:11:02.979Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_0IYQE2gB",
@@ -19572,11 +19658,14 @@
         "home": {
           "id": "1",
           "name": "Cucuta",
-          "logo": "/teams/cucuta.png",
+          "logo": "/teams/flashscore_1.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/dtGebzCN-hjn5AE5Q.png",
           "logoFilename": "dtGebzCN-hjn5AE5Q.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "1",
+          "logoPath": "/teams/flashscore_1.png",
+          "teamIdentityId": "flashscore:1"
         },
         "away": {
           "id": null,
@@ -19585,7 +19674,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -20549,7 +20639,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:29:59.405Z",
+        "updatedAt": "2026-09-28T13:09:51.271Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_tQL8vEml",
@@ -20569,11 +20659,14 @@
         "home": {
           "id": "0",
           "name": "Junior",
-          "logo": "/teams/junior.png",
+          "logo": "/teams/flashscore_0.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/CxEu5jjC-WvCEcmg7.png",
           "logoFilename": "CxEu5jjC-WvCEcmg7.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "0",
+          "logoPath": "/teams/flashscore_0.png",
+          "teamIdentityId": "flashscore:0"
         },
         "away": {
           "id": null,
@@ -20582,7 +20675,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -21534,7 +21628,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:30:01.712Z",
+        "updatedAt": "2026-09-28T13:09:53.580Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_vN2dkV16",
@@ -21554,11 +21648,14 @@
         "home": {
           "id": "2",
           "name": "Jaguares de Cordoba",
-          "logo": "/teams/jaguaresdecordoba.png",
+          "logo": "/teams/flashscore_2.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/0Cg5eagT-jqTIQW5H.png",
           "logoFilename": "0Cg5eagT-jqTIQW5H.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "2",
+          "logoPath": "/teams/flashscore_2.png",
+          "teamIdentityId": "flashscore:2"
         },
         "away": {
           "id": null,
@@ -21567,7 +21664,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -22492,7 +22590,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:31:13.919Z",
+        "updatedAt": "2026-09-28T13:11:05.286Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_S0AAbZvK",
@@ -22512,11 +22610,14 @@
         "home": {
           "id": "3",
           "name": "Cruz Azul",
-          "logo": "/teams/cruzazul.png",
+          "logo": "/teams/flashscore_3.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/KAF9lqRq-0pHVJYjM.png",
           "logoFilename": "KAF9lqRq-0pHVJYjM.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "3",
+          "logoPath": "/teams/flashscore_3.png",
+          "teamIdentityId": "flashscore:3"
         },
         "away": {
           "id": null,
@@ -22525,7 +22626,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -23497,7 +23599,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:30:06.416Z",
+        "updatedAt": "2026-09-28T13:09:58.194Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_vydsqqcC",
@@ -23517,11 +23619,14 @@
         "home": {
           "id": "2",
           "name": "Guadalajara Chivas",
-          "logo": "/teams/guadalajarachivas.png",
+          "logo": "/teams/flashscore_2.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/n9R8QrCN-0rbG5js3.png",
           "logoFilename": "n9R8QrCN-0rbG5js3.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "2",
+          "logoPath": "/teams/flashscore_2.png",
+          "teamIdentityId": "flashscore:2"
         },
         "away": {
           "id": null,
@@ -23530,7 +23635,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -24404,7 +24510,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:30:08.729Z",
+        "updatedAt": "2026-09-28T13:10:00.502Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_SE3ehmzQ",
@@ -24424,11 +24530,14 @@
         "home": {
           "id": "0",
           "name": "Santos Laguna",
-          "logo": "/teams/santoslaguna.png",
+          "logo": "/teams/flashscore_0.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/UcvERb5k-zFZbB1JF.png",
           "logoFilename": "UcvERb5k-zFZbB1JF.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "0",
+          "logoPath": "/teams/flashscore_0.png",
+          "teamIdentityId": "flashscore:0"
         },
         "away": {
           "id": null,
@@ -24437,7 +24546,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -25337,7 +25447,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:30:11.037Z",
+        "updatedAt": "2026-09-28T13:10:02.824Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_bcfRnRcm",
@@ -25357,11 +25467,14 @@
         "home": {
           "id": "0",
           "name": "Tigres UANL",
-          "logo": "/teams/tigresuanl.png",
+          "logo": "/teams/flashscore_0.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/dlj3qbQq-W6vdbCVa.png",
           "logoFilename": "dlj3qbQq-W6vdbCVa.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "0",
+          "logoPath": "/teams/flashscore_0.png",
+          "teamIdentityId": "flashscore:0"
         },
         "away": {
           "id": null,
@@ -25370,7 +25483,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -26190,7 +26304,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:30:13.362Z",
+        "updatedAt": "2026-09-28T13:10:05.131Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_WAhZp5Sa",
@@ -26210,11 +26324,14 @@
         "home": {
           "id": "3",
           "name": "UNAM Pumas",
-          "logo": "/teams/unampumas.png",
+          "logo": "/teams/flashscore_3.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/YD3Bg1Qq-dG08RUsN.png",
           "logoFilename": "YD3Bg1Qq-dG08RUsN.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "3",
+          "logoPath": "/teams/flashscore_3.png",
+          "teamIdentityId": "flashscore:3"
         },
         "away": {
           "id": null,
@@ -26223,7 +26340,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -27137,7 +27255,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:30:15.710Z",
+        "updatedAt": "2026-09-28T13:10:07.448Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_WrElsNRO",
@@ -27157,11 +27275,14 @@
         "home": {
           "id": "0",
           "name": "Moghreb Tetouan",
-          "logo": "/teams/moghrebtetouan.png",
+          "logo": "/teams/flashscore_0.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/0zS1aRRq-xExOnmQQ.png",
           "logoFilename": "0zS1aRRq-xExOnmQQ.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "0",
+          "logoPath": "/teams/flashscore_0.png",
+          "teamIdentityId": "flashscore:0"
         },
         "away": {
           "id": null,
@@ -27170,7 +27291,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -27471,7 +27593,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:30:20.324Z",
+        "updatedAt": "2026-09-28T13:10:12.082Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_nLBqJSRq",
@@ -27491,11 +27613,14 @@
         "home": {
           "id": "1",
           "name": "Maghreb Fez",
-          "logo": "/teams/maghrebfez.png",
+          "logo": "/teams/flashscore_1.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/pGJqy86k-63LcsWgs.png",
           "logoFilename": "pGJqy86k-63LcsWgs.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "1",
+          "logoPath": "/teams/flashscore_1.png",
+          "teamIdentityId": "flashscore:1"
         },
         "away": {
           "id": null,
@@ -27504,7 +27629,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -27858,7 +27984,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:30:22.630Z",
+        "updatedAt": "2026-09-28T13:10:14.388Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_W81WOcb5",
@@ -27878,11 +28004,14 @@
         "home": {
           "id": "3",
           "name": "Kawkab Marrakech",
-          "logo": "/teams/kawkabmarrakech.png",
+          "logo": "/teams/flashscore_3.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/p0XoC4Rq-63LcsWgs.png",
           "logoFilename": "p0XoC4Rq-63LcsWgs.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "3",
+          "logoPath": "/teams/flashscore_3.png",
+          "teamIdentityId": "flashscore:3"
         },
         "away": {
           "id": null,
@@ -27891,7 +28020,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -28270,7 +28400,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:31:25.552Z",
+        "updatedAt": "2026-09-28T13:11:16.843Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_GYlCyyrB",
@@ -28290,11 +28420,14 @@
         "home": {
           "id": "0",
           "name": "Gangwon",
-          "logo": "/teams/gangwon.png",
+          "logo": "/teams/flashscore_0.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/A36AKtA6-U904kONG.png",
           "logoFilename": "A36AKtA6-U904kONG.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "0",
+          "logoPath": "/teams/flashscore_0.png",
+          "teamIdentityId": "flashscore:0"
         },
         "away": {
           "id": null,
@@ -28303,7 +28436,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -28703,7 +28837,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:30:27.250Z",
+        "updatedAt": "2026-09-28T13:10:19.002Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_08COfwKq",
@@ -28723,11 +28857,14 @@
         "home": {
           "id": "1",
           "name": "Valladolid",
-          "logo": "/teams/valladolid.png",
+          "logo": "/teams/flashscore_1.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/fTto7LkC-4YF9PAyB.png",
           "logoFilename": "fTto7LkC-4YF9PAyB.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "1",
+          "logoPath": "/teams/flashscore_1.png",
+          "teamIdentityId": "flashscore:1"
         },
         "away": {
           "id": null,
@@ -28736,7 +28873,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -29715,7 +29853,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:30:29.584Z",
+        "updatedAt": "2026-09-28T13:10:21.308Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_WlRXwJkf",
@@ -29735,11 +29873,14 @@
         "home": {
           "id": "1",
           "name": "Mallorca",
-          "logo": "/teams/mallorca.png",
+          "logo": "/teams/flashscore_1.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/Eeg4cBjC-nDyT2xMM.png",
           "logoFilename": "Eeg4cBjC-nDyT2xMM.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "1",
+          "logoPath": "/teams/flashscore_1.png",
+          "teamIdentityId": "flashscore:1"
         },
         "away": {
           "id": null,
@@ -29748,7 +29889,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -30695,7 +30837,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:30:31.968Z",
+        "updatedAt": "2026-09-28T13:10:23.615Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_G4V8Nc5D",
@@ -30715,11 +30857,14 @@
         "home": {
           "id": "0",
           "name": "Burgos CF",
-          "logo": "/teams/burgos.png",
+          "logo": "/teams/flashscore_0.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/jPhpmDU0-IoNgvMPR.png",
           "logoFilename": "jPhpmDU0-IoNgvMPR.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "0",
+          "logoPath": "/teams/flashscore_0.png",
+          "teamIdentityId": "flashscore:0"
         },
         "away": {
           "id": null,
@@ -30728,7 +30873,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -31607,7 +31753,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:30:34.323Z",
+        "updatedAt": "2026-09-28T13:10:25.922Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_riDJPSUq",
@@ -31627,11 +31773,14 @@
         "home": {
           "id": "2",
           "name": "Eibar",
-          "logo": "/teams/eibar.png",
+          "logo": "/teams/flashscore_2.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/n3rngiU0-d6gaf9ua.png",
           "logoFilename": "n3rngiU0-d6gaf9ua.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "2",
+          "logoPath": "/teams/flashscore_2.png",
+          "teamIdentityId": "flashscore:2"
         },
         "away": {
           "id": null,
@@ -31640,7 +31789,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -32626,7 +32776,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:30:36.656Z",
+        "updatedAt": "2026-09-28T13:10:28.274Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_jy7LqlMF",
@@ -32646,11 +32796,14 @@
         "home": {
           "id": "0",
           "name": "Oviedo",
-          "logo": "/teams/oviedo.png",
+          "logo": "/teams/flashscore_0.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/ziVpaDjC-IDZgZhUt.png",
           "logoFilename": "ziVpaDjC-IDZgZhUt.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "0",
+          "logoPath": "/teams/flashscore_0.png",
+          "teamIdentityId": "flashscore:0"
         },
         "away": {
           "id": null,
@@ -32659,7 +32812,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -33649,7 +33803,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:30:38.978Z",
+        "updatedAt": "2026-09-28T13:10:30.582Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_8bIfo1cK",
@@ -33669,11 +33823,14 @@
         "home": {
           "id": "2",
           "name": "Atlanta Utd",
-          "logo": "/teams/atlantautd.png",
+          "logo": "/teams/flashscore_2.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/0GgDTRle-GxTXAzv3.png",
           "logoFilename": "0GgDTRle-GxTXAzv3.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "2",
+          "logoPath": "/teams/flashscore_2.png",
+          "teamIdentityId": "flashscore:2"
         },
         "away": {
           "id": null,
@@ -33682,7 +33839,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -34536,7 +34694,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:30:41.286Z",
+        "updatedAt": "2026-09-28T13:10:32.916Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_h8OvjEB6",
@@ -34556,11 +34714,14 @@
         "home": {
           "id": "1",
           "name": "CF Montreal",
-          "logo": "/teams/montreal.png",
+          "logo": "/teams/flashscore_1.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/vwHVLET0-hfMSf4LN.png",
           "logoFilename": "vwHVLET0-hfMSf4LN.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "1",
+          "logoPath": "/teams/flashscore_1.png",
+          "teamIdentityId": "flashscore:1"
         },
         "away": {
           "id": null,
@@ -34569,7 +34730,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -35463,7 +35625,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:30:43.639Z",
+        "updatedAt": "2026-09-28T13:10:35.234Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_YFRRxgDM",
@@ -35483,11 +35645,14 @@
         "home": {
           "id": "1",
           "name": "Charlotte",
-          "logo": "/teams/charlotte.png",
+          "logo": "/teams/flashscore_1.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/YHLXh45k-0lw00xPr.png",
           "logoFilename": "YHLXh45k-0lw00xPr.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "1",
+          "logoPath": "/teams/flashscore_1.png",
+          "teamIdentityId": "flashscore:1"
         },
         "away": {
           "id": null,
@@ -35496,7 +35661,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -36443,7 +36609,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:30:46.014Z",
+        "updatedAt": "2026-09-28T13:10:37.540Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_ENCmlhtJ",
@@ -36463,11 +36629,14 @@
         "home": {
           "id": "2",
           "name": "Philadelphia Union",
-          "logo": "/teams/philadelphiaunion.png",
+          "logo": "/teams/flashscore_2.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/hQpmY0Qq-AFpqya1j.png",
           "logoFilename": "hQpmY0Qq-AFpqya1j.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "2",
+          "logoPath": "/teams/flashscore_2.png",
+          "teamIdentityId": "flashscore:2"
         },
         "away": {
           "id": null,
@@ -36476,7 +36645,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -37462,7 +37632,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:30:48.374Z",
+        "updatedAt": "2026-09-28T13:10:39.847Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_QFe56Zem",
@@ -37482,11 +37652,14 @@
         "home": {
           "id": "3",
           "name": "Austin FC",
-          "logo": "/teams/austin.png",
+          "logo": "/teams/flashscore_3.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/hzGDoHUH-b7NYdTs6.png",
           "logoFilename": "hzGDoHUH-b7NYdTs6.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "3",
+          "logoPath": "/teams/flashscore_3.png",
+          "teamIdentityId": "flashscore:3"
         },
         "away": {
           "id": null,
@@ -37495,7 +37668,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -38390,7 +38564,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:30:50.680Z",
+        "updatedAt": "2026-09-28T13:10:42.153Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_bTgD4DQa",
@@ -38410,11 +38584,14 @@
         "home": {
           "id": "0",
           "name": "FC Dallas",
-          "logo": "/teams/dallas.png",
+          "logo": "/teams/flashscore_0.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/jHAzzjXH-h6S6xFbF.png",
           "logoFilename": "jHAzzjXH-h6S6xFbF.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "0",
+          "logoPath": "/teams/flashscore_0.png",
+          "teamIdentityId": "flashscore:0"
         },
         "away": {
           "id": null,
@@ -38423,7 +38600,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -39317,7 +39495,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:30:53.015Z",
+        "updatedAt": "2026-09-28T13:10:44.463Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_femM2ieC",
@@ -39337,11 +39515,14 @@
         "home": {
           "id": "2",
           "name": "Houston Dynamo",
-          "logo": "/teams/houstondynamo.png",
+          "logo": "/teams/flashscore_2.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/AVAdquCN-88w2wUnG.png",
           "logoFilename": "AVAdquCN-88w2wUnG.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "2",
+          "logoPath": "/teams/flashscore_2.png",
+          "teamIdentityId": "flashscore:2"
         },
         "away": {
           "id": null,
@@ -39350,7 +39531,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -40269,7 +40451,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:30:55.341Z",
+        "updatedAt": "2026-09-28T13:10:46.769Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_0hjU0VPO",
@@ -40289,11 +40471,14 @@
         "home": {
           "id": "0",
           "name": "Nashville SC",
-          "logo": "/teams/nashville.png",
+          "logo": "/teams/flashscore_0.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/0n9oUmiT-tnwDCzLD.png",
           "logoFilename": "0n9oUmiT-tnwDCzLD.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "0",
+          "logoPath": "/teams/flashscore_0.png",
+          "teamIdentityId": "flashscore:0"
         },
         "away": {
           "id": null,
@@ -40302,7 +40487,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -41129,7 +41315,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:30:57.651Z",
+        "updatedAt": "2026-09-28T13:10:49.094Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_UaSdXWzp",
@@ -41149,11 +41335,14 @@
         "home": {
           "id": "1",
           "name": "Seattle Sounders",
-          "logo": "/teams/seattlesounders.png",
+          "logo": "/teams/flashscore_1.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/zP5RaY76-Y5BuxdGt.png",
           "logoFilename": "zP5RaY76-Y5BuxdGt.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "1",
+          "logoPath": "/teams/flashscore_1.png",
+          "teamIdentityId": "flashscore:1"
         },
         "away": {
           "id": null,
@@ -41162,7 +41351,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -42089,7 +42279,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:30:59.958Z",
+        "updatedAt": "2026-09-28T13:10:51.405Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_46GvLYAt",
@@ -42109,11 +42299,14 @@
         "home": {
           "id": "0",
           "name": "Real Salt Lake",
-          "logo": "/teams/realsaltlake.png",
+          "logo": "/teams/flashscore_0.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/dUopT5UH-xhRqHy1g.png",
           "logoFilename": "dUopT5UH-xhRqHy1g.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "0",
+          "logoPath": "/teams/flashscore_0.png",
+          "teamIdentityId": "flashscore:0"
         },
         "away": {
           "id": null,
@@ -42122,7 +42315,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -43009,7 +43203,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:31:02.267Z",
+        "updatedAt": "2026-09-28T13:10:53.752Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_CWJnJCug",
@@ -43029,11 +43223,14 @@
         "home": {
           "id": "2",
           "name": "Los Angeles Galaxy",
-          "logo": "/teams/losangelesgalaxy.png",
+          "logo": "/teams/flashscore_2.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/MwKFeQ86-fyzFgPy8.png",
           "logoFilename": "MwKFeQ86-fyzFgPy8.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "2",
+          "logoPath": "/teams/flashscore_2.png",
+          "teamIdentityId": "flashscore:2"
         },
         "away": {
           "id": null,
@@ -43042,7 +43239,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -43969,7 +44167,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:31:04.587Z",
+        "updatedAt": "2026-09-28T13:10:56.058Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_8bDeHjA5",
@@ -43989,11 +44187,14 @@
         "home": {
           "id": "1",
           "name": "San Jose Earthquakes",
-          "logo": "/teams/sanjoseearthquakes.png",
+          "logo": "/teams/flashscore_1.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/6ZJJvliC-UuBN762q.png",
           "logoFilename": "6ZJJvliC-UuBN762q.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "1",
+          "logoPath": "/teams/flashscore_1.png",
+          "teamIdentityId": "flashscore:1"
         },
         "away": {
           "id": null,
@@ -44002,7 +44203,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -44908,7 +45110,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:31:06.914Z",
+        "updatedAt": "2026-09-28T13:10:58.364Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_tCB3FUvI",
@@ -44928,11 +45130,14 @@
         "home": {
           "id": "3",
           "name": "Vancouver Whitecaps",
-          "logo": "/teams/vancouverwhitecaps.png",
+          "logo": "/teams/flashscore_3.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/h4rRBzU0-M1jIRGkS.png",
           "logoFilename": "h4rRBzU0-M1jIRGkS.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "3",
+          "logoPath": "/teams/flashscore_3.png",
+          "teamIdentityId": "flashscore:3"
         },
         "away": {
           "id": null,
@@ -44941,7 +45146,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -45800,7 +46006,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:31:09.263Z",
+        "updatedAt": "2026-09-28T13:11:00.673Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_QRL5VA5d",
@@ -45820,11 +46026,14 @@
         "home": {
           "id": "2",
           "name": "Fortaleza",
-          "logo": "/teams/fortaleza.png",
+          "logo": "/teams/flashscore_2.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/Ecz8EXVH-IVYXEpED.png",
           "logoFilename": "Ecz8EXVH-IVYXEpED.png",
           "logoSide": "home",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "2",
+          "logoPath": "/teams/flashscore_2.png",
+          "teamIdentityId": "flashscore:2"
         },
         "away": {
           "id": null,
@@ -45833,7 +46042,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -46849,7 +47059,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:31:16.225Z",
+        "updatedAt": "2026-09-28T13:11:07.592Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_bq1tgD2s",
@@ -46869,11 +47079,14 @@
         "home": {
           "id": "0",
           "name": "Dep. Cali",
-          "logo": "/teams/depcali.png",
+          "logo": "/teams/flashscore_0.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/zNqhWFQq-2eGA9cib.png",
           "logoFilename": "zNqhWFQq-2eGA9cib.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "0",
+          "logoPath": "/teams/flashscore_0.png",
+          "teamIdentityId": "flashscore:0"
         },
         "away": {
           "id": null,
@@ -46882,7 +47095,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -47782,7 +47996,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:31:18.538Z",
+        "updatedAt": "2026-09-28T13:11:09.900Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_S6sivyJO",
@@ -47802,11 +48016,14 @@
         "home": {
           "id": "1",
           "name": "Club Leon",
-          "logo": "/teams/leon.png",
+          "logo": "/teams/flashscore_1.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/WdtRY4iT-OSiYNR3p.png",
           "logoFilename": "WdtRY4iT-OSiYNR3p.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "1",
+          "logoPath": "/teams/flashscore_1.png",
+          "teamIdentityId": "flashscore:1"
         },
         "away": {
           "id": null,
@@ -47815,7 +48032,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -48714,7 +48932,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:31:20.898Z",
+        "updatedAt": "2026-09-28T13:11:12.220Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_nelb1QCt",
@@ -48734,11 +48952,14 @@
         "home": {
           "id": "4",
           "name": "Necaxa",
-          "logo": "/teams/necaxa.png",
+          "logo": "/teams/flashscore_4.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/f3CzIwSq-IFA1tboe.png",
           "logoFilename": "f3CzIwSq-IFA1tboe.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "Flashscore ID → GitHub registry",
+          "flashscoreId": "4",
+          "logoPath": "/teams/flashscore_4.png",
+          "teamIdentityId": "flashscore:4"
         },
         "away": {
           "id": null,
@@ -48747,7 +48968,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -49050,7 +49272,7 @@
             "name": "Expected goals (xG)",
             "key": "expected goals (xg)",
             "home": "2.69",
-            "away": "3.39",
+            "away": "3.97",
             "period": "match"
           },
           {
@@ -49064,21 +49286,21 @@
             "name": "Total shots",
             "key": "shots",
             "home": "15",
-            "away": "20",
+            "away": "21",
             "period": "match"
           },
           {
             "name": "Shots on target",
             "key": "shots_on_target",
             "home": "6",
-            "away": "9",
+            "away": "10",
             "period": "match"
           },
           {
             "name": "Big chances",
             "key": "big chances",
             "home": "7",
-            "away": "5",
+            "away": "6",
             "period": "match"
           },
           {
@@ -49127,7 +49349,7 @@
             "name": "Shots inside the box",
             "key": "shots",
             "home": "10",
-            "away": "12",
+            "away": "13",
             "period": "match"
           },
           {
@@ -49155,7 +49377,7 @@
             "name": "Touches in opposition box",
             "key": "touches in opposition box",
             "home": "19",
-            "away": "26",
+            "away": "28",
             "period": "match"
           },
           {
@@ -49295,28 +49517,28 @@
             "name": "Expected goals (xG)",
             "key": "expected goals (xg)",
             "home": "2.26",
-            "away": "2.08",
+            "away": "2.66",
             "period": "match"
           },
           {
             "name": "Total shots",
             "key": "shots",
             "home": "10",
-            "away": "11",
+            "away": "12",
             "period": "match"
           },
           {
             "name": "Shots on target",
             "key": "shots_on_target",
             "home": "5",
-            "away": "5",
+            "away": "6",
             "period": "match"
           },
           {
             "name": "Big chances",
             "key": "big chances",
             "home": "6",
-            "away": "4",
+            "away": "5",
             "period": "match"
           },
           {
@@ -49365,7 +49587,7 @@
             "name": "Shots inside the box",
             "key": "shots",
             "home": "9",
-            "away": "8",
+            "away": "9",
             "period": "match"
           },
           {
@@ -49379,7 +49601,7 @@
             "name": "Touches in opposition box",
             "key": "touches in opposition box",
             "home": "14",
-            "away": "17",
+            "away": "19",
             "period": "match"
           },
           {
@@ -49712,7 +49934,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:31:23.231Z",
+        "updatedAt": "2026-09-28T13:11:14.526Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_fLi6a4sg",
@@ -49736,7 +49958,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/AowBBF6k-zBFXR8iF.png",
           "logoFilename": "AowBBF6k-zBFXR8iF.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -49745,7 +49968,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -49790,11 +50014,14 @@
         "home": {
           "id": "1",
           "name": "Columbus Crew",
-          "logo": "/teams/columbuscrew.png",
+          "logo": "/teams/flashscore_1.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/z94JGZTH-UwKTVGeG.png",
           "logoFilename": "z94JGZTH-UwKTVGeG.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub identity registry",
+          "flashscoreId": "1",
+          "logoPath": "/teams/flashscore_1.png",
+          "teamIdentityId": "flashscore:1"
         },
         "away": {
           "id": null,
@@ -49803,7 +50030,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -49946,7 +50174,7 @@
           },
           {
             "id": "0ER4D89U-12",
-            "minute": "79'",
+            "minute": "78'",
             "type": "goal",
             "team": null,
             "player": "Bailly E.",
@@ -50011,10 +50239,10 @@
           },
           {
             "id": "0ER4D89U-17",
-            "minute": "87'",
+            "minute": "86'",
             "type": "yellow",
             "team": null,
-            "player": "Morales S.",
+            "player": "Abadia-Reda C.",
             "assist": null,
             "playerIn": null,
             "playerOut": null,
@@ -50024,10 +50252,10 @@
           },
           {
             "id": "0ER4D89U-18",
-            "minute": "87'",
+            "minute": "86'",
             "type": "yellow",
             "team": null,
-            "player": "Abadia-Reda C.",
+            "player": "Morales S.",
             "assist": null,
             "playerIn": null,
             "playerOut": null,
@@ -50089,19 +50317,6 @@
           },
           {
             "id": "0ER4D89U-23",
-            "minute": "90+9'",
-            "type": "goal",
-            "team": null,
-            "player": "Thiare J.",
-            "assist": null,
-            "playerIn": null,
-            "playerOut": null,
-            "scoreHome": null,
-            "scoreAway": null,
-            "rawType": "1"
-          },
-          {
-            "id": "0ER4D89U-24",
             "minute": "90+10'",
             "type": "yellow",
             "team": null,
@@ -50167,7 +50382,7 @@
           {
             "name": "Yellow cards",
             "key": "yellow cards",
-            "home": "5",
+            "home": "4",
             "away": "6",
             "period": "match"
           },
@@ -50636,7 +50851,7 @@
           {
             "name": "Yellow cards",
             "key": "yellow cards",
-            "home": "4",
+            "home": "3",
             "away": "5",
             "period": "match"
           },
@@ -50795,7 +51010,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T12:31:27.870Z",
+        "updatedAt": "2026-09-28T13:11:19.149Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_0ER4D89U",
@@ -50819,7 +51034,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/GtpcHiiT-v5wBaFPD.png",
           "logoFilename": "GtpcHiiT-v5wBaFPD.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -50828,7 +51044,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -50877,7 +51094,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/UacjBalC-AaS9a4Ho.png",
           "logoFilename": "UacjBalC-AaS9a4Ho.png",
           "logoSide": "home",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -50886,7 +51104,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -50935,7 +51154,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/4OGSgN96-pM8eqsw3.png",
           "logoFilename": "4OGSgN96-pM8eqsw3.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -50944,7 +51164,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -50993,7 +51214,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/I7bqaK6k-6kduDy6P.png",
           "logoFilename": "I7bqaK6k-6kduDy6P.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -51002,7 +51224,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -51051,7 +51274,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/StROSU5k-zLpFRlja.png",
           "logoFilename": "StROSU5k-zLpFRlja.png",
           "logoSide": "home",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -51060,7 +51284,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -51109,7 +51334,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/OAtXEIVH-jmLPWdtA.png",
           "logoFilename": "OAtXEIVH-jmLPWdtA.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -51118,7 +51344,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -51167,7 +51394,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-fezSJdFa.png",
           "logoFilename": "WrU0J0Qq-fezSJdFa.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -51176,7 +51404,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -51225,7 +51454,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
           "logoFilename": "YqfJ3686-G2OQQubE.png",
           "logoSide": "home",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -51234,7 +51464,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -51283,7 +51514,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/C0qt1olC-bsEYFgtQ.png",
           "logoFilename": "C0qt1olC-bsEYFgtQ.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -51292,7 +51524,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -51341,7 +51574,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/KMjBLrUH-8ExDw68E.png",
           "logoFilename": "KMjBLrUH-8ExDw68E.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -51350,7 +51584,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -51399,7 +51634,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/4nyD8Ole-Q1R9dE24.png",
           "logoFilename": "4nyD8Ole-Q1R9dE24.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -51408,7 +51644,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -51457,7 +51694,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/4xK80JVH-4OKT8C33.png",
           "logoFilename": "4xK80JVH-4OKT8C33.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -51466,7 +51704,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -51515,7 +51754,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/8CuFFxlC-Y7pkY0PJ.png",
           "logoFilename": "8CuFFxlC-Y7pkY0PJ.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -51524,7 +51764,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -51573,7 +51814,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/AVAdquCN-88w2wUnG.png",
           "logoFilename": "AVAdquCN-88w2wUnG.png",
           "logoSide": "home",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -51582,7 +51824,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -51631,14 +51874,16 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/GpsGB0DN-zmJd7cVA.png",
           "logoFilename": "GpsGB0DN-zmJd7cVA.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
           "name": "15 de Agosto (Gnq)",
           "logo": null,
           "flashscoreLogo": null,
-          "logoSide": "away"
+          "logoSide": "away",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -51687,7 +51932,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/IuZoU3iT-ImUFDktI.png",
           "logoFilename": "IuZoU3iT-ImUFDktI.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -51696,7 +51942,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -51745,7 +51992,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/xCI9eFAN-OS9FbeGg.png",
           "logoFilename": "xCI9eFAN-OS9FbeGg.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -51754,7 +52002,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -51803,7 +52052,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/8UYpvw86-0hVt0N0n.png",
           "logoFilename": "8UYpvw86-0hVt0N0n.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -51812,7 +52062,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -51861,7 +52112,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/bVaqpoWH-YyppIBwT.png",
           "logoFilename": "bVaqpoWH-YyppIBwT.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -51870,7 +52122,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -51919,7 +52172,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/YVxbV1iT-KxCl9RDG.png",
           "logoFilename": "YVxbV1iT-KxCl9RDG.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -51928,7 +52182,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -51977,7 +52232,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/I7GXcZiT-rRPTjfbN.png",
           "logoFilename": "I7GXcZiT-rRPTjfbN.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -51986,7 +52242,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -52035,7 +52292,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/8biwxljT-6oItt2Br.png",
           "logoFilename": "8biwxljT-6oItt2Br.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -52044,7 +52302,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -52093,7 +52352,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/MJNZGxXH-0tyg52jq.png",
           "logoFilename": "MJNZGxXH-0tyg52jq.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -52102,7 +52362,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -52151,7 +52412,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/p0AtzGQq-vm8qH06L.png",
           "logoFilename": "p0AtzGQq-vm8qH06L.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -52160,7 +52422,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -52209,7 +52472,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/ADXIEPCN-4S2Tm4eJ.png",
           "logoFilename": "ADXIEPCN-4S2Tm4eJ.png",
           "logoSide": "home",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -52218,7 +52482,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -52267,7 +52532,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/6XnLr1hT-GxV9h1lf.png",
           "logoFilename": "6XnLr1hT-GxV9h1lf.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -52276,7 +52542,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -52325,7 +52592,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
           "logoFilename": "K2MlyGoe-nHqWQgSo.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -52334,7 +52602,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -52383,7 +52652,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/4OGSgN96-pM8eqsw3.png",
           "logoFilename": "4OGSgN96-pM8eqsw3.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -52392,7 +52662,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -52441,7 +52712,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/M5AhQV5k-OjIDDdYc.png",
           "logoFilename": "M5AhQV5k-OjIDDdYc.png",
           "logoSide": "home",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -52450,7 +52722,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -52499,7 +52772,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/0Cg5eagT-jqTIQW5H.png",
           "logoFilename": "0Cg5eagT-jqTIQW5H.png",
           "logoSide": "home",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -52508,7 +52782,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -52557,7 +52832,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/l4lKktDN-K401txJG.png",
           "logoFilename": "l4lKktDN-K401txJG.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -52566,7 +52842,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -52615,7 +52892,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/Cj1rt4me-zi9oOsF3.png",
           "logoFilename": "Cj1rt4me-zi9oOsF3.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -52624,7 +52902,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -52673,7 +52952,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/hrtwQ6lC-pAEmCR0A.png",
           "logoFilename": "hrtwQ6lC-pAEmCR0A.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -52682,7 +52962,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -52731,7 +53012,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/Mm90dOkC-EyoH1qCf.png",
           "logoFilename": "Mm90dOkC-EyoH1qCf.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -52740,7 +53022,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -52765,7 +53048,7 @@
       "details": {
         "events": [],
         "statistics": [],
-        "updatedAt": "2026-09-28T12:31:31.229Z",
+        "updatedAt": "2026-09-28T13:11:22.227Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_bDGw34fE",
@@ -52789,7 +53072,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/b3sNSqS0-hInMHhg7.png",
           "logoFilename": "b3sNSqS0-hInMHhg7.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -52798,7 +53082,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -52847,7 +53132,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/Y7MV6X5k-GSoKqW7o.png",
           "logoFilename": "Y7MV6X5k-GSoKqW7o.png",
           "logoSide": "home",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -52856,7 +53142,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -52905,7 +53192,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/pGJqy86k-63LcsWgs.png",
           "logoFilename": "pGJqy86k-63LcsWgs.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -52914,7 +53202,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -52963,7 +53252,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/drsSo7UH-4U3vjZKk.png",
           "logoFilename": "drsSo7UH-4U3vjZKk.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -52972,7 +53262,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -53021,7 +53312,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/8G2Evj86-0ME49KyM.png",
           "logoFilename": "8G2Evj86-0ME49KyM.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -53030,7 +53322,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -53079,7 +53372,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/C4WkaSlC-Q3zX1dyT.png",
           "logoFilename": "C4WkaSlC-Q3zX1dyT.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -53088,7 +53382,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -53137,7 +53432,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/SMiBGH8k-p6WBruc4.png",
           "logoFilename": "SMiBGH8k-p6WBruc4.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -53146,7 +53442,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -53195,7 +53492,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/CUoqynU0-pUOna96L.png",
           "logoFilename": "CUoqynU0-pUOna96L.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -53204,7 +53502,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -53253,7 +53552,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/pbQeONmC-Eew7tmfb.png",
           "logoFilename": "pbQeONmC-Eew7tmfb.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -53262,7 +53562,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -53311,7 +53612,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/htqgPrT0-jXvNrLYt.png",
           "logoFilename": "htqgPrT0-jXvNrLYt.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -53320,7 +53622,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -53369,7 +53672,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/6qGiPaSq-lrqyzouB.png",
           "logoFilename": "6qGiPaSq-lrqyzouB.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -53378,7 +53682,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -53427,7 +53732,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/vTF4Iv6k-rysGeGXN.png",
           "logoFilename": "vTF4Iv6k-rysGeGXN.png",
           "logoSide": "home",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -53436,7 +53742,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -53485,7 +53792,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/QmKG7dT0-pEzOUfJL.png",
           "logoFilename": "QmKG7dT0-pEzOUfJL.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -53494,7 +53802,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -53543,7 +53852,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/OYnX3M6k-xd1MqkTp.png",
           "logoFilename": "OYnX3M6k-xd1MqkTp.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -53552,7 +53862,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -53601,7 +53912,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/r1QAXB7k-xpqBFn5c.png",
           "logoFilename": "r1QAXB7k-xpqBFn5c.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -53610,7 +53922,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -53659,7 +53972,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/GvWsl3Sq-htRvrFH6.png",
           "logoFilename": "GvWsl3Sq-htRvrFH6.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -53668,7 +53982,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -53717,7 +54032,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/WKsw8cne-rmDEjevK.png",
           "logoFilename": "WKsw8cne-rmDEjevK.png",
           "logoSide": "home",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -53726,7 +54042,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -53775,7 +54092,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/EgYDLGoe-ENHpchZ2.png",
           "logoFilename": "EgYDLGoe-ENHpchZ2.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -53784,7 +54102,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -53828,7 +54147,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/Wp6MmpQq-OCiVKiPK.png",
           "logoFilename": "Wp6MmpQq-OCiVKiPK.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -53837,7 +54157,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -53881,7 +54202,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/0hgWrqXH-E7RqoQaq.png",
           "logoFilename": "0hgWrqXH-E7RqoQaq.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -53890,7 +54212,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -53934,7 +54257,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/StROSU5k-zLpFRlja.png",
           "logoFilename": "StROSU5k-zLpFRlja.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -53943,7 +54267,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -53987,7 +54312,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/OCsMaKUH-hSZHTo4B.png",
           "logoFilename": "OCsMaKUH-hSZHTo4B.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -53996,7 +54322,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
@@ -54040,7 +54367,8 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/S8MpS386-UBV6BGsc.png",
           "logoFilename": "S8MpS386-UBV6BGsc.png",
           "logoSide": "home",
-          "logoSource": "Flashscore → GitHub local (fresh)"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         },
         "away": {
           "id": null,
@@ -54049,7 +54377,8 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub local"
+          "logoSource": "GitHub legacy cache",
+          "flashscoreId": null
         }
       },
       "goals": {
