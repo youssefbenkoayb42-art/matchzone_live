@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-28T13:42:03.480Z",
+  "updatedAt": "2026-09-28T13:55:35.842Z",
   "teams": {
     "flashscore:novorizontino": {
       "canonicalId": "flashscore:novorizontino",
@@ -13,7 +13,7 @@
       "bytes": 1607,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:30.580Z"
+      "updatedAt": "2026-09-28T13:53:04.395Z"
     },
     "flashscore:vila-nova-fc": {
       "canonicalId": "flashscore:vila-nova-fc",
@@ -26,7 +26,7 @@
       "bytes": 1894,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:30.629Z"
+      "updatedAt": "2026-09-28T13:53:04.406Z"
     },
     "flashscore:nautico": {
       "canonicalId": "flashscore:nautico",
@@ -38,8 +38,8 @@
       "sha256": "7659933010d5ee10eba81d37478ed75985d4aa0f7189e1b673f2c516479901f4",
       "bytes": 1925,
       "mime": "image/png",
-      "status": "verified",
-      "updatedAt": "2026-09-28T13:39:30.677Z"
+      "status": "review",
+      "updatedAt": "2026-09-28T13:53:04.419Z"
     },
     "flashscore:operario-pr": {
       "canonicalId": "flashscore:operario-pr",
@@ -51,8 +51,8 @@
       "sha256": "1f9b3145bf947590516b24a11a2e734607d1625fffcb13c0f3bd76666d1762a7",
       "bytes": 1827,
       "mime": "image/png",
-      "status": "verified",
-      "updatedAt": "2026-09-28T13:39:30.726Z"
+      "status": "review",
+      "updatedAt": "2026-09-28T13:53:04.430Z"
     },
     "flashscore:goias": {
       "canonicalId": "flashscore:goias",
@@ -65,7 +65,7 @@
       "bytes": 1355,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:30.773Z"
+      "updatedAt": "2026-09-28T13:53:04.441Z"
     },
     "flashscore:chico": {
       "canonicalId": "flashscore:chico",
@@ -78,7 +78,7 @@
       "bytes": 2057,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:30.823Z"
+      "updatedAt": "2026-09-28T13:53:04.452Z"
     },
     "flashscore:once-caldas": {
       "canonicalId": "flashscore:once-caldas",
@@ -91,7 +91,7 @@
       "bytes": 1682,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:30.870Z"
+      "updatedAt": "2026-09-28T13:53:04.463Z"
     },
     "flashscore:dep-pereira": {
       "canonicalId": "flashscore:dep-pereira",
@@ -104,7 +104,7 @@
       "bytes": 1757,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:30.922Z"
+      "updatedAt": "2026-09-28T13:53:04.477Z"
     },
     "flashscore:atlante": {
       "canonicalId": "flashscore:atlante",
@@ -117,7 +117,7 @@
       "bytes": 1455,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:30.969Z"
+      "updatedAt": "2026-09-28T13:53:04.491Z"
     },
     "flashscore:club-tijuana": {
       "canonicalId": "flashscore:club-tijuana",
@@ -130,7 +130,7 @@
       "bytes": 1339,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:31.013Z"
+      "updatedAt": "2026-09-28T13:53:04.504Z"
     },
     "flashscore:union-touarga": {
       "canonicalId": "flashscore:union-touarga",
@@ -143,7 +143,7 @@
       "bytes": 2183,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:31.061Z"
+      "updatedAt": "2026-09-28T13:53:04.516Z"
     },
     "flashscore:difaa-el-jadidi": {
       "canonicalId": "flashscore:difaa-el-jadidi",
@@ -156,7 +156,7 @@
       "bytes": 2183,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:31.105Z"
+      "updatedAt": "2026-09-28T13:53:04.527Z"
     },
     "flashscore:wydad-athletic": {
       "canonicalId": "flashscore:wydad-athletic",
@@ -169,7 +169,7 @@
       "bytes": 1666,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:31.151Z"
+      "updatedAt": "2026-09-28T13:53:04.539Z"
     },
     "flashscore:ad-ceuta": {
       "canonicalId": "flashscore:ad-ceuta",
@@ -182,7 +182,7 @@
       "bytes": 2134,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:31.199Z"
+      "updatedAt": "2026-09-28T13:53:04.552Z"
     },
     "flashscore:granada-cf": {
       "canonicalId": "flashscore:granada-cf",
@@ -194,8 +194,8 @@
       "sha256": "f36ecd2e6a717697ceaf07bbde0df89cec634421e90cf592fff1418eb0e59715",
       "bytes": 2327,
       "mime": "image/png",
-      "status": "verified",
-      "updatedAt": "2026-09-28T13:39:31.244Z"
+      "status": "review",
+      "updatedAt": "2026-09-28T13:53:04.563Z"
     },
     "flashscore:celta-vigo": {
       "canonicalId": "flashscore:celta-vigo",
@@ -208,7 +208,7 @@
       "bytes": 2116,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:31.294Z"
+      "updatedAt": "2026-09-28T13:53:04.583Z"
     },
     "flashscore:tenerife": {
       "canonicalId": "flashscore:tenerife",
@@ -221,7 +221,7 @@
       "bytes": 1434,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:31.345Z"
+      "updatedAt": "2026-09-28T13:53:04.594Z"
     },
     "flashscore:criciuma": {
       "canonicalId": "flashscore:criciuma",
@@ -234,7 +234,7 @@
       "bytes": 1025,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:31.394Z"
+      "updatedAt": "2026-09-28T13:53:04.609Z"
     },
     "flashscore:crb": {
       "canonicalId": "flashscore:crb",
@@ -247,7 +247,7 @@
       "bytes": 1487,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:31.442Z"
+      "updatedAt": "2026-09-28T13:53:04.620Z"
     },
     "flashscore:fortaleza": {
       "canonicalId": "flashscore:fortaleza",
@@ -260,7 +260,7 @@
       "bytes": 1763,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:31.493Z"
+      "updatedAt": "2026-09-28T13:53:04.633Z"
     },
     "flashscore:cucuta": {
       "canonicalId": "flashscore:cucuta",
@@ -273,7 +273,7 @@
       "bytes": 1728,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:31.544Z"
+      "updatedAt": "2026-09-28T13:53:04.644Z"
     },
     "flashscore:junior": {
       "canonicalId": "flashscore:junior",
@@ -286,7 +286,7 @@
       "bytes": 1918,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:31.589Z"
+      "updatedAt": "2026-09-28T13:53:04.659Z"
     },
     "flashscore:jaguares-de-cordoba": {
       "canonicalId": "flashscore:jaguares-de-cordoba",
@@ -299,7 +299,7 @@
       "bytes": 2224,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:31.635Z"
+      "updatedAt": "2026-09-28T13:53:04.677Z"
     },
     "flashscore:cruz-azul": {
       "canonicalId": "flashscore:cruz-azul",
@@ -312,7 +312,7 @@
       "bytes": 2187,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:31.684Z"
+      "updatedAt": "2026-09-28T13:53:04.688Z"
     },
     "flashscore:guadalajara-chivas": {
       "canonicalId": "flashscore:guadalajara-chivas",
@@ -325,7 +325,7 @@
       "bytes": 1666,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:31.733Z"
+      "updatedAt": "2026-09-28T13:53:04.699Z"
     },
     "flashscore:santos-laguna": {
       "canonicalId": "flashscore:santos-laguna",
@@ -338,7 +338,7 @@
       "bytes": 1911,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:31.782Z"
+      "updatedAt": "2026-09-28T13:53:04.710Z"
     },
     "flashscore:tigres-uanl": {
       "canonicalId": "flashscore:tigres-uanl",
@@ -351,7 +351,7 @@
       "bytes": 2238,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:31.826Z"
+      "updatedAt": "2026-09-28T13:53:04.721Z"
     },
     "flashscore:unam-pumas": {
       "canonicalId": "flashscore:unam-pumas",
@@ -364,7 +364,7 @@
       "bytes": 2453,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:31.872Z"
+      "updatedAt": "2026-09-28T13:53:04.734Z"
     },
     "flashscore:moghreb-tetouan": {
       "canonicalId": "flashscore:moghreb-tetouan",
@@ -377,7 +377,7 @@
       "bytes": 2357,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:31.918Z"
+      "updatedAt": "2026-09-28T13:53:04.745Z"
     },
     "flashscore:maghreb-fez": {
       "canonicalId": "flashscore:maghreb-fez",
@@ -389,8 +389,8 @@
       "sha256": "22e0c3b767a10c4b45d9c1455194870b431b8b9c25dd327d476e33a961ba4d8d",
       "bytes": 2000,
       "mime": "image/png",
-      "status": "verified",
-      "updatedAt": "2026-09-28T13:39:31.968Z"
+      "status": "review",
+      "updatedAt": "2026-09-28T13:53:04.756Z"
     },
     "flashscore:kawkab-marrakech": {
       "canonicalId": "flashscore:kawkab-marrakech",
@@ -403,7 +403,7 @@
       "bytes": 1828,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:32.013Z"
+      "updatedAt": "2026-09-28T13:53:04.769Z"
     },
     "flashscore:gangwon": {
       "canonicalId": "flashscore:gangwon",
@@ -416,7 +416,7 @@
       "bytes": 1670,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:32.059Z"
+      "updatedAt": "2026-09-28T13:53:04.779Z"
     },
     "flashscore:valladolid": {
       "canonicalId": "flashscore:valladolid",
@@ -429,7 +429,7 @@
       "bytes": 1308,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:32.107Z"
+      "updatedAt": "2026-09-28T13:53:04.794Z"
     },
     "flashscore:mallorca": {
       "canonicalId": "flashscore:mallorca",
@@ -442,7 +442,7 @@
       "bytes": 1839,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:32.152Z"
+      "updatedAt": "2026-09-28T13:53:04.806Z"
     },
     "flashscore:burgos-cf": {
       "canonicalId": "flashscore:burgos-cf",
@@ -455,7 +455,7 @@
       "bytes": 1731,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:32.198Z"
+      "updatedAt": "2026-09-28T13:53:04.817Z"
     },
     "flashscore:eibar": {
       "canonicalId": "flashscore:eibar",
@@ -468,7 +468,7 @@
       "bytes": 1690,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:32.243Z"
+      "updatedAt": "2026-09-28T13:53:04.829Z"
     },
     "flashscore:real-oviedo": {
       "canonicalId": "flashscore:real-oviedo",
@@ -481,7 +481,7 @@
       "bytes": 1253,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:32.290Z"
+      "updatedAt": "2026-09-28T13:53:04.839Z"
     },
     "flashscore:atlanta-united": {
       "canonicalId": "flashscore:atlanta-united",
@@ -494,7 +494,7 @@
       "bytes": 2673,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:32.331Z"
+      "updatedAt": "2026-09-28T13:53:04.852Z"
     },
     "flashscore:cf-montreal": {
       "canonicalId": "flashscore:cf-montreal",
@@ -507,7 +507,7 @@
       "bytes": 2498,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:32.375Z"
+      "updatedAt": "2026-09-28T13:53:04.866Z"
     },
     "flashscore:charlotte-fc": {
       "canonicalId": "flashscore:charlotte-fc",
@@ -520,7 +520,7 @@
       "bytes": 2273,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:32.422Z"
+      "updatedAt": "2026-09-28T13:53:04.879Z"
     },
     "flashscore:philadelphia-union": {
       "canonicalId": "flashscore:philadelphia-union",
@@ -533,7 +533,7 @@
       "bytes": 2075,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:32.471Z"
+      "updatedAt": "2026-09-28T13:53:04.891Z"
     },
     "flashscore:austin-fc": {
       "canonicalId": "flashscore:austin-fc",
@@ -546,7 +546,7 @@
       "bytes": 2228,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:32.514Z"
+      "updatedAt": "2026-09-28T13:53:04.903Z"
     },
     "flashscore:fc-dallas": {
       "canonicalId": "flashscore:fc-dallas",
@@ -559,7 +559,7 @@
       "bytes": 1203,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:32.557Z"
+      "updatedAt": "2026-09-28T13:53:04.917Z"
     },
     "flashscore:houston-dynamo": {
       "canonicalId": "flashscore:houston-dynamo",
@@ -572,7 +572,7 @@
       "bytes": 2573,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:32.600Z"
+      "updatedAt": "2026-09-28T13:53:04.931Z"
     },
     "flashscore:nashville-sc": {
       "canonicalId": "flashscore:nashville-sc",
@@ -585,7 +585,7 @@
       "bytes": 1856,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:32.646Z"
+      "updatedAt": "2026-09-28T13:53:04.945Z"
     },
     "flashscore:seattle-sounders": {
       "canonicalId": "flashscore:seattle-sounders",
@@ -598,7 +598,7 @@
       "bytes": 1530,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:32.693Z"
+      "updatedAt": "2026-09-28T13:53:04.957Z"
     },
     "flashscore:real-salt-lake": {
       "canonicalId": "flashscore:real-salt-lake",
@@ -611,7 +611,7 @@
       "bytes": 2267,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:32.737Z"
+      "updatedAt": "2026-09-28T13:53:04.968Z"
     },
     "flashscore:los-angeles-galaxy": {
       "canonicalId": "flashscore:los-angeles-galaxy",
@@ -624,7 +624,7 @@
       "bytes": 1861,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:32.781Z"
+      "updatedAt": "2026-09-28T13:53:04.979Z"
     },
     "flashscore:san-jose-earthquakes": {
       "canonicalId": "flashscore:san-jose-earthquakes",
@@ -637,7 +637,7 @@
       "bytes": 1877,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:32.825Z"
+      "updatedAt": "2026-09-28T13:53:04.990Z"
     },
     "flashscore:vancouver-whitecaps": {
       "canonicalId": "flashscore:vancouver-whitecaps",
@@ -650,7 +650,7 @@
       "bytes": 1996,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:32.871Z"
+      "updatedAt": "2026-09-28T13:53:05.000Z"
     },
     "flashscore:fortaleza-c-e-i-f": {
       "canonicalId": "flashscore:fortaleza-c-e-i-f",
@@ -663,7 +663,7 @@
       "bytes": 1475,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:32.921Z"
+      "updatedAt": "2026-09-28T13:53:05.011Z"
     },
     "flashscore:dep-cali": {
       "canonicalId": "flashscore:dep-cali",
@@ -676,7 +676,7 @@
       "bytes": 1999,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:32.969Z"
+      "updatedAt": "2026-09-28T13:53:05.021Z"
     },
     "flashscore:club-leon": {
       "canonicalId": "flashscore:club-leon",
@@ -689,7 +689,7 @@
       "bytes": 2162,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:33.029Z"
+      "updatedAt": "2026-09-28T13:53:05.030Z"
     },
     "flashscore:necaxa": {
       "canonicalId": "flashscore:necaxa",
@@ -702,7 +702,7 @@
       "bytes": 2479,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:33.074Z"
+      "updatedAt": "2026-09-28T13:53:05.040Z"
     },
     "flashscore:leganes": {
       "canonicalId": "flashscore:leganes",
@@ -715,7 +715,7 @@
       "bytes": 1673,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:33.119Z"
+      "updatedAt": "2026-09-28T13:53:05.052Z"
     },
     "flashscore:columbus-crew": {
       "canonicalId": "flashscore:columbus-crew",
@@ -728,7 +728,7 @@
       "bytes": 2311,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:33.162Z"
+      "updatedAt": "2026-09-28T13:53:05.064Z"
     },
     "flashscore:america-mg": {
       "canonicalId": "flashscore:america-mg",
@@ -741,7 +741,7 @@
       "bytes": 2275,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:33.209Z"
+      "updatedAt": "2026-09-28T13:53:05.077Z"
     },
     "flashscore:botafogo-sp": {
       "canonicalId": "flashscore:botafogo-sp",
@@ -753,8 +753,8 @@
       "sha256": "f03467c1567d25e2e40d2200c990392a28b3bf56481bc85eb281d25bd3c59006",
       "bytes": 1879,
       "mime": "image/png",
-      "status": "verified",
-      "updatedAt": "2026-09-28T13:39:33.259Z"
+      "status": "review",
+      "updatedAt": "2026-09-28T13:53:05.089Z"
     },
     "flashscore:ind-medellin": {
       "canonicalId": "flashscore:ind-medellin",
@@ -767,7 +767,7 @@
       "bytes": 2051,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:33.303Z"
+      "updatedAt": "2026-09-28T13:53:05.100Z"
     },
     "flashscore:atl-nacional": {
       "canonicalId": "flashscore:atl-nacional",
@@ -779,8 +779,8 @@
       "sha256": "1324089e5ed3ff4dec8ebfa8b1b82b56466feea6d57b414ba066056e4f2528e2",
       "bytes": 1532,
       "mime": "image/png",
-      "status": "verified",
-      "updatedAt": "2026-09-28T13:39:33.350Z"
+      "status": "review",
+      "updatedAt": "2026-09-28T13:53:05.111Z"
     },
     "flashscore:new-york-red-bulls": {
       "canonicalId": "flashscore:new-york-red-bulls",
@@ -793,7 +793,7 @@
       "bytes": 1718,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:33.396Z"
+      "updatedAt": "2026-09-28T13:53:05.123Z"
     },
     "flashscore:athletic-club": {
       "canonicalId": "flashscore:athletic-club",
@@ -806,7 +806,7 @@
       "bytes": 1925,
       "mime": "image/png",
       "status": "review",
-      "updatedAt": "2026-09-28T13:39:33.443Z"
+      "updatedAt": "2026-09-28T13:53:05.132Z"
     },
     "flashscore:inter-bogota": {
       "canonicalId": "flashscore:inter-bogota",
@@ -819,7 +819,7 @@
       "bytes": 1208,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:33.498Z"
+      "updatedAt": "2026-09-28T13:53:05.144Z"
     },
     "flashscore:fus-rabat": {
       "canonicalId": "flashscore:fus-rabat",
@@ -832,7 +832,7 @@
       "bytes": 2054,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:33.541Z"
+      "updatedAt": "2026-09-28T13:53:05.157Z"
     },
     "flashscore:widad-temara": {
       "canonicalId": "flashscore:widad-temara",
@@ -845,7 +845,7 @@
       "bytes": 1831,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:33.594Z"
+      "updatedAt": "2026-09-28T13:53:05.171Z"
     },
     "flashscore:ir-tanger": {
       "canonicalId": "flashscore:ir-tanger",
@@ -858,7 +858,7 @@
       "bytes": 1864,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:33.642Z"
+      "updatedAt": "2026-09-28T13:53:05.183Z"
     },
     "flashscore:eldense": {
       "canonicalId": "flashscore:eldense",
@@ -871,7 +871,7 @@
       "bytes": 1030,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:33.686Z"
+      "updatedAt": "2026-09-28T13:53:05.194Z"
     },
     "flashscore:fomboni": {
       "canonicalId": "flashscore:fomboni",
@@ -884,7 +884,7 @@
       "bytes": 1654,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:33.735Z"
+      "updatedAt": "2026-09-28T13:53:05.205Z"
     },
     "flashscore:independiente": {
       "canonicalId": "flashscore:independiente",
@@ -897,7 +897,7 @@
       "bytes": 1525,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:33.780Z"
+      "updatedAt": "2026-09-28T13:53:05.217Z"
     },
     "flashscore:boca-juniors": {
       "canonicalId": "flashscore:boca-juniors",
@@ -910,7 +910,7 @@
       "bytes": 1462,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:33.833Z"
+      "updatedAt": "2026-09-28T13:53:05.229Z"
     },
     "flashscore:ind-rivadavia": {
       "canonicalId": "flashscore:ind-rivadavia",
@@ -923,7 +923,7 @@
       "bytes": 1919,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:33.878Z"
+      "updatedAt": "2026-09-28T13:53:05.240Z"
     },
     "flashscore:defensa-y-justicia": {
       "canonicalId": "flashscore:defensa-y-justicia",
@@ -936,7 +936,7 @@
       "bytes": 2130,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:33.932Z"
+      "updatedAt": "2026-09-28T13:53:05.250Z"
     },
     "flashscore:atl-tucuman": {
       "canonicalId": "flashscore:atl-tucuman",
@@ -949,7 +949,7 @@
       "bytes": 1032,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:33.978Z"
+      "updatedAt": "2026-09-28T13:53:05.264Z"
     },
     "flashscore:newells-old-boys": {
       "canonicalId": "flashscore:newells-old-boys",
@@ -962,7 +962,7 @@
       "bytes": 1984,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:34.022Z"
+      "updatedAt": "2026-09-28T13:53:05.275Z"
     },
     "flashscore:sao-bernardo": {
       "canonicalId": "flashscore:sao-bernardo",
@@ -975,7 +975,7 @@
       "bytes": 1596,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:34.070Z"
+      "updatedAt": "2026-09-28T13:53:05.285Z"
     },
     "flashscore:londrina": {
       "canonicalId": "flashscore:londrina",
@@ -988,7 +988,7 @@
       "bytes": 1589,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:34.116Z"
+      "updatedAt": "2026-09-28T13:53:05.296Z"
     },
     "flashscore:ec-juventude": {
       "canonicalId": "flashscore:ec-juventude",
@@ -1001,7 +1001,7 @@
       "bytes": 2496,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:34.168Z"
+      "updatedAt": "2026-09-28T13:53:05.308Z"
     },
     "flashscore:avai": {
       "canonicalId": "flashscore:avai",
@@ -1014,7 +1014,7 @@
       "bytes": 1827,
       "mime": "image/png",
       "status": "review",
-      "updatedAt": "2026-09-28T13:39:34.213Z"
+      "updatedAt": "2026-09-28T13:53:05.318Z"
     },
     "flashscore:atletico-go": {
       "canonicalId": "flashscore:atletico-go",
@@ -1027,7 +1027,7 @@
       "bytes": 1848,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:34.261Z"
+      "updatedAt": "2026-09-28T13:53:05.329Z"
     },
     "flashscore:cuiaba": {
       "canonicalId": "flashscore:cuiaba",
@@ -1040,7 +1040,7 @@
       "bytes": 1879,
       "mime": "image/png",
       "status": "review",
-      "updatedAt": "2026-09-28T13:39:34.306Z"
+      "updatedAt": "2026-09-28T13:53:05.338Z"
     },
     "flashscore:aguilas-doradas": {
       "canonicalId": "flashscore:aguilas-doradas",
@@ -1053,7 +1053,7 @@
       "bytes": 2086,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:34.349Z"
+      "updatedAt": "2026-09-28T13:53:05.350Z"
     },
     "flashscore:deportes-tolima": {
       "canonicalId": "flashscore:deportes-tolima",
@@ -1066,7 +1066,7 @@
       "bytes": 2335,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:34.397Z"
+      "updatedAt": "2026-09-28T13:53:05.363Z"
     },
     "flashscore:hassania-agadir": {
       "canonicalId": "flashscore:hassania-agadir",
@@ -1079,7 +1079,7 @@
       "bytes": 1758,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:34.441Z"
+      "updatedAt": "2026-09-28T13:53:05.373Z"
     },
     "flashscore:berkane": {
       "canonicalId": "flashscore:berkane",
@@ -1092,7 +1092,7 @@
       "bytes": 1600,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:34.495Z"
+      "updatedAt": "2026-09-28T13:53:05.385Z"
     },
     "flashscore:cod-meknes": {
       "canonicalId": "flashscore:cod-meknes",
@@ -1105,7 +1105,7 @@
       "bytes": 2502,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:34.544Z"
+      "updatedAt": "2026-09-28T13:53:05.398Z"
     },
     "flashscore:raja-casablanca": {
       "canonicalId": "flashscore:raja-casablanca",
@@ -1118,7 +1118,7 @@
       "bytes": 2000,
       "mime": "image/png",
       "status": "review",
-      "updatedAt": "2026-09-28T13:39:34.590Z"
+      "updatedAt": "2026-09-28T13:53:05.408Z"
     },
     "flashscore:albacete": {
       "canonicalId": "flashscore:albacete",
@@ -1131,7 +1131,7 @@
       "bytes": 1363,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:34.639Z"
+      "updatedAt": "2026-09-28T13:53:05.421Z"
     },
     "flashscore:almeria": {
       "canonicalId": "flashscore:almeria",
@@ -1144,7 +1144,7 @@
       "bytes": 1996,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:34.685Z"
+      "updatedAt": "2026-09-28T13:53:05.433Z"
     },
     "flashscore:cadiz": {
       "canonicalId": "flashscore:cadiz",
@@ -1157,7 +1157,7 @@
       "bytes": 2424,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:34.732Z"
+      "updatedAt": "2026-09-28T13:53:05.444Z"
     },
     "flashscore:sabadell": {
       "canonicalId": "flashscore:sabadell",
@@ -1170,7 +1170,7 @@
       "bytes": 2327,
       "mime": "image/png",
       "status": "review",
-      "updatedAt": "2026-09-28T13:39:34.775Z"
+      "updatedAt": "2026-09-28T13:53:05.456Z"
     },
     "flashscore:veres-rivne": {
       "canonicalId": "flashscore:veres-rivne",
@@ -1183,7 +1183,7 @@
       "bytes": 2495,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:34.823Z"
+      "updatedAt": "2026-09-28T13:53:05.468Z"
     },
     "flashscore:huracan": {
       "canonicalId": "flashscore:huracan",
@@ -1196,7 +1196,7 @@
       "bytes": 1868,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:34.869Z"
+      "updatedAt": "2026-09-28T13:53:05.480Z"
     },
     "flashscore:talleres-cordoba": {
       "canonicalId": "flashscore:talleres-cordoba",
@@ -1209,7 +1209,7 @@
       "bytes": 2540,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:34.917Z"
+      "updatedAt": "2026-09-28T13:53:05.492Z"
     },
     "flashscore:dep-pasto": {
       "canonicalId": "flashscore:dep-pasto",
@@ -1222,7 +1222,7 @@
       "bytes": 1896,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:34.976Z"
+      "updatedAt": "2026-09-28T13:53:05.502Z"
     },
     "flashscore:real-sociedad": {
       "canonicalId": "flashscore:real-sociedad",
@@ -1235,7 +1235,7 @@
       "bytes": 1231,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:35.021Z"
+      "updatedAt": "2026-09-28T13:53:05.513Z"
     },
     "flashscore:gijon": {
       "canonicalId": "flashscore:gijon",
@@ -1248,7 +1248,7 @@
       "bytes": 880,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:35.068Z"
+      "updatedAt": "2026-09-28T13:53:05.524Z"
     },
     "flashscore:castellon": {
       "canonicalId": "flashscore:castellon",
@@ -1261,7 +1261,7 @@
       "bytes": 1585,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:35.124Z"
+      "updatedAt": "2026-09-28T13:53:05.534Z"
     },
     "flashscore:las-palmas": {
       "canonicalId": "flashscore:las-palmas",
@@ -1274,7 +1274,7 @@
       "bytes": 2226,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:35.179Z"
+      "updatedAt": "2026-09-28T13:53:05.544Z"
     },
     "flashscore:girona": {
       "canonicalId": "flashscore:girona",
@@ -1287,7 +1287,7 @@
       "bytes": 1886,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:35.236Z"
+      "updatedAt": "2026-09-28T13:53:05.554Z"
     },
     "flashscore:argentinos-jrs": {
       "canonicalId": "flashscore:argentinos-jrs",
@@ -1300,7 +1300,7 @@
       "bytes": 951,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:35.285Z"
+      "updatedAt": "2026-09-28T13:53:05.567Z"
     },
     "flashscore:estudiantes-rio-cuarto": {
       "canonicalId": "flashscore:estudiantes-rio-cuarto",
@@ -1313,7 +1313,7 @@
       "bytes": 890,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:35.330Z"
+      "updatedAt": "2026-09-28T13:53:05.577Z"
     },
     "flashscore:deportivo-riestra": {
       "canonicalId": "flashscore:deportivo-riestra",
@@ -1326,7 +1326,7 @@
       "bytes": 1288,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:35.383Z"
+      "updatedAt": "2026-09-28T13:53:05.590Z"
     },
     "flashscore:bucaramanga": {
       "canonicalId": "flashscore:bucaramanga",
@@ -1339,7 +1339,7 @@
       "bytes": 1532,
       "mime": "image/png",
       "status": "review",
-      "updatedAt": "2026-09-28T13:39:35.434Z"
+      "updatedAt": "2026-09-28T13:53:05.599Z"
     },
     "flashscore:llaneros": {
       "canonicalId": "flashscore:llaneros",
@@ -1352,7 +1352,7 @@
       "bytes": 1828,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:35.487Z"
+      "updatedAt": "2026-09-28T13:53:05.611Z"
     },
     "flashscore:cordoba": {
       "canonicalId": "flashscore:cordoba",
@@ -1365,7 +1365,7 @@
       "bytes": 2145,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:39:35.535Z"
+      "updatedAt": "2026-09-28T13:53:05.621Z"
     }
   },
   "providerIndex": {
