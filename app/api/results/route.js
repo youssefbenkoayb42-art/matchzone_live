@@ -1,10 +1,11 @@
-import { getFallbackMatches } from "../../../lib/fallback-matches";
+import { getMatchSnapshot, getMatchSnapshotStatus } from "../../../lib/match-snapshot";
 
 export const dynamic = "force-dynamic";
 
 function isFinished(match) {
-  const status = String(match?.fixture?.status?.short || "").toUpperCase();
-  return ["FT", "AET", "PEN", "FINISHED"].includes(status);
+  return ["FT", "AET", "PEN", "FINISHED"].includes(
+    String(match?.fixture?.status?.short || "").toUpperCase()
+  );
 }
 
 function sortNewestFirst(matches) {
@@ -17,27 +18,22 @@ function sortNewestFirst(matches) {
 
 export async function GET() {
   try {
-    const fallback = await getFallbackMatches();
-    const finished = sortNewestFirst(
-      fallback.filter(isFinished)
-    );
+    const [matches, snapshot] = await Promise.all([
+      getMatchSnapshot(),
+      getMatchSnapshotStatus(),
+    ]);
+
+    const finished = sortNewestFirst(matches.filter(isFinished));
 
     return Response.json(
       {
         response: finished,
         results: finished.length,
-        source: "flashscore-feed-fallback",
-        fallback: {
-          updatedAt: new Date().toISOString(),
-          count: finished.length,
-        },
+        source: "football-data.org",
+        snapshot,
         updatedAt: new Date().toISOString(),
       },
-      {
-        headers: {
-          "Cache-Control": "s-maxage=900, stale-while-revalidate=3600",
-        },
-      }
+      { headers: { "Cache-Control": "s-maxage=900, stale-while-revalidate=3600" } }
     );
   } catch (error) {
     console.error("Results API error:", error);
