@@ -337,9 +337,11 @@ function cleanTeamLogo(value) {
 
 function buildTeam(side, id, name, logoFilename) {
   const logo = cleanTeamLogo(flashscoreLogo(logoFilename));
+  const flashscoreId = String(id || "").trim() || null;
   return {
-    id: id || null,
-    flashscoreId: id || null,
+    id: flashscoreId,
+    flashscoreId,
+    teamIdentityId: flashscoreId ? canonicalTeamId("flashscore", flashscoreId) : null,
     name: name || "",
     logo,
     flashscoreLogo: logo,
@@ -893,6 +895,43 @@ async function enrichTeamLogos(matches) {
         team.logo = localLogo;
         team.logoSource = team.logoSource || "GitHub legacy cache";
       }
+    }
+  }
+
+  // STEP 4: final identity lock. Once a provider ID has a verified registry
+  // entry, the registry is authoritative and a legacy name-cache logo can never
+  // overwrite it. Also enforce the invariant that two different teams in one
+  // fixture cannot share the same persisted badge.
+  for (const match of result) {
+    const home = match.teams?.home;
+    const away = match.teams?.away;
+    for (const team of [home, away]) {
+      if (!team?.teamIdentityId) continue;
+      const locked = identityLogoCache.get(team.teamIdentityId);
+      if (locked) {
+        team.logo = locked;
+        team.logoPath = locked;
+        team.logoSource = "GitHub identity registry (locked)";
+      }
+    }
+    if (
+      home?.teamIdentityId &&
+      away?.teamIdentityId &&
+      home.teamIdentityId !== away.teamIdentityId &&
+      home.logo &&
+      away.logo &&
+      home.logo === away.logo
+    ) {
+      const awayIdentity = identityLogoCache.get(away.teamIdentityId);
+      const homeIdentity = identityLogoCache.get(home.teamIdentityId);
+      if (awayIdentity && awayIdentity !== home.logo) away.logo = awayIdentity;
+      else if (homeIdentity && homeIdentity !== away.logo) home.logo = homeIdentity;
+      else {
+        away.logo = null;
+        away.logoPath = null;
+        away.logoSource = null;
+      }
+      console.warn("[logo] fixture identity collision repaired:", match.fixture?.id);
     }
   }
 
