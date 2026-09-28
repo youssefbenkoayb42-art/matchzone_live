@@ -35,30 +35,10 @@ export default async function sitemap() {
   ];
 
   return [
-    {
-      url: BASE_URL,
-      lastModified: now,
-      changeFrequency: "hourly",
-      priority: 1,
-    },
-    {
-      url: BASE_URL + "/leagues",
-      lastModified: now,
-      changeFrequency: "daily",
-      priority: 0.9,
-    },
-    {
-      url: BASE_URL + "/results",
-      lastModified: now,
-      changeFrequency: "hourly",
-      priority: 0.93,
-    },
-    {
-      url: BASE_URL + "/matches/today",
-      lastModified: now,
-      changeFrequency: "hourly",
-      priority: 0.95,
-    },
+    { url: BASE_URL, lastModified: now, changeFrequency: "hourly", priority: 1 },
+    { url: BASE_URL + "/leagues", lastModified: now, changeFrequency: "daily", priority: 0.9 },
+    { url: BASE_URL + "/results", lastModified: now, changeFrequency: "hourly", priority: 0.93 },
+    { url: BASE_URL + "/matches/today", lastModified: now, changeFrequency: "hourly", priority: 0.95 },
     ...leagues.map((slug) => ({
       url: BASE_URL + "/leagues/" + slug,
       lastModified: now,
@@ -78,7 +58,7 @@ export default async function sitemap() {
       priority: 0.75,
     })),
     ...matchIds.map((id) => ({
-      url: BASE_URL + "/matches/" + id,
+      url: BASE_URL + "/matches/" + encodeURIComponent(id),
       lastModified: now,
       changeFrequency: "hourly",
       priority: 0.7,
