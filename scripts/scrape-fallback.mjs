@@ -81,6 +81,15 @@ const VERCEL_TEAM_CDN = "https://matchzone-live.vercel.app/teams";
 const logoCache = new Map();
 const localLogoCache = new Map();
 const identityLogoCache = new Map();
+const fallbackIdentityCache = new Map();
+const KNOWN_DIRTY_FLASHSCORE_SLUGS = new Set([
+  "widad-temara",
+  "wydad-ac",
+  "wydad-athletic",
+  "cod-meknes",
+  "codm-de-meknes",
+  "difaa-el-jadidi",
+]);
 let logoRegistry = { version: 1, updatedAt: null, teams: {}, providerIndex: {} };
 let sportsDbRateLimited = false;
 
@@ -107,18 +116,35 @@ async function loadLogoRegistry() {
   try {
     const parsed = JSON.parse(await fs.readFile(LOGO_REGISTRY_OUTPUT, "utf8"));
     const rawTeams = parsed.teams && typeof parsed.teams === "object" ? parsed.teams : {};
-    // Quarantine the old numeric Flashscore identities. Stable team identity
-    // comes from WU/WV slugs, not the legacy AU/AV values used by old runs.
+
+    // HARD RESET: quarantine every known-problem Flashscore identity on load.
+    // These identities are rebuilt only after the strict name/slug guard passes.
     const teams = Object.fromEntries(
-      Object.entries(rawTeams).filter(([key, entry]) => {
+      Object.entries(rawTeams).filter(([canonicalId, entry]) => {
         if (entry?.provider !== "flashscore") return true;
-        return !/^\d+$/.test(String(entry?.providerId || ""));
+        const providerId = normalizeFlashscoreSlug(entry?.providerId);
+        if (KNOWN_DIRTY_FLASHSCORE_SLUGS.has(providerId)) return false;
+
+        const requested = normalizeName(entry?.name);
+        const provider = normalizeName(providerId);
+        const knownMismatch =
+          (requested === "widadtemara" && provider !== "widadtemara") ||
+          (requested === "wydadac" && provider !== "wydadac" && provider !== "wydadathletic") ||
+          (requested === "codmeknes" && provider !== "codmeknes" && provider !== "codmde-meknes") ||
+          (requested === "difaaeljadidi" && provider !== "difaaeljadidi");
+
+        return !knownMismatch && !/^\d+$/.test(String(entry?.providerId || ""));
       })
     );
+
     const providerIndex = Object.fromEntries(
-      Object.entries(parsed.providerIndex && typeof parsed.providerIndex === "object" ? parsed.providerIndex : {})
-        .filter(([, canonicalId]) => teams[canonicalId])
+      Object.entries(
+        parsed.providerIndex && typeof parsed.providerIndex === "object"
+          ? parsed.providerIndex
+          : {}
+      ).filter(([, canonicalId]) => teams[canonicalId])
     );
+
     logoRegistry = {
       version: 1,
       updatedAt: parsed.updatedAt || null,
@@ -357,20 +383,94 @@ function normalizeFlashscoreSlug(value) {
     .replace(/-+/g, "-");
 }
 
+function teamNameTokens(value) {
+  return String(value || "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .split(/[^a-z0-9]+/)
+    .filter(Boolean)
+    .filter((token) => !["fc", "cf", "sc", "afc", "ac", "club", "de", "el", "the"].includes(token));
+}
+
+function strictTeamNameMatchesSlug(teamName, slug) {
+  const requested = teamNameTokens(teamName);
+  const candidate = teamNameTokens(slug);
+  if (!requested.length || !candidate.length) return false;
+
+  // Every distinctive requested token must exist in the candidate slug.
+  // This intentionally rejects famous-name collisions such as:
+  // "Widad Temara" -> "wydad-ac".
+  const candidateSet = new Set(candidate);
+  const allRequestedTokensPresent = requested.every((token) => candidateSet.has(token));
+  if (!allRequestedTokensPresent) return false;
+
+  // Require at least one exact distinctive anchor for short names too.
+  const distinctiveRequested = requested.filter((token) => token.length >= 3);
+  if (!distinctiveRequested.length) return false;
+  return distinctiveRequested.some((token) => candidateSet.has(token));
+}
+
+function makeTeamFallbackLogo(teamName) {
+  const name = String(teamName || "Team").trim() || "Team";
+  return (
+    "https://ui-avatars.com/api/?name=" +
+    encodeURIComponent(name) +
+    "&length=1&size=128&background=07100d&color=ffffff&bold=true&format=svg"
+  );
+}
+
+function clearInvalidFlashscoreIdentity(team, reason) {
+  if (!team) return team;
+  const slug = normalizeFlashscoreSlug(team.flashscoreSlug);
+  if (!slug || strictTeamNameMatchesSlug(team.name, slug)) return team;
+
+  console.warn("[logo][STRICT-REJECT]", team.name, "->", slug, reason || "name/slug mismatch");
+  team.flashscoreSlug = null;
+  team.flashscoreId = null;
+  team.teamIdentityId = null;
+  team.flashscoreLogo = null;
+  team.logo = null;
+  team.logoPath = null;
+  team.logoSource = null;
+  team.logoQuality = "rejected";
+  team.logoQualityReason = reason || "flashscore slug does not strictly match team name";
+  return team;
+}
+
+function sanitizeInvalidFlashscoreIdentities(matches) {
+  return matches.map((match) => ({
+    ...match,
+    teams: {
+      home: clearInvalidFlashscoreIdentity({ ...(match.teams?.home || {}) }),
+      away: clearInvalidFlashscoreIdentity({ ...(match.teams?.away || {}) }),
+    },
+  }));
+}
+
 function buildTeam(side, id, name, logoFilename, slug) {
-  const logo = cleanTeamLogo(flashscoreLogo(logoFilename));
   const flashscoreId = String(id || "").trim() || null;
-  const flashscoreSlug = normalizeFlashscoreSlug(slug);
+  const rawSlug = normalizeFlashscoreSlug(slug);
+  const slugAccepted = Boolean(rawSlug && strictTeamNameMatchesSlug(name, rawSlug));
+
+  if (rawSlug && !slugAccepted) {
+    console.warn("[logo][STRICT-REJECT] feed slug rejected:", name, "->", rawSlug);
+  }
+
+  const flashscoreSlug = slugAccepted ? rawSlug : null;
+  const logo = slugAccepted ? cleanTeamLogo(flashscoreLogo(logoFilename)) : null;
+
   return {
     id: flashscoreId,
-    flashscoreId,
-    flashscoreSlug: flashscoreSlug || null,
+    flashscoreId: slugAccepted ? flashscoreId : null,
+    flashscoreSlug,
     teamIdentityId: flashscoreSlug ? canonicalTeamId("flashscore", flashscoreSlug) : null,
     name: name || "",
     logo,
     flashscoreLogo: logo,
-    logoFilename: String(logoFilename || "").trim() || null,
+    logoFilename: slugAccepted ? String(logoFilename || "").trim() || null : null,
     logoSide: side,
+    logoQuality: slugAccepted ? "strict-pass" : "rejected",
   };
 }
 
@@ -728,34 +828,57 @@ async function fetchSportsDBLogo(teamName) {
   const name = String(teamName || "").trim();
   if (!name) return null;
   const cacheKey = normalizeName(name);
-  const localLogo = localLogoCache.get(cacheKey);
-  if (localLogo) return localLogo;
   if (logoCache.has(cacheKey)) return logoCache.get(cacheKey);
   if (sportsDbRateLimited) return null;
+
   try {
+    // Do NOT consult the legacy name-based /public/teams cache here.
+    // The fallback must be created from an exact TheSportsDB result + unique id.
     const url = SPORTSDB_BASE + "/searchteams.php?t=" + encodeURIComponent(name);
     const response = await fetch(url, {
       headers: { "User-Agent": USER_AGENT, Accept: "application/json" }
     });
     if (!response.ok) throw new Error("TheSportsDB HTTP " + response.status);
+
     const data = await response.json();
     const teams = Array.isArray(data?.teams) ? data.teams : [];
     const wanted = normalizeName(name);
-    const best = teams.find((team) => normalizeName(team?.strTeam) === wanted);
-    const logo = best?.strBadge || best?.strTeamBadge || null;
-    const teamId = best?.idTeam || null;
-    if (!best || !teamId || !logo) {
+    const exactMatches = teams.filter((team) => normalizeName(team?.strTeam) === wanted);
+    const uniqueIds = [...new Set(exactMatches.map((team) => String(team?.idTeam || "")).filter(Boolean))];
+
+    if (uniqueIds.length !== 1) {
+      console.warn("[logo][STRICT-FALLBACK-REJECT] TheSportsDB ambiguous/no exact ID:", name, uniqueIds);
       logoCache.set(cacheKey, null);
       return null;
     }
+
+    const best = exactMatches.find((team) => String(team?.idTeam || "") === uniqueIds[0]);
+    const logo = best?.strBadge || best?.strTeamBadge || null;
+    const teamId = best?.idTeam || null;
+
+    if (!best || !teamId || !logo) {
+      console.warn("[logo][STRICT-FALLBACK-REJECT] TheSportsDB exact team has no badge:", name, teamId);
+      logoCache.set(cacheKey, null);
+      return null;
+    }
+
     const localLogoPath = await saveIdentityTeamLogo({
       provider: "thesportsdb",
       providerTeamId: teamId,
       teamName: best.strTeam || name,
       logoUrl: logo,
+      overwrite: true,
     });
-    logoCache.set(cacheKey, localLogoPath || null);
-    return localLogoPath || null;
+
+    if (!localLogoPath) {
+      logoCache.set(cacheKey, null);
+      return null;
+    }
+
+    const identityId = canonicalTeamId("thesportsdb", teamId);
+    fallbackIdentityCache.set(cacheKey, identityId);
+    logoCache.set(cacheKey, localLogoPath);
+    return localLogoPath;
   } catch (error) {
     if (String(error?.message || "").includes("429")) {
       sportsDbRateLimited = true;
@@ -796,7 +919,7 @@ function repairDuplicateTeamLogos(matches) {
 }
 
 async function enrichTeamLogos(matches) {
-  const result = repairDuplicateTeamLogos(matches).map((match) => ({
+  const result = sanitizeInvalidFlashscoreIdentities(repairDuplicateTeamLogos(matches)).map((match) => ({
     ...match,
     teams: {
       home: { ...(match.teams?.home || {}) },
@@ -804,22 +927,25 @@ async function enrichTeamLogos(matches) {
     },
   }));
 
-  // STEP 1: load the repository cache, but do NOT let an old cached badge
-  // override a fresh side-specific Flashscore badge. This prevents a legacy
-  // generic-name cache such as "Berkane" from keeping the wrong crest.
   await loadLocalTeamLogos();
+  fallbackIdentityCache.clear();
 
   const refreshedFlashscoreLogos = new Set();
 
+  // STEP 1 — Flashscore only when the slug passes the strict requested-name guard.
   for (const match of result) {
     for (const side of ["home", "away"]) {
       const team = match.teams?.[side];
       if (!team?.name) continue;
 
       const flashscoreSlug = normalizeFlashscoreSlug(team.flashscoreSlug);
-      const freshFlashscoreLogo = cleanTeamLogo(team.flashscoreLogo);
+      if (!flashscoreSlug || !strictTeamNameMatchesSlug(team.name, flashscoreSlug)) {
+        clearInvalidFlashscoreIdentity(team, "strict guard rejected Flashscore slug");
+        continue;
+      }
 
-      if (flashscoreSlug && freshFlashscoreLogo && !refreshedFlashscoreLogos.has(flashscoreSlug)) {
+      const freshFlashscoreLogo = cleanTeamLogo(team.flashscoreLogo);
+      if (freshFlashscoreLogo && !refreshedFlashscoreLogos.has(flashscoreSlug)) {
         const localPath = await saveIdentityTeamLogo({
           provider: "flashscore",
           providerTeamId: flashscoreSlug,
@@ -832,125 +958,91 @@ async function enrichTeamLogos(matches) {
           team.logo = localPath;
           team.logoPath = localPath;
           team.teamIdentityId = canonicalTeamId("flashscore", flashscoreSlug);
-          team.logoSource = "Flashscore ID → GitHub registry";
+          team.logoSource = "Flashscore strict slug → GitHub registry";
+          team.logoQuality = "strict-pass";
           continue;
         }
       }
 
-      const identityId = flashscoreSlug ? canonicalTeamId("flashscore", flashscoreSlug) : null;
+      const identityId = canonicalTeamId("flashscore", flashscoreSlug);
       const identityPath = identityId ? identityLogoCache.get(identityId) : null;
       if (identityPath) {
         team.logo = identityPath;
         team.logoPath = identityPath;
         team.teamIdentityId = identityId;
         team.logoSource = "GitHub identity registry";
-        continue;
+        team.logoQuality = "strict-pass";
       }
-
-
     }
   }
 
-  // STEP 2: official Football-Data.org API for teams still missing.
-  // Its crest is downloaded into GitHub, so future runs become local.
+  // STEP 2 — Official Football-Data.org for missing teams.
+  // Matching is exact and ambiguous names are rejected; only the returned
+  // Football-Data team ID becomes the registry identity.
   await enrichFromFootballData(result);
 
+  // STEP 3 — TheSportsDB exact-name + unique idTeam fallback.
   const unique = new Map();
-
-  // STEP 3: Flashscore feed first, then TheSportsDB as the final fallback.
   for (const match of result) {
     for (const side of ["home", "away"]) {
       const team = match.teams?.[side];
       if (!team?.name) continue;
 
-      const key = normalizeName(team.name);
       if (team.teamIdentityId && identityLogoCache.get(team.teamIdentityId)) {
         team.logo = identityLogoCache.get(team.teamIdentityId);
         team.logoPath = team.logo;
         continue;
       }
 
-      const flashscoreSlug = normalizeFlashscoreSlug(team.flashscoreSlug);
-      const flashscoreLogoUrl = cleanTeamLogo(team.flashscoreLogo || team.logo);
-      if (flashscoreSlug && flashscoreLogoUrl) {
-        const localPath = await saveIdentityTeamLogo({
-          provider: "flashscore",
-          providerTeamId: flashscoreSlug,
-          teamName: team.name,
-          logoUrl: flashscoreLogoUrl,
-        });
-        if (localPath) {
-          team.logo = localPath;
-          team.logoPath = localPath;
-          team.teamIdentityId = canonicalTeamId("flashscore", flashscoreSlug);
-          team.logoSource = "Flashscore slug → GitHub registry";
-          continue;
-        }
-      }
-
+      const key = normalizeName(team.name);
       if (!unique.has(key)) unique.set(key, team.name);
     }
   }
 
-  console.log("[scraper] teams needing final fallback lookup:", unique.size);
+  console.log("[scraper] teams needing strict TheSportsDB fallback:", unique.size);
 
   for (const [key, name] of unique) {
-    if (localLogoCache.has(key)) continue;
     const logo = await fetchSportsDBLogo(name);
     if (logo) logoCache.set(key, logo);
     await sleep(2000);
   }
 
+  // Apply TheSportsDB ID-backed fallbacks to the actual team records.
   for (const match of result) {
     for (const side of ["home", "away"]) {
       const team = match.teams?.[side];
       if (!team?.name) continue;
-      const key = normalizeName(team.name);
-      if (team.teamIdentityId && identityLogoCache.get(team.teamIdentityId)) {
-        team.logo = identityLogoCache.get(team.teamIdentityId);
-        team.logoPath = team.logo;
-        team.logoSource = team.logoSource || "GitHub identity registry";
-        continue;
-      }
+      if (team.teamIdentityId && identityLogoCache.get(team.teamIdentityId)) continue;
 
+      const key = normalizeName(team.name);
+      const pathFromFallback = logoCache.get(key);
+      const fallbackIdentity = fallbackIdentityCache.get(key);
+      if (pathFromFallback && fallbackIdentity) {
+        team.logo = pathFromFallback;
+        team.logoPath = pathFromFallback;
+        team.teamIdentityId = fallbackIdentity;
+        team.logoSource = "TheSportsDB exact name + idTeam → GitHub registry";
+        team.logoQuality = "fallback-id";
+      }
     }
   }
 
-  // STEP 4: final identity lock. Once a provider ID has a verified registry
-  // entry, the registry is authoritative and a legacy name-cache logo can never
-  // overwrite it. Also enforce the invariant that two different teams in one
-  // fixture cannot share the same persisted badge.
+  // STEP 4 — authoritative identity lock, then hard collision guard.
   for (const match of result) {
     const home = match.teams?.home;
     const away = match.teams?.away;
+
     for (const team of [home, away]) {
       if (!team?.teamIdentityId) continue;
       const locked = identityLogoCache.get(team.teamIdentityId);
       if (locked) {
         team.logo = locked;
         team.logoPath = locked;
-        team.logoSource = "GitHub identity registry (locked)";
+        team.logoSource = team.logoSource || "GitHub identity registry (locked)";
       }
     }
-    if (
-      home?.teamIdentityId &&
-      away?.teamIdentityId &&
-      home.teamIdentityId !== away.teamIdentityId &&
-      home.logo &&
-      away.logo &&
-      home.logo === away.logo
-    ) {
-      const awayIdentity = identityLogoCache.get(away.teamIdentityId);
-      const homeIdentity = identityLogoCache.get(home.teamIdentityId);
-      if (awayIdentity && awayIdentity !== home.logo) away.logo = awayIdentity;
-      else if (homeIdentity && homeIdentity !== away.logo) home.logo = homeIdentity;
-      else {
-        away.logo = null;
-        away.logoPath = null;
-        away.logoSource = null;
-      }
-      console.warn("[logo] fixture identity collision repaired:", match.fixture?.id);
-    }
+
+    enforceFixtureLogoQuality(match);
   }
 
   return result;
@@ -1092,6 +1184,49 @@ function mergeFeedMatches(existing, incoming) {
   };
 }
 
+function enforceFixtureLogoQuality(match) {
+  if (!match?.teams) return match;
+  const home = match.teams.home || {};
+  const away = match.teams.away || {};
+
+  const homeName = String(home.name || "Home");
+  const awayName = String(away.name || "Away");
+  const differentTeams =
+    normalizeName(homeName) !== normalizeName(awayName) ||
+    String(home.teamIdentityId || "") !== String(away.teamIdentityId || "");
+
+  if (!differentTeams) return match;
+
+  const homePath = String(home.logoPath || home.logo || "").trim();
+  const awayPath = String(away.logoPath || away.logo || "").trim();
+
+  if (homePath && awayPath && homePath === awayPath) {
+    console.warn("[logo][COLLISION-GUARD] identical home/away logo invalidated:", match.fixture?.id, homeName, awayName);
+
+    home.logo = makeTeamFallbackLogo(homeName);
+    home.logoPath = home.logo;
+    home.flashscoreLogo = null;
+    home.logoSource = "UI Avatars collision fallback";
+    home.logoQuality = "collision-fallback";
+
+    away.logo = makeTeamFallbackLogo(awayName);
+    away.logoPath = away.logo;
+    away.flashscoreLogo = null;
+    away.logoSource = "UI Avatars collision fallback";
+    away.logoQuality = "collision-fallback";
+  }
+
+  return match;
+}
+
+function enforceDatastoreLogoQuality(matches) {
+  return matches.map((match) => {
+    const sanitized = sanitizeInvalidFlashscoreIdentities([match])[0];
+    enforceFixtureLogoQuality(sanitized);
+    return sanitized;
+  });
+}
+
 function dedupe(matches) {
   const byId = new Map();
   const byFixture = new Map();
@@ -1156,9 +1291,11 @@ async function main() {
   }
 
   const baseMerged = dedupe([...(previous.matches || []), ...scraped]).slice(-5000);
-  // Repair legacy duplicated badges before logo enrichment so a stale home
-  // badge cannot block the lookup of the real away-team badge.
-  const repairedBase = repairDuplicateTeamLogos(baseMerged);
+
+  // Hard sanitize legacy poisoned identities BEFORE any enrichment.
+  // This guarantees a previous wrong logo cannot survive into the new run.
+  const sanitizedBase = sanitizeInvalidFlashscoreIdentities(baseMerged);
+  const repairedBase = repairDuplicateTeamLogos(sanitizedBase);
   const enrichedBase = await enrichTeamLogos(repairedBase);
   const detailMap = await scrapeMatchDetails(scraped);
 
@@ -1181,13 +1318,15 @@ async function main() {
     };
   });
 
+  const qualityCheckedMatches = enforceDatastoreLogoQuality(merged);
+
   const payload = {
     updatedAt: new Date().toISOString(),
     source: scraped.some((m) => m.source === "Flashscore Feed") ? "flashscore-feed" : "flashscore-html",
     leagueCount: LEAGUES.length,
-    matchCount: merged.length,
-    detailMatchCount: merged.filter((m) => (m.details?.events?.length || 0) + (m.details?.statistics?.length || 0) > 0).length,
-    matches: merged,
+    matchCount: qualityCheckedMatches.length,
+    detailMatchCount: qualityCheckedMatches.filter((m) => (m.details?.events?.length || 0) + (m.details?.statistics?.length || 0) > 0).length,
+    matches: qualityCheckedMatches,
   };
 
   await fs.writeFile(OUTPUT, JSON.stringify(payload, null, 2) + "\n", "utf8");
@@ -1198,5 +1337,3 @@ async function main() {
 
 main().catch((error) => {
   console.error(error);
-  process.exit(1);
-});
