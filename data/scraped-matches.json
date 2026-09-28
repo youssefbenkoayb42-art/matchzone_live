@@ -1,10 +1,10 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-09-28T16:45:41.962Z",
+  "updatedAt": "2026-09-28T22:00:44.436Z",
   "source": "football-data.org + ESPN + OpenFootball + TheSportsDB enrichment",
   "coverageWindow": {
-    "from": "2026-09-26T16:44:55.869Z",
-    "to": "2026-10-05T16:44:55.869Z"
+    "from": "2026-09-26T22:00:19.220Z",
+    "to": "2026-10-05T22:00:19.220Z"
   },
   "sourcePolicy": {
     "primary": "football-data.org",
@@ -2114,7 +2114,7 @@
             "intAway": "13"
           }
         ],
-        "updatedAt": "2026-09-28T16:45:34.269Z",
+        "updatedAt": "2026-09-28T22:00:36.947Z",
         "source": "primary provider + TheSportsDB enrichment",
         "theSportsDbEventId": "2487538"
       }
@@ -2324,7 +2324,7 @@
             "intAway": "1"
           }
         ],
-        "updatedAt": "2026-09-28T16:45:36.748Z",
+        "updatedAt": "2026-09-28T22:00:39.387Z",
         "source": "primary provider + TheSportsDB enrichment",
         "theSportsDbEventId": "2558125"
       }
@@ -2702,7 +2702,7 @@
             "intAway": "8"
           }
         ],
-        "updatedAt": "2026-09-28T16:45:39.761Z",
+        "updatedAt": "2026-09-28T22:00:42.237Z",
         "source": "primary provider + TheSportsDB enrichment",
         "theSportsDbEventId": "2407100"
       }
@@ -5341,62 +5341,6 @@
     },
     {
       "fixture": {
-        "id": "espn-fifa.friendly-401921545",
-        "providerMatchId": "401921545",
-        "date": "2026-09-30T23:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "202",
-          "espnId": "202",
-          "provider": "espn",
-          "identity": "espn:202",
-          "name": "Argentina",
-          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "204",
-          "espnId": "204",
-          "provider": "espn",
-          "identity": "espn:204",
-          "name": "Bolivia",
-          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bol.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/bol.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:fifa.friendly",
-        "name": "مباريات دولية ودية",
-        "logo": null
-      },
-      "competitionType": "international-team",
-      "source": "espn",
-      "externalId": "401921545",
-      "externalIds": {
-        "espn": "401921545",
-        "espn-league": "fifa.friendly"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
         "id": "espn-usa.1-761833",
         "providerMatchId": "761833",
         "date": "2026-09-30T23:30Z",
@@ -5443,6 +5387,62 @@
       "externalIds": {
         "espn": "761833",
         "espn-league": "usa.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401921545",
+        "providerMatchId": "401921545",
+        "date": "2026-10-01T00:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "202",
+          "espnId": "202",
+          "provider": "espn",
+          "identity": "espn:202",
+          "name": "Argentina",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "204",
+          "espnId": "204",
+          "provider": "espn",
+          "identity": "espn:204",
+          "name": "Bolivia",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bol.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/bol.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401921545",
+      "externalIds": {
+        "espn": "401921545",
+        "espn-league": "fifa.friendly"
       },
       "details": {
         "events": [],
@@ -6964,62 +6964,6 @@
     },
     {
       "fixture": {
-        "id": "espn-fifa.friendly-401921544",
-        "providerMatchId": "401921544",
-        "date": "2026-10-03T20:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "202",
-          "espnId": "202",
-          "provider": "espn",
-          "identity": "espn:202",
-          "name": "Argentina",
-          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "2845",
-          "espnId": "2845",
-          "provider": "espn",
-          "identity": "espn:2845",
-          "name": "Burkina Faso",
-          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bka.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/bka.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:fifa.friendly",
-        "name": "مباريات دولية ودية",
-        "logo": null
-      },
-      "competitionType": "international-team",
-      "source": "espn",
-      "externalId": "401921544",
-      "externalIds": {
-        "espn": "401921544",
-        "espn-league": "fifa.friendly"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
         "id": "espn-col.1-401877904",
         "providerMatchId": "401877904",
         "date": "2026-10-03T21:05Z",
@@ -7127,6 +7071,62 @@
         "statistics": [],
         "updatedAt": null,
         "source": "football-data.org"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401921544",
+        "providerMatchId": "401921544",
+        "date": "2026-10-04T00:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "202",
+          "espnId": "202",
+          "provider": "espn",
+          "identity": "espn:202",
+          "name": "Argentina",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "2845",
+          "espnId": "2845",
+          "provider": "espn",
+          "identity": "espn:2845",
+          "name": "Burkina Faso",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bka.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/bka.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401921544",
+      "externalIds": {
+        "espn": "401921544",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
       }
     },
     {
