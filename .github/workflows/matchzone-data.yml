@@ -19,7 +19,7 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
 
     steps:
       - name: Checkout
@@ -64,7 +64,7 @@ jobs:
             echo "No changes."
             exit 0
           fi
-          git commit -m "Replace contaminated logo pipeline with clean ID-based data"
+          git commit -m "Update free multi-source football snapshot"
           for attempt in 1 2 3; do
             git fetch origin main
             git rebase origin/main && git push && exit 0
