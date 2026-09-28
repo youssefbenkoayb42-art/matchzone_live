@@ -1,8 +1,10 @@
 import fs from "node:fs/promises";
 import path from "node:path";
+import crypto from "node:crypto";
 
 const BASE = "https://www.flashscore.com";
 const OUTPUT = path.join(process.cwd(), "data", "scraped-matches.json");
+const LOGO_REGISTRY_OUTPUT = path.join(process.cwd(), "data", "team-logo-registry.json");
 const TEAM_LOGO_DIR = path.join(process.cwd(), "public", "teams");
 const USER_AGENT =
   process.env.SCRAPER_USER_AGENT ||
@@ -77,6 +79,8 @@ const FOOTBALL_DATA_API_KEY = String(process.env.FOOTBALL_DATA_API_KEY || "").tr
 const VERCEL_TEAM_CDN = "https://matchzone-live.vercel.app/teams";
 const logoCache = new Map();
 const localLogoCache = new Map();
+const identityLogoCache = new Map();
+let logoRegistry = { version: 1, updatedAt: null, teams: {}, providerIndex: {} };
 let sportsDbRateLimited = false;
 
 
@@ -98,9 +102,36 @@ function localLogoKey(teamName) {
   return normalizeName(teamName);
 }
 
+async function loadLogoRegistry() {
+  try {
+    const parsed = JSON.parse(await fs.readFile(LOGO_REGISTRY_OUTPUT, "utf8"));
+    logoRegistry = {
+      version: 1,
+      updatedAt: parsed.updatedAt || null,
+      teams: parsed.teams && typeof parsed.teams === "object" ? parsed.teams : {},
+      providerIndex: parsed.providerIndex && typeof parsed.providerIndex === "object" ? parsed.providerIndex : {},
+    };
+  } catch {
+    logoRegistry = { version: 1, updatedAt: null, teams: {}, providerIndex: {} };
+  }
+}
+
+async function saveLogoRegistry() {
+  logoRegistry.updatedAt = new Date().toISOString();
+  await fs.mkdir(path.dirname(LOGO_REGISTRY_OUTPUT), { recursive: true });
+  await fs.writeFile(LOGO_REGISTRY_OUTPUT, JSON.stringify(logoRegistry, null, 2) + "\n", "utf8");
+}
+
 async function loadLocalTeamLogos() {
   await fs.mkdir(TEAM_LOGO_DIR, { recursive: true });
+  await loadLogoRegistry();
   localLogoCache.clear();
+  identityLogoCache.clear();
+
+  for (const [canonicalId, entry] of Object.entries(logoRegistry.teams)) {
+    if (entry?.logoPath) identityLogoCache.set(canonicalId, entry.logoPath);
+  }
+
   const entries = await fs.readdir(TEAM_LOGO_DIR, { withFileTypes: true });
   for (const entry of entries) {
     if (!entry.isFile()) continue;
@@ -108,8 +139,93 @@ async function loadLocalTeamLogos() {
     if (!match) continue;
     localLogoCache.set(match[1], "/teams/" + entry.name);
   }
-  console.log("[scraper] local team logos:", localLogoCache.size);
+  console.log("[scraper] identity logo registry:", Object.keys(logoRegistry.teams).length);
+  console.log("[scraper] legacy local team logos:", localLogoCache.size);
   console.log("[scraper] Vercel team CDN:", VERCEL_TEAM_CDN);
+}
+
+function providerKey(provider, id) {
+  const value = String(id || "").trim();
+  return value ? String(provider || "").toLowerCase() + ":" + value : null;
+}
+
+function canonicalTeamId(provider, id) {
+  const key = providerKey(provider, id);
+  if (!key) return null;
+  return logoRegistry.providerIndex[key] || key.replace(/[^a-z0-9:_-]/gi, "_");
+}
+
+function mimeFromExtension(extension) {
+  const value = String(extension || "").toLowerCase();
+  if (value === "jpg" || value === "jpeg") return "image/jpeg";
+  if (value === "webp") return "image/webp";
+  if (value === "svg") return "image/svg+xml";
+  return "image/png";
+}
+
+async function saveIdentityTeamLogo({ provider, providerTeamId, teamName, logoUrl, overwrite = false }) {
+  const providerName = String(provider || "").trim().toLowerCase();
+  const id = String(providerTeamId || "").trim();
+  const cleanUrl = cleanTeamLogo(logoUrl);
+  if (!providerName || !id || !teamName || !cleanUrl) return null;
+
+  const pKey = providerKey(providerName, id);
+  const canonicalId = canonicalTeamId(providerName, id);
+  if (!pKey || !canonicalId) return null;
+
+  const existingEntry = logoRegistry.teams[canonicalId] || {};
+  if (existingEntry.logoPath && !overwrite) {
+    identityLogoCache.set(canonicalId, existingEntry.logoPath);
+    return existingEntry.logoPath;
+  }
+
+  try {
+    const response = await fetch(cleanUrl, {
+      headers: {
+        "User-Agent": USER_AGENT,
+        Accept: "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+        Referer: "https://www.flashscore.com/",
+      },
+    });
+    if (!response.ok) throw new Error("logo HTTP " + response.status);
+    const buffer = Buffer.from(await response.arrayBuffer());
+    if (!buffer.length) throw new Error("empty logo");
+
+    const extension = logoExtensionFromUrl(cleanUrl);
+    const hash = crypto.createHash("sha256").update(buffer).digest("hex");
+    const filename = canonicalId.replace(/[^a-z0-9_-]/gi, "_") + "." + extension;
+    const filePath = path.join(TEAM_LOGO_DIR, filename);
+    await fs.writeFile(filePath, buffer);
+
+    const duplicateHash = Object.entries(logoRegistry.teams).find(
+      ([otherId, entry]) => otherId !== canonicalId && entry?.sha256 === hash
+    );
+
+    if (duplicateHash && providerName === "flashscore") {
+      console.warn("[logo] duplicate hash across identities:", canonicalId, duplicateHash[0]);
+    }
+
+    logoRegistry.teams[canonicalId] = {
+      ...existingEntry,
+      canonicalId,
+      name: teamName,
+      provider: providerName,
+      providerId: id,
+      logoUrl: cleanUrl,
+      logoPath: "/teams/" + filename,
+      sha256: hash,
+      bytes: buffer.length,
+      mime: mimeFromExtension(extension),
+      status: duplicateHash ? "review" : "verified",
+      updatedAt: new Date().toISOString(),
+    };
+    logoRegistry.providerIndex[pKey] = canonicalId;
+    identityLogoCache.set(canonicalId, "/teams/" + filename);
+    return "/teams/" + filename;
+  } catch (error) {
+    console.warn("[logo] identity download failed", providerName, id, teamName, error.message);
+    return null;
+  }
 }
 
 async function saveLocalTeamLogo(teamName, logoUrl, options = {}) {
@@ -118,7 +234,6 @@ async function saveLocalTeamLogo(teamName, logoUrl, options = {}) {
   const overwrite = Boolean(options.overwrite);
   const existing = localLogoCache.get(key);
   if (existing && !overwrite) return existing;
-
   try {
     const response = await fetch(logoUrl, {
       headers: {
@@ -130,16 +245,14 @@ async function saveLocalTeamLogo(teamName, logoUrl, options = {}) {
     if (!response.ok) throw new Error("logo HTTP " + response.status);
     const buffer = Buffer.from(await response.arrayBuffer());
     if (!buffer.length) throw new Error("empty logo");
-
     const extension = logoExtensionFromUrl(logoUrl);
     const filename = key + "." + extension;
-    const filePath = path.join(TEAM_LOGO_DIR, filename);
-    await fs.writeFile(filePath, buffer);
+    await fs.writeFile(path.join(TEAM_LOGO_DIR, filename), buffer);
     const publicPath = "/teams/" + filename;
     localLogoCache.set(key, publicPath);
     return publicPath;
   } catch (error) {
-    console.warn("[scraper] local logo download failed", teamName, error.message);
+    console.warn("[scraper] legacy local logo download failed", teamName, error.message);
     return null;
   }
 }
@@ -225,6 +338,7 @@ function buildTeam(side, id, name, logoFilename) {
   const logo = cleanTeamLogo(flashscoreLogo(logoFilename));
   return {
     id: id || null,
+    flashscoreId: id || null,
     name: name || "",
     logo,
     flashscoreLogo: logo,
@@ -558,17 +672,24 @@ async function enrichFromFootballData(matches) {
     for (const side of ["home", "away"]) {
       const team = match.teams?.[side];
       if (!team?.name) continue;
-      if (team.logo && String(team.logo).startsWith("/")) continue;
+      if (team.teamIdentityId) continue;
       if (cleanTeamLogo(team.logo || team.flashscoreLogo)) continue;
 
       const apiTeam = byName.get(normalizeName(team.name));
-      if (!apiTeam) continue;
+      if (!apiTeam?.id) continue;
 
-      const localPath = await saveLocalTeamLogo(team.name, apiTeam.crest);
+      const localPath = await saveIdentityTeamLogo({
+        provider: "football-data",
+        providerTeamId: apiTeam.id,
+        teamName: team.name,
+        logoUrl: apiTeam.crest,
+      });
       if (localPath) {
         team.logo = localPath;
-        team.logoSource = "Football-Data.org → GitHub local";
+        team.logoPath = localPath;
+        team.logoSource = "Football-Data.org ID → GitHub registry";
         team.footballDataId = apiTeam.id;
+        team.teamIdentityId = canonicalTeamId("football-data", apiTeam.id);
       }
     }
   }
@@ -658,26 +779,42 @@ async function enrichTeamLogos(matches) {
       const team = match.teams?.[side];
       if (!team?.name) continue;
 
-      const key = normalizeName(team.name);
+      const legacyKey = normalizeName(team.name);
+      const flashscoreId = String(team.flashscoreId || team.id || "").trim();
       const freshFlashscoreLogo = cleanTeamLogo(team.flashscoreLogo);
 
-      if (freshFlashscoreLogo && !refreshedFlashscoreLogos.has(key)) {
-        const localPath = await saveLocalTeamLogo(team.name, freshFlashscoreLogo, {
+      if (flashscoreId && freshFlashscoreLogo && !refreshedFlashscoreLogos.has(flashscoreId)) {
+        const localPath = await saveIdentityTeamLogo({
+          provider: "flashscore",
+          providerTeamId: flashscoreId,
+          teamName: team.name,
+          logoUrl: freshFlashscoreLogo,
           overwrite: true,
         });
-
         if (localPath) {
-          refreshedFlashscoreLogos.add(key);
+          refreshedFlashscoreLogos.add(flashscoreId);
           team.logo = localPath;
-          team.logoSource = "Flashscore → GitHub local (fresh)";
+          team.logoPath = localPath;
+          team.teamIdentityId = canonicalTeamId("flashscore", flashscoreId);
+          team.logoSource = "Flashscore ID → GitHub registry";
           continue;
         }
       }
 
-      const localLogo = localLogoCache.get(key);
+      const identityId = flashscoreId ? canonicalTeamId("flashscore", flashscoreId) : null;
+      const identityPath = identityId ? identityLogoCache.get(identityId) : null;
+      if (identityPath) {
+        team.logo = identityPath;
+        team.logoPath = identityPath;
+        team.teamIdentityId = identityId;
+        team.logoSource = "GitHub identity registry";
+        continue;
+      }
+
+      const localLogo = localLogoCache.get(legacyKey);
       if (localLogo) {
         team.logo = localLogo;
-        team.logoSource = "GitHub local";
+        team.logoSource = "GitHub legacy cache";
       }
     }
   }
@@ -695,21 +832,35 @@ async function enrichTeamLogos(matches) {
       if (!team?.name) continue;
 
       const key = normalizeName(team.name);
-      const localLogo = localLogoCache.get(key);
-      if (localLogo) {
-        team.logo = localLogo;
-        team.logoSource = team.logoSource || "GitHub local";
+      if (team.teamIdentityId && identityLogoCache.get(team.teamIdentityId)) {
+        team.logo = identityLogoCache.get(team.teamIdentityId);
+        team.logoPath = team.logo;
         continue;
       }
 
+      const flashscoreId = String(team.flashscoreId || team.id || "").trim();
       const flashscoreLogoUrl = cleanTeamLogo(team.flashscoreLogo || team.logo);
-      if (flashscoreLogoUrl) {
-        const localPath = await saveLocalTeamLogo(team.name, flashscoreLogoUrl);
+      if (flashscoreId && flashscoreLogoUrl) {
+        const localPath = await saveIdentityTeamLogo({
+          provider: "flashscore",
+          providerTeamId: flashscoreId,
+          teamName: team.name,
+          logoUrl: flashscoreLogoUrl,
+        });
         if (localPath) {
           team.logo = localPath;
-          team.logoSource = "Flashscore → GitHub local";
+          team.logoPath = localPath;
+          team.teamIdentityId = canonicalTeamId("flashscore", flashscoreId);
+          team.logoSource = "Flashscore ID → GitHub registry";
           continue;
         }
+      }
+
+      const legacyLogo = localLogoCache.get(key);
+      if (legacyLogo) {
+        team.logo = legacyLogo;
+        team.logoSource = "GitHub legacy cache";
+        continue;
       }
 
       if (!unique.has(key)) unique.set(key, team.name);
@@ -730,10 +881,16 @@ async function enrichTeamLogos(matches) {
       const team = match.teams?.[side];
       if (!team?.name) continue;
       const key = normalizeName(team.name);
+      if (team.teamIdentityId && identityLogoCache.get(team.teamIdentityId)) {
+        team.logo = identityLogoCache.get(team.teamIdentityId);
+        team.logoPath = team.logo;
+        team.logoSource = team.logoSource || "GitHub identity registry";
+        continue;
+      }
       const localLogo = localLogoCache.get(key);
       if (localLogo) {
         team.logo = localLogo;
-        team.logoSource = team.logoSource || "GitHub local";
+        team.logoSource = team.logoSource || "GitHub legacy cache";
       }
     }
   }
@@ -976,6 +1133,8 @@ async function main() {
   };
 
   await fs.writeFile(OUTPUT, JSON.stringify(payload, null, 2) + "\n", "utf8");
+  await saveLogoRegistry();
+  console.log("[scraper] logo registry saved:", Object.keys(logoRegistry.teams).length, "identities");
   console.log("[scraper] saved", merged.length, "unique matches from", LEAGUES.length, "competitions");
 }
 
