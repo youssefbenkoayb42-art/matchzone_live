@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-28T05:25:33.614Z",
+  "updatedAt": "2026-09-28T12:31:33.231Z",
   "source": "flashscore-feed",
   "leagueCount": 52,
   "matchCount": 116,
@@ -2406,8 +2406,8 @@
           {
             "name": "Expected goals (xG)",
             "key": "expected goals (xg)",
-            "home": "0.62",
-            "away": "0.27",
+            "home": "0.78",
+            "away": "0.21",
             "period": "match"
           },
           {
@@ -2420,7 +2420,7 @@
           {
             "name": "Total shots",
             "key": "shots",
-            "home": "17",
+            "home": "18",
             "away": "6",
             "period": "match"
           },
@@ -2448,8 +2448,8 @@
           {
             "name": "Passes",
             "key": "passes",
-            "home": "86% (424/491)",
-            "away": "81% (359/445)",
+            "home": "86% (420/489)",
+            "away": "81% (360/447)",
             "period": "match"
           },
           {
@@ -2462,14 +2462,14 @@
           {
             "name": "xG on target (xGOT)",
             "key": "xg on target (xgot)",
-            "home": "0.05",
-            "away": "0.44",
+            "home": "0.07",
+            "away": "0.59",
             "period": "match"
           },
           {
             "name": "Shots off target",
             "key": "shots",
-            "home": "9",
+            "home": "10",
             "away": "3",
             "period": "match"
           },
@@ -2490,7 +2490,7 @@
           {
             "name": "Shots outside the box",
             "key": "shots",
-            "home": "11",
+            "home": "12",
             "away": "2",
             "period": "match"
           },
@@ -2512,7 +2512,7 @@
             "name": "Accurate through passes",
             "key": "accurate through passes",
             "home": "0",
-            "away": "0",
+            "away": "1",
             "period": "match"
           },
           {
@@ -2532,29 +2532,29 @@
           {
             "name": "Long passes",
             "key": "long passes",
-            "home": "57% (28/49)",
-            "away": "54% (49/90)",
+            "home": "60% (28/47)",
+            "away": "50% (40/80)",
             "period": "match"
           },
           {
             "name": "Passes in final third",
             "key": "passes in final third",
-            "home": "75% (126/168)",
-            "away": "62% (50/81)",
+            "home": "74% (125/168)",
+            "away": "62% (49/79)",
             "period": "match"
           },
           {
             "name": "Crosses",
             "key": "crosses",
-            "home": "29% (10/35)",
+            "home": "26% (9/34)",
             "away": "15% (2/13)",
             "period": "match"
           },
           {
             "name": "Expected assists (xA)",
             "key": "expected assists (xa)",
-            "home": "0.79",
-            "away": "0.36",
+            "home": "0.90",
+            "away": "0.52",
             "period": "match"
           },
           {
@@ -2574,36 +2574,36 @@
           {
             "name": "Tackles",
             "key": "tackles",
-            "home": "89% (8/9)",
-            "away": "43% (6/14)",
+            "home": "80% (8/10)",
+            "away": "44% (7/16)",
             "period": "match"
           },
           {
             "name": "Duels won",
             "key": "duels won",
-            "home": "35",
-            "away": "37",
+            "home": "40",
+            "away": "40",
             "period": "match"
           },
           {
             "name": "Clearances",
             "key": "clearances",
-            "home": "13",
+            "home": "15",
             "away": "31",
             "period": "match"
           },
           {
             "name": "Interceptions",
             "key": "interceptions",
-            "home": "15",
-            "away": "11",
+            "home": "14",
+            "away": "8",
             "period": "match"
           },
           {
             "name": "Errors leading to shot",
             "key": "errors leading to shot",
             "home": "0",
-            "away": "0",
+            "away": "1",
             "period": "match"
           },
           {
@@ -2623,15 +2623,15 @@
           {
             "name": "xGOT faced",
             "key": "xgot faced",
-            "home": "0.44",
-            "away": "0.05",
+            "home": "0.59",
+            "away": "0.07",
             "period": "match"
           },
           {
             "name": "Goals prevented",
             "key": "goals prevented",
-            "home": "0.44",
-            "away": "0.05",
+            "home": "0.59",
+            "away": "0.07",
             "period": "match"
           },
           {
@@ -2644,8 +2644,8 @@
           {
             "name": "Expected goals (xG)",
             "key": "expected goals (xg)",
-            "home": "0.22",
-            "away": "0.21",
+            "home": "0.29",
+            "away": "0.16",
             "period": "match"
           },
           {
@@ -2658,7 +2658,7 @@
           {
             "name": "Total shots",
             "key": "shots",
-            "home": "8",
+            "home": "9",
             "away": "3",
             "period": "match"
           },
@@ -2679,8 +2679,8 @@
           {
             "name": "Passes",
             "key": "passes",
-            "home": "85% (198/232)",
-            "away": "84% (230/274)",
+            "home": "86% (198/231)",
+            "away": "83% (231/277)",
             "period": "match"
           },
           {
@@ -2694,13 +2694,13 @@
             "name": "xG on target (xGOT)",
             "key": "xg on target (xgot)",
             "home": "0.04",
-            "away": "0.44",
+            "away": "0.59",
             "period": "match"
           },
           {
             "name": "Shots off target",
             "key": "shots",
-            "home": "4",
+            "home": "5",
             "away": "1",
             "period": "match"
           },
@@ -2721,7 +2721,7 @@
           {
             "name": "Shots outside the box",
             "key": "shots",
-            "home": "6",
+            "home": "7",
             "away": "0",
             "period": "match"
           },
@@ -2730,6 +2730,13 @@
             "key": "touches in opposition box",
             "home": "9",
             "away": "7",
+            "period": "match"
+          },
+          {
+            "name": "Accurate through passes",
+            "key": "accurate through passes",
+            "home": "0",
+            "away": "0",
             "period": "match"
           },
           {
@@ -2749,7 +2756,7 @@
           {
             "name": "Long passes",
             "key": "long passes",
-            "home": "46% (13/28)",
+            "home": "52% (14/27)",
             "away": "68% (30/44)",
             "period": "match"
           },
@@ -2757,7 +2764,7 @@
             "name": "Passes in final third",
             "key": "passes in final third",
             "home": "71% (60/84)",
-            "away": "65% (31/48)",
+            "away": "66% (31/47)",
             "period": "match"
           },
           {
@@ -2770,7 +2777,7 @@
           {
             "name": "Expected assists (xA)",
             "key": "expected assists (xa)",
-            "home": "0.32",
+            "home": "0.33",
             "away": "0.27",
             "period": "match"
           },
@@ -2792,28 +2799,35 @@
             "name": "Tackles",
             "key": "tackles",
             "home": "100% (6/6)",
-            "away": "50% (4/8)",
+            "away": "50% (5/10)",
             "period": "match"
           },
           {
             "name": "Duels won",
             "key": "duels won",
-            "home": "16",
-            "away": "17",
+            "home": "17",
+            "away": "18",
             "period": "match"
           },
           {
             "name": "Clearances",
             "key": "clearances",
-            "home": "5",
+            "home": "7",
             "away": "14",
             "period": "match"
           },
           {
             "name": "Interceptions",
             "key": "interceptions",
-            "home": "8",
-            "away": "6",
+            "home": "6",
+            "away": "4",
+            "period": "match"
+          },
+          {
+            "name": "Errors leading to shot",
+            "key": "errors leading to shot",
+            "home": "0",
+            "away": "0",
             "period": "match"
           },
           {
@@ -2826,14 +2840,14 @@
           {
             "name": "xGOT faced",
             "key": "xgot faced",
-            "home": "0.44",
+            "home": "0.59",
             "away": "0.04",
             "period": "match"
           },
           {
             "name": "Goals prevented",
             "key": "goals prevented",
-            "home": "0.44",
+            "home": "0.59",
             "away": "0.04",
             "period": "match"
           },
@@ -2847,8 +2861,8 @@
           {
             "name": "Expected goals (xG)",
             "key": "expected goals (xg)",
-            "home": "0.40",
-            "away": "0.06",
+            "home": "0.49",
+            "away": "0.05",
             "period": "match"
           },
           {
@@ -2856,13 +2870,6 @@
             "key": "possession",
             "home": "60%",
             "away": "40%",
-            "period": "match"
-          },
-          {
-            "name": "Total shots",
-            "key": "shots",
-            "home": "9",
-            "away": "3",
             "period": "match"
           },
           {
@@ -2889,14 +2896,14 @@
           {
             "name": "Passes",
             "key": "passes",
-            "home": "87% (226/259)",
-            "away": "75% (129/171)",
+            "home": "86% (222/258)",
+            "away": "76% (129/170)",
             "period": "match"
           },
           {
             "name": "xG on target (xGOT)",
             "key": "xg on target (xgot)",
-            "home": "0.01",
+            "home": "0.03",
             "away": "0.00",
             "period": "match"
           },
@@ -2945,29 +2952,29 @@
           {
             "name": "Long passes",
             "key": "long passes",
-            "home": "71% (15/21)",
-            "away": "41% (19/46)",
+            "home": "70% (14/20)",
+            "away": "28% (10/36)",
             "period": "match"
           },
           {
             "name": "Passes in final third",
             "key": "passes in final third",
-            "home": "79% (66/84)",
-            "away": "58% (19/33)",
+            "home": "77% (65/84)",
+            "away": "56% (18/32)",
             "period": "match"
           },
           {
             "name": "Crosses",
             "key": "crosses",
-            "home": "32% (7/22)",
+            "home": "29% (6/21)",
             "away": "11% (1/9)",
             "period": "match"
           },
           {
             "name": "Expected assists (xA)",
             "key": "expected assists (xa)",
-            "home": "0.47",
-            "away": "0.09",
+            "home": "0.57",
+            "away": "0.25",
             "period": "match"
           },
           {
@@ -2987,15 +2994,15 @@
           {
             "name": "Tackles",
             "key": "tackles",
-            "home": "67% (2/3)",
+            "home": "50% (2/4)",
             "away": "33% (2/6)",
             "period": "match"
           },
           {
             "name": "Duels won",
             "key": "duels won",
-            "home": "19",
-            "away": "20",
+            "home": "23",
+            "away": "22",
             "period": "match"
           },
           {
@@ -3008,8 +3015,8 @@
           {
             "name": "Interceptions",
             "key": "interceptions",
-            "home": "7",
-            "away": "5",
+            "home": "8",
+            "away": "4",
             "period": "match"
           },
           {
@@ -3023,14 +3030,14 @@
             "name": "xGOT faced",
             "key": "xgot faced",
             "home": "0.00",
-            "away": "0.01",
+            "away": "0.03",
             "period": "match"
           },
           {
             "name": "Goals prevented",
             "key": "goals prevented",
             "home": "0.00",
-            "away": "0.01",
+            "away": "0.03",
             "period": "match"
           },
           {
@@ -3041,7 +3048,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:23:06.640Z",
+        "updatedAt": "2026-09-28T12:29:07.786Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_jPd1bs9U",
@@ -3298,15 +3305,15 @@
           {
             "name": "Expected goals (xG)",
             "key": "expected goals (xg)",
-            "home": "1.36",
-            "away": "0.42",
+            "home": "1.67",
+            "away": "0.66",
             "period": "match"
           },
           {
             "name": "Ball possession",
             "key": "possession",
-            "home": "56%",
-            "away": "44%",
+            "home": "57%",
+            "away": "43%",
             "period": "match"
           },
           {
@@ -3327,7 +3334,7 @@
             "name": "Big chances",
             "key": "big chances",
             "home": "4",
-            "away": "2",
+            "away": "1",
             "period": "match"
           },
           {
@@ -3340,8 +3347,8 @@
           {
             "name": "Passes",
             "key": "passes",
-            "home": "85% (401/473)",
-            "away": "78% (285/365)",
+            "home": "84% (402/478)",
+            "away": "78% (285/366)",
             "period": "match"
           },
           {
@@ -3354,8 +3361,8 @@
           {
             "name": "xG on target (xGOT)",
             "key": "xg on target (xgot)",
-            "home": "2.52",
-            "away": "0.30",
+            "home": "2.82",
+            "away": "0.32",
             "period": "match"
           },
           {
@@ -3403,7 +3410,7 @@
           {
             "name": "Touches in opposition box",
             "key": "touches in opposition box",
-            "home": "27",
+            "home": "28",
             "away": "13",
             "period": "match"
           },
@@ -3431,29 +3438,29 @@
           {
             "name": "Long passes",
             "key": "long passes",
-            "home": "45% (25/56)",
-            "away": "51% (29/57)",
+            "home": "40% (21/52)",
+            "away": "48% (23/48)",
             "period": "match"
           },
           {
             "name": "Passes in final third",
             "key": "passes in final third",
-            "home": "77% (130/168)",
-            "away": "61% (51/83)",
+            "home": "77% (131/171)",
+            "away": "60% (50/83)",
             "period": "match"
           },
           {
             "name": "Crosses",
             "key": "crosses",
-            "home": "16% (4/25)",
-            "away": "25% (5/20)",
+            "home": "17% (4/23)",
+            "away": "26% (5/19)",
             "period": "match"
           },
           {
             "name": "Expected assists (xA)",
             "key": "expected assists (xa)",
-            "home": "1.17",
-            "away": "0.35",
+            "home": "1.42",
+            "away": "0.52",
             "period": "match"
           },
           {
@@ -3473,35 +3480,35 @@
           {
             "name": "Tackles",
             "key": "tackles",
-            "home": "47% (9/19)",
-            "away": "72% (13/18)",
+            "home": "45% (9/20)",
+            "away": "67% (12/18)",
             "period": "match"
           },
           {
             "name": "Duels won",
             "key": "duels won",
-            "home": "42",
-            "away": "51",
+            "home": "46",
+            "away": "53",
             "period": "match"
           },
           {
             "name": "Clearances",
             "key": "clearances",
-            "home": "23",
+            "home": "21",
             "away": "28",
             "period": "match"
           },
           {
             "name": "Interceptions",
             "key": "interceptions",
-            "home": "11",
+            "home": "13",
             "away": "15",
             "period": "match"
           },
           {
             "name": "Errors leading to shot",
             "key": "errors leading to shot",
-            "home": "0",
+            "home": "1",
             "away": "0",
             "period": "match"
           },
@@ -3522,15 +3529,15 @@
           {
             "name": "xGOT faced",
             "key": "xgot faced",
-            "home": "0.30",
-            "away": "2.52",
+            "home": "0.32",
+            "away": "2.82",
             "period": "match"
           },
           {
             "name": "Goals prevented",
             "key": "goals prevented",
-            "home": "0.30",
-            "away": "0.52",
+            "home": "0.32",
+            "away": "0.82",
             "period": "match"
           },
           {
@@ -3543,8 +3550,8 @@
           {
             "name": "Expected goals (xG)",
             "key": "expected goals (xg)",
-            "home": "0.73",
-            "away": "0.24",
+            "home": "0.89",
+            "away": "0.31",
             "period": "match"
           },
           {
@@ -3571,8 +3578,8 @@
           {
             "name": "Big chances",
             "key": "big chances",
-            "home": "3",
-            "away": "2",
+            "home": "2",
+            "away": "0",
             "period": "match"
           },
           {
@@ -3585,8 +3592,8 @@
           {
             "name": "Passes",
             "key": "passes",
-            "home": "84% (195/232)",
-            "away": "67% (87/129)",
+            "home": "83% (196/236)",
+            "away": "67% (87/130)",
             "period": "match"
           },
           {
@@ -3599,7 +3606,7 @@
           {
             "name": "xG on target (xGOT)",
             "key": "xg on target (xgot)",
-            "home": "1.31",
+            "home": "1.56",
             "away": "0.15",
             "period": "match"
           },
@@ -3655,29 +3662,29 @@
           {
             "name": "Long passes",
             "key": "long passes",
-            "home": "39% (9/23)",
-            "away": "38% (11/29)",
+            "home": "36% (8/22)",
+            "away": "37% (10/27)",
             "period": "match"
           },
           {
             "name": "Passes in final third",
             "key": "passes in final third",
-            "home": "76% (73/96)",
-            "away": "50% (18/36)",
+            "home": "74% (73/98)",
+            "away": "49% (18/37)",
             "period": "match"
           },
           {
             "name": "Crosses",
             "key": "crosses",
-            "home": "10% (2/20)",
-            "away": "25% (2/8)",
+            "home": "11% (2/18)",
+            "away": "29% (2/7)",
             "period": "match"
           },
           {
             "name": "Expected assists (xA)",
             "key": "expected assists (xa)",
-            "home": "0.75",
-            "away": "0.19",
+            "home": "0.93",
+            "away": "0.18",
             "period": "match"
           },
           {
@@ -3698,27 +3705,27 @@
             "name": "Tackles",
             "key": "tackles",
             "home": "33% (2/6)",
-            "away": "55% (6/11)",
+            "away": "45% (5/11)",
             "period": "match"
           },
           {
             "name": "Duels won",
             "key": "duels won",
-            "home": "21",
-            "away": "31",
+            "home": "23",
+            "away": "32",
             "period": "match"
           },
           {
             "name": "Clearances",
             "key": "clearances",
-            "home": "13",
+            "home": "11",
             "away": "24",
             "period": "match"
           },
           {
             "name": "Interceptions",
             "key": "interceptions",
-            "home": "6",
+            "home": "7",
             "away": "6",
             "period": "match"
           },
@@ -3733,14 +3740,14 @@
             "name": "xGOT faced",
             "key": "xgot faced",
             "home": "0.15",
-            "away": "1.31",
+            "away": "1.56",
             "period": "match"
           },
           {
             "name": "Goals prevented",
             "key": "goals prevented",
             "home": "0.15",
-            "away": "0.31",
+            "away": "0.56",
             "period": "match"
           },
           {
@@ -3753,8 +3760,8 @@
           {
             "name": "Expected goals (xG)",
             "key": "expected goals (xg)",
-            "home": "0.63",
-            "away": "0.18",
+            "home": "0.78",
+            "away": "0.35",
             "period": "match"
           },
           {
@@ -3781,8 +3788,8 @@
           {
             "name": "Big chances",
             "key": "big chances",
-            "home": "1",
-            "away": "0",
+            "home": "2",
+            "away": "1",
             "period": "match"
           },
           {
@@ -3795,7 +3802,7 @@
           {
             "name": "Passes",
             "key": "passes",
-            "home": "85% (206/241)",
+            "home": "85% (206/242)",
             "away": "84% (198/236)",
             "period": "match"
           },
@@ -3809,8 +3816,8 @@
           {
             "name": "xG on target (xGOT)",
             "key": "xg on target (xgot)",
-            "home": "1.21",
-            "away": "0.15",
+            "home": "1.26",
+            "away": "0.17",
             "period": "match"
           },
           {
@@ -3844,7 +3851,7 @@
           {
             "name": "Touches in opposition box",
             "key": "touches in opposition box",
-            "home": "12",
+            "home": "13",
             "away": "9",
             "period": "match"
           },
@@ -3872,15 +3879,15 @@
           {
             "name": "Long passes",
             "key": "long passes",
-            "home": "48% (16/33)",
-            "away": "64% (18/28)",
+            "home": "43% (13/30)",
+            "away": "62% (13/21)",
             "period": "match"
           },
           {
             "name": "Passes in final third",
             "key": "passes in final third",
-            "home": "79% (57/72)",
-            "away": "70% (33/47)",
+            "home": "79% (58/73)",
+            "away": "70% (32/46)",
             "period": "match"
           },
           {
@@ -3893,8 +3900,8 @@
           {
             "name": "Expected assists (xA)",
             "key": "expected assists (xa)",
-            "home": "0.42",
-            "away": "0.16",
+            "home": "0.49",
+            "away": "0.34",
             "period": "match"
           },
           {
@@ -3914,15 +3921,15 @@
           {
             "name": "Tackles",
             "key": "tackles",
-            "home": "54% (7/13)",
+            "home": "50% (7/14)",
             "away": "100% (7/7)",
             "period": "match"
           },
           {
             "name": "Duels won",
             "key": "duels won",
-            "home": "21",
-            "away": "20",
+            "home": "23",
+            "away": "21",
             "period": "match"
           },
           {
@@ -3935,8 +3942,15 @@
           {
             "name": "Interceptions",
             "key": "interceptions",
-            "home": "5",
+            "home": "6",
             "away": "9",
+            "period": "match"
+          },
+          {
+            "name": "Errors leading to shot",
+            "key": "errors leading to shot",
+            "home": "0",
+            "away": "0",
             "period": "match"
           },
           {
@@ -3949,15 +3963,15 @@
           {
             "name": "xGOT faced",
             "key": "xgot faced",
-            "home": "0.15",
-            "away": "1.21",
+            "home": "0.17",
+            "away": "1.26",
             "period": "match"
           },
           {
             "name": "Goals prevented",
             "key": "goals prevented",
-            "home": "0.15",
-            "away": "0.21",
+            "home": "0.17",
+            "away": "0.26",
             "period": "match"
           },
           {
@@ -3968,7 +3982,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:23:09.004Z",
+        "updatedAt": "2026-09-28T12:29:10.095Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_AVG6RuwH",
@@ -4894,7 +4908,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:23:11.354Z",
+        "updatedAt": "2026-09-28T12:29:12.464Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_UiFjVNwh",
@@ -5860,7 +5874,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:23:13.713Z",
+        "updatedAt": "2026-09-28T12:29:14.776Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_hhVIGOOb",
@@ -6759,7 +6773,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:23:46.868Z",
+        "updatedAt": "2026-09-28T12:29:47.768Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_YVWYCtON",
@@ -7639,7 +7653,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:23:18.424Z",
+        "updatedAt": "2026-09-28T12:29:19.482Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_ljPGxhI0",
@@ -8638,7 +8652,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:23:20.800Z",
+        "updatedAt": "2026-09-28T12:29:21.815Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_M3NOzWnD",
@@ -9603,7 +9617,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:23:56.314Z",
+        "updatedAt": "2026-09-28T12:29:57.097Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_xEhjBCOP",
@@ -10582,7 +10596,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:23:25.554Z",
+        "updatedAt": "2026-09-28T12:29:26.555Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_l4I1W5D6",
@@ -11494,7 +11508,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:23:27.939Z",
+        "updatedAt": "2026-09-28T12:29:28.902Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_MHG9UqrJ",
@@ -11888,7 +11902,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:23:30.300Z",
+        "updatedAt": "2026-09-28T12:29:31.209Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_88o4wcDb",
@@ -12373,7 +12387,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:23:32.649Z",
+        "updatedAt": "2026-09-28T12:29:33.593Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_vZ4vNyTH",
@@ -12799,7 +12813,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:24:17.559Z",
+        "updatedAt": "2026-09-28T12:30:18.017Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_pW7nLFcU",
@@ -13857,7 +13871,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:23:37.363Z",
+        "updatedAt": "2026-09-28T12:29:38.363Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_rB3DoAi3",
@@ -14908,7 +14922,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:23:39.713Z",
+        "updatedAt": "2026-09-28T12:29:40.750Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_UeabUzLc",
@@ -15860,7 +15874,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:23:42.152Z",
+        "updatedAt": "2026-09-28T12:29:43.096Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_G4BRN6ad",
@@ -16764,7 +16778,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:23:44.518Z",
+        "updatedAt": "2026-09-28T12:29:45.441Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_vs9QuuLs",
@@ -17707,7 +17721,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:23:49.243Z",
+        "updatedAt": "2026-09-28T12:29:50.076Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_4EN47Koo",
@@ -18658,7 +18672,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:23:51.601Z",
+        "updatedAt": "2026-09-28T12:29:52.398Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_25DbT184",
@@ -19538,7 +19552,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:25:11.942Z",
+        "updatedAt": "2026-09-28T12:31:11.578Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_0IYQE2gB",
@@ -20535,7 +20549,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:23:58.667Z",
+        "updatedAt": "2026-09-28T12:29:59.405Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_tQL8vEml",
@@ -21520,7 +21534,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:24:01.015Z",
+        "updatedAt": "2026-09-28T12:30:01.712Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_vN2dkV16",
@@ -22478,7 +22492,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:25:14.298Z",
+        "updatedAt": "2026-09-28T12:31:13.919Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_S0AAbZvK",
@@ -22813,7 +22827,7 @@
           {
             "name": "Expected goals (xG)",
             "key": "expected goals (xg)",
-            "home": "1.55",
+            "home": "1.38",
             "away": "1.94",
             "period": "match"
           },
@@ -22869,7 +22883,7 @@
           {
             "name": "xG on target (xGOT)",
             "key": "xg on target (xgot)",
-            "home": "2.02",
+            "home": "1.52",
             "away": "1.80",
             "period": "match"
           },
@@ -22877,14 +22891,14 @@
             "name": "Shots off target",
             "key": "shots",
             "home": "7",
-            "away": "9",
+            "away": "8",
             "period": "match"
           },
           {
             "name": "Blocked shots",
             "key": "shots",
             "home": "3",
-            "away": "2",
+            "away": "3",
             "period": "match"
           },
           {
@@ -23037,14 +23051,14 @@
           {
             "name": "xGOT faced",
             "key": "xgot faced",
-            "home": "1.80",
+            "home": "1.54",
             "away": "2.02",
             "period": "match"
           },
           {
             "name": "Goals prevented",
             "key": "goals prevented",
-            "home": "-1.20",
+            "home": "-1.46",
             "away": "-0.98",
             "period": "match"
           },
@@ -23058,7 +23072,7 @@
           {
             "name": "Expected goals (xG)",
             "key": "expected goals (xg)",
-            "home": "0.82",
+            "home": "0.78",
             "away": "0.41",
             "period": "match"
           },
@@ -23114,7 +23128,7 @@
           {
             "name": "xG on target (xGOT)",
             "key": "xg on target (xgot)",
-            "home": "1.18",
+            "home": "0.79",
             "away": "0.96",
             "period": "match"
           },
@@ -23254,14 +23268,14 @@
           {
             "name": "xGOT faced",
             "key": "xgot faced",
-            "home": "0.96",
+            "home": "0.57",
             "away": "1.18",
             "period": "match"
           },
           {
             "name": "Goals prevented",
             "key": "goals prevented",
-            "home": "0.96",
+            "home": "0.57",
             "away": "-0.82",
             "period": "match"
           },
@@ -23275,7 +23289,7 @@
           {
             "name": "Expected goals (xG)",
             "key": "expected goals (xg)",
-            "home": "0.73",
+            "home": "0.60",
             "away": "1.53",
             "period": "match"
           },
@@ -23331,7 +23345,7 @@
           {
             "name": "xG on target (xGOT)",
             "key": "xg on target (xgot)",
-            "home": "0.84",
+            "home": "0.73",
             "away": "0.84",
             "period": "match"
           },
@@ -23339,14 +23353,14 @@
             "name": "Shots off target",
             "key": "shots",
             "home": "5",
-            "away": "5",
+            "away": "4",
             "period": "match"
           },
           {
             "name": "Blocked shots",
             "key": "shots",
             "home": "3",
-            "away": "1",
+            "away": "2",
             "period": "match"
           },
           {
@@ -23464,14 +23478,14 @@
           {
             "name": "xGOT faced",
             "key": "xgot faced",
-            "home": "0.84",
+            "home": "0.97",
             "away": "0.84",
             "period": "match"
           },
           {
             "name": "Goals prevented",
             "key": "goals prevented",
-            "home": "-2.16",
+            "home": "-2.03",
             "away": "-0.16",
             "period": "match"
           },
@@ -23483,7 +23497,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:24:05.725Z",
+        "updatedAt": "2026-09-28T12:30:06.416Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_vydsqqcC",
@@ -24390,7 +24404,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:24:08.109Z",
+        "updatedAt": "2026-09-28T12:30:08.729Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_SE3ehmzQ",
@@ -24660,8 +24674,8 @@
           {
             "name": "Expected goals (xG)",
             "key": "expected goals (xg)",
-            "home": "1.97",
-            "away": "0.74",
+            "home": "1.98",
+            "away": "0.72",
             "period": "match"
           },
           {
@@ -24674,7 +24688,7 @@
           {
             "name": "Total shots",
             "key": "shots",
-            "home": "17",
+            "home": "16",
             "away": "11",
             "period": "match"
           },
@@ -24716,14 +24730,14 @@
           {
             "name": "xG on target (xGOT)",
             "key": "xg on target (xgot)",
-            "home": "2.03",
+            "home": "2.11",
             "away": "0.00",
             "period": "match"
           },
           {
             "name": "Shots off target",
             "key": "shots",
-            "home": "6",
+            "home": "5",
             "away": "6",
             "period": "match"
           },
@@ -24758,7 +24772,7 @@
           {
             "name": "Touches in opposition box",
             "key": "touches in opposition box",
-            "home": "23",
+            "home": "24",
             "away": "13",
             "period": "match"
           },
@@ -24878,14 +24892,14 @@
             "name": "xGOT faced",
             "key": "xgot faced",
             "home": "0.00",
-            "away": "2.03",
+            "away": "2.11",
             "period": "match"
           },
           {
             "name": "Goals prevented",
             "key": "goals prevented",
             "home": "0.00",
-            "away": "1.03",
+            "away": "1.11",
             "period": "match"
           },
           {
@@ -24898,7 +24912,7 @@
           {
             "name": "Expected goals (xG)",
             "key": "expected goals (xg)",
-            "home": "1.32",
+            "home": "1.33",
             "away": "0.21",
             "period": "match"
           },
@@ -24912,7 +24926,7 @@
           {
             "name": "Total shots",
             "key": "shots",
-            "home": "11",
+            "home": "10",
             "away": "5",
             "period": "match"
           },
@@ -24954,14 +24968,14 @@
           {
             "name": "xG on target (xGOT)",
             "key": "xg on target (xgot)",
-            "home": "1.43",
+            "home": "1.51",
             "away": "0.00",
             "period": "match"
           },
           {
             "name": "Shots off target",
             "key": "shots",
-            "home": "3",
+            "home": "2",
             "away": "3",
             "period": "match"
           },
@@ -24989,7 +25003,7 @@
           {
             "name": "Touches in opposition box",
             "key": "touches in opposition box",
-            "home": "15",
+            "home": "16",
             "away": "2",
             "period": "match"
           },
@@ -25088,14 +25102,14 @@
             "name": "xGOT faced",
             "key": "xgot faced",
             "home": "0.00",
-            "away": "1.43",
+            "away": "1.51",
             "period": "match"
           },
           {
             "name": "Goals prevented",
             "key": "goals prevented",
             "home": "0.00",
-            "away": "0.43",
+            "away": "0.51",
             "period": "match"
           },
           {
@@ -25109,7 +25123,7 @@
             "name": "Expected goals (xG)",
             "key": "expected goals (xg)",
             "home": "0.65",
-            "away": "0.53",
+            "away": "0.51",
             "period": "match"
           },
           {
@@ -25166,6 +25180,13 @@
             "key": "xg on target (xgot)",
             "home": "0.60",
             "away": "0.00",
+            "period": "match"
+          },
+          {
+            "name": "Shots off target",
+            "key": "shots",
+            "home": "3",
+            "away": "3",
             "period": "match"
           },
           {
@@ -25316,7 +25337,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:24:10.457Z",
+        "updatedAt": "2026-09-28T12:30:11.037Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_bcfRnRcm",
@@ -25534,7 +25555,7 @@
           {
             "name": "Expected goals (xG)",
             "key": "expected goals (xg)",
-            "home": "1.84",
+            "home": "2.05",
             "away": "0.43",
             "period": "match"
           },
@@ -25548,7 +25569,7 @@
           {
             "name": "Total shots",
             "key": "shots",
-            "home": "12",
+            "home": "13",
             "away": "10",
             "period": "match"
           },
@@ -25597,7 +25618,7 @@
           {
             "name": "Shots off target",
             "key": "shots",
-            "home": "5",
+            "home": "6",
             "away": "7",
             "period": "match"
           },
@@ -25632,7 +25653,7 @@
           {
             "name": "Touches in opposition box",
             "key": "touches in opposition box",
-            "home": "17",
+            "home": "18",
             "away": "7",
             "period": "match"
           },
@@ -25982,7 +26003,7 @@
           {
             "name": "Expected goals (xG)",
             "key": "expected goals (xg)",
-            "home": "1.26",
+            "home": "1.47",
             "away": "0.34",
             "period": "match"
           },
@@ -25996,7 +26017,7 @@
           {
             "name": "Total shots",
             "key": "shots",
-            "home": "8",
+            "home": "9",
             "away": "6",
             "period": "match"
           },
@@ -26031,7 +26052,7 @@
           {
             "name": "Shots off target",
             "key": "shots",
-            "home": "4",
+            "home": "5",
             "away": "3",
             "period": "match"
           },
@@ -26059,7 +26080,7 @@
           {
             "name": "Touches in opposition box",
             "key": "touches in opposition box",
-            "home": "8",
+            "home": "9",
             "away": "5",
             "period": "match"
           },
@@ -26169,7 +26190,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:24:12.852Z",
+        "updatedAt": "2026-09-28T12:30:13.362Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_WAhZp5Sa",
@@ -27116,7 +27137,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:24:15.201Z",
+        "updatedAt": "2026-09-28T12:30:15.710Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_WrElsNRO",
@@ -27305,7 +27326,7 @@
           },
           {
             "id": "nLBqJSRq-12",
-            "minute": "90+3'",
+            "minute": "90+4'",
             "type": "goal",
             "team": null,
             "player": "Aboursas Y.",
@@ -27321,7 +27342,7 @@
             "minute": "90+4'",
             "type": "goal",
             "team": null,
-            "player": "Salam A.",
+            "player": "El Maataoui Y.",
             "assist": null,
             "playerIn": null,
             "playerOut": null,
@@ -27331,10 +27352,10 @@
           },
           {
             "id": "nLBqJSRq-14",
-            "minute": "90+4'",
+            "minute": "90+5'",
             "type": "goal",
             "team": null,
-            "player": "El Maataoui Y.",
+            "player": "Salam A.",
             "assist": null,
             "playerIn": null,
             "playerOut": null,
@@ -27450,7 +27471,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:24:19.931Z",
+        "updatedAt": "2026-09-28T12:30:20.324Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_nLBqJSRq",
@@ -27837,7 +27858,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:24:22.279Z",
+        "updatedAt": "2026-09-28T12:30:22.630Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_W81WOcb5",
@@ -28249,7 +28270,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:25:26.120Z",
+        "updatedAt": "2026-09-28T12:31:25.552Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_GYlCyyrB",
@@ -28682,7 +28703,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:24:27.003Z",
+        "updatedAt": "2026-09-28T12:30:27.250Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_08COfwKq",
@@ -29694,7 +29715,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:24:29.371Z",
+        "updatedAt": "2026-09-28T12:30:29.584Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_WlRXwJkf",
@@ -30674,7 +30695,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:24:31.743Z",
+        "updatedAt": "2026-09-28T12:30:31.968Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_G4V8Nc5D",
@@ -30775,7 +30796,7 @@
             "minute": "59'",
             "type": "yellow",
             "team": null,
-            "player": "Rubio W.",
+            "player": "Martinez J.",
             "assist": null,
             "playerIn": null,
             "playerOut": null,
@@ -30788,7 +30809,7 @@
             "minute": "59'",
             "type": "yellow",
             "team": null,
-            "player": "Martinez J.",
+            "player": "Rubio W.",
             "assist": null,
             "playerIn": null,
             "playerOut": null,
@@ -30944,15 +30965,15 @@
           {
             "name": "Expected goals (xG)",
             "key": "expected goals (xg)",
-            "home": "0.40",
-            "away": "0.57",
+            "home": "0.47",
+            "away": "0.66",
             "period": "match"
           },
           {
             "name": "Ball possession",
             "key": "possession",
-            "home": "47%",
-            "away": "53%",
+            "home": "48%",
+            "away": "52%",
             "period": "match"
           },
           {
@@ -30986,8 +31007,8 @@
           {
             "name": "Passes",
             "key": "passes",
-            "home": "76% (302/395)",
-            "away": "82% (351/427)",
+            "home": "76% (304/399)",
+            "away": "82% (350/425)",
             "period": "match"
           },
           {
@@ -31000,8 +31021,8 @@
           {
             "name": "xG on target (xGOT)",
             "key": "xg on target (xgot)",
-            "home": "0.29",
-            "away": "0.60",
+            "home": "0.41",
+            "away": "0.58",
             "period": "match"
           },
           {
@@ -31042,7 +31063,7 @@
           {
             "name": "Touches in opposition box",
             "key": "touches in opposition box",
-            "home": "13",
+            "home": "14",
             "away": "22",
             "period": "match"
           },
@@ -31071,14 +31092,14 @@
             "name": "Long passes",
             "key": "long passes",
             "home": "49% (41/83)",
-            "away": "59% (34/58)",
+            "away": "56% (32/57)",
             "period": "match"
           },
           {
             "name": "Passes in final third",
             "key": "passes in final third",
             "home": "56% (55/98)",
-            "away": "77% (93/121)",
+            "away": "78% (92/118)",
             "period": "match"
           },
           {
@@ -31092,7 +31113,7 @@
             "name": "Expected assists (xA)",
             "key": "expected assists (xa)",
             "home": "0.27",
-            "away": "0.60",
+            "away": "0.67",
             "period": "match"
           },
           {
@@ -31112,29 +31133,29 @@
           {
             "name": "Tackles",
             "key": "tackles",
-            "home": "45% (9/20)",
-            "away": "50% (7/14)",
+            "home": "44% (8/18)",
+            "away": "53% (8/15)",
             "period": "match"
           },
           {
             "name": "Duels won",
             "key": "duels won",
-            "home": "57",
+            "home": "56",
             "away": "49",
             "period": "match"
           },
           {
             "name": "Clearances",
             "key": "clearances",
-            "home": "33",
-            "away": "23",
+            "home": "31",
+            "away": "26",
             "period": "match"
           },
           {
             "name": "Interceptions",
             "key": "interceptions",
             "home": "7",
-            "away": "11",
+            "away": "10",
             "period": "match"
           },
           {
@@ -31161,15 +31182,15 @@
           {
             "name": "xGOT faced",
             "key": "xgot faced",
-            "home": "0.60",
-            "away": "0.29",
+            "home": "0.58",
+            "away": "0.41",
             "period": "match"
           },
           {
             "name": "Goals prevented",
             "key": "goals prevented",
-            "home": "0.60",
-            "away": "-0.71",
+            "home": "0.58",
+            "away": "-0.59",
             "period": "match"
           },
           {
@@ -31182,15 +31203,15 @@
           {
             "name": "Expected goals (xG)",
             "key": "expected goals (xg)",
-            "home": "0.35",
-            "away": "0.14",
+            "home": "0.41",
+            "away": "0.17",
             "period": "match"
           },
           {
             "name": "Ball possession",
             "key": "possession",
-            "home": "52%",
-            "away": "48%",
+            "home": "53%",
+            "away": "47%",
             "period": "match"
           },
           {
@@ -31217,8 +31238,8 @@
           {
             "name": "Passes",
             "key": "passes",
-            "home": "79% (169/215)",
-            "away": "79% (152/193)",
+            "home": "78% (170/217)",
+            "away": "79% (151/192)",
             "period": "match"
           },
           {
@@ -31231,8 +31252,8 @@
           {
             "name": "xG on target (xGOT)",
             "key": "xg on target (xgot)",
-            "home": "0.29",
-            "away": "0.14",
+            "home": "0.41",
+            "away": "0.16",
             "period": "match"
           },
           {
@@ -31266,7 +31287,7 @@
           {
             "name": "Touches in opposition box",
             "key": "touches in opposition box",
-            "home": "9",
+            "home": "10",
             "away": "10",
             "period": "match"
           },
@@ -31287,8 +31308,8 @@
           {
             "name": "Long passes",
             "key": "long passes",
-            "home": "47% (14/30)",
-            "away": "56% (14/25)",
+            "home": "45% (13/29)",
+            "away": "52% (13/25)",
             "period": "match"
           },
           {
@@ -31329,28 +31350,28 @@
           {
             "name": "Tackles",
             "key": "tackles",
-            "home": "63% (5/8)",
+            "home": "71% (5/7)",
             "away": "71% (5/7)",
             "period": "match"
           },
           {
             "name": "Duels won",
             "key": "duels won",
-            "home": "31",
+            "home": "30",
             "away": "21",
             "period": "match"
           },
           {
             "name": "Clearances",
             "key": "clearances",
-            "home": "17",
-            "away": "16",
+            "home": "15",
+            "away": "17",
             "period": "match"
           },
           {
             "name": "Interceptions",
             "key": "interceptions",
-            "home": "2",
+            "home": "3",
             "away": "7",
             "period": "match"
           },
@@ -31364,15 +31385,15 @@
           {
             "name": "xGOT faced",
             "key": "xgot faced",
-            "home": "0.14",
-            "away": "0.29",
+            "home": "0.16",
+            "away": "0.41",
             "period": "match"
           },
           {
             "name": "Goals prevented",
             "key": "goals prevented",
-            "home": "0.14",
-            "away": "-0.71",
+            "home": "0.16",
+            "away": "-0.59",
             "period": "match"
           },
           {
@@ -31385,8 +31406,8 @@
           {
             "name": "Expected goals (xG)",
             "key": "expected goals (xg)",
-            "home": "0.05",
-            "away": "0.43",
+            "home": "0.06",
+            "away": "0.49",
             "period": "match"
           },
           {
@@ -31427,8 +31448,8 @@
           {
             "name": "Passes",
             "key": "passes",
-            "home": "74% (133/180)",
-            "away": "85% (199/234)",
+            "home": "74% (134/182)",
+            "away": "85% (199/233)",
             "period": "match"
           },
           {
@@ -31442,7 +31463,7 @@
             "name": "xG on target (xGOT)",
             "key": "xg on target (xgot)",
             "home": "0.00",
-            "away": "0.46",
+            "away": "0.42",
             "period": "match"
           },
           {
@@ -31490,15 +31511,15 @@
           {
             "name": "Long passes",
             "key": "long passes",
-            "home": "51% (27/53)",
-            "away": "61% (20/33)",
+            "home": "52% (28/54)",
+            "away": "59% (19/32)",
             "period": "match"
           },
           {
             "name": "Passes in final third",
             "key": "passes in final third",
             "home": "53% (26/49)",
-            "away": "81% (61/75)",
+            "away": "83% (60/72)",
             "period": "match"
           },
           {
@@ -31512,7 +31533,7 @@
             "name": "Expected assists (xA)",
             "key": "expected assists (xa)",
             "home": "0.09",
-            "away": "0.44",
+            "away": "0.51",
             "period": "match"
           },
           {
@@ -31532,8 +31553,8 @@
           {
             "name": "Tackles",
             "key": "tackles",
-            "home": "33% (4/12)",
-            "away": "29% (2/7)",
+            "home": "27% (3/11)",
+            "away": "38% (3/8)",
             "period": "match"
           },
           {
@@ -31547,14 +31568,14 @@
             "name": "Clearances",
             "key": "clearances",
             "home": "16",
-            "away": "7",
+            "away": "9",
             "period": "match"
           },
           {
             "name": "Interceptions",
             "key": "interceptions",
-            "home": "5",
-            "away": "4",
+            "home": "4",
+            "away": "3",
             "period": "match"
           },
           {
@@ -31567,14 +31588,14 @@
           {
             "name": "xGOT faced",
             "key": "xgot faced",
-            "home": "0.46",
+            "home": "0.42",
             "away": "0.00",
             "period": "match"
           },
           {
             "name": "Goals prevented",
             "key": "goals prevented",
-            "home": "0.46",
+            "home": "0.42",
             "away": "0.00",
             "period": "match"
           },
@@ -31586,7 +31607,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:24:34.112Z",
+        "updatedAt": "2026-09-28T12:30:34.323Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_riDJPSUq",
@@ -31921,8 +31942,8 @@
           {
             "name": "Expected goals (xG)",
             "key": "expected goals (xg)",
-            "home": "2.62",
-            "away": "0.83",
+            "home": "3.06",
+            "away": "0.85",
             "period": "match"
           },
           {
@@ -31949,7 +31970,7 @@
           {
             "name": "Big chances",
             "key": "big chances",
-            "home": "4",
+            "home": "5",
             "away": "1",
             "period": "match"
           },
@@ -31963,8 +31984,8 @@
           {
             "name": "Passes",
             "key": "passes",
-            "home": "86% (403/466)",
-            "away": "87% (424/489)",
+            "home": "87% (404/466)",
+            "away": "87% (424/490)",
             "period": "match"
           },
           {
@@ -32054,29 +32075,29 @@
           {
             "name": "Long passes",
             "key": "long passes",
-            "home": "60% (39/65)",
+            "home": "58% (36/62)",
             "away": "43% (21/49)",
             "period": "match"
           },
           {
             "name": "Passes in final third",
             "key": "passes in final third",
-            "home": "66% (73/110)",
-            "away": "81% (141/175)",
+            "home": "67% (74/110)",
+            "away": "81% (142/176)",
             "period": "match"
           },
           {
             "name": "Crosses",
             "key": "crosses",
-            "home": "35% (6/17)",
-            "away": "22% (4/18)",
+            "home": "31% (5/16)",
+            "away": "18% (3/17)",
             "period": "match"
           },
           {
             "name": "Expected assists (xA)",
             "key": "expected assists (xa)",
-            "home": "1.84",
-            "away": "1.18",
+            "home": "1.69",
+            "away": "1.13",
             "period": "match"
           },
           {
@@ -32096,29 +32117,29 @@
           {
             "name": "Tackles",
             "key": "tackles",
-            "home": "74% (14/19)",
-            "away": "72% (18/25)",
+            "home": "72% (13/18)",
+            "away": "77% (20/26)",
             "period": "match"
           },
           {
             "name": "Duels won",
             "key": "duels won",
-            "home": "44",
-            "away": "44",
+            "home": "43",
+            "away": "46",
             "period": "match"
           },
           {
             "name": "Clearances",
             "key": "clearances",
             "home": "23",
-            "away": "15",
+            "away": "16",
             "period": "match"
           },
           {
             "name": "Interceptions",
             "key": "interceptions",
-            "home": "7",
-            "away": "11",
+            "home": "8",
+            "away": "10",
             "period": "match"
           },
           {
@@ -32166,7 +32187,7 @@
           {
             "name": "Expected goals (xG)",
             "key": "expected goals (xg)",
-            "home": "1.32",
+            "home": "1.62",
             "away": "0.32",
             "period": "match"
           },
@@ -32194,7 +32215,7 @@
           {
             "name": "Big chances",
             "key": "big chances",
-            "home": "2",
+            "home": "3",
             "away": "1",
             "period": "match"
           },
@@ -32208,8 +32229,8 @@
           {
             "name": "Passes",
             "key": "passes",
-            "home": "88% (249/282)",
-            "away": "87% (222/256)",
+            "home": "89% (250/282)",
+            "away": "86% (223/258)",
             "period": "match"
           },
           {
@@ -32278,28 +32299,28 @@
           {
             "name": "Long passes",
             "key": "long passes",
-            "home": "66% (21/32)",
-            "away": "34% (10/29)",
+            "home": "65% (20/31)",
+            "away": "37% (11/30)",
             "period": "match"
           },
           {
             "name": "Passes in final third",
             "key": "passes in final third",
-            "home": "71% (36/51)",
-            "away": "78% (70/90)",
+            "home": "73% (37/51)",
+            "away": "78% (71/91)",
             "period": "match"
           },
           {
             "name": "Crosses",
             "key": "crosses",
-            "home": "45% (5/11)",
-            "away": "50% (2/4)",
+            "home": "40% (4/10)",
+            "away": "33% (1/3)",
             "period": "match"
           },
           {
             "name": "Expected assists (xA)",
             "key": "expected assists (xa)",
-            "home": "1.01",
+            "home": "0.86",
             "away": "0.32",
             "period": "match"
           },
@@ -32320,15 +32341,15 @@
           {
             "name": "Tackles",
             "key": "tackles",
-            "home": "73% (8/11)",
-            "away": "73% (8/11)",
+            "home": "70% (7/10)",
+            "away": "83% (10/12)",
             "period": "match"
           },
           {
             "name": "Duels won",
             "key": "duels won",
-            "home": "19",
-            "away": "20",
+            "home": "18",
+            "away": "21",
             "period": "match"
           },
           {
@@ -32341,8 +32362,8 @@
           {
             "name": "Interceptions",
             "key": "interceptions",
-            "home": "2",
-            "away": "5",
+            "home": "3",
+            "away": "4",
             "period": "match"
           },
           {
@@ -32383,8 +32404,8 @@
           {
             "name": "Expected goals (xG)",
             "key": "expected goals (xg)",
-            "home": "1.30",
-            "away": "0.51",
+            "home": "1.44",
+            "away": "0.53",
             "period": "match"
           },
           {
@@ -32426,7 +32447,7 @@
             "name": "Passes",
             "key": "passes",
             "home": "84% (154/184)",
-            "away": "87% (202/233)",
+            "away": "87% (201/232)",
             "period": "match"
           },
           {
@@ -32502,8 +32523,8 @@
           {
             "name": "Long passes",
             "key": "long passes",
-            "home": "55% (18/33)",
-            "away": "55% (11/20)",
+            "home": "52% (16/31)",
+            "away": "53% (10/19)",
             "period": "match"
           },
           {
@@ -32524,7 +32545,7 @@
             "name": "Expected assists (xA)",
             "key": "expected assists (xa)",
             "home": "0.83",
-            "away": "0.86",
+            "away": "0.81",
             "period": "match"
           },
           {
@@ -32552,14 +32573,14 @@
             "name": "Duels won",
             "key": "duels won",
             "home": "25",
-            "away": "24",
+            "away": "25",
             "period": "match"
           },
           {
             "name": "Clearances",
             "key": "clearances",
             "home": "16",
-            "away": "3",
+            "away": "4",
             "period": "match"
           },
           {
@@ -32605,7 +32626,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:24:36.491Z",
+        "updatedAt": "2026-09-28T12:30:36.656Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_jy7LqlMF",
@@ -32979,8 +33000,8 @@
           {
             "name": "Expected goals (xG)",
             "key": "expected goals (xg)",
-            "home": "1.80",
-            "away": "0.58",
+            "home": "1.76",
+            "away": "0.51",
             "period": "match"
           },
           {
@@ -33007,7 +33028,7 @@
           {
             "name": "Big chances",
             "key": "big chances",
-            "home": "3",
+            "home": "4",
             "away": "0",
             "period": "match"
           },
@@ -33021,8 +33042,8 @@
           {
             "name": "Passes",
             "key": "passes",
-            "home": "78% (291/374)",
-            "away": "81% (327/402)",
+            "home": "78% (290/372)",
+            "away": "81% (324/400)",
             "period": "match"
           },
           {
@@ -33042,8 +33063,8 @@
           {
             "name": "xG on target (xGOT)",
             "key": "xg on target (xgot)",
-            "home": "0.97",
-            "away": "0.21",
+            "home": "1.53",
+            "away": "0.17",
             "period": "match"
           },
           {
@@ -33113,28 +33134,28 @@
             "name": "Long passes",
             "key": "long passes",
             "home": "36% (22/61)",
-            "away": "45% (24/53)",
+            "away": "43% (22/51)",
             "period": "match"
           },
           {
             "name": "Passes in final third",
             "key": "passes in final third",
             "home": "58% (60/104)",
-            "away": "62% (46/74)",
+            "away": "60% (44/73)",
             "period": "match"
           },
           {
             "name": "Crosses",
             "key": "crosses",
-            "home": "33% (7/21)",
-            "away": "31% (5/16)",
+            "home": "32% (7/22)",
+            "away": "35% (6/17)",
             "period": "match"
           },
           {
             "name": "Expected assists (xA)",
             "key": "expected assists (xa)",
-            "home": "1.22",
-            "away": "0.40",
+            "home": "1.19",
+            "away": "0.41",
             "period": "match"
           },
           {
@@ -33154,28 +33175,28 @@
           {
             "name": "Tackles",
             "key": "tackles",
-            "home": "63% (17/27)",
-            "away": "79% (11/14)",
+            "home": "59% (16/27)",
+            "away": "92% (11/12)",
             "period": "match"
           },
           {
             "name": "Duels won",
             "key": "duels won",
             "home": "61",
-            "away": "54",
+            "away": "52",
             "period": "match"
           },
           {
             "name": "Clearances",
             "key": "clearances",
             "home": "33",
-            "away": "15",
+            "away": "16",
             "period": "match"
           },
           {
             "name": "Interceptions",
             "key": "interceptions",
-            "home": "7",
+            "home": "8",
             "away": "10",
             "period": "match"
           },
@@ -33203,15 +33224,15 @@
           {
             "name": "xGOT faced",
             "key": "xgot faced",
-            "home": "0.21",
-            "away": "0.97",
+            "home": "0.17",
+            "away": "1.53",
             "period": "match"
           },
           {
             "name": "Goals prevented",
             "key": "goals prevented",
-            "home": "0.21",
-            "away": "-1.03",
+            "home": "0.17",
+            "away": "-0.47",
             "period": "match"
           },
           {
@@ -33224,7 +33245,7 @@
           {
             "name": "Expected goals (xG)",
             "key": "expected goals (xg)",
-            "home": "1.17",
+            "home": "1.12",
             "away": "0.27",
             "period": "match"
           },
@@ -33245,7 +33266,7 @@
           {
             "name": "Big chances",
             "key": "big chances",
-            "home": "1",
+            "home": "2",
             "away": "0",
             "period": "match"
           },
@@ -33259,8 +33280,8 @@
           {
             "name": "Passes",
             "key": "passes",
-            "home": "76% (132/174)",
-            "away": "83% (159/192)",
+            "home": "76% (131/173)",
+            "away": "82% (156/191)",
             "period": "match"
           },
           {
@@ -33273,8 +33294,8 @@
           {
             "name": "xG on target (xGOT)",
             "key": "xg on target (xgot)",
-            "home": "0.61",
-            "away": "0.05",
+            "home": "1.08",
+            "away": "0.02",
             "period": "match"
           },
           {
@@ -33330,28 +33351,28 @@
             "name": "Long passes",
             "key": "long passes",
             "home": "41% (13/32)",
-            "away": "46% (12/26)",
+            "away": "42% (10/24)",
             "period": "match"
           },
           {
             "name": "Passes in final third",
             "key": "passes in final third",
             "home": "53% (26/49)",
-            "away": "59% (20/34)",
+            "away": "55% (18/33)",
             "period": "match"
           },
           {
             "name": "Crosses",
             "key": "crosses",
-            "home": "25% (3/12)",
-            "away": "33% (2/6)",
+            "home": "23% (3/13)",
+            "away": "43% (3/7)",
             "period": "match"
           },
           {
             "name": "Expected assists (xA)",
             "key": "expected assists (xa)",
-            "home": "0.57",
-            "away": "0.21",
+            "home": "0.54",
+            "away": "0.22",
             "period": "match"
           },
           {
@@ -33371,15 +33392,15 @@
           {
             "name": "Tackles",
             "key": "tackles",
-            "home": "90% (9/10)",
-            "away": "63% (5/8)",
+            "home": "80% (8/10)",
+            "away": "83% (5/6)",
             "period": "match"
           },
           {
             "name": "Duels won",
             "key": "duels won",
             "home": "23",
-            "away": "29",
+            "away": "27",
             "period": "match"
           },
           {
@@ -33392,7 +33413,7 @@
           {
             "name": "Interceptions",
             "key": "interceptions",
-            "home": "0",
+            "home": "1",
             "away": "2",
             "period": "match"
           },
@@ -33406,15 +33427,15 @@
           {
             "name": "xGOT faced",
             "key": "xgot faced",
-            "home": "0.05",
-            "away": "0.61",
+            "home": "0.02",
+            "away": "1.08",
             "period": "match"
           },
           {
             "name": "Goals prevented",
             "key": "goals prevented",
-            "home": "0.05",
-            "away": "-0.39",
+            "home": "0.02",
+            "away": "0.08",
             "period": "match"
           },
           {
@@ -33427,8 +33448,8 @@
           {
             "name": "Expected goals (xG)",
             "key": "expected goals (xg)",
-            "home": "0.63",
-            "away": "0.31",
+            "home": "0.64",
+            "away": "0.24",
             "period": "match"
           },
           {
@@ -33446,13 +33467,6 @@
             "period": "match"
           },
           {
-            "name": "Big chances",
-            "key": "big chances",
-            "home": "2",
-            "away": "0",
-            "period": "match"
-          },
-          {
             "name": "Corner kicks",
             "key": "corners",
             "home": "1",
@@ -33462,8 +33476,8 @@
           {
             "name": "Passes",
             "key": "passes",
-            "home": "80% (159/200)",
-            "away": "80% (168/210)",
+            "home": "80% (159/199)",
+            "away": "80% (168/209)",
             "period": "match"
           },
           {
@@ -33476,8 +33490,8 @@
           {
             "name": "xG on target (xGOT)",
             "key": "xg on target (xgot)",
-            "home": "0.36",
-            "away": "0.16",
+            "home": "0.45",
+            "away": "0.15",
             "period": "match"
           },
           {
@@ -33596,7 +33610,7 @@
             "name": "Clearances",
             "key": "clearances",
             "home": "22",
-            "away": "5",
+            "away": "6",
             "period": "match"
           },
           {
@@ -33623,19 +33637,19 @@
           {
             "name": "xGOT faced",
             "key": "xgot faced",
-            "home": "0.16",
-            "away": "0.36",
+            "home": "0.15",
+            "away": "0.45",
             "period": "match"
           },
           {
             "name": "Goals prevented",
             "key": "goals prevented",
-            "home": "0.16",
-            "away": "-0.64",
+            "home": "0.15",
+            "away": "-0.55",
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:24:38.840Z",
+        "updatedAt": "2026-09-28T12:30:38.978Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_8bIfo1cK",
@@ -34522,7 +34536,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:24:41.237Z",
+        "updatedAt": "2026-09-28T12:30:41.286Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_h8OvjEB6",
@@ -35449,7 +35463,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:24:43.610Z",
+        "updatedAt": "2026-09-28T12:30:43.639Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_YFRRxgDM",
@@ -36429,7 +36443,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:24:45.962Z",
+        "updatedAt": "2026-09-28T12:30:46.014Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_ENCmlhtJ",
@@ -37448,7 +37462,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:24:48.312Z",
+        "updatedAt": "2026-09-28T12:30:48.374Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_QFe56Zem",
@@ -38376,7 +38390,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:24:50.705Z",
+        "updatedAt": "2026-09-28T12:30:50.680Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_bTgD4DQa",
@@ -39303,7 +39317,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:24:53.102Z",
+        "updatedAt": "2026-09-28T12:30:53.015Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_femM2ieC",
@@ -39600,7 +39614,7 @@
             "name": "Expected goals (xG)",
             "key": "expected goals (xg)",
             "home": "1.41",
-            "away": "1.20",
+            "away": "1.50",
             "period": "match"
           },
           {
@@ -39663,7 +39677,7 @@
             "name": "xG on target (xGOT)",
             "key": "xg on target (xgot)",
             "home": "0.94",
-            "away": "1.25",
+            "away": "1.43",
             "period": "match"
           },
           {
@@ -39823,14 +39837,14 @@
           {
             "name": "xGOT faced",
             "key": "xgot faced",
-            "home": "1.25",
+            "home": "1.43",
             "away": "0.94",
             "period": "match"
           },
           {
             "name": "Goals prevented",
             "key": "goals prevented",
-            "home": "-0.75",
+            "home": "-0.57",
             "away": "0.94",
             "period": "match"
           },
@@ -39901,7 +39915,7 @@
             "name": "xG on target (xGOT)",
             "key": "xg on target (xgot)",
             "home": "0.86",
-            "away": "1.15",
+            "away": "1.37",
             "period": "match"
           },
           {
@@ -40040,14 +40054,14 @@
           {
             "name": "xGOT faced",
             "key": "xgot faced",
-            "home": "1.15",
+            "home": "1.37",
             "away": "0.86",
             "period": "match"
           },
           {
             "name": "Goals prevented",
             "key": "goals prevented",
-            "home": "-0.85",
+            "home": "-0.63",
             "away": "0.86",
             "period": "match"
           },
@@ -40062,7 +40076,7 @@
             "name": "Expected goals (xG)",
             "key": "expected goals (xg)",
             "home": "0.88",
-            "away": "0.82",
+            "away": "1.12",
             "period": "match"
           },
           {
@@ -40104,7 +40118,7 @@
             "name": "xG on target (xGOT)",
             "key": "xg on target (xgot)",
             "home": "0.08",
-            "away": "0.10",
+            "away": "0.06",
             "period": "match"
           },
           {
@@ -40236,14 +40250,14 @@
           {
             "name": "xGOT faced",
             "key": "xgot faced",
-            "home": "0.10",
+            "home": "0.06",
             "away": "0.08",
             "period": "match"
           },
           {
             "name": "Goals prevented",
             "key": "goals prevented",
-            "home": "0.10",
+            "home": "0.06",
             "away": "0.08",
             "period": "match"
           },
@@ -40255,7 +40269,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:24:55.456Z",
+        "updatedAt": "2026-09-28T12:30:55.341Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_0hjU0VPO",
@@ -41115,7 +41129,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:24:57.804Z",
+        "updatedAt": "2026-09-28T12:30:57.651Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_UaSdXWzp",
@@ -42075,7 +42089,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:25:00.153Z",
+        "updatedAt": "2026-09-28T12:30:59.958Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_46GvLYAt",
@@ -42995,7 +43009,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:25:02.516Z",
+        "updatedAt": "2026-09-28T12:31:02.267Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_CWJnJCug",
@@ -43955,7 +43969,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:25:04.888Z",
+        "updatedAt": "2026-09-28T12:31:04.587Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_8bDeHjA5",
@@ -44894,7 +44908,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:25:07.236Z",
+        "updatedAt": "2026-09-28T12:31:06.914Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_tCB3FUvI",
@@ -45786,7 +45800,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:25:09.583Z",
+        "updatedAt": "2026-09-28T12:31:09.263Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_QRL5VA5d",
@@ -46835,7 +46849,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:25:16.647Z",
+        "updatedAt": "2026-09-28T12:31:16.225Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_bq1tgD2s",
@@ -47768,7 +47782,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:25:19.013Z",
+        "updatedAt": "2026-09-28T12:31:18.538Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_S6sivyJO",
@@ -48700,7 +48714,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:25:21.362Z",
+        "updatedAt": "2026-09-28T12:31:20.898Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_nelb1QCt",
@@ -49035,7 +49049,7 @@
           {
             "name": "Expected goals (xG)",
             "key": "expected goals (xg)",
-            "home": "2.82",
+            "home": "2.69",
             "away": "3.39",
             "period": "match"
           },
@@ -49078,7 +49092,7 @@
             "name": "Passes",
             "key": "passes",
             "home": "79% (367/464)",
-            "away": "77% (309/399)",
+            "away": "77% (308/398)",
             "period": "match"
           },
           {
@@ -49140,7 +49154,7 @@
           {
             "name": "Touches in opposition box",
             "key": "touches in opposition box",
-            "home": "18",
+            "home": "19",
             "away": "26",
             "period": "match"
           },
@@ -49169,14 +49183,14 @@
             "name": "Long passes",
             "key": "long passes",
             "home": "43% (33/76)",
-            "away": "40% (21/52)",
+            "away": "39% (20/51)",
             "period": "match"
           },
           {
             "name": "Passes in final third",
             "key": "passes in final third",
             "home": "68% (67/98)",
-            "away": "70% (88/125)",
+            "away": "70% (87/124)",
             "period": "match"
           },
           {
@@ -49211,14 +49225,14 @@
             "name": "Tackles",
             "key": "tackles",
             "home": "37% (7/19)",
-            "away": "71% (12/17)",
+            "away": "67% (12/18)",
             "period": "match"
           },
           {
             "name": "Duels won",
             "key": "duels won",
             "home": "50",
-            "away": "55",
+            "away": "56",
             "period": "match"
           },
           {
@@ -49490,7 +49504,7 @@
           {
             "name": "Expected goals (xG)",
             "key": "expected goals (xg)",
-            "home": "0.56",
+            "home": "0.43",
             "away": "1.31",
             "period": "match"
           },
@@ -49526,7 +49540,7 @@
             "name": "Passes",
             "key": "passes",
             "home": "80% (178/222)",
-            "away": "77% (149/193)",
+            "away": "77% (148/192)",
             "period": "match"
           },
           {
@@ -49574,7 +49588,7 @@
           {
             "name": "Touches in opposition box",
             "key": "touches in opposition box",
-            "home": "4",
+            "home": "5",
             "away": "9",
             "period": "match"
           },
@@ -49596,14 +49610,14 @@
             "name": "Long passes",
             "key": "long passes",
             "home": "43% (15/35)",
-            "away": "54% (15/28)",
+            "away": "52% (14/27)",
             "period": "match"
           },
           {
             "name": "Passes in final third",
             "key": "passes in final third",
             "home": "69% (34/49)",
-            "away": "64% (27/42)",
+            "away": "63% (26/41)",
             "period": "match"
           },
           {
@@ -49638,14 +49652,14 @@
             "name": "Tackles",
             "key": "tackles",
             "home": "36% (4/11)",
-            "away": "55% (6/11)",
+            "away": "50% (6/12)",
             "period": "match"
           },
           {
             "name": "Duels won",
             "key": "duels won",
             "home": "27",
-            "away": "32",
+            "away": "33",
             "period": "match"
           },
           {
@@ -49698,7 +49712,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:25:23.728Z",
+        "updatedAt": "2026-09-28T12:31:23.231Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_fLi6a4sg",
@@ -50104,8 +50118,8 @@
           {
             "name": "Expected goals (xG)",
             "key": "expected goals (xg)",
-            "home": "1.87",
-            "away": "0.27",
+            "home": "1.86",
+            "away": "0.24",
             "period": "match"
           },
           {
@@ -50147,7 +50161,7 @@
             "name": "Passes",
             "key": "passes",
             "home": "88% (344/390)",
-            "away": "89% (464/523)",
+            "away": "88% (464/525)",
             "period": "match"
           },
           {
@@ -50167,7 +50181,7 @@
           {
             "name": "xG on target (xGOT)",
             "key": "xg on target (xgot)",
-            "home": "1.01",
+            "home": "0.97",
             "away": "0.70",
             "period": "match"
           },
@@ -50209,7 +50223,7 @@
           {
             "name": "Touches in opposition box",
             "key": "touches in opposition box",
-            "home": "19",
+            "home": "21",
             "away": "12",
             "period": "match"
           },
@@ -50238,28 +50252,28 @@
             "name": "Long passes",
             "key": "long passes",
             "home": "56% (23/41)",
-            "away": "56% (28/50)",
+            "away": "54% (27/50)",
             "period": "match"
           },
           {
             "name": "Passes in final third",
             "key": "passes in final third",
-            "home": "80% (117/147)",
-            "away": "80% (99/124)",
+            "home": "79% (116/146)",
+            "away": "80% (99/123)",
             "period": "match"
           },
           {
             "name": "Crosses",
             "key": "crosses",
-            "home": "13% (3/24)",
+            "home": "13% (3/23)",
             "away": "20% (1/5)",
             "period": "match"
           },
           {
             "name": "Expected assists (xA)",
             "key": "expected assists (xa)",
-            "home": "0.57",
-            "away": "0.80",
+            "home": "0.68",
+            "away": "0.78",
             "period": "match"
           },
           {
@@ -50286,21 +50300,21 @@
           {
             "name": "Duels won",
             "key": "duels won",
-            "home": "38",
-            "away": "47",
+            "home": "40",
+            "away": "46",
             "period": "match"
           },
           {
             "name": "Clearances",
             "key": "clearances",
-            "home": "17",
-            "away": "25",
+            "home": "18",
+            "away": "23",
             "period": "match"
           },
           {
             "name": "Interceptions",
             "key": "interceptions",
-            "home": "11",
+            "home": "13",
             "away": "6",
             "period": "match"
           },
@@ -50329,14 +50343,14 @@
             "name": "xGOT faced",
             "key": "xgot faced",
             "home": "0.70",
-            "away": "1.01",
+            "away": "0.97",
             "period": "match"
           },
           {
             "name": "Goals prevented",
             "key": "goals prevented",
             "home": "-0.30",
-            "away": "-0.99",
+            "away": "-1.03",
             "period": "match"
           },
           {
@@ -50349,7 +50363,7 @@
           {
             "name": "Expected goals (xG)",
             "key": "expected goals (xg)",
-            "home": "0.89",
+            "home": "0.88",
             "away": "0.03",
             "period": "match"
           },
@@ -50391,8 +50405,8 @@
           {
             "name": "Passes",
             "key": "passes",
-            "home": "92% (192/209)",
-            "away": "88% (267/302)",
+            "home": "91% (191/209)",
+            "away": "88% (267/303)",
             "period": "match"
           },
           {
@@ -50447,7 +50461,7 @@
           {
             "name": "Touches in opposition box",
             "key": "touches in opposition box",
-            "home": "11",
+            "home": "13",
             "away": "4",
             "period": "match"
           },
@@ -50475,14 +50489,14 @@
           {
             "name": "Passes in final third",
             "key": "passes in final third",
-            "home": "85% (64/75)",
+            "home": "85% (62/73)",
             "away": "78% (47/60)",
             "period": "match"
           },
           {
             "name": "Crosses",
             "key": "crosses",
-            "home": "8% (1/13)",
+            "home": "8% (1/12)",
             "away": "0% (0/2)",
             "period": "match"
           },
@@ -50517,22 +50531,22 @@
           {
             "name": "Duels won",
             "key": "duels won",
-            "home": "19",
-            "away": "18",
+            "home": "21",
+            "away": "17",
             "period": "match"
           },
           {
             "name": "Clearances",
             "key": "clearances",
             "home": "9",
-            "away": "9",
+            "away": "8",
             "period": "match"
           },
           {
             "name": "Interceptions",
             "key": "interceptions",
-            "home": "6",
-            "away": "4",
+            "home": "10",
+            "away": "3",
             "period": "match"
           },
           {
@@ -50574,7 +50588,7 @@
             "name": "Expected goals (xG)",
             "key": "expected goals (xg)",
             "home": "0.98",
-            "away": "0.24",
+            "away": "0.21",
             "period": "match"
           },
           {
@@ -50615,8 +50629,8 @@
           {
             "name": "Passes",
             "key": "passes",
-            "home": "84% (152/181)",
-            "away": "89% (197/221)",
+            "home": "85% (153/181)",
+            "away": "89% (197/222)",
             "period": "match"
           },
           {
@@ -50629,7 +50643,7 @@
           {
             "name": "xG on target (xGOT)",
             "key": "xg on target (xgot)",
-            "home": "0.33",
+            "home": "0.29",
             "away": "0.15",
             "period": "match"
           },
@@ -50686,14 +50700,14 @@
             "name": "Long passes",
             "key": "long passes",
             "home": "43% (12/28)",
-            "away": "55% (11/20)",
+            "away": "50% (10/20)",
             "period": "match"
           },
           {
             "name": "Passes in final third",
             "key": "passes in final third",
-            "home": "74% (53/72)",
-            "away": "81% (52/64)",
+            "home": "74% (54/73)",
+            "away": "83% (52/63)",
             "period": "match"
           },
           {
@@ -50706,8 +50720,8 @@
           {
             "name": "Expected assists (xA)",
             "key": "expected assists (xa)",
-            "home": "0.41",
-            "away": "0.63",
+            "home": "0.52",
+            "away": "0.61",
             "period": "match"
           },
           {
@@ -50741,15 +50755,15 @@
           {
             "name": "Clearances",
             "key": "clearances",
-            "home": "8",
-            "away": "16",
+            "home": "9",
+            "away": "15",
             "period": "match"
           },
           {
             "name": "Interceptions",
             "key": "interceptions",
-            "home": "5",
-            "away": "2",
+            "home": "3",
+            "away": "3",
             "period": "match"
           },
           {
@@ -50763,14 +50777,14 @@
             "name": "xGOT faced",
             "key": "xgot faced",
             "home": "0.15",
-            "away": "0.33",
+            "away": "0.29",
             "period": "match"
           },
           {
             "name": "Goals prevented",
             "key": "goals prevented",
             "home": "0.15",
-            "away": "-0.67",
+            "away": "-0.71",
             "period": "match"
           },
           {
@@ -50781,7 +50795,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T05:25:28.497Z",
+        "updatedAt": "2026-09-28T12:31:27.870Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_0ER4D89U",
@@ -52751,7 +52765,7 @@
       "details": {
         "events": [],
         "statistics": [],
-        "updatedAt": "2026-09-28T05:25:31.613Z",
+        "updatedAt": "2026-09-28T12:31:31.229Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_bDGw34fE",
