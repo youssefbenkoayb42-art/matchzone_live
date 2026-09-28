@@ -1,5 +1,9 @@
 name: MatchZone fallback scraper
 
+concurrency:
+  group: matchzone-fallback-scrape
+  cancel-in-progress: false
+
 on:
   workflow_dispatch:
   push:
@@ -55,7 +59,10 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           # Team logos are stored under public/teams and become static
           # Vercel-served assets after the commit/deployment.
-          git add data/scraped-matches.json data/team-logo-registry.json public/teams
+          git add -A data/scraped-matches.json data/team-logo-registry.json public/teams
+          echo "Files staged by hard-reset workflow:"
+          git status --short
+          git diff --cached --name-status
           if git diff --cached --quiet; then
             echo "No scraper changes."
             exit 0
