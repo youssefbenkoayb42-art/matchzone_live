@@ -4,7 +4,7 @@ import { getTeamCatalog, getMatchSnapshotMeta } from "../../lib/match-snapshot";
 export const dynamic = "force-dynamic";
 export const metadata = { title: "الفرق | MatchZone", description: "دليل فرق كرة القدم في MatchZone مع المباريات والنتائج والإحصائيات." };
 
-export default async function TeamsPage() {
+export default async function TeamsPage({ searchParams }) {
   const [teams, meta] = await Promise.all([getTeamCatalog(), getMatchSnapshotMeta()]);
   const visible = teams.filter((team) => team.matchCount > 0);
   return (
