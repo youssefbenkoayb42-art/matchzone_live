@@ -72,6 +72,41 @@ export default async function CatalogLeaguePage({ params }) {
         </div>
 
         <section className="mz-league-detail-section">
+          <div className="mz-section-heading">
+            <div>
+              <span className="mz-catalog-kicker">TEAMS</span>
+              <h2>فرق البطولة</h2>
+            </div>
+            <span>{leagueTeams.length} فريق</span>
+          </div>
+          {leagueTeams.length ? (
+            <div className="mz-league-team-grid">
+              {leagueTeams.map((team) => (
+                <Link
+                  key={team.id}
+                  href={"/teams/" + encodeURIComponent(String(team.id))}
+                  className="mz-league-team-card"
+                >
+                  <div className="mz-league-team-logo">
+                    {team.logo ? (
+                      <img src={team.logo} alt="" width="56" height="56" loading="lazy" />
+                    ) : (
+                      <span>FC</span>
+                    )}
+                  </div>
+                  <div>
+                    <strong>{team.name}</strong>
+                    <span>{team.matchCount} مباراة · {team.stats.points} نقطة</span>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          ) : (
+            <div className="mz-catalog-empty">لا توجد فرق مرتبطة بهذه البطولة في اللقطة الحالية.</div>
+          )}
+        </section>
+
+        <section className="mz-league-detail-section">
           <h2>المباريات والنتائج</h2>
           {sorted.length ? <div className="mz-catalog-match-list">{sorted.slice(0,120).map((match) => {
             const home = match?.teams?.home || {};
