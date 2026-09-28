@@ -1,5 +1,4 @@
-import { getOpenFootballMatches } from "../lib/openfootball";
-import { getFallbackMatches } from "../lib/fallback-matches";
+import { getMatchSnapshot } from "../lib/match-snapshot";
 
 const BASE_URL = "https://matchzone-live.vercel.app";
 
@@ -11,107 +10,29 @@ const leagues = [
   "ligue-1",
 ];
 
-async function getOpenFootballTeams() {
-  try {
-    const matches = await getOpenFootballMatches({
-      from: "2026-07-01",
-      to: "2027-06-30",
-    });
-
-    return [
-      ...new Set(
-        matches
-          .flatMap((match) => [
-            match?.teams?.home?.name,
-            match?.teams?.away?.name,
-          ])
-          .filter(Boolean)
-      ),
-    ];
-  } catch {
-    return [];
-  }
-}
-
-async function getSitemapEvents() {
-  const startDate = new Date();
-
-  const dates = Array.from({ length: 7 }, (_, index) => {
-    const target = new Date(startDate);
-    target.setUTCDate(target.getUTCDate() + index);
-    return target.toISOString().slice(0, 10);
-  });
-
-  try {
-    const responses = await Promise.all(
-      dates.map((date) =>
-        fetch(
-          `https://www.thesportsdb.com/api/v1/json/123/eventsday.php?d=${date}&s=Soccer`,
-          { next: { revalidate: 900 } }
-        )
-      )
-    );
-
-    const data = await Promise.all(
-      responses.map(async (res) => {
-        if (!res.ok) return [];
-        const json = await res.json();
-        return Array.isArray(json?.events) ? json.events : [];
-      })
-    );
-
-    return data.flat();
-  } catch {
-    return [];
-  }
-}
-
 export default async function sitemap() {
   const now = new Date();
-  const [events, openFootballTeams, fallbackMatches] = await Promise.all([
-    getSitemapEvents(),
-    getOpenFootballTeams(),
-    getFallbackMatches(),
-  ]);
+  const matches = await getMatchSnapshot();
 
   const matchIds = [
-    ...new Set([
-      ...events.map((event) => event?.idEvent).filter(Boolean),
-      ...fallbackMatches.map((match) => match?.fixture?.id).filter(Boolean),
-    ].map(String)),
-  ];
-
-  const teamNames = [
-    ...new Set([
-      ...events
-        .flatMap((event) => [event?.strHomeTeam, event?.strAwayTeam])
-        .filter(Boolean),
-      ...openFootballTeams,
-      ...fallbackMatches.flatMap((match) => [
-        match?.teams?.home?.name,
-        match?.teams?.away?.name,
-      ]).filter(Boolean),
-    ]),
-  ];
-
-  const discoveredLeagueIds = [
     ...new Set(
-      events
-        .map((event) => event?.idLeague)
+      matches
+        .map((match) => match?.fixture?.id)
         .filter(Boolean)
         .map(String)
     ),
   ];
 
-  const featuredLeagueIds = new Set(["4328", "4335", "4332", "4331", "4334"]);
-  const dynamicLeagueUrls = discoveredLeagueIds
-    .filter((id) => !featuredLeagueIds.has(id))
-    .map((id) => ({
-      url: `${BASE_URL}/leagues/league-${id}`,
-      lastModified: now,
-      changeFrequency: "daily",
-      priority: 0.78,
-    }));
+  const teamNames = [
+    ...new Set(
+      matches
+        .flatMap((match) => [
+          match?.teams?.home?.name,
+          match?.teams?.away?.name,
+        ])
+        .filter(Boolean)
+    ),
+  ];
 
   return [
     {
@@ -121,56 +42,43 @@ export default async function sitemap() {
       priority: 1,
     },
     {
-      url: `${BASE_URL}/leagues`,
+      url: BASE_URL + "/leagues",
       lastModified: now,
       changeFrequency: "daily",
       priority: 0.9,
     },
     {
-      url: `${BASE_URL}/results`,
+      url: BASE_URL + "/results",
       lastModified: now,
       changeFrequency: "hourly",
       priority: 0.93,
     },
     {
-      url: `${BASE_URL}/matches/today`,
+      url: BASE_URL + "/matches/today",
       lastModified: now,
       changeFrequency: "hourly",
       priority: 0.95,
     },
-    {
-      url: `${BASE_URL}/international`,
-      lastModified: now,
-      changeFrequency: "daily",
-      priority: 0.82,
-    },
-    {
-      url: `${BASE_URL}/stats`,
-      lastModified: now,
-      changeFrequency: "daily",
-      priority: 0.7,
-    },
     ...leagues.map((slug) => ({
-      url: `${BASE_URL}/leagues/${slug}`,
+      url: BASE_URL + "/leagues/" + slug,
       lastModified: now,
       changeFrequency: "daily",
       priority: 0.8,
     })),
     ...leagues.map((slug) => ({
-      url: `${BASE_URL}/standings/${slug}`,
+      url: BASE_URL + "/standings/" + slug,
       lastModified: now,
       changeFrequency: "daily",
       priority: 0.85,
     })),
-    ...dynamicLeagueUrls,
     ...teamNames.map((team) => ({
-      url: `${BASE_URL}/teams/${encodeURIComponent(team)}`,
+      url: BASE_URL + "/teams/" + encodeURIComponent(team),
       lastModified: now,
       changeFrequency: "daily",
       priority: 0.75,
     })),
     ...matchIds.map((id) => ({
-      url: `${BASE_URL}/matches/${id}`,
+      url: BASE_URL + "/matches/" + id,
       lastModified: now,
       changeFrequency: "hourly",
       priority: 0.7,
