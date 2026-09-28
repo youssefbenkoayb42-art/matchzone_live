@@ -2,7 +2,7 @@ name: MatchZone clean football data
 
 concurrency:
   group: matchzone-clean-data
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 on:
   workflow_dispatch:
