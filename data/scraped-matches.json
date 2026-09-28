@@ -1,17 +1,17 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-09-28T15:52:52.257Z",
-  "source": "football-data.org + ESPN supplemental + TheSportsDB enrichment",
+  "updatedAt": "2026-09-28T15:53:24.314Z",
+  "source": "football-data.org + ESPN + OpenFootball + TheSportsDB enrichment",
   "coverageWindow": {
-    "from": "2026-09-26T15:52:47.248Z",
-    "to": "2026-10-05T15:52:47.248Z"
+    "from": "2026-09-26T15:53:19.441Z",
+    "to": "2026-10-05T15:53:19.441Z"
   },
   "sourcePolicy": {
     "primary": "football-data.org",
-    "supplemental": "ESPN public site API",
+    "supplemental": "ESPN public site API + OpenFootball public-domain datasets",
     "detailEnrichment": "TheSportsDB V1 free API (existing matches only; no team identity/logo authority)",
     "cacheStrategy": "GitHub Actions snapshot; visitors never call providers",
-    "note": "ESPN endpoint is public/undocumented and may change without notice."
+    "note": "ESPN endpoint is public/undocumented; OpenFootball is used only for schedule/results coverage and never overrides verified provider identity or logos."
   },
   "logoPolicy": {
     "identityKey": "provider namespace + immutable numeric/string provider team ID",
@@ -25,6 +25,7 @@
   "counts": {
     "footballData": 2,
     "espn": 0,
+    "openfootball": 0,
     "total": 2,
     "theSportsDbEnriched": 0
   },
