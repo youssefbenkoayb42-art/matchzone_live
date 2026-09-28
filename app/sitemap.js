@@ -57,7 +57,7 @@ export default async function sitemap() {
     })),
     { url: BASE_URL + "/teams", lastModified: now, changeFrequency: "daily", priority: 0.88 },
     ...teamIds.map((teamId) => ({
-      url: BASE_URL + "/teams?team=" + encodeURIComponent(teamId),
+      url: BASE_URL + "/teams/" + encodeURIComponent(teamId),
       lastModified: now,
       changeFrequency: "daily",
       priority: 0.75,
