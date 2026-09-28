@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getMatchSnapshot, getMatchSnapshotMeta } from "../../../../lib/match-snapshot";
+import { getMatchSnapshot, getMatchSnapshotMeta, getTeamCatalog } from "../../../../lib/match-snapshot";
 
 export const dynamic = "force-dynamic";
 
@@ -37,9 +37,16 @@ export async function generateMetadata({ params }) {
 
 export default async function CatalogLeaguePage({ params }) {
   const id = decodeURIComponent(params.id || "");
-  const [matches, meta] = await Promise.all([getMatchSnapshot(), getMatchSnapshotMeta()]);
+  const [matches, meta, teams] = await Promise.all([getMatchSnapshot(), getMatchSnapshotMeta(), getTeamCatalog()]);
   const league = meta.leagues.find((item) => String(item.id) === id);
   const leagueMatches = matches.filter((match) => String(match?.league?.id || "") === id);
+  const leagueTeamIds = new Set(
+    leagueMatches.flatMap((match) => [
+      match?.teams?.home?.identity || match?.teams?.home?.id,
+      match?.teams?.away?.identity || match?.teams?.away?.id,
+    ]).filter(Boolean).map(String)
+  );
+  const leagueTeams = teams.filter((team) => leagueTeamIds.has(String(team.id)));
 
   if (!league) {
     return <main className="mz-league-detail" dir="rtl"><div className="mz-league-detail-shell"><h1>البطولة غير موجودة</h1><Link href="/leagues">← العودة إلى دليل الدوريات</Link></div></main>;
@@ -69,7 +76,7 @@ export default async function CatalogLeaguePage({ params }) {
           {sorted.length ? <div className="mz-catalog-match-list">{sorted.slice(0,120).map((match) => {
             const home = match?.teams?.home || {};
             const away = match?.teams?.away || {};
-            return <Link href={"/matches/" + encodeURIComponent(String(match?.fixture?.id || ""))} className="mz-catalog-match" key={match?.fixture?.id || Math.random()}>
+            return <Link href={"/matches/" + encodeURIComponent(String(match?.fixture?.id || ""))} className="mz-catalog-match" key={String(match?.fixture?.id || "")}>
               <div className="mz-catalog-match-meta"><span>{statusLabel(match?.fixture?.status?.short)}</span><small>{formatDate(match?.fixture?.date)}</small></div>
               <div className="mz-catalog-team"><span>{home.name || "المضيف"}</span><Logo team={home}/></div>
               <div className="mz-catalog-score"><strong>{match?.goals?.home ?? "–"}</strong><i>:</i><strong>{match?.goals?.away ?? "–"}</strong></div>
