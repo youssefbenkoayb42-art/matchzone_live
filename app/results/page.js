@@ -45,19 +45,30 @@ function MatchCard({ match }) {
       </div>
       <div style={{
         display: "grid",
-        gridTemplateColumns: "1fr auto 1fr",
+        gridTemplateColumns: "minmax(0,1fr) auto minmax(0,1fr)",
         alignItems: "center",
         gap: 12,
-        textAlign: "center"
+        textAlign: "center",
+        direction: "ltr"
       }}>
-        <strong>{home?.name || "الفريق المضيف"}</strong>
+        <div style={{ direction: "rtl" }}>
+          <div style={{ minHeight: 56, display: "grid", placeItems: "center" }}>
+            {home?.logo ? <img src={home.logo} alt="" width="52" height="52" style={{ width: 52, height: 52, objectFit: "contain" }} /> : null}
+          </div>
+          <strong style={{ display: "block", overflowWrap: "anywhere" }}>{home?.name || "الفريق المضيف"}</strong>
+        </div>
         <div>
           <div style={{ fontSize: 26, fontWeight: 950 }}>
             {match.goals?.home ?? "-"} - {match.goals?.away ?? "-"}
           </div>
           <div style={{ color: "#37e28a", fontSize: 11, fontWeight: 800 }}>انتهت</div>
         </div>
-        <strong>{away?.name || "الفريق الضيف"}</strong>
+        <div style={{ direction: "rtl" }}>
+          <div style={{ minHeight: 56, display: "grid", placeItems: "center" }}>
+            {away?.logo ? <img src={away.logo} alt="" width="52" height="52" style={{ width: 52, height: 52, objectFit: "contain" }} /> : null}
+          </div>
+          <strong style={{ display: "block", overflowWrap: "anywhere" }}>{away?.name || "الفريق الضيف"}</strong>
+        </div>
       </div>
       <Link href={"/matches/" + id} style={{
         display: "block",
@@ -101,7 +112,7 @@ export default async function ResultsPage() {
             المباريات المنتهية
           </h1>
           <p style={{ color: "#82968d", margin: "10px 0 0", lineHeight: 1.8 }}>
-            آخر النتائج النهائية من مصدر Football-Data.org بمعرفات فرق صارمة.
+            آخر النتائج النهائية من مصادر MatchZone المجانية مع الحفاظ على هوية الفرق بمعرفات المزود.
           </p>
         </header>
 
