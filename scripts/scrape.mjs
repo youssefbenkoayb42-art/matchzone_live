@@ -630,8 +630,8 @@ function normalizeTeamForSearch(value) {
   return String(value || "")
     .toLowerCase()
     .normalize("NFD")
-    .replace(/[\\u0300-\\u036f]/g, "")
-    .replace(/\\b(fc|cf|afc|sc|ac|club|football club)\\b/gi, "")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/\b(fc|cf|afc|sc|ac|club|football club)\b/gi, "")
     .replace(/[^a-z0-9]+/g, " ")
     .trim();
 }
