@@ -10,6 +10,16 @@ const FOOTBALL_DATA_TOKEN = String(process.env.FOOTBALL_DATA_API_KEY || "").trim
 const ESPN_API = "https://site.api.espn.com/apis/site/v2/sports/soccer";
 const THESPORTSDB_API = "https://www.thesportsdb.com/api/v1/json/123";
 const OPENFOOTBALL_API = "https://api.github.com/repos/openfootball/football.json/contents/2026-27";
+const OPENFOOTBALL_WORLD_API = "https://api.github.com/repos/openfootball/world/contents";
+const OPENFOOTBALL_WORLD_ROOTS = [
+  ["africa", "أفريقيا"],
+  ["asia", "آسيا"],
+  ["south-america", "أمريكا الجنوبية"],
+  ["central-america", "أمريكا الوسطى"],
+  ["north-america", "أمريكا الشمالية"],
+  ["middle-east", "الشرق الأوسط"],
+  ["pacific", "المحيط الهادئ"],
+];
 const AVATAR_BASE = "https://ui-avatars.com/api/";
 const THESPORTSDB_ENRICH_LIMIT = 8;
 
