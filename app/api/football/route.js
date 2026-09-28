@@ -13,7 +13,7 @@ export async function GET() {
       {
         response: matches,
         results: matches.length,
-        source: snapshot.source || "football-data.org + ESPN supplemental",
+        source: snapshot.source || "football-data.org + ESPN + OpenFootball + TheSportsDB enrichment",
         logoPolicy: "strict provider team ID; unknown or collision => UI Avatars",
         updatedAt: snapshot.updatedAt || null,
         serverUpdatedAt: new Date().toISOString(),
@@ -30,7 +30,7 @@ export async function GET() {
       {
         response: [],
         results: 0,
-        source: "football-data.org + ESPN supplemental",
+        source: "football-data.org + ESPN + OpenFootball + TheSportsDB enrichment",
         error: "تعذر تحميل بيانات المباريات",
       },
       { status: 503 }
