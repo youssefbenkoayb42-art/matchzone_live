@@ -404,27 +404,32 @@ async function fetchJson(url, options = {}) {
   throw new Error("Request failed after retries");
 }
 
-async function listOpenFootballWorldFiles(pathPart = "", depth = 0, limit = 250) {
-  if (depth > 4) return [];
+let OPENFOOTBALL_WORLD_TREE_PROMISE = null;
+
+async function listOpenFootballWorldFiles(pathPart = "", _depth = 0, limit = 250) {
+  if (!OPENFOOTBALL_WORLD_TREE_PROMISE) {
+    OPENFOOTBALL_WORLD_TREE_PROMISE = fetchJson(
+      "https://api.github.com/repos/openfootball/world/git/trees/master?recursive=1",
+      { headers: { Accept: "application/vnd.github+json" } }
+    );
+  }
+
   try {
-    const directory = await fetchJson(OPENFOOTBALL_WORLD_API + (pathPart ? "/" + pathPart : ""), { headers: { Accept: "application/vnd.github+json" } });
-    if (!Array.isArray(directory)) return [];
-    const files = [];
-    for (const item of directory) {
-      if (files.length >= limit) break;
-      if (item?.type === "file" && /\.txt$/i.test(item?.name || "")) {
-        files.push({ name: item.name, path: item.path, download_url: item.download_url });
-      } else if (item?.type === "dir") {
-        files.push(...await listOpenFootballWorldFiles(item.path, depth + 1, limit - files.length));
-      }
-    }
-    return files.slice(0, limit);
+    const tree = await OPENFOOTBALL_WORLD_TREE_PROMISE;
+    const prefix = String(pathPart || "").replace(/\/$/, "") + "/";
+    return (Array.isArray(tree?.tree) ? tree.tree : [])
+      .filter((item) => item?.type === "blob" && item?.path?.startsWith(prefix) && /\.txt$/i.test(item.path))
+      .slice(0, limit)
+      .map((item) => ({
+        name: item.path.split("/").pop(),
+        path: item.path,
+        download_url: "https://raw.githubusercontent.com/openfootball/world/master/" + item.path,
+      }));
   } catch (error) {
-    console.warn("[OpenFootball World] directory skipped", pathPart || "/", "-", error.message);
+    console.warn("[OpenFootball World] tree unavailable:", error.message);
     return [];
   }
 }
-
 async function fetchOpenFootballWorldMatches(from, to) {
   const output = [];
   const catalog = [];
