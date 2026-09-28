@@ -23,14 +23,12 @@ export default async function sitemap() {
     ),
   ];
 
-  const teamNames = [
+  const teamIds = [
     ...new Set(
-      matches
-        .flatMap((match) => [
-          match?.teams?.home?.name,
-          match?.teams?.away?.name,
-        ])
-        .filter(Boolean)
+      matches.flatMap((match) => [
+        match?.teams?.home?.identity || match?.teams?.home?.id,
+        match?.teams?.away?.identity || match?.teams?.away?.id,
+      ]).filter(Boolean).map(String)
     ),
   ];
 
@@ -57,8 +55,9 @@ export default async function sitemap() {
       changeFrequency: "daily",
       priority: 0.85,
     })),
-    ...teamNames.map((team) => ({
-      url: BASE_URL + "/teams/" + encodeURIComponent(team),
+    { url: BASE_URL + "/teams", lastModified: now, changeFrequency: "daily", priority: 0.88 },
+    ...teamIds.map((teamId) => ({
+      url: BASE_URL + "/teams/" + encodeURIComponent(teamId),
       lastModified: now,
       changeFrequency: "daily",
       priority: 0.75,
