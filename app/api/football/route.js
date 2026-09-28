@@ -121,6 +121,7 @@ async function fetchMatches() {
     throw new Error("Football-Data HTTP " + response.status);
   }
 
+  const data = await response.json();
   const raw = Array.isArray(data?.matches) ? data.matches : [];
   const matches = raw.map(format);
   const owners = new Map();
