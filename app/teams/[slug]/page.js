@@ -29,6 +29,28 @@ function formatDate(value) {
   });
 }
 
+function statsForMatches(teamId, matches) {
+  const stats = { played: 0, wins: 0, draws: 0, losses: 0, goalsFor: 0, goalsAgainst: 0 };
+  for (const match of matches) {
+    if (!FINISHED.includes(String(match?.fixture?.status?.short || "").toUpperCase())) continue;
+    const homeId = String(match?.teams?.home?.identity || match?.teams?.home?.id || "");
+    const awayId = String(match?.teams?.away?.identity || match?.teams?.away?.id || "");
+    const isHome = homeId === teamId;
+    const isAway = awayId === teamId;
+    if (!isHome && !isAway) continue;
+    const gf = Number(isHome ? match?.goals?.home : match?.goals?.away);
+    const ga = Number(isHome ? match?.goals?.away : match?.goals?.home);
+    if (!Number.isFinite(gf) || !Number.isFinite(ga)) continue;
+    stats.played++;
+    stats.goalsFor += gf;
+    stats.goalsAgainst += ga;
+    if (gf > ga) stats.wins++;
+    else if (gf === ga) stats.draws++;
+    else stats.losses++;
+  }
+  return { ...stats, points: stats.wins * 3 + stats.draws, goalDifference: stats.goalsFor - stats.goalsAgainst };
+}
+
 function TeamLogo({ team }) {
   return (
     <div className="mz-team-card-logo">
@@ -150,6 +172,16 @@ export default async function TeamDetailPage({ params }) {
     )
     .filter(Boolean);
 
+  const leagueBreakdown = leagues.map((league) => {
+    const leagueMatches = matches.filter(
+      (match) => String(match?.league?.id || "") === String(league.id)
+    );
+    return {
+      ...league,
+      stats: statsForMatches(String(id), leagueMatches),
+    };
+  }).filter((item) => item.stats.played > 0 || matches.some((match) => String(match?.league?.id || "") === String(item.id)));
+
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "SportsTeam",
@@ -255,6 +287,47 @@ export default async function TeamDetailPage({ params }) {
           <section className="mz-team-section">
             <div className="mz-section-heading">
               <div>
+                <span className="mz-catalog-kicker">HISTORY</span>
+                <h2>سجل مباريات الفريق</h2>
+              </div>
+              <span>{matches.length} مباراة</span>
+            </div>
+            {ordered.length ? (
+              <div className="mz-team-match-list">
+                {ordered.slice(0, 60).map((match) => (
+                  <MatchRow
+                    key={"history-" + String(match?.fixture?.id || "")}
+                    match={match}
+                  />
+                ))}
+              </div>
+            ) : (
+              <p className="mz-empty-state">لا يوجد سجل مباريات في اللقطة الحالية.</p>
+            )}
+          </section>
+
+          {leagueBreakdown.length > 0 ? (
+            <section className="mz-team-section">
+              <div className="mz-section-heading">
+                <div>
+                  <span className="mz-catalog-kicker">BY COMPETITION</span>
+                  <h2>الإحصائيات حسب البطولة</h2>
+                </div>
+              </div>
+              <div className="mz-team-stat-details">
+                {leagueBreakdown.map((item) => (
+                  <div key={item.id}>
+                    <span>{item.name}</span>
+                    <strong>{item.stats.points} نقطة · {item.stats.played} لعب</strong>
+                  </div>
+                ))}
+              </div>
+            </section>
+          ) : null}
+
+          <section className="mz-team-section">
+            <div className="mz-section-heading">
+              <div>
                 <span className="mz-catalog-kicker">TEAM STATS</span>
                 <h2>إحصائيات الفريق</h2>
               </div>
@@ -268,7 +341,7 @@ export default async function TeamDetailPage({ params }) {
             </div>
 
             <p className="mz-team-note">
-              الإحصائيات محسوبة من مباريات الفريق الموجودة حاليًا في لقطة MatchZone.
+              الإحصائيات محسوبة فقط من المباريات الموجودة حاليًا في لقطة MatchZone؛ لا نملأ أرقامًا غير متوفرة من المصدر.
             </p>
           </section>
         </div>
