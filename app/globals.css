@@ -3051,3 +3051,68 @@ main {
 
 .mz-league-detail{min-height:100vh;background:radial-gradient(circle at 50% -10%,rgba(46,204,113,.12),transparent 40%),#07100d;color:#f4f8f6;padding:28px 16px 70px}.mz-league-detail-shell{max-width:1050px;margin:0 auto}.mz-league-detail-back{display:inline-block;color:#2ecc71;text-decoration:none;font-weight:900;font-size:13px;margin-bottom:18px}.mz-league-detail-hero{display:flex;align-items:center;gap:16px;padding:25px;border-radius:25px;background:linear-gradient(145deg,#10251c,#0a1511);border:1px solid #1e3d30}.mz-league-detail-badge{width:68px;height:68px;border-radius:20px;display:grid;place-items:center;color:#2ecc71;background:rgba(46,204,113,.08);border:1px solid rgba(46,204,113,.18);font-weight:1000}.mz-league-detail-hero h1{margin:5px 0;font-size:clamp(25px,5vw,38px)}.mz-league-detail-hero p{margin:0;color:#81958c;font-size:12px}.mz-league-detail-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:15px 0}.mz-league-detail-stats div{text-align:center;padding:14px;border:1px solid #18362a;background:#0b1813;border-radius:16px}.mz-league-detail-stats strong{display:block;color:#2ecc71;font-size:23px}.mz-league-detail-stats span{display:block;color:#72877d;font-size:10px;margin-top:4px}.mz-league-detail-section{margin-top:28px}.mz-league-detail-section h2{font-size:21px;margin:0 0 13px}.mz-catalog-match-list{display:grid;gap:8px}.mz-catalog-match{display:grid;grid-template-columns:115px minmax(100px,1fr) 65px minmax(100px,1fr);align-items:center;gap:10px;padding:12px 14px;border:1px solid #18362a;background:#0b1813;border-radius:16px;color:#f4f8f6;text-decoration:none}.mz-catalog-match:hover{border-color:rgba(46,204,113,.4);transform:translateY(-1px)}.mz-catalog-match-meta span{display:block;color:#2ecc71;font-size:11px;font-weight:900}.mz-catalog-match-meta small{display:block;color:#70867b;font-size:9px;margin-top:4px}.mz-catalog-team{display:flex;align-items:center;justify-content:flex-end;gap:8px;font-size:12px;font-weight:800;text-align:right}.mz-catalog-team-away{justify-content:flex-start;text-align:left}.mz-catalog-score{display:flex;align-items:center;justify-content:center;gap:5px}.mz-catalog-score strong{font-size:19px}.mz-catalog-score i{font-style:normal;color:#557064}.mz-catalog-team-img,.mz-catalog-team-logo{width:34px;height:34px;object-fit:contain;flex:none}.mz-catalog-team-logo{display:grid;place-items:center;border-radius:9px;background:#14251e;color:#7f948a;font-size:9px;font-weight:900}.mz-catalog-empty{margin-top:10px}
 @media(max-width:700px){.mz-league-detail-hero{padding:20px}.mz-league-detail-stats{grid-template-columns:repeat(3,1fr)}.mz-catalog-match{grid-template-columns:65px minmax(0,1fr) 52px minmax(0,1fr);gap:6px;padding:10px 8px}.mz-catalog-match-meta small{display:none}.mz-catalog-team{font-size:10px}.mz-catalog-team-img,.mz-catalog-team-logo{width:30px;height:30px}.mz-catalog-score strong{font-size:16px}}
+
+
+.mz-league-team-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:12px;
+  margin-top:16px;
+}
+.mz-league-team-card{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  padding:14px;
+  border:1px solid rgba(85,255,180,.12);
+  border-radius:18px;
+  background:rgba(7,16,13,.72);
+  text-decoration:none;
+  color:inherit;
+  transition:transform .2s ease,border-color .2s ease,background .2s ease;
+}
+.mz-league-team-card:hover{
+  transform:translateY(-2px);
+  border-color:rgba(85,255,180,.3);
+  background:rgba(10,28,21,.9);
+}
+.mz-league-team-logo{
+  width:56px;
+  height:56px;
+  flex:0 0 56px;
+  display:grid;
+  place-items:center;
+  overflow:hidden;
+  border-radius:14px;
+  background:rgba(255,255,255,.04);
+}
+.mz-league-team-logo img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+}
+.mz-league-team-logo span{
+  font-size:12px;
+  font-weight:800;
+  opacity:.7;
+}
+.mz-league-team-card div:last-child{
+  min-width:0;
+  display:grid;
+  gap:5px;
+}
+.mz-league-team-card strong{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+.mz-league-team-card span{
+  font-size:12px;
+  opacity:.65;
+}
+@media(max-width:650px){
+  .mz-league-team-grid{grid-template-columns:1fr 1fr}
+  .mz-league-team-card{padding:10px;gap:9px}
+  .mz-league-team-logo{width:46px;height:46px;flex-basis:46px}
+}
+
