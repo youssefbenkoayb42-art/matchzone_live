@@ -553,72 +553,41 @@ async function fetchFootballDataMatches(from, to) {
 }
 
 async function fetchEspnMatches(from, to) {
-  const start = isoDay(from).replaceAll("-", "");
-  const end = isoDay(to).replaceAll("-", "");
   const output = [];
 
   /*
-   * ESPN accepts a date range. One request per competition is dramatically
-   * cheaper than one request per competition/day, while keeping the same
-   * 10-day coverage window.
+   * ESPN's public scoreboard endpoint currently rejects date ranges with HTTP
+   * 400. Use one request per calendar day instead. This is still free and
+   * keeps the provider as a supplemental source.
    */
+  const days = [];
+  for (
+    let cursor = new Date(from);
+    cursor <= to;
+    cursor.setUTCDate(cursor.getUTCDate() + 1)
+  ) {
+    days.push(isoDay(cursor).replaceAll("-", ""));
+  }
+
   for (const [leagueCode, leagueName, competitionType] of ESPN_LEAGUES) {
-    const url =
-      ESPN_API +
-      "/" +
-      encodeURIComponent(leagueCode) +
-      "/scoreboard?dates=" +
-      start +
-      "-" +
-      end +
-      "&limit=500";
+    for (const day of days) {
+      const url =
+        ESPN_API +
+        "/" +
+        encodeURIComponent(leagueCode) +
+        "/scoreboard?dates=" +
+        day +
+        "&limit=500";
 
-    try {
-      const data = await fetchJson(url);
-      if (Array.isArray(data?.events)) {
-        for (const event of data.events) {
-          output.push({ event, leagueCode, leagueName, competitionType });
-        }
-      }
-    } catch (error) {
-      console.warn("[ESPN] range request failed", leagueCode, "-", error.message);
-      // Safe fallback: request the same window in two halves.
-      const midpoint = new Date(from);
-      midpoint.setUTCDate(midpoint.getUTCDate() + 4);
-      const ranges = [
-        [from, midpoint],
-        [new Date(midpoint.getTime() + 86400000), to],
-      ];
-
-      for (const [rangeFrom, rangeTo] of ranges) {
-        const rangeStart = isoDay(rangeFrom).replaceAll("-", "");
-        const rangeEnd = isoDay(rangeTo).replaceAll("-", "");
-        const fallbackUrl =
-          ESPN_API +
-          "/" +
-          encodeURIComponent(leagueCode) +
-          "/scoreboard?dates=" +
-          rangeStart +
-          "-" +
-          rangeEnd +
-          "&limit=500";
-
-        try {
-          const fallback = await fetchJson(fallbackUrl);
-          if (Array.isArray(fallback?.events)) {
-            for (const event of fallback.events) {
-              output.push({ event, leagueCode, leagueName, competitionType });
-            }
+      try {
+        const data = await fetchJson(url);
+        if (Array.isArray(data?.events)) {
+          for (const event of data.events) {
+            output.push({ event, leagueCode, leagueName, competitionType });
           }
-        } catch (fallbackError) {
-          console.warn(
-            "[ESPN] fallback skipped",
-            leagueCode,
-            rangeStart + "-" + rangeEnd,
-            "-",
-            fallbackError.message
-          );
         }
+      } catch (error) {
+        console.warn("[ESPN] day skipped", leagueCode, day, "-", error.message);
       }
     }
   }
