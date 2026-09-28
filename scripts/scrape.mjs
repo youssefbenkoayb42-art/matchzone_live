@@ -8,19 +8,23 @@ const OLD_LOGO_DIR = path.join(ROOT, "public", "teams");
 const FOOTBALL_DATA_API = "https://api.football-data.org/v4";
 const FOOTBALL_DATA_TOKEN = String(process.env.FOOTBALL_DATA_API_KEY || "").trim();
 const ESPN_API = "https://site.api.espn.com/apis/site/v2/sports/soccer";
+const THESPORTSDB_API = "https://www.thesportsdb.com/api/v1/json/123";
 const AVATAR_BASE = "https://ui-avatars.com/api/";
+const THESPORTSDB_ENRICH_LIMIT = 8;
 
 /*
  * MatchZone data architecture
  *
  * 1) Football-Data.org is the authenticated primary source.
  * 2) ESPN's public site API is a free supplemental source for wider coverage.
- * 3) Every provider keeps its own immutable numeric identity namespace.
- * 4) Team names are display text only; they are NEVER used to identify a team.
- * 5) Logos come only from the exact provider team record.
- * 6) If a provider returns a logo collision or conflicting logo for one ID,
+ * 3) TheSportsDB is an optional detail-enrichment source only; it never creates
+ *    primary matches and never supplies team identity or logos.
+ * 4) Every primary provider keeps its own immutable identity namespace.
+ * 5) Team names are display text only; they are NEVER used to identify a team.
+ * 6) Logos come only from the exact primary provider team record.
+ * 7) If a provider returns a logo collision or conflicting logo for one ID,
  *    the affected team is downgraded to a UI Avatar.
- * 7) The scraper writes one static snapshot. Visitors never call these APIs.
+ * 8) The scraper writes one static snapshot. Visitors never call these APIs.
  *
  * ESPN is undocumented/public rather than an official developer API, so it is
  * deliberately cached by GitHub Actions and treated as a supplement, not the
@@ -414,45 +418,186 @@ async function fetchFootballDataMatches(from, to) {
 }
 
 async function fetchEspnMatches(from, to) {
-  const dates = [];
-  const cursor = new Date(from);
-
-  while (cursor <= to) {
-    dates.push(cursor.toISOString().slice(0, 10).replaceAll("-", ""));
-    cursor.setUTCDate(cursor.getUTCDate() + 1);
-  }
-
+  const start = isoDay(from).replaceAll("-", "");
+  const end = isoDay(to).replaceAll("-", "");
   const output = [];
 
+  /*
+   * ESPN accepts a date range. One request per competition is dramatically
+   * cheaper than one request per competition/day, while keeping the same
+   * 10-day coverage window.
+   */
   for (const [leagueCode, leagueName, competitionType] of ESPN_LEAGUES) {
-    for (const date of dates) {
-      const url =
-        ESPN_API +
-        "/" +
-        encodeURIComponent(leagueCode) +
-        "/scoreboard?dates=" +
-        date +
-        "&limit=100";
+    const url =
+      ESPN_API +
+      "/" +
+      encodeURIComponent(leagueCode) +
+      "/scoreboard?dates=" +
+      start +
+      "-" +
+      end +
+      "&limit=500";
 
-      try {
-        const data = await fetchJson(url);
-        if (Array.isArray(data?.events)) {
-          for (const event of data.events) {
-            output.push({
-              event,
-              leagueCode,
-              leagueName,
-              competitionType,
-            });
-          }
+    try {
+      const data = await fetchJson(url);
+      if (Array.isArray(data?.events)) {
+        for (const event of data.events) {
+          output.push({ event, leagueCode, leagueName, competitionType });
         }
-      } catch (error) {
-        console.warn("[ESPN] skipped", leagueCode, date, "-", error.message);
+      }
+    } catch (error) {
+      console.warn("[ESPN] range request failed", leagueCode, "-", error.message);
+      // Safe fallback: request the same window in two halves.
+      const midpoint = new Date(from);
+      midpoint.setUTCDate(midpoint.getUTCDate() + 4);
+      const ranges = [
+        [from, midpoint],
+        [new Date(midpoint.getTime() + 86400000), to],
+      ];
+
+      for (const [rangeFrom, rangeTo] of ranges) {
+        const rangeStart = isoDay(rangeFrom).replaceAll("-", "");
+        const rangeEnd = isoDay(rangeTo).replaceAll("-", "");
+        const fallbackUrl =
+          ESPN_API +
+          "/" +
+          encodeURIComponent(leagueCode) +
+          "/scoreboard?dates=" +
+          rangeStart +
+          "-" +
+          rangeEnd +
+          "&limit=500";
+
+        try {
+          const fallback = await fetchJson(fallbackUrl);
+          if (Array.isArray(fallback?.events)) {
+            for (const event of fallback.events) {
+              output.push({ event, leagueCode, leagueName, competitionType });
+            }
+          }
+        } catch (fallbackError) {
+          console.warn(
+            "[ESPN] fallback skipped",
+            leagueCode,
+            rangeStart + "-" + rangeEnd,
+            "-",
+            fallbackError.message
+          );
+        }
       }
     }
   }
 
   return output;
+}
+
+function normalizeTeamForSearch(value) {
+  return String(value || "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\\u0300-\\u036f]/g, "")
+    .replace(/\\b(fc|cf|afc|sc|ac|club|football club)\\b/gi, "")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+}
+
+function sameTeamName(a, b) {
+  const left = normalizeTeamForSearch(a);
+  const right = normalizeTeamForSearch(b);
+  return left && right && (left === right || left.includes(right) || right.includes(left));
+}
+
+function parseTheSportsDbEventDate(event) {
+  const value = String(event?.strTimestamp || event?.dateEvent || "").trim();
+  if (!value) return null;
+  const parsed = new Date(value);
+  return Number.isNaN(parsed.getTime()) ? null : parsed;
+}
+
+function eventMatchesPrimary(match, event) {
+  const home = match?.teams?.home?.name;
+  const away = match?.teams?.away?.name;
+  if (!sameTeamName(home, event?.strHomeTeam) || !sameTeamName(away, event?.strAwayTeam)) {
+    return false;
+  }
+
+  const primaryDate = new Date(match?.fixture?.date || 0);
+  const eventDate = parseTheSportsDbEventDate(event);
+  if (!Number.isFinite(primaryDate.getTime()) || !eventDate) return false;
+
+  // Time zones can differ between providers; require the same calendar day
+  // in UTC rather than guessing a timezone conversion.
+  return isoDay(primaryDate) === isoDay(eventDate);
+}
+
+async function enrichWithTheSportsDb(matches) {
+  const candidates = matches
+    .filter((match) => match?.fixture?.status?.short === "FT")
+    .filter((match) => !match?.details?.events?.length && !match?.details?.statistics?.length)
+    .slice(0, THESPORTSDB_ENRICH_LIMIT);
+
+  let enriched = 0;
+
+  for (const match of candidates) {
+    const query = [
+      String(match?.teams?.home?.name || "").trim(),
+      "vs",
+      String(match?.teams?.away?.name || "").trim(),
+    ].join("_");
+
+    try {
+      const searchUrl =
+        THESPORTSDB_API +
+        "/searchevents.php?e=" +
+        encodeURIComponent(query);
+
+      const search = await fetchJson(searchUrl);
+      const event = Array.isArray(search?.event)
+        ? search.event.find((item) => eventMatchesPrimary(match, item))
+        : null;
+
+      if (!event?.idEvent) continue;
+
+      const eventId = String(event.idEvent);
+      const [timelineResult, statsResult] = await Promise.allSettled([
+        fetchJson(THESPORTSDB_API + "/lookuptimeline.php?id=" + encodeURIComponent(eventId)),
+        fetchJson(THESPORTSDB_API + "/lookupeventstats.php?id=" + encodeURIComponent(eventId)),
+      ]);
+
+      const timeline =
+        timelineResult.status === "fulfilled" && Array.isArray(timelineResult.value?.timeline)
+          ? timelineResult.value.timeline
+          : [];
+
+      const statistics =
+        statsResult.status === "fulfilled" && Array.isArray(statsResult.value?.eventstats)
+          ? statsResult.value.eventstats
+          : [];
+
+      if (timeline.length || statistics.length) {
+        match.details = {
+          ...(match.details || {}),
+          events: timeline,
+          statistics,
+          theSportsDbEventId: eventId,
+          updatedAt: new Date().toISOString(),
+          source: "primary provider + TheSportsDB enrichment",
+        };
+        match.externalIds = {
+          ...(match.externalIds || {}),
+          thesportsdb: eventId,
+        };
+        enriched += 1;
+      }
+    } catch (error) {
+      console.warn("[TheSportsDB] skipped", match?.fixture?.id, "-", error.message);
+    }
+
+    // Free tier is 30 requests/minute. Keep this enrichment deliberately low.
+    await sleep(2200);
+  }
+
+  return enriched;
 }
 
 function dedupeMatches(matches) {
@@ -516,6 +661,8 @@ async function main() {
     dedupeMatches([...footballDataMatches, ...supplemental])
   );
 
+  const theSportsDbEnriched = await enrichWithTheSportsDb(matches);
+
   if (!matches.length) {
     throw new Error("No matches returned by either source; refusing to replace the live datastore.");
   }
@@ -523,7 +670,7 @@ async function main() {
   const payload = {
     schemaVersion: 3,
     updatedAt: new Date().toISOString(),
-    source: "football-data.org + ESPN supplemental",
+    source: "football-data.org + ESPN supplemental + TheSportsDB enrichment",
     coverageWindow: {
       from: from.toISOString(),
       to: to.toISOString(),
@@ -531,6 +678,7 @@ async function main() {
     sourcePolicy: {
       primary: "football-data.org",
       supplemental: "ESPN public site API",
+      detailEnrichment: "TheSportsDB V1 free API (existing matches only; no team identity/logo authority)",
       cacheStrategy: "GitHub Actions snapshot; visitors never call providers",
       note: "ESPN endpoint is public/undocumented and may change without notice.",
     },
@@ -539,6 +687,7 @@ async function main() {
       nameLookup: false,
       localLogoCache: false,
       secondaryLogoProvider: false,
+      detailProvider: "TheSportsDB may enrich events/statistics only",
       collisionPolicy: "different provider identities sharing a logo are replaced by UI Avatars",
       unknownTeamPolicy: "UI Avatars",
     },
@@ -546,6 +695,7 @@ async function main() {
       footballData: footballDataMatches.length,
       espn: supplemental.length,
       total: matches.length,
+      theSportsDbEnriched,
     },
     matchCount: matches.length,
     leagueCount: new Set(
