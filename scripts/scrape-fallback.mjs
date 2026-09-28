@@ -5,6 +5,7 @@ import crypto from "node:crypto";
 const BASE = "https://www.flashscore.com";
 const OUTPUT = path.join(process.cwd(), "data", "scraped-matches.json");
 const LOGO_REGISTRY_OUTPUT = path.join(process.cwd(), "data", "team-logo-registry.json");
+// Keep the scraper workflow triggerable after datastore-only fixes.
 const TEAM_LOGO_DIR = path.join(process.cwd(), "public", "teams");
 const USER_AGENT =
   process.env.SCRAPER_USER_AGENT ||
