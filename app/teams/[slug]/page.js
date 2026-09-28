@@ -353,19 +353,6 @@ export default async function TeamDetailPage({ params, searchParams }) {
               <p className="mz-empty-state">لا توجد مباريات تطابق الفلتر الحالي.</p>
             )}
           </section>
-            {ordered.length ? (
-              <div className="mz-team-match-list">
-                {ordered.slice(0, 60).map((match) => (
-                  <MatchRow
-                    key={"history-" + String(match?.fixture?.id || "")}
-                    match={match}
-                  />
-                ))}
-              </div>
-            ) : (
-              <p className="mz-empty-state">لا يوجد سجل مباريات في اللقطة الحالية.</p>
-            )}
-          </section>
 
           {leagueBreakdown.length > 0 ? (
             <section className="mz-team-section">
