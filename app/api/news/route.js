@@ -12,12 +12,12 @@ export async function GET() {
     }
 
     const url =
-      `https://gnews.io/api/v4/search` +
-      `?q=football` +
-      `&lang=ar` +
-      `&max=10` +
-      `&sortby=publishedAt` +
-      `&apikey=${apiKey}`;
+      "https://gnews.io/api/v4/search" +
+      "?q=football" +
+      "&lang=ar" +
+      "&max=10" +
+      "&sortby=publishedAt" +
+      "&apikey=" + encodeURIComponent(apiKey);
 
     const res = await fetch(url, {
       next: { revalidate: 300 },
@@ -25,7 +25,6 @@ export async function GET() {
 
     if (!res.ok) {
       const errorText = await res.text();
-
       console.error("GNews Error:", errorText);
 
       return Response.json(
@@ -41,8 +40,8 @@ export async function GET() {
     const data = await res.json();
 
     return Response.json({
-      articles: data.articles || [],
-      totalArticles: data.totalArticles || 0,
+      articles: Array.isArray(data?.articles) ? data.articles : [],
+      totalArticles: Number(data?.totalArticles || 0),
     });
   } catch (error) {
     console.error("News API Error:", error);
@@ -50,10 +49,8 @@ export async function GET() {
     return Response.json(
       {
         error: "فشل سحب الأخبار",
-        details: error.message,
       },
       { status: 500 }
     );
-}
   }
 }
