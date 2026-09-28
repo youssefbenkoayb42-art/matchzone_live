@@ -1,4 +1,4 @@
-import { getMatchSnapshot } from "../lib/match-snapshot";
+import { getMatchSnapshot, getMatchSnapshotMeta } from "../lib/match-snapshot";
 
 const BASE_URL = "https://matchzone-live.vercel.app";
 
@@ -12,7 +12,7 @@ const leagues = [
 
 export default async function sitemap() {
   const now = new Date();
-  const matches = await getMatchSnapshot();
+  const [matches, meta] = await Promise.all([getMatchSnapshot(), getMatchSnapshotMeta()]);
 
   const matchIds = [
     ...new Set(
@@ -39,6 +39,12 @@ export default async function sitemap() {
     { url: BASE_URL + "/leagues", lastModified: now, changeFrequency: "daily", priority: 0.9 },
     { url: BASE_URL + "/results", lastModified: now, changeFrequency: "hourly", priority: 0.93 },
     { url: BASE_URL + "/matches/today", lastModified: now, changeFrequency: "hourly", priority: 0.95 },
+    ...(meta.leagues || []).map((league) => ({
+      url: BASE_URL + "/leagues/catalog/" + encodeURIComponent(String(league.id)),
+      lastModified: now,
+      changeFrequency: "daily",
+      priority: league.currentCoverage ? 0.78 : 0.55,
+    })),
     ...leagues.map((slug) => ({
       url: BASE_URL + "/leagues/" + slug,
       lastModified: now,
