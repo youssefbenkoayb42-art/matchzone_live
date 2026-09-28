@@ -593,7 +593,9 @@ async function fetchOpenFootballMatches(from, to) {
     console.warn("[OpenFootball] catalog unavailable:", error.message);
   }
 
-  return output;
+  const world = await fetchOpenFootballWorldMatches(from, to);
+  output.push(...world.matches);
+  return { matches: output, catalog: world.catalog };
 }
 
 function fixtureSignature(match) {
@@ -846,7 +848,8 @@ async function main() {
   const identityLogos = new Map();
 
   const footballDataRaw = await fetchFootballDataMatches(from, to);
-  const openFootballRaw = await fetchOpenFootballMatches(from, to);
+  const openFootballResult = await fetchOpenFootballMatches(from, to);
+  const openFootballRaw = openFootballResult.matches;
   const footballDataMatches = footballDataRaw.map((item) =>
     makeFootballDataMatch(item, identityLogos)
   );
