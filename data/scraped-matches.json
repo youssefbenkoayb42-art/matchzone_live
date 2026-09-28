@@ -1,10 +1,10 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-09-28T16:23:23.466Z",
+  "updatedAt": "2026-09-28T16:33:46.006Z",
   "source": "football-data.org + ESPN + OpenFootball + TheSportsDB enrichment",
   "coverageWindow": {
-    "from": "2026-09-26T16:22:50.863Z",
-    "to": "2026-10-05T16:22:50.863Z"
+    "from": "2026-09-26T16:33:14.196Z",
+    "to": "2026-10-05T16:33:14.196Z"
   },
   "sourcePolicy": {
     "primary": "football-data.org",
@@ -349,7 +349,7 @@
             "intAway": "13"
           }
         ],
-        "updatedAt": "2026-09-28T16:23:15.663Z",
+        "updatedAt": "2026-09-28T16:33:38.551Z",
         "source": "primary provider + TheSportsDB enrichment",
         "theSportsDbEventId": "2487538"
       }
@@ -559,7 +559,7 @@
             "intAway": "1"
           }
         ],
-        "updatedAt": "2026-09-28T16:23:18.196Z",
+        "updatedAt": "2026-09-28T16:33:40.995Z",
         "source": "primary provider + TheSportsDB enrichment",
         "theSportsDbEventId": "2558125"
       }
@@ -937,7 +937,7 @@
             "intAway": "8"
           }
         ],
-        "updatedAt": "2026-09-28T16:23:21.265Z",
+        "updatedAt": "2026-09-28T16:33:43.805Z",
         "source": "primary provider + TheSportsDB enrichment",
         "theSportsDbEventId": "2407100"
       }
