@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-09-27T23:05:29.080Z",
+  "updatedAt": "2026-09-28T05:25:33.614Z",
   "source": "flashscore-feed",
   "leagueCount": 52,
   "matchCount": 116,
-  "detailMatchCount": 53,
+  "detailMatchCount": 58,
   "matches": [
     {
       "fixture": {
@@ -3041,7 +3041,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T23:03:16.576Z",
+        "updatedAt": "2026-09-28T05:23:06.640Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_jPd1bs9U",
@@ -3968,7 +3968,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T23:03:18.889Z",
+        "updatedAt": "2026-09-28T05:23:09.004Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_AVG6RuwH",
@@ -4894,7 +4894,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T23:03:21.202Z",
+        "updatedAt": "2026-09-28T05:23:11.354Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_UiFjVNwh",
@@ -5860,7 +5860,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T23:03:23.515Z",
+        "updatedAt": "2026-09-28T05:23:13.713Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_hhVIGOOb",
@@ -6759,7 +6759,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T23:03:55.924Z",
+        "updatedAt": "2026-09-28T05:23:46.868Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_YVWYCtON",
@@ -7639,7 +7639,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T23:03:28.142Z",
+        "updatedAt": "2026-09-28T05:23:18.424Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_ljPGxhI0",
@@ -8638,7 +8638,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T23:03:30.462Z",
+        "updatedAt": "2026-09-28T05:23:20.800Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_M3NOzWnD",
@@ -9603,7 +9603,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T23:04:05.181Z",
+        "updatedAt": "2026-09-28T05:23:56.314Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_xEhjBCOP",
@@ -10582,7 +10582,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T23:03:35.088Z",
+        "updatedAt": "2026-09-28T05:23:25.554Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_l4I1W5D6",
@@ -11494,7 +11494,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T23:03:37.399Z",
+        "updatedAt": "2026-09-28T05:23:27.939Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_MHG9UqrJ",
@@ -11888,7 +11888,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T23:03:39.711Z",
+        "updatedAt": "2026-09-28T05:23:30.300Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_88o4wcDb",
@@ -12373,7 +12373,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T23:03:42.054Z",
+        "updatedAt": "2026-09-28T05:23:32.649Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_vZ4vNyTH",
@@ -12799,7 +12799,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T23:04:25.999Z",
+        "updatedAt": "2026-09-28T05:24:17.559Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_pW7nLFcU",
@@ -13857,7 +13857,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T23:03:46.678Z",
+        "updatedAt": "2026-09-28T05:23:37.363Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_rB3DoAi3",
@@ -14908,7 +14908,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T23:03:48.990Z",
+        "updatedAt": "2026-09-28T05:23:39.713Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_UeabUzLc",
@@ -15860,7 +15860,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T23:03:51.300Z",
+        "updatedAt": "2026-09-28T05:23:42.152Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_G4BRN6ad",
@@ -16764,7 +16764,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T23:03:53.612Z",
+        "updatedAt": "2026-09-28T05:23:44.518Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_vs9QuuLs",
@@ -17707,7 +17707,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T23:03:58.236Z",
+        "updatedAt": "2026-09-28T05:23:49.243Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_4EN47Koo",
@@ -18658,7 +18658,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T23:04:00.547Z",
+        "updatedAt": "2026-09-28T05:23:51.601Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_25DbT184",
@@ -18671,7 +18671,7 @@
         "id": "fs-0IYQE2gB",
         "date": "2026-09-27T21:30:00.000Z",
         "status": {
-          "short": "LIVE"
+          "short": "FT"
         }
       },
       "teams": {
@@ -18831,34 +18831,86 @@
             "scoreHome": null,
             "scoreAway": null,
             "rawType": "1"
+          },
+          {
+            "id": "0IYQE2gB-11",
+            "minute": "83'",
+            "type": "yellow",
+            "team": null,
+            "player": "Yago Santos",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "0IYQE2gB-12",
+            "minute": "85'",
+            "type": "goal",
+            "team": null,
+            "player": "Nathan Fogaca",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "0IYQE2gB-13",
+            "minute": "85'",
+            "type": "goal",
+            "team": null,
+            "player": "Lucca Prior",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "0IYQE2gB-14",
+            "minute": "90+4'",
+            "type": "goal",
+            "team": null,
+            "player": "Rodrigo",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
           }
         ],
         "statistics": [
           {
             "name": "Expected goals (xG)",
             "key": "expected goals (xg)",
-            "home": "1.86",
+            "home": "2.15",
             "away": "0.99",
             "period": "match"
           },
           {
             "name": "Ball possession",
             "key": "possession",
-            "home": "66%",
-            "away": "34%",
+            "home": "68%",
+            "away": "32%",
             "period": "match"
           },
           {
             "name": "Total shots",
             "key": "shots",
-            "home": "8",
+            "home": "16",
             "away": "6",
             "period": "match"
           },
           {
             "name": "Shots on target",
             "key": "shots_on_target",
-            "home": "4",
+            "home": "7",
             "away": "3",
             "period": "match"
           },
@@ -18872,49 +18924,49 @@
           {
             "name": "Corner kicks",
             "key": "corners",
-            "home": "2",
+            "home": "5",
             "away": "1",
             "period": "match"
           },
           {
             "name": "Passes",
             "key": "passes",
-            "home": "89% (409/458)",
-            "away": "77% (184/238)",
+            "home": "89% (548/615)",
+            "away": "74% (217/293)",
             "period": "match"
           },
           {
             "name": "xG on target (xGOT)",
             "key": "xg on target (xgot)",
-            "home": "1.43",
+            "home": "1.66",
             "away": "1.31",
             "period": "match"
           },
           {
             "name": "Shots off target",
             "key": "shots",
-            "home": "3",
+            "home": "6",
             "away": "3",
             "period": "match"
           },
           {
             "name": "Blocked shots",
             "key": "shots",
-            "home": "1",
+            "home": "3",
             "away": "0",
             "period": "match"
           },
           {
             "name": "Shots inside the box",
             "key": "shots",
-            "home": "5",
+            "home": "7",
             "away": "3",
             "period": "match"
           },
           {
             "name": "Shots outside the box",
             "key": "shots",
-            "home": "3",
+            "home": "9",
             "away": "3",
             "period": "match"
           },
@@ -18935,7 +18987,7 @@
           {
             "name": "Touches in opposition box",
             "key": "touches in opposition box",
-            "home": "14",
+            "home": "19",
             "away": "5",
             "period": "match"
           },
@@ -18949,85 +19001,85 @@
           {
             "name": "Offsides",
             "key": "offsides",
-            "home": "1",
+            "home": "2",
             "away": "0",
             "period": "match"
           },
           {
             "name": "Free kicks",
             "key": "free kicks",
-            "home": "10",
-            "away": "10",
+            "home": "16",
+            "away": "15",
             "period": "match"
           },
           {
             "name": "Long passes",
             "key": "long passes",
-            "home": "62% (13/21)",
-            "away": "49% (25/51)",
+            "home": "57% (17/30)",
+            "away": "41% (28/68)",
             "period": "match"
           },
           {
             "name": "Passes in final third",
             "key": "passes in final third",
-            "home": "70% (87/124)",
-            "away": "61% (14/23)",
+            "home": "73% (130/179)",
+            "away": "47% (20/43)",
             "period": "match"
           },
           {
             "name": "Crosses",
             "key": "crosses",
-            "home": "25% (5/20)",
+            "home": "17% (5/30)",
             "away": "25% (1/4)",
             "period": "match"
           },
           {
             "name": "Expected assists (xA)",
             "key": "expected assists (xa)",
-            "home": "0.38",
-            "away": "0.39",
+            "home": "0.48",
+            "away": "0.41",
             "period": "match"
           },
           {
             "name": "Throw ins",
             "key": "throw ins",
-            "home": "19",
-            "away": "18",
+            "home": "27",
+            "away": "22",
             "period": "match"
           },
           {
             "name": "Fouls",
             "key": "fouls",
-            "home": "10",
-            "away": "10",
+            "home": "15",
+            "away": "16",
             "period": "match"
           },
           {
             "name": "Tackles",
             "key": "tackles",
-            "home": "0% (0/1)",
-            "away": "50% (4/8)",
+            "home": "60% (3/5)",
+            "away": "54% (7/13)",
             "period": "match"
           },
           {
             "name": "Duels won",
             "key": "duels won",
-            "home": "19",
-            "away": "31",
+            "home": "37",
+            "away": "45",
             "period": "match"
           },
           {
             "name": "Clearances",
             "key": "clearances",
-            "home": "4",
-            "away": "22",
+            "home": "5",
+            "away": "32",
             "period": "match"
           },
           {
             "name": "Interceptions",
             "key": "interceptions",
-            "home": "6",
-            "away": "10",
+            "home": "8",
+            "away": "13",
             "period": "match"
           },
           {
@@ -19048,28 +19100,28 @@
             "name": "Goalkeeper saves",
             "key": "goalkeeper saves",
             "home": "1",
-            "away": "2",
+            "away": "5",
             "period": "match"
           },
           {
             "name": "xGOT faced",
             "key": "xgot faced",
             "home": "1.31",
-            "away": "1.43",
+            "away": "1.66",
             "period": "match"
           },
           {
             "name": "Goals prevented",
             "key": "goals prevented",
             "home": "-0.69",
-            "away": "-0.57",
+            "away": "-0.34",
             "period": "match"
           },
           {
             "name": "Goal kicks",
             "key": "goal kicks",
             "home": "5",
-            "away": "5",
+            "away": "9",
             "period": "match"
           },
           {
@@ -19108,6 +19160,13 @@
             "period": "match"
           },
           {
+            "name": "Corner kicks",
+            "key": "corners",
+            "home": "2",
+            "away": "1",
+            "period": "match"
+          },
+          {
             "name": "Passes",
             "key": "passes",
             "home": "90% (275/306)",
@@ -19129,6 +19188,13 @@
             "period": "match"
           },
           {
+            "name": "Blocked shots",
+            "key": "shots",
+            "home": "1",
+            "away": "0",
+            "period": "match"
+          },
+          {
             "name": "Shots inside the box",
             "key": "shots",
             "home": "3",
@@ -19147,6 +19213,13 @@
             "key": "touches in opposition box",
             "home": "7",
             "away": "3",
+            "period": "match"
+          },
+          {
+            "name": "Offsides",
+            "key": "offsides",
+            "home": "1",
+            "away": "0",
             "period": "match"
           },
           {
@@ -19227,6 +19300,13 @@
             "period": "match"
           },
           {
+            "name": "Goalkeeper saves",
+            "key": "goalkeeper saves",
+            "home": "1",
+            "away": "2",
+            "period": "match"
+          },
+          {
             "name": "xGOT faced",
             "key": "xgot faced",
             "home": "0.32",
@@ -19250,28 +19330,28 @@
           {
             "name": "Expected goals (xG)",
             "key": "expected goals (xg)",
-            "home": "0.45",
+            "home": "0.74",
             "away": "0.75",
             "period": "match"
           },
           {
             "name": "Ball possession",
             "key": "possession",
-            "home": "71%",
-            "away": "29%",
+            "home": "73%",
+            "away": "27%",
             "period": "match"
           },
           {
             "name": "Total shots",
             "key": "shots",
-            "home": "3",
+            "home": "11",
             "away": "2",
             "period": "match"
           },
           {
             "name": "Shots on target",
             "key": "shots_on_target",
-            "home": "1",
+            "home": "4",
             "away": "1",
             "period": "match"
           },
@@ -19285,49 +19365,49 @@
           {
             "name": "Corner kicks",
             "key": "corners",
-            "home": "0",
+            "home": "3",
             "away": "0",
             "period": "match"
           },
           {
             "name": "Passes",
             "key": "passes",
-            "home": "88% (134/152)",
-            "away": "78% (51/65)",
+            "home": "88% (273/309)",
+            "away": "70% (84/120)",
             "period": "match"
           },
           {
             "name": "xG on target (xGOT)",
             "key": "xg on target (xgot)",
-            "home": "0.34",
+            "home": "0.57",
             "away": "0.99",
             "period": "match"
           },
           {
             "name": "Shots off target",
             "key": "shots",
-            "home": "2",
+            "home": "5",
             "away": "1",
             "period": "match"
           },
           {
             "name": "Blocked shots",
             "key": "shots",
-            "home": "0",
+            "home": "2",
             "away": "0",
             "period": "match"
           },
           {
             "name": "Shots inside the box",
             "key": "shots",
-            "home": "2",
+            "home": "4",
             "away": "2",
             "period": "match"
           },
           {
             "name": "Shots outside the box",
             "key": "shots",
-            "home": "1",
+            "home": "7",
             "away": "0",
             "period": "match"
           },
@@ -19341,92 +19421,85 @@
           {
             "name": "Touches in opposition box",
             "key": "touches in opposition box",
-            "home": "7",
+            "home": "12",
             "away": "2",
-            "period": "match"
-          },
-          {
-            "name": "Offsides",
-            "key": "offsides",
-            "home": "0",
-            "away": "0",
             "period": "match"
           },
           {
             "name": "Free kicks",
             "key": "free kicks",
-            "home": "2",
-            "away": "4",
+            "home": "8",
+            "away": "9",
             "period": "match"
           },
           {
             "name": "Long passes",
             "key": "long passes",
-            "home": "58% (7/12)",
-            "away": "60% (9/15)",
+            "home": "52% (11/21)",
+            "away": "38% (12/32)",
             "period": "match"
           },
           {
             "name": "Passes in final third",
             "key": "passes in final third",
-            "home": "73% (37/51)",
-            "away": "63% (5/8)",
+            "home": "75% (80/106)",
+            "away": "39% (11/28)",
             "period": "match"
           },
           {
             "name": "Crosses",
             "key": "crosses",
-            "home": "30% (3/10)",
+            "home": "15% (3/20)",
             "away": "100% (1/1)",
             "period": "match"
           },
           {
             "name": "Expected assists (xA)",
             "key": "expected assists (xa)",
-            "home": "0.19",
-            "away": "0.37",
+            "home": "0.29",
+            "away": "0.39",
             "period": "match"
           },
           {
             "name": "Throw ins",
             "key": "throw ins",
-            "home": "11",
-            "away": "2",
+            "home": "19",
+            "away": "6",
             "period": "match"
           },
           {
             "name": "Fouls",
             "key": "fouls",
-            "home": "4",
-            "away": "2",
+            "home": "9",
+            "away": "8",
             "period": "match"
           },
           {
             "name": "Tackles",
             "key": "tackles",
-            "home": "0% (0/1)",
-            "away": "50% (3/6)",
+            "home": "60% (3/5)",
+            "away": "55% (6/11)",
             "period": "match"
           },
           {
             "name": "Duels won",
             "key": "duels won",
-            "home": "8",
-            "away": "15",
+            "home": "26",
+            "away": "29",
             "period": "match"
           },
           {
             "name": "Clearances",
             "key": "clearances",
-            "home": "0",
-            "away": "15",
+            "home": "1",
+            "away": "25",
             "period": "match"
           },
           {
             "name": "Interceptions",
             "key": "interceptions",
-            "home": "2",
-            "away": "5",
+            "home": "4",
+            "away": "8",
             "period": "match"
           },
           {
@@ -19440,32 +19513,32 @@
             "name": "Goalkeeper saves",
             "key": "goalkeeper saves",
             "home": "0",
-            "away": "0",
+            "away": "3",
             "period": "match"
           },
           {
             "name": "xGOT faced",
             "key": "xgot faced",
             "home": "0.99",
-            "away": "0.34",
+            "away": "0.57",
             "period": "match"
           },
           {
             "name": "Goals prevented",
             "key": "goals prevented",
             "home": "-0.01",
-            "away": "-0.66",
+            "away": "-0.43",
             "period": "match"
           },
           {
             "name": "Goal kicks",
             "key": "goal kicks",
             "home": "2",
-            "away": "2",
+            "away": "6",
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T23:05:19.205Z",
+        "updatedAt": "2026-09-28T05:25:11.942Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_0IYQE2gB",
@@ -20462,7 +20535,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T23:04:07.492Z",
+        "updatedAt": "2026-09-28T05:23:58.667Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_tQL8vEml",
@@ -21447,7 +21520,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T23:04:09.817Z",
+        "updatedAt": "2026-09-28T05:24:01.015Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_vN2dkV16",
@@ -21792,14 +21865,14 @@
             "name": "Corner kicks",
             "key": "corners",
             "home": "7",
-            "away": "5",
+            "away": "6",
             "period": "match"
           },
           {
             "name": "Passes",
             "key": "passes",
-            "home": "86% (397/462)",
-            "away": "82% (297/361)",
+            "home": "86% (404/469)",
+            "away": "82% (298/362)",
             "period": "match"
           },
           {
@@ -21854,8 +21927,8 @@
           {
             "name": "Touches in opposition box",
             "key": "touches in opposition box",
-            "home": "21",
-            "away": "26",
+            "home": "22",
+            "away": "25",
             "period": "match"
           },
           {
@@ -21889,7 +21962,7 @@
           {
             "name": "Passes in final third",
             "key": "passes in final third",
-            "home": "74% (109/148)",
+            "home": "74% (111/150)",
             "away": "77% (95/124)",
             "period": "match"
           },
@@ -21904,7 +21977,7 @@
             "name": "Expected assists (xA)",
             "key": "expected assists (xa)",
             "home": "1.43",
-            "away": "1.22",
+            "away": "1.23",
             "period": "match"
           },
           {
@@ -22204,8 +22277,8 @@
           {
             "name": "Ball possession",
             "key": "possession",
-            "home": "60%",
-            "away": "40%",
+            "home": "61%",
+            "away": "39%",
             "period": "match"
           },
           {
@@ -22233,14 +22306,14 @@
             "name": "Corner kicks",
             "key": "corners",
             "home": "5",
-            "away": "3",
+            "away": "4",
             "period": "match"
           },
           {
             "name": "Passes",
             "key": "passes",
-            "home": "85% (196/230)",
-            "away": "80% (126/158)",
+            "home": "86% (203/237)",
+            "away": "80% (127/159)",
             "period": "match"
           },
           {
@@ -22288,8 +22361,8 @@
           {
             "name": "Touches in opposition box",
             "key": "touches in opposition box",
-            "home": "14",
-            "away": "14",
+            "home": "15",
+            "away": "13",
             "period": "match"
           },
           {
@@ -22316,7 +22389,7 @@
           {
             "name": "Passes in final third",
             "key": "passes in final third",
-            "home": "68% (51/75)",
+            "home": "69% (53/77)",
             "away": "80% (53/66)",
             "period": "match"
           },
@@ -22331,7 +22404,7 @@
             "name": "Expected assists (xA)",
             "key": "expected assists (xa)",
             "home": "0.57",
-            "away": "0.60",
+            "away": "0.61",
             "period": "match"
           },
           {
@@ -22405,7 +22478,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T23:05:21.517Z",
+        "updatedAt": "2026-09-28T05:25:14.298Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_S0AAbZvK",
@@ -23410,7 +23483,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T23:04:14.439Z",
+        "updatedAt": "2026-09-28T05:24:05.725Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_vydsqqcC",
@@ -24317,7 +24390,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T23:04:16.749Z",
+        "updatedAt": "2026-09-28T05:24:08.109Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_SE3ehmzQ",
@@ -25243,7 +25316,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T23:04:19.060Z",
+        "updatedAt": "2026-09-28T05:24:10.457Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_bcfRnRcm",
@@ -26096,7 +26169,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T23:04:21.372Z",
+        "updatedAt": "2026-09-28T05:24:12.852Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_WAhZp5Sa",
@@ -27043,7 +27116,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T23:04:23.687Z",
+        "updatedAt": "2026-09-28T05:24:15.201Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_WrElsNRO",
@@ -27377,7 +27450,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T23:04:28.311Z",
+        "updatedAt": "2026-09-28T05:24:19.931Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_nLBqJSRq",
@@ -27764,7 +27837,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T23:04:30.624Z",
+        "updatedAt": "2026-09-28T05:24:22.279Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_W81WOcb5",
@@ -28176,7 +28249,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T23:05:23.829Z",
+        "updatedAt": "2026-09-28T05:25:26.120Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_GYlCyyrB",
@@ -28609,7 +28682,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T23:04:35.250Z",
+        "updatedAt": "2026-09-28T05:24:27.003Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_08COfwKq",
@@ -29621,7 +29694,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T23:04:37.593Z",
+        "updatedAt": "2026-09-28T05:24:29.371Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_WlRXwJkf",
@@ -30601,7 +30674,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T23:04:39.906Z",
+        "updatedAt": "2026-09-28T05:24:31.743Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_G4V8Nc5D",
@@ -31513,7 +31586,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T23:04:42.220Z",
+        "updatedAt": "2026-09-28T05:24:34.112Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_riDJPSUq",
@@ -32532,7 +32605,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T23:04:44.532Z",
+        "updatedAt": "2026-09-28T05:24:36.491Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_jy7LqlMF",
@@ -32948,8 +33021,8 @@
           {
             "name": "Passes",
             "key": "passes",
-            "home": "78% (292/374)",
-            "away": "82% (328/401)",
+            "home": "78% (291/374)",
+            "away": "81% (327/402)",
             "period": "match"
           },
           {
@@ -33012,7 +33085,7 @@
             "name": "Touches in opposition box",
             "key": "touches in opposition box",
             "home": "20",
-            "away": "14",
+            "away": "15",
             "period": "match"
           },
           {
@@ -33039,15 +33112,15 @@
           {
             "name": "Long passes",
             "key": "long passes",
-            "home": "37% (22/60)",
-            "away": "47% (25/53)",
+            "home": "36% (22/61)",
+            "away": "45% (24/53)",
             "period": "match"
           },
           {
             "name": "Passes in final third",
             "key": "passes in final third",
             "home": "58% (60/104)",
-            "away": "64% (47/74)",
+            "away": "62% (46/74)",
             "period": "match"
           },
           {
@@ -33060,8 +33133,8 @@
           {
             "name": "Expected assists (xA)",
             "key": "expected assists (xa)",
-            "home": "1.28",
-            "away": "0.37",
+            "home": "1.22",
+            "away": "0.40",
             "period": "match"
           },
           {
@@ -33081,14 +33154,14 @@
           {
             "name": "Tackles",
             "key": "tackles",
-            "home": "67% (18/27)",
-            "away": "73% (11/15)",
+            "home": "63% (17/27)",
+            "away": "79% (11/14)",
             "period": "match"
           },
           {
             "name": "Duels won",
             "key": "duels won",
-            "home": "62",
+            "home": "61",
             "away": "54",
             "period": "match"
           },
@@ -33186,8 +33259,8 @@
           {
             "name": "Passes",
             "key": "passes",
-            "home": "76% (133/175)",
-            "away": "83% (159/191)",
+            "home": "76% (132/174)",
+            "away": "83% (159/192)",
             "period": "match"
           },
           {
@@ -33243,7 +33316,7 @@
             "name": "Touches in opposition box",
             "key": "touches in opposition box",
             "home": "11",
-            "away": "9",
+            "away": "10",
             "period": "match"
           },
           {
@@ -33256,15 +33329,15 @@
           {
             "name": "Long passes",
             "key": "long passes",
-            "home": "42% (13/31)",
-            "away": "50% (13/26)",
+            "home": "41% (13/32)",
+            "away": "46% (12/26)",
             "period": "match"
           },
           {
             "name": "Passes in final third",
             "key": "passes in final third",
             "home": "53% (26/49)",
-            "away": "62% (21/34)",
+            "away": "59% (20/34)",
             "period": "match"
           },
           {
@@ -33277,8 +33350,8 @@
           {
             "name": "Expected assists (xA)",
             "key": "expected assists (xa)",
-            "home": "0.54",
-            "away": "0.19",
+            "home": "0.57",
+            "away": "0.21",
             "period": "match"
           },
           {
@@ -33299,13 +33372,13 @@
             "name": "Tackles",
             "key": "tackles",
             "home": "90% (9/10)",
-            "away": "56% (5/9)",
+            "away": "63% (5/8)",
             "period": "match"
           },
           {
             "name": "Duels won",
             "key": "duels won",
-            "home": "24",
+            "home": "23",
             "away": "29",
             "period": "match"
           },
@@ -33389,8 +33462,8 @@
           {
             "name": "Passes",
             "key": "passes",
-            "home": "80% (159/199)",
-            "away": "80% (169/210)",
+            "home": "80% (159/200)",
+            "away": "80% (168/210)",
             "period": "match"
           },
           {
@@ -33487,8 +33560,8 @@
           {
             "name": "Expected assists (xA)",
             "key": "expected assists (xa)",
-            "home": "0.74",
-            "away": "0.18",
+            "home": "0.65",
+            "away": "0.19",
             "period": "match"
           },
           {
@@ -33508,7 +33581,7 @@
           {
             "name": "Tackles",
             "key": "tackles",
-            "home": "53% (9/17)",
+            "home": "47% (8/17)",
             "away": "100% (6/6)",
             "period": "match"
           },
@@ -33562,7 +33635,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T23:04:46.844Z",
+        "updatedAt": "2026-09-28T05:24:38.840Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_8bIfo1cK",
@@ -34449,7 +34522,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T23:04:49.153Z",
+        "updatedAt": "2026-09-28T05:24:41.237Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_h8OvjEB6",
@@ -34586,7 +34659,7 @@
           },
           {
             "id": "YFRRxgDM-8",
-            "minute": "71'",
+            "minute": "70'",
             "type": "yellow",
             "team": null,
             "player": "Celentano R.",
@@ -35376,7 +35449,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T23:04:51.465Z",
+        "updatedAt": "2026-09-28T05:24:43.610Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_YFRRxgDM",
@@ -36356,7 +36429,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T23:04:53.776Z",
+        "updatedAt": "2026-09-28T05:24:45.962Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_ENCmlhtJ",
@@ -37375,7 +37448,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T23:04:56.087Z",
+        "updatedAt": "2026-09-28T05:24:48.312Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_QFe56Zem",
@@ -38303,7 +38376,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T23:04:58.397Z",
+        "updatedAt": "2026-09-28T05:24:50.705Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_bTgD4DQa",
@@ -39230,7 +39303,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T23:05:00.708Z",
+        "updatedAt": "2026-09-28T05:24:53.102Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_femM2ieC",
@@ -40182,7 +40255,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T23:05:03.020Z",
+        "updatedAt": "2026-09-28T05:24:55.456Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_0hjU0VPO",
@@ -41042,7 +41115,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T23:05:05.335Z",
+        "updatedAt": "2026-09-28T05:24:57.804Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_UaSdXWzp",
@@ -42002,7 +42075,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T23:05:07.647Z",
+        "updatedAt": "2026-09-28T05:25:00.153Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_46GvLYAt",
@@ -42922,7 +42995,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T23:05:09.957Z",
+        "updatedAt": "2026-09-28T05:25:02.516Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_CWJnJCug",
@@ -43882,7 +43955,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T23:05:12.270Z",
+        "updatedAt": "2026-09-28T05:25:04.888Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_8bDeHjA5",
@@ -44821,7 +44894,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T23:05:14.582Z",
+        "updatedAt": "2026-09-28T05:25:07.236Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_tCB3FUvI",
@@ -45713,7 +45786,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-27T23:05:16.893Z",
+        "updatedAt": "2026-09-28T05:25:09.583Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_QRL5VA5d",
@@ -45726,12 +45799,12 @@
         "id": "fs-bq1tgD2s",
         "date": "2026-09-27T23:05:00.000Z",
         "status": {
-          "short": "NS"
+          "short": "FT"
         }
       },
       "teams": {
         "home": {
-          "id": null,
+          "id": "2",
           "name": "Fortaleza",
           "logo": "/teams/fortaleza.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/Ecz8EXVH-IVYXEpED.png",
@@ -45750,8 +45823,8 @@
         }
       },
       "goals": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 2
       },
       "league": {
         "id": "flashscore-colombia-primera-a",
@@ -45769,13 +45842,1004 @@
       "sourceUrl": "https://www.flashscore.com/match/bq1tgD2s/",
       "sourcePath": "/football/colombia/primera-a/",
       "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
+        "events": [
+          {
+            "id": "bq1tgD2s-1",
+            "minute": "6'",
+            "type": "goal",
+            "team": null,
+            "player": "Diaz Y.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "bq1tgD2s-2",
+            "minute": "10'",
+            "type": "goal",
+            "team": null,
+            "player": "Garcia J.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "bq1tgD2s-3",
+            "minute": "27'",
+            "type": "yellow",
+            "team": null,
+            "player": "Martinez Yepez H. E.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "bq1tgD2s-4",
+            "minute": "30'",
+            "type": "yellow",
+            "team": null,
+            "player": "Diaz Y.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "bq1tgD2s-5",
+            "minute": "33'",
+            "type": "goal",
+            "team": null,
+            "player": "Vivas S.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "bq1tgD2s-6",
+            "minute": "33'",
+            "type": "goal",
+            "team": null,
+            "player": "Mejia B.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "bq1tgD2s-8",
+            "minute": "46'",
+            "type": "yellow",
+            "team": null,
+            "player": "Hurtado J.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "bq1tgD2s-9",
+            "minute": "46'",
+            "type": "yellow",
+            "team": null,
+            "player": "Rovira B.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "bq1tgD2s-10",
+            "minute": "46'",
+            "type": "yellow",
+            "team": null,
+            "player": "Guzman S.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "bq1tgD2s-11",
+            "minute": "47'",
+            "type": "yellow",
+            "team": null,
+            "player": "Angulo J.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "bq1tgD2s-12",
+            "minute": "51'",
+            "type": "goal",
+            "team": null,
+            "player": "Garcia J.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "bq1tgD2s-13",
+            "minute": "56'",
+            "type": "yellow",
+            "team": null,
+            "player": "Valencia E.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "bq1tgD2s-14",
+            "minute": "64'",
+            "type": "goal",
+            "team": null,
+            "player": "Salas J.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "bq1tgD2s-15",
+            "minute": "64'",
+            "type": "goal",
+            "team": null,
+            "player": "Montano I.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "bq1tgD2s-16",
+            "minute": "68'",
+            "type": "yellow",
+            "team": null,
+            "player": "Sandoval L.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "bq1tgD2s-17",
+            "minute": "68'",
+            "type": "yellow",
+            "team": null,
+            "player": "Sanchez L.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "bq1tgD2s-18",
+            "minute": "71'",
+            "type": "goal",
+            "team": null,
+            "player": "Pico L.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "bq1tgD2s-19",
+            "minute": "73'",
+            "type": "yellow",
+            "team": null,
+            "player": "Sandoval L.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "bq1tgD2s-20",
+            "minute": "76'",
+            "type": "goal",
+            "team": null,
+            "player": "Montano I.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "bq1tgD2s-21",
+            "minute": "77'",
+            "type": "yellow",
+            "team": null,
+            "player": "Barbosa Gomez S. P.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "bq1tgD2s-22",
+            "minute": "80'",
+            "type": "goal",
+            "team": null,
+            "player": "Pulicastro F.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "bq1tgD2s-23",
+            "minute": "80'",
+            "type": "goal",
+            "team": null,
+            "player": "Sinisterra J.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "bq1tgD2s-24",
+            "minute": "84'",
+            "type": "yellow",
+            "team": null,
+            "player": "Guzman S.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "bq1tgD2s-25",
+            "minute": "90+2'",
+            "type": "goal",
+            "team": null,
+            "player": "Wilke T.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "bq1tgD2s-26",
+            "minute": "90+5'",
+            "type": "yellow",
+            "team": null,
+            "player": "Sandoval L.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "bq1tgD2s-27",
+            "minute": "90+6'",
+            "type": "goal",
+            "team": null,
+            "player": "Navarro S.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          }
+        ],
+        "statistics": [
+          {
+            "name": "Expected goals (xG)",
+            "key": "expected goals (xg)",
+            "home": "0.67",
+            "away": "0.25",
+            "period": "match"
+          },
+          {
+            "name": "Ball possession",
+            "key": "possession",
+            "home": "57%",
+            "away": "43%",
+            "period": "match"
+          },
+          {
+            "name": "Total shots",
+            "key": "shots",
+            "home": "14",
+            "away": "7",
+            "period": "match"
+          },
+          {
+            "name": "Shots on target",
+            "key": "shots_on_target",
+            "home": "6",
+            "away": "1",
+            "period": "match"
+          },
+          {
+            "name": "Big chances",
+            "key": "big chances",
+            "home": "0",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Corner kicks",
+            "key": "corners",
+            "home": "8",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Passes",
+            "key": "passes",
+            "home": "85% (380/447)",
+            "away": "78% (272/350)",
+            "period": "match"
+          },
+          {
+            "name": "Yellow cards",
+            "key": "yellow cards",
+            "home": "5",
+            "away": "6",
+            "period": "match"
+          },
+          {
+            "name": "Red cards",
+            "key": "red cards",
+            "home": "1",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "xG on target (xGOT)",
+            "key": "xg on target (xgot)",
+            "home": "1.04",
+            "away": "0.31",
+            "period": "match"
+          },
+          {
+            "name": "Shots off target",
+            "key": "shots",
+            "home": "6",
+            "away": "6",
+            "period": "match"
+          },
+          {
+            "name": "Blocked shots",
+            "key": "shots",
+            "home": "2",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Shots inside the box",
+            "key": "shots",
+            "home": "5",
+            "away": "2",
+            "period": "match"
+          },
+          {
+            "name": "Shots outside the box",
+            "key": "shots",
+            "home": "9",
+            "away": "5",
+            "period": "match"
+          },
+          {
+            "name": "Hit the woodwork",
+            "key": "hit the woodwork",
+            "home": "0",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Headed goals",
+            "key": "headed goals",
+            "home": "1",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Touches in opposition box",
+            "key": "touches in opposition box",
+            "home": "15",
+            "away": "5",
+            "period": "match"
+          },
+          {
+            "name": "Accurate through passes",
+            "key": "accurate through passes",
+            "home": "0",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Offsides",
+            "key": "offsides",
+            "home": "2",
+            "away": "1",
+            "period": "match"
+          },
+          {
+            "name": "Free kicks",
+            "key": "free kicks",
+            "home": "15",
+            "away": "16",
+            "period": "match"
+          },
+          {
+            "name": "Long passes",
+            "key": "long passes",
+            "home": "58% (29/50)",
+            "away": "40% (25/62)",
+            "period": "match"
+          },
+          {
+            "name": "Passes in final third",
+            "key": "passes in final third",
+            "home": "60% (57/95)",
+            "away": "68% (68/100)",
+            "period": "match"
+          },
+          {
+            "name": "Crosses",
+            "key": "crosses",
+            "home": "13% (3/23)",
+            "away": "33% (1/3)",
+            "period": "match"
+          },
+          {
+            "name": "Expected assists (xA)",
+            "key": "expected assists (xa)",
+            "home": "0.79",
+            "away": "0.40",
+            "period": "match"
+          },
+          {
+            "name": "Throw ins",
+            "key": "throw ins",
+            "home": "27",
+            "away": "14",
+            "period": "match"
+          },
+          {
+            "name": "Fouls",
+            "key": "fouls",
+            "home": "16",
+            "away": "15",
+            "period": "match"
+          },
+          {
+            "name": "Tackles",
+            "key": "tackles",
+            "home": "50% (4/8)",
+            "away": "87% (13/15)",
+            "period": "match"
+          },
+          {
+            "name": "Duels won",
+            "key": "duels won",
+            "home": "33",
+            "away": "35",
+            "period": "match"
+          },
+          {
+            "name": "Clearances",
+            "key": "clearances",
+            "home": "4",
+            "away": "31",
+            "period": "match"
+          },
+          {
+            "name": "Interceptions",
+            "key": "interceptions",
+            "home": "5",
+            "away": "7",
+            "period": "match"
+          },
+          {
+            "name": "Errors leading to shot",
+            "key": "errors leading to shot",
+            "home": "0",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Errors leading to goal",
+            "key": "errors leading to goal",
+            "home": "0",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Goalkeeper saves",
+            "key": "goalkeeper saves",
+            "home": "0",
+            "away": "4",
+            "period": "match"
+          },
+          {
+            "name": "xGOT faced",
+            "key": "xgot faced",
+            "home": "0.31",
+            "away": "1.04",
+            "period": "match"
+          },
+          {
+            "name": "Goals prevented",
+            "key": "goals prevented",
+            "home": "-0.69",
+            "away": "-0.96",
+            "period": "match"
+          },
+          {
+            "name": "Goal kicks",
+            "key": "goal kicks",
+            "home": "8",
+            "away": "11",
+            "period": "match"
+          },
+          {
+            "name": "Expected goals (xG)",
+            "key": "expected goals (xg)",
+            "home": "0.18",
+            "away": "0.15",
+            "period": "match"
+          },
+          {
+            "name": "Ball possession",
+            "key": "possession",
+            "home": "59%",
+            "away": "41%",
+            "period": "match"
+          },
+          {
+            "name": "Total shots",
+            "key": "shots",
+            "home": "6",
+            "away": "4",
+            "period": "match"
+          },
+          {
+            "name": "Shots on target",
+            "key": "shots_on_target",
+            "home": "3",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Corner kicks",
+            "key": "corners",
+            "home": "5",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Passes",
+            "key": "passes",
+            "home": "83% (197/237)",
+            "away": "73% (123/169)",
+            "period": "match"
+          },
+          {
+            "name": "Yellow cards",
+            "key": "yellow cards",
+            "home": "4",
+            "away": "1",
+            "period": "match"
+          },
+          {
+            "name": "xG on target (xGOT)",
+            "key": "xg on target (xgot)",
+            "home": "0.12",
+            "away": "0.00",
+            "period": "match"
+          },
+          {
+            "name": "Shots off target",
+            "key": "shots",
+            "home": "2",
+            "away": "4",
+            "period": "match"
+          },
+          {
+            "name": "Blocked shots",
+            "key": "shots",
+            "home": "1",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Shots inside the box",
+            "key": "shots",
+            "home": "1",
+            "away": "1",
+            "period": "match"
+          },
+          {
+            "name": "Shots outside the box",
+            "key": "shots",
+            "home": "5",
+            "away": "3",
+            "period": "match"
+          },
+          {
+            "name": "Touches in opposition box",
+            "key": "touches in opposition box",
+            "home": "7",
+            "away": "3",
+            "period": "match"
+          },
+          {
+            "name": "Offsides",
+            "key": "offsides",
+            "home": "1",
+            "away": "1",
+            "period": "match"
+          },
+          {
+            "name": "Free kicks",
+            "key": "free kicks",
+            "home": "5",
+            "away": "8",
+            "period": "match"
+          },
+          {
+            "name": "Long passes",
+            "key": "long passes",
+            "home": "53% (17/32)",
+            "away": "35% (9/26)",
+            "period": "match"
+          },
+          {
+            "name": "Passes in final third",
+            "key": "passes in final third",
+            "home": "60% (39/65)",
+            "away": "65% (37/57)",
+            "period": "match"
+          },
+          {
+            "name": "Crosses",
+            "key": "crosses",
+            "home": "9% (1/11)",
+            "away": "100% (1/1)",
+            "period": "match"
+          },
+          {
+            "name": "Expected assists (xA)",
+            "key": "expected assists (xa)",
+            "home": "0.15",
+            "away": "0.26",
+            "period": "match"
+          },
+          {
+            "name": "Throw ins",
+            "key": "throw ins",
+            "home": "12",
+            "away": "7",
+            "period": "match"
+          },
+          {
+            "name": "Fouls",
+            "key": "fouls",
+            "home": "8",
+            "away": "5",
+            "period": "match"
+          },
+          {
+            "name": "Tackles",
+            "key": "tackles",
+            "home": "33% (1/3)",
+            "away": "100% (6/6)",
+            "period": "match"
+          },
+          {
+            "name": "Duels won",
+            "key": "duels won",
+            "home": "9",
+            "away": "17",
+            "period": "match"
+          },
+          {
+            "name": "Clearances",
+            "key": "clearances",
+            "home": "1",
+            "away": "12",
+            "period": "match"
+          },
+          {
+            "name": "Interceptions",
+            "key": "interceptions",
+            "home": "3",
+            "away": "4",
+            "period": "match"
+          },
+          {
+            "name": "Goalkeeper saves",
+            "key": "goalkeeper saves",
+            "home": "0",
+            "away": "3",
+            "period": "match"
+          },
+          {
+            "name": "xGOT faced",
+            "key": "xgot faced",
+            "home": "0.00",
+            "away": "0.12",
+            "period": "match"
+          },
+          {
+            "name": "Goals prevented",
+            "key": "goals prevented",
+            "home": "0.00",
+            "away": "0.12",
+            "period": "match"
+          },
+          {
+            "name": "Goal kicks",
+            "key": "goal kicks",
+            "home": "5",
+            "away": "4",
+            "period": "match"
+          },
+          {
+            "name": "Expected goals (xG)",
+            "key": "expected goals (xg)",
+            "home": "0.49",
+            "away": "0.10",
+            "period": "match"
+          },
+          {
+            "name": "Ball possession",
+            "key": "possession",
+            "home": "55%",
+            "away": "45%",
+            "period": "match"
+          },
+          {
+            "name": "Total shots",
+            "key": "shots",
+            "home": "8",
+            "away": "3",
+            "period": "match"
+          },
+          {
+            "name": "Shots on target",
+            "key": "shots_on_target",
+            "home": "3",
+            "away": "1",
+            "period": "match"
+          },
+          {
+            "name": "Corner kicks",
+            "key": "corners",
+            "home": "3",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Passes",
+            "key": "passes",
+            "home": "87% (183/210)",
+            "away": "82% (149/181)",
+            "period": "match"
+          },
+          {
+            "name": "Yellow cards",
+            "key": "yellow cards",
+            "home": "1",
+            "away": "5",
+            "period": "match"
+          },
+          {
+            "name": "xG on target (xGOT)",
+            "key": "xg on target (xgot)",
+            "home": "0.92",
+            "away": "0.31",
+            "period": "match"
+          },
+          {
+            "name": "Shots off target",
+            "key": "shots",
+            "home": "4",
+            "away": "2",
+            "period": "match"
+          },
+          {
+            "name": "Shots inside the box",
+            "key": "shots",
+            "home": "4",
+            "away": "1",
+            "period": "match"
+          },
+          {
+            "name": "Shots outside the box",
+            "key": "shots",
+            "home": "4",
+            "away": "2",
+            "period": "match"
+          },
+          {
+            "name": "Touches in opposition box",
+            "key": "touches in opposition box",
+            "home": "8",
+            "away": "2",
+            "period": "match"
+          },
+          {
+            "name": "Offsides",
+            "key": "offsides",
+            "home": "1",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Free kicks",
+            "key": "free kicks",
+            "home": "10",
+            "away": "8",
+            "period": "match"
+          },
+          {
+            "name": "Long passes",
+            "key": "long passes",
+            "home": "67% (12/18)",
+            "away": "44% (16/36)",
+            "period": "match"
+          },
+          {
+            "name": "Passes in final third",
+            "key": "passes in final third",
+            "home": "60% (18/30)",
+            "away": "72% (31/43)",
+            "period": "match"
+          },
+          {
+            "name": "Crosses",
+            "key": "crosses",
+            "home": "17% (2/12)",
+            "away": "0% (0/2)",
+            "period": "match"
+          },
+          {
+            "name": "Expected assists (xA)",
+            "key": "expected assists (xa)",
+            "home": "0.64",
+            "away": "0.14",
+            "period": "match"
+          },
+          {
+            "name": "Throw ins",
+            "key": "throw ins",
+            "home": "15",
+            "away": "7",
+            "period": "match"
+          },
+          {
+            "name": "Fouls",
+            "key": "fouls",
+            "home": "8",
+            "away": "10",
+            "period": "match"
+          },
+          {
+            "name": "Tackles",
+            "key": "tackles",
+            "home": "60% (3/5)",
+            "away": "78% (7/9)",
+            "period": "match"
+          },
+          {
+            "name": "Duels won",
+            "key": "duels won",
+            "home": "24",
+            "away": "18",
+            "period": "match"
+          },
+          {
+            "name": "Clearances",
+            "key": "clearances",
+            "home": "3",
+            "away": "19",
+            "period": "match"
+          },
+          {
+            "name": "Interceptions",
+            "key": "interceptions",
+            "home": "2",
+            "away": "3",
+            "period": "match"
+          },
+          {
+            "name": "Goalkeeper saves",
+            "key": "goalkeeper saves",
+            "home": "0",
+            "away": "1",
+            "period": "match"
+          },
+          {
+            "name": "xGOT faced",
+            "key": "xgot faced",
+            "home": "0.31",
+            "away": "0.92",
+            "period": "match"
+          },
+          {
+            "name": "Goals prevented",
+            "key": "goals prevented",
+            "home": "-0.69",
+            "away": "-1.08",
+            "period": "match"
+          },
+          {
+            "name": "Goal kicks",
+            "key": "goal kicks",
+            "home": "3",
+            "away": "7",
+            "period": "match"
+          }
+        ],
+        "updatedAt": "2026-09-28T05:25:16.647Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
-          "events": null,
-          "statistics": null
+          "events": "df_sui_1_bq1tgD2s",
+          "statistics": "df_st_1_bq1tgD2s"
         }
       }
     },
@@ -45784,12 +46848,12 @@
         "id": "fs-S6sivyJO",
         "date": "2026-09-28T01:10:00.000Z",
         "status": {
-          "short": "NS"
+          "short": "FT"
         }
       },
       "teams": {
         "home": {
-          "id": null,
+          "id": "0",
           "name": "Dep. Cali",
           "logo": "/teams/depcali.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/zNqhWFQq-2eGA9cib.png",
@@ -45808,8 +46872,8 @@
         }
       },
       "goals": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 0
       },
       "league": {
         "id": "flashscore-colombia-primera-a",
@@ -45827,13 +46891,888 @@
       "sourceUrl": "https://www.flashscore.com/match/S6sivyJO/",
       "sourcePath": "/football/colombia/primera-a/",
       "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
+        "events": [
+          {
+            "id": "S6sivyJO-1",
+            "minute": "2'",
+            "type": "goal",
+            "team": null,
+            "player": "Viafara F.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "S6sivyJO-2",
+            "minute": "20'",
+            "type": "goal",
+            "team": null,
+            "player": "Chaverra L.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "S6sivyJO-4",
+            "minute": "59'",
+            "type": "goal",
+            "team": null,
+            "player": "Alvarez F.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "S6sivyJO-5",
+            "minute": "61'",
+            "type": "goal",
+            "team": null,
+            "player": "Cuellar G.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "S6sivyJO-6",
+            "minute": "63'",
+            "type": "yellow",
+            "team": null,
+            "player": "Ramirez M.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "S6sivyJO-7",
+            "minute": "63'",
+            "type": "yellow",
+            "team": null,
+            "player": "Marquez R.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "S6sivyJO-8",
+            "minute": "64'",
+            "type": "yellow",
+            "team": null,
+            "player": "Ontaneda J.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "S6sivyJO-9",
+            "minute": "65'",
+            "type": "goal",
+            "team": null,
+            "player": "Bacca C.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "S6sivyJO-10",
+            "minute": "65'",
+            "type": "goal",
+            "team": null,
+            "player": "Sandoval K.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "S6sivyJO-11",
+            "minute": "71'",
+            "type": "goal",
+            "team": null,
+            "player": "Velasco E.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "S6sivyJO-12",
+            "minute": "77'",
+            "type": "goal",
+            "team": null,
+            "player": "Giraldo D.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "S6sivyJO-13",
+            "minute": "79'",
+            "type": "yellow",
+            "team": null,
+            "player": "Avalo Trejos J. E.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "S6sivyJO-14",
+            "minute": "84'",
+            "type": "goal",
+            "team": null,
+            "player": "Tello J.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "S6sivyJO-15",
+            "minute": "84'",
+            "type": "goal",
+            "team": null,
+            "player": "Manyoma A.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "S6sivyJO-16",
+            "minute": "84'",
+            "type": "yellow",
+            "team": null,
+            "player": "Melendez J.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "S6sivyJO-17",
+            "minute": "90+2'",
+            "type": "yellow",
+            "team": null,
+            "player": "Melendez J.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          }
+        ],
+        "statistics": [
+          {
+            "name": "Expected goals (xG)",
+            "key": "expected goals (xg)",
+            "home": "0.73",
+            "away": "0.76",
+            "period": "match"
+          },
+          {
+            "name": "Ball possession",
+            "key": "possession",
+            "home": "41%",
+            "away": "59%",
+            "period": "match"
+          },
+          {
+            "name": "Total shots",
+            "key": "shots",
+            "home": "12",
+            "away": "17",
+            "period": "match"
+          },
+          {
+            "name": "Shots on target",
+            "key": "shots_on_target",
+            "home": "9",
+            "away": "3",
+            "period": "match"
+          },
+          {
+            "name": "Big chances",
+            "key": "big chances",
+            "home": "1",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Corner kicks",
+            "key": "corners",
+            "home": "4",
+            "away": "4",
+            "period": "match"
+          },
+          {
+            "name": "Passes",
+            "key": "passes",
+            "home": "74% (244/328)",
+            "away": "84% (401/476)",
+            "period": "match"
+          },
+          {
+            "name": "Yellow cards",
+            "key": "yellow cards",
+            "home": "3",
+            "away": "2",
+            "period": "match"
+          },
+          {
+            "name": "xG on target (xGOT)",
+            "key": "xg on target (xgot)",
+            "home": "2.17",
+            "away": "0.80",
+            "period": "match"
+          },
+          {
+            "name": "Shots off target",
+            "key": "shots",
+            "home": "2",
+            "away": "7",
+            "period": "match"
+          },
+          {
+            "name": "Blocked shots",
+            "key": "shots",
+            "home": "1",
+            "away": "7",
+            "period": "match"
+          },
+          {
+            "name": "Shots inside the box",
+            "key": "shots",
+            "home": "5",
+            "away": "11",
+            "period": "match"
+          },
+          {
+            "name": "Shots outside the box",
+            "key": "shots",
+            "home": "7",
+            "away": "6",
+            "period": "match"
+          },
+          {
+            "name": "Hit the woodwork",
+            "key": "hit the woodwork",
+            "home": "0",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Headed goals",
+            "key": "headed goals",
+            "home": "2",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Touches in opposition box",
+            "key": "touches in opposition box",
+            "home": "13",
+            "away": "21",
+            "period": "match"
+          },
+          {
+            "name": "Accurate through passes",
+            "key": "accurate through passes",
+            "home": "0",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Offsides",
+            "key": "offsides",
+            "home": "2",
+            "away": "5",
+            "period": "match"
+          },
+          {
+            "name": "Free kicks",
+            "key": "free kicks",
+            "home": "13",
+            "away": "11",
+            "period": "match"
+          },
+          {
+            "name": "Long passes",
+            "key": "long passes",
+            "home": "29% (14/49)",
+            "away": "56% (25/45)",
+            "period": "match"
+          },
+          {
+            "name": "Passes in final third",
+            "key": "passes in final third",
+            "home": "59% (48/81)",
+            "away": "68% (61/90)",
+            "period": "match"
+          },
+          {
+            "name": "Crosses",
+            "key": "crosses",
+            "home": "36% (4/11)",
+            "away": "13% (2/15)",
+            "period": "match"
+          },
+          {
+            "name": "Expected assists (xA)",
+            "key": "expected assists (xa)",
+            "home": "0.93",
+            "away": "0.42",
+            "period": "match"
+          },
+          {
+            "name": "Throw ins",
+            "key": "throw ins",
+            "home": "19",
+            "away": "26",
+            "period": "match"
+          },
+          {
+            "name": "Fouls",
+            "key": "fouls",
+            "home": "11",
+            "away": "13",
+            "period": "match"
+          },
+          {
+            "name": "Tackles",
+            "key": "tackles",
+            "home": "88% (15/17)",
+            "away": "80% (12/15)",
+            "period": "match"
+          },
+          {
+            "name": "Duels won",
+            "key": "duels won",
+            "home": "46",
+            "away": "33",
+            "period": "match"
+          },
+          {
+            "name": "Clearances",
+            "key": "clearances",
+            "home": "19",
+            "away": "10",
+            "period": "match"
+          },
+          {
+            "name": "Interceptions",
+            "key": "interceptions",
+            "home": "16",
+            "away": "10",
+            "period": "match"
+          },
+          {
+            "name": "Errors leading to shot",
+            "key": "errors leading to shot",
+            "home": "0",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Errors leading to goal",
+            "key": "errors leading to goal",
+            "home": "0",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Goalkeeper saves",
+            "key": "goalkeeper saves",
+            "home": "3",
+            "away": "7",
+            "period": "match"
+          },
+          {
+            "name": "xGOT faced",
+            "key": "xgot faced",
+            "home": "0.80",
+            "away": "2.17",
+            "period": "match"
+          },
+          {
+            "name": "Goals prevented",
+            "key": "goals prevented",
+            "home": "0.80",
+            "away": "0.17",
+            "period": "match"
+          },
+          {
+            "name": "Goal kicks",
+            "key": "goal kicks",
+            "home": "6",
+            "away": "4",
+            "period": "match"
+          },
+          {
+            "name": "Expected goals (xG)",
+            "key": "expected goals (xg)",
+            "home": "0.42",
+            "away": "0.45",
+            "period": "match"
+          },
+          {
+            "name": "Ball possession",
+            "key": "possession",
+            "home": "48%",
+            "away": "52%",
+            "period": "match"
+          },
+          {
+            "name": "Total shots",
+            "key": "shots",
+            "home": "6",
+            "away": "8",
+            "period": "match"
+          },
+          {
+            "name": "Shots on target",
+            "key": "shots_on_target",
+            "home": "4",
+            "away": "1",
+            "period": "match"
+          },
+          {
+            "name": "Corner kicks",
+            "key": "corners",
+            "home": "3",
+            "away": "2",
+            "period": "match"
+          },
+          {
+            "name": "Passes",
+            "key": "passes",
+            "home": "77% (144/187)",
+            "away": "80% (165/206)",
+            "period": "match"
+          },
+          {
+            "name": "Yellow cards",
+            "key": "yellow cards",
+            "home": "1",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "xG on target (xGOT)",
+            "key": "xg on target (xgot)",
+            "home": "0.98",
+            "away": "0.61",
+            "period": "match"
+          },
+          {
+            "name": "Shots off target",
+            "key": "shots",
+            "home": "1",
+            "away": "3",
+            "period": "match"
+          },
+          {
+            "name": "Blocked shots",
+            "key": "shots",
+            "home": "1",
+            "away": "4",
+            "period": "match"
+          },
+          {
+            "name": "Shots inside the box",
+            "key": "shots",
+            "home": "3",
+            "away": "5",
+            "period": "match"
+          },
+          {
+            "name": "Shots outside the box",
+            "key": "shots",
+            "home": "3",
+            "away": "3",
+            "period": "match"
+          },
+          {
+            "name": "Headed goals",
+            "key": "headed goals",
+            "home": "1",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Touches in opposition box",
+            "key": "touches in opposition box",
+            "home": "8",
+            "away": "9",
+            "period": "match"
+          },
+          {
+            "name": "Offsides",
+            "key": "offsides",
+            "home": "2",
+            "away": "1",
+            "period": "match"
+          },
+          {
+            "name": "Free kicks",
+            "key": "free kicks",
+            "home": "4",
+            "away": "6",
+            "period": "match"
+          },
+          {
+            "name": "Long passes",
+            "key": "long passes",
+            "home": "41% (9/22)",
+            "away": "59% (13/22)",
+            "period": "match"
+          },
+          {
+            "name": "Passes in final third",
+            "key": "passes in final third",
+            "home": "61% (28/46)",
+            "away": "56% (20/36)",
+            "period": "match"
+          },
+          {
+            "name": "Crosses",
+            "key": "crosses",
+            "home": "29% (2/7)",
+            "away": "14% (1/7)",
+            "period": "match"
+          },
+          {
+            "name": "Expected assists (xA)",
+            "key": "expected assists (xa)",
+            "home": "0.70",
+            "away": "0.15",
+            "period": "match"
+          },
+          {
+            "name": "Throw ins",
+            "key": "throw ins",
+            "home": "14",
+            "away": "13",
+            "period": "match"
+          },
+          {
+            "name": "Fouls",
+            "key": "fouls",
+            "home": "6",
+            "away": "4",
+            "period": "match"
+          },
+          {
+            "name": "Tackles",
+            "key": "tackles",
+            "home": "86% (6/7)",
+            "away": "78% (7/9)",
+            "period": "match"
+          },
+          {
+            "name": "Duels won",
+            "key": "duels won",
+            "home": "19",
+            "away": "20",
+            "period": "match"
+          },
+          {
+            "name": "Clearances",
+            "key": "clearances",
+            "home": "11",
+            "away": "7",
+            "period": "match"
+          },
+          {
+            "name": "Interceptions",
+            "key": "interceptions",
+            "home": "8",
+            "away": "8",
+            "period": "match"
+          },
+          {
+            "name": "Goalkeeper saves",
+            "key": "goalkeeper saves",
+            "home": "1",
+            "away": "3",
+            "period": "match"
+          },
+          {
+            "name": "xGOT faced",
+            "key": "xgot faced",
+            "home": "0.61",
+            "away": "0.98",
+            "period": "match"
+          },
+          {
+            "name": "Goals prevented",
+            "key": "goals prevented",
+            "home": "0.61",
+            "away": "-0.02",
+            "period": "match"
+          },
+          {
+            "name": "Goal kicks",
+            "key": "goal kicks",
+            "home": "1",
+            "away": "2",
+            "period": "match"
+          },
+          {
+            "name": "Expected goals (xG)",
+            "key": "expected goals (xg)",
+            "home": "0.31",
+            "away": "0.31",
+            "period": "match"
+          },
+          {
+            "name": "Ball possession",
+            "key": "possession",
+            "home": "34%",
+            "away": "66%",
+            "period": "match"
+          },
+          {
+            "name": "Total shots",
+            "key": "shots",
+            "home": "6",
+            "away": "9",
+            "period": "match"
+          },
+          {
+            "name": "Shots on target",
+            "key": "shots_on_target",
+            "home": "5",
+            "away": "2",
+            "period": "match"
+          },
+          {
+            "name": "Big chances",
+            "key": "big chances",
+            "home": "0",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Corner kicks",
+            "key": "corners",
+            "home": "1",
+            "away": "2",
+            "period": "match"
+          },
+          {
+            "name": "Passes",
+            "key": "passes",
+            "home": "71% (100/141)",
+            "away": "87% (236/270)",
+            "period": "match"
+          },
+          {
+            "name": "Yellow cards",
+            "key": "yellow cards",
+            "home": "2",
+            "away": "2",
+            "period": "match"
+          },
+          {
+            "name": "xG on target (xGOT)",
+            "key": "xg on target (xgot)",
+            "home": "1.19",
+            "away": "0.19",
+            "period": "match"
+          },
+          {
+            "name": "Shots off target",
+            "key": "shots",
+            "home": "1",
+            "away": "4",
+            "period": "match"
+          },
+          {
+            "name": "Blocked shots",
+            "key": "shots",
+            "home": "0",
+            "away": "3",
+            "period": "match"
+          },
+          {
+            "name": "Shots inside the box",
+            "key": "shots",
+            "home": "2",
+            "away": "6",
+            "period": "match"
+          },
+          {
+            "name": "Shots outside the box",
+            "key": "shots",
+            "home": "4",
+            "away": "3",
+            "period": "match"
+          },
+          {
+            "name": "Touches in opposition box",
+            "key": "touches in opposition box",
+            "home": "5",
+            "away": "12",
+            "period": "match"
+          },
+          {
+            "name": "Offsides",
+            "key": "offsides",
+            "home": "0",
+            "away": "4",
+            "period": "match"
+          },
+          {
+            "name": "Free kicks",
+            "key": "free kicks",
+            "home": "9",
+            "away": "5",
+            "period": "match"
+          },
+          {
+            "name": "Long passes",
+            "key": "long passes",
+            "home": "19% (5/27)",
+            "away": "52% (12/23)",
+            "period": "match"
+          },
+          {
+            "name": "Passes in final third",
+            "key": "passes in final third",
+            "home": "57% (20/35)",
+            "away": "76% (41/54)",
+            "period": "match"
+          },
+          {
+            "name": "Crosses",
+            "key": "crosses",
+            "home": "50% (2/4)",
+            "away": "13% (1/8)",
+            "period": "match"
+          },
+          {
+            "name": "Expected assists (xA)",
+            "key": "expected assists (xa)",
+            "home": "0.23",
+            "away": "0.27",
+            "period": "match"
+          },
+          {
+            "name": "Throw ins",
+            "key": "throw ins",
+            "home": "5",
+            "away": "13",
+            "period": "match"
+          },
+          {
+            "name": "Fouls",
+            "key": "fouls",
+            "home": "5",
+            "away": "9",
+            "period": "match"
+          },
+          {
+            "name": "Tackles",
+            "key": "tackles",
+            "home": "90% (9/10)",
+            "away": "83% (5/6)",
+            "period": "match"
+          },
+          {
+            "name": "Duels won",
+            "key": "duels won",
+            "home": "27",
+            "away": "13",
+            "period": "match"
+          },
+          {
+            "name": "Clearances",
+            "key": "clearances",
+            "home": "8",
+            "away": "3",
+            "period": "match"
+          },
+          {
+            "name": "Interceptions",
+            "key": "interceptions",
+            "home": "8",
+            "away": "2",
+            "period": "match"
+          },
+          {
+            "name": "Goalkeeper saves",
+            "key": "goalkeeper saves",
+            "home": "2",
+            "away": "4",
+            "period": "match"
+          },
+          {
+            "name": "xGOT faced",
+            "key": "xgot faced",
+            "home": "0.19",
+            "away": "1.19",
+            "period": "match"
+          },
+          {
+            "name": "Goals prevented",
+            "key": "goals prevented",
+            "home": "0.19",
+            "away": "0.19",
+            "period": "match"
+          },
+          {
+            "name": "Goal kicks",
+            "key": "goal kicks",
+            "home": "5",
+            "away": "2",
+            "period": "match"
+          }
+        ],
+        "updatedAt": "2026-09-28T05:25:19.013Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
-          "events": null,
-          "statistics": null
+          "events": "df_sui_1_S6sivyJO",
+          "statistics": "df_st_1_S6sivyJO"
         }
       }
     },
@@ -45842,12 +47781,12 @@
         "id": "fs-nelb1QCt",
         "date": "2026-09-28T01:00:00.000Z",
         "status": {
-          "short": "NS"
+          "short": "FT"
         }
       },
       "teams": {
         "home": {
-          "id": null,
+          "id": "1",
           "name": "Club Leon",
           "logo": "/teams/leon.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/WdtRY4iT-OSiYNR3p.png",
@@ -45866,8 +47805,8 @@
         }
       },
       "goals": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 1
       },
       "league": {
         "id": "flashscore-mexico-liga-mx",
@@ -45885,13 +47824,887 @@
       "sourceUrl": "https://www.flashscore.com/match/nelb1QCt/",
       "sourcePath": "/football/mexico/liga-mx/",
       "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
+        "events": [
+          {
+            "id": "nelb1QCt-1",
+            "minute": "3'",
+            "type": "goal",
+            "team": null,
+            "player": "Vegas S.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": "67",
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "nelb1QCt-3",
+            "minute": "46'",
+            "type": "goal",
+            "team": null,
+            "player": "Dominguez Chonteco J. P.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "nelb1QCt-4",
+            "minute": "46'",
+            "type": "goal",
+            "team": null,
+            "player": "Reyes S.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "nelb1QCt-5",
+            "minute": "53'",
+            "type": "goal",
+            "team": null,
+            "player": "Guevara J.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": "67",
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "nelb1QCt-6",
+            "minute": "58'",
+            "type": "goal",
+            "team": null,
+            "player": "Guerra E.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "nelb1QCt-7",
+            "minute": "58'",
+            "type": "goal",
+            "team": null,
+            "player": "Alvarado A.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "nelb1QCt-8",
+            "minute": "62'",
+            "type": "yellow",
+            "team": null,
+            "player": "Lopez E.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "nelb1QCt-9",
+            "minute": "62'",
+            "type": "yellow",
+            "team": null,
+            "player": "Fulgencio R.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "nelb1QCt-10",
+            "minute": "76'",
+            "type": "goal",
+            "team": null,
+            "player": "Nevarez Pulgarin F. J.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "nelb1QCt-11",
+            "minute": "79'",
+            "type": "yellow",
+            "team": null,
+            "player": "Murillo J.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": "22",
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "nelb1QCt-12",
+            "minute": "81'",
+            "type": "yellow",
+            "team": null,
+            "player": "Dupuy L.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "nelb1QCt-13",
+            "minute": "83'",
+            "type": "yellow",
+            "team": null,
+            "player": "Nevarez Pulgarin F. J.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": "67",
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "nelb1QCt-14",
+            "minute": "83'",
+            "type": "goal",
+            "team": null,
+            "player": "Bellon P.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "nelb1QCt-15",
+            "minute": "90+4'",
+            "type": "yellow",
+            "team": null,
+            "player": "Estupinan O.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "nelb1QCt-16",
+            "minute": "90+5'",
+            "type": "yellow",
+            "team": null,
+            "player": "Aquino J.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "nelb1QCt-17",
+            "minute": "90+5'",
+            "type": "yellow",
+            "team": null,
+            "player": "Ortega H.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "nelb1QCt-18",
+            "minute": "90+9'",
+            "type": "goal",
+            "team": null,
+            "player": "Guerra E.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          }
+        ],
+        "statistics": [
+          {
+            "name": "Expected goals (xG)",
+            "key": "expected goals (xg)",
+            "home": "0.75",
+            "away": "1.30",
+            "period": "match"
+          },
+          {
+            "name": "Ball possession",
+            "key": "possession",
+            "home": "56%",
+            "away": "44%",
+            "period": "match"
+          },
+          {
+            "name": "Total shots",
+            "key": "shots",
+            "home": "7",
+            "away": "9",
+            "period": "match"
+          },
+          {
+            "name": "Shots on target",
+            "key": "shots_on_target",
+            "home": "3",
+            "away": "1",
+            "period": "match"
+          },
+          {
+            "name": "Big chances",
+            "key": "big chances",
+            "home": "1",
+            "away": "3",
+            "period": "match"
+          },
+          {
+            "name": "Corner kicks",
+            "key": "corners",
+            "home": "1",
+            "away": "4",
+            "period": "match"
+          },
+          {
+            "name": "Passes",
+            "key": "passes",
+            "home": "81% (316/389)",
+            "away": "75% (229/304)",
+            "period": "match"
+          },
+          {
+            "name": "Yellow cards",
+            "key": "yellow cards",
+            "home": "2",
+            "away": "2",
+            "period": "match"
+          },
+          {
+            "name": "xG on target (xGOT)",
+            "key": "xg on target (xgot)",
+            "home": "1.30",
+            "away": "0.96",
+            "period": "match"
+          },
+          {
+            "name": "Shots off target",
+            "key": "shots",
+            "home": "2",
+            "away": "5",
+            "period": "match"
+          },
+          {
+            "name": "Blocked shots",
+            "key": "shots",
+            "home": "2",
+            "away": "3",
+            "period": "match"
+          },
+          {
+            "name": "Shots inside the box",
+            "key": "shots",
+            "home": "6",
+            "away": "4",
+            "period": "match"
+          },
+          {
+            "name": "Shots outside the box",
+            "key": "shots",
+            "home": "1",
+            "away": "5",
+            "period": "match"
+          },
+          {
+            "name": "Hit the woodwork",
+            "key": "hit the woodwork",
+            "home": "0",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Touches in opposition box",
+            "key": "touches in opposition box",
+            "home": "17",
+            "away": "9",
+            "period": "match"
+          },
+          {
+            "name": "Accurate through passes",
+            "key": "accurate through passes",
+            "home": "0",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Offsides",
+            "key": "offsides",
+            "home": "6",
+            "away": "1",
+            "period": "match"
+          },
+          {
+            "name": "Free kicks",
+            "key": "free kicks",
+            "home": "14",
+            "away": "14",
+            "period": "match"
+          },
+          {
+            "name": "Long passes",
+            "key": "long passes",
+            "home": "48% (24/50)",
+            "away": "50% (39/78)",
+            "period": "match"
+          },
+          {
+            "name": "Passes in final third",
+            "key": "passes in final third",
+            "home": "69% (67/97)",
+            "away": "53% (37/70)",
+            "period": "match"
+          },
+          {
+            "name": "Crosses",
+            "key": "crosses",
+            "home": "32% (6/19)",
+            "away": "25% (5/20)",
+            "period": "match"
+          },
+          {
+            "name": "Expected assists (xA)",
+            "key": "expected assists (xa)",
+            "home": "0.71",
+            "away": "0.32",
+            "period": "match"
+          },
+          {
+            "name": "Throw ins",
+            "key": "throw ins",
+            "home": "28",
+            "away": "26",
+            "period": "match"
+          },
+          {
+            "name": "Fouls",
+            "key": "fouls",
+            "home": "14",
+            "away": "14",
+            "period": "match"
+          },
+          {
+            "name": "Tackles",
+            "key": "tackles",
+            "home": "67% (8/12)",
+            "away": "64% (14/22)",
+            "period": "match"
+          },
+          {
+            "name": "Duels won",
+            "key": "duels won",
+            "home": "46",
+            "away": "50",
+            "period": "match"
+          },
+          {
+            "name": "Clearances",
+            "key": "clearances",
+            "home": "17",
+            "away": "14",
+            "period": "match"
+          },
+          {
+            "name": "Interceptions",
+            "key": "interceptions",
+            "home": "1",
+            "away": "8",
+            "period": "match"
+          },
+          {
+            "name": "Errors leading to shot",
+            "key": "errors leading to shot",
+            "home": "0",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Errors leading to goal",
+            "key": "errors leading to goal",
+            "home": "0",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Goalkeeper saves",
+            "key": "goalkeeper saves",
+            "home": "0",
+            "away": "2",
+            "period": "match"
+          },
+          {
+            "name": "xGOT faced",
+            "key": "xgot faced",
+            "home": "0.96",
+            "away": "1.30",
+            "period": "match"
+          },
+          {
+            "name": "Goals prevented",
+            "key": "goals prevented",
+            "home": "-0.04",
+            "away": "0.30",
+            "period": "match"
+          },
+          {
+            "name": "Goal kicks",
+            "key": "goal kicks",
+            "home": "10",
+            "away": "10",
+            "period": "match"
+          },
+          {
+            "name": "Expected goals (xG)",
+            "key": "expected goals (xg)",
+            "home": "0.35",
+            "away": "0.47",
+            "period": "match"
+          },
+          {
+            "name": "Ball possession",
+            "key": "possession",
+            "home": "58%",
+            "away": "42%",
+            "period": "match"
+          },
+          {
+            "name": "Total shots",
+            "key": "shots",
+            "home": "2",
+            "away": "5",
+            "period": "match"
+          },
+          {
+            "name": "Shots on target",
+            "key": "shots_on_target",
+            "home": "1",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Big chances",
+            "key": "big chances",
+            "home": "0",
+            "away": "2",
+            "period": "match"
+          },
+          {
+            "name": "Corner kicks",
+            "key": "corners",
+            "home": "1",
+            "away": "2",
+            "period": "match"
+          },
+          {
+            "name": "Passes",
+            "key": "passes",
+            "home": "83% (172/208)",
+            "away": "74% (108/146)",
+            "period": "match"
+          },
+          {
+            "name": "Yellow cards",
+            "key": "yellow cards",
+            "home": "1",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "xG on target (xGOT)",
+            "key": "xg on target (xgot)",
+            "home": "0.52",
+            "away": "0.00",
+            "period": "match"
+          },
+          {
+            "name": "Shots off target",
+            "key": "shots",
+            "home": "1",
+            "away": "3",
+            "period": "match"
+          },
+          {
+            "name": "Blocked shots",
+            "key": "shots",
+            "home": "0",
+            "away": "2",
+            "period": "match"
+          },
+          {
+            "name": "Shots inside the box",
+            "key": "shots",
+            "home": "1",
+            "away": "3",
+            "period": "match"
+          },
+          {
+            "name": "Shots outside the box",
+            "key": "shots",
+            "home": "1",
+            "away": "2",
+            "period": "match"
+          },
+          {
+            "name": "Touches in opposition box",
+            "key": "touches in opposition box",
+            "home": "6",
+            "away": "5",
+            "period": "match"
+          },
+          {
+            "name": "Offsides",
+            "key": "offsides",
+            "home": "3",
+            "away": "1",
+            "period": "match"
+          },
+          {
+            "name": "Free kicks",
+            "key": "free kicks",
+            "home": "8",
+            "away": "4",
+            "period": "match"
+          },
+          {
+            "name": "Long passes",
+            "key": "long passes",
+            "home": "50% (13/26)",
+            "away": "47% (17/36)",
+            "period": "match"
+          },
+          {
+            "name": "Passes in final third",
+            "key": "passes in final third",
+            "home": "73% (32/44)",
+            "away": "52% (24/46)",
+            "period": "match"
+          },
+          {
+            "name": "Crosses",
+            "key": "crosses",
+            "home": "22% (2/9)",
+            "away": "30% (3/10)",
+            "period": "match"
+          },
+          {
+            "name": "Expected assists (xA)",
+            "key": "expected assists (xa)",
+            "home": "0.26",
+            "away": "0.26",
+            "period": "match"
+          },
+          {
+            "name": "Throw ins",
+            "key": "throw ins",
+            "home": "17",
+            "away": "15",
+            "period": "match"
+          },
+          {
+            "name": "Fouls",
+            "key": "fouls",
+            "home": "4",
+            "away": "8",
+            "period": "match"
+          },
+          {
+            "name": "Tackles",
+            "key": "tackles",
+            "home": "75% (3/4)",
+            "away": "69% (9/13)",
+            "period": "match"
+          },
+          {
+            "name": "Duels won",
+            "key": "duels won",
+            "home": "18",
+            "away": "27",
+            "period": "match"
+          },
+          {
+            "name": "Clearances",
+            "key": "clearances",
+            "home": "9",
+            "away": "7",
+            "period": "match"
+          },
+          {
+            "name": "Interceptions",
+            "key": "interceptions",
+            "home": "1",
+            "away": "5",
+            "period": "match"
+          },
+          {
+            "name": "Goalkeeper saves",
+            "key": "goalkeeper saves",
+            "home": "0",
+            "away": "1",
+            "period": "match"
+          },
+          {
+            "name": "xGOT faced",
+            "key": "xgot faced",
+            "home": "0.00",
+            "away": "0.52",
+            "period": "match"
+          },
+          {
+            "name": "Goals prevented",
+            "key": "goals prevented",
+            "home": "0.00",
+            "away": "0.52",
+            "period": "match"
+          },
+          {
+            "name": "Goal kicks",
+            "key": "goal kicks",
+            "home": "7",
+            "away": "6",
+            "period": "match"
+          },
+          {
+            "name": "Expected goals (xG)",
+            "key": "expected goals (xg)",
+            "home": "0.40",
+            "away": "0.83",
+            "period": "match"
+          },
+          {
+            "name": "Ball possession",
+            "key": "possession",
+            "home": "53%",
+            "away": "47%",
+            "period": "match"
+          },
+          {
+            "name": "Total shots",
+            "key": "shots",
+            "home": "5",
+            "away": "4",
+            "period": "match"
+          },
+          {
+            "name": "Shots on target",
+            "key": "shots_on_target",
+            "home": "2",
+            "away": "1",
+            "period": "match"
+          },
+          {
+            "name": "Big chances",
+            "key": "big chances",
+            "home": "1",
+            "away": "1",
+            "period": "match"
+          },
+          {
+            "name": "Corner kicks",
+            "key": "corners",
+            "home": "0",
+            "away": "2",
+            "period": "match"
+          },
+          {
+            "name": "Passes",
+            "key": "passes",
+            "home": "80% (144/181)",
+            "away": "77% (121/158)",
+            "period": "match"
+          },
+          {
+            "name": "Yellow cards",
+            "key": "yellow cards",
+            "home": "1",
+            "away": "2",
+            "period": "match"
+          },
+          {
+            "name": "xG on target (xGOT)",
+            "key": "xg on target (xgot)",
+            "home": "0.78",
+            "away": "0.96",
+            "period": "match"
+          },
+          {
+            "name": "Shots off target",
+            "key": "shots",
+            "home": "1",
+            "away": "2",
+            "period": "match"
+          },
+          {
+            "name": "Blocked shots",
+            "key": "shots",
+            "home": "2",
+            "away": "1",
+            "period": "match"
+          },
+          {
+            "name": "Shots inside the box",
+            "key": "shots",
+            "home": "5",
+            "away": "1",
+            "period": "match"
+          },
+          {
+            "name": "Shots outside the box",
+            "key": "shots",
+            "home": "0",
+            "away": "3",
+            "period": "match"
+          },
+          {
+            "name": "Touches in opposition box",
+            "key": "touches in opposition box",
+            "home": "11",
+            "away": "4",
+            "period": "match"
+          },
+          {
+            "name": "Offsides",
+            "key": "offsides",
+            "home": "3",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Free kicks",
+            "key": "free kicks",
+            "home": "6",
+            "away": "10",
+            "period": "match"
+          },
+          {
+            "name": "Long passes",
+            "key": "long passes",
+            "home": "46% (11/24)",
+            "away": "52% (22/42)",
+            "period": "match"
+          },
+          {
+            "name": "Passes in final third",
+            "key": "passes in final third",
+            "home": "66% (35/53)",
+            "away": "54% (13/24)",
+            "period": "match"
+          },
+          {
+            "name": "Crosses",
+            "key": "crosses",
+            "home": "40% (4/10)",
+            "away": "20% (2/10)",
+            "period": "match"
+          },
+          {
+            "name": "Expected assists (xA)",
+            "key": "expected assists (xa)",
+            "home": "0.45",
+            "away": "0.06",
+            "period": "match"
+          },
+          {
+            "name": "Throw ins",
+            "key": "throw ins",
+            "home": "11",
+            "away": "11",
+            "period": "match"
+          },
+          {
+            "name": "Fouls",
+            "key": "fouls",
+            "home": "10",
+            "away": "6",
+            "period": "match"
+          },
+          {
+            "name": "Tackles",
+            "key": "tackles",
+            "home": "63% (5/8)",
+            "away": "56% (5/9)",
+            "period": "match"
+          },
+          {
+            "name": "Duels won",
+            "key": "duels won",
+            "home": "28",
+            "away": "23",
+            "period": "match"
+          },
+          {
+            "name": "Clearances",
+            "key": "clearances",
+            "home": "8",
+            "away": "7",
+            "period": "match"
+          },
+          {
+            "name": "Interceptions",
+            "key": "interceptions",
+            "home": "0",
+            "away": "3",
+            "period": "match"
+          },
+          {
+            "name": "xGOT faced",
+            "key": "xgot faced",
+            "home": "0.96",
+            "away": "0.78",
+            "period": "match"
+          },
+          {
+            "name": "Goals prevented",
+            "key": "goals prevented",
+            "home": "-0.04",
+            "away": "-0.22",
+            "period": "match"
+          },
+          {
+            "name": "Goal kicks",
+            "key": "goal kicks",
+            "home": "3",
+            "away": "4",
+            "period": "match"
+          }
+        ],
+        "updatedAt": "2026-09-28T05:25:21.362Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
-          "events": null,
-          "statistics": null
+          "events": "df_sui_1_nelb1QCt",
+          "statistics": "df_st_1_nelb1QCt"
         }
       }
     },
@@ -45900,12 +48713,12 @@
         "id": "fs-fLi6a4sg",
         "date": "2026-09-28T03:10:00.000Z",
         "status": {
-          "short": "NS"
+          "short": "FT"
         }
       },
       "teams": {
         "home": {
-          "id": null,
+          "id": "4",
           "name": "Necaxa",
           "logo": "/teams/necaxa.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/f3CzIwSq-IFA1tboe.png",
@@ -45924,8 +48737,8 @@
         }
       },
       "goals": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 4
       },
       "league": {
         "id": "flashscore-mexico-liga-mx",
@@ -45943,13 +48756,953 @@
       "sourceUrl": "https://www.flashscore.com/match/fLi6a4sg/",
       "sourcePath": "/football/mexico/liga-mx/",
       "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
+        "events": [
+          {
+            "id": "fLi6a4sg-1",
+            "minute": "33'",
+            "type": "yellow",
+            "team": null,
+            "player": "Sanchez E.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": "67",
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "fLi6a4sg-2",
+            "minute": "37'",
+            "type": "goal",
+            "team": null,
+            "player": "Carranza J.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "fLi6a4sg-3",
+            "minute": "39'",
+            "type": "yellow",
+            "team": null,
+            "player": "Martin H.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "fLi6a4sg-4",
+            "minute": "43'",
+            "type": "goal",
+            "team": null,
+            "player": "Carranza J.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "fLi6a4sg-5",
+            "minute": "45+10'",
+            "type": "yellow",
+            "team": null,
+            "player": "Martin H.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "fLi6a4sg-7",
+            "minute": "56'",
+            "type": "yellow",
+            "team": null,
+            "player": "Miguel Borja",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "fLi6a4sg-8",
+            "minute": "62'",
+            "type": "goal",
+            "team": null,
+            "player": "Martinez R.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": "67",
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "fLi6a4sg-9",
+            "minute": "63'",
+            "type": "goal",
+            "team": null,
+            "player": "Zaleta M.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "fLi6a4sg-10",
+            "minute": "63'",
+            "type": "goal",
+            "team": null,
+            "player": "Ruiz J.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "fLi6a4sg-11",
+            "minute": "72'",
+            "type": "goal",
+            "team": null,
+            "player": "Torres Patino J. P.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "fLi6a4sg-12",
+            "minute": "72'",
+            "type": "goal",
+            "team": null,
+            "player": "Rosero K.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "fLi6a4sg-13",
+            "minute": "75'",
+            "type": "yellow",
+            "team": null,
+            "player": "Martin H.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "fLi6a4sg-14",
+            "minute": "75'",
+            "type": "yellow",
+            "team": null,
+            "player": "Gutierrez Torres A. H.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "fLi6a4sg-15",
+            "minute": "75'",
+            "type": "yellow",
+            "team": null,
+            "player": "Cardenas A.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "fLi6a4sg-16",
+            "minute": "75'",
+            "type": "yellow",
+            "team": null,
+            "player": "Icaro",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "fLi6a4sg-17",
+            "minute": "82'",
+            "type": "goal",
+            "team": null,
+            "player": "Valencia J.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "fLi6a4sg-18",
+            "minute": "82'",
+            "type": "yellow",
+            "team": null,
+            "player": "Garcia D.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "fLi6a4sg-19",
+            "minute": "82'",
+            "type": "yellow",
+            "team": null,
+            "player": "Alvarez K.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "fLi6a4sg-20",
+            "minute": "87'",
+            "type": "goal",
+            "team": null,
+            "player": "Ochoa D.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": "67",
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "fLi6a4sg-21",
+            "minute": "90'",
+            "type": "goal",
+            "team": null,
+            "player": "Ruiz J.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": "67",
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "fLi6a4sg-22",
+            "minute": "90+5'",
+            "type": "yellow",
+            "team": null,
+            "player": "Borja C.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": "22",
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          }
+        ],
+        "statistics": [
+          {
+            "name": "Expected goals (xG)",
+            "key": "expected goals (xg)",
+            "home": "2.82",
+            "away": "3.39",
+            "period": "match"
+          },
+          {
+            "name": "Ball possession",
+            "key": "possession",
+            "home": "53%",
+            "away": "47%",
+            "period": "match"
+          },
+          {
+            "name": "Total shots",
+            "key": "shots",
+            "home": "15",
+            "away": "20",
+            "period": "match"
+          },
+          {
+            "name": "Shots on target",
+            "key": "shots_on_target",
+            "home": "6",
+            "away": "9",
+            "period": "match"
+          },
+          {
+            "name": "Big chances",
+            "key": "big chances",
+            "home": "7",
+            "away": "5",
+            "period": "match"
+          },
+          {
+            "name": "Corner kicks",
+            "key": "corners",
+            "home": "3",
+            "away": "5",
+            "period": "match"
+          },
+          {
+            "name": "Passes",
+            "key": "passes",
+            "home": "79% (367/464)",
+            "away": "77% (309/399)",
+            "period": "match"
+          },
+          {
+            "name": "Yellow cards",
+            "key": "yellow cards",
+            "home": "3",
+            "away": "2",
+            "period": "match"
+          },
+          {
+            "name": "xG on target (xGOT)",
+            "key": "xg on target (xgot)",
+            "home": "1.73",
+            "away": "4.28",
+            "period": "match"
+          },
+          {
+            "name": "Shots off target",
+            "key": "shots",
+            "home": "4",
+            "away": "5",
+            "period": "match"
+          },
+          {
+            "name": "Blocked shots",
+            "key": "shots",
+            "home": "5",
+            "away": "6",
+            "period": "match"
+          },
+          {
+            "name": "Shots inside the box",
+            "key": "shots",
+            "home": "10",
+            "away": "12",
+            "period": "match"
+          },
+          {
+            "name": "Shots outside the box",
+            "key": "shots",
+            "home": "5",
+            "away": "8",
+            "period": "match"
+          },
+          {
+            "name": "Hit the woodwork",
+            "key": "hit the woodwork",
+            "home": "0",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Headed goals",
+            "key": "headed goals",
+            "home": "0",
+            "away": "1",
+            "period": "match"
+          },
+          {
+            "name": "Touches in opposition box",
+            "key": "touches in opposition box",
+            "home": "18",
+            "away": "26",
+            "period": "match"
+          },
+          {
+            "name": "Accurate through passes",
+            "key": "accurate through passes",
+            "home": "0",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Offsides",
+            "key": "offsides",
+            "home": "1",
+            "away": "2",
+            "period": "match"
+          },
+          {
+            "name": "Free kicks",
+            "key": "free kicks",
+            "home": "6",
+            "away": "16",
+            "period": "match"
+          },
+          {
+            "name": "Long passes",
+            "key": "long passes",
+            "home": "43% (33/76)",
+            "away": "40% (21/52)",
+            "period": "match"
+          },
+          {
+            "name": "Passes in final third",
+            "key": "passes in final third",
+            "home": "68% (67/98)",
+            "away": "70% (88/125)",
+            "period": "match"
+          },
+          {
+            "name": "Crosses",
+            "key": "crosses",
+            "home": "38% (3/8)",
+            "away": "23% (3/13)",
+            "period": "match"
+          },
+          {
+            "name": "Expected assists (xA)",
+            "key": "expected assists (xa)",
+            "home": "1.19",
+            "away": "1.61",
+            "period": "match"
+          },
+          {
+            "name": "Throw ins",
+            "key": "throw ins",
+            "home": "27",
+            "away": "18",
+            "period": "match"
+          },
+          {
+            "name": "Fouls",
+            "key": "fouls",
+            "home": "16",
+            "away": "6",
+            "period": "match"
+          },
+          {
+            "name": "Tackles",
+            "key": "tackles",
+            "home": "37% (7/19)",
+            "away": "71% (12/17)",
+            "period": "match"
+          },
+          {
+            "name": "Duels won",
+            "key": "duels won",
+            "home": "50",
+            "away": "55",
+            "period": "match"
+          },
+          {
+            "name": "Clearances",
+            "key": "clearances",
+            "home": "20",
+            "away": "12",
+            "period": "match"
+          },
+          {
+            "name": "Interceptions",
+            "key": "interceptions",
+            "home": "15",
+            "away": "18",
+            "period": "match"
+          },
+          {
+            "name": "Errors leading to shot",
+            "key": "errors leading to shot",
+            "home": "0",
+            "away": "1",
+            "period": "match"
+          },
+          {
+            "name": "Errors leading to goal",
+            "key": "errors leading to goal",
+            "home": "1",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Goalkeeper saves",
+            "key": "goalkeeper saves",
+            "home": "4",
+            "away": "2",
+            "period": "match"
+          },
+          {
+            "name": "xGOT faced",
+            "key": "xgot faced",
+            "home": "4.28",
+            "away": "1.73",
+            "period": "match"
+          },
+          {
+            "name": "Goals prevented",
+            "key": "goals prevented",
+            "home": "0.28",
+            "away": "-0.27",
+            "period": "match"
+          },
+          {
+            "name": "Goal kicks",
+            "key": "goal kicks",
+            "home": "9",
+            "away": "7",
+            "period": "match"
+          },
+          {
+            "name": "Expected goals (xG)",
+            "key": "expected goals (xg)",
+            "home": "2.26",
+            "away": "2.08",
+            "period": "match"
+          },
+          {
+            "name": "Total shots",
+            "key": "shots",
+            "home": "10",
+            "away": "11",
+            "period": "match"
+          },
+          {
+            "name": "Shots on target",
+            "key": "shots_on_target",
+            "home": "5",
+            "away": "5",
+            "period": "match"
+          },
+          {
+            "name": "Big chances",
+            "key": "big chances",
+            "home": "6",
+            "away": "4",
+            "period": "match"
+          },
+          {
+            "name": "Corner kicks",
+            "key": "corners",
+            "home": "0",
+            "away": "4",
+            "period": "match"
+          },
+          {
+            "name": "Passes",
+            "key": "passes",
+            "home": "78% (189/242)",
+            "away": "78% (160/206)",
+            "period": "match"
+          },
+          {
+            "name": "Yellow cards",
+            "key": "yellow cards",
+            "home": "0",
+            "away": "1",
+            "period": "match"
+          },
+          {
+            "name": "xG on target (xGOT)",
+            "key": "xg on target (xgot)",
+            "home": "1.73",
+            "away": "1.84",
+            "period": "match"
+          },
+          {
+            "name": "Shots off target",
+            "key": "shots",
+            "home": "3",
+            "away": "3",
+            "period": "match"
+          },
+          {
+            "name": "Blocked shots",
+            "key": "shots",
+            "home": "2",
+            "away": "3",
+            "period": "match"
+          },
+          {
+            "name": "Shots inside the box",
+            "key": "shots",
+            "home": "9",
+            "away": "8",
+            "period": "match"
+          },
+          {
+            "name": "Shots outside the box",
+            "key": "shots",
+            "home": "1",
+            "away": "3",
+            "period": "match"
+          },
+          {
+            "name": "Touches in opposition box",
+            "key": "touches in opposition box",
+            "home": "14",
+            "away": "17",
+            "period": "match"
+          },
+          {
+            "name": "Offsides",
+            "key": "offsides",
+            "home": "0",
+            "away": "1",
+            "period": "match"
+          },
+          {
+            "name": "Free kicks",
+            "key": "free kicks",
+            "home": "4",
+            "away": "5",
+            "period": "match"
+          },
+          {
+            "name": "Long passes",
+            "key": "long passes",
+            "home": "44% (18/41)",
+            "away": "25% (6/24)",
+            "period": "match"
+          },
+          {
+            "name": "Passes in final third",
+            "key": "passes in final third",
+            "home": "67% (33/49)",
+            "away": "73% (61/83)",
+            "period": "match"
+          },
+          {
+            "name": "Crosses",
+            "key": "crosses",
+            "home": "100% (3/3)",
+            "away": "43% (3/7)",
+            "period": "match"
+          },
+          {
+            "name": "Expected assists (xA)",
+            "key": "expected assists (xa)",
+            "home": "1.04",
+            "away": "1.48",
+            "period": "match"
+          },
+          {
+            "name": "Throw ins",
+            "key": "throw ins",
+            "home": "17",
+            "away": "10",
+            "period": "match"
+          },
+          {
+            "name": "Fouls",
+            "key": "fouls",
+            "home": "5",
+            "away": "4",
+            "period": "match"
+          },
+          {
+            "name": "Tackles",
+            "key": "tackles",
+            "home": "38% (3/8)",
+            "away": "100% (6/6)",
+            "period": "match"
+          },
+          {
+            "name": "Duels won",
+            "key": "duels won",
+            "home": "23",
+            "away": "23",
+            "period": "match"
+          },
+          {
+            "name": "Clearances",
+            "key": "clearances",
+            "home": "8",
+            "away": "6",
+            "period": "match"
+          },
+          {
+            "name": "Interceptions",
+            "key": "interceptions",
+            "home": "6",
+            "away": "11",
+            "period": "match"
+          },
+          {
+            "name": "Errors leading to goal",
+            "key": "errors leading to goal",
+            "home": "0",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Goalkeeper saves",
+            "key": "goalkeeper saves",
+            "home": "2",
+            "away": "2",
+            "period": "match"
+          },
+          {
+            "name": "xGOT faced",
+            "key": "xgot faced",
+            "home": "1.84",
+            "away": "1.73",
+            "period": "match"
+          },
+          {
+            "name": "Goals prevented",
+            "key": "goals prevented",
+            "home": "-0.16",
+            "away": "-0.27",
+            "period": "match"
+          },
+          {
+            "name": "Goal kicks",
+            "key": "goal kicks",
+            "home": "5",
+            "away": "5",
+            "period": "match"
+          },
+          {
+            "name": "Expected goals (xG)",
+            "key": "expected goals (xg)",
+            "home": "0.56",
+            "away": "1.31",
+            "period": "match"
+          },
+          {
+            "name": "Total shots",
+            "key": "shots",
+            "home": "5",
+            "away": "9",
+            "period": "match"
+          },
+          {
+            "name": "Shots on target",
+            "key": "shots_on_target",
+            "home": "1",
+            "away": "4",
+            "period": "match"
+          },
+          {
+            "name": "Big chances",
+            "key": "big chances",
+            "home": "1",
+            "away": "1",
+            "period": "match"
+          },
+          {
+            "name": "Corner kicks",
+            "key": "corners",
+            "home": "3",
+            "away": "1",
+            "period": "match"
+          },
+          {
+            "name": "Passes",
+            "key": "passes",
+            "home": "80% (178/222)",
+            "away": "77% (149/193)",
+            "period": "match"
+          },
+          {
+            "name": "Yellow cards",
+            "key": "yellow cards",
+            "home": "3",
+            "away": "1",
+            "period": "match"
+          },
+          {
+            "name": "xG on target (xGOT)",
+            "key": "xg on target (xgot)",
+            "home": "0.00",
+            "away": "2.44",
+            "period": "match"
+          },
+          {
+            "name": "Shots off target",
+            "key": "shots",
+            "home": "1",
+            "away": "2",
+            "period": "match"
+          },
+          {
+            "name": "Blocked shots",
+            "key": "shots",
+            "home": "3",
+            "away": "3",
+            "period": "match"
+          },
+          {
+            "name": "Shots inside the box",
+            "key": "shots",
+            "home": "1",
+            "away": "4",
+            "period": "match"
+          },
+          {
+            "name": "Shots outside the box",
+            "key": "shots",
+            "home": "4",
+            "away": "5",
+            "period": "match"
+          },
+          {
+            "name": "Touches in opposition box",
+            "key": "touches in opposition box",
+            "home": "4",
+            "away": "9",
+            "period": "match"
+          },
+          {
+            "name": "Offsides",
+            "key": "offsides",
+            "home": "1",
+            "away": "1",
+            "period": "match"
+          },
+          {
+            "name": "Free kicks",
+            "key": "free kicks",
+            "home": "2",
+            "away": "11",
+            "period": "match"
+          },
+          {
+            "name": "Long passes",
+            "key": "long passes",
+            "home": "43% (15/35)",
+            "away": "54% (15/28)",
+            "period": "match"
+          },
+          {
+            "name": "Passes in final third",
+            "key": "passes in final third",
+            "home": "69% (34/49)",
+            "away": "64% (27/42)",
+            "period": "match"
+          },
+          {
+            "name": "Crosses",
+            "key": "crosses",
+            "home": "0% (0/5)",
+            "away": "0% (0/6)",
+            "period": "match"
+          },
+          {
+            "name": "Expected assists (xA)",
+            "key": "expected assists (xa)",
+            "home": "0.15",
+            "away": "0.13",
+            "period": "match"
+          },
+          {
+            "name": "Throw ins",
+            "key": "throw ins",
+            "home": "10",
+            "away": "8",
+            "period": "match"
+          },
+          {
+            "name": "Fouls",
+            "key": "fouls",
+            "home": "11",
+            "away": "2",
+            "period": "match"
+          },
+          {
+            "name": "Tackles",
+            "key": "tackles",
+            "home": "36% (4/11)",
+            "away": "55% (6/11)",
+            "period": "match"
+          },
+          {
+            "name": "Duels won",
+            "key": "duels won",
+            "home": "27",
+            "away": "32",
+            "period": "match"
+          },
+          {
+            "name": "Clearances",
+            "key": "clearances",
+            "home": "12",
+            "away": "6",
+            "period": "match"
+          },
+          {
+            "name": "Interceptions",
+            "key": "interceptions",
+            "home": "9",
+            "away": "7",
+            "period": "match"
+          },
+          {
+            "name": "Errors leading to shot",
+            "key": "errors leading to shot",
+            "home": "0",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Goalkeeper saves",
+            "key": "goalkeeper saves",
+            "home": "2",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "xGOT faced",
+            "key": "xgot faced",
+            "home": "2.44",
+            "away": "0.00",
+            "period": "match"
+          },
+          {
+            "name": "Goals prevented",
+            "key": "goals prevented",
+            "home": "0.44",
+            "away": "0.00",
+            "period": "match"
+          },
+          {
+            "name": "Goal kicks",
+            "key": "goal kicks",
+            "home": "4",
+            "away": "2",
+            "period": "match"
+          }
+        ],
+        "updatedAt": "2026-09-28T05:25:23.728Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
-          "events": null,
-          "statistics": null
+          "events": "df_sui_1_fLi6a4sg",
+          "statistics": "df_st_1_fLi6a4sg"
         }
       }
     },
@@ -46016,12 +49769,12 @@
         "id": "fs-0ER4D89U",
         "date": "2026-09-27T23:00:00.000Z",
         "status": {
-          "short": "NS"
+          "short": "FT"
         }
       },
       "teams": {
         "home": {
-          "id": null,
+          "id": "1",
           "name": "Columbus Crew",
           "logo": "/teams/columbuscrew.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/z94JGZTH-UwKTVGeG.png",
@@ -46040,8 +49793,8 @@
         }
       },
       "goals": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 1
       },
       "league": {
         "id": "flashscore-usa-mls",
@@ -46059,13 +49812,980 @@
       "sourceUrl": "https://www.flashscore.com/match/0ER4D89U/",
       "sourcePath": "/football/usa/mls/",
       "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
+        "events": [
+          {
+            "id": "0ER4D89U-1",
+            "minute": "27'",
+            "type": "yellow",
+            "team": null,
+            "player": "Casemiro",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "0ER4D89U-2",
+            "minute": "28'",
+            "type": "goal",
+            "team": null,
+            "player": "Martinez J.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "0ER4D89U-3",
+            "minute": "33'",
+            "type": "yellow",
+            "team": null,
+            "player": "Messi L.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "0ER4D89U-4",
+            "minute": "38'",
+            "type": "goal",
+            "team": null,
+            "player": "Chambost D.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "0ER4D89U-5",
+            "minute": "40'",
+            "type": "yellow",
+            "team": null,
+            "player": "Ayala D.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": "238",
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "0ER4D89U-8",
+            "minute": "67'",
+            "type": "yellow",
+            "team": null,
+            "player": "Micael",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "0ER4D89U-9",
+            "minute": "72'",
+            "type": "yellow",
+            "team": null,
+            "player": "Riquelme Fillipi",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "0ER4D89U-10",
+            "minute": "75'",
+            "type": "goal",
+            "team": null,
+            "player": "Mendez B.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "0ER4D89U-11",
+            "minute": "78'",
+            "type": "goal",
+            "team": null,
+            "player": "Bangoura S.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "0ER4D89U-12",
+            "minute": "79'",
+            "type": "goal",
+            "team": null,
+            "player": "Bailly E.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "0ER4D89U-13",
+            "minute": "80'",
+            "type": "yellow",
+            "team": null,
+            "player": "Pinter D.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "0ER4D89U-14",
+            "minute": "83'",
+            "type": "goal",
+            "team": null,
+            "player": "Herrera A.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "0ER4D89U-15",
+            "minute": "83'",
+            "type": "goal",
+            "team": null,
+            "player": "Thiare J.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "0ER4D89U-16",
+            "minute": "84'",
+            "type": "goal",
+            "team": null,
+            "player": "Bangoura S.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "0ER4D89U-17",
+            "minute": "87'",
+            "type": "yellow",
+            "team": null,
+            "player": "Morales S.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "0ER4D89U-18",
+            "minute": "87'",
+            "type": "yellow",
+            "team": null,
+            "player": "Abadia-Reda C.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "0ER4D89U-19",
+            "minute": "90+2'",
+            "type": "yellow",
+            "team": null,
+            "player": "Lujan G.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "0ER4D89U-20",
+            "minute": "90+3'",
+            "type": "yellow",
+            "team": null,
+            "player": "Morales S.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "0ER4D89U-21",
+            "minute": "90+6'",
+            "type": "yellow",
+            "team": null,
+            "player": "Morales S.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          },
+          {
+            "id": "0ER4D89U-22",
+            "minute": "90+8'",
+            "type": "goal",
+            "team": null,
+            "player": "Thiare J.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "0ER4D89U-23",
+            "minute": "90+9'",
+            "type": "goal",
+            "team": null,
+            "player": "Thiare J.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "1"
+          },
+          {
+            "id": "0ER4D89U-24",
+            "minute": "90+10'",
+            "type": "yellow",
+            "team": null,
+            "player": "Barraza L.",
+            "assist": null,
+            "playerIn": null,
+            "playerOut": null,
+            "scoreHome": null,
+            "scoreAway": null,
+            "rawType": "2"
+          }
+        ],
+        "statistics": [
+          {
+            "name": "Expected goals (xG)",
+            "key": "expected goals (xg)",
+            "home": "1.87",
+            "away": "0.27",
+            "period": "match"
+          },
+          {
+            "name": "Ball possession",
+            "key": "possession",
+            "home": "44%",
+            "away": "56%",
+            "period": "match"
+          },
+          {
+            "name": "Total shots",
+            "key": "shots",
+            "home": "14",
+            "away": "5",
+            "period": "match"
+          },
+          {
+            "name": "Shots on target",
+            "key": "shots_on_target",
+            "home": "6",
+            "away": "3",
+            "period": "match"
+          },
+          {
+            "name": "Big chances",
+            "key": "big chances",
+            "home": "3",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Corner kicks",
+            "key": "corners",
+            "home": "9",
+            "away": "1",
+            "period": "match"
+          },
+          {
+            "name": "Passes",
+            "key": "passes",
+            "home": "88% (344/390)",
+            "away": "89% (464/523)",
+            "period": "match"
+          },
+          {
+            "name": "Yellow cards",
+            "key": "yellow cards",
+            "home": "5",
+            "away": "6",
+            "period": "match"
+          },
+          {
+            "name": "Red cards",
+            "key": "red cards",
+            "home": "0",
+            "away": "1",
+            "period": "match"
+          },
+          {
+            "name": "xG on target (xGOT)",
+            "key": "xg on target (xgot)",
+            "home": "1.01",
+            "away": "0.70",
+            "period": "match"
+          },
+          {
+            "name": "Shots off target",
+            "key": "shots",
+            "home": "6",
+            "away": "2",
+            "period": "match"
+          },
+          {
+            "name": "Blocked shots",
+            "key": "shots",
+            "home": "2",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Shots inside the box",
+            "key": "shots",
+            "home": "6",
+            "away": "2",
+            "period": "match"
+          },
+          {
+            "name": "Shots outside the box",
+            "key": "shots",
+            "home": "8",
+            "away": "3",
+            "period": "match"
+          },
+          {
+            "name": "Hit the woodwork",
+            "key": "hit the woodwork",
+            "home": "3",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Touches in opposition box",
+            "key": "touches in opposition box",
+            "home": "19",
+            "away": "12",
+            "period": "match"
+          },
+          {
+            "name": "Accurate through passes",
+            "key": "accurate through passes",
+            "home": "0",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Offsides",
+            "key": "offsides",
+            "home": "1",
+            "away": "4",
+            "period": "match"
+          },
+          {
+            "name": "Free kicks",
+            "key": "free kicks",
+            "home": "17",
+            "away": "18",
+            "period": "match"
+          },
+          {
+            "name": "Long passes",
+            "key": "long passes",
+            "home": "56% (23/41)",
+            "away": "56% (28/50)",
+            "period": "match"
+          },
+          {
+            "name": "Passes in final third",
+            "key": "passes in final third",
+            "home": "80% (117/147)",
+            "away": "80% (99/124)",
+            "period": "match"
+          },
+          {
+            "name": "Crosses",
+            "key": "crosses",
+            "home": "13% (3/24)",
+            "away": "20% (1/5)",
+            "period": "match"
+          },
+          {
+            "name": "Expected assists (xA)",
+            "key": "expected assists (xa)",
+            "home": "0.57",
+            "away": "0.80",
+            "period": "match"
+          },
+          {
+            "name": "Throw ins",
+            "key": "throw ins",
+            "home": "8",
+            "away": "12",
+            "period": "match"
+          },
+          {
+            "name": "Fouls",
+            "key": "fouls",
+            "home": "18",
+            "away": "17",
+            "period": "match"
+          },
+          {
+            "name": "Tackles",
+            "key": "tackles",
+            "home": "50% (5/10)",
+            "away": "67% (10/15)",
+            "period": "match"
+          },
+          {
+            "name": "Duels won",
+            "key": "duels won",
+            "home": "38",
+            "away": "47",
+            "period": "match"
+          },
+          {
+            "name": "Clearances",
+            "key": "clearances",
+            "home": "17",
+            "away": "25",
+            "period": "match"
+          },
+          {
+            "name": "Interceptions",
+            "key": "interceptions",
+            "home": "11",
+            "away": "6",
+            "period": "match"
+          },
+          {
+            "name": "Errors leading to shot",
+            "key": "errors leading to shot",
+            "home": "0",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Errors leading to goal",
+            "key": "errors leading to goal",
+            "home": "0",
+            "away": "1",
+            "period": "match"
+          },
+          {
+            "name": "Goalkeeper saves",
+            "key": "goalkeeper saves",
+            "home": "2",
+            "away": "4",
+            "period": "match"
+          },
+          {
+            "name": "xGOT faced",
+            "key": "xgot faced",
+            "home": "0.70",
+            "away": "1.01",
+            "period": "match"
+          },
+          {
+            "name": "Goals prevented",
+            "key": "goals prevented",
+            "home": "-0.30",
+            "away": "-0.99",
+            "period": "match"
+          },
+          {
+            "name": "Goal kicks",
+            "key": "goal kicks",
+            "home": "4",
+            "away": "4",
+            "period": "match"
+          },
+          {
+            "name": "Expected goals (xG)",
+            "key": "expected goals (xg)",
+            "home": "0.89",
+            "away": "0.03",
+            "period": "match"
+          },
+          {
+            "name": "Ball possession",
+            "key": "possession",
+            "home": "42%",
+            "away": "58%",
+            "period": "match"
+          },
+          {
+            "name": "Total shots",
+            "key": "shots",
+            "home": "5",
+            "away": "1",
+            "period": "match"
+          },
+          {
+            "name": "Shots on target",
+            "key": "shots_on_target",
+            "home": "2",
+            "away": "1",
+            "period": "match"
+          },
+          {
+            "name": "Big chances",
+            "key": "big chances",
+            "home": "1",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Corner kicks",
+            "key": "corners",
+            "home": "4",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Passes",
+            "key": "passes",
+            "home": "92% (192/209)",
+            "away": "88% (267/302)",
+            "period": "match"
+          },
+          {
+            "name": "Yellow cards",
+            "key": "yellow cards",
+            "home": "1",
+            "away": "1",
+            "period": "match"
+          },
+          {
+            "name": "xG on target (xGOT)",
+            "key": "xg on target (xgot)",
+            "home": "0.68",
+            "away": "0.55",
+            "period": "match"
+          },
+          {
+            "name": "Shots off target",
+            "key": "shots",
+            "home": "2",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Blocked shots",
+            "key": "shots",
+            "home": "1",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Shots inside the box",
+            "key": "shots",
+            "home": "3",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Shots outside the box",
+            "key": "shots",
+            "home": "2",
+            "away": "1",
+            "period": "match"
+          },
+          {
+            "name": "Hit the woodwork",
+            "key": "hit the woodwork",
+            "home": "1",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Touches in opposition box",
+            "key": "touches in opposition box",
+            "home": "11",
+            "away": "4",
+            "period": "match"
+          },
+          {
+            "name": "Offsides",
+            "key": "offsides",
+            "home": "1",
+            "away": "1",
+            "period": "match"
+          },
+          {
+            "name": "Free kicks",
+            "key": "free kicks",
+            "home": "8",
+            "away": "8",
+            "period": "match"
+          },
+          {
+            "name": "Long passes",
+            "key": "long passes",
+            "home": "85% (11/13)",
+            "away": "57% (17/30)",
+            "period": "match"
+          },
+          {
+            "name": "Passes in final third",
+            "key": "passes in final third",
+            "home": "85% (64/75)",
+            "away": "78% (47/60)",
+            "period": "match"
+          },
+          {
+            "name": "Crosses",
+            "key": "crosses",
+            "home": "8% (1/13)",
+            "away": "0% (0/2)",
+            "period": "match"
+          },
+          {
+            "name": "Expected assists (xA)",
+            "key": "expected assists (xa)",
+            "home": "0.16",
+            "away": "0.17",
+            "period": "match"
+          },
+          {
+            "name": "Throw ins",
+            "key": "throw ins",
+            "home": "3",
+            "away": "2",
+            "period": "match"
+          },
+          {
+            "name": "Fouls",
+            "key": "fouls",
+            "home": "8",
+            "away": "8",
+            "period": "match"
+          },
+          {
+            "name": "Tackles",
+            "key": "tackles",
+            "home": "50% (1/2)",
+            "away": "60% (3/5)",
+            "period": "match"
+          },
+          {
+            "name": "Duels won",
+            "key": "duels won",
+            "home": "19",
+            "away": "18",
+            "period": "match"
+          },
+          {
+            "name": "Clearances",
+            "key": "clearances",
+            "home": "9",
+            "away": "9",
+            "period": "match"
+          },
+          {
+            "name": "Interceptions",
+            "key": "interceptions",
+            "home": "6",
+            "away": "4",
+            "period": "match"
+          },
+          {
+            "name": "Errors leading to goal",
+            "key": "errors leading to goal",
+            "home": "0",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Goalkeeper saves",
+            "key": "goalkeeper saves",
+            "home": "0",
+            "away": "1",
+            "period": "match"
+          },
+          {
+            "name": "xGOT faced",
+            "key": "xgot faced",
+            "home": "0.55",
+            "away": "0.68",
+            "period": "match"
+          },
+          {
+            "name": "Goals prevented",
+            "key": "goals prevented",
+            "home": "-0.45",
+            "away": "-0.32",
+            "period": "match"
+          },
+          {
+            "name": "Goal kicks",
+            "key": "goal kicks",
+            "home": "1",
+            "away": "2",
+            "period": "match"
+          },
+          {
+            "name": "Expected goals (xG)",
+            "key": "expected goals (xg)",
+            "home": "0.98",
+            "away": "0.24",
+            "period": "match"
+          },
+          {
+            "name": "Ball possession",
+            "key": "possession",
+            "home": "46%",
+            "away": "54%",
+            "period": "match"
+          },
+          {
+            "name": "Total shots",
+            "key": "shots",
+            "home": "9",
+            "away": "4",
+            "period": "match"
+          },
+          {
+            "name": "Shots on target",
+            "key": "shots_on_target",
+            "home": "4",
+            "away": "2",
+            "period": "match"
+          },
+          {
+            "name": "Big chances",
+            "key": "big chances",
+            "home": "2",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Corner kicks",
+            "key": "corners",
+            "home": "5",
+            "away": "1",
+            "period": "match"
+          },
+          {
+            "name": "Passes",
+            "key": "passes",
+            "home": "84% (152/181)",
+            "away": "89% (197/221)",
+            "period": "match"
+          },
+          {
+            "name": "Yellow cards",
+            "key": "yellow cards",
+            "home": "4",
+            "away": "5",
+            "period": "match"
+          },
+          {
+            "name": "xG on target (xGOT)",
+            "key": "xg on target (xgot)",
+            "home": "0.33",
+            "away": "0.15",
+            "period": "match"
+          },
+          {
+            "name": "Shots off target",
+            "key": "shots",
+            "home": "4",
+            "away": "2",
+            "period": "match"
+          },
+          {
+            "name": "Shots inside the box",
+            "key": "shots",
+            "home": "3",
+            "away": "2",
+            "period": "match"
+          },
+          {
+            "name": "Shots outside the box",
+            "key": "shots",
+            "home": "6",
+            "away": "2",
+            "period": "match"
+          },
+          {
+            "name": "Hit the woodwork",
+            "key": "hit the woodwork",
+            "home": "2",
+            "away": "0",
+            "period": "match"
+          },
+          {
+            "name": "Touches in opposition box",
+            "key": "touches in opposition box",
+            "home": "8",
+            "away": "8",
+            "period": "match"
+          },
+          {
+            "name": "Offsides",
+            "key": "offsides",
+            "home": "0",
+            "away": "3",
+            "period": "match"
+          },
+          {
+            "name": "Free kicks",
+            "key": "free kicks",
+            "home": "9",
+            "away": "10",
+            "period": "match"
+          },
+          {
+            "name": "Long passes",
+            "key": "long passes",
+            "home": "43% (12/28)",
+            "away": "55% (11/20)",
+            "period": "match"
+          },
+          {
+            "name": "Passes in final third",
+            "key": "passes in final third",
+            "home": "74% (53/72)",
+            "away": "81% (52/64)",
+            "period": "match"
+          },
+          {
+            "name": "Crosses",
+            "key": "crosses",
+            "home": "18% (2/11)",
+            "away": "33% (1/3)",
+            "period": "match"
+          },
+          {
+            "name": "Expected assists (xA)",
+            "key": "expected assists (xa)",
+            "home": "0.41",
+            "away": "0.63",
+            "period": "match"
+          },
+          {
+            "name": "Throw ins",
+            "key": "throw ins",
+            "home": "5",
+            "away": "10",
+            "period": "match"
+          },
+          {
+            "name": "Fouls",
+            "key": "fouls",
+            "home": "10",
+            "away": "9",
+            "period": "match"
+          },
+          {
+            "name": "Tackles",
+            "key": "tackles",
+            "home": "50% (4/8)",
+            "away": "70% (7/10)",
+            "period": "match"
+          },
+          {
+            "name": "Duels won",
+            "key": "duels won",
+            "home": "19",
+            "away": "29",
+            "period": "match"
+          },
+          {
+            "name": "Clearances",
+            "key": "clearances",
+            "home": "8",
+            "away": "16",
+            "period": "match"
+          },
+          {
+            "name": "Interceptions",
+            "key": "interceptions",
+            "home": "5",
+            "away": "2",
+            "period": "match"
+          },
+          {
+            "name": "Goalkeeper saves",
+            "key": "goalkeeper saves",
+            "home": "2",
+            "away": "3",
+            "period": "match"
+          },
+          {
+            "name": "xGOT faced",
+            "key": "xgot faced",
+            "home": "0.15",
+            "away": "0.33",
+            "period": "match"
+          },
+          {
+            "name": "Goals prevented",
+            "key": "goals prevented",
+            "home": "0.15",
+            "away": "-0.67",
+            "period": "match"
+          },
+          {
+            "name": "Goal kicks",
+            "key": "goal kicks",
+            "home": "3",
+            "away": "2",
+            "period": "match"
+          }
+        ],
+        "updatedAt": "2026-09-28T05:25:28.497Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
-          "events": null,
-          "statistics": null
+          "events": "df_sui_1_0ER4D89U",
+          "statistics": "df_st_1_0ER4D89U"
         }
       }
     },
@@ -48031,7 +52751,7 @@
       "details": {
         "events": [],
         "statistics": [],
-        "updatedAt": "2026-09-27T23:05:27.079Z",
+        "updatedAt": "2026-09-28T05:25:31.613Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_bDGw34fE",
