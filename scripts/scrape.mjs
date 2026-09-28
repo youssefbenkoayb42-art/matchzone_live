@@ -883,6 +883,31 @@ async function main() {
     dedupeMatches([...footballDataMatches, ...supplemental, ...openFootballMatches])
   );
 
+  // Unified league catalog: league identity is provider-scoped; names are display-only.
+  const leagueMap = new Map();
+  const addLeague = (league, source, matchCount = 0) => {
+    const id = String(league?.id || "").trim();
+    if (!id) return;
+    const existing = leagueMap.get(id) || {
+      id,
+      name: String(league?.name || id).trim(),
+      region: league?.region || null,
+      season: league?.season || null,
+      source: source || league?.source || "unknown",
+      file: league?.file || null,
+      matchCount: 0,
+    };
+    existing.matchCount += matchCount;
+    leagueMap.set(id, existing);
+  };
+
+  for (const match of matches) addLeague(match.league, match.source, 1);
+  for (const league of openFootballResult.catalog) addLeague(league, league.source, 0);
+
+  const leagues = [...leagueMap.values()]
+    .map((league) => ({ ...league, currentCoverage: league.matchCount > 0 }))
+    .sort((a, b) => a.name.localeCompare(b.name));
+
   const theSportsDbEnriched = await enrichWithTheSportsDb(matches);
 
   if (!matches.length) {
