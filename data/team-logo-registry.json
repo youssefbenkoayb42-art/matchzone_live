@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-28T13:11:24.245Z",
+  "updatedAt": "2026-09-28T13:21:29.440Z",
   "teams": {
     "flashscore:1": {
       "canonicalId": "flashscore:1",
@@ -13,7 +13,7 @@
       "bytes": 2051,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:08:56.147Z"
+      "updatedAt": "2026-09-28T13:18:58.226Z"
     },
     "flashscore:3": {
       "canonicalId": "flashscore:3",
@@ -26,7 +26,7 @@
       "bytes": 1820,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:08:56.213Z"
+      "updatedAt": "2026-09-28T13:18:58.242Z"
     },
     "flashscore:0": {
       "canonicalId": "flashscore:0",
@@ -39,7 +39,7 @@
       "bytes": 1495,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:08:56.273Z"
+      "updatedAt": "2026-09-28T13:18:58.257Z"
     },
     "flashscore:2": {
       "canonicalId": "flashscore:2",
@@ -52,7 +52,7 @@
       "bytes": 1827,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:08:56.329Z"
+      "updatedAt": "2026-09-28T13:18:58.272Z"
     },
     "flashscore:6": {
       "canonicalId": "flashscore:6",
@@ -65,7 +65,7 @@
       "bytes": 2183,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:08:56.393Z"
+      "updatedAt": "2026-09-28T13:18:58.288Z"
     },
     "flashscore:4": {
       "canonicalId": "flashscore:4",
@@ -78,7 +78,7 @@
       "bytes": 2479,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:08:56.449Z"
+      "updatedAt": "2026-09-28T13:18:58.304Z"
     }
   },
   "providerIndex": {
