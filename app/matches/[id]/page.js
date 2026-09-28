@@ -87,7 +87,7 @@ function Team({ team, score, side }) {
         }}
       >
         <a
-          href={`/teams/${encodeURIComponent(team?.name || "")}`}
+          href={`/teams/${encodeURIComponent(team?.identity || team?.id || "")}`}
           style={{ color: "#f4f8f6", textDecoration: "none" }}
         >
           {team?.name || "فريق غير معروف"}
@@ -240,10 +240,10 @@ export default async function MatchPage({ params }) {
           </section>
 
           <section style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(180px,1fr))", gap: 10, marginTop: 18 }}>
-            <a href={`/teams/${encodeURIComponent(home?.name || "")}`} style={{ color: "#f4f8f6", textDecoration: "none", textAlign: "center", background: "#0b1713", border: "1px solid #284238", borderRadius: 16, padding: 14, fontWeight: 800 }}>
+            <a href={`/teams/${encodeURIComponent(home?.identity || home?.id || "")}`} style={{ color: "#f4f8f6", textDecoration: "none", textAlign: "center", background: "#0b1713", border: "1px solid #284238", borderRadius: 16, padding: 14, fontWeight: 800 }}>
               صفحة {home?.name || "الفريق المضيف"}
             </a>
-            <a href={`/teams/${encodeURIComponent(away?.name || "")}`} style={{ color: "#f4f8f6", textDecoration: "none", textAlign: "center", background: "#0b1713", border: "1px solid #284238", borderRadius: 16, padding: 14, fontWeight: 800 }}>
+            <a href={`/teams/${encodeURIComponent(away?.identity || away?.id || "")}`} style={{ color: "#f4f8f6", textDecoration: "none", textAlign: "center", background: "#0b1713", border: "1px solid #284238", borderRadius: 16, padding: 14, fontWeight: 800 }}>
               صفحة {away?.name || "الفريق الضيف"}
             </a>
           </section>
