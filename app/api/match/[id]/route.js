@@ -1,219 +1,52 @@
-import { getFallbackMatches } from "../../../../lib/fallback-matches";
+import { getMatchSnapshot } from "../../../../lib/match-snapshot";
 
-function isFallbackId(id) {
-  return String(id || "").startsWith("fs-");
+function longStatus(short) {
+  const value = String(short || "NS").toUpperCase();
+  if (value === "LIVE") return "Match Live";
+  if (value === "NS") return "Not Started";
+  if (value === "POSTPONED") return "Postponed";
+  if (value === "AET") return "After Extra Time";
+  if (value === "PEN") return "After Penalties";
+  return "Match Finished";
 }
 
 export async function GET(request, { params }) {
   const { id } = await params;
+  const matches = await getMatchSnapshot();
+  const match = matches.find(
+    (item) => String(item?.fixture?.id) === String(id)
+  );
 
-  if (isFallbackId(id)) {
-    const matches = await getFallbackMatches();
-    const match = matches.find((item) => String(item?.fixture?.id) === String(id));
-
-    if (!match) {
-      return Response.json({
-        response: [],
-        errors: { message: "لم يتم العثور على المباراة الاحتياطية" },
-      });
-    }
-
-    return Response.json({
-      response: [
-        {
-          ...match,
-          fixture: {
-            ...match.fixture,
-            status: {
-              short: match.fixture?.status?.short || "FT",
-              long: (() => {
-                const status = String(match.fixture?.status?.short || "FT").toUpperCase();
-                if (status === "LIVE") return "Match Live";
-                if (status === "NS") return "Not Started";
-                if (status === "AET") return "After Extra Time";
-                if (status === "PEN") return "After Penalties";
-                return "Match Finished";
-              })(),
-            },
-          },
-          events: match.details?.events || [],
-          stats: match.details?.statistics || [],
-          lineup: [],
-          timeline: match.details?.events || [],
-          video: null,
-          eventId: match.externalId || id,
-          details: match.details || {
-            events: [],
-            statistics: [],
-            updatedAt: null,
-          },
-        },
-      ],
-    });
-  }
-
-  try {
-    const response = await fetch(
-      `https://www.thesportsdb.com/api/v1/json/123/lookupevent.php?id=${id}`,
-      {
-        cache: "no-store",
-      }
-    );
-
-    if (!response.ok) {
-      return Response.json(
-        {
-          response: [],
-          errors: {
-            message: "فشل الاتصال بـ TheSportsDB",
-          },
-        },
-        { status: response.status }
-      );
-    }
-
-    const data = await response.json();
-
-    const event = data.events?.[0];
-
-    if (!event) {
-      return Response.json({
-        response: [],
-        errors: {
-          message: "لم يتم العثور على المباراة",
-        },
-      });
-    }
-
-    const [statsResponse, lineupResponse, timelineResponse] = await Promise.all([
-      fetch(
-        `https://www.thesportsdb.com/api/v1/json/123/lookupeventstats.php?id=${id}`,
-        { next: { revalidate: 300 } }
-      ),
-      fetch(
-        `https://www.thesportsdb.com/api/v1/json/123/lookuplineup.php?id=${id}`,
-        { next: { revalidate: 300 } }
-      ),
-      fetch(
-        `https://www.thesportsdb.com/api/v1/json/123/lookuptimeline.php?id=${id}`,
-        { next: { revalidate: 300 } }
-      ),
-    ]);
-
-    const statsData = statsResponse.ok ? await statsResponse.json() : {};
-    const lineupData = lineupResponse.ok ? await lineupResponse.json() : {};
-    const timelineData = timelineResponse.ok ? await timelineResponse.json() : {};
-
-    const match = {
-      fixture: {
-        id: Number(event.idEvent),
-        date:
-          event.strTimestamp ||
-          `${event.dateEvent}T${event.strTime || "00:00:00"}`,
-        status: {
-          short: event.strStatus || "NS",
-          long:
-            event.strStatus === "FT"
-              ? "Match Finished"
-              : event.strStatus || "Not Started",
-        },
-        venue: {
-          name: event.strVenue || null,
-        },
-      },
-
-      league: {
-        id: Number(event.idLeague),
-        name: event.strLeague || "Unknown League",
-        season: event.strSeason || null,
-        logo: event.strLeagueBadge || null,
-      },
-
-      teams: {
-        home: {
-          id: Number(event.idHomeTeam),
-          name: event.strHomeTeam,
-          logo: event.strHomeTeamBadge || null,
-        },
-        away: {
-          id: Number(event.idAwayTeam),
-          name: event.strAwayTeam,
-          logo: event.strAwayTeamBadge || null,
-        },
-      },
-
-      goals: {
-        home:
-          event.intHomeScore !== null
-            ? Number(event.intHomeScore)
-            : null,
-        away:
-          event.intAwayScore !== null
-            ? Number(event.intAwayScore)
-            : null,
-      },
-
-      events: {
-        homeGoals: event.strHomeGoalDetails || null,
-        awayGoals: event.strAwayGoalDetails || null,
-        homeYellowCards: event.strHomeYellowCards || null,
-        awayYellowCards: event.strAwayYellowCards || null,
-        homeRedCards: event.strHomeRedCards || null,
-        awayRedCards: event.strAwayRedCards || null,
-      },
-
-      stats: Array.isArray(statsData.eventstats)
-        ? statsData.eventstats.map((stat) => ({
-            name: stat.strStat || "إحصائية",
-            home: stat.intHome ?? null,
-            away: stat.intAway ?? null,
-          }))
-        : [],
-
-      lineup: Array.isArray(lineupData.lineup)
-        ? lineupData.lineup.map((player) => ({
-            name: player.strPlayer || "لاعب",
-            position: player.strPosition || null,
-            number: player.intSquadNumber || null,
-            team: player.strHome === "Yes" ? "home" : "away",
-            substitute: player.strSubstitute === "Yes",
-            image: player.strCutout || player.strThumb || null,
-          }))
-        : [],
-
-      timeline: Array.isArray(timelineData.timeline)
-        ? timelineData.timeline.map((item) => ({
-            time: item.strTime || item.intTime || "",
-            type: item.strTimeline || "حدث",
-            detail: item.strTimelineDetail || null,
-            player: item.strPlayer || null,
-            assist: item.strAssist || null,
-            team: item.strHome === "Yes" ? "home" : "away",
-            substitute: item.strSubstitute || null,
-            card: item.strCard || null,
-            goal: item.strGoal || null,
-          }))
-        : [],
-
-      video: event.strVideo || null,
-
-      eventId: event.idEvent,
-    };
-
-    return Response.json({
-      response: [match],
-    });
-  } catch (error) {
-    console.error("TheSportsDB Match Error:", error);
-
+  if (!match) {
     return Response.json(
-      {
-        response: [],
-        errors: {
-          message: "حدث خطأ في جلب المباراة",
-        },
-      },
-      { status: 500 }
+      { response: [], errors: { message: "لم يتم العثور على المباراة" } },
+      { status: 404 }
     );
   }
+
+  return Response.json({
+    response: [
+      {
+        ...match,
+        fixture: {
+          ...match.fixture,
+          status: {
+            ...(match.fixture?.status || {}),
+            long: longStatus(match.fixture?.status?.short),
+          },
+        },
+        events: match.details?.events || [],
+        stats: match.details?.statistics || [],
+        lineup: [],
+        timeline: match.details?.events || [],
+        video: null,
+        eventId: match.externalId || match.fixture?.id,
+        details: match.details || {
+          events: [],
+          statistics: [],
+          updatedAt: null,
+        },
+      },
+    ],
+  });
 }
