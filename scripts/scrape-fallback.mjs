@@ -94,6 +94,34 @@ let logoRegistry = { version: 1, updatedAt: null, teams: {}, providerIndex: {} }
 let sportsDbRateLimited = false;
 
 
+async function hardResetLogoState() {
+  console.log("[HARD-RESET] Purging logo registry and all local team-logo files...");
+
+  // Factory reset: no previous registry, no previous logo files, no legacy
+  // name-based cache, and no stale identity map may survive this run.
+  logoRegistry = { version: 1, updatedAt: null, teams: {}, providerIndex: {} };
+  logoCache.clear();
+  localLogoCache.clear();
+  identityLogoCache.clear();
+  fallbackIdentityCache.clear();
+  sportsDbRateLimited = false;
+
+  await fs.rm(LOGO_REGISTRY_OUTPUT, { force: true });
+  await fs.rm(TEAM_LOGO_DIR, { recursive: true, force: true });
+  await fs.mkdir(TEAM_LOGO_DIR, { recursive: true });
+  await fs.mkdir(path.dirname(LOGO_REGISTRY_OUTPUT), { recursive: true });
+
+  // Persist the empty registry immediately so a failed run cannot leave the
+  // repository looking as if the old registry is still authoritative.
+  await fs.writeFile(
+    LOGO_REGISTRY_OUTPUT,
+    JSON.stringify({}, null, 2) + "\n",
+    "utf8"
+  );
+
+  console.log("[HARD-RESET] Registry reset to {} and public/teams purged.");
+}
+
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
@@ -268,33 +296,9 @@ async function saveIdentityTeamLogo({ provider, providerTeamId, teamName, logoUr
   }
 }
 
-async function saveLocalTeamLogo(teamName, logoUrl, options = {}) {
-  const key = localLogoKey(teamName);
-  if (!key || !logoUrl) return null;
-  const overwrite = Boolean(options.overwrite);
-  const existing = localLogoCache.get(key);
-  if (existing && !overwrite) return existing;
-  try {
-    const response = await fetch(logoUrl, {
-      headers: {
-        "User-Agent": USER_AGENT,
-        Accept: "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
-        Referer: "https://www.flashscore.com/",
-      },
-    });
-    if (!response.ok) throw new Error("logo HTTP " + response.status);
-    const buffer = Buffer.from(await response.arrayBuffer());
-    if (!buffer.length) throw new Error("empty logo");
-    const extension = logoExtensionFromUrl(logoUrl);
-    const filename = key + "." + extension;
-    await fs.writeFile(path.join(TEAM_LOGO_DIR, filename), buffer);
-    const publicPath = "/teams/" + filename;
-    localLogoCache.set(key, publicPath);
-    return publicPath;
-  } catch (error) {
-    console.warn("[scraper] legacy local logo download failed", teamName, error.message);
-    return null;
-  }
+async function saveLocalTeamLogo() {
+  // Disabled after the factory reset. Team logos must be identity-backed.
+  return null;
 }
 
 function normalizeName(value) {
@@ -398,17 +402,41 @@ function strictTeamNameMatchesSlug(teamName, slug) {
   const candidate = teamNameTokens(slug);
   if (!requested.length || !candidate.length) return false;
 
-  // Every distinctive requested token must exist in the candidate slug.
-  // This intentionally rejects famous-name collisions such as:
-  // "Widad Temara" -> "wydad-ac".
   const candidateSet = new Set(candidate);
-  const allRequestedTokensPresent = requested.every((token) => candidateSet.has(token));
-  if (!allRequestedTokensPresent) return false;
+  const distinctive = requested.filter((token) => token.length >= 3);
+  if (!distinctive.length) return false;
 
-  // Require at least one exact distinctive anchor for short names too.
-  const distinctiveRequested = requested.filter((token) => token.length >= 3);
-  if (!distinctiveRequested.length) return false;
-  return distinctiveRequested.some((token) => candidateSet.has(token));
+  // Exact token matches are strongest. A short requested token may also be a
+  // clear abbreviation of a slug token (e.g. "la" -> "los-angeles").
+  let matched = 0;
+  let exactDistinctive = 0;
+
+  for (const token of distinctive) {
+    if (candidateSet.has(token)) {
+      matched += 1;
+      exactDistinctive += 1;
+      continue;
+    }
+
+    if (token.length <= 3) {
+      const abbreviationMatch = candidate.some((candidateToken) =>
+        candidateToken
+          .split("-")
+          .filter(Boolean)
+          .map((part) => part[0])
+          .join("") === token
+      );
+      if (abbreviationMatch) matched += 1;
+    }
+  }
+
+  // At least one meaningful exact anchor is mandatory. This blocks
+  // Widad Temara -> Wydad AC and similar famous-team collisions.
+  if (exactDistinctive === 0) return false;
+
+  // Require most distinctive tokens to agree, while allowing a legitimate
+  // abbreviation to account for one short token.
+  return matched / distinctive.length >= 0.66;
 }
 
 function makeTeamFallbackLogo(teamName) {
@@ -1272,12 +1300,9 @@ function dedupe(matches) {
 
 async function main() {
   await fs.mkdir(path.dirname(OUTPUT), { recursive: true });
-  await loadLocalTeamLogos();
 
-  let previous = { updatedAt: null, source: "flashscore-feed", matches: [] };
-  try {
-    previous = JSON.parse(await fs.readFile(OUTPUT, "utf8"));
-  } catch {}
+  // FACTORY RESET: this run intentionally starts with zero logo/data history.
+  await hardResetLogoState();
 
   let scraped = [];
   try {
@@ -1287,13 +1312,14 @@ async function main() {
   }
 
   if (scraped.length === 0) {
-    console.warn("[scraper] internal feed returned 0 matches. Keeping the previous datastore intact.");
+    // Never commit a blank factory-reset datastore caused by an upstream outage.
+    // The old files were purged in the workspace, but the workflow will fail
+    // before commit so GitHub main is not replaced with an empty dataset.
+    throw new Error("[HARD-RESET] Scrape returned 0 matches; refusing to commit an empty datastore.");
   }
 
-  const baseMerged = dedupe([...(previous.matches || []), ...scraped]).slice(-5000);
-
-  // Hard sanitize legacy poisoned identities BEFORE any enrichment.
-  // This guarantees a previous wrong logo cannot survive into the new run.
+  // Build only from this run. No previous scraped-matches.json participates.
+  const baseMerged = dedupe(scraped).slice(-5000);
   const sanitizedBase = sanitizeInvalidFlashscoreIdentities(baseMerged);
   const repairedBase = repairDuplicateTeamLogos(sanitizedBase);
   const enrichedBase = await enrichTeamLogos(repairedBase);
@@ -1325,15 +1351,25 @@ async function main() {
     source: scraped.some((m) => m.source === "Flashscore Feed") ? "flashscore-feed" : "flashscore-html",
     leagueCount: LEAGUES.length,
     matchCount: qualityCheckedMatches.length,
-    detailMatchCount: qualityCheckedMatches.filter((m) => (m.details?.events?.length || 0) + (m.details?.statistics?.length || 0) > 0).length,
+    detailMatchCount: qualityCheckedMatches.filter(
+      (m) => (m.details?.events?.length || 0) + (m.details?.statistics?.length || 0) > 0
+    ).length,
+    detailsSchemaVersion: 1,
     matches: qualityCheckedMatches,
   };
 
+  // Final safety pass immediately before writing.
+  for (const match of payload.matches) {
+    enforceFixtureLogoQuality(match);
+  }
+
   await fs.writeFile(OUTPUT, JSON.stringify(payload, null, 2) + "\n", "utf8");
   await saveLogoRegistry();
-  console.log("[scraper] logo registry saved:", Object.keys(logoRegistry.teams).length, "identities");
-  console.log("[scraper] saved", merged.length, "unique matches from", LEAGUES.length, "competitions");
+
+  console.log("[HARD-RESET] Fresh registry saved:", Object.keys(logoRegistry.teams).length, "identities");
+  console.log("[HARD-RESET] Saved", payload.matchCount, "fresh matches from", LEAGUES.length, "competitions");
 }
+
 
 main().catch((error) => {
   console.error(error);
