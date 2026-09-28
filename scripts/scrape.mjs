@@ -9,6 +9,7 @@ const FOOTBALL_DATA_API = "https://api.football-data.org/v4";
 const FOOTBALL_DATA_TOKEN = String(process.env.FOOTBALL_DATA_API_KEY || "").trim();
 const ESPN_API = "https://site.api.espn.com/apis/site/v2/sports/soccer";
 const THESPORTSDB_API = "https://www.thesportsdb.com/api/v1/json/123";
+const OPENFOOTBALL_API = "https://api.github.com/repos/openfootball/football.json/contents/2026-27";
 const AVATAR_BASE = "https://ui-avatars.com/api/";
 const THESPORTSDB_ENRICH_LIMIT = 8;
 
@@ -393,6 +394,140 @@ async function fetchJson(url, options = {}) {
   throw new Error("Request failed after retries");
 }
 
+async function fetchOpenFootballMatches(from, to) {
+  /*
+   * OpenFootball is public-domain/CC0-style open data. It has no team IDs,
+   * so this source is schedule/results-only: it never supplies logos or
+   * primary team identity. Primary provider records always win on overlap.
+   */
+  const output = [];
+
+  try {
+    const directory = await fetchJson(OPENFOOTBALL_API, {
+      headers: { Accept: "application/vnd.github+json" },
+    });
+
+    const files = Array.isArray(directory)
+      ? directory.filter((item) => item?.type === "file" && /\\.json$/i.test(item?.name))
+      : [];
+
+    for (const file of files) {
+      try {
+        const data = await fetchJson(file.download_url || file.html_url);
+        const matches = Array.isArray(data?.matches) ? data.matches : [];
+
+        for (const item of matches) {
+          if (!item?.date || !item?.team1 || !item?.team2) continue;
+
+          const date = String(item.date).trim();
+          const day = new Date(date + "T12:00:00Z");
+          if (Number.isNaN(day.getTime())) continue;
+
+          const dayStart = new Date(isoDay(from) + "T00:00:00Z");
+          const dayEnd = new Date(isoDay(to) + "T23:59:59Z");
+          if (day < dayStart || day > dayEnd) continue;
+
+          const team1 = String(item.team1).trim();
+          const team2 = String(item.team2).trim();
+          const ft = Array.isArray(item.score?.ft) ? item.score.ft : null;
+          const hasScore = Array.isArray(ft) && ft.length >= 2 &&
+            Number.isFinite(Number(ft[0])) && Number.isFinite(Number(ft[1]));
+
+          const identity = (name) =>
+            "openfootball:" +
+            normalizeTeamForSearch(name).replace(/\\s+/g, "-");
+
+          output.push({
+            fixture: {
+              id:
+                "openfootball-" +
+                encodeURIComponent(file.name.replace(/\\.json$/i, "")) +
+                "-" +
+                date +
+                "-" +
+                encodeURIComponent(normalizeTeamForSearch(team1)) +
+                "-" +
+                encodeURIComponent(normalizeTeamForSearch(team2)),
+              providerMatchId:
+                file.name + ":" + date + ":" + team1 + ":" + team2,
+              date: item.time
+                ? date + "T" + String(item.time).replace(/\\s*UTC.*$/i, "") + ":00Z"
+                : date + "T12:00:00Z",
+              status: { short: hasScore ? "FT" : "NS" },
+            },
+            teams: {
+              home: {
+                id: identity(team1),
+                provider: "openfootball",
+                identity: identity(team1),
+                name: team1,
+                logo: avatar(team1),
+                logoPath: avatar(team1),
+                logoSource: "UI Avatars",
+                logoQuality: "schedule-only",
+              },
+              away: {
+                id: identity(team2),
+                provider: "openfootball",
+                identity: identity(team2),
+                name: team2,
+                logo: avatar(team2),
+                logoPath: avatar(team2),
+                logoSource: "UI Avatars",
+                logoQuality: "schedule-only",
+              },
+            },
+            goals: {
+              home: hasScore ? Number(ft[0]) : null,
+              away: hasScore ? Number(ft[1]) : null,
+            },
+            league: {
+              id: "openfootball:" + file.name.replace(/\\.json$/i, ""),
+              name: String(data?.name || file.name).trim(),
+              logo: null,
+            },
+            competitionType: "open-data",
+            source: "openfootball",
+            externalId: file.name + ":" + date + ":" + team1 + ":" + team2,
+            externalIds: { openfootball: file.name },
+            details: {
+              events: [],
+              statistics: [],
+              updatedAt: null,
+              source: "openfootball",
+            },
+          });
+        }
+      } catch (error) {
+        console.warn("[OpenFootball] skipped", file?.name, "-", error.message);
+      }
+    }
+  } catch (error) {
+    console.warn("[OpenFootball] catalog unavailable:", error.message);
+  }
+
+  return output;
+}
+
+function fixtureSignature(match) {
+  const day = isoDay(match?.fixture?.date || 0);
+  return [
+    day,
+    normalizeTeamForSearch(match?.teams?.home?.name),
+    normalizeTeamForSearch(match?.teams?.away?.name),
+  ].join("|");
+}
+
+function removeOpenFootballOverlaps(primaryMatches, openMatches) {
+  const occupied = new Set(primaryMatches.map(fixtureSignature));
+  return openMatches.filter((match) => {
+    const signature = fixtureSignature(match);
+    if (occupied.has(signature)) return false;
+    occupied.add(signature);
+    return true;
+  });
+}
+
 async function fetchFootballDataMatches(from, to) {
   if (!FOOTBALL_DATA_TOKEN) {
     console.warn("[Football-Data] secret missing; ESPN supplement will still run.");
@@ -633,6 +768,7 @@ async function main() {
   const identityLogos = new Map();
 
   const footballDataRaw = await fetchFootballDataMatches(from, to);
+  const openFootballRaw = await fetchOpenFootballMatches(from, to);
   const footballDataMatches = footballDataRaw.map((item) =>
     makeFootballDataMatch(item, identityLogos)
   );
@@ -653,12 +789,17 @@ async function main() {
    * account. Skip ESPN bra.1 to avoid two provider records for the same league.
    * This is a source configuration rule, not team-name matching.
    */
+  const openFootballMatches = removeOpenFootballOverlaps(
+    footballDataMatches,
+    openFootballRaw
+  );
+
   const supplemental = espnMatches.filter(
     (match) => String(match?.externalIds?.["espn-league"] || "") !== "bra.1"
   );
 
   const matches = sanitizeMatches(
-    dedupeMatches([...footballDataMatches, ...supplemental])
+    dedupeMatches([...footballDataMatches, ...supplemental, ...openFootballMatches])
   );
 
   const theSportsDbEnriched = await enrichWithTheSportsDb(matches);
@@ -670,17 +811,17 @@ async function main() {
   const payload = {
     schemaVersion: 3,
     updatedAt: new Date().toISOString(),
-    source: "football-data.org + ESPN supplemental + TheSportsDB enrichment",
+    source: "football-data.org + ESPN + OpenFootball + TheSportsDB enrichment",
     coverageWindow: {
       from: from.toISOString(),
       to: to.toISOString(),
     },
     sourcePolicy: {
       primary: "football-data.org",
-      supplemental: "ESPN public site API",
+      supplemental: "ESPN public site API + OpenFootball public-domain datasets",
       detailEnrichment: "TheSportsDB V1 free API (existing matches only; no team identity/logo authority)",
       cacheStrategy: "GitHub Actions snapshot; visitors never call providers",
-      note: "ESPN endpoint is public/undocumented and may change without notice.",
+      note: "ESPN endpoint is public/undocumented; OpenFootball is used only for schedule/results coverage and never overrides verified provider identity or logos.",
     },
     logoPolicy: {
       identityKey: "provider namespace + immutable numeric/string provider team ID",
@@ -694,6 +835,7 @@ async function main() {
     counts: {
       footballData: footballDataMatches.length,
       espn: supplemental.length,
+      openfootball: openFootballMatches.length,
       total: matches.length,
       theSportsDbEnriched,
     },
