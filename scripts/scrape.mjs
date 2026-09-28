@@ -942,13 +942,15 @@ async function main() {
       footballData: footballDataMatches.length,
       espn: supplemental.length,
       openfootball: openFootballMatches.length,
+      openfootballWorld: openFootballResult.matches.length,
       total: matches.length,
       theSportsDbEnriched,
     },
     matchCount: matches.length,
-    leagueCount: new Set(
-      matches.map((m) => String(m.league?.id || "")).filter(Boolean)
-    ).size,
+    leagues,
+    leagueCount: leagues.length,
+    currentLeagueCount: leagues.filter((league) => league.currentCoverage).length,
+    catalogLeagueCount: leagues.length,
     matches,
   };
 
@@ -957,6 +959,8 @@ async function main() {
   console.log("[MATCHZONE] Football-Data matches:", footballDataMatches.length);
   console.log("[MATCHZONE] ESPN supplemental matches:", supplemental.length);
   console.log("[MATCHZONE] Total:", matches.length);
+  console.log("[MATCHZONE] OpenFootball world matches:", openFootballResult.matches.length);
+  console.log("[MATCHZONE] Unified league catalog:", leagues.length, "(current:", payload.currentLeagueCount + ")");
   console.log("[MATCHZONE] Leagues:", payload.leagueCount);
   console.log("[MATCHZONE] Snapshot written:", DATA_FILE);
 }
