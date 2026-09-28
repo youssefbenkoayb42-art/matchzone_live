@@ -503,6 +503,7 @@ function mergeMatchRecords(primary, secondary) {
     merged.teams[side].logoCandidates = uniqueLogoCandidates;
 
     merged.teams[side].flashscoreId =
+      flashscoreTeam?.flashscoreId ||
       flashscoreTeam?.id ||
       primaryTeam.flashscoreId ||
       secondaryTeam.flashscoreId ||
@@ -516,6 +517,18 @@ function mergeMatchRecords(primary, secondary) {
 
     merged.teams[side].name =
       primaryTeam.name || secondaryTeam.name || "Unknown";
+
+    // Preserve the strongest identity metadata from the fallback datastore.
+    // A provider ID is safer than a normalized name when logos are merged.
+    merged.teams[side].teamIdentityId =
+      primaryTeam.teamIdentityId ||
+      secondaryTeam.teamIdentityId ||
+      null;
+
+    merged.teams[side].logoPath =
+      primaryTeam.logoPath ||
+      secondaryTeam.logoPath ||
+      (merged.teams[side].logo?.startsWith("/teams/") ? merged.teams[side].logo : null);
   }
 
   merged.league.logo =
