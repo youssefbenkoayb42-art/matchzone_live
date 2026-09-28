@@ -705,22 +705,44 @@ async function enrichWithTheSportsDb(matches) {
 }
 
 function dedupeMatches(matches) {
-  const seen = new Set();
+  const seenProviderIds = new Set();
+  const unique = [];
 
-  return matches
-    .filter((match) => {
-      const provider = String(match?.source || "");
-      const external = String(match?.externalId || "");
-      const key = provider + ":" + external;
-      if (!provider || !external || seen.has(key)) return false;
-      seen.add(key);
-      return true;
-    })
-    .sort(
-      (a, b) =>
-        new Date(a?.fixture?.date || 0).getTime() -
-        new Date(b?.fixture?.date || 0).getTime()
-    );
+  for (const match of matches) {
+    const provider = String(match?.source || "").trim();
+    const external = String(match?.externalId || "").trim();
+    const providerKey = provider + ":" + external;
+
+    if (!provider || !external || seenProviderIds.has(providerKey)) continue;
+    seenProviderIds.add(providerKey);
+    unique.push(match);
+  }
+
+  /*
+   * A single fixture can legitimately exist in more than one provider.
+   * This is fixture-level deduplication only; it NEVER merges team identities.
+   * Keep the strongest source record so the UI does not show the same game twice.
+   */
+  const priority = {
+    "football-data.org": 3,
+    espn: 2,
+    openfootball: 1,
+  };
+  const byFixture = new Map();
+
+  for (const match of unique) {
+    const signature = fixtureSignature(match);
+    const current = byFixture.get(signature);
+    if (!current || (priority[match.source] || 0) > (priority[current.source] || 0)) {
+      byFixture.set(signature, match);
+    }
+  }
+
+  return [...byFixture.values()].sort(
+    (a, b) =>
+      new Date(a?.fixture?.date || 0).getTime() -
+      new Date(b?.fixture?.date || 0).getTime()
+  );
 }
 
 async function main() {
