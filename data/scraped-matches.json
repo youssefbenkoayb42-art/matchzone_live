@@ -1,10 +1,10 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-09-28T15:53:24.314Z",
+  "updatedAt": "2026-09-28T15:53:48.582Z",
   "source": "football-data.org + ESPN + OpenFootball + TheSportsDB enrichment",
   "coverageWindow": {
-    "from": "2026-09-26T15:53:19.441Z",
-    "to": "2026-10-05T15:53:19.441Z"
+    "from": "2026-09-26T15:53:41.644Z",
+    "to": "2026-10-05T15:53:41.644Z"
   },
   "sourcePolicy": {
     "primary": "football-data.org",
