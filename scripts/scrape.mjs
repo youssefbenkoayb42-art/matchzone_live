@@ -5,10 +5,57 @@ const ROOT = process.cwd();
 const DATA_FILE = path.join(ROOT, "data", "scraped-matches.json");
 const OLD_LOGO_DIR = path.join(ROOT, "public", "teams");
 
-const API = "https://api.football-data.org/v4";
-const TOKEN = String(process.env.FOOTBALL_DATA_API_KEY || "").trim();
-
+const FOOTBALL_DATA_API = "https://api.football-data.org/v4";
+const FOOTBALL_DATA_TOKEN = String(process.env.FOOTBALL_DATA_API_KEY || "").trim();
+const ESPN_API = "https://site.api.espn.com/apis/site/v2/sports/soccer";
 const AVATAR_BASE = "https://ui-avatars.com/api/";
+
+/*
+ * MatchZone data architecture
+ *
+ * 1) Football-Data.org is the authenticated primary source.
+ * 2) ESPN's public site API is a free supplemental source for wider coverage.
+ * 3) Every provider keeps its own immutable numeric identity namespace.
+ * 4) Team names are display text only; they are NEVER used to identify a team.
+ * 5) Logos come only from the exact provider team record.
+ * 6) If a provider returns a logo collision or conflicting logo for one ID,
+ *    the affected team is downgraded to a UI Avatar.
+ * 7) The scraper writes one static snapshot. Visitors never call these APIs.
+ *
+ * ESPN is undocumented/public rather than an official developer API, so it is
+ * deliberately cached by GitHub Actions and treated as a supplement, not the
+ * sole source of truth.
+ */
+
+const ESPN_LEAGUES = [
+  ["eng.1", "الدوري الإنجليزي", "domestic"],
+  ["eng.2", "التشامبيونشيب", "domestic"],
+  ["esp.1", "الدوري الإسباني", "domestic"],
+  ["ger.1", "الدوري الألماني", "domestic"],
+  ["ita.1", "الدوري الإيطالي", "domestic"],
+  ["fra.1", "الدوري الفرنسي", "domestic"],
+  ["ned.1", "الدوري الهولندي", "domestic"],
+  ["por.1", "الدوري البرتغالي", "domestic"],
+  ["bel.1", "الدوري البلجيكي", "domestic"],
+  ["tur.1", "الدوري التركي", "domestic"],
+  ["sco.1", "الدوري الاسكتلندي", "domestic"],
+  ["usa.1", "الدوري الأمريكي MLS", "domestic"],
+  ["mex.1", "الدوري المكسيكي", "domestic"],
+  ["bra.1", "الدوري البرازيلي", "domestic"],
+  ["arg.1", "الدوري الأرجنتيني", "domestic"],
+  ["col.1", "الدوري الكولومبي", "domestic"],
+  ["nor.1", "الدوري النرويجي", "domestic"],
+  ["swe.1", "الدوري السويدي", "domestic"],
+  ["den.1", "الدوري الدنماركي", "domestic"],
+  ["fifa.world", "كأس العالم", "international-team"],
+  ["fifa.worldq", "تصفيات كأس العالم", "international-team"],
+  ["fifa.friendly", "مباريات دولية ودية", "international-team"],
+  ["uefa.champions", "دوري أبطال أوروبا", "international-club"],
+  ["uefa.europa", "الدوري الأوروبي", "international-club"],
+  ["uefa.europa.conf", "دوري المؤتمر الأوروبي", "international-club"],
+  ["conmebol.libertadores", "كوبا ليبرتادوريس", "international-club"],
+  ["fifa.cwc", "كأس العالم للأندية", "international-club"],
+];
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
@@ -16,12 +63,22 @@ function avatar(name) {
   const value = String(name || "Team").trim() || "Team";
   return (
     AVATAR_BASE +
-    "?name=" + encodeURIComponent(value) +
+    "?name=" +
+    encodeURIComponent(value) +
     "&length=1&size=128&background=07100d&color=ffffff&bold=true&format=svg"
   );
 }
 
-function status(value) {
+function cleanHttpsUrl(value) {
+  const url = String(value || "").trim();
+  return /^https:\/\//i.test(url) ? url : null;
+}
+
+function isoDay(date) {
+  return new Date(date).toISOString().slice(0, 10);
+}
+
+function statusFromFootballData(value) {
   switch (String(value || "").toUpperCase()) {
     case "FINISHED":
     case "AWARDED":
@@ -39,22 +96,18 @@ function status(value) {
   }
 }
 
-function cleanHttpsUrl(value) {
-  const url = String(value || "").trim();
-  return /^https:\/\//i.test(url) ? url : null;
+function statusFromEspn(event) {
+  const state = String(event?.status?.type?.state || "").toLowerCase();
+  const name = String(event?.status?.type?.name || "").toUpperCase();
+  const completed = Boolean(event?.status?.type?.completed);
+
+  if (completed || state === "post") return "FT";
+  if (state === "in" || /LIVE|HALFTIME|END_PERIOD/.test(name)) return "LIVE";
+  if (/POSTPONED|CANCELLED|SUSPENDED/.test(name)) return "POSTPONED";
+  return "NS";
 }
 
-/*
- * Absolute identity rule:
- * - team.id is the only identity key.
- * - team.name is display-only.
- * - crest belongs to that exact football-data.org team ID.
- * - missing/invalid ID or crest => UI Avatar.
- *
- * No name search, slug matching, local filename matching, cache lookup,
- * registry lookup, Flashscore data, or secondary logo provider exists here.
- */
-function teamFromApi(team, identityLogos) {
+function footballDataTeam(team, identityLogos) {
   const id = Number.isInteger(team?.id) ? team.id : null;
   const name = String(team?.name || team?.shortName || "Unknown Team").trim();
   const crest = cleanHttpsUrl(team?.crest);
@@ -63,6 +116,8 @@ function teamFromApi(team, identityLogos) {
     return {
       id,
       footballDataId: id,
+      provider: "football-data.org",
+      identity: id ? "football-data.org:" + id : null,
       name,
       logo: avatar(name),
       logoPath: avatar(name),
@@ -72,14 +127,14 @@ function teamFromApi(team, identityLogos) {
   }
 
   const previous = identityLogos.get(id);
-
   if (previous && previous !== crest) {
-    console.warn("[IDENTITY] conflicting crest for team ID", id, "=> avatar");
     const safe = avatar(name);
     identityLogos.set(id, safe);
     return {
       id,
       footballDataId: id,
+      provider: "football-data.org",
+      identity: "football-data.org:" + id,
       name,
       logo: safe,
       logoPath: safe,
@@ -89,10 +144,11 @@ function teamFromApi(team, identityLogos) {
   }
 
   identityLogos.set(id, crest);
-
   return {
     id,
     footballDataId: id,
+    provider: "football-data.org",
+    identity: "football-data.org:" + id,
     name,
     logo: crest,
     logoPath: crest,
@@ -101,72 +157,168 @@ function teamFromApi(team, identityLogos) {
   };
 }
 
+function espnTeam(team, identityLogos) {
+  const rawId = team?.id;
+  const id = String(rawId ?? "").trim();
+  const name = String(team?.displayName || team?.name || team?.shortDisplayName || "Unknown Team").trim();
+  const logo = cleanHttpsUrl(
+    Array.isArray(team?.logos) ? team.logos[0]?.href : team?.logo
+  );
+
+  if (!id || !logo) {
+    const safe = avatar(name);
+    return {
+      id: id || null,
+      espnId: id || null,
+      provider: "espn",
+      identity: id ? "espn:" + id : null,
+      name,
+      logo: safe,
+      logoPath: safe,
+      logoSource: "UI Avatars",
+      logoQuality: "avatar",
+    };
+  }
+
+  const previous = identityLogos.get(id);
+  if (previous && previous !== logo) {
+    const safe = avatar(name);
+    identityLogos.set(id, safe);
+    return {
+      id,
+      espnId: id,
+      provider: "espn",
+      identity: "espn:" + id,
+      name,
+      logo: safe,
+      logoPath: safe,
+      logoSource: "UI Avatars",
+      logoQuality: "identity-conflict",
+    };
+  }
+
+  identityLogos.set(id, logo);
+  return {
+    id,
+    espnId: id,
+    provider: "espn",
+    identity: "espn:" + id,
+    name,
+    logo,
+    logoPath: logo,
+    logoSource: "ESPN team ID",
+    logoQuality: "verified-id",
+  };
+}
+
+function makeFootballDataMatch(raw, identityLogos) {
+  const home = footballDataTeam(raw.homeTeam, identityLogos);
+  const away = footballDataTeam(raw.awayTeam, identityLogos);
+  const id = Number(raw.id);
+
+  return {
+    fixture: {
+      id: "fd-" + id,
+      providerMatchId: id,
+      date: raw.utcDate,
+      status: { short: statusFromFootballData(raw.status) },
+    },
+    teams: { home, away },
+    goals: {
+      home: raw.score?.fullTime?.home ?? raw.score?.regularTime?.home ?? null,
+      away: raw.score?.fullTime?.away ?? raw.score?.regularTime?.away ?? null,
+    },
+    league: {
+      id: raw.competition?.id ?? null,
+      name: raw.competition?.name || "Football",
+      logo: cleanHttpsUrl(raw.competition?.emblem),
+    },
+    competitionType: "domestic",
+    source: "football-data.org",
+    externalId: id,
+    externalIds: { "football-data.org": id },
+    details: {
+      events: [],
+      statistics: [],
+      updatedAt: null,
+      source: "football-data.org",
+    },
+  };
+}
+
+function makeEspnMatch(event, leagueCode, leagueName, competitionType, identityLogos) {
+  const competition = event?.competitions?.[0];
+  const competitors = Array.isArray(competition?.competitors)
+    ? competition.competitors
+    : [];
+
+  const homeRaw = competitors.find((item) => item?.homeAway === "home") || competitors[0];
+  const awayRaw = competitors.find((item) => item?.homeAway === "away") || competitors[1];
+
+  if (!homeRaw?.team?.id || !awayRaw?.team?.id || !event?.id) return null;
+
+  const home = espnTeam(homeRaw.team, identityLogos);
+  const away = espnTeam(awayRaw.team, identityLogos);
+  const eventId = String(event.id);
+
+  const homeScore = homeRaw?.score !== undefined && homeRaw?.score !== null
+    ? Number(homeRaw.score)
+    : null;
+  const awayScore = awayRaw?.score !== undefined && awayRaw?.score !== null
+    ? Number(awayRaw.score)
+    : null;
+
+  return {
+    fixture: {
+      id: "espn-" + leagueCode + "-" + eventId,
+      providerMatchId: eventId,
+      date: event.date,
+      status: { short: statusFromEspn(event) },
+    },
+    teams: { home, away },
+    goals: {
+      home: Number.isFinite(homeScore) ? homeScore : null,
+      away: Number.isFinite(awayScore) ? awayScore : null,
+    },
+    league: {
+      id: "espn:" + leagueCode,
+      name: leagueName || event?.season?.slug || "Football",
+      logo: cleanHttpsUrl(
+        event?.leagues?.[0]?.logos?.[0]?.href ||
+        event?.league?.logos?.[0]?.href
+      ),
+    },
+    competitionType,
+    source: "espn",
+    externalId: eventId,
+    externalIds: { espn: eventId, "espn-league": leagueCode },
+    details: {
+      events: [],
+      statistics: [],
+      updatedAt: null,
+      source: "espn",
+    },
+  };
+}
+
 function sanitizeMatches(matches) {
   const logoOwners = new Map();
-  const identityLogos = new Map();
+  const prepared = matches.filter(Boolean);
 
-  const prepared = matches.map((raw) => {
-    const home = teamFromApi(raw.homeTeam, identityLogos);
-    const away = teamFromApi(raw.awayTeam, identityLogos);
-
-    return {
-      fixture: {
-        id: Number(raw.id),
-        date: raw.utcDate,
-        status: { short: status(raw.status) },
-      },
-      teams: { home, away },
-      goals: {
-        home: raw.score?.fullTime?.home ?? raw.score?.regularTime?.home ?? null,
-        away: raw.score?.fullTime?.away ?? raw.score?.regularTime?.away ?? null,
-      },
-      league: {
-        id: raw.competition?.id ?? null,
-        name: raw.competition?.name || "Football",
-        logo: cleanHttpsUrl(raw.competition?.emblem),
-      },
-      source: "football-data.org",
-      externalId: Number(raw.id),
-      externalIds: { "football-data.org": Number(raw.id) },
-      details: {
-        events: [],
-        statistics: [],
-        updatedAt: null,
-        source: "football-data.org",
-      },
-    };
-  });
-
-  // Absolute datastore sanitation:
-  // different team IDs may never share the same logo URL.
   for (const match of prepared) {
-    const teams = [match.teams.home, match.teams.away];
-
-    for (const team of teams) {
-      const id = Number(team?.footballDataId || team?.id || 0);
+    for (const side of ["home", "away"]) {
+      const team = match?.teams?.[side];
+      const identity = String(team?.identity || "").trim();
       const logo = String(team?.logo || "").trim();
-      if (!id || !logo) continue;
+
+      if (!identity || !logo || logo.includes("ui-avatars.com")) continue;
 
       const owner = logoOwners.get(logo);
-      if (owner && owner !== id) {
-        console.warn(
-          "[SANITIZE] shared logo rejected:",
-          logo,
-          "team IDs:",
-          owner,
-          id
-        );
-
-        const affectedIds = [owner, id];
-
+      if (owner && owner !== identity) {
         for (const item of prepared) {
-          for (const side of ["home", "away"]) {
-            const current = item.teams[side];
-            const currentId = Number(
-              current?.footballDataId || current?.id || 0
-            );
-
-            if (affectedIds.includes(currentId)) {
+          for (const itemSide of ["home", "away"]) {
+            const current = item?.teams?.[itemSide];
+            if (String(current?.identity || "") === owner || String(current?.identity || "") === identity) {
               const safe = avatar(current.name);
               current.logo = safe;
               current.logoPath = safe;
@@ -175,29 +327,25 @@ function sanitizeMatches(matches) {
             }
           }
         }
-
         logoOwners.delete(logo);
-        continue;
+      } else {
+        logoOwners.set(logo, identity);
       }
-
-      logoOwners.set(logo, id);
     }
   }
 
-  // Final fixture-level guard.
   for (const match of prepared) {
     const home = match.teams.home;
     const away = match.teams.away;
-    const homeId = Number(home?.footballDataId || home?.id || 0);
-    const awayId = Number(away?.footballDataId || away?.id || 0);
 
     if (
-      homeId &&
-      awayId &&
-      homeId !== awayId &&
+      home?.identity &&
+      away?.identity &&
+      home.identity !== away.identity &&
       home.logo &&
       away.logo &&
-      home.logo === away.logo
+      home.logo === away.logo &&
+      !home.logo.includes("ui-avatars.com")
     ) {
       home.logo = avatar(home.name);
       home.logoPath = home.logo;
@@ -214,10 +362,121 @@ function sanitizeMatches(matches) {
   return prepared;
 }
 
-async function fetchMatches() {
-  if (!TOKEN) {
-    throw new Error("FOOTBALL_DATA_API_KEY is missing.");
+async function fetchJson(url, options = {}) {
+  for (let attempt = 1; attempt <= 2; attempt += 1) {
+    const response = await fetch(url, {
+      ...options,
+      headers: {
+        Accept: "application/json",
+        "User-Agent": "MatchZone/3.0",
+        ...(options.headers || {}),
+      },
+    });
+
+    if (response.status === 429 && attempt === 1) {
+      await sleep(5000);
+      continue;
+    }
+
+    if (!response.ok) {
+      const body = await response.text();
+      throw new Error("HTTP " + response.status + ": " + body.slice(0, 240));
+    }
+
+    return response.json();
   }
+
+  throw new Error("Request failed after retries");
+}
+
+async function fetchFootballDataMatches(from, to) {
+  if (!FOOTBALL_DATA_TOKEN) {
+    console.warn("[Football-Data] secret missing; ESPN supplement will still run.");
+    return [];
+  }
+
+  const url =
+    FOOTBALL_DATA_API +
+    "/matches?dateFrom=" +
+    encodeURIComponent(isoDay(from)) +
+    "&dateTo=" +
+    encodeURIComponent(isoDay(to));
+
+  try {
+    const data = await fetchJson(url, {
+      headers: { "X-Auth-Token": FOOTBALL_DATA_TOKEN },
+    });
+    return Array.isArray(data?.matches) ? data.matches : [];
+  } catch (error) {
+    console.warn("[Football-Data] unavailable:", error.message);
+    return [];
+  }
+}
+
+async function fetchEspnMatches(from, to) {
+  const dates = [];
+  const cursor = new Date(from);
+
+  while (cursor <= to) {
+    dates.push(cursor.toISOString().slice(0, 10).replaceAll("-", ""));
+    cursor.setUTCDate(cursor.getUTCDate() + 1);
+  }
+
+  const output = [];
+
+  for (const [leagueCode, leagueName, competitionType] of ESPN_LEAGUES) {
+    for (const date of dates) {
+      const url =
+        ESPN_API +
+        "/" +
+        encodeURIComponent(leagueCode) +
+        "/scoreboard?dates=" +
+        date +
+        "&limit=100";
+
+      try {
+        const data = await fetchJson(url);
+        if (Array.isArray(data?.events)) {
+          for (const event of data.events) {
+            output.push({
+              event,
+              leagueCode,
+              leagueName,
+              competitionType,
+            });
+          }
+        }
+      } catch (error) {
+        console.warn("[ESPN] skipped", leagueCode, date, "-", error.message);
+      }
+    }
+  }
+
+  return output;
+}
+
+function dedupeMatches(matches) {
+  const seen = new Set();
+
+  return matches
+    .filter((match) => {
+      const provider = String(match?.source || "");
+      const external = String(match?.externalId || "");
+      const key = provider + ":" + external;
+      if (!provider || !external || seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    })
+    .sort(
+      (a, b) =>
+        new Date(a?.fixture?.date || 0).getTime() -
+        new Date(b?.fixture?.date || 0).getTime()
+    );
+}
+
+async function main() {
+  await fs.mkdir(path.dirname(DATA_FILE), { recursive: true });
+  await fs.rm(OLD_LOGO_DIR, { recursive: true, force: true });
 
   const now = new Date();
   const from = new Date(now);
@@ -226,68 +485,67 @@ async function fetchMatches() {
   const to = new Date(now);
   to.setUTCDate(to.getUTCDate() + 7);
 
-  const dateFrom = from.toISOString().slice(0, 10);
-  const dateTo = to.toISOString().slice(0, 10);
+  const identityLogos = new Map();
 
-  const url =
-    API +
-    "/matches?dateFrom=" +
-    encodeURIComponent(dateFrom) +
-    "&dateTo=" +
-    encodeURIComponent(dateTo);
+  const footballDataRaw = await fetchFootballDataMatches(from, to);
+  const footballDataMatches = footballDataRaw.map((item) =>
+    makeFootballDataMatch(item, identityLogos)
+  );
 
-  for (let attempt = 1; attempt <= 2; attempt += 1) {
-    const response = await fetch(url, {
-      headers: {
-        "X-Auth-Token": TOKEN,
-        Accept: "application/json",
-        "User-Agent": "MatchZone/2.0",
-      },
-    });
+  const espnRaw = await fetchEspnMatches(from, to);
+  const espnMatches = espnRaw.map((item) =>
+    makeEspnMatch(
+      item.event,
+      item.leagueCode,
+      item.leagueName,
+      item.competitionType,
+      identityLogos
+    )
+  );
 
-    if (response.status === 429 && attempt === 1) {
-      console.warn("[API] rate limit; waiting 60 seconds...");
-      await sleep(60000);
-      continue;
-    }
+  /*
+   * Football-Data.org already supplies Brazilian Série A in the current free
+   * account. Skip ESPN bra.1 to avoid two provider records for the same league.
+   * This is a source configuration rule, not team-name matching.
+   */
+  const supplemental = espnMatches.filter(
+    (match) => String(match?.externalIds?.["espn-league"] || "") !== "bra.1"
+  );
 
-    if (!response.ok) {
-      const body = await response.text();
-      throw new Error("Football-Data HTTP " + response.status + ": " + body.slice(0, 300));
-    }
+  const matches = sanitizeMatches(
+    dedupeMatches([...footballDataMatches, ...supplemental])
+  );
 
-    const data = await response.json();
-    return Array.isArray(data?.matches) ? data.matches : [];
+  if (!matches.length) {
+    throw new Error("No matches returned by either source; refusing to replace the live datastore.");
   }
-
-  return [];
-}
-
-async function main() {
-  await fs.mkdir(path.dirname(DATA_FILE), { recursive: true });
-
-  // Remove every old local logo artifact. No local logo cache is used anymore.
-  await fs.rm(OLD_LOGO_DIR, { recursive: true, force: true });
-
-  const rawMatches = await fetchMatches();
-
-  if (!rawMatches.length) {
-    throw new Error("No matches returned; refusing to replace the live datastore.");
-  }
-
-  const matches = sanitizeMatches(rawMatches);
 
   const payload = {
-    schemaVersion: 2,
+    schemaVersion: 3,
     updatedAt: new Date().toISOString(),
-    source: "football-data.org",
+    source: "football-data.org + ESPN supplemental",
+    coverageWindow: {
+      from: from.toISOString(),
+      to: to.toISOString(),
+    },
+    sourcePolicy: {
+      primary: "football-data.org",
+      supplemental: "ESPN public site API",
+      cacheStrategy: "GitHub Actions snapshot; visitors never call providers",
+      note: "ESPN endpoint is public/undocumented and may change without notice.",
+    },
     logoPolicy: {
-      identityKey: "football-data.org team ID",
+      identityKey: "provider namespace + immutable numeric/string provider team ID",
       nameLookup: false,
       localLogoCache: false,
       secondaryLogoProvider: false,
-      collisionPolicy: "different team IDs sharing a logo are replaced by UI Avatars",
+      collisionPolicy: "different provider identities sharing a logo are replaced by UI Avatars",
       unknownTeamPolicy: "UI Avatars",
+    },
+    counts: {
+      footballData: footballDataMatches.length,
+      espn: supplemental.length,
+      total: matches.length,
     },
     matchCount: matches.length,
     leagueCount: new Set(
@@ -298,16 +556,14 @@ async function main() {
 
   await fs.writeFile(DATA_FILE, JSON.stringify(payload, null, 2) + "\n", "utf8");
 
-  console.log("[CLEAN-SCRAPER] source:", payload.source);
-  console.log("[CLEAN-SCRAPER] matches:", payload.matchCount);
-  console.log("[CLEAN-SCRAPER] leagues:", payload.leagueCount);
-  console.log("[CLEAN-SCRAPER] local logo directory purged.");
-  console.log("[CLEAN-SCRAPER] identity model: football-data.org numeric team IDs.");
+  console.log("[MATCHZONE] Football-Data matches:", footballDataMatches.length);
+  console.log("[MATCHZONE] ESPN supplemental matches:", supplemental.length);
+  console.log("[MATCHZONE] Total:", matches.length);
+  console.log("[MATCHZONE] Leagues:", payload.leagueCount);
+  console.log("[MATCHZONE] Snapshot written:", DATA_FILE);
 }
 
 main().catch((error) => {
-  console.error("[CLEAN-SCRAPER] FAILED:", error);
+  console.error("[MATCHZONE] SCRAPER FAILED:", error);
   process.exit(1);
 });
-
-// CLEAN ID-ONLY REBUILD TRIGGER
