@@ -1,21 +1,3901 @@
 {
-  "schemaVersion": 2,
-  "updatedAt": "2026-09-28T15:18:23.148Z",
-  "source": "football-data.org",
+  "schemaVersion": 3,
+  "updatedAt": "2026-09-28T15:32:16.577Z",
+  "source": "football-data.org + ESPN supplemental",
+  "coverageWindow": {
+    "from": "2026-09-26T15:31:55.611Z",
+    "to": "2026-10-05T15:31:55.611Z"
+  },
+  "sourcePolicy": {
+    "primary": "football-data.org",
+    "supplemental": "ESPN public site API",
+    "cacheStrategy": "GitHub Actions snapshot; visitors never call providers",
+    "note": "ESPN endpoint is public/undocumented and may change without notice."
+  },
   "logoPolicy": {
-    "identityKey": "football-data.org team ID",
+    "identityKey": "provider namespace + immutable numeric/string provider team ID",
     "nameLookup": false,
     "localLogoCache": false,
     "secondaryLogoProvider": false,
-    "collisionPolicy": "different team IDs sharing a logo are replaced by UI Avatars",
+    "collisionPolicy": "different provider identities sharing a logo are replaced by UI Avatars",
     "unknownTeamPolicy": "UI Avatars"
   },
-  "matchCount": 2,
-  "leagueCount": 1,
+  "counts": {
+    "footballData": 2,
+    "espn": 107,
+    "total": 109
+  },
+  "matchCount": 109,
+  "leagueCount": 6,
   "matches": [
     {
       "fixture": {
-        "id": 554948,
+        "id": "espn-fifa.friendly-401905203",
+        "providerMatchId": "401905203",
+        "date": "2026-09-26T20:30Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "660",
+          "espnId": "660",
+          "provider": "espn",
+          "identity": "espn:660",
+          "name": "United States",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "211",
+          "espnId": "211",
+          "provider": "espn",
+          "identity": "espn:211",
+          "name": "Peru",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/per.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/per.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 4,
+        "away": 1
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401905203",
+      "externalIds": {
+        "espn": "401905203",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-col.1-401878047",
+        "providerMatchId": "401878047",
+        "date": "2026-09-26T21:00Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "5486",
+          "espnId": "5486",
+          "provider": "espn",
+          "identity": "espn:5486",
+          "name": "Deportivo Pereira",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/5486.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/5486.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "7445",
+          "espnId": "7445",
+          "provider": "espn",
+          "identity": "espn:7445",
+          "name": "Internacional de Bogotá",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7445.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/7445.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:col.1",
+        "name": "الدوري الكولومبي",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401878047",
+      "externalIds": {
+        "espn": "401878047",
+        "espn-league": "col.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-mex.1-401876959",
+        "providerMatchId": "401876959",
+        "date": "2026-09-26T22:50Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "218",
+          "espnId": "218",
+          "provider": "espn",
+          "identity": "espn:218",
+          "name": "Cruz Azul",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/218.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/218.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "223",
+          "espnId": "223",
+          "provider": "espn",
+          "identity": "espn:223",
+          "name": "Toluca",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/223.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/223.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 3,
+        "away": 3
+      },
+      "league": {
+        "id": "espn:mex.1",
+        "name": "الدوري المكسيكي",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401876959",
+      "externalIds": {
+        "espn": "401876959",
+        "espn-league": "mex.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401900326",
+        "providerMatchId": "401900326",
+        "date": "2026-09-26T23:00Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "206",
+          "espnId": "206",
+          "provider": "espn",
+          "identity": "espn:206",
+          "name": "Canada",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "207",
+          "espnId": "207",
+          "provider": "espn",
+          "identity": "espn:207",
+          "name": "Chile",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/chi.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/chi.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 1,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401900326",
+      "externalIds": {
+        "espn": "401900326",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-mex.1-401876962",
+        "providerMatchId": "401876962",
+        "date": "2026-09-26T23:07Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "219",
+          "espnId": "219",
+          "provider": "espn",
+          "identity": "espn:219",
+          "name": "Guadalajara",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/219.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/219.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "222",
+          "espnId": "222",
+          "provider": "espn",
+          "identity": "espn:222",
+          "name": "Querétaro",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/222.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/222.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 2
+      },
+      "league": {
+        "id": "espn:mex.1",
+        "name": "الدوري المكسيكي",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401876962",
+      "externalIds": {
+        "espn": "401876962",
+        "espn-league": "mex.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-col.1-401878058",
+        "providerMatchId": "401878058",
+        "date": "2026-09-26T23:15Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "6101",
+          "espnId": "6101",
+          "provider": "espn",
+          "identity": "espn:6101",
+          "name": "Cúcuta Deportivo",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6101.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/6101.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "7915",
+          "espnId": "7915",
+          "provider": "espn",
+          "identity": "espn:7915",
+          "name": "Llaneros FC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7915.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/7915.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 2,
+        "away": 1
+      },
+      "league": {
+        "id": "espn:col.1",
+        "name": "الدوري الكولومبي",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401878058",
+      "externalIds": {
+        "espn": "401878058",
+        "espn-league": "col.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-usa.1-761830",
+        "providerMatchId": "761830",
+        "date": "2026-09-26T23:30Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "18418",
+          "espnId": "18418",
+          "provider": "espn",
+          "identity": "espn:18418",
+          "name": "Atlanta United FC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18418.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/18418.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "17606",
+          "espnId": "17606",
+          "provider": "espn",
+          "identity": "espn:17606",
+          "name": "New York City FC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17606.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/17606.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 2,
+        "away": 2
+      },
+      "league": {
+        "id": "espn:usa.1",
+        "name": "الدوري الأمريكي MLS",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "761830",
+      "externalIds": {
+        "espn": "761830",
+        "espn-league": "usa.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-usa.1-761831",
+        "providerMatchId": "761831",
+        "date": "2026-09-26T23:30Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "9720",
+          "espnId": "9720",
+          "provider": "espn",
+          "identity": "espn:9720",
+          "name": "CF Montréal",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9720.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/9720.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "18267",
+          "espnId": "18267",
+          "provider": "espn",
+          "identity": "espn:18267",
+          "name": "FC Cincinnati",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18267.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/18267.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 3,
+        "away": 1
+      },
+      "league": {
+        "id": "espn:usa.1",
+        "name": "الدوري الأمريكي MLS",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "761831",
+      "externalIds": {
+        "espn": "761831",
+        "espn-league": "usa.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-usa.1-761832",
+        "providerMatchId": "761832",
+        "date": "2026-09-26T23:30Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "21300",
+          "espnId": "21300",
+          "provider": "espn",
+          "identity": "espn:21300",
+          "name": "Charlotte FC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21300.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/21300.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "182",
+          "espnId": "182",
+          "provider": "espn",
+          "identity": "espn:182",
+          "name": "Chicago Fire FC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/182.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/182.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 1
+      },
+      "league": {
+        "id": "espn:usa.1",
+        "name": "الدوري الأمريكي MLS",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "761832",
+      "externalIds": {
+        "espn": "761832",
+        "espn-league": "usa.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-usa.1-761834",
+        "providerMatchId": "761834",
+        "date": "2026-09-26T23:30Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "10739",
+          "espnId": "10739",
+          "provider": "espn",
+          "identity": "espn:10739",
+          "name": "Philadelphia Union",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/10739.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/10739.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "12011",
+          "espnId": "12011",
+          "provider": "espn",
+          "identity": "espn:12011",
+          "name": "Orlando City SC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/12011.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/12011.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 4,
+        "away": 2
+      },
+      "league": {
+        "id": "espn:usa.1",
+        "name": "الدوري الأمريكي MLS",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "761834",
+      "externalIds": {
+        "espn": "761834",
+        "espn-league": "usa.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-usa.1-761839",
+        "providerMatchId": "761839",
+        "date": "2026-09-27T00:30Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "20906",
+          "espnId": "20906",
+          "provider": "espn",
+          "identity": "espn:20906",
+          "name": "Austin FC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20906.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/20906.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "22529",
+          "espnId": "22529",
+          "provider": "espn",
+          "identity": "espn:22529",
+          "name": "San Diego FC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/22529.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/22529.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 3,
+        "away": 3
+      },
+      "league": {
+        "id": "espn:usa.1",
+        "name": "الدوري الأمريكي MLS",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "761839",
+      "externalIds": {
+        "espn": "761839",
+        "espn-league": "usa.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-usa.1-761835",
+        "providerMatchId": "761835",
+        "date": "2026-09-27T00:30Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "185",
+          "espnId": "185",
+          "provider": "espn",
+          "identity": "espn:185",
+          "name": "FC Dallas",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/185.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/185.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "18966",
+          "espnId": "18966",
+          "provider": "espn",
+          "identity": "espn:18966",
+          "name": "LAFC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18966.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/18966.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 1,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:usa.1",
+        "name": "الدوري الأمريكي MLS",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "761835",
+      "externalIds": {
+        "espn": "761835",
+        "espn-league": "usa.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-usa.1-761836",
+        "providerMatchId": "761836",
+        "date": "2026-09-27T00:30Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "6077",
+          "espnId": "6077",
+          "provider": "espn",
+          "identity": "espn:6077",
+          "name": "Houston Dynamo FC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6077.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/6077.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "186",
+          "espnId": "186",
+          "provider": "espn",
+          "identity": "espn:186",
+          "name": "Sporting Kansas City",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/186.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/186.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 2
+      },
+      "league": {
+        "id": "espn:usa.1",
+        "name": "الدوري الأمريكي MLS",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "761836",
+      "externalIds": {
+        "espn": "761836",
+        "espn-league": "usa.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-usa.1-761838",
+        "providerMatchId": "761838",
+        "date": "2026-09-27T00:30Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "18986",
+          "espnId": "18986",
+          "provider": "espn",
+          "identity": "espn:18986",
+          "name": "Nashville SC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18986.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/18986.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "7318",
+          "espnId": "7318",
+          "provider": "espn",
+          "identity": "espn:7318",
+          "name": "Toronto FC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7318.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/7318.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 2,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:usa.1",
+        "name": "الدوري الأمريكي MLS",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "761838",
+      "externalIds": {
+        "espn": "761838",
+        "espn-league": "usa.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-usa.1-761837",
+        "providerMatchId": "761837",
+        "date": "2026-09-27T00:30Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "9726",
+          "espnId": "9726",
+          "provider": "espn",
+          "identity": "espn:9726",
+          "name": "Seattle Sounders FC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9726.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/9726.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "17362",
+          "espnId": "17362",
+          "provider": "espn",
+          "identity": "espn:17362",
+          "name": "Minnesota United FC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17362.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/17362.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 3,
+        "away": 1
+      },
+      "league": {
+        "id": "espn:usa.1",
+        "name": "الدوري الأمريكي MLS",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "761837",
+      "externalIds": {
+        "espn": "761837",
+        "espn-league": "usa.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401903308",
+        "providerMatchId": "401903308",
+        "date": "2026-09-27T01:00Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "203",
+          "espnId": "203",
+          "provider": "espn",
+          "identity": "espn:203",
+          "name": "Mexico",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "208",
+          "espnId": "208",
+          "provider": "espn",
+          "identity": "espn:208",
+          "name": "Colombia",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 1,
+        "away": 1
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401903308",
+      "externalIds": {
+        "espn": "401903308",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-col.1-401878060",
+        "providerMatchId": "401878060",
+        "date": "2026-09-27T01:20Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "4815",
+          "espnId": "4815",
+          "provider": "espn",
+          "identity": "espn:4815",
+          "name": "Atlético Junior",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4815.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/4815.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "2690",
+          "espnId": "2690",
+          "provider": "espn",
+          "identity": "espn:2690",
+          "name": "Independiente Medellín",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2690.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/2690.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 2,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:col.1",
+        "name": "الدوري الكولومبي",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401878060",
+      "externalIds": {
+        "espn": "401878060",
+        "espn-league": "col.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-usa.1-761840",
+        "providerMatchId": "761840",
+        "date": "2026-09-27T01:30Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "4771",
+          "espnId": "4771",
+          "provider": "espn",
+          "identity": "espn:4771",
+          "name": "Real Salt Lake",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4771.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/4771.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "189",
+          "espnId": "189",
+          "provider": "espn",
+          "identity": "espn:189",
+          "name": "New England Revolution",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/189.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/189.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 3,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:usa.1",
+        "name": "الدوري الأمريكي MLS",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "761840",
+      "externalIds": {
+        "espn": "761840",
+        "espn-league": "usa.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-usa.1-761841",
+        "providerMatchId": "761841",
+        "date": "2026-09-27T02:30Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "187",
+          "espnId": "187",
+          "provider": "espn",
+          "identity": "espn:187",
+          "name": "LA Galaxy",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/187.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/187.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "184",
+          "espnId": "184",
+          "provider": "espn",
+          "identity": "espn:184",
+          "name": "Colorado Rapids",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/184.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/184.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 3,
+        "away": 2
+      },
+      "league": {
+        "id": "espn:usa.1",
+        "name": "الدوري الأمريكي MLS",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "761841",
+      "externalIds": {
+        "espn": "761841",
+        "espn-league": "usa.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-usa.1-761843",
+        "providerMatchId": "761843",
+        "date": "2026-09-27T02:30Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "191",
+          "espnId": "191",
+          "provider": "espn",
+          "identity": "espn:191",
+          "name": "San Jose Earthquakes",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/191.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/191.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "9723",
+          "espnId": "9723",
+          "provider": "espn",
+          "identity": "espn:9723",
+          "name": "Portland Timbers",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9723.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/9723.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 3,
+        "away": 1
+      },
+      "league": {
+        "id": "espn:usa.1",
+        "name": "الدوري الأمريكي MLS",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "761843",
+      "externalIds": {
+        "espn": "761843",
+        "espn-league": "usa.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-usa.1-761842",
+        "providerMatchId": "761842",
+        "date": "2026-09-27T02:30Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "9727",
+          "espnId": "9727",
+          "provider": "espn",
+          "identity": "espn:9727",
+          "name": "Vancouver Whitecaps",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9727.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/9727.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "193",
+          "espnId": "193",
+          "provider": "espn",
+          "identity": "espn:193",
+          "name": "D.C. United",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/193.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/193.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 3,
+        "away": 3
+      },
+      "league": {
+        "id": "espn:usa.1",
+        "name": "الدوري الأمريكي MLS",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "761842",
+      "externalIds": {
+        "espn": "761842",
+        "espn-league": "usa.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-mex.1-401876961",
+        "providerMatchId": "401876961",
+        "date": "2026-09-27T03:05Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "225",
+          "espnId": "225",
+          "provider": "espn",
+          "identity": "espn:225",
+          "name": "Santos",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/225.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/225.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "234",
+          "espnId": "234",
+          "provider": "espn",
+          "identity": "espn:234",
+          "name": "Pachuca",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/234.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/234.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 1,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:mex.1",
+        "name": "الدوري المكسيكي",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401876961",
+      "externalIds": {
+        "espn": "401876961",
+        "espn-league": "mex.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-mex.1-401876960",
+        "providerMatchId": "401876960",
+        "date": "2026-09-27T03:10Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "232",
+          "espnId": "232",
+          "provider": "espn",
+          "identity": "espn:232",
+          "name": "Tigres UANL",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/232.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/232.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "231",
+          "espnId": "231",
+          "provider": "espn",
+          "identity": "espn:231",
+          "name": "Puebla",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/231.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/231.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 1,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:mex.1",
+        "name": "الدوري المكسيكي",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401876960",
+      "externalIds": {
+        "espn": "401876960",
+        "espn-league": "mex.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401924630",
+        "providerMatchId": "401924630",
+        "date": "2026-09-27T04:00Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "4884",
+          "espnId": "4884",
+          "provider": "espn",
+          "identity": "espn:4884",
+          "name": "Cook Islands",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cok.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/cok.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "4863",
+          "espnId": "4863",
+          "provider": "espn",
+          "identity": "espn:4863",
+          "name": "Tahiti",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/tah.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/tah.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 1,
+        "away": 3
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401924630",
+      "externalIds": {
+        "espn": "401924630",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401922310",
+        "providerMatchId": "401922310",
+        "date": "2026-09-27T04:00Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "4864",
+          "espnId": "4864",
+          "provider": "espn",
+          "identity": "espn:4864",
+          "name": "Vanuatu",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/van.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/van.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "4888",
+          "espnId": "4888",
+          "provider": "espn",
+          "identity": "espn:4888",
+          "name": "New Caledonia",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ncd.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/ncd.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 4,
+        "away": 1
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401922310",
+      "externalIds": {
+        "espn": "401922310",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401922309",
+        "providerMatchId": "401922309",
+        "date": "2026-09-27T07:00Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "4862",
+          "espnId": "4862",
+          "provider": "espn",
+          "identity": "espn:4862",
+          "name": "Fiji",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/fij.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/fij.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "4885",
+          "espnId": "4885",
+          "provider": "espn",
+          "identity": "espn:4885",
+          "name": "Papua New Guinea",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/png.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/png.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 2,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401922309",
+      "externalIds": {
+        "espn": "401922309",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401914142",
+        "providerMatchId": "401914142",
+        "date": "2026-09-27T11:35Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "658",
+          "espnId": "658",
+          "provider": "espn",
+          "identity": "espn:658",
+          "name": "China",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/chn.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/chn.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "2666",
+          "espnId": "2666",
+          "provider": "espn",
+          "identity": "espn:2666",
+          "name": "New Zealand",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/nzl.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/nzl.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 3
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401914142",
+      "externalIds": {
+        "espn": "401914142",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401917066",
+        "providerMatchId": "401917066",
+        "date": "2026-09-27T12:00Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "6726",
+          "espnId": "6726",
+          "provider": "espn",
+          "identity": "espn:6726",
+          "name": "Seychelles",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sey.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/sey.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "5782",
+          "espnId": "5782",
+          "provider": "espn",
+          "identity": "espn:5782",
+          "name": "Sri Lanka",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sri.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/sri.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 3
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401917066",
+      "externalIds": {
+        "espn": "401917066",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401905204",
+        "providerMatchId": "401905204",
+        "date": "2026-09-27T16:30Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "453",
+          "espnId": "453",
+          "provider": "espn",
+          "identity": "espn:453",
+          "name": "Malta",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mlt.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/mlt.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "589",
+          "espnId": "589",
+          "provider": "espn",
+          "identity": "espn:589",
+          "name": "Liechtenstein",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/lie.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/lie.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 2,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401905204",
+      "externalIds": {
+        "espn": "401905204",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401919977",
+        "providerMatchId": "401919977",
+        "date": "2026-09-27T17:00Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "2917",
+          "espnId": "2917",
+          "provider": "espn",
+          "identity": "espn:2917",
+          "name": "Jordan",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/jor.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/jor.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "4380",
+          "espnId": "4380",
+          "provider": "espn",
+          "identity": "espn:4380",
+          "name": "Syria",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/syr.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/syr.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 1,
+        "away": 1
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401919977",
+      "externalIds": {
+        "espn": "401919977",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-mex.1-401876958",
+        "providerMatchId": "401876958",
+        "date": "2026-09-27T18:00Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "233",
+          "espnId": "233",
+          "provider": "espn",
+          "identity": "espn:233",
+          "name": "Pumas UNAM",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/233.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/233.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "15720",
+          "espnId": "15720",
+          "provider": "espn",
+          "identity": "espn:15720",
+          "name": "Atlético de San Luis",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/15720.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/15720.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 2,
+        "away": 3
+      },
+      "league": {
+        "id": "espn:mex.1",
+        "name": "الدوري المكسيكي",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401876958",
+      "externalIds": {
+        "espn": "401876958",
+        "espn-league": "mex.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401913269",
+        "providerMatchId": "401913269",
+        "date": "2026-09-27T20:30Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "204",
+          "espnId": "204",
+          "provider": "espn",
+          "identity": "espn:204",
+          "name": "Bolivia",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bol.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/bol.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "210",
+          "espnId": "210",
+          "provider": "espn",
+          "identity": "espn:210",
+          "name": "Paraguay",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/par.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/par.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 2
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401913269",
+      "externalIds": {
+        "espn": "401913269",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-col.1-401877898",
+        "providerMatchId": "401877898",
+        "date": "2026-09-27T21:00Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "10309",
+          "espnId": "10309",
+          "provider": "espn",
+          "identity": "espn:10309",
+          "name": "Jaguares de Córdoba",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/10309.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/10309.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "9761",
+          "espnId": "9761",
+          "provider": "espn",
+          "identity": "espn:9761",
+          "name": "Alianza FC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9761.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/9761.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 1,
+        "away": 2
+      },
+      "league": {
+        "id": "espn:col.1",
+        "name": "الدوري الكولومبي",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401877898",
+      "externalIds": {
+        "espn": "401877898",
+        "espn-league": "col.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-usa.1-761844",
+        "providerMatchId": "761844",
+        "date": "2026-09-27T23:00Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "183",
+          "espnId": "183",
+          "provider": "espn",
+          "identity": "espn:183",
+          "name": "Columbus Crew",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/183.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/183.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "20232",
+          "espnId": "20232",
+          "provider": "espn",
+          "identity": "espn:20232",
+          "name": "Inter Miami CF",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20232.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/20232.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 2,
+        "away": 1
+      },
+      "league": {
+        "id": "espn:usa.1",
+        "name": "الدوري الأمريكي MLS",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "761844",
+      "externalIds": {
+        "espn": "761844",
+        "espn-league": "usa.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-col.1-401877886",
+        "providerMatchId": "401877886",
+        "date": "2026-09-27T23:05Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "4928",
+          "espnId": "4928",
+          "provider": "espn",
+          "identity": "espn:4928",
+          "name": "Fortaleza CEIF",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4928.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/4928.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "5489",
+          "espnId": "5489",
+          "provider": "espn",
+          "identity": "espn:5489",
+          "name": "Deportes Tolima",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/5489.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/5489.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 2,
+        "away": 2
+      },
+      "league": {
+        "id": "espn:col.1",
+        "name": "الدوري الكولومبي",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401877886",
+      "externalIds": {
+        "espn": "401877886",
+        "espn-league": "col.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-mex.1-401876957",
+        "providerMatchId": "401876957",
+        "date": "2026-09-28T01:00Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "228",
+          "espnId": "228",
+          "provider": "espn",
+          "identity": "espn:228",
+          "name": "León",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/228.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/228.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "17851",
+          "espnId": "17851",
+          "provider": "espn",
+          "identity": "espn:17851",
+          "name": "FC Juarez",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17851.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/17851.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 2,
+        "away": 1
+      },
+      "league": {
+        "id": "espn:mex.1",
+        "name": "الدوري المكسيكي",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401876957",
+      "externalIds": {
+        "espn": "401876957",
+        "espn-league": "mex.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-col.1-401877955",
+        "providerMatchId": "401877955",
+        "date": "2026-09-28T01:10Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "2672",
+          "espnId": "2672",
+          "provider": "espn",
+          "identity": "espn:2672",
+          "name": "Deportivo Cali",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2672.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/2672.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "9762",
+          "espnId": "9762",
+          "provider": "espn",
+          "identity": "espn:9762",
+          "name": "Águilas Doradas",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9762.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/9762.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 2,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:col.1",
+        "name": "الدوري الكولومبي",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401877955",
+      "externalIds": {
+        "espn": "401877955",
+        "espn-league": "col.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-mex.1-401876956",
+        "providerMatchId": "401876956",
+        "date": "2026-09-28T03:10Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "229",
+          "espnId": "229",
+          "provider": "espn",
+          "identity": "espn:229",
+          "name": "Necaxa",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/229.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/229.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "227",
+          "espnId": "227",
+          "provider": "espn",
+          "identity": "espn:227",
+          "name": "América",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/227.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/227.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 2,
+        "away": 4
+      },
+      "league": {
+        "id": "espn:mex.1",
+        "name": "الدوري المكسيكي",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401876956",
+      "externalIds": {
+        "espn": "401876956",
+        "espn-league": "mex.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401916227",
+        "providerMatchId": "401916227",
+        "date": "2026-09-28T09:30Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "7507",
+          "espnId": "7507",
+          "provider": "espn",
+          "identity": "espn:7507",
+          "name": "Turkmenistan",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/tkm.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/tkm.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "6167",
+          "espnId": "6167",
+          "provider": "espn",
+          "identity": "espn:6167",
+          "name": "Palestine",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/pal.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/pal.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401916227",
+      "externalIds": {
+        "espn": "401916227",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401902642",
+        "providerMatchId": "401902642",
+        "date": "2026-09-28T10:25Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "627",
+          "espnId": "627",
+          "provider": "espn",
+          "identity": "espn:627",
+          "name": "Japan",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/jpn.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/jpn.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "213",
+          "espnId": "213",
+          "provider": "espn",
+          "identity": "espn:213",
+          "name": "Venezuela",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ven.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/ven.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 2,
+        "away": 1
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401902642",
+      "externalIds": {
+        "espn": "401902642",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401905195",
+        "providerMatchId": "401905195",
+        "date": "2026-09-28T11:00Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "451",
+          "espnId": "451",
+          "provider": "espn",
+          "identity": "espn:451",
+          "name": "South Korea",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/kors.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/kors.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "212",
+          "espnId": "212",
+          "provider": "espn",
+          "identity": "espn:212",
+          "name": "Uruguay",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/uru.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/uru.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 1,
+        "away": 4
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401905195",
+      "externalIds": {
+        "espn": "401905195",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401915925",
+        "providerMatchId": "401915925",
+        "date": "2026-09-28T12:00Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "6723",
+          "espnId": "6723",
+          "provider": "espn",
+          "identity": "espn:6723",
+          "name": "Tajikistan",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/tjk.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/tjk.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "6167",
+          "espnId": "6167",
+          "provider": "espn",
+          "identity": "espn:6167",
+          "name": "Palestine",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/pal.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/pal.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 2,
+        "away": 4
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401915925",
+      "externalIds": {
+        "espn": "401915925",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401919572",
+        "providerMatchId": "401919572",
+        "date": "2026-09-28T22:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "6724",
+          "espnId": "6724",
+          "provider": "espn",
+          "identity": "espn:6724",
+          "name": "Kyrgyz Republic",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/kgz.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/kgz.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "4390",
+          "espnId": "4390",
+          "provider": "espn",
+          "identity": "espn:4390",
+          "name": "Maldives",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mdv.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/mdv.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401919572",
+      "externalIds": {
+        "espn": "401919572",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401881965",
+        "providerMatchId": "401881965",
+        "date": "2026-09-29T10:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "628",
+          "espnId": "628",
+          "provider": "espn",
+          "identity": "espn:628",
+          "name": "Australia",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/aus.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/aus.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "205",
+          "espnId": "205",
+          "provider": "espn",
+          "identity": "espn:205",
+          "name": "Brazil",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401881965",
+      "externalIds": {
+        "espn": "401881965",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401911182",
+        "providerMatchId": "401911182",
+        "date": "2026-09-29T16:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "454",
+          "espnId": "454",
+          "provider": "espn",
+          "identity": "espn:454",
+          "name": "Russia",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rus.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/rus.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "469",
+          "espnId": "469",
+          "provider": "espn",
+          "identity": "espn:469",
+          "name": "Iran",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/irn.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/irn.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401911182",
+      "externalIds": {
+        "espn": "401911182",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-col.1-401877965",
+        "providerMatchId": "401877965",
+        "date": "2026-09-29T20:30Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "5486",
+          "espnId": "5486",
+          "provider": "espn",
+          "identity": "espn:5486",
+          "name": "Deportivo Pereira",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/5486.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/5486.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "5488",
+          "espnId": "5488",
+          "provider": "espn",
+          "identity": "espn:5488",
+          "name": "Independiente Santa Fe",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/5488.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/5488.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:col.1",
+        "name": "الدوري الكولومبي",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401877965",
+      "externalIds": {
+        "espn": "401877965",
+        "espn-league": "col.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401905189",
+        "providerMatchId": "401905189",
+        "date": "2026-09-30T00:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "660",
+          "espnId": "660",
+          "provider": "espn",
+          "identity": "espn:660",
+          "name": "United States",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "207",
+          "espnId": "207",
+          "provider": "espn",
+          "identity": "espn:207",
+          "name": "Chile",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/chi.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/chi.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401905189",
+      "externalIds": {
+        "espn": "401905189",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-col.1-401877876",
+        "providerMatchId": "401877876",
+        "date": "2026-09-30T01:05Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "2690",
+          "espnId": "2690",
+          "provider": "espn",
+          "identity": "espn:2690",
+          "name": "Independiente Medellín",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2690.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/2690.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "5484",
+          "espnId": "5484",
+          "provider": "espn",
+          "identity": "espn:5484",
+          "name": "Millonarios",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/5484.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/5484.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:col.1",
+        "name": "الدوري الكولومبي",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401877876",
+      "externalIds": {
+        "espn": "401877876",
+        "espn-league": "col.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401903234",
+        "providerMatchId": "401903234",
+        "date": "2026-09-30T02:30Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "203",
+          "espnId": "203",
+          "provider": "espn",
+          "identity": "espn:203",
+          "name": "Mexico",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "211",
+          "espnId": "211",
+          "provider": "espn",
+          "identity": "espn:211",
+          "name": "Peru",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/per.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/per.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401903234",
+      "externalIds": {
+        "espn": "401903234",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401922308",
+        "providerMatchId": "401922308",
+        "date": "2026-09-30T04:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "4885",
+          "espnId": "4885",
+          "provider": "espn",
+          "identity": "espn:4885",
+          "name": "Papua New Guinea",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/png.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/png.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "4861",
+          "espnId": "4861",
+          "provider": "espn",
+          "identity": "espn:4861",
+          "name": "Solomon Islands",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sol.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/sol.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401922308",
+      "externalIds": {
+        "espn": "401922308",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401922307",
+        "providerMatchId": "401922307",
+        "date": "2026-09-30T07:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "4862",
+          "espnId": "4862",
+          "provider": "espn",
+          "identity": "espn:4862",
+          "name": "Fiji",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/fij.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/fij.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "4888",
+          "espnId": "4888",
+          "provider": "espn",
+          "identity": "espn:4888",
+          "name": "New Caledonia",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ncd.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/ncd.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401922307",
+      "externalIds": {
+        "espn": "401922307",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401917065",
+        "providerMatchId": "401917065",
+        "date": "2026-09-30T13:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "6726",
+          "espnId": "6726",
+          "provider": "espn",
+          "identity": "espn:6726",
+          "name": "Seychelles",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sey.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/sey.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "5782",
+          "espnId": "5782",
+          "provider": "espn",
+          "identity": "espn:5782",
+          "name": "Sri Lanka",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sri.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/sri.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401917065",
+      "externalIds": {
+        "espn": "401917065",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401922621",
+        "providerMatchId": "401922621",
+        "date": "2026-09-30T14:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "4245",
+          "espnId": "4245",
+          "provider": "espn",
+          "identity": "espn:4245",
+          "name": "Botswana",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bot.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/bot.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "8939",
+          "espnId": "8939",
+          "provider": "espn",
+          "identity": "espn:8939",
+          "name": "Mozambique",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/moz.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/moz.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401922621",
+      "externalIds": {
+        "espn": "401922621",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401899825",
+        "providerMatchId": "401899825",
+        "date": "2026-09-30T16:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "460",
+          "espnId": "460",
+          "provider": "espn",
+          "identity": "espn:460",
+          "name": "Lithuania",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ltu.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/ltu.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "587",
+          "espnId": "587",
+          "provider": "espn",
+          "identity": "espn:587",
+          "name": "Andorra",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/and.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/and.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401899825",
+      "externalIds": {
+        "espn": "401899825",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401912455",
+        "providerMatchId": "401912455",
+        "date": "2026-09-30T18:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "5534",
+          "espnId": "5534",
+          "provider": "espn",
+          "identity": "espn:5534",
+          "name": "Mauritius",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mri.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/mri.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "5775",
+          "espnId": "5775",
+          "provider": "espn",
+          "identity": "espn:5775",
+          "name": "Djibouti",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/dji.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/dji.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401912455",
+      "externalIds": {
+        "espn": "401912455",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401921545",
+        "providerMatchId": "401921545",
+        "date": "2026-09-30T23:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "202",
+          "espnId": "202",
+          "provider": "espn",
+          "identity": "espn:202",
+          "name": "Argentina",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "204",
+          "espnId": "204",
+          "provider": "espn",
+          "identity": "espn:204",
+          "name": "Bolivia",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bol.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/bol.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401921545",
+      "externalIds": {
+        "espn": "401921545",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-usa.1-761833",
+        "providerMatchId": "761833",
+        "date": "2026-09-30T23:30Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "190",
+          "espnId": "190",
+          "provider": "espn",
+          "identity": "espn:190",
+          "name": "Red Bull New York",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/190.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/190.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "21812",
+          "espnId": "21812",
+          "provider": "espn",
+          "identity": "espn:21812",
+          "name": "St. Louis CITY SC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21812.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/21812.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:usa.1",
+        "name": "الدوري الأمريكي MLS",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "761833",
+      "externalIds": {
+        "espn": "761833",
+        "espn-league": "usa.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-col.1-401877865",
+        "providerMatchId": "401877865",
+        "date": "2026-10-01T01:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "5264",
+          "espnId": "5264",
+          "provider": "espn",
+          "identity": "espn:5264",
+          "name": "Atlético Nacional",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/5264.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/5264.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "4815",
+          "espnId": "4815",
+          "provider": "espn",
+          "identity": "espn:4815",
+          "name": "Atlético Junior",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4815.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/4815.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:col.1",
+        "name": "الدوري الكولومبي",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401877865",
+      "externalIds": {
+        "espn": "401877865",
+        "espn-league": "col.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401924629",
+        "providerMatchId": "401924629",
+        "date": "2026-10-01T02:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "4884",
+          "espnId": "4884",
+          "provider": "espn",
+          "identity": "espn:4884",
+          "name": "Cook Islands",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cok.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/cok.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "4863",
+          "espnId": "4863",
+          "provider": "espn",
+          "identity": "espn:4863",
+          "name": "Tahiti",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/tah.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/tah.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401924629",
+      "externalIds": {
+        "espn": "401924629",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401921570",
+        "providerMatchId": "401921570",
+        "date": "2026-10-01T14:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "2570",
+          "espnId": "2570",
+          "provider": "espn",
+          "identity": "espn:2570",
+          "name": "Uzbekistan",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/uzb.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/uzb.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "4380",
+          "espnId": "4380",
+          "provider": "espn",
+          "identity": "espn:4380",
+          "name": "Syria",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/syr.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/syr.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401921570",
+      "externalIds": {
+        "espn": "401921570",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401919420",
+        "providerMatchId": "401919420",
+        "date": "2026-10-01T18:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "4390",
+          "espnId": "4390",
+          "provider": "espn",
+          "identity": "espn:4390",
+          "name": "Maldives",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mdv.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/mdv.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "4388",
+          "espnId": "4388",
+          "provider": "espn",
+          "identity": "espn:4388",
+          "name": "Lebanon",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/lib.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/lib.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401919420",
+      "externalIds": {
+        "espn": "401919420",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401906313",
+        "providerMatchId": "401906313",
+        "date": "2026-10-01T18:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "2659",
+          "espnId": "2659",
+          "provider": "espn",
+          "identity": "espn:2659",
+          "name": "Panama",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/pan.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/pan.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "2666",
+          "espnId": "2666",
+          "provider": "espn",
+          "identity": "espn:2666",
+          "name": "New Zealand",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/nzl.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/nzl.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401906313",
+      "externalIds": {
+        "espn": "401906313",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-col.1-401877909",
+        "providerMatchId": "401877909",
+        "date": "2026-10-02T01:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "7445",
+          "espnId": "7445",
+          "provider": "espn",
+          "identity": "espn:7445",
+          "name": "Internacional de Bogotá",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7445.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/7445.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "2919",
+          "espnId": "2919",
+          "provider": "espn",
+          "identity": "espn:2919",
+          "name": "Once Caldas",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2919.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/2919.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:col.1",
+        "name": "الدوري الكولومبي",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401877909",
+      "externalIds": {
+        "espn": "401877909",
+        "espn-league": "col.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-usa.1-761798",
+        "providerMatchId": "761798",
+        "date": "2026-10-02T01:30Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "9726",
+          "espnId": "9726",
+          "provider": "espn",
+          "identity": "espn:9726",
+          "name": "Seattle Sounders FC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9726.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/9726.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "186",
+          "espnId": "186",
+          "provider": "espn",
+          "identity": "espn:186",
+          "name": "Sporting Kansas City",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/186.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/186.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:usa.1",
+        "name": "الدوري الأمريكي MLS",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "761798",
+      "externalIds": {
+        "espn": "761798",
+        "espn-league": "usa.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401902634",
+        "providerMatchId": "401902634",
+        "date": "2026-10-02T11:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "451",
+          "espnId": "451",
+          "provider": "espn",
+          "identity": "espn:451",
+          "name": "South Korea",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/kors.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/kors.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "213",
+          "espnId": "213",
+          "provider": "espn",
+          "identity": "espn:213",
+          "name": "Venezuela",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ven.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/ven.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401902634",
+      "externalIds": {
+        "espn": "401902634",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401914141",
+        "providerMatchId": "401914141",
+        "date": "2026-10-02T11:35Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "658",
+          "espnId": "658",
+          "provider": "espn",
+          "identity": "espn:658",
+          "name": "China",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/chn.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/chn.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "7507",
+          "espnId": "7507",
+          "provider": "espn",
+          "identity": "espn:7507",
+          "name": "Turkmenistan",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/tkm.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/tkm.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401914141",
+      "externalIds": {
+        "espn": "401914141",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401923178",
+        "providerMatchId": "401923178",
+        "date": "2026-10-02T15:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "5534",
+          "espnId": "5534",
+          "provider": "espn",
+          "identity": "espn:5534",
+          "name": "Mauritius",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mri.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/mri.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "5782",
+          "espnId": "5782",
+          "provider": "espn",
+          "identity": "espn:5782",
+          "name": "Sri Lanka",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sri.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/sri.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401923178",
+      "externalIds": {
+        "espn": "401923178",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401918509",
+        "providerMatchId": "401918509",
+        "date": "2026-10-02T18:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "2850",
+          "espnId": "2850",
+          "provider": "espn",
+          "identity": "espn:2850",
+          "name": "Congo DR",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rdc.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/rdc.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "4211",
+          "espnId": "4211",
+          "provider": "espn",
+          "identity": "espn:4211",
+          "name": "Uganda",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/uga.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/uga.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401918509",
+      "externalIds": {
+        "espn": "401918509",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-arg.1-401841588",
+        "providerMatchId": "401841588",
+        "date": "2026-10-02T22:15Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "11",
+          "espnId": "11",
+          "provider": "espn",
+          "identity": "espn:11",
+          "name": "Independiente",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/11.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "2975",
+          "espnId": "2975",
+          "provider": "espn",
+          "identity": "espn:2975",
+          "name": "Instituto (Córdoba)",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2975.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/2975.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:arg.1",
+        "name": "الدوري الأرجنتيني",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401841588",
+      "externalIds": {
+        "espn": "401841588",
+        "espn-league": "arg.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "fd-554948",
+        "providerMatchId": 554948,
         "date": "2026-10-02T23:00:00Z",
         "status": {
           "short": "NS"
@@ -25,6 +3905,8 @@
         "home": {
           "id": 1776,
           "footballDataId": 1776,
+          "provider": "football-data.org",
+          "identity": "football-data.org:1776",
           "name": "São Paulo FC",
           "logo": "https://crests.football-data.org/1776.png",
           "logoPath": "https://crests.football-data.org/1776.png",
@@ -34,6 +3916,8 @@
         "away": {
           "id": 6685,
           "footballDataId": 6685,
+          "provider": "football-data.org",
+          "identity": "football-data.org:6685",
           "name": "Santos FC",
           "logo": "https://crests.football-data.org/6685.png",
           "logoPath": "https://crests.football-data.org/6685.png",
@@ -50,6 +3934,7 @@
         "name": "Campeonato Brasileiro Série A",
         "logo": "https://crests.football-data.org/bsa.png"
       },
+      "competitionType": "domestic",
       "source": "football-data.org",
       "externalId": 554948,
       "externalIds": {
@@ -64,7 +3949,904 @@
     },
     {
       "fixture": {
-        "id": 554940,
+        "id": "espn-fifa.friendly-401913267",
+        "providerMatchId": "401913267",
+        "date": "2026-10-03T00:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "208",
+          "espnId": "208",
+          "provider": "espn",
+          "identity": "espn:208",
+          "name": "Colombia",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "210",
+          "espnId": "210",
+          "provider": "espn",
+          "identity": "espn:210",
+          "name": "Paraguay",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/par.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/par.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401913267",
+      "externalIds": {
+        "espn": "401913267",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-arg.1-401841594",
+        "providerMatchId": "401841594",
+        "date": "2026-10-03T00:30Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "5",
+          "espnId": "5",
+          "provider": "espn",
+          "identity": "espn:5",
+          "name": "Boca Juniors",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/5.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/5.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "20",
+          "espnId": "20",
+          "provider": "espn",
+          "identity": "espn:20",
+          "name": "Unión (Santa Fe)",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/20.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:arg.1",
+        "name": "الدوري الأرجنتيني",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401841594",
+      "externalIds": {
+        "espn": "401841594",
+        "espn-league": "arg.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-arg.1-401841587",
+        "providerMatchId": "401841587",
+        "date": "2026-10-03T00:30Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "9744",
+          "espnId": "9744",
+          "provider": "espn",
+          "identity": "espn:9744",
+          "name": "Independiente Rivadavia",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9744.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/9744.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "9",
+          "espnId": "9",
+          "provider": "espn",
+          "identity": "espn:9",
+          "name": "Gimnasia La Plata",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/9.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:arg.1",
+        "name": "الدوري الأرجنتيني",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401841587",
+      "externalIds": {
+        "espn": "401841587",
+        "espn-league": "arg.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-col.1-401878069",
+        "providerMatchId": "401878069",
+        "date": "2026-10-03T00:45Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "2672",
+          "espnId": "2672",
+          "provider": "espn",
+          "identity": "espn:2672",
+          "name": "Deportivo Cali",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2672.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/2672.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "9761",
+          "espnId": "9761",
+          "provider": "espn",
+          "identity": "espn:9761",
+          "name": "Alianza FC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9761.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/9761.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:col.1",
+        "name": "الدوري الكولومبي",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401878069",
+      "externalIds": {
+        "espn": "401878069",
+        "espn-league": "col.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401903233",
+        "providerMatchId": "401903233",
+        "date": "2026-10-03T14:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "4385",
+          "espnId": "4385",
+          "provider": "espn",
+          "identity": "espn:4385",
+          "name": "India",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ind.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/ind.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "205",
+          "espnId": "205",
+          "provider": "espn",
+          "identity": "espn:205",
+          "name": "Brazil",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401903233",
+      "externalIds": {
+        "espn": "401903233",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401917862",
+        "providerMatchId": "401917862",
+        "date": "2026-10-03T15:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "454",
+          "espnId": "454",
+          "provider": "espn",
+          "identity": "espn:454",
+          "name": "Russia",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rus.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/rus.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "6725",
+          "espnId": "6725",
+          "provider": "espn",
+          "identity": "espn:6725",
+          "name": "Namibia",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/nam.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/nam.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401917862",
+      "externalIds": {
+        "espn": "401917862",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-arg.1-401841593",
+        "providerMatchId": "401841593",
+        "date": "2026-10-03T17:45Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "8950",
+          "espnId": "8950",
+          "provider": "espn",
+          "identity": "espn:8950",
+          "name": "Defensa y Justicia",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/8950.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/8950.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "18",
+          "espnId": "18",
+          "provider": "espn",
+          "identity": "espn:18",
+          "name": "San Lorenzo",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/18.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:arg.1",
+        "name": "الدوري الأرجنتيني",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401841593",
+      "externalIds": {
+        "espn": "401841593",
+        "espn-league": "arg.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401900325",
+        "providerMatchId": "401900325",
+        "date": "2026-10-03T18:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "206",
+          "espnId": "206",
+          "provider": "espn",
+          "identity": "espn:206",
+          "name": "Canada",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "211",
+          "espnId": "211",
+          "provider": "espn",
+          "identity": "espn:211",
+          "name": "Peru",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/per.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/per.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401900325",
+      "externalIds": {
+        "espn": "401900325",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401912238",
+        "providerMatchId": "401912238",
+        "date": "2026-10-03T18:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "5782",
+          "espnId": "5782",
+          "provider": "espn",
+          "identity": "espn:5782",
+          "name": "Sri Lanka",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sri.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/sri.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "5775",
+          "espnId": "5775",
+          "provider": "espn",
+          "identity": "espn:5775",
+          "name": "Djibouti",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/dji.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/dji.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401912238",
+      "externalIds": {
+        "espn": "401912238",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401916228",
+        "providerMatchId": "401916228",
+        "date": "2026-10-03T18:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "659",
+          "espnId": "659",
+          "provider": "espn",
+          "identity": "espn:659",
+          "name": "Tunisia",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/tun.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/tun.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "2849",
+          "espnId": "2849",
+          "provider": "espn",
+          "identity": "espn:2849",
+          "name": "Mali",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mli.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/mli.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401916228",
+      "externalIds": {
+        "espn": "401916228",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-col.1-401877776",
+        "providerMatchId": "401877776",
+        "date": "2026-10-03T19:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "9762",
+          "espnId": "9762",
+          "provider": "espn",
+          "identity": "espn:9762",
+          "name": "Águilas Doradas",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9762.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/9762.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "10309",
+          "espnId": "10309",
+          "provider": "espn",
+          "identity": "espn:10309",
+          "name": "Jaguares de Córdoba",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/10309.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/10309.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:col.1",
+        "name": "الدوري الكولومبي",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401877776",
+      "externalIds": {
+        "espn": "401877776",
+        "espn-league": "col.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401917861",
+        "providerMatchId": "401917861",
+        "date": "2026-10-03T19:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "4789",
+          "espnId": "4789",
+          "provider": "espn",
+          "identity": "espn:4789",
+          "name": "Ivory Coast",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/civ.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/civ.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "656",
+          "espnId": "656",
+          "provider": "espn",
+          "identity": "espn:656",
+          "name": "Cameroon",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/crm.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/crm.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401917861",
+      "externalIds": {
+        "espn": "401917861",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-arg.1-401841596",
+        "providerMatchId": "401841596",
+        "date": "2026-10-03T20:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "9785",
+          "espnId": "9785",
+          "provider": "espn",
+          "identity": "espn:9785",
+          "name": "Atlético Tucumán",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9785.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/9785.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "10060",
+          "espnId": "10060",
+          "provider": "espn",
+          "identity": "espn:10060",
+          "name": "Barracas Central",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/10060.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/10060.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:arg.1",
+        "name": "الدوري الأرجنتيني",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401841596",
+      "externalIds": {
+        "espn": "401841596",
+        "espn-league": "arg.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-arg.1-401841586",
+        "providerMatchId": "401841586",
+        "date": "2026-10-03T20:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "14",
+          "espnId": "14",
+          "provider": "espn",
+          "identity": "espn:14",
+          "name": "Newell's Old Boys",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/14.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/14.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "12",
+          "espnId": "12",
+          "provider": "espn",
+          "identity": "espn:12",
+          "name": "Lanús",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/12.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/12.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:arg.1",
+        "name": "الدوري الأرجنتيني",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401841586",
+      "externalIds": {
+        "espn": "401841586",
+        "espn-league": "arg.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401921544",
+        "providerMatchId": "401921544",
+        "date": "2026-10-03T20:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "202",
+          "espnId": "202",
+          "provider": "espn",
+          "identity": "espn:202",
+          "name": "Argentina",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "2845",
+          "espnId": "2845",
+          "provider": "espn",
+          "identity": "espn:2845",
+          "name": "Burkina Faso",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bka.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/bka.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401921544",
+      "externalIds": {
+        "espn": "401921544",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-col.1-401877904",
+        "providerMatchId": "401877904",
+        "date": "2026-10-03T21:05Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "5489",
+          "espnId": "5489",
+          "provider": "espn",
+          "identity": "espn:5489",
+          "name": "Deportes Tolima",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/5489.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/5489.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "5480",
+          "espnId": "5480",
+          "provider": "espn",
+          "identity": "espn:5480",
+          "name": "Boyacá Chicó FC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/5480.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/5480.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:col.1",
+        "name": "الدوري الكولومبي",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401877904",
+      "externalIds": {
+        "espn": "401877904",
+        "espn-league": "col.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "fd-554940",
+        "providerMatchId": 554940,
         "date": "2026-10-03T21:30:00Z",
         "status": {
           "short": "NS"
@@ -74,6 +4856,8 @@
         "home": {
           "id": 1766,
           "footballDataId": 1766,
+          "provider": "football-data.org",
+          "identity": "football-data.org:1766",
           "name": "CA Mineiro",
           "logo": "https://crests.football-data.org/1766.png",
           "logoPath": "https://crests.football-data.org/1766.png",
@@ -83,6 +4867,8 @@
         "away": {
           "id": 4286,
           "footballDataId": 4286,
+          "provider": "football-data.org",
+          "identity": "football-data.org:4286",
           "name": "RB Bragantino",
           "logo": "https://crests.football-data.org/4286.png",
           "logoPath": "https://crests.football-data.org/4286.png",
@@ -99,6 +4885,7 @@
         "name": "Campeonato Brasileiro Série A",
         "logo": "https://crests.football-data.org/bsa.png"
       },
+      "competitionType": "domestic",
       "source": "football-data.org",
       "externalId": 554940,
       "externalIds": {
@@ -109,6 +4896,1238 @@
         "statistics": [],
         "updatedAt": null,
         "source": "football-data.org"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401905202",
+        "providerMatchId": "401905202",
+        "date": "2026-10-04T02:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "660",
+          "espnId": "660",
+          "provider": "espn",
+          "identity": "espn:660",
+          "name": "United States",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "203",
+          "espnId": "203",
+          "provider": "espn",
+          "identity": "espn:203",
+          "name": "Mexico",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401905202",
+      "externalIds": {
+        "espn": "401905202",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401922038",
+        "providerMatchId": "401922038",
+        "date": "2026-10-04T13:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "8601",
+          "espnId": "8601",
+          "provider": "espn",
+          "identity": "espn:8601",
+          "name": "Comoros",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/com.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/com.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "654",
+          "espnId": "654",
+          "provider": "espn",
+          "identity": "espn:654",
+          "name": "Senegal",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401922038",
+      "externalIds": {
+        "espn": "401922038",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401921339",
+        "providerMatchId": "401921339",
+        "date": "2026-10-04T14:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "6724",
+          "espnId": "6724",
+          "provider": "espn",
+          "identity": "espn:6724",
+          "name": "Kyrgyz Republic",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/kgz.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/kgz.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "4388",
+          "espnId": "4388",
+          "provider": "espn",
+          "identity": "espn:4388",
+          "name": "Lebanon",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/lib.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/lib.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401921339",
+      "externalIds": {
+        "espn": "401921339",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-arg.1-401841589",
+        "providerMatchId": "401841589",
+        "date": "2026-10-04T17:45Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "10",
+          "espnId": "10",
+          "provider": "espn",
+          "identity": "espn:10",
+          "name": "Huracán",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/10.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/10.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "9739",
+          "espnId": "9739",
+          "provider": "espn",
+          "identity": "espn:9739",
+          "name": "Aldosivi",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9739.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/9739.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:arg.1",
+        "name": "الدوري الأرجنتيني",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401841589",
+      "externalIds": {
+        "espn": "401841589",
+        "espn-league": "arg.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401916425",
+        "providerMatchId": "401916425",
+        "date": "2026-10-04T18:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "2620",
+          "espnId": "2620",
+          "provider": "espn",
+          "identity": "espn:2620",
+          "name": "Egypt",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "467",
+          "espnId": "467",
+          "provider": "espn",
+          "identity": "espn:467",
+          "name": "South Africa",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rsa.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/rsa.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401916425",
+      "externalIds": {
+        "espn": "401916425",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401922273",
+        "providerMatchId": "401922273",
+        "date": "2026-10-04T18:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "2869",
+          "espnId": "2869",
+          "provider": "espn",
+          "identity": "espn:2869",
+          "name": "Morocco",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "4469",
+          "espnId": "4469",
+          "provider": "espn",
+          "identity": "espn:4469",
+          "name": "Ghana",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/gha.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/gha.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401922273",
+      "externalIds": {
+        "espn": "401922273",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-col.1-401878051",
+        "providerMatchId": "401878051",
+        "date": "2026-10-04T19:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "5485",
+          "espnId": "5485",
+          "provider": "espn",
+          "identity": "espn:5485",
+          "name": "Deportivo Pasto",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/5485.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/5485.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "4928",
+          "espnId": "4928",
+          "provider": "espn",
+          "identity": "espn:4928",
+          "name": "Fortaleza CEIF",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4928.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/4928.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:col.1",
+        "name": "الدوري الكولومبي",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401878051",
+      "externalIds": {
+        "espn": "401878051",
+        "espn-league": "col.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-arg.1-401841584",
+        "providerMatchId": "401841584",
+        "date": "2026-10-04T20:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "19",
+          "espnId": "19",
+          "provider": "espn",
+          "identity": "espn:19",
+          "name": "Talleres (Córdoba)",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/19.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/19.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "4",
+          "espnId": "4",
+          "provider": "espn",
+          "identity": "espn:4",
+          "name": "Belgrano (Córdoba)",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/4.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:arg.1",
+        "name": "الدوري الأرجنتيني",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401841584",
+      "externalIds": {
+        "espn": "401841584",
+        "espn-league": "arg.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-col.1-401878066",
+        "providerMatchId": "401878066",
+        "date": "2026-10-04T21:05Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "6101",
+          "espnId": "6101",
+          "provider": "espn",
+          "identity": "espn:6101",
+          "name": "Cúcuta Deportivo",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6101.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/6101.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "5486",
+          "espnId": "5486",
+          "provider": "espn",
+          "identity": "espn:5486",
+          "name": "Deportivo Pereira",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/5486.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/5486.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:col.1",
+        "name": "الدوري الكولومبي",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401878066",
+      "externalIds": {
+        "espn": "401878066",
+        "espn-league": "col.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-arg.1-401841597",
+        "providerMatchId": "401841597",
+        "date": "2026-10-04T22:15Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "3",
+          "espnId": "3",
+          "provider": "espn",
+          "identity": "espn:3",
+          "name": "Argentinos Juniors",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "7767",
+          "espnId": "7767",
+          "provider": "espn",
+          "identity": "espn:7767",
+          "name": "Tigre",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7767.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/7767.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:arg.1",
+        "name": "الدوري الأرجنتيني",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401841597",
+      "externalIds": {
+        "espn": "401841597",
+        "espn-league": "arg.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401925303",
+        "providerMatchId": "401925303",
+        "date": "2026-10-04T22:30Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "204",
+          "espnId": "204",
+          "provider": "espn",
+          "identity": "espn:204",
+          "name": "Bolivia",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bol.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/bol.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "7368",
+          "espnId": "7368",
+          "provider": "espn",
+          "identity": "espn:7368",
+          "name": "Gambia",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/gam.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/gam.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401925303",
+      "externalIds": {
+        "espn": "401925303",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-col.1-401877900",
+        "providerMatchId": "401877900",
+        "date": "2026-10-04T23:10Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "6137",
+          "espnId": "6137",
+          "provider": "espn",
+          "identity": "espn:6137",
+          "name": "Atlético Bucaramanga",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6137.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/6137.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "4815",
+          "espnId": "4815",
+          "provider": "espn",
+          "identity": "espn:4815",
+          "name": "Atlético Junior",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4815.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/4815.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:col.1",
+        "name": "الدوري الكولومبي",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401877900",
+      "externalIds": {
+        "espn": "401877900",
+        "espn-league": "col.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-arg.1-401841591",
+        "providerMatchId": "401841591",
+        "date": "2026-10-05T00:30Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "19685",
+          "espnId": "19685",
+          "provider": "espn",
+          "identity": "espn:19685",
+          "name": "Estudiantes de Río Cuarto",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/19685.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/19685.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "15",
+          "espnId": "15",
+          "provider": "espn",
+          "identity": "espn:15",
+          "name": "Racing Club",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/15.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/15.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:arg.1",
+        "name": "الدوري الأرجنتيني",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401841591",
+      "externalIds": {
+        "espn": "401841591",
+        "espn-league": "arg.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-col.1-401878014",
+        "providerMatchId": "401878014",
+        "date": "2026-10-05T01:15Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "7915",
+          "espnId": "7915",
+          "provider": "espn",
+          "identity": "espn:7915",
+          "name": "Llaneros FC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7915.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/7915.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "8109",
+          "espnId": "8109",
+          "provider": "espn",
+          "identity": "espn:8109",
+          "name": "América de Cali",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/8109.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/8109.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:col.1",
+        "name": "الدوري الكولومبي",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401878014",
+      "externalIds": {
+        "espn": "401878014",
+        "espn-league": "col.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401912454",
+        "providerMatchId": "401912454",
+        "date": "2026-10-05T15:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "5534",
+          "espnId": "5534",
+          "provider": "espn",
+          "identity": "espn:5534",
+          "name": "Mauritius",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mri.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/mri.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "5782",
+          "espnId": "5782",
+          "provider": "espn",
+          "identity": "espn:5782",
+          "name": "Sri Lanka",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sri.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/sri.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401912454",
+      "externalIds": {
+        "espn": "401912454",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401918508",
+        "providerMatchId": "401918508",
+        "date": "2026-10-05T18:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "4211",
+          "espnId": "4211",
+          "provider": "espn",
+          "identity": "espn:4211",
+          "name": "Uganda",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/uga.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/uga.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "2850",
+          "espnId": "2850",
+          "provider": "espn",
+          "identity": "espn:2850",
+          "name": "Congo DR",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rdc.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/rdc.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401918508",
+      "externalIds": {
+        "espn": "401918508",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401896386",
+        "providerMatchId": "401896386",
+        "date": "2026-10-05T18:45Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "589",
+          "espnId": "589",
+          "provider": "espn",
+          "identity": "espn:589",
+          "name": "Liechtenstein",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/lie.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/lie.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "16721",
+          "espnId": "16721",
+          "provider": "espn",
+          "identity": "espn:16721",
+          "name": "Gibraltar",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/gib.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/gib.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401896386",
+      "externalIds": {
+        "espn": "401896386",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-arg.1-401841592",
+        "providerMatchId": "401841592",
+        "date": "2026-10-05T19:45Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "17702",
+          "espnId": "17702",
+          "provider": "espn",
+          "identity": "espn:17702",
+          "name": "Deportivo Riestra",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17702.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/17702.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "11989",
+          "espnId": "11989",
+          "provider": "espn",
+          "identity": "espn:11989",
+          "name": "Central Córdoba (Santiago del Estero)",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11989.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/11989.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:arg.1",
+        "name": "الدوري الأرجنتيني",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401841592",
+      "externalIds": {
+        "espn": "401841592",
+        "espn-league": "arg.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-arg.1-401841590",
+        "providerMatchId": "401841590",
+        "date": "2026-10-05T22:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "8",
+          "espnId": "8",
+          "provider": "espn",
+          "identity": "espn:8",
+          "name": "Estudiantes de La Plata",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/8.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/8.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "11972",
+          "espnId": "11972",
+          "provider": "espn",
+          "identity": "espn:11972",
+          "name": "Gimnasia (Mendoza)",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11972.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/11972.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:arg.1",
+        "name": "الدوري الأرجنتيني",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401841590",
+      "externalIds": {
+        "espn": "401841590",
+        "espn-league": "arg.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-arg.1-401841585",
+        "providerMatchId": "401841585",
+        "date": "2026-10-05T22:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "21",
+          "espnId": "21",
+          "provider": "espn",
+          "identity": "espn:21",
+          "name": "Vélez Sarsfield",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/21.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "7764",
+          "espnId": "7764",
+          "provider": "espn",
+          "identity": "espn:7764",
+          "name": "Platense",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7764.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/7764.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:arg.1",
+        "name": "الدوري الأرجنتيني",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401841585",
+      "externalIds": {
+        "espn": "401841585",
+        "espn-league": "arg.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-col.1-401877960",
+        "providerMatchId": "401877960",
+        "date": "2026-10-06T00:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "2690",
+          "espnId": "2690",
+          "provider": "espn",
+          "identity": "espn:2690",
+          "name": "Independiente Medellín",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2690.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/2690.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "5488",
+          "espnId": "5488",
+          "provider": "espn",
+          "identity": "espn:5488",
+          "name": "Independiente Santa Fe",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/5488.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/5488.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:col.1",
+        "name": "الدوري الكولومبي",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401877960",
+      "externalIds": {
+        "espn": "401877960",
+        "espn-league": "col.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-arg.1-401841595",
+        "providerMatchId": "401841595",
+        "date": "2026-10-06T00:15Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "235",
+          "espnId": "235",
+          "provider": "espn",
+          "identity": "espn:235",
+          "name": "Banfield",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/235.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/235.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "17",
+          "espnId": "17",
+          "provider": "espn",
+          "identity": "espn:17",
+          "name": "Rosario Central",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/17.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:arg.1",
+        "name": "الدوري الأرجنتيني",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401841595",
+      "externalIds": {
+        "espn": "401841595",
+        "espn-league": "arg.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
       }
     }
   ]
