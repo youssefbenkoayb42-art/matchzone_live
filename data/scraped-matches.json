@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-28T13:55:35.831Z",
+  "updatedAt": "2026-09-28T14:08:47.448Z",
   "source": "flashscore-feed",
   "leagueCount": 52,
   "matchCount": 116,
@@ -28,11 +28,14 @@
         "away": {
           "id": null,
           "name": "Millonarios",
-          "logo": "/teams/millonarios.png",
+          "logo": "/teams/thesportsdb_137617.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub legacy cache"
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
+          "logoPath": "/teams/thesportsdb_137617.png",
+          "teamIdentityId": "thesportsdb:137617",
+          "logoQuality": "fallback-id"
         }
       },
       "goals": {
@@ -877,22 +880,26 @@
         "home": {
           "id": "3",
           "name": "Amal Tiznit",
-          "logo": "/teams/flashscore_3.png",
+          "logo": "/teams/thesportsdb_153100.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/jsHyRaA6-YHmX153g.png",
           "logoFilename": "jsHyRaA6-YHmX153g.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
-          "logoPath": "/teams/flashscore_3.png",
-          "teamIdentityId": "flashscore:3"
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
+          "logoPath": "/teams/thesportsdb_153100.png",
+          "teamIdentityId": "thesportsdb:153100",
+          "logoQuality": "fallback-id"
         },
         "away": {
           "id": null,
           "name": "IR Tanger",
-          "logo": "/teams/irtanger.png",
+          "logo": "/teams/thesportsdb_136414.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub legacy cache"
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
+          "logoPath": "/teams/thesportsdb_136414.png",
+          "teamIdentityId": "thesportsdb:136414",
+          "logoQuality": "fallback-id"
         }
       },
       "goals": {
@@ -1272,22 +1279,26 @@
         "home": {
           "id": "0",
           "name": "Girona",
-          "logo": "/teams/flashscore_0.png",
+          "logo": "/teams/thesportsdb_134700.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/Iw3DqQoe-4297a0ys.png",
           "logoFilename": "Iw3DqQoe-4297a0ys.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
-          "logoPath": "/teams/flashscore_0.png",
-          "teamIdentityId": "flashscore:0"
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
+          "logoPath": "/teams/thesportsdb_134700.png",
+          "teamIdentityId": "thesportsdb:134700",
+          "logoQuality": "fallback-id"
         },
         "away": {
           "id": null,
           "name": "Albacete",
-          "logo": "/teams/albacete.png",
+          "logo": "/teams/thesportsdb_134232.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub legacy cache"
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
+          "logoPath": "/teams/thesportsdb_134232.png",
+          "teamIdentityId": "thesportsdb:134232",
+          "logoQuality": "fallback-id"
         }
       },
       "goals": {
@@ -2218,11 +2229,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/plaFSegT-AP3c0ay7.png",
           "logoFilename": "plaFSegT-AP3c0ay7.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "0",
           "logoPath": "/teams/flashscore_novorizontino.png",
           "teamIdentityId": "flashscore:novorizontino",
-          "flashscoreSlug": "novorizontino"
+          "flashscoreSlug": "novorizontino",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -2231,11 +2243,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:sao-bernardo",
           "flashscoreSlug": "sao-bernardo",
-          "logoPath": "/teams/flashscore_sao-bernardo.png"
+          "logoPath": "/teams/flashscore_sao-bernardo.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -3062,7 +3075,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:53:09.735Z",
+        "updatedAt": "2026-09-28T14:06:22.530Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_jPd1bs9U",
@@ -3086,11 +3099,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/hWxFjziC-hlPnAf3r.png",
           "logoFilename": "hWxFjziC-hlPnAf3r.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "0",
           "logoPath": "/teams/flashscore_vila-nova-fc.png",
           "teamIdentityId": "flashscore:vila-nova-fc",
-          "flashscoreSlug": "vila-nova-fc"
+          "flashscoreSlug": "vila-nova-fc",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -3099,11 +3113,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:londrina",
           "flashscoreSlug": "londrina",
-          "logoPath": "/teams/flashscore_londrina.png"
+          "logoPath": "/teams/flashscore_londrina.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -4004,7 +4019,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:53:12.078Z",
+        "updatedAt": "2026-09-28T14:06:24.846Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_AVG6RuwH",
@@ -4028,23 +4043,26 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-fezSJdFa.png",
           "logoFilename": "WrU0J0Qq-fezSJdFa.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "1",
           "logoPath": "/teams/flashscore_nautico.png",
           "teamIdentityId": "flashscore:nautico",
-          "flashscoreSlug": "nautico"
+          "flashscoreSlug": "nautico",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
           "name": "Sport Recife",
-          "logo": null,
+          "logo": "/teams/thesportsdb_136250.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub legacy cache",
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:sport-recife",
-          "flashscoreSlug": "sport-recife"
+          "teamIdentityId": "thesportsdb:136250",
+          "flashscoreSlug": "sport-recife",
+          "logoQuality": "fallback-id",
+          "logoPath": "/teams/thesportsdb_136250.png"
         }
       },
       "goals": {
@@ -4937,7 +4955,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:53:14.417Z",
+        "updatedAt": "2026-09-28T14:06:27.166Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_UiFjVNwh",
@@ -4961,23 +4979,26 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/6XnLr1hT-GxV9h1lf.png",
           "logoFilename": "6XnLr1hT-GxV9h1lf.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "2",
           "logoPath": "/teams/flashscore_operario-pr.png",
           "teamIdentityId": "flashscore:operario-pr",
-          "flashscoreSlug": "operario-pr"
+          "flashscoreSlug": "operario-pr",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
           "name": "Ceara",
-          "logo": null,
+          "logo": "/teams/thesportsdb_134744.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub legacy cache",
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:ceara",
-          "flashscoreSlug": "ceara"
+          "teamIdentityId": "thesportsdb:134744",
+          "flashscoreSlug": "ceara",
+          "logoQuality": "fallback-id",
+          "logoPath": "/teams/thesportsdb_134744.png"
         }
       },
       "goals": {
@@ -5910,7 +5931,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:53:16.759Z",
+        "updatedAt": "2026-09-28T14:06:29.490Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_hhVIGOOb",
@@ -5934,11 +5955,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/f7S2jqjC-2eGLPjs8.png",
           "logoFilename": "f7S2jqjC-2eGLPjs8.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "1",
           "logoPath": "/teams/flashscore_goias.png",
           "teamIdentityId": "flashscore:goias",
-          "flashscoreSlug": "goias"
+          "flashscoreSlug": "goias",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -5947,11 +5969,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:atletico-go",
           "flashscoreSlug": "atletico-go",
-          "logoPath": "/teams/flashscore_atletico-go.png"
+          "logoPath": "/teams/flashscore_atletico-go.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -6817,7 +6840,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:53:49.584Z",
+        "updatedAt": "2026-09-28T14:07:02.021Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_YVWYCtON",
@@ -6841,11 +6864,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/xpPcZWWH-hjn5AE5Q.png",
           "logoFilename": "xpPcZWWH-hjn5AE5Q.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "0",
           "logoPath": "/teams/flashscore_chico.png",
           "teamIdentityId": "flashscore:chico",
-          "flashscoreSlug": "chico"
+          "flashscoreSlug": "chico",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -6854,11 +6878,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:dep-pasto",
           "flashscoreSlug": "dep-pasto",
-          "logoPath": "/teams/flashscore_dep-pasto.png"
+          "logoPath": "/teams/flashscore_dep-pasto.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -7705,7 +7730,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:53:21.436Z",
+        "updatedAt": "2026-09-28T14:06:34.126Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_ljPGxhI0",
@@ -7729,11 +7754,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/pEjyC27k-0xyt4W2g.png",
           "logoFilename": "pEjyC27k-0xyt4W2g.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "3",
           "logoPath": "/teams/flashscore_once-caldas.png",
           "teamIdentityId": "flashscore:once-caldas",
-          "flashscoreSlug": "once-caldas"
+          "flashscoreSlug": "once-caldas",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -7742,11 +7768,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:bucaramanga",
           "flashscoreSlug": "bucaramanga",
-          "logoPath": "/teams/flashscore_bucaramanga.png"
+          "logoPath": "/teams/flashscore_bucaramanga.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -8712,7 +8739,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:53:23.809Z",
+        "updatedAt": "2026-09-28T14:06:36.477Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_M3NOzWnD",
@@ -8736,11 +8763,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/WWZlhzXH-nouesssi.png",
           "logoFilename": "WWZlhzXH-nouesssi.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "0",
           "logoPath": "/teams/flashscore_dep-pereira.png",
           "teamIdentityId": "flashscore:dep-pereira",
-          "flashscoreSlug": "dep-pereira"
+          "flashscoreSlug": "dep-pereira",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -8749,11 +8777,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:inter-bogota",
           "flashscoreSlug": "inter-bogota",
-          "logoPath": "/teams/flashscore_inter-bogota.png"
+          "logoPath": "/teams/flashscore_inter-bogota.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -9685,7 +9714,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:53:59.013Z",
+        "updatedAt": "2026-09-28T14:07:11.310Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_xEhjBCOP",
@@ -9709,23 +9738,26 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/Gnf7VRQq-MVPKYVvK.png",
           "logoFilename": "Gnf7VRQq-MVPKYVvK.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "2",
           "logoPath": "/teams/flashscore_atlante.png",
           "teamIdentityId": "flashscore:atlante",
-          "flashscoreSlug": "atlante"
+          "flashscoreSlug": "atlante",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
           "name": "Monterrey",
-          "logo": null,
+          "logo": "/teams/thesportsdb_134198.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub legacy cache",
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:monterrey",
-          "flashscoreSlug": "monterrey"
+          "teamIdentityId": "thesportsdb:134198",
+          "flashscoreSlug": "monterrey",
+          "logoQuality": "fallback-id",
+          "logoPath": "/teams/thesportsdb_134198.png"
         }
       },
       "goals": {
@@ -10671,7 +10703,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:53:28.500Z",
+        "updatedAt": "2026-09-28T14:06:41.153Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_l4I1W5D6",
@@ -10695,23 +10727,26 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/CxOLsUWH-OtymR74A.png",
           "logoFilename": "CxOLsUWH-OtymR74A.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "3",
           "logoPath": "/teams/flashscore_club-tijuana.png",
           "teamIdentityId": "flashscore:club-tijuana",
-          "flashscoreSlug": "club-tijuana"
+          "flashscoreSlug": "club-tijuana",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
           "name": "Atlas",
-          "logo": null,
+          "logo": "/teams/thesportsdb_134195.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub legacy cache",
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:atlas",
-          "flashscoreSlug": "atlas"
+          "teamIdentityId": "thesportsdb:134195",
+          "flashscoreSlug": "atlas",
+          "logoQuality": "fallback-id",
+          "logoPath": "/teams/thesportsdb_134195.png"
         }
       },
       "goals": {
@@ -11590,7 +11625,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:53:30.846Z",
+        "updatedAt": "2026-09-28T14:06:43.472Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_MHG9UqrJ",
@@ -11614,11 +11649,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/4CAs0Boe-W6bUbbPE.png",
           "logoFilename": "4CAs0Boe-W6bUbbPE.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "1",
           "logoPath": "/teams/flashscore_union-touarga.png",
           "teamIdentityId": "flashscore:union-touarga",
-          "flashscoreSlug": "union-touarga"
+          "flashscoreSlug": "union-touarga",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -11627,11 +11663,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:fus-rabat",
           "flashscoreSlug": "fus-rabat",
-          "logoPath": "/teams/flashscore_fus-rabat.png"
+          "logoPath": "/teams/flashscore_fus-rabat.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -11992,7 +12029,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:53:33.215Z",
+        "updatedAt": "2026-09-28T14:06:45.806Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_88o4wcDb",
@@ -12016,11 +12053,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/r7LKEBle-zLWTcQkh.png",
           "logoFilename": "r7LKEBle-zLWTcQkh.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "6",
           "logoPath": "/teams/flashscore_difaa-el-jadidi.png",
           "teamIdentityId": "flashscore:difaa-el-jadidi",
-          "flashscoreSlug": "difaa-el-jadidi"
+          "flashscoreSlug": "difaa-el-jadidi",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -12033,7 +12071,8 @@
           "flashscoreId": null,
           "teamIdentityId": "flashscore:cod-meknes",
           "flashscoreSlug": "cod-meknes",
-          "logoPath": "/teams/flashscore_cod-meknes.png"
+          "logoPath": "/teams/flashscore_cod-meknes.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -12485,7 +12524,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:53:35.551Z",
+        "updatedAt": "2026-09-28T14:06:48.144Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_vZ4vNyTH",
@@ -12509,11 +12548,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/CC9Gx2lC-Gtyfdpte.png",
           "logoFilename": "CC9Gx2lC-Gtyfdpte.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "3",
           "logoPath": "/teams/flashscore_wydad-athletic.png",
           "teamIdentityId": "flashscore:wydad-athletic",
-          "flashscoreSlug": "wydad-athletic"
+          "flashscoreSlug": "wydad-athletic",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -12526,7 +12566,8 @@
           "flashscoreId": null,
           "teamIdentityId": "flashscore:widad-temara",
           "flashscoreSlug": "widad-temara",
-          "logoPath": "/teams/flashscore_widad-temara.png"
+          "logoPath": "/teams/flashscore_widad-temara.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -12919,7 +12960,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:54:20.109Z",
+        "updatedAt": "2026-09-28T14:07:32.269Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_pW7nLFcU",
@@ -12943,24 +12984,26 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/MwK5O35k-U144u08h.png",
           "logoFilename": "MwK5O35k-U144u08h.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "1",
           "logoPath": "/teams/flashscore_ad-ceuta.png",
           "teamIdentityId": "flashscore:ad-ceuta",
-          "flashscoreSlug": "ad-ceuta"
+          "flashscoreSlug": "ad-ceuta",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
           "name": "Real Sociedad B",
-          "logo": "/teams/flashscore_real-sociedad.png",
+          "logo": "/teams/thesportsdb_138160.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:real-sociedad",
-          "flashscoreSlug": "real-sociedad",
-          "logoPath": "/teams/flashscore_real-sociedad.png"
+          "teamIdentityId": "thesportsdb:138160",
+          "flashscoreSlug": null,
+          "logoPath": "/teams/thesportsdb_138160.png",
+          "logoQuality": "fallback-id"
         }
       },
       "goals": {
@@ -13985,7 +14028,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:53:40.233Z",
+        "updatedAt": "2026-09-28T14:06:52.768Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_rB3DoAi3",
@@ -14009,23 +14052,26 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/SMiBGH8k-p6WBruc4.png",
           "logoFilename": "SMiBGH8k-p6WBruc4.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "3",
           "logoPath": "/teams/flashscore_granada-cf.png",
           "teamIdentityId": "flashscore:granada-cf",
-          "flashscoreSlug": "granada-cf"
+          "flashscoreSlug": "granada-cf",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
           "name": "Andorra",
-          "logo": null,
+          "logo": "/teams/thesportsdb_136463.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub legacy cache",
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:fc-andorra",
-          "flashscoreSlug": "fc-andorra"
+          "teamIdentityId": "thesportsdb:136463",
+          "flashscoreSlug": "fc-andorra",
+          "logoQuality": "fallback-id",
+          "logoPath": "/teams/thesportsdb_136463.png"
         }
       },
       "goals": {
@@ -15043,7 +15089,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:53:42.571Z",
+        "updatedAt": "2026-09-28T14:06:55.086Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_UeabUzLc",
@@ -15063,15 +15109,16 @@
         "home": {
           "id": "1",
           "name": "Celta Vigo B",
-          "logo": "/teams/flashscore_celta-vigo.png",
+          "logo": null,
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/vo9MFPBN-ChrYvuzD.png",
           "logoFilename": "vo9MFPBN-ChrYvuzD.png",
           "logoSide": "home",
           "logoSource": "GitHub identity registry (locked)",
-          "flashscoreId": "1",
+          "flashscoreId": null,
           "logoPath": "/teams/flashscore_celta-vigo.png",
-          "teamIdentityId": "flashscore:celta-vigo",
-          "flashscoreSlug": "celta-vigo"
+          "teamIdentityId": null,
+          "flashscoreSlug": null,
+          "logoQuality": "rejected"
         },
         "away": {
           "id": null,
@@ -15080,11 +15127,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:sabadell",
           "flashscoreSlug": "sabadell",
-          "logoPath": "/teams/flashscore_sabadell.png"
+          "logoPath": "/teams/flashscore_sabadell.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -16003,7 +16051,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:53:44.909Z",
+        "updatedAt": "2026-09-28T14:06:57.392Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_G4BRN6ad",
@@ -16027,11 +16075,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/rPA6TR86-EPWyZtpb.png",
           "logoFilename": "rPA6TR86-EPWyZtpb.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "1",
           "logoPath": "/teams/flashscore_tenerife.png",
           "teamIdentityId": "flashscore:tenerife",
-          "flashscoreSlug": "tenerife"
+          "flashscoreSlug": "tenerife",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -16040,11 +16089,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:cadiz",
           "flashscoreSlug": "cadiz",
-          "logoPath": "/teams/flashscore_cadiz.png"
+          "logoPath": "/teams/flashscore_cadiz.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -16915,7 +16965,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:53:47.247Z",
+        "updatedAt": "2026-09-28T14:06:59.702Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_vs9QuuLs",
@@ -16939,11 +16989,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/zyP05jWH-tOGtU4eT.png",
           "logoFilename": "zyP05jWH-tOGtU4eT.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "0",
           "logoPath": "/teams/flashscore_criciuma.png",
           "teamIdentityId": "flashscore:criciuma",
-          "flashscoreSlug": "criciuma"
+          "flashscoreSlug": "criciuma",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -16952,11 +17003,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:avai",
           "flashscoreSlug": "avai",
-          "logoPath": "/teams/flashscore_avai.png"
+          "logoPath": "/teams/flashscore_avai.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -17866,7 +17918,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:53:51.986Z",
+        "updatedAt": "2026-09-28T14:07:04.373Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_4EN47Koo",
@@ -17890,11 +17942,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/UudlC76k-CWl52SGk.png",
           "logoFilename": "UudlC76k-CWl52SGk.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "0",
           "logoPath": "/teams/flashscore_crb.png",
           "teamIdentityId": "flashscore:crb",
-          "flashscoreSlug": "crb"
+          "flashscoreSlug": "crb",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -17903,11 +17956,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:cuiaba",
           "flashscoreSlug": "cuiaba",
-          "logoPath": "/teams/flashscore_cuiaba.png"
+          "logoPath": "/teams/flashscore_cuiaba.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -18825,7 +18879,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:53:54.323Z",
+        "updatedAt": "2026-09-28T14:07:06.679Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_25DbT184",
@@ -18849,11 +18903,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/WWeFYMPq-AmIcMWyl.png",
           "logoFilename": "WWeFYMPq-AmIcMWyl.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "2",
           "logoPath": "/teams/flashscore_fortaleza.png",
           "teamIdentityId": "flashscore:fortaleza",
-          "flashscoreSlug": "fortaleza"
+          "flashscoreSlug": "fortaleza",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -18862,11 +18917,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:athletic-club",
           "flashscoreSlug": "athletic-club",
-          "logoPath": "/teams/flashscore_athletic-club.png"
+          "logoPath": "/teams/flashscore_athletic-club.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -19713,7 +19769,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:55:14.003Z",
+        "updatedAt": "2026-09-28T14:08:25.635Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_0IYQE2gB",
@@ -19737,11 +19793,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/dtGebzCN-hjn5AE5Q.png",
           "logoFilename": "dtGebzCN-hjn5AE5Q.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "1",
           "logoPath": "/teams/flashscore_cucuta.png",
           "teamIdentityId": "flashscore:cucuta",
-          "flashscoreSlug": "cucuta"
+          "flashscoreSlug": "cucuta",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -19750,11 +19807,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:llaneros",
           "flashscoreSlug": "llaneros",
-          "logoPath": "/teams/flashscore_llaneros.png"
+          "logoPath": "/teams/flashscore_llaneros.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -20718,7 +20776,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:54:01.361Z",
+        "updatedAt": "2026-09-28T14:07:13.625Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_tQL8vEml",
@@ -20742,11 +20800,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/CxEu5jjC-WvCEcmg7.png",
           "logoFilename": "CxEu5jjC-WvCEcmg7.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "0",
           "logoPath": "/teams/flashscore_junior.png",
           "teamIdentityId": "flashscore:junior",
-          "flashscoreSlug": "junior"
+          "flashscoreSlug": "junior",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -20755,11 +20814,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:ind-medellin",
           "flashscoreSlug": "ind-medellin",
-          "logoPath": "/teams/flashscore_ind-medellin.png"
+          "logoPath": "/teams/flashscore_ind-medellin.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -21711,7 +21771,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:54:03.698Z",
+        "updatedAt": "2026-09-28T14:07:15.946Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_vN2dkV16",
@@ -21735,23 +21795,26 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/0Cg5eagT-jqTIQW5H.png",
           "logoFilename": "0Cg5eagT-jqTIQW5H.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "2",
           "logoPath": "/teams/flashscore_jaguares-de-cordoba.png",
           "teamIdentityId": "flashscore:jaguares-de-cordoba",
-          "flashscoreSlug": "jaguares-de-cordoba"
+          "flashscoreSlug": "jaguares-de-cordoba",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
           "name": "Alianza",
-          "logo": null,
+          "logo": "/teams/thesportsdb_139733.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub legacy cache",
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:alianza",
-          "flashscoreSlug": "alianza"
+          "teamIdentityId": "thesportsdb:139733",
+          "flashscoreSlug": "alianza",
+          "logoQuality": "fallback-id",
+          "logoPath": "/teams/thesportsdb_139733.png"
         }
       },
       "goals": {
@@ -22676,7 +22739,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:55:16.342Z",
+        "updatedAt": "2026-09-28T14:08:27.943Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_S0AAbZvK",
@@ -22700,23 +22763,26 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/KAF9lqRq-0pHVJYjM.png",
           "logoFilename": "KAF9lqRq-0pHVJYjM.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "3",
           "logoPath": "/teams/flashscore_cruz-azul.png",
           "teamIdentityId": "flashscore:cruz-azul",
-          "flashscoreSlug": "cruz-azul"
+          "flashscoreSlug": "cruz-azul",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
           "name": "Toluca",
-          "logo": null,
+          "logo": "/teams/thesportsdb_134204.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub legacy cache",
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:toluca",
-          "flashscoreSlug": "toluca"
+          "teamIdentityId": "thesportsdb:134204",
+          "flashscoreSlug": "toluca",
+          "logoQuality": "fallback-id",
+          "logoPath": "/teams/thesportsdb_134204.png"
         }
       },
       "goals": {
@@ -23688,7 +23754,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:54:08.383Z",
+        "updatedAt": "2026-09-28T14:07:20.655Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_vydsqqcC",
@@ -23712,23 +23778,26 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/n9R8QrCN-0rbG5js3.png",
           "logoFilename": "n9R8QrCN-0rbG5js3.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "2",
           "logoPath": "/teams/flashscore_guadalajara-chivas.png",
           "teamIdentityId": "flashscore:guadalajara-chivas",
-          "flashscoreSlug": "guadalajara-chivas"
+          "flashscoreSlug": "guadalajara-chivas",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
           "name": "Queretaro",
-          "logo": null,
+          "logo": "/teams/thesportsdb_134194.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub legacy cache",
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:queretaro",
-          "flashscoreSlug": "queretaro"
+          "teamIdentityId": "thesportsdb:134194",
+          "flashscoreSlug": "queretaro",
+          "logoQuality": "fallback-id",
+          "logoPath": "/teams/thesportsdb_134194.png"
         }
       },
       "goals": {
@@ -24602,7 +24671,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:54:10.722Z",
+        "updatedAt": "2026-09-28T14:07:22.961Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_SE3ehmzQ",
@@ -24626,23 +24695,26 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/UcvERb5k-zFZbB1JF.png",
           "logoFilename": "UcvERb5k-zFZbB1JF.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "0",
           "logoPath": "/teams/flashscore_santos-laguna.png",
           "teamIdentityId": "flashscore:santos-laguna",
-          "flashscoreSlug": "santos-laguna"
+          "flashscoreSlug": "santos-laguna",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
           "name": "Pachuca",
-          "logo": null,
+          "logo": "/teams/thesportsdb_134191.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub legacy cache",
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:pachuca",
-          "flashscoreSlug": "pachuca"
+          "teamIdentityId": "thesportsdb:134191",
+          "flashscoreSlug": "pachuca",
+          "logoQuality": "fallback-id",
+          "logoPath": "/teams/thesportsdb_134191.png"
         }
       },
       "goals": {
@@ -25542,7 +25614,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:54:13.060Z",
+        "updatedAt": "2026-09-28T14:07:25.296Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_bcfRnRcm",
@@ -25566,23 +25638,26 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/dlj3qbQq-W6vdbCVa.png",
           "logoFilename": "dlj3qbQq-W6vdbCVa.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "0",
           "logoPath": "/teams/flashscore_tigres-uanl.png",
           "teamIdentityId": "flashscore:tigres-uanl",
-          "flashscoreSlug": "tigres-uanl"
+          "flashscoreSlug": "tigres-uanl",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
           "name": "Puebla",
-          "logo": null,
+          "logo": "/teams/thesportsdb_134199.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub legacy cache",
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:puebla",
-          "flashscoreSlug": "puebla"
+          "teamIdentityId": "thesportsdb:134199",
+          "flashscoreSlug": "puebla",
+          "logoQuality": "fallback-id",
+          "logoPath": "/teams/thesportsdb_134199.png"
         }
       },
       "goals": {
@@ -26402,7 +26477,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:54:15.433Z",
+        "updatedAt": "2026-09-28T14:07:27.649Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_WAhZp5Sa",
@@ -26426,11 +26501,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/YD3Bg1Qq-dG08RUsN.png",
           "logoFilename": "YD3Bg1Qq-dG08RUsN.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "3",
           "logoPath": "/teams/flashscore_unam-pumas.png",
           "teamIdentityId": "flashscore:unam-pumas",
-          "flashscoreSlug": "unam-pumas"
+          "flashscoreSlug": "unam-pumas",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -26441,8 +26517,9 @@
           "logoSide": "away",
           "logoSource": "GitHub legacy cache",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:atletico-san-luis",
-          "flashscoreSlug": "atletico-san-luis"
+          "teamIdentityId": null,
+          "flashscoreSlug": null,
+          "logoQuality": "rejected"
         }
       },
       "goals": {
@@ -27356,7 +27433,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:54:17.771Z",
+        "updatedAt": "2026-09-28T14:07:29.955Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_WrElsNRO",
@@ -27380,11 +27457,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/0zS1aRRq-xExOnmQQ.png",
           "logoFilename": "0zS1aRRq-xExOnmQQ.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "0",
           "logoPath": "/teams/flashscore_moghreb-tetouan.png",
           "teamIdentityId": "flashscore:moghreb-tetouan",
-          "flashscoreSlug": "moghreb-tetouan"
+          "flashscoreSlug": "moghreb-tetouan",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -27393,11 +27471,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:berkane",
           "flashscoreSlug": "berkane",
-          "logoPath": "/teams/flashscore_berkane.png"
+          "logoPath": "/teams/flashscore_berkane.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -27698,7 +27777,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:54:22.446Z",
+        "updatedAt": "2026-09-28T14:07:34.574Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_nLBqJSRq",
@@ -27722,11 +27801,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/pGJqy86k-63LcsWgs.png",
           "logoFilename": "pGJqy86k-63LcsWgs.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "1",
           "logoPath": "/teams/flashscore_maghreb-fez.png",
           "teamIdentityId": "flashscore:maghreb-fez",
-          "flashscoreSlug": "maghreb-fez"
+          "flashscoreSlug": "maghreb-fez",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -27738,7 +27818,8 @@
           "logoSource": "GitHub legacy cache",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:renaissance-zemamra",
-          "flashscoreSlug": "renaissance-zemamra"
+          "flashscoreSlug": "renaissance-zemamra",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -28092,7 +28173,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:54:24.786Z",
+        "updatedAt": "2026-09-28T14:07:36.885Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_W81WOcb5",
@@ -28116,11 +28197,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/p0XoC4Rq-63LcsWgs.png",
           "logoFilename": "p0XoC4Rq-63LcsWgs.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "3",
           "logoPath": "/teams/flashscore_kawkab-marrakech.png",
           "teamIdentityId": "flashscore:kawkab-marrakech",
-          "flashscoreSlug": "kawkab-marrakech"
+          "flashscoreSlug": "kawkab-marrakech",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -28129,11 +28211,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:hassania-agadir",
           "flashscoreSlug": "hassania-agadir",
-          "logoPath": "/teams/flashscore_hassania-agadir.png"
+          "logoPath": "/teams/flashscore_hassania-agadir.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -28512,7 +28595,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:55:28.087Z",
+        "updatedAt": "2026-09-28T14:08:39.500Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_GYlCyyrB",
@@ -28536,11 +28619,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/A36AKtA6-U904kONG.png",
           "logoFilename": "A36AKtA6-U904kONG.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "0",
           "logoPath": "/teams/flashscore_gangwon.png",
           "teamIdentityId": "flashscore:gangwon",
-          "flashscoreSlug": "gangwon"
+          "flashscoreSlug": "gangwon",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -28552,7 +28636,8 @@
           "logoSource": "GitHub legacy cache",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:incheon",
-          "flashscoreSlug": "incheon"
+          "flashscoreSlug": "incheon",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -28952,7 +29037,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:54:29.463Z",
+        "updatedAt": "2026-09-28T14:07:41.525Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_08COfwKq",
@@ -28976,11 +29061,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/fTto7LkC-4YF9PAyB.png",
           "logoFilename": "fTto7LkC-4YF9PAyB.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "1",
           "logoPath": "/teams/flashscore_valladolid.png",
           "teamIdentityId": "flashscore:valladolid",
-          "flashscoreSlug": "valladolid"
+          "flashscoreSlug": "valladolid",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -28989,11 +29075,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:cordoba",
           "flashscoreSlug": "cordoba",
-          "logoPath": "/teams/flashscore_cordoba.png"
+          "logoPath": "/teams/flashscore_cordoba.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -29972,7 +30059,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:54:31.801Z",
+        "updatedAt": "2026-09-28T14:07:43.832Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_WlRXwJkf",
@@ -29996,11 +30083,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/Eeg4cBjC-nDyT2xMM.png",
           "logoFilename": "Eeg4cBjC-nDyT2xMM.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "1",
           "logoPath": "/teams/flashscore_mallorca.png",
           "teamIdentityId": "flashscore:mallorca",
-          "flashscoreSlug": "mallorca"
+          "flashscoreSlug": "mallorca",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -30009,11 +30097,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:almeria",
           "flashscoreSlug": "almeria",
-          "logoPath": "/teams/flashscore_almeria.png"
+          "logoPath": "/teams/flashscore_almeria.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -30960,7 +31049,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:54:34.159Z",
+        "updatedAt": "2026-09-28T14:07:46.174Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_G4V8Nc5D",
@@ -30984,11 +31073,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/jPhpmDU0-IoNgvMPR.png",
           "logoFilename": "jPhpmDU0-IoNgvMPR.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "0",
           "logoPath": "/teams/flashscore_burgos-cf.png",
           "teamIdentityId": "flashscore:burgos-cf",
-          "flashscoreSlug": "burgos-cf"
+          "flashscoreSlug": "burgos-cf",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -30997,11 +31087,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:eldense",
           "flashscoreSlug": "eldense",
-          "logoPath": "/teams/flashscore_eldense.png"
+          "logoPath": "/teams/flashscore_eldense.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -31880,7 +31971,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:54:36.497Z",
+        "updatedAt": "2026-09-28T14:07:48.484Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_riDJPSUq",
@@ -31904,11 +31995,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/n3rngiU0-d6gaf9ua.png",
           "logoFilename": "n3rngiU0-d6gaf9ua.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "2",
           "logoPath": "/teams/flashscore_eibar.png",
           "teamIdentityId": "flashscore:eibar",
-          "flashscoreSlug": "eibar"
+          "flashscoreSlug": "eibar",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -31917,11 +32009,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:las-palmas",
           "flashscoreSlug": "las-palmas",
-          "logoPath": "/teams/flashscore_las-palmas.png"
+          "logoPath": "/teams/flashscore_las-palmas.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -32907,7 +33000,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:54:38.851Z",
+        "updatedAt": "2026-09-28T14:07:50.791Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_jy7LqlMF",
@@ -32931,11 +33024,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/ziVpaDjC-IDZgZhUt.png",
           "logoFilename": "ziVpaDjC-IDZgZhUt.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "0",
           "logoPath": "/teams/flashscore_real-oviedo.png",
           "teamIdentityId": "flashscore:real-oviedo",
-          "flashscoreSlug": "real-oviedo"
+          "flashscoreSlug": "real-oviedo",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -32944,11 +33038,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:gijon",
           "flashscoreSlug": "gijon",
-          "logoPath": "/teams/flashscore_gijon.png"
+          "logoPath": "/teams/flashscore_gijon.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -33938,7 +34033,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:54:41.220Z",
+        "updatedAt": "2026-09-28T14:07:53.158Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_8bIfo1cK",
@@ -33958,27 +34053,30 @@
         "home": {
           "id": "2",
           "name": "Atlanta Utd",
-          "logo": "/teams/flashscore_atlanta-united.png",
+          "logo": null,
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/0GgDTRle-GxTXAzv3.png",
           "logoFilename": "0GgDTRle-GxTXAzv3.png",
           "logoSide": "home",
           "logoSource": "GitHub identity registry (locked)",
-          "flashscoreId": "2",
+          "flashscoreId": null,
           "logoPath": "/teams/flashscore_atlanta-united.png",
-          "teamIdentityId": "flashscore:atlanta-united",
-          "flashscoreSlug": "atlanta-united"
+          "teamIdentityId": null,
+          "flashscoreSlug": null,
+          "logoQuality": "rejected"
         },
         "away": {
           "id": null,
           "name": "New York City",
-          "logo": null,
+          "logo": "/teams/thesportsdb_134630.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub legacy cache",
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:new-york-city",
-          "flashscoreSlug": "new-york-city"
+          "teamIdentityId": "thesportsdb:134630",
+          "flashscoreSlug": "new-york-city",
+          "logoQuality": "fallback-id",
+          "logoPath": "/teams/thesportsdb_134630.png"
         }
       },
       "goals": {
@@ -34832,7 +34930,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:54:43.557Z",
+        "updatedAt": "2026-09-28T14:07:55.465Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_h8OvjEB6",
@@ -34856,23 +34954,26 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/vwHVLET0-hfMSf4LN.png",
           "logoFilename": "vwHVLET0-hfMSf4LN.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "1",
           "logoPath": "/teams/flashscore_cf-montreal.png",
           "teamIdentityId": "flashscore:cf-montreal",
-          "flashscoreSlug": "cf-montreal"
+          "flashscoreSlug": "cf-montreal",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
           "name": "FC Cincinnati",
-          "logo": null,
+          "logo": "/teams/thesportsdb_136688.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub legacy cache",
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:fc-cincinnati",
-          "flashscoreSlug": "fc-cincinnati"
+          "teamIdentityId": "thesportsdb:136688",
+          "flashscoreSlug": "fc-cincinnati",
+          "logoQuality": "fallback-id",
+          "logoPath": "/teams/thesportsdb_136688.png"
         }
       },
       "goals": {
@@ -35766,7 +35867,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:54:45.894Z",
+        "updatedAt": "2026-09-28T14:07:57.775Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_YFRRxgDM",
@@ -35790,23 +35891,26 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/YHLXh45k-0lw00xPr.png",
           "logoFilename": "YHLXh45k-0lw00xPr.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "1",
           "logoPath": "/teams/flashscore_charlotte-fc.png",
           "teamIdentityId": "flashscore:charlotte-fc",
-          "flashscoreSlug": "charlotte-fc"
+          "flashscoreSlug": "charlotte-fc",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
           "name": "Chicago Fire",
-          "logo": null,
+          "logo": "/teams/thesportsdb_134154.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub legacy cache",
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:chicago-fire",
-          "flashscoreSlug": "chicago-fire"
+          "teamIdentityId": "thesportsdb:134154",
+          "flashscoreSlug": "chicago-fire",
+          "logoQuality": "fallback-id",
+          "logoPath": "/teams/thesportsdb_134154.png"
         }
       },
       "goals": {
@@ -36753,7 +36857,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:54:48.232Z",
+        "updatedAt": "2026-09-28T14:08:00.102Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_ENCmlhtJ",
@@ -36777,23 +36881,26 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/hQpmY0Qq-AFpqya1j.png",
           "logoFilename": "hQpmY0Qq-AFpqya1j.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "2",
           "logoPath": "/teams/flashscore_philadelphia-union.png",
           "teamIdentityId": "flashscore:philadelphia-union",
-          "flashscoreSlug": "philadelphia-union"
+          "flashscoreSlug": "philadelphia-union",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
           "name": "Orlando City",
-          "logo": null,
+          "logo": "/teams/thesportsdb_135292.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub legacy cache",
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:orlando-city",
-          "flashscoreSlug": "orlando-city"
+          "teamIdentityId": "thesportsdb:135292",
+          "flashscoreSlug": "orlando-city",
+          "logoQuality": "fallback-id",
+          "logoPath": "/teams/thesportsdb_135292.png"
         }
       },
       "goals": {
@@ -37779,7 +37886,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:54:50.570Z",
+        "updatedAt": "2026-09-28T14:08:02.409Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_QFe56Zem",
@@ -37803,23 +37910,26 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/hzGDoHUH-b7NYdTs6.png",
           "logoFilename": "hzGDoHUH-b7NYdTs6.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "3",
           "logoPath": "/teams/flashscore_austin-fc.png",
           "teamIdentityId": "flashscore:austin-fc",
-          "flashscoreSlug": "austin-fc"
+          "flashscoreSlug": "austin-fc",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
           "name": "San Diego FC",
-          "logo": null,
+          "logo": "/teams/thesportsdb_150261.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub legacy cache",
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:san-diego-fc",
-          "flashscoreSlug": "san-diego-fc"
+          "teamIdentityId": "thesportsdb:150261",
+          "flashscoreSlug": "san-diego-fc",
+          "logoQuality": "fallback-id",
+          "logoPath": "/teams/thesportsdb_150261.png"
         }
       },
       "goals": {
@@ -38714,7 +38824,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:54:52.908Z",
+        "updatedAt": "2026-09-28T14:08:04.721Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_bTgD4DQa",
@@ -38738,23 +38848,26 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/jHAzzjXH-h6S6xFbF.png",
           "logoFilename": "jHAzzjXH-h6S6xFbF.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "0",
           "logoPath": "/teams/flashscore_fc-dallas.png",
           "teamIdentityId": "flashscore:fc-dallas",
-          "flashscoreSlug": "fc-dallas"
+          "flashscoreSlug": "fc-dallas",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
           "name": "Los Angeles FC",
-          "logo": null,
+          "logo": "/teams/thesportsdb_136050.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub legacy cache",
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:los-angeles-fc",
-          "flashscoreSlug": "los-angeles-fc"
+          "teamIdentityId": "thesportsdb:136050",
+          "flashscoreSlug": "los-angeles-fc",
+          "logoQuality": "fallback-id",
+          "logoPath": "/teams/thesportsdb_136050.png"
         }
       },
       "goals": {
@@ -39648,7 +39761,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:54:55.245Z",
+        "updatedAt": "2026-09-28T14:08:07.028Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_femM2ieC",
@@ -39672,23 +39785,26 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/AVAdquCN-88w2wUnG.png",
           "logoFilename": "AVAdquCN-88w2wUnG.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "2",
           "logoPath": "/teams/flashscore_houston-dynamo.png",
           "teamIdentityId": "flashscore:houston-dynamo",
-          "flashscoreSlug": "houston-dynamo"
+          "flashscoreSlug": "houston-dynamo",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
           "name": "Sporting Kansas City",
-          "logo": null,
+          "logo": "/teams/thesportsdb_134143.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub legacy cache",
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:sporting-kansas-city",
-          "flashscoreSlug": "sporting-kansas-city"
+          "teamIdentityId": "thesportsdb:134143",
+          "flashscoreSlug": "sporting-kansas-city",
+          "logoQuality": "fallback-id",
+          "logoPath": "/teams/thesportsdb_134143.png"
         }
       },
       "goals": {
@@ -40607,7 +40723,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:54:57.592Z",
+        "updatedAt": "2026-09-28T14:08:09.426Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_0hjU0VPO",
@@ -40631,23 +40747,26 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/0n9oUmiT-tnwDCzLD.png",
           "logoFilename": "0n9oUmiT-tnwDCzLD.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "0",
           "logoPath": "/teams/flashscore_nashville-sc.png",
           "teamIdentityId": "flashscore:nashville-sc",
-          "flashscoreSlug": "nashville-sc"
+          "flashscoreSlug": "nashville-sc",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
           "name": "Toronto FC",
-          "logo": null,
+          "logo": "/teams/thesportsdb_134148.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub legacy cache",
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:toronto-fc",
-          "flashscoreSlug": "toronto-fc"
+          "teamIdentityId": "thesportsdb:134148",
+          "flashscoreSlug": "toronto-fc",
+          "logoQuality": "fallback-id",
+          "logoPath": "/teams/thesportsdb_134148.png"
         }
       },
       "goals": {
@@ -41474,7 +41593,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:54:59.930Z",
+        "updatedAt": "2026-09-28T14:08:11.733Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_UaSdXWzp",
@@ -41498,23 +41617,26 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/zP5RaY76-Y5BuxdGt.png",
           "logoFilename": "zP5RaY76-Y5BuxdGt.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "1",
           "logoPath": "/teams/flashscore_seattle-sounders.png",
           "teamIdentityId": "flashscore:seattle-sounders",
-          "flashscoreSlug": "seattle-sounders"
+          "flashscoreSlug": "seattle-sounders",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
           "name": "Minnesota United",
-          "logo": null,
+          "logo": "/teams/thesportsdb_135852.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub legacy cache",
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:minnesota-united",
-          "flashscoreSlug": "minnesota-united"
+          "teamIdentityId": "thesportsdb:135852",
+          "flashscoreSlug": "minnesota-united",
+          "logoQuality": "fallback-id",
+          "logoPath": "/teams/thesportsdb_135852.png"
         }
       },
       "goals": {
@@ -42441,7 +42563,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:55:02.287Z",
+        "updatedAt": "2026-09-28T14:08:14.061Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_46GvLYAt",
@@ -42465,23 +42587,26 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/dUopT5UH-xhRqHy1g.png",
           "logoFilename": "dUopT5UH-xhRqHy1g.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "0",
           "logoPath": "/teams/flashscore_real-salt-lake.png",
           "teamIdentityId": "flashscore:real-salt-lake",
-          "flashscoreSlug": "real-salt-lake"
+          "flashscoreSlug": "real-salt-lake",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
           "name": "New England Revolution",
-          "logo": null,
+          "logo": "/teams/thesportsdb_134159.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub legacy cache",
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:new-england-revolution",
-          "flashscoreSlug": "new-england-revolution"
+          "teamIdentityId": "thesportsdb:134159",
+          "flashscoreSlug": "new-england-revolution",
+          "logoQuality": "fallback-id",
+          "logoPath": "/teams/thesportsdb_134159.png"
         }
       },
       "goals": {
@@ -43368,7 +43493,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:55:04.624Z",
+        "updatedAt": "2026-09-28T14:08:16.367Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_CWJnJCug",
@@ -43392,23 +43517,26 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/MwKFeQ86-fyzFgPy8.png",
           "logoFilename": "MwKFeQ86-fyzFgPy8.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "2",
           "logoPath": "/teams/flashscore_los-angeles-galaxy.png",
           "teamIdentityId": "flashscore:los-angeles-galaxy",
-          "flashscoreSlug": "los-angeles-galaxy"
+          "flashscoreSlug": "los-angeles-galaxy",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
           "name": "Colorado Rapids",
-          "logo": null,
+          "logo": "/teams/thesportsdb_134794.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub legacy cache",
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:colorado-rapids",
-          "flashscoreSlug": "colorado-rapids"
+          "teamIdentityId": "thesportsdb:134794",
+          "flashscoreSlug": "colorado-rapids",
+          "logoQuality": "fallback-id",
+          "logoPath": "/teams/thesportsdb_134794.png"
         }
       },
       "goals": {
@@ -44335,7 +44463,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:55:06.969Z",
+        "updatedAt": "2026-09-28T14:08:18.691Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_8bDeHjA5",
@@ -44359,23 +44487,26 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/6ZJJvliC-UuBN762q.png",
           "logoFilename": "6ZJJvliC-UuBN762q.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "1",
           "logoPath": "/teams/flashscore_san-jose-earthquakes.png",
           "teamIdentityId": "flashscore:san-jose-earthquakes",
-          "flashscoreSlug": "san-jose-earthquakes"
+          "flashscoreSlug": "san-jose-earthquakes",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
           "name": "Portland Timbers",
-          "logo": null,
+          "logo": "/teams/thesportsdb_134155.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub legacy cache",
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:portland-timbers",
-          "flashscoreSlug": "portland-timbers"
+          "teamIdentityId": "thesportsdb:134155",
+          "flashscoreSlug": "portland-timbers",
+          "logoQuality": "fallback-id",
+          "logoPath": "/teams/thesportsdb_134155.png"
         }
       },
       "goals": {
@@ -45281,7 +45412,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:55:09.307Z",
+        "updatedAt": "2026-09-28T14:08:20.997Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_tCB3FUvI",
@@ -45305,23 +45436,26 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/h4rRBzU0-M1jIRGkS.png",
           "logoFilename": "h4rRBzU0-M1jIRGkS.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "3",
           "logoPath": "/teams/flashscore_vancouver-whitecaps.png",
           "teamIdentityId": "flashscore:vancouver-whitecaps",
-          "flashscoreSlug": "vancouver-whitecaps"
+          "flashscoreSlug": "vancouver-whitecaps",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
           "name": "DC United",
-          "logo": null,
+          "logo": "/teams/thesportsdb_134145.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub legacy cache",
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:dc-united",
-          "flashscoreSlug": "dc-united"
+          "teamIdentityId": "thesportsdb:134145",
+          "flashscoreSlug": "dc-united",
+          "logoQuality": "fallback-id",
+          "logoPath": "/teams/thesportsdb_134145.png"
         }
       },
       "goals": {
@@ -46180,7 +46314,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:55:11.650Z",
+        "updatedAt": "2026-09-28T14:08:23.318Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_QRL5VA5d",
@@ -46204,11 +46338,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/Ecz8EXVH-IVYXEpED.png",
           "logoFilename": "Ecz8EXVH-IVYXEpED.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "2",
           "logoPath": "/teams/flashscore_fortaleza-c-e-i-f.png",
           "teamIdentityId": "flashscore:fortaleza-c-e-i-f",
-          "flashscoreSlug": "fortaleza-c-e-i-f"
+          "flashscoreSlug": "fortaleza-c-e-i-f",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -46217,11 +46352,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:deportes-tolima",
           "flashscoreSlug": "deportes-tolima",
-          "logoPath": "/teams/flashscore_deportes-tolima.png"
+          "logoPath": "/teams/flashscore_deportes-tolima.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -47237,7 +47373,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:55:18.724Z",
+        "updatedAt": "2026-09-28T14:08:30.258Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_bq1tgD2s",
@@ -47261,11 +47397,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/zNqhWFQq-2eGA9cib.png",
           "logoFilename": "zNqhWFQq-2eGA9cib.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "0",
           "logoPath": "/teams/flashscore_dep-cali.png",
           "teamIdentityId": "flashscore:dep-cali",
-          "flashscoreSlug": "dep-cali"
+          "flashscoreSlug": "dep-cali",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -47274,11 +47411,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:aguilas-doradas",
           "flashscoreSlug": "aguilas-doradas",
-          "logoPath": "/teams/flashscore_aguilas-doradas.png"
+          "logoPath": "/teams/flashscore_aguilas-doradas.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -48178,7 +48316,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:55:21.064Z",
+        "updatedAt": "2026-09-28T14:08:32.571Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_S6sivyJO",
@@ -48202,23 +48340,26 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/WdtRY4iT-OSiYNR3p.png",
           "logoFilename": "WdtRY4iT-OSiYNR3p.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "1",
           "logoPath": "/teams/flashscore_club-leon.png",
           "teamIdentityId": "flashscore:club-leon",
-          "flashscoreSlug": "club-leon"
+          "flashscoreSlug": "club-leon",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
           "name": "Juarez",
-          "logo": null,
+          "logo": "/teams/thesportsdb_136855.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub legacy cache",
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:juarez",
-          "flashscoreSlug": "juarez"
+          "teamIdentityId": "thesportsdb:136855",
+          "flashscoreSlug": "juarez",
+          "logoQuality": "fallback-id",
+          "logoPath": "/teams/thesportsdb_136855.png"
         }
       },
       "goals": {
@@ -49117,7 +49258,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:55:23.401Z",
+        "updatedAt": "2026-09-28T14:08:34.876Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_nelb1QCt",
@@ -49141,23 +49282,26 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/f3CzIwSq-IFA1tboe.png",
           "logoFilename": "f3CzIwSq-IFA1tboe.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "4",
           "logoPath": "/teams/flashscore_necaxa.png",
           "teamIdentityId": "flashscore:necaxa",
-          "flashscoreSlug": "necaxa"
+          "flashscoreSlug": "necaxa",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
           "name": "Club America",
-          "logo": null,
+          "logo": "/teams/thesportsdb_134193.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub legacy cache",
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:club-america",
-          "flashscoreSlug": "club-america"
+          "teamIdentityId": "thesportsdb:134193",
+          "flashscoreSlug": "club-america",
+          "logoQuality": "fallback-id",
+          "logoPath": "/teams/thesportsdb_134193.png"
         }
       },
       "goals": {
@@ -50122,7 +50266,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:55:25.749Z",
+        "updatedAt": "2026-09-28T14:08:37.186Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_fLi6a4sg",
@@ -50146,11 +50290,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/AowBBF6k-zBFXR8iF.png",
           "logoFilename": "AowBBF6k-zBFXR8iF.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:leganes",
           "flashscoreSlug": "leganes",
-          "logoPath": "/teams/flashscore_leganes.png"
+          "logoPath": "/teams/flashscore_leganes.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -50159,11 +50304,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:castellon",
           "flashscoreSlug": "castellon",
-          "logoPath": "/teams/flashscore_castellon.png"
+          "logoPath": "/teams/flashscore_castellon.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -50212,23 +50358,26 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/z94JGZTH-UwKTVGeG.png",
           "logoFilename": "z94JGZTH-UwKTVGeG.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": "1",
           "logoPath": "/teams/flashscore_columbus-crew.png",
           "teamIdentityId": "flashscore:columbus-crew",
-          "flashscoreSlug": "columbus-crew"
+          "flashscoreSlug": "columbus-crew",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
           "name": "Inter Miami",
-          "logo": null,
+          "logo": "/teams/thesportsdb_137699.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub legacy cache",
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:inter-miami",
-          "flashscoreSlug": "inter-miami"
+          "teamIdentityId": "thesportsdb:137699",
+          "flashscoreSlug": "inter-miami",
+          "logoQuality": "fallback-id",
+          "logoPath": "/teams/thesportsdb_137699.png"
         }
       },
       "goals": {
@@ -51207,7 +51356,7 @@
             "period": "match"
           }
         ],
-        "updatedAt": "2026-09-28T13:55:30.423Z",
+        "updatedAt": "2026-09-28T14:08:41.815Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_0ER4D89U",
@@ -51231,11 +51380,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/GtpcHiiT-v5wBaFPD.png",
           "logoFilename": "GtpcHiiT-v5wBaFPD.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:america-mg",
           "flashscoreSlug": "america-mg",
-          "logoPath": "/teams/flashscore_america-mg.png"
+          "logoPath": "/teams/flashscore_america-mg.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -51244,11 +51394,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:ec-juventude",
           "flashscoreSlug": "ec-juventude",
-          "logoPath": "/teams/flashscore_ec-juventude.png"
+          "logoPath": "/teams/flashscore_ec-juventude.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -51297,23 +51448,26 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/UacjBalC-AaS9a4Ho.png",
           "logoFilename": "UacjBalC-AaS9a4Ho.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:dep-pereira",
           "flashscoreSlug": "dep-pereira",
-          "logoPath": "/teams/flashscore_dep-pereira.png"
+          "logoPath": "/teams/flashscore_dep-pereira.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
           "name": "Santa Fe",
-          "logo": null,
+          "logo": "/teams/thesportsdb_146875.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub legacy cache",
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:santa-fe",
-          "flashscoreSlug": "santa-fe"
+          "teamIdentityId": "thesportsdb:146875",
+          "flashscoreSlug": "santa-fe",
+          "logoQuality": "fallback-id",
+          "logoPath": "/teams/thesportsdb_146875.png"
         }
       },
       "goals": {
@@ -51362,23 +51516,26 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/4OGSgN96-pM8eqsw3.png",
           "logoFilename": "4OGSgN96-pM8eqsw3.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:botafogo-sp",
           "flashscoreSlug": "botafogo-sp",
-          "logoPath": "/teams/flashscore_botafogo-sp.png"
+          "logoPath": "/teams/flashscore_botafogo-sp.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
           "name": "Ponte Preta",
-          "logo": null,
+          "logo": "/teams/thesportsdb_134290.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub legacy cache",
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:ponte-preta",
-          "flashscoreSlug": "ponte-preta"
+          "teamIdentityId": "thesportsdb:134290",
+          "flashscoreSlug": "ponte-preta",
+          "logoQuality": "fallback-id",
+          "logoPath": "/teams/thesportsdb_134290.png"
         }
       },
       "goals": {
@@ -51427,23 +51584,26 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/I7bqaK6k-6kduDy6P.png",
           "logoFilename": "I7bqaK6k-6kduDy6P.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:ind-medellin",
           "flashscoreSlug": "ind-medellin",
-          "logoPath": "/teams/flashscore_ind-medellin.png"
+          "logoPath": "/teams/flashscore_ind-medellin.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
           "name": "Millonarios",
-          "logo": null,
+          "logo": "/teams/thesportsdb_137617.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub legacy cache",
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:millonarios",
-          "flashscoreSlug": "millonarios"
+          "teamIdentityId": "thesportsdb:137617",
+          "flashscoreSlug": "millonarios",
+          "logoQuality": "fallback-id",
+          "logoPath": "/teams/thesportsdb_137617.png"
         }
       },
       "goals": {
@@ -51492,11 +51652,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/StROSU5k-zLpFRlja.png",
           "logoFilename": "StROSU5k-zLpFRlja.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:atl-nacional",
           "flashscoreSlug": "atl-nacional",
-          "logoPath": "/teams/flashscore_atl-nacional.png"
+          "logoPath": "/teams/flashscore_atl-nacional.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -51505,11 +51666,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:junior",
           "flashscoreSlug": "junior",
-          "logoPath": "/teams/flashscore_junior.png"
+          "logoPath": "/teams/flashscore_junior.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -51558,11 +51720,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/OAtXEIVH-jmLPWdtA.png",
           "logoFilename": "OAtXEIVH-jmLPWdtA.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:new-york-red-bulls",
           "flashscoreSlug": "new-york-red-bulls",
-          "logoPath": "/teams/flashscore_new-york-red-bulls.png"
+          "logoPath": "/teams/flashscore_new-york-red-bulls.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -51574,7 +51737,8 @@
           "logoSource": "GitHub legacy cache",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:st-louis-city",
-          "flashscoreSlug": "st-louis-city"
+          "flashscoreSlug": "st-louis-city",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -51623,23 +51787,26 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/WrU0J0Qq-fezSJdFa.png",
           "logoFilename": "WrU0J0Qq-fezSJdFa.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:athletic-club",
           "flashscoreSlug": "athletic-club",
-          "logoPath": "/teams/flashscore_athletic-club.png"
+          "logoPath": "/teams/flashscore_athletic-club.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
           "name": "Sport Recife",
-          "logo": null,
+          "logo": "/teams/thesportsdb_136250.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub legacy cache",
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:sport-recife",
-          "flashscoreSlug": "sport-recife"
+          "teamIdentityId": "thesportsdb:136250",
+          "flashscoreSlug": "sport-recife",
+          "logoQuality": "fallback-id",
+          "logoPath": "/teams/thesportsdb_136250.png"
         }
       },
       "goals": {
@@ -51688,11 +51855,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/YqfJ3686-G2OQQubE.png",
           "logoFilename": "YqfJ3686-G2OQQubE.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:novorizontino",
           "flashscoreSlug": "novorizontino",
-          "logoPath": "/teams/flashscore_novorizontino.png"
+          "logoPath": "/teams/flashscore_novorizontino.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -51701,11 +51869,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:goias",
           "flashscoreSlug": "goias",
-          "logoPath": "/teams/flashscore_goias.png"
+          "logoPath": "/teams/flashscore_goias.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -51754,11 +51923,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/C0qt1olC-bsEYFgtQ.png",
           "logoFilename": "C0qt1olC-bsEYFgtQ.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:inter-bogota",
           "flashscoreSlug": "inter-bogota",
-          "logoPath": "/teams/flashscore_inter-bogota.png"
+          "logoPath": "/teams/flashscore_inter-bogota.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -51767,11 +51937,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:once-caldas",
           "flashscoreSlug": "once-caldas",
-          "logoPath": "/teams/flashscore_once-caldas.png"
+          "logoPath": "/teams/flashscore_once-caldas.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -51820,23 +51991,26 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/KMjBLrUH-8ExDw68E.png",
           "logoFilename": "KMjBLrUH-8ExDw68E.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:fus-rabat",
           "flashscoreSlug": "fus-rabat",
-          "logoPath": "/teams/flashscore_fus-rabat.png"
+          "logoPath": "/teams/flashscore_fus-rabat.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
           "name": "Amal Tiznit",
-          "logo": null,
+          "logo": "/teams/thesportsdb_153100.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub legacy cache",
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:amal-tiznit",
-          "flashscoreSlug": "amal-tiznit"
+          "teamIdentityId": "thesportsdb:153100",
+          "flashscoreSlug": "amal-tiznit",
+          "logoQuality": "fallback-id",
+          "logoPath": "/teams/thesportsdb_153100.png"
         }
       },
       "goals": {
@@ -51885,11 +52059,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/4nyD8Ole-Q1R9dE24.png",
           "logoFilename": "4nyD8Ole-Q1R9dE24.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:widad-temara",
           "flashscoreSlug": "widad-temara",
-          "logoPath": "/teams/flashscore_widad-temara.png"
+          "logoPath": "/teams/flashscore_widad-temara.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -51898,11 +52073,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:union-touarga",
           "flashscoreSlug": "union-touarga",
-          "logoPath": "/teams/flashscore_union-touarga.png"
+          "logoPath": "/teams/flashscore_union-touarga.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -51951,11 +52127,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/4xK80JVH-4OKT8C33.png",
           "logoFilename": "4xK80JVH-4OKT8C33.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:ir-tanger",
           "flashscoreSlug": "ir-tanger",
-          "logoPath": "/teams/flashscore_ir-tanger.png"
+          "logoPath": "/teams/flashscore_ir-tanger.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -51964,11 +52141,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:moghreb-tetouan",
           "flashscoreSlug": "moghreb-tetouan",
-          "logoPath": "/teams/flashscore_moghreb-tetouan.png"
+          "logoPath": "/teams/flashscore_moghreb-tetouan.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -52017,11 +52195,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/8CuFFxlC-Y7pkY0PJ.png",
           "logoFilename": "8CuFFxlC-Y7pkY0PJ.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:eldense",
           "flashscoreSlug": "eldense",
-          "logoPath": "/teams/flashscore_eldense.png"
+          "logoPath": "/teams/flashscore_eldense.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -52030,11 +52209,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:real-oviedo",
           "flashscoreSlug": "real-oviedo",
-          "logoPath": "/teams/flashscore_real-oviedo.png"
+          "logoPath": "/teams/flashscore_real-oviedo.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -52083,23 +52263,26 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/AVAdquCN-88w2wUnG.png",
           "logoFilename": "AVAdquCN-88w2wUnG.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:seattle-sounders",
           "flashscoreSlug": "seattle-sounders",
-          "logoPath": "/teams/flashscore_seattle-sounders.png"
+          "logoPath": "/teams/flashscore_seattle-sounders.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
           "name": "Sporting Kansas City",
-          "logo": null,
+          "logo": "/teams/thesportsdb_134143.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub legacy cache",
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:sporting-kansas-city",
-          "flashscoreSlug": "sporting-kansas-city"
+          "teamIdentityId": "thesportsdb:134143",
+          "flashscoreSlug": "sporting-kansas-city",
+          "logoQuality": "fallback-id",
+          "logoPath": "/teams/thesportsdb_134143.png"
         }
       },
       "goals": {
@@ -52144,15 +52327,16 @@
         "home": {
           "id": null,
           "name": "Fomboni (Com)",
-          "logo": "/teams/flashscore_fomboni.png",
+          "logo": null,
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/GpsGB0DN-zmJd7cVA.png",
           "logoFilename": "GpsGB0DN-zmJd7cVA.png",
           "logoSide": "home",
           "logoSource": "GitHub identity registry (locked)",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:fomboni",
-          "flashscoreSlug": "fomboni",
-          "logoPath": "/teams/flashscore_fomboni.png"
+          "teamIdentityId": null,
+          "flashscoreSlug": null,
+          "logoPath": "/teams/flashscore_fomboni.png",
+          "logoQuality": "rejected"
         },
         "away": {
           "id": null,
@@ -52161,8 +52345,9 @@
           "flashscoreLogo": null,
           "logoSide": "away",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:15-de-agosto",
-          "flashscoreSlug": "15-de-agosto"
+          "teamIdentityId": null,
+          "flashscoreSlug": null,
+          "logoQuality": "rejected"
         }
       },
       "goals": {
@@ -52211,23 +52396,26 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/IuZoU3iT-ImUFDktI.png",
           "logoFilename": "IuZoU3iT-ImUFDktI.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:independiente",
           "flashscoreSlug": "independiente",
-          "logoPath": "/teams/flashscore_independiente.png"
+          "logoPath": "/teams/flashscore_independiente.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
           "name": "Instituto",
-          "logo": null,
+          "logo": "/teams/thesportsdb_137786.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub legacy cache",
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:instituto",
-          "flashscoreSlug": "instituto"
+          "teamIdentityId": "thesportsdb:137786",
+          "flashscoreSlug": "instituto",
+          "logoQuality": "fallback-id",
+          "logoPath": "/teams/thesportsdb_137786.png"
         }
       },
       "goals": {
@@ -52276,23 +52464,26 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/xCI9eFAN-OS9FbeGg.png",
           "logoFilename": "xCI9eFAN-OS9FbeGg.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:boca-juniors",
           "flashscoreSlug": "boca-juniors",
-          "logoPath": "/teams/flashscore_boca-juniors.png"
+          "logoPath": "/teams/flashscore_boca-juniors.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
           "name": "Union de Santa Fe",
-          "logo": null,
+          "logo": "/teams/thesportsdb_145265.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub legacy cache",
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:union-de-santa-fe",
-          "flashscoreSlug": "union-de-santa-fe"
+          "teamIdentityId": "thesportsdb:145265",
+          "flashscoreSlug": "union-de-santa-fe",
+          "logoQuality": "fallback-id",
+          "logoPath": "/teams/thesportsdb_145265.png"
         }
       },
       "goals": {
@@ -52341,11 +52532,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/8UYpvw86-0hVt0N0n.png",
           "logoFilename": "8UYpvw86-0hVt0N0n.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:ind-rivadavia",
           "flashscoreSlug": "ind-rivadavia",
-          "logoPath": "/teams/flashscore_ind-rivadavia.png"
+          "logoPath": "/teams/flashscore_ind-rivadavia.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -52357,7 +52549,8 @@
           "logoSource": "GitHub legacy cache",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:gimnasia-l-p",
-          "flashscoreSlug": "gimnasia-l-p"
+          "flashscoreSlug": "gimnasia-l-p",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -52406,23 +52599,26 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/bVaqpoWH-YyppIBwT.png",
           "logoFilename": "bVaqpoWH-YyppIBwT.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:defensa-y-justicia",
           "flashscoreSlug": "defensa-y-justicia",
-          "logoPath": "/teams/flashscore_defensa-y-justicia.png"
+          "logoPath": "/teams/flashscore_defensa-y-justicia.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
           "name": "San Lorenzo",
-          "logo": null,
+          "logo": "/teams/thesportsdb_135173.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub legacy cache",
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:san-lorenzo",
-          "flashscoreSlug": "san-lorenzo"
+          "teamIdentityId": "thesportsdb:135173",
+          "flashscoreSlug": "san-lorenzo",
+          "logoQuality": "fallback-id",
+          "logoPath": "/teams/thesportsdb_135173.png"
         }
       },
       "goals": {
@@ -52471,23 +52667,26 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/YVxbV1iT-KxCl9RDG.png",
           "logoFilename": "YVxbV1iT-KxCl9RDG.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:atl-tucuman",
           "flashscoreSlug": "atl-tucuman",
-          "logoPath": "/teams/flashscore_atl-tucuman.png"
+          "logoPath": "/teams/flashscore_atl-tucuman.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
           "name": "Barracas Central",
-          "logo": null,
+          "logo": "/teams/thesportsdb_137771.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub legacy cache",
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:barracas-central",
-          "flashscoreSlug": "barracas-central"
+          "teamIdentityId": "thesportsdb:137771",
+          "flashscoreSlug": "barracas-central",
+          "logoQuality": "fallback-id",
+          "logoPath": "/teams/thesportsdb_137771.png"
         }
       },
       "goals": {
@@ -52536,23 +52735,26 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/I7GXcZiT-rRPTjfbN.png",
           "logoFilename": "I7GXcZiT-rRPTjfbN.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:newells-old-boys",
           "flashscoreSlug": "newells-old-boys",
-          "logoPath": "/teams/flashscore_newells-old-boys.png"
+          "logoPath": "/teams/flashscore_newells-old-boys.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
           "name": "Lanus",
-          "logo": null,
+          "logo": "/teams/thesportsdb_135165.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub legacy cache",
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:lanus",
-          "flashscoreSlug": "lanus"
+          "teamIdentityId": "thesportsdb:135165",
+          "flashscoreSlug": "lanus",
+          "logoQuality": "fallback-id",
+          "logoPath": "/teams/thesportsdb_135165.png"
         }
       },
       "goals": {
@@ -52601,11 +52803,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/8biwxljT-6oItt2Br.png",
           "logoFilename": "8biwxljT-6oItt2Br.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:sao-bernardo",
           "flashscoreSlug": "sao-bernardo",
-          "logoPath": "/teams/flashscore_sao-bernardo.png"
+          "logoPath": "/teams/flashscore_sao-bernardo.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -52614,11 +52817,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:crb",
           "flashscoreSlug": "crb",
-          "logoPath": "/teams/flashscore_crb.png"
+          "logoPath": "/teams/flashscore_crb.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -52667,11 +52871,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/MJNZGxXH-0tyg52jq.png",
           "logoFilename": "MJNZGxXH-0tyg52jq.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:londrina",
           "flashscoreSlug": "londrina",
-          "logoPath": "/teams/flashscore_londrina.png"
+          "logoPath": "/teams/flashscore_londrina.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -52680,11 +52885,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:criciuma",
           "flashscoreSlug": "criciuma",
-          "logoPath": "/teams/flashscore_criciuma.png"
+          "logoPath": "/teams/flashscore_criciuma.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -52733,11 +52939,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/p0AtzGQq-vm8qH06L.png",
           "logoFilename": "p0AtzGQq-vm8qH06L.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:ec-juventude",
           "flashscoreSlug": "ec-juventude",
-          "logoPath": "/teams/flashscore_ec-juventude.png"
+          "logoPath": "/teams/flashscore_ec-juventude.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -52746,11 +52953,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:operario-pr",
           "flashscoreSlug": "operario-pr",
-          "logoPath": "/teams/flashscore_operario-pr.png"
+          "logoPath": "/teams/flashscore_operario-pr.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -52799,11 +53007,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/ADXIEPCN-4S2Tm4eJ.png",
           "logoFilename": "ADXIEPCN-4S2Tm4eJ.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:fortaleza",
           "flashscoreSlug": "fortaleza",
-          "logoPath": "/teams/flashscore_fortaleza.png"
+          "logoPath": "/teams/flashscore_fortaleza.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -52812,11 +53021,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:nautico",
           "flashscoreSlug": "nautico",
-          "logoPath": "/teams/flashscore_nautico.png"
+          "logoPath": "/teams/flashscore_nautico.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -52865,23 +53075,26 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/6XnLr1hT-GxV9h1lf.png",
           "logoFilename": "6XnLr1hT-GxV9h1lf.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:avai",
           "flashscoreSlug": "avai",
-          "logoPath": "/teams/flashscore_avai.png"
+          "logoPath": "/teams/flashscore_avai.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
           "name": "Ceara",
-          "logo": null,
+          "logo": "/teams/thesportsdb_134744.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub legacy cache",
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:ceara",
-          "flashscoreSlug": "ceara"
+          "teamIdentityId": "thesportsdb:134744",
+          "flashscoreSlug": "ceara",
+          "logoQuality": "fallback-id",
+          "logoPath": "/teams/thesportsdb_134744.png"
         }
       },
       "goals": {
@@ -52930,11 +53143,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/K2MlyGoe-nHqWQgSo.png",
           "logoFilename": "K2MlyGoe-nHqWQgSo.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:atletico-go",
           "flashscoreSlug": "atletico-go",
-          "logoPath": "/teams/flashscore_atletico-go.png"
+          "logoPath": "/teams/flashscore_atletico-go.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -52943,11 +53157,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:america-mg",
           "flashscoreSlug": "america-mg",
-          "logoPath": "/teams/flashscore_america-mg.png"
+          "logoPath": "/teams/flashscore_america-mg.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -52996,23 +53211,26 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/4OGSgN96-pM8eqsw3.png",
           "logoFilename": "4OGSgN96-pM8eqsw3.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:cuiaba",
           "flashscoreSlug": "cuiaba",
-          "logoPath": "/teams/flashscore_cuiaba.png"
+          "logoPath": "/teams/flashscore_cuiaba.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
           "name": "Ponte Preta",
-          "logo": null,
+          "logo": "/teams/thesportsdb_134290.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub legacy cache",
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:ponte-preta",
-          "flashscoreSlug": "ponte-preta"
+          "teamIdentityId": "thesportsdb:134290",
+          "flashscoreSlug": "ponte-preta",
+          "logoQuality": "fallback-id",
+          "logoPath": "/teams/thesportsdb_134290.png"
         }
       },
       "goals": {
@@ -53061,11 +53279,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/M5AhQV5k-OjIDDdYc.png",
           "logoFilename": "M5AhQV5k-OjIDDdYc.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:botafogo-sp",
           "flashscoreSlug": "botafogo-sp",
-          "logoPath": "/teams/flashscore_botafogo-sp.png"
+          "logoPath": "/teams/flashscore_botafogo-sp.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -53074,11 +53293,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:vila-nova-fc",
           "flashscoreSlug": "vila-nova-fc",
-          "logoPath": "/teams/flashscore_vila-nova-fc.png"
+          "logoPath": "/teams/flashscore_vila-nova-fc.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -53127,23 +53347,26 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/0Cg5eagT-jqTIQW5H.png",
           "logoFilename": "0Cg5eagT-jqTIQW5H.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:dep-cali",
           "flashscoreSlug": "dep-cali",
-          "logoPath": "/teams/flashscore_dep-cali.png"
+          "logoPath": "/teams/flashscore_dep-cali.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
           "name": "Alianza",
-          "logo": null,
+          "logo": "/teams/thesportsdb_139733.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub legacy cache",
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:alianza",
-          "flashscoreSlug": "alianza"
+          "teamIdentityId": "thesportsdb:139733",
+          "flashscoreSlug": "alianza",
+          "logoQuality": "fallback-id",
+          "logoPath": "/teams/thesportsdb_139733.png"
         }
       },
       "goals": {
@@ -53192,11 +53415,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/l4lKktDN-K401txJG.png",
           "logoFilename": "l4lKktDN-K401txJG.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:aguilas-doradas",
           "flashscoreSlug": "aguilas-doradas",
-          "logoPath": "/teams/flashscore_aguilas-doradas.png"
+          "logoPath": "/teams/flashscore_aguilas-doradas.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -53205,11 +53429,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:jaguares-de-cordoba",
           "flashscoreSlug": "jaguares-de-cordoba",
-          "logoPath": "/teams/flashscore_jaguares-de-cordoba.png"
+          "logoPath": "/teams/flashscore_jaguares-de-cordoba.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -53258,11 +53483,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/Cj1rt4me-zi9oOsF3.png",
           "logoFilename": "Cj1rt4me-zi9oOsF3.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:deportes-tolima",
           "flashscoreSlug": "deportes-tolima",
-          "logoPath": "/teams/flashscore_deportes-tolima.png"
+          "logoPath": "/teams/flashscore_deportes-tolima.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -53271,11 +53497,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:chico",
           "flashscoreSlug": "chico",
-          "logoPath": "/teams/flashscore_chico.png"
+          "logoPath": "/teams/flashscore_chico.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -53324,11 +53551,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/hrtwQ6lC-pAEmCR0A.png",
           "logoFilename": "hrtwQ6lC-pAEmCR0A.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:hassania-agadir",
           "flashscoreSlug": "hassania-agadir",
-          "logoPath": "/teams/flashscore_hassania-agadir.png"
+          "logoPath": "/teams/flashscore_hassania-agadir.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -53337,11 +53565,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:maghreb-fez",
           "flashscoreSlug": "maghreb-fez",
-          "logoPath": "/teams/flashscore_maghreb-fez.png"
+          "logoPath": "/teams/flashscore_maghreb-fez.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -53390,23 +53619,26 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/Mm90dOkC-EyoH1qCf.png",
           "logoFilename": "Mm90dOkC-EyoH1qCf.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:berkane",
           "flashscoreSlug": "berkane",
-          "logoPath": "/teams/flashscore_berkane.png"
+          "logoPath": "/teams/flashscore_berkane.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
           "name": "FAR Rabat",
-          "logo": null,
+          "logo": "/teams/thesportsdb_136403.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub legacy cache",
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:far-rabat",
-          "flashscoreSlug": "far-rabat"
+          "teamIdentityId": "thesportsdb:136403",
+          "flashscoreSlug": "far-rabat",
+          "logoQuality": "fallback-id",
+          "logoPath": "/teams/thesportsdb_136403.png"
         }
       },
       "goals": {
@@ -53431,7 +53663,7 @@
       "details": {
         "events": [],
         "statistics": [],
-        "updatedAt": "2026-09-28T13:55:33.829Z",
+        "updatedAt": "2026-09-28T14:08:45.445Z",
         "source": "Flashscore detail feed",
         "sourceEndpoints": {
           "events": "df_sui_1_bDGw34fE",
@@ -53455,11 +53687,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/b3sNSqS0-hInMHhg7.png",
           "logoFilename": "b3sNSqS0-hInMHhg7.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:cod-meknes",
           "flashscoreSlug": "cod-meknes",
-          "logoPath": "/teams/flashscore_cod-meknes.png"
+          "logoPath": "/teams/flashscore_cod-meknes.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -53468,11 +53701,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:kawkab-marrakech",
           "flashscoreSlug": "kawkab-marrakech",
-          "logoPath": "/teams/flashscore_kawkab-marrakech.png"
+          "logoPath": "/teams/flashscore_kawkab-marrakech.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -53521,11 +53755,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/Y7MV6X5k-GSoKqW7o.png",
           "logoFilename": "Y7MV6X5k-GSoKqW7o.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:difaa-el-jadidi",
           "flashscoreSlug": "difaa-el-jadidi",
-          "logoPath": "/teams/flashscore_difaa-el-jadidi.png"
+          "logoPath": "/teams/flashscore_difaa-el-jadidi.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -53534,11 +53769,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:wydad-athletic",
           "flashscoreSlug": "wydad-athletic",
-          "logoPath": "/teams/flashscore_wydad-athletic.png"
+          "logoPath": "/teams/flashscore_wydad-athletic.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -53587,11 +53823,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/pGJqy86k-63LcsWgs.png",
           "logoFilename": "pGJqy86k-63LcsWgs.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:raja-casablanca",
           "flashscoreSlug": "raja-casablanca",
-          "logoPath": "/teams/flashscore_raja-casablanca.png"
+          "logoPath": "/teams/flashscore_raja-casablanca.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -53603,7 +53840,8 @@
           "logoSource": "GitHub legacy cache",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:renaissance-zemamra",
-          "flashscoreSlug": "renaissance-zemamra"
+          "flashscoreSlug": "renaissance-zemamra",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -53652,11 +53890,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/drsSo7UH-4U3vjZKk.png",
           "logoFilename": "drsSo7UH-4U3vjZKk.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:albacete",
           "flashscoreSlug": "albacete",
-          "logoPath": "/teams/flashscore_albacete.png"
+          "logoPath": "/teams/flashscore_albacete.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -53665,11 +53904,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:eibar",
           "flashscoreSlug": "eibar",
-          "logoPath": "/teams/flashscore_eibar.png"
+          "logoPath": "/teams/flashscore_eibar.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -53718,11 +53958,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/8G2Evj86-0ME49KyM.png",
           "logoFilename": "8G2Evj86-0ME49KyM.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:almeria",
           "flashscoreSlug": "almeria",
-          "logoPath": "/teams/flashscore_almeria.png"
+          "logoPath": "/teams/flashscore_almeria.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -53731,11 +53972,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:burgos-cf",
           "flashscoreSlug": "burgos-cf",
-          "logoPath": "/teams/flashscore_burgos-cf.png"
+          "logoPath": "/teams/flashscore_burgos-cf.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -53784,11 +54026,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/C4WkaSlC-Q3zX1dyT.png",
           "logoFilename": "C4WkaSlC-Q3zX1dyT.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:cadiz",
           "flashscoreSlug": "cadiz",
-          "logoPath": "/teams/flashscore_cadiz.png"
+          "logoPath": "/teams/flashscore_cadiz.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -53797,11 +54040,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:leganes",
           "flashscoreSlug": "leganes",
-          "logoPath": "/teams/flashscore_leganes.png"
+          "logoPath": "/teams/flashscore_leganes.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -53850,23 +54094,26 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/SMiBGH8k-p6WBruc4.png",
           "logoFilename": "SMiBGH8k-p6WBruc4.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:sabadell",
           "flashscoreSlug": "sabadell",
-          "logoPath": "/teams/flashscore_sabadell.png"
+          "logoPath": "/teams/flashscore_sabadell.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
           "name": "Andorra",
-          "logo": null,
+          "logo": "/teams/thesportsdb_136463.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub legacy cache",
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:fc-andorra",
-          "flashscoreSlug": "fc-andorra"
+          "teamIdentityId": "thesportsdb:136463",
+          "flashscoreSlug": "fc-andorra",
+          "logoQuality": "fallback-id",
+          "logoPath": "/teams/thesportsdb_136463.png"
         }
       },
       "goals": {
@@ -53915,23 +54162,26 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/CUoqynU0-pUOna96L.png",
           "logoFilename": "CUoqynU0-pUOna96L.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:veres-rivne",
           "flashscoreSlug": "veres-rivne",
-          "logoPath": "/teams/flashscore_veres-rivne.png"
+          "logoPath": "/teams/flashscore_veres-rivne.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
           "name": "Kudrivka",
-          "logo": null,
+          "logo": "/teams/thesportsdb_149227.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub legacy cache",
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:kudrivka",
-          "flashscoreSlug": "kudrivka"
+          "teamIdentityId": "thesportsdb:149227",
+          "flashscoreSlug": "kudrivka",
+          "logoQuality": "fallback-id",
+          "logoPath": "/teams/thesportsdb_149227.png"
         }
       },
       "goals": {
@@ -53980,23 +54230,26 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/pbQeONmC-Eew7tmfb.png",
           "logoFilename": "pbQeONmC-Eew7tmfb.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:huracan",
           "flashscoreSlug": "huracan",
-          "logoPath": "/teams/flashscore_huracan.png"
+          "logoPath": "/teams/flashscore_huracan.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
           "name": "Aldosivi",
-          "logo": null,
+          "logo": "/teams/thesportsdb_135150.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub legacy cache",
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:aldosivi",
-          "flashscoreSlug": "aldosivi"
+          "teamIdentityId": "thesportsdb:135150",
+          "flashscoreSlug": "aldosivi",
+          "logoQuality": "fallback-id",
+          "logoPath": "/teams/thesportsdb_135150.png"
         }
       },
       "goals": {
@@ -54045,23 +54298,26 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/htqgPrT0-jXvNrLYt.png",
           "logoFilename": "htqgPrT0-jXvNrLYt.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:talleres-cordoba",
           "flashscoreSlug": "talleres-cordoba",
-          "logoPath": "/teams/flashscore_talleres-cordoba.png"
+          "logoPath": "/teams/flashscore_talleres-cordoba.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
           "name": "Belgrano",
-          "logo": null,
+          "logo": "/teams/thesportsdb_135155.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub legacy cache",
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:ca-belgrano-de-cordoba",
-          "flashscoreSlug": "ca-belgrano-de-cordoba"
+          "teamIdentityId": "thesportsdb:135155",
+          "flashscoreSlug": "ca-belgrano-de-cordoba",
+          "logoQuality": "fallback-id",
+          "logoPath": "/teams/thesportsdb_135155.png"
         }
       },
       "goals": {
@@ -54110,11 +54366,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/6qGiPaSq-lrqyzouB.png",
           "logoFilename": "6qGiPaSq-lrqyzouB.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:dep-pasto",
           "flashscoreSlug": "dep-pasto",
-          "logoPath": "/teams/flashscore_dep-pasto.png"
+          "logoPath": "/teams/flashscore_dep-pasto.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -54123,11 +54380,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:fortaleza-c-e-i-f",
           "flashscoreSlug": "fortaleza-c-e-i-f",
-          "logoPath": "/teams/flashscore_fortaleza-c-e-i-f.png"
+          "logoPath": "/teams/flashscore_fortaleza-c-e-i-f.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -54176,11 +54434,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/vTF4Iv6k-rysGeGXN.png",
           "logoFilename": "vTF4Iv6k-rysGeGXN.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:cucuta",
           "flashscoreSlug": "cucuta",
-          "logoPath": "/teams/flashscore_cucuta.png"
+          "logoPath": "/teams/flashscore_cucuta.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -54189,11 +54448,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:dep-pereira",
           "flashscoreSlug": "dep-pereira",
-          "logoPath": "/teams/flashscore_dep-pereira.png"
+          "logoPath": "/teams/flashscore_dep-pereira.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -54238,15 +54498,16 @@
         "home": {
           "id": null,
           "name": "Real Sociedad B",
-          "logo": "/teams/flashscore_real-sociedad.png",
+          "logo": "/teams/thesportsdb_138160.png",
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/QmKG7dT0-pEzOUfJL.png",
           "logoFilename": "QmKG7dT0-pEzOUfJL.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:real-sociedad",
-          "flashscoreSlug": "real-sociedad",
-          "logoPath": "/teams/flashscore_real-sociedad.png"
+          "teamIdentityId": "thesportsdb:138160",
+          "flashscoreSlug": null,
+          "logoPath": "/teams/thesportsdb_138160.png",
+          "logoQuality": "fallback-id"
         },
         "away": {
           "id": null,
@@ -54255,11 +54516,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:granada-cf",
           "flashscoreSlug": "granada-cf",
-          "logoPath": "/teams/flashscore_granada-cf.png"
+          "logoPath": "/teams/flashscore_granada-cf.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -54308,24 +54570,26 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/OYnX3M6k-xd1MqkTp.png",
           "logoFilename": "OYnX3M6k-xd1MqkTp.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:gijon",
           "flashscoreSlug": "gijon",
-          "logoPath": "/teams/flashscore_gijon.png"
+          "logoPath": "/teams/flashscore_gijon.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
           "name": "Celta Vigo B",
-          "logo": "/teams/flashscore_celta-vigo.png",
+          "logo": null,
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
           "logoSource": "GitHub identity registry (locked)",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:celta-vigo",
-          "flashscoreSlug": "celta-vigo",
-          "logoPath": "/teams/flashscore_celta-vigo.png"
+          "teamIdentityId": null,
+          "flashscoreSlug": null,
+          "logoPath": "/teams/flashscore_celta-vigo.png",
+          "logoQuality": "rejected"
         }
       },
       "goals": {
@@ -54374,11 +54638,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/r1QAXB7k-xpqBFn5c.png",
           "logoFilename": "r1QAXB7k-xpqBFn5c.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:castellon",
           "flashscoreSlug": "castellon",
-          "logoPath": "/teams/flashscore_castellon.png"
+          "logoPath": "/teams/flashscore_castellon.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -54387,11 +54652,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:ad-ceuta",
           "flashscoreSlug": "ad-ceuta",
-          "logoPath": "/teams/flashscore_ad-ceuta.png"
+          "logoPath": "/teams/flashscore_ad-ceuta.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -54440,11 +54706,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/GvWsl3Sq-htRvrFH6.png",
           "logoFilename": "GvWsl3Sq-htRvrFH6.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:las-palmas",
           "flashscoreSlug": "las-palmas",
-          "logoPath": "/teams/flashscore_las-palmas.png"
+          "logoPath": "/teams/flashscore_las-palmas.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -54453,11 +54720,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:valladolid",
           "flashscoreSlug": "valladolid",
-          "logoPath": "/teams/flashscore_valladolid.png"
+          "logoPath": "/teams/flashscore_valladolid.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -54506,11 +54774,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/WKsw8cne-rmDEjevK.png",
           "logoFilename": "WKsw8cne-rmDEjevK.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:girona",
           "flashscoreSlug": "girona",
-          "logoPath": "/teams/flashscore_girona.png"
+          "logoPath": "/teams/flashscore_girona.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -54519,11 +54788,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:mallorca",
           "flashscoreSlug": "mallorca",
-          "logoPath": "/teams/flashscore_mallorca.png"
+          "logoPath": "/teams/flashscore_mallorca.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -54572,23 +54842,26 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/EgYDLGoe-ENHpchZ2.png",
           "logoFilename": "EgYDLGoe-ENHpchZ2.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:argentinos-jrs",
           "flashscoreSlug": "argentinos-jrs",
-          "logoPath": "/teams/flashscore_argentinos-jrs.png"
+          "logoPath": "/teams/flashscore_argentinos-jrs.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
           "name": "Tigre",
-          "logo": null,
+          "logo": "/teams/thesportsdb_135177.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub legacy cache",
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:tigre",
-          "flashscoreSlug": "tigre"
+          "teamIdentityId": "thesportsdb:135177",
+          "flashscoreSlug": "tigre",
+          "logoQuality": "fallback-id",
+          "logoPath": "/teams/thesportsdb_135177.png"
         }
       },
       "goals": {
@@ -54632,23 +54905,26 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/Wp6MmpQq-OCiVKiPK.png",
           "logoFilename": "Wp6MmpQq-OCiVKiPK.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:estudiantes-rio-cuarto",
           "flashscoreSlug": "estudiantes-rio-cuarto",
-          "logoPath": "/teams/flashscore_estudiantes-rio-cuarto.png"
+          "logoPath": "/teams/flashscore_estudiantes-rio-cuarto.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
           "name": "Racing Club",
-          "logo": null,
+          "logo": "/teams/thesportsdb_135170.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub legacy cache",
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:racing-club",
-          "flashscoreSlug": "racing-club"
+          "teamIdentityId": "thesportsdb:135170",
+          "flashscoreSlug": "racing-club",
+          "logoQuality": "fallback-id",
+          "logoPath": "/teams/thesportsdb_135170.png"
         }
       },
       "goals": {
@@ -54688,15 +54964,16 @@
         "home": {
           "id": null,
           "name": "Dep. Riestra",
-          "logo": "/teams/flashscore_deportivo-riestra.png",
+          "logo": null,
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/0hgWrqXH-E7RqoQaq.png",
           "logoFilename": "0hgWrqXH-E7RqoQaq.png",
           "logoSide": "home",
           "logoSource": "GitHub identity registry (locked)",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:deportivo-riestra",
-          "flashscoreSlug": "deportivo-riestra",
-          "logoPath": "/teams/flashscore_deportivo-riestra.png"
+          "teamIdentityId": null,
+          "flashscoreSlug": null,
+          "logoPath": "/teams/flashscore_deportivo-riestra.png",
+          "logoQuality": "rejected"
         },
         "away": {
           "id": null,
@@ -54708,7 +54985,8 @@
           "logoSource": "GitHub legacy cache",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:central-cordoba-santiago-del-estero",
-          "flashscoreSlug": "central-cordoba-santiago-del-estero"
+          "flashscoreSlug": "central-cordoba-santiago-del-estero",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -54752,11 +55030,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/StROSU5k-zLpFRlja.png",
           "logoFilename": "StROSU5k-zLpFRlja.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:bucaramanga",
           "flashscoreSlug": "bucaramanga",
-          "logoPath": "/teams/flashscore_bucaramanga.png"
+          "logoPath": "/teams/flashscore_bucaramanga.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -54765,11 +55044,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:junior",
           "flashscoreSlug": "junior",
-          "logoPath": "/teams/flashscore_junior.png"
+          "logoPath": "/teams/flashscore_junior.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {
@@ -54813,23 +55093,26 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/OCsMaKUH-hSZHTo4B.png",
           "logoFilename": "OCsMaKUH-hSZHTo4B.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:llaneros",
           "flashscoreSlug": "llaneros",
-          "logoPath": "/teams/flashscore_llaneros.png"
+          "logoPath": "/teams/flashscore_llaneros.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
           "name": "America De Cali",
-          "logo": null,
+          "logo": "/teams/thesportsdb_137604.png",
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub legacy cache",
+          "logoSource": "TheSportsDB exact name + idTeam → GitHub registry",
           "flashscoreId": null,
-          "teamIdentityId": "flashscore:america-de-cali",
-          "flashscoreSlug": "america-de-cali"
+          "teamIdentityId": "thesportsdb:137604",
+          "flashscoreSlug": "america-de-cali",
+          "logoQuality": "fallback-id",
+          "logoPath": "/teams/thesportsdb_137604.png"
         }
       },
       "goals": {
@@ -54873,11 +55156,12 @@
           "flashscoreLogo": "https://static.flashscore.com/res/image/data/S8MpS386-UBV6BGsc.png",
           "logoFilename": "S8MpS386-UBV6BGsc.png",
           "logoSide": "home",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "Flashscore strict slug → GitHub registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:cordoba",
           "flashscoreSlug": "cordoba",
-          "logoPath": "/teams/flashscore_cordoba.png"
+          "logoPath": "/teams/flashscore_cordoba.png",
+          "logoQuality": "strict-pass"
         },
         "away": {
           "id": null,
@@ -54886,11 +55170,12 @@
           "flashscoreLogo": null,
           "logoFilename": "1",
           "logoSide": "away",
-          "logoSource": "GitHub identity registry (locked)",
+          "logoSource": "GitHub identity registry",
           "flashscoreId": null,
           "teamIdentityId": "flashscore:tenerife",
           "flashscoreSlug": "tenerife",
-          "logoPath": "/teams/flashscore_tenerife.png"
+          "logoPath": "/teams/flashscore_tenerife.png",
+          "logoQuality": "strict-pass"
         }
       },
       "goals": {

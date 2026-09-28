@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-28T13:55:35.842Z",
+  "updatedAt": "2026-09-28T14:08:47.457Z",
   "teams": {
     "flashscore:novorizontino": {
       "canonicalId": "flashscore:novorizontino",
@@ -13,7 +13,7 @@
       "bytes": 1607,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:04.395Z"
+      "updatedAt": "2026-09-28T14:04:00.395Z"
     },
     "flashscore:vila-nova-fc": {
       "canonicalId": "flashscore:vila-nova-fc",
@@ -26,7 +26,7 @@
       "bytes": 1894,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:04.406Z"
+      "updatedAt": "2026-09-28T14:04:00.445Z"
     },
     "flashscore:nautico": {
       "canonicalId": "flashscore:nautico",
@@ -39,7 +39,7 @@
       "bytes": 1925,
       "mime": "image/png",
       "status": "review",
-      "updatedAt": "2026-09-28T13:53:04.419Z"
+      "updatedAt": "2026-09-28T14:04:00.496Z"
     },
     "flashscore:operario-pr": {
       "canonicalId": "flashscore:operario-pr",
@@ -52,7 +52,7 @@
       "bytes": 1827,
       "mime": "image/png",
       "status": "review",
-      "updatedAt": "2026-09-28T13:53:04.430Z"
+      "updatedAt": "2026-09-28T14:04:00.546Z"
     },
     "flashscore:goias": {
       "canonicalId": "flashscore:goias",
@@ -65,7 +65,7 @@
       "bytes": 1355,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:04.441Z"
+      "updatedAt": "2026-09-28T14:04:00.594Z"
     },
     "flashscore:chico": {
       "canonicalId": "flashscore:chico",
@@ -78,7 +78,7 @@
       "bytes": 2057,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:04.452Z"
+      "updatedAt": "2026-09-28T14:04:00.644Z"
     },
     "flashscore:once-caldas": {
       "canonicalId": "flashscore:once-caldas",
@@ -91,7 +91,7 @@
       "bytes": 1682,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:04.463Z"
+      "updatedAt": "2026-09-28T14:04:00.694Z"
     },
     "flashscore:dep-pereira": {
       "canonicalId": "flashscore:dep-pereira",
@@ -104,7 +104,7 @@
       "bytes": 1757,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:04.477Z"
+      "updatedAt": "2026-09-28T14:04:00.740Z"
     },
     "flashscore:atlante": {
       "canonicalId": "flashscore:atlante",
@@ -117,7 +117,7 @@
       "bytes": 1455,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:04.491Z"
+      "updatedAt": "2026-09-28T14:04:00.786Z"
     },
     "flashscore:club-tijuana": {
       "canonicalId": "flashscore:club-tijuana",
@@ -130,7 +130,7 @@
       "bytes": 1339,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:04.504Z"
+      "updatedAt": "2026-09-28T14:04:00.830Z"
     },
     "flashscore:union-touarga": {
       "canonicalId": "flashscore:union-touarga",
@@ -143,33 +143,7 @@
       "bytes": 2183,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:04.516Z"
-    },
-    "flashscore:difaa-el-jadidi": {
-      "canonicalId": "flashscore:difaa-el-jadidi",
-      "name": "Difaa El Jadidi",
-      "provider": "flashscore",
-      "providerId": "difaa-el-jadidi",
-      "logoUrl": "https://static.flashscore.com/res/image/data/r7LKEBle-zLWTcQkh.png",
-      "logoPath": "/teams/flashscore_difaa-el-jadidi.png",
-      "sha256": "bfb1f88ee5f05a9157dfe34e2a75c248690ba8d762666654ba4e1cac1ed20336",
-      "bytes": 2183,
-      "mime": "image/png",
-      "status": "verified",
-      "updatedAt": "2026-09-28T13:53:04.527Z"
-    },
-    "flashscore:wydad-athletic": {
-      "canonicalId": "flashscore:wydad-athletic",
-      "name": "Wydad AC",
-      "provider": "flashscore",
-      "providerId": "wydad-athletic",
-      "logoUrl": "https://static.flashscore.com/res/image/data/CC9Gx2lC-Gtyfdpte.png",
-      "logoPath": "/teams/flashscore_wydad-athletic.png",
-      "sha256": "f2be61a4beeaf2ec92598a151b9e77c28f478a9330331d6b287684a8c65f6046",
-      "bytes": 1666,
-      "mime": "image/png",
-      "status": "verified",
-      "updatedAt": "2026-09-28T13:53:04.539Z"
+      "updatedAt": "2026-09-28T14:04:00.878Z"
     },
     "flashscore:ad-ceuta": {
       "canonicalId": "flashscore:ad-ceuta",
@@ -182,7 +156,7 @@
       "bytes": 2134,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:04.552Z"
+      "updatedAt": "2026-09-28T14:04:01.028Z"
     },
     "flashscore:granada-cf": {
       "canonicalId": "flashscore:granada-cf",
@@ -195,7 +169,7 @@
       "bytes": 2327,
       "mime": "image/png",
       "status": "review",
-      "updatedAt": "2026-09-28T13:53:04.563Z"
+      "updatedAt": "2026-09-28T14:04:01.078Z"
     },
     "flashscore:celta-vigo": {
       "canonicalId": "flashscore:celta-vigo",
@@ -221,7 +195,7 @@
       "bytes": 1434,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:04.594Z"
+      "updatedAt": "2026-09-28T14:04:01.138Z"
     },
     "flashscore:criciuma": {
       "canonicalId": "flashscore:criciuma",
@@ -234,7 +208,7 @@
       "bytes": 1025,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:04.609Z"
+      "updatedAt": "2026-09-28T14:04:01.185Z"
     },
     "flashscore:crb": {
       "canonicalId": "flashscore:crb",
@@ -247,7 +221,7 @@
       "bytes": 1487,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:04.620Z"
+      "updatedAt": "2026-09-28T14:04:01.229Z"
     },
     "flashscore:fortaleza": {
       "canonicalId": "flashscore:fortaleza",
@@ -260,7 +234,7 @@
       "bytes": 1763,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:04.633Z"
+      "updatedAt": "2026-09-28T14:04:01.334Z"
     },
     "flashscore:cucuta": {
       "canonicalId": "flashscore:cucuta",
@@ -273,7 +247,7 @@
       "bytes": 1728,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:04.644Z"
+      "updatedAt": "2026-09-28T14:04:01.381Z"
     },
     "flashscore:junior": {
       "canonicalId": "flashscore:junior",
@@ -286,7 +260,7 @@
       "bytes": 1918,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:04.659Z"
+      "updatedAt": "2026-09-28T14:04:01.428Z"
     },
     "flashscore:jaguares-de-cordoba": {
       "canonicalId": "flashscore:jaguares-de-cordoba",
@@ -299,7 +273,7 @@
       "bytes": 2224,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:04.677Z"
+      "updatedAt": "2026-09-28T14:04:01.478Z"
     },
     "flashscore:cruz-azul": {
       "canonicalId": "flashscore:cruz-azul",
@@ -312,7 +286,7 @@
       "bytes": 2187,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:04.688Z"
+      "updatedAt": "2026-09-28T14:04:01.530Z"
     },
     "flashscore:guadalajara-chivas": {
       "canonicalId": "flashscore:guadalajara-chivas",
@@ -325,7 +299,7 @@
       "bytes": 1666,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:04.699Z"
+      "updatedAt": "2026-09-28T14:04:01.576Z"
     },
     "flashscore:santos-laguna": {
       "canonicalId": "flashscore:santos-laguna",
@@ -338,7 +312,7 @@
       "bytes": 1911,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:04.710Z"
+      "updatedAt": "2026-09-28T14:04:01.621Z"
     },
     "flashscore:tigres-uanl": {
       "canonicalId": "flashscore:tigres-uanl",
@@ -351,7 +325,7 @@
       "bytes": 2238,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:04.721Z"
+      "updatedAt": "2026-09-28T14:04:01.670Z"
     },
     "flashscore:unam-pumas": {
       "canonicalId": "flashscore:unam-pumas",
@@ -364,7 +338,7 @@
       "bytes": 2453,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:04.734Z"
+      "updatedAt": "2026-09-28T14:04:01.714Z"
     },
     "flashscore:moghreb-tetouan": {
       "canonicalId": "flashscore:moghreb-tetouan",
@@ -377,7 +351,7 @@
       "bytes": 2357,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:04.745Z"
+      "updatedAt": "2026-09-28T14:04:01.764Z"
     },
     "flashscore:maghreb-fez": {
       "canonicalId": "flashscore:maghreb-fez",
@@ -390,7 +364,7 @@
       "bytes": 2000,
       "mime": "image/png",
       "status": "review",
-      "updatedAt": "2026-09-28T13:53:04.756Z"
+      "updatedAt": "2026-09-28T14:04:01.811Z"
     },
     "flashscore:kawkab-marrakech": {
       "canonicalId": "flashscore:kawkab-marrakech",
@@ -403,7 +377,7 @@
       "bytes": 1828,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:04.769Z"
+      "updatedAt": "2026-09-28T14:04:01.858Z"
     },
     "flashscore:gangwon": {
       "canonicalId": "flashscore:gangwon",
@@ -416,7 +390,7 @@
       "bytes": 1670,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:04.779Z"
+      "updatedAt": "2026-09-28T14:04:01.902Z"
     },
     "flashscore:valladolid": {
       "canonicalId": "flashscore:valladolid",
@@ -429,7 +403,7 @@
       "bytes": 1308,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:04.794Z"
+      "updatedAt": "2026-09-28T14:04:01.953Z"
     },
     "flashscore:mallorca": {
       "canonicalId": "flashscore:mallorca",
@@ -442,7 +416,7 @@
       "bytes": 1839,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:04.806Z"
+      "updatedAt": "2026-09-28T14:04:01.999Z"
     },
     "flashscore:burgos-cf": {
       "canonicalId": "flashscore:burgos-cf",
@@ -455,7 +429,7 @@
       "bytes": 1731,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:04.817Z"
+      "updatedAt": "2026-09-28T14:04:02.046Z"
     },
     "flashscore:eibar": {
       "canonicalId": "flashscore:eibar",
@@ -468,7 +442,7 @@
       "bytes": 1690,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:04.829Z"
+      "updatedAt": "2026-09-28T14:04:02.091Z"
     },
     "flashscore:real-oviedo": {
       "canonicalId": "flashscore:real-oviedo",
@@ -481,7 +455,7 @@
       "bytes": 1253,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:04.839Z"
+      "updatedAt": "2026-09-28T14:04:02.139Z"
     },
     "flashscore:atlanta-united": {
       "canonicalId": "flashscore:atlanta-united",
@@ -507,7 +481,7 @@
       "bytes": 2498,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:04.866Z"
+      "updatedAt": "2026-09-28T14:04:02.187Z"
     },
     "flashscore:charlotte-fc": {
       "canonicalId": "flashscore:charlotte-fc",
@@ -520,7 +494,7 @@
       "bytes": 2273,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:04.879Z"
+      "updatedAt": "2026-09-28T14:04:02.240Z"
     },
     "flashscore:philadelphia-union": {
       "canonicalId": "flashscore:philadelphia-union",
@@ -533,7 +507,7 @@
       "bytes": 2075,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:04.891Z"
+      "updatedAt": "2026-09-28T14:04:02.286Z"
     },
     "flashscore:austin-fc": {
       "canonicalId": "flashscore:austin-fc",
@@ -546,7 +520,7 @@
       "bytes": 2228,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:04.903Z"
+      "updatedAt": "2026-09-28T14:04:02.333Z"
     },
     "flashscore:fc-dallas": {
       "canonicalId": "flashscore:fc-dallas",
@@ -559,7 +533,7 @@
       "bytes": 1203,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:04.917Z"
+      "updatedAt": "2026-09-28T14:04:02.379Z"
     },
     "flashscore:houston-dynamo": {
       "canonicalId": "flashscore:houston-dynamo",
@@ -572,7 +546,7 @@
       "bytes": 2573,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:04.931Z"
+      "updatedAt": "2026-09-28T14:04:02.430Z"
     },
     "flashscore:nashville-sc": {
       "canonicalId": "flashscore:nashville-sc",
@@ -585,7 +559,7 @@
       "bytes": 1856,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:04.945Z"
+      "updatedAt": "2026-09-28T14:04:02.477Z"
     },
     "flashscore:seattle-sounders": {
       "canonicalId": "flashscore:seattle-sounders",
@@ -598,7 +572,7 @@
       "bytes": 1530,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:04.957Z"
+      "updatedAt": "2026-09-28T14:04:02.526Z"
     },
     "flashscore:real-salt-lake": {
       "canonicalId": "flashscore:real-salt-lake",
@@ -611,7 +585,7 @@
       "bytes": 2267,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:04.968Z"
+      "updatedAt": "2026-09-28T14:04:02.582Z"
     },
     "flashscore:los-angeles-galaxy": {
       "canonicalId": "flashscore:los-angeles-galaxy",
@@ -624,7 +598,7 @@
       "bytes": 1861,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:04.979Z"
+      "updatedAt": "2026-09-28T14:04:02.626Z"
     },
     "flashscore:san-jose-earthquakes": {
       "canonicalId": "flashscore:san-jose-earthquakes",
@@ -637,7 +611,7 @@
       "bytes": 1877,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:04.990Z"
+      "updatedAt": "2026-09-28T14:04:02.688Z"
     },
     "flashscore:vancouver-whitecaps": {
       "canonicalId": "flashscore:vancouver-whitecaps",
@@ -650,7 +624,7 @@
       "bytes": 1996,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:05.000Z"
+      "updatedAt": "2026-09-28T14:04:02.736Z"
     },
     "flashscore:fortaleza-c-e-i-f": {
       "canonicalId": "flashscore:fortaleza-c-e-i-f",
@@ -663,7 +637,7 @@
       "bytes": 1475,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:05.011Z"
+      "updatedAt": "2026-09-28T14:04:02.782Z"
     },
     "flashscore:dep-cali": {
       "canonicalId": "flashscore:dep-cali",
@@ -676,7 +650,7 @@
       "bytes": 1999,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:05.021Z"
+      "updatedAt": "2026-09-28T14:04:02.831Z"
     },
     "flashscore:club-leon": {
       "canonicalId": "flashscore:club-leon",
@@ -689,7 +663,7 @@
       "bytes": 2162,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:05.030Z"
+      "updatedAt": "2026-09-28T14:04:02.880Z"
     },
     "flashscore:necaxa": {
       "canonicalId": "flashscore:necaxa",
@@ -702,7 +676,7 @@
       "bytes": 2479,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:05.040Z"
+      "updatedAt": "2026-09-28T14:04:02.953Z"
     },
     "flashscore:leganes": {
       "canonicalId": "flashscore:leganes",
@@ -715,7 +689,7 @@
       "bytes": 1673,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:05.052Z"
+      "updatedAt": "2026-09-28T14:04:03.053Z"
     },
     "flashscore:columbus-crew": {
       "canonicalId": "flashscore:columbus-crew",
@@ -728,7 +702,7 @@
       "bytes": 2311,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:05.064Z"
+      "updatedAt": "2026-09-28T14:04:03.100Z"
     },
     "flashscore:america-mg": {
       "canonicalId": "flashscore:america-mg",
@@ -741,7 +715,7 @@
       "bytes": 2275,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:05.077Z"
+      "updatedAt": "2026-09-28T14:04:03.150Z"
     },
     "flashscore:botafogo-sp": {
       "canonicalId": "flashscore:botafogo-sp",
@@ -754,7 +728,7 @@
       "bytes": 1879,
       "mime": "image/png",
       "status": "review",
-      "updatedAt": "2026-09-28T13:53:05.089Z"
+      "updatedAt": "2026-09-28T14:04:03.200Z"
     },
     "flashscore:ind-medellin": {
       "canonicalId": "flashscore:ind-medellin",
@@ -767,7 +741,7 @@
       "bytes": 2051,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:05.100Z"
+      "updatedAt": "2026-09-28T14:04:03.247Z"
     },
     "flashscore:atl-nacional": {
       "canonicalId": "flashscore:atl-nacional",
@@ -780,7 +754,7 @@
       "bytes": 1532,
       "mime": "image/png",
       "status": "review",
-      "updatedAt": "2026-09-28T13:53:05.111Z"
+      "updatedAt": "2026-09-28T14:04:03.292Z"
     },
     "flashscore:new-york-red-bulls": {
       "canonicalId": "flashscore:new-york-red-bulls",
@@ -793,7 +767,7 @@
       "bytes": 1718,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:05.123Z"
+      "updatedAt": "2026-09-28T14:04:03.345Z"
     },
     "flashscore:athletic-club": {
       "canonicalId": "flashscore:athletic-club",
@@ -806,7 +780,7 @@
       "bytes": 1925,
       "mime": "image/png",
       "status": "review",
-      "updatedAt": "2026-09-28T13:53:05.132Z"
+      "updatedAt": "2026-09-28T14:04:03.388Z"
     },
     "flashscore:inter-bogota": {
       "canonicalId": "flashscore:inter-bogota",
@@ -819,7 +793,7 @@
       "bytes": 1208,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:05.144Z"
+      "updatedAt": "2026-09-28T14:04:03.444Z"
     },
     "flashscore:fus-rabat": {
       "canonicalId": "flashscore:fus-rabat",
@@ -832,20 +806,7 @@
       "bytes": 2054,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:05.157Z"
-    },
-    "flashscore:widad-temara": {
-      "canonicalId": "flashscore:widad-temara",
-      "name": "Widad Temara",
-      "provider": "flashscore",
-      "providerId": "widad-temara",
-      "logoUrl": "https://static.flashscore.com/res/image/data/4nyD8Ole-Q1R9dE24.png",
-      "logoPath": "/teams/flashscore_widad-temara.png",
-      "sha256": "27df2d2cb84fe019ee38ecf49a5a36f161bcb08eaf3f9bf191de73f69feddbd2",
-      "bytes": 1831,
-      "mime": "image/png",
-      "status": "verified",
-      "updatedAt": "2026-09-28T13:53:05.171Z"
+      "updatedAt": "2026-09-28T14:04:03.492Z"
     },
     "flashscore:ir-tanger": {
       "canonicalId": "flashscore:ir-tanger",
@@ -858,7 +819,7 @@
       "bytes": 1864,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:05.183Z"
+      "updatedAt": "2026-09-28T14:04:03.582Z"
     },
     "flashscore:eldense": {
       "canonicalId": "flashscore:eldense",
@@ -871,7 +832,7 @@
       "bytes": 1030,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:05.194Z"
+      "updatedAt": "2026-09-28T14:04:03.638Z"
     },
     "flashscore:fomboni": {
       "canonicalId": "flashscore:fomboni",
@@ -897,7 +858,7 @@
       "bytes": 1525,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:05.217Z"
+      "updatedAt": "2026-09-28T14:04:03.681Z"
     },
     "flashscore:boca-juniors": {
       "canonicalId": "flashscore:boca-juniors",
@@ -910,7 +871,7 @@
       "bytes": 1462,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:05.229Z"
+      "updatedAt": "2026-09-28T14:04:03.731Z"
     },
     "flashscore:ind-rivadavia": {
       "canonicalId": "flashscore:ind-rivadavia",
@@ -923,7 +884,7 @@
       "bytes": 1919,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:05.240Z"
+      "updatedAt": "2026-09-28T14:04:03.776Z"
     },
     "flashscore:defensa-y-justicia": {
       "canonicalId": "flashscore:defensa-y-justicia",
@@ -936,7 +897,7 @@
       "bytes": 2130,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:05.250Z"
+      "updatedAt": "2026-09-28T14:04:03.827Z"
     },
     "flashscore:atl-tucuman": {
       "canonicalId": "flashscore:atl-tucuman",
@@ -949,7 +910,7 @@
       "bytes": 1032,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:05.264Z"
+      "updatedAt": "2026-09-28T14:04:03.879Z"
     },
     "flashscore:newells-old-boys": {
       "canonicalId": "flashscore:newells-old-boys",
@@ -962,7 +923,7 @@
       "bytes": 1984,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:05.275Z"
+      "updatedAt": "2026-09-28T14:04:03.931Z"
     },
     "flashscore:sao-bernardo": {
       "canonicalId": "flashscore:sao-bernardo",
@@ -975,7 +936,7 @@
       "bytes": 1596,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:05.285Z"
+      "updatedAt": "2026-09-28T14:04:03.977Z"
     },
     "flashscore:londrina": {
       "canonicalId": "flashscore:londrina",
@@ -988,7 +949,7 @@
       "bytes": 1589,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:05.296Z"
+      "updatedAt": "2026-09-28T14:04:04.033Z"
     },
     "flashscore:ec-juventude": {
       "canonicalId": "flashscore:ec-juventude",
@@ -1001,7 +962,7 @@
       "bytes": 2496,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:05.308Z"
+      "updatedAt": "2026-09-28T14:04:04.082Z"
     },
     "flashscore:avai": {
       "canonicalId": "flashscore:avai",
@@ -1014,7 +975,7 @@
       "bytes": 1827,
       "mime": "image/png",
       "status": "review",
-      "updatedAt": "2026-09-28T13:53:05.318Z"
+      "updatedAt": "2026-09-28T14:04:04.132Z"
     },
     "flashscore:atletico-go": {
       "canonicalId": "flashscore:atletico-go",
@@ -1027,7 +988,7 @@
       "bytes": 1848,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:05.329Z"
+      "updatedAt": "2026-09-28T14:04:04.176Z"
     },
     "flashscore:cuiaba": {
       "canonicalId": "flashscore:cuiaba",
@@ -1040,7 +1001,7 @@
       "bytes": 1879,
       "mime": "image/png",
       "status": "review",
-      "updatedAt": "2026-09-28T13:53:05.338Z"
+      "updatedAt": "2026-09-28T14:04:04.220Z"
     },
     "flashscore:aguilas-doradas": {
       "canonicalId": "flashscore:aguilas-doradas",
@@ -1053,7 +1014,7 @@
       "bytes": 2086,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:05.350Z"
+      "updatedAt": "2026-09-28T14:04:04.271Z"
     },
     "flashscore:deportes-tolima": {
       "canonicalId": "flashscore:deportes-tolima",
@@ -1066,7 +1027,7 @@
       "bytes": 2335,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:05.363Z"
+      "updatedAt": "2026-09-28T14:04:04.317Z"
     },
     "flashscore:hassania-agadir": {
       "canonicalId": "flashscore:hassania-agadir",
@@ -1079,7 +1040,7 @@
       "bytes": 1758,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:05.373Z"
+      "updatedAt": "2026-09-28T14:04:04.370Z"
     },
     "flashscore:berkane": {
       "canonicalId": "flashscore:berkane",
@@ -1092,20 +1053,7 @@
       "bytes": 1600,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:05.385Z"
-    },
-    "flashscore:cod-meknes": {
-      "canonicalId": "flashscore:cod-meknes",
-      "name": "COD Meknes",
-      "provider": "flashscore",
-      "providerId": "cod-meknes",
-      "logoUrl": "https://static.flashscore.com/res/image/data/b3sNSqS0-hInMHhg7.png",
-      "logoPath": "/teams/flashscore_cod-meknes.png",
-      "sha256": "479e8b19741c45f8ce5f86ccecd43136c11b6c9d152e652324fa32d426db83aa",
-      "bytes": 2502,
-      "mime": "image/png",
-      "status": "verified",
-      "updatedAt": "2026-09-28T13:53:05.398Z"
+      "updatedAt": "2026-09-28T14:04:04.419Z"
     },
     "flashscore:raja-casablanca": {
       "canonicalId": "flashscore:raja-casablanca",
@@ -1118,7 +1066,7 @@
       "bytes": 2000,
       "mime": "image/png",
       "status": "review",
-      "updatedAt": "2026-09-28T13:53:05.408Z"
+      "updatedAt": "2026-09-28T14:04:04.510Z"
     },
     "flashscore:albacete": {
       "canonicalId": "flashscore:albacete",
@@ -1131,7 +1079,7 @@
       "bytes": 1363,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:05.421Z"
+      "updatedAt": "2026-09-28T14:04:04.556Z"
     },
     "flashscore:almeria": {
       "canonicalId": "flashscore:almeria",
@@ -1144,7 +1092,7 @@
       "bytes": 1996,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:05.433Z"
+      "updatedAt": "2026-09-28T14:04:04.606Z"
     },
     "flashscore:cadiz": {
       "canonicalId": "flashscore:cadiz",
@@ -1157,7 +1105,7 @@
       "bytes": 2424,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:05.444Z"
+      "updatedAt": "2026-09-28T14:04:04.655Z"
     },
     "flashscore:sabadell": {
       "canonicalId": "flashscore:sabadell",
@@ -1170,7 +1118,7 @@
       "bytes": 2327,
       "mime": "image/png",
       "status": "review",
-      "updatedAt": "2026-09-28T13:53:05.456Z"
+      "updatedAt": "2026-09-28T14:04:04.702Z"
     },
     "flashscore:veres-rivne": {
       "canonicalId": "flashscore:veres-rivne",
@@ -1183,7 +1131,7 @@
       "bytes": 2495,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:05.468Z"
+      "updatedAt": "2026-09-28T14:04:04.747Z"
     },
     "flashscore:huracan": {
       "canonicalId": "flashscore:huracan",
@@ -1196,7 +1144,7 @@
       "bytes": 1868,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:05.480Z"
+      "updatedAt": "2026-09-28T14:04:04.796Z"
     },
     "flashscore:talleres-cordoba": {
       "canonicalId": "flashscore:talleres-cordoba",
@@ -1209,7 +1157,7 @@
       "bytes": 2540,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:05.492Z"
+      "updatedAt": "2026-09-28T14:04:04.842Z"
     },
     "flashscore:dep-pasto": {
       "canonicalId": "flashscore:dep-pasto",
@@ -1222,7 +1170,7 @@
       "bytes": 1896,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:05.502Z"
+      "updatedAt": "2026-09-28T14:04:04.892Z"
     },
     "flashscore:real-sociedad": {
       "canonicalId": "flashscore:real-sociedad",
@@ -1248,7 +1196,7 @@
       "bytes": 880,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:05.524Z"
+      "updatedAt": "2026-09-28T14:04:04.942Z"
     },
     "flashscore:castellon": {
       "canonicalId": "flashscore:castellon",
@@ -1261,7 +1209,7 @@
       "bytes": 1585,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:05.534Z"
+      "updatedAt": "2026-09-28T14:04:04.990Z"
     },
     "flashscore:las-palmas": {
       "canonicalId": "flashscore:las-palmas",
@@ -1274,7 +1222,7 @@
       "bytes": 2226,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:05.544Z"
+      "updatedAt": "2026-09-28T14:04:05.036Z"
     },
     "flashscore:girona": {
       "canonicalId": "flashscore:girona",
@@ -1287,7 +1235,7 @@
       "bytes": 1886,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:05.554Z"
+      "updatedAt": "2026-09-28T14:04:05.083Z"
     },
     "flashscore:argentinos-jrs": {
       "canonicalId": "flashscore:argentinos-jrs",
@@ -1300,7 +1248,7 @@
       "bytes": 951,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:05.567Z"
+      "updatedAt": "2026-09-28T14:04:05.131Z"
     },
     "flashscore:estudiantes-rio-cuarto": {
       "canonicalId": "flashscore:estudiantes-rio-cuarto",
@@ -1313,7 +1261,7 @@
       "bytes": 890,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:05.577Z"
+      "updatedAt": "2026-09-28T14:04:05.178Z"
     },
     "flashscore:deportivo-riestra": {
       "canonicalId": "flashscore:deportivo-riestra",
@@ -1339,7 +1287,7 @@
       "bytes": 1532,
       "mime": "image/png",
       "status": "review",
-      "updatedAt": "2026-09-28T13:53:05.599Z"
+      "updatedAt": "2026-09-28T14:04:05.224Z"
     },
     "flashscore:llaneros": {
       "canonicalId": "flashscore:llaneros",
@@ -1352,7 +1300,7 @@
       "bytes": 1828,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:05.611Z"
+      "updatedAt": "2026-09-28T14:04:05.272Z"
     },
     "flashscore:cordoba": {
       "canonicalId": "flashscore:cordoba",
@@ -1365,7 +1313,657 @@
       "bytes": 2145,
       "mime": "image/png",
       "status": "verified",
-      "updatedAt": "2026-09-28T13:53:05.621Z"
+      "updatedAt": "2026-09-28T14:04:05.319Z"
+    },
+    "flashscore:difaa-el-jadidi": {
+      "canonicalId": "flashscore:difaa-el-jadidi",
+      "name": "Difaa El Jadidi",
+      "provider": "flashscore",
+      "providerId": "difaa-el-jadidi",
+      "logoUrl": "https://static.flashscore.com/res/image/data/r7LKEBle-zLWTcQkh.png",
+      "logoPath": "/teams/flashscore_difaa-el-jadidi.png",
+      "sha256": "bfb1f88ee5f05a9157dfe34e2a75c248690ba8d762666654ba4e1cac1ed20336",
+      "bytes": 2183,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T14:04:00.924Z"
+    },
+    "flashscore:wydad-athletic": {
+      "canonicalId": "flashscore:wydad-athletic",
+      "name": "Wydad AC",
+      "provider": "flashscore",
+      "providerId": "wydad-athletic",
+      "logoUrl": "https://static.flashscore.com/res/image/data/CC9Gx2lC-Gtyfdpte.png",
+      "logoPath": "/teams/flashscore_wydad-athletic.png",
+      "sha256": "f2be61a4beeaf2ec92598a151b9e77c28f478a9330331d6b287684a8c65f6046",
+      "bytes": 1666,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T14:04:00.973Z"
+    },
+    "flashscore:widad-temara": {
+      "canonicalId": "flashscore:widad-temara",
+      "name": "Widad Temara",
+      "provider": "flashscore",
+      "providerId": "widad-temara",
+      "logoUrl": "https://static.flashscore.com/res/image/data/4nyD8Ole-Q1R9dE24.png",
+      "logoPath": "/teams/flashscore_widad-temara.png",
+      "sha256": "27df2d2cb84fe019ee38ecf49a5a36f161bcb08eaf3f9bf191de73f69feddbd2",
+      "bytes": 1831,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T14:04:03.540Z"
+    },
+    "flashscore:cod-meknes": {
+      "canonicalId": "flashscore:cod-meknes",
+      "name": "COD Meknes",
+      "provider": "flashscore",
+      "providerId": "cod-meknes",
+      "logoUrl": "https://static.flashscore.com/res/image/data/b3sNSqS0-hInMHhg7.png",
+      "logoPath": "/teams/flashscore_cod-meknes.png",
+      "sha256": "479e8b19741c45f8ce5f86ccecd43136c11b6c9d152e652324fa32d426db83aa",
+      "bytes": 2502,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T14:04:04.464Z"
+    },
+    "thesportsdb:137617": {
+      "canonicalId": "thesportsdb:137617",
+      "name": "Millonarios",
+      "provider": "thesportsdb",
+      "providerId": "137617",
+      "logoUrl": "https://r2.thesportsdb.com/images/media/team/badge/mc73ix1629122587.png",
+      "logoPath": "/teams/thesportsdb_137617.png",
+      "sha256": "d4c67d38296e4dc87b5555c3b9b4122143107db0b01a9d1bb840e38ff820b748",
+      "bytes": 128382,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T14:04:08.891Z"
+    },
+    "thesportsdb:153100": {
+      "canonicalId": "thesportsdb:153100",
+      "name": "Amal Tiznit",
+      "provider": "thesportsdb",
+      "providerId": "153100",
+      "logoUrl": "https://r2.thesportsdb.com/images/media/team/badge/yrui4p1788072068.png",
+      "logoPath": "/teams/thesportsdb_153100.png",
+      "sha256": "dd5a8898746c9890cf26358bc76df25dcd17e42c3a7eb37d4521e39a65633b8a",
+      "bytes": 177612,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T14:04:11.300Z"
+    },
+    "thesportsdb:136414": {
+      "canonicalId": "thesportsdb:136414",
+      "name": "IR Tanger",
+      "provider": "thesportsdb",
+      "providerId": "136414",
+      "logoUrl": "https://r2.thesportsdb.com/images/media/team/badge/mv4lnb1551975475.png",
+      "logoPath": "/teams/thesportsdb_136414.png",
+      "sha256": "3daebebe31f7b969a9dcb862446cfce37cb4447c91734fc9853e3a3e298ecf51",
+      "bytes": 92310,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T14:04:13.714Z"
+    },
+    "thesportsdb:134700": {
+      "canonicalId": "thesportsdb:134700",
+      "name": "Girona",
+      "provider": "thesportsdb",
+      "providerId": "134700",
+      "logoUrl": "https://r2.thesportsdb.com/images/media/team/badge/kfu7zu1659897499.png",
+      "logoPath": "/teams/thesportsdb_134700.png",
+      "sha256": "9f5587ee39014f02a51533f72514c29682daa5b96166277b36aa286bfa47388b",
+      "bytes": 332240,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T14:04:16.122Z"
+    },
+    "thesportsdb:134232": {
+      "canonicalId": "thesportsdb:134232",
+      "name": "Albacete",
+      "provider": "thesportsdb",
+      "providerId": "134232",
+      "logoUrl": "https://r2.thesportsdb.com/images/media/team/badge/17oqja1616436316.png",
+      "logoPath": "/teams/thesportsdb_134232.png",
+      "sha256": "b1c5084de3d42ce0608cfafe864a8515e8b444b468503b41e8a2d7cbc752e581",
+      "bytes": 53443,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T14:04:18.518Z"
+    },
+    "thesportsdb:136250": {
+      "canonicalId": "thesportsdb:136250",
+      "name": "Sport Recife",
+      "provider": "thesportsdb",
+      "providerId": "136250",
+      "logoUrl": "https://r2.thesportsdb.com/images/media/team/badge/tyrbls1545421563.png",
+      "logoPath": "/teams/thesportsdb_136250.png",
+      "sha256": "5fac20f8d27da195d9a7ff925125b13f5130831eb242f293406fe14279d78e97",
+      "bytes": 140817,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T14:04:20.880Z"
+    },
+    "thesportsdb:134744": {
+      "canonicalId": "thesportsdb:134744",
+      "name": "Ceará",
+      "provider": "thesportsdb",
+      "providerId": "134744",
+      "logoUrl": "https://r2.thesportsdb.com/images/media/team/badge/rxxvyp1464886685.png",
+      "logoPath": "/teams/thesportsdb_134744.png",
+      "sha256": "29918b37d8313159ce45a324ae413ef7296699fb470ec4278011756e0b8985f9",
+      "bytes": 59349,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T14:04:23.244Z"
+    },
+    "thesportsdb:134198": {
+      "canonicalId": "thesportsdb:134198",
+      "name": "Monterrey",
+      "provider": "thesportsdb",
+      "providerId": "134198",
+      "logoUrl": "https://r2.thesportsdb.com/images/media/team/badge/yglj911721542561.png",
+      "logoPath": "/teams/thesportsdb_134198.png",
+      "sha256": "6bf0a4762b77fae98d6545cdf671d80c7461b778c594f0aef255338fa4c24851",
+      "bytes": 66869,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T14:04:25.518Z"
+    },
+    "thesportsdb:134195": {
+      "canonicalId": "thesportsdb:134195",
+      "name": "Atlas",
+      "provider": "thesportsdb",
+      "providerId": "134195",
+      "logoUrl": "https://r2.thesportsdb.com/images/media/team/badge/svvyvw1473541813.png",
+      "logoPath": "/teams/thesportsdb_134195.png",
+      "sha256": "2f3adeef59e4b36f8df3b502362fdf04c683f53276277425c867d28e102ae905",
+      "bytes": 47752,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T14:04:27.748Z"
+    },
+    "thesportsdb:138160": {
+      "canonicalId": "thesportsdb:138160",
+      "name": "Real Sociedad B",
+      "provider": "thesportsdb",
+      "providerId": "138160",
+      "logoUrl": "https://r2.thesportsdb.com/images/media/team/badge/hliq4n1579632023.png",
+      "logoPath": "/teams/thesportsdb_138160.png",
+      "sha256": "031f48da4aaa46bf7106f93dceaffef13b4ef40ec79a49fc8c75b036f1ffdc49",
+      "bytes": 167971,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T14:04:30.137Z"
+    },
+    "thesportsdb:136463": {
+      "canonicalId": "thesportsdb:136463",
+      "name": "Andorra",
+      "provider": "thesportsdb",
+      "providerId": "136463",
+      "logoUrl": "https://r2.thesportsdb.com/images/media/team/badge/l5qspn1552847356.png",
+      "logoPath": "/teams/thesportsdb_136463.png",
+      "sha256": "776b4f56963ebd3e5b82c7d7ed04627d6ec74f4adbc5319da06426d2beb907c0",
+      "bytes": 123577,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T14:04:32.369Z"
+    },
+    "thesportsdb:139733": {
+      "canonicalId": "thesportsdb:139733",
+      "name": "Alianza",
+      "provider": "thesportsdb",
+      "providerId": "139733",
+      "logoUrl": "https://r2.thesportsdb.com/images/media/team/badge/4qhii21589297781.png",
+      "logoPath": "/teams/thesportsdb_139733.png",
+      "sha256": "210c684d044badcdf91836f8c3722abb9014f8921aa8db3f1c19ed0e77a59b09",
+      "bytes": 167413,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T14:04:36.949Z"
+    },
+    "thesportsdb:134204": {
+      "canonicalId": "thesportsdb:134204",
+      "name": "Toluca",
+      "provider": "thesportsdb",
+      "providerId": "134204",
+      "logoUrl": "https://r2.thesportsdb.com/images/media/team/badge/y64wy91523913186.png",
+      "logoPath": "/teams/thesportsdb_134204.png",
+      "sha256": "4eeddbedfbeb3525a93cbcbcf2c1695dfed3e2806de56cb5f2cc1b780a4cd7b2",
+      "bytes": 72849,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T14:04:39.199Z"
+    },
+    "thesportsdb:134194": {
+      "canonicalId": "thesportsdb:134194",
+      "name": "Querétaro",
+      "provider": "thesportsdb",
+      "providerId": "134194",
+      "logoUrl": "https://r2.thesportsdb.com/images/media/team/badge/024n481781543211.png",
+      "logoPath": "/teams/thesportsdb_134194.png",
+      "sha256": "4dfcfb8eab4e391d9b08c4b05fede3f89334b7f28939853b22573f900cbc741a",
+      "bytes": 72125,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T14:04:41.439Z"
+    },
+    "thesportsdb:134191": {
+      "canonicalId": "thesportsdb:134191",
+      "name": "Pachuca",
+      "provider": "thesportsdb",
+      "providerId": "134191",
+      "logoUrl": "https://r2.thesportsdb.com/images/media/team/badge/k9duyw1747334895.png",
+      "logoPath": "/teams/thesportsdb_134191.png",
+      "sha256": "6b78f105ab7148777bb175d204763963c14537f486c48ec1a666ac12990351cb",
+      "bytes": 113420,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T14:04:43.699Z"
+    },
+    "thesportsdb:134199": {
+      "canonicalId": "thesportsdb:134199",
+      "name": "Puebla",
+      "provider": "thesportsdb",
+      "providerId": "134199",
+      "logoUrl": "https://r2.thesportsdb.com/images/media/team/badge/h0jgg51593451845.png",
+      "logoPath": "/teams/thesportsdb_134199.png",
+      "sha256": "9f469c7a4ccca428fe742776d740d2b2bf8f9ce701f3f5342680fe44990cfe8f",
+      "bytes": 145340,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T14:04:45.977Z"
+    },
+    "thesportsdb:134630": {
+      "canonicalId": "thesportsdb:134630",
+      "name": "New York City FC",
+      "provider": "thesportsdb",
+      "providerId": "134630",
+      "logoUrl": "https://r2.thesportsdb.com/images/media/team/badge/m9vis71735140655.png",
+      "logoPath": "/teams/thesportsdb_134630.png",
+      "sha256": "01776d8a89cb7a4f310fe7c1fc5223bd413a4ea9426f8ab17249036dbe7d3e32",
+      "bytes": 140447,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T14:04:57.190Z"
+    },
+    "thesportsdb:136688": {
+      "canonicalId": "thesportsdb:136688",
+      "name": "FC Cincinnati",
+      "provider": "thesportsdb",
+      "providerId": "136688",
+      "logoUrl": "https://r2.thesportsdb.com/images/media/team/badge/vvhsqc1707631046.png",
+      "logoPath": "/teams/thesportsdb_136688.png",
+      "sha256": "46e97ae29600936c553d28df7eb7854171117541843dcddcb7512315b2a6ee13",
+      "bytes": 89097,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T14:04:59.567Z"
+    },
+    "thesportsdb:134154": {
+      "canonicalId": "thesportsdb:134154",
+      "name": "Chicago Fire",
+      "provider": "thesportsdb",
+      "providerId": "134154",
+      "logoUrl": "https://r2.thesportsdb.com/images/media/team/badge/8xuc781639493166.png",
+      "logoPath": "/teams/thesportsdb_134154.png",
+      "sha256": "e2da0ffb60d18c077e183c5e50ef73aefe79a5da0f78128d03d08dce497c6a79",
+      "bytes": 56036,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T14:05:01.828Z"
+    },
+    "thesportsdb:135292": {
+      "canonicalId": "thesportsdb:135292",
+      "name": "Orlando City",
+      "provider": "thesportsdb",
+      "providerId": "135292",
+      "logoUrl": "https://r2.thesportsdb.com/images/media/team/badge/qyppxw1423832326.png",
+      "logoPath": "/teams/thesportsdb_135292.png",
+      "sha256": "5824cd95ec9c180601c7b70e17293b67087191d47d48f8923f3b9ae55aad1e1a",
+      "bytes": 59486,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T14:05:04.082Z"
+    },
+    "thesportsdb:150261": {
+      "canonicalId": "thesportsdb:150261",
+      "name": "San Diego FC",
+      "provider": "thesportsdb",
+      "providerId": "150261",
+      "logoUrl": "https://r2.thesportsdb.com/images/media/team/badge/7ka2xd1734621068.png",
+      "logoPath": "/teams/thesportsdb_150261.png",
+      "sha256": "182253b292ef6951ad41b4e9cb4a5f4c1e10b636f838b18387c9bb2d0d75d8f4",
+      "bytes": 116315,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T14:05:06.469Z"
+    },
+    "thesportsdb:136050": {
+      "canonicalId": "thesportsdb:136050",
+      "name": "Los Angeles FC",
+      "provider": "thesportsdb",
+      "providerId": "136050",
+      "logoUrl": "https://r2.thesportsdb.com/images/media/team/badge/7nbj2a1602103638.png",
+      "logoPath": "/teams/thesportsdb_136050.png",
+      "sha256": "287138c1c3ead3b195313e6345527801d7418798243433f59e8fef599562923a",
+      "bytes": 86645,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T14:05:08.863Z"
+    },
+    "thesportsdb:134143": {
+      "canonicalId": "thesportsdb:134143",
+      "name": "Sporting Kansas City",
+      "provider": "thesportsdb",
+      "providerId": "134143",
+      "logoUrl": "https://r2.thesportsdb.com/images/media/team/badge/tqupxw1473536504.png",
+      "logoPath": "/teams/thesportsdb_134143.png",
+      "sha256": "cc3ef7cdbbc07b01517a4d1f3a666cb6d29e97cd6489bb1f7c29fd9075a3372a",
+      "bytes": 117433,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T14:05:11.105Z"
+    },
+    "thesportsdb:134148": {
+      "canonicalId": "thesportsdb:134148",
+      "name": "Toronto FC",
+      "provider": "thesportsdb",
+      "providerId": "134148",
+      "logoUrl": "https://r2.thesportsdb.com/images/media/team/badge/rsxyrr1473536512.png",
+      "logoPath": "/teams/thesportsdb_134148.png",
+      "sha256": "780e6e2c1a2ee8294eeb321ad3485d658dbee44c87ba4a66e4dd4f74519dbc66",
+      "bytes": 97127,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T14:05:13.726Z"
+    },
+    "thesportsdb:135852": {
+      "canonicalId": "thesportsdb:135852",
+      "name": "Minnesota United",
+      "provider": "thesportsdb",
+      "providerId": "135852",
+      "logoUrl": "https://r2.thesportsdb.com/images/media/team/badge/vl67t41492453433.png",
+      "logoPath": "/teams/thesportsdb_135852.png",
+      "sha256": "7c2c202aed0e8a3c9d62be960c0112dbc9198cc0c6c8c68d145e7fb5cb55b239",
+      "bytes": 46284,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T14:05:16.092Z"
+    },
+    "thesportsdb:134159": {
+      "canonicalId": "thesportsdb:134159",
+      "name": "New England Revolution",
+      "provider": "thesportsdb",
+      "providerId": "134159",
+      "logoUrl": "https://r2.thesportsdb.com/images/media/team/badge/1ula2l1639493143.png",
+      "logoPath": "/teams/thesportsdb_134159.png",
+      "sha256": "b78693125a16f0bae53b9fea7470468c6c9e1bfa2dbac0ae8f849d07d84f068a",
+      "bytes": 133901,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T14:05:18.521Z"
+    },
+    "thesportsdb:134794": {
+      "canonicalId": "thesportsdb:134794",
+      "name": "Colorado Rapids",
+      "provider": "thesportsdb",
+      "providerId": "134794",
+      "logoUrl": "https://r2.thesportsdb.com/images/media/team/badge/uppupv1473536412.png",
+      "logoPath": "/teams/thesportsdb_134794.png",
+      "sha256": "96d61e1f72d9d624fcda999f2317956e7eb13e61ae08c92879a38243fffccbf8",
+      "bytes": 124512,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T14:05:20.905Z"
+    },
+    "thesportsdb:134155": {
+      "canonicalId": "thesportsdb:134155",
+      "name": "Portland Timbers",
+      "provider": "thesportsdb",
+      "providerId": "134155",
+      "logoUrl": "https://r2.thesportsdb.com/images/media/team/badge/skm30j1557953559.png",
+      "logoPath": "/teams/thesportsdb_134155.png",
+      "sha256": "1ec45863b6f0313b47458349dbc1ebffd997ee59cd1eb4262b04fbf15a2e70b6",
+      "bytes": 99859,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T14:05:23.315Z"
+    },
+    "thesportsdb:134145": {
+      "canonicalId": "thesportsdb:134145",
+      "name": "DC United",
+      "provider": "thesportsdb",
+      "providerId": "134145",
+      "logoUrl": "https://r2.thesportsdb.com/images/media/team/badge/uwvsyt1467462609.png",
+      "logoPath": "/teams/thesportsdb_134145.png",
+      "sha256": "c91a9bceeab92a89ec9cf048dcd3dede1764d79581ad100ee780c2c65d3065c8",
+      "bytes": 99760,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T14:05:25.716Z"
+    },
+    "thesportsdb:136855": {
+      "canonicalId": "thesportsdb:136855",
+      "name": "Juárez",
+      "provider": "thesportsdb",
+      "providerId": "136855",
+      "logoUrl": "https://r2.thesportsdb.com/images/media/team/badge/b4oy071567446336.png",
+      "logoPath": "/teams/thesportsdb_136855.png",
+      "sha256": "24f1cba679b905df650e825814ad58c8fe4e1ba0b856bf3f32e4046e3cf1574d",
+      "bytes": 146846,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T14:05:28.051Z"
+    },
+    "thesportsdb:134193": {
+      "canonicalId": "thesportsdb:134193",
+      "name": "América",
+      "provider": "thesportsdb",
+      "providerId": "134193",
+      "logoUrl": "https://r2.thesportsdb.com/images/media/team/badge/amy1xs1581857392.png",
+      "logoPath": "/teams/thesportsdb_134193.png",
+      "sha256": "964490c1164c1210ae6ba511452005dc7d15b8dbf246a404e6cccb469579b319",
+      "bytes": 113073,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T14:05:30.308Z"
+    },
+    "thesportsdb:137699": {
+      "canonicalId": "thesportsdb:137699",
+      "name": "Inter Miami",
+      "provider": "thesportsdb",
+      "providerId": "137699",
+      "logoUrl": "https://r2.thesportsdb.com/images/media/team/badge/m4it3e1602103647.png",
+      "logoPath": "/teams/thesportsdb_137699.png",
+      "sha256": "fcb62094c65179e27b223b114393570eea8576a20440567ac0c9b4c369da2cfb",
+      "bytes": 158968,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T14:05:32.570Z"
+    },
+    "thesportsdb:146875": {
+      "canonicalId": "thesportsdb:146875",
+      "name": "Santa Fe",
+      "provider": "thesportsdb",
+      "providerId": "146875",
+      "logoUrl": "https://r2.thesportsdb.com/images/media/team/badge/mw7wt31727451360.png",
+      "logoPath": "/teams/thesportsdb_146875.png",
+      "sha256": "1e650c16a73c4523175e2172c2ea86d51e93bdba0e54f5a850a0b6e5367bf7fc",
+      "bytes": 69126,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T14:05:34.947Z"
+    },
+    "thesportsdb:134290": {
+      "canonicalId": "thesportsdb:134290",
+      "name": "Ponte Preta",
+      "provider": "thesportsdb",
+      "providerId": "134290",
+      "logoUrl": "https://r2.thesportsdb.com/images/media/team/badge/wbss4d1644929547.png",
+      "logoPath": "/teams/thesportsdb_134290.png",
+      "sha256": "97a4f51ff7d6472bcaf9f290a31ff2e4008927fc96facd2fbbff5e294bd4ce56",
+      "bytes": 27434,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T14:05:37.330Z"
+    },
+    "thesportsdb:137786": {
+      "canonicalId": "thesportsdb:137786",
+      "name": "Instituto",
+      "provider": "thesportsdb",
+      "providerId": "137786",
+      "logoUrl": "https://r2.thesportsdb.com/images/media/team/badge/jup59w1578825794.png",
+      "logoPath": "/teams/thesportsdb_137786.png",
+      "sha256": "bbf2d47f6ef553d15aff17f8874ed922b7197c0fe395dda7238b5614938d983d",
+      "bytes": 52225,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T14:05:46.203Z"
+    },
+    "thesportsdb:145265": {
+      "canonicalId": "thesportsdb:145265",
+      "name": "Unión de Santa Fe",
+      "provider": "thesportsdb",
+      "providerId": "145265",
+      "logoUrl": "https://r2.thesportsdb.com/images/media/team/badge/o70np51644976464.png",
+      "logoPath": "/teams/thesportsdb_145265.png",
+      "sha256": "31237d8371e3b069befa70582508eba63e8e6da1d0a1173482ee6db0fa74b4b1",
+      "bytes": 61237,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T14:05:48.621Z"
+    },
+    "thesportsdb:135173": {
+      "canonicalId": "thesportsdb:135173",
+      "name": "San Lorenzo",
+      "provider": "thesportsdb",
+      "providerId": "135173",
+      "logoUrl": "https://r2.thesportsdb.com/images/media/team/badge/37wke41775741605.png",
+      "logoPath": "/teams/thesportsdb_135173.png",
+      "sha256": "f9eed8e35a69667468581378c264d57a889e0adf977ebcbe0535bc47e1b8603b",
+      "bytes": 78771,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T14:05:53.157Z"
+    },
+    "thesportsdb:137771": {
+      "canonicalId": "thesportsdb:137771",
+      "name": "Barracas Central",
+      "provider": "thesportsdb",
+      "providerId": "137771",
+      "logoUrl": "https://r2.thesportsdb.com/images/media/team/badge/rbkjba1707458543.png",
+      "logoPath": "/teams/thesportsdb_137771.png",
+      "sha256": "bc934f7315e4219a361df03d3c49609df60505d7d75cfa064c70f94b0775f8d1",
+      "bytes": 62505,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T14:05:55.402Z"
+    },
+    "thesportsdb:135165": {
+      "canonicalId": "thesportsdb:135165",
+      "name": "Lanús",
+      "provider": "thesportsdb",
+      "providerId": "135165",
+      "logoUrl": "https://r2.thesportsdb.com/images/media/team/badge/ddty0w1769146364.png",
+      "logoPath": "/teams/thesportsdb_135165.png",
+      "sha256": "35b475cbc7f69ad3a1f71e63362a7af6a203eddaded70a70418e300a5b45a0eb",
+      "bytes": 63237,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T14:05:57.644Z"
+    },
+    "thesportsdb:136403": {
+      "canonicalId": "thesportsdb:136403",
+      "name": "FAR Rabat",
+      "provider": "thesportsdb",
+      "providerId": "136403",
+      "logoUrl": "https://r2.thesportsdb.com/images/media/team/badge/jkjp961777421509.png",
+      "logoPath": "/teams/thesportsdb_136403.png",
+      "sha256": "3f900e72499e5c603bb34880cd737146a5aef5dbcc966e2d967c7f8c37ece671",
+      "bytes": 159601,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T14:06:00.049Z"
+    },
+    "thesportsdb:149227": {
+      "canonicalId": "thesportsdb:149227",
+      "name": "Kudrivka",
+      "provider": "thesportsdb",
+      "providerId": "149227",
+      "logoUrl": "https://r2.thesportsdb.com/images/media/team/badge/2cijmk1724176898.png",
+      "logoPath": "/teams/thesportsdb_149227.png",
+      "sha256": "8c4a2736ed5f67981c9aa3e8bc25b9e05836f11225f247e1fb009e09f045d48c",
+      "bytes": 264013,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T14:06:02.336Z"
+    },
+    "thesportsdb:135150": {
+      "canonicalId": "thesportsdb:135150",
+      "name": "Aldosivi",
+      "provider": "thesportsdb",
+      "providerId": "135150",
+      "logoUrl": "https://r2.thesportsdb.com/images/media/team/badge/nqrjqb1517767667.png",
+      "logoPath": "/teams/thesportsdb_135150.png",
+      "sha256": "d4bbbb25e9fc46cf9a50a52b9ed34722f192a2cf5a183b3a074c9b52331e1224",
+      "bytes": 69348,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T14:06:04.577Z"
+    },
+    "thesportsdb:135155": {
+      "canonicalId": "thesportsdb:135155",
+      "name": "Belgrano",
+      "provider": "thesportsdb",
+      "providerId": "135155",
+      "logoUrl": "https://r2.thesportsdb.com/images/media/team/badge/0twgzi1517768087.png",
+      "logoPath": "/teams/thesportsdb_135155.png",
+      "sha256": "24936d910c64e0aa2e000ccf48fa50f4ec9471a528b5999650ed6001b0c459c0",
+      "bytes": 82278,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T14:06:06.831Z"
+    },
+    "thesportsdb:135177": {
+      "canonicalId": "thesportsdb:135177",
+      "name": "Tigre",
+      "provider": "thesportsdb",
+      "providerId": "135177",
+      "logoUrl": "https://r2.thesportsdb.com/images/media/team/badge/krryg71765858882.png",
+      "logoPath": "/teams/thesportsdb_135177.png",
+      "sha256": "aeb259ad7ab933cf2fbc9356d41633af3392c491a842c135a2b6ea771e97b000",
+      "bytes": 19450,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T14:06:09.185Z"
+    },
+    "thesportsdb:135170": {
+      "canonicalId": "thesportsdb:135170",
+      "name": "Racing Club",
+      "provider": "thesportsdb",
+      "providerId": "135170",
+      "logoUrl": "https://r2.thesportsdb.com/images/media/team/badge/vi4mu41695734959.png",
+      "logoPath": "/teams/thesportsdb_135170.png",
+      "sha256": "0b1bf512b710ee7b7d3810027cecd23da41a17baff7a07cc6acccc69aaa77ed9",
+      "bytes": 38493,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T14:06:11.433Z"
+    },
+    "thesportsdb:137604": {
+      "canonicalId": "thesportsdb:137604",
+      "name": "América de Cali",
+      "provider": "thesportsdb",
+      "providerId": "137604",
+      "logoUrl": "https://r2.thesportsdb.com/images/media/team/badge/lwxcn71576156105.png",
+      "logoPath": "/teams/thesportsdb_137604.png",
+      "sha256": "53394d424a6d11a76a94c7c18a365089f104a04bec8e5b3503a43eef29e0b20b",
+      "bytes": 43541,
+      "mime": "image/png",
+      "status": "verified",
+      "updatedAt": "2026-09-28T14:06:19.628Z"
     }
   },
   "providerIndex": {
@@ -1380,8 +1978,6 @@
     "flashscore:atlante": "flashscore:atlante",
     "flashscore:club-tijuana": "flashscore:club-tijuana",
     "flashscore:union-touarga": "flashscore:union-touarga",
-    "flashscore:difaa-el-jadidi": "flashscore:difaa-el-jadidi",
-    "flashscore:wydad-athletic": "flashscore:wydad-athletic",
     "flashscore:ad-ceuta": "flashscore:ad-ceuta",
     "flashscore:granada-cf": "flashscore:granada-cf",
     "flashscore:celta-vigo": "flashscore:celta-vigo",
@@ -1433,7 +2029,6 @@
     "flashscore:athletic-club": "flashscore:athletic-club",
     "flashscore:inter-bogota": "flashscore:inter-bogota",
     "flashscore:fus-rabat": "flashscore:fus-rabat",
-    "flashscore:widad-temara": "flashscore:widad-temara",
     "flashscore:ir-tanger": "flashscore:ir-tanger",
     "flashscore:eldense": "flashscore:eldense",
     "flashscore:fomboni": "flashscore:fomboni",
@@ -1453,7 +2048,6 @@
     "flashscore:deportes-tolima": "flashscore:deportes-tolima",
     "flashscore:hassania-agadir": "flashscore:hassania-agadir",
     "flashscore:berkane": "flashscore:berkane",
-    "flashscore:cod-meknes": "flashscore:cod-meknes",
     "flashscore:raja-casablanca": "flashscore:raja-casablanca",
     "flashscore:albacete": "flashscore:albacete",
     "flashscore:almeria": "flashscore:almeria",
@@ -1473,6 +2067,56 @@
     "flashscore:deportivo-riestra": "flashscore:deportivo-riestra",
     "flashscore:bucaramanga": "flashscore:bucaramanga",
     "flashscore:llaneros": "flashscore:llaneros",
-    "flashscore:cordoba": "flashscore:cordoba"
+    "flashscore:cordoba": "flashscore:cordoba",
+    "flashscore:difaa-el-jadidi": "flashscore:difaa-el-jadidi",
+    "flashscore:wydad-athletic": "flashscore:wydad-athletic",
+    "flashscore:widad-temara": "flashscore:widad-temara",
+    "flashscore:cod-meknes": "flashscore:cod-meknes",
+    "thesportsdb:137617": "thesportsdb:137617",
+    "thesportsdb:153100": "thesportsdb:153100",
+    "thesportsdb:136414": "thesportsdb:136414",
+    "thesportsdb:134700": "thesportsdb:134700",
+    "thesportsdb:134232": "thesportsdb:134232",
+    "thesportsdb:136250": "thesportsdb:136250",
+    "thesportsdb:134744": "thesportsdb:134744",
+    "thesportsdb:134198": "thesportsdb:134198",
+    "thesportsdb:134195": "thesportsdb:134195",
+    "thesportsdb:138160": "thesportsdb:138160",
+    "thesportsdb:136463": "thesportsdb:136463",
+    "thesportsdb:139733": "thesportsdb:139733",
+    "thesportsdb:134204": "thesportsdb:134204",
+    "thesportsdb:134194": "thesportsdb:134194",
+    "thesportsdb:134191": "thesportsdb:134191",
+    "thesportsdb:134199": "thesportsdb:134199",
+    "thesportsdb:134630": "thesportsdb:134630",
+    "thesportsdb:136688": "thesportsdb:136688",
+    "thesportsdb:134154": "thesportsdb:134154",
+    "thesportsdb:135292": "thesportsdb:135292",
+    "thesportsdb:150261": "thesportsdb:150261",
+    "thesportsdb:136050": "thesportsdb:136050",
+    "thesportsdb:134143": "thesportsdb:134143",
+    "thesportsdb:134148": "thesportsdb:134148",
+    "thesportsdb:135852": "thesportsdb:135852",
+    "thesportsdb:134159": "thesportsdb:134159",
+    "thesportsdb:134794": "thesportsdb:134794",
+    "thesportsdb:134155": "thesportsdb:134155",
+    "thesportsdb:134145": "thesportsdb:134145",
+    "thesportsdb:136855": "thesportsdb:136855",
+    "thesportsdb:134193": "thesportsdb:134193",
+    "thesportsdb:137699": "thesportsdb:137699",
+    "thesportsdb:146875": "thesportsdb:146875",
+    "thesportsdb:134290": "thesportsdb:134290",
+    "thesportsdb:137786": "thesportsdb:137786",
+    "thesportsdb:145265": "thesportsdb:145265",
+    "thesportsdb:135173": "thesportsdb:135173",
+    "thesportsdb:137771": "thesportsdb:137771",
+    "thesportsdb:135165": "thesportsdb:135165",
+    "thesportsdb:136403": "thesportsdb:136403",
+    "thesportsdb:149227": "thesportsdb:149227",
+    "thesportsdb:135150": "thesportsdb:135150",
+    "thesportsdb:135155": "thesportsdb:135155",
+    "thesportsdb:135177": "thesportsdb:135177",
+    "thesportsdb:135170": "thesportsdb:135170",
+    "thesportsdb:137604": "thesportsdb:137604"
   }
 }
