@@ -1,10 +1,10 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-09-29T22:15:11.319Z",
+  "updatedAt": "2026-09-29T23:35:33.158Z",
   "source": "football-data.org + ESPN + OpenFootball + TheSportsDB enrichment",
   "coverageWindow": {
-    "from": "2026-09-27T22:14:44.598Z",
-    "to": "2026-09-29T22:14:44.598Z"
+    "from": "2026-09-27T23:35:05.013Z",
+    "to": "2026-09-29T23:35:05.013Z"
   },
   "sourcePolicy": {
     "primary": "football-data.org",
@@ -2180,7 +2180,7 @@
             "intAway": "12"
           }
         ],
-        "updatedAt": "2026-09-29T22:15:03.754Z",
+        "updatedAt": "2026-09-29T23:35:25.649Z",
         "source": "primary provider + TheSportsDB enrichment",
         "theSportsDbEventId": "2598453"
       }
@@ -2344,7 +2344,7 @@
           }
         ],
         "statistics": [],
-        "updatedAt": "2026-09-29T22:15:06.277Z",
+        "updatedAt": "2026-09-29T23:35:28.166Z",
         "source": "primary provider + TheSportsDB enrichment",
         "theSportsDbEventId": "2505779"
       }
@@ -2620,7 +2620,7 @@
           }
         ],
         "statistics": [],
-        "updatedAt": "2026-09-29T22:15:09.118Z",
+        "updatedAt": "2026-09-29T23:35:30.957Z",
         "source": "primary provider + TheSportsDB enrichment",
         "theSportsDbEventId": "2505780"
       }
@@ -4367,7 +4367,7 @@
         "providerMatchId": "401877965",
         "date": "2026-09-29T20:30Z",
         "status": {
-          "short": "LIVE"
+          "short": "FT"
         }
       },
       "teams": {
@@ -4475,6 +4475,62 @@
     },
     {
       "fixture": {
+        "id": "espn-fifa.friendly-401903234",
+        "providerMatchId": "401903234",
+        "date": "2026-09-30T01:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "203",
+          "espnId": "203",
+          "provider": "espn",
+          "identity": "espn:203",
+          "name": "Mexico",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "211",
+          "espnId": "211",
+          "provider": "espn",
+          "identity": "espn:211",
+          "name": "Peru",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/per.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/per.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401903234",
+      "externalIds": {
+        "espn": "401903234",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
         "id": "espn-col.1-401877876",
         "providerMatchId": "401877876",
         "date": "2026-09-30T01:05Z",
@@ -4521,62 +4577,6 @@
       "externalIds": {
         "espn": "401877876",
         "espn-league": "col.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-fifa.friendly-401903234",
-        "providerMatchId": "401903234",
-        "date": "2026-09-30T02:30Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "203",
-          "espnId": "203",
-          "provider": "espn",
-          "identity": "espn:203",
-          "name": "Mexico",
-          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "211",
-          "espnId": "211",
-          "provider": "espn",
-          "identity": "espn:211",
-          "name": "Peru",
-          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/per.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/per.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:fifa.friendly",
-        "name": "مباريات دولية ودية",
-        "logo": null
-      },
-      "competitionType": "international-team",
-      "source": "espn",
-      "externalId": "401903234",
-      "externalIds": {
-        "espn": "401903234",
-        "espn-league": "fifa.friendly"
       },
       "details": {
         "events": [],
