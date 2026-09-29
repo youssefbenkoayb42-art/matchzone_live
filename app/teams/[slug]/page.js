@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { notFound } from "next/navigation";
 import {
   getTeamById,
   getTeamMatches,
@@ -125,6 +126,10 @@ function MatchRow({ match }) {
 export async function generateMetadata({ params }) {
   const { slug: id } = await params;
   const team = await getTeamById(id);
+
+  if (!team || !matches.length) {
+    notFound();
+  }
 
   if (!team) {
     return {
