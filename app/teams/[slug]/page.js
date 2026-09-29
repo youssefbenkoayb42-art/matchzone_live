@@ -172,21 +172,6 @@ export default async function TeamDetailPage({ params, searchParams }) {
     notFound();
   }
 
-  if (!team) {
-    return (
-      <main className="mz-team-detail-page" dir="rtl">
-        <div className="mz-teams-shell">
-          <section className="mz-team-section">
-            <span className="mz-catalog-kicker">404 • TEAM</span>
-            <h1>الفريق غير موجود</h1>
-            <p>قد تكون هوية الفريق قد تغيرت أو لم تعد موجودة في لقطة البيانات الحالية.</p>
-            <Link href="/teams" className="mz-catalog-back">← العودة إلى دليل الفرق</Link>
-          </section>
-        </div>
-      </main>
-    );
-  }
-
   const ordered = [...matches].sort(
     (a, b) =>
       new Date(b?.fixture?.date || 0).getTime() -
