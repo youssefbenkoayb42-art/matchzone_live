@@ -51,6 +51,35 @@ function statsForMatches(teamId, matches) {
   return { ...stats, points: stats.wins * 3 + stats.draws, goalDifference: stats.goalsFor - stats.goalsAgainst };
 }
 
+function teamForm(teamId, matches, limit = 5) {
+  return matches
+    .filter(isFinished)
+    .sort((a, b) => new Date(b?.fixture?.date || 0).getTime() - new Date(a?.fixture?.date || 0).getTime())
+    .map((match) => {
+      const homeId = String(match?.teams?.home?.identity || match?.teams?.home?.id || "");
+      const awayId = String(match?.teams?.away?.identity || match?.teams?.away?.id || "");
+      const isHome = homeId === teamId;
+      const isAway = awayId === teamId;
+      if (!isHome && !isAway) return null;
+      const gf = Number(isHome ? match?.goals?.home : match?.goals?.away);
+      const ga = Number(isHome ? match?.goals?.away : match?.goals?.home);
+      if (!Number.isFinite(gf) || !Number.isFinite(ga)) return null;
+      return { result: gf > ga ? "W" : gf === ga ? "D" : "L", gf, ga, match };
+    })
+    .filter(Boolean)
+    .slice(0, limit);
+}
+
+function splitStats(teamId, matches, homeOnly) {
+  const selected = matches.filter((match) => {
+    if (!isFinished(match)) return false;
+    const homeId = String(match?.teams?.home?.identity || match?.teams?.home?.id || "");
+    const awayId = String(match?.teams?.away?.identity || match?.teams?.away?.id || "");
+    return homeOnly ? homeId === teamId : awayId === teamId;
+  });
+  return statsForMatches(teamId, selected);
+}
+
 function TeamLogo({ team }) {
   return (
     <div className="mz-team-card-logo">
@@ -174,6 +203,12 @@ export default async function TeamDetailPage({ params, searchParams }) {
   });
 
   const results = ordered.filter(isFinished).slice(0, 10);
+  const form = teamForm(String(id), matches, 5);
+  const homeStats = splitStats(String(id), matches, true);
+  const awayStats = splitStats(String(id), matches, false);
+  const formWins = form.filter((item) => item.result === "W").length;
+  const formDraws = form.filter((item) => item.result === "D").length;
+  const formLosses = form.filter((item) => item.result === "L").length;
   const upcoming = [...ordered]
     .filter((match) => !isFinished(match))
     .sort(
@@ -253,6 +288,32 @@ export default async function TeamDetailPage({ params, searchParams }) {
             <div><strong>{team.stats.losses}</strong><span>هزيمة</span></div>
             <div><strong>{team.stats.points}</strong><span>نقاط</span></div>
             <div><strong>{team.stats.goalDifference}</strong><span>فرق الأهداف</span></div>
+          </section>
+
+          <section className="mz-team-intelligence" aria-label="ملخص أداء الفريق">
+            <div className="mz-section-heading">
+              <div>
+                <span className="mz-catalog-kicker">FORM GUIDE</span>
+                <h2>فورمة الفريق</h2>
+              </div>
+              <span>آخر {form.length} مباريات</span>
+            </div>
+            <div className="mz-form-row">
+              {form.length ? form.map((item, index) => (
+                <Link key={"form-" + index} href={"/matches/" + encodeURIComponent(String(item.match?.fixture?.id || ""))} className={"mz-form-pill mz-form-" + item.result.toLowerCase()}>
+                  {item.result}
+                </Link>
+              )) : <span className="mz-form-empty">لا توجد نتائج كافية</span>}
+            </div>
+            <div className="mz-form-summary">
+              <span>فوز <strong>{formWins}</strong></span>
+              <span>تعادل <strong>{formDraws}</strong></span>
+              <span>هزيمة <strong>{formLosses}</strong></span>
+            </div>
+            <div className="mz-home-away-grid">
+              <div><span>داخل الأرض</span><strong>{homeStats.played} لعب · {homeStats.wins} فوز</strong><small>{homeStats.goalsFor} له · {homeStats.goalsAgainst} عليه</small></div>
+              <div><span>خارج الأرض</span><strong>{awayStats.played} لعب · {awayStats.wins} فوز</strong><small>{awayStats.goalsFor} له · {awayStats.goalsAgainst} عليه</small></div>
+            </div>
           </section>
 
           <section className="mz-team-section">
