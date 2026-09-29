@@ -101,9 +101,9 @@ export default async function LeaguesPage() {
             </div>
             <span className="mz-catalog-count">{catalog.length}</span>
           </div>
-          <p className="mz-catalog-note">هذه القائمة تشمل أيضًا ملفات OpenFootball التاريخية. وجود الدوري في الكتالوج لا يعني أن لديه مباريات حالية.</p>
+          <p className="mz-catalog-note">نعرض هنا البطولات المكتشفة التي لديها مباريات فعلية في لقطة البيانات الحالية؛ البطولات التي لا تملك مباريات لا ننشئ لها صفحات فارغة.</p>
           <div className="mz-league-grid">
-            {catalog.filter((league) => !league.currentCoverage && !featuredIds.has(league.id)).slice(0, 240).map((league) => (
+            {catalog.filter((league) => Number(league.matchCount || 0) > 0 && !league.currentCoverage && !featuredIds.has(league.id)).slice(0, 240).map((league) => (
               <Link key={league.id} href={"/leagues/catalog/" + catalogSlug(league.id)} className="mz-league-card mz-league-card-muted">
                 <div className="mz-league-mark">LG</div>
                 <div className="mz-league-info">
