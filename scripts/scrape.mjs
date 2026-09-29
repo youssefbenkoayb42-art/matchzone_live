@@ -436,6 +436,21 @@ async function listOpenFootballWorldFiles(pathPart = "", _depth = 0, limit = 250
     const prefix = String(pathPart || "").replace(/\/$/, "") + "/";
     return (Array.isArray(tree?.tree) ? tree.tree : [])
       .filter((item) => item?.type === "blob" && item?.path?.startsWith(prefix) && /\.txt$/i.test(item.path))
+      // Prioritize current-season/current-year files before historical seasons.
+      // The Git tree is not guaranteed to be ordered, so applying the limit
+      // before this sort can hide the leagues we actually need.
+      .sort((a, b) => {
+        const aPath = String(a?.path || "");
+        const bPath = String(b?.path || "");
+        const seasonRank = (value) => {
+          if (/2026-27|2026(?:\.txt)?$/i.test(value)) return 3;
+          if (/2025-26|2025(?:\.txt)?$/i.test(value)) return 2;
+          if (/20\d{2}(?:-\d{2})?/i.test(value)) return 1;
+          return 0;
+        };
+        const rankDiff = seasonRank(bPath) - seasonRank(aPath);
+        return rankDiff || aPath.localeCompare(bPath);
+      })
       .slice(0, limit)
       .map((item) => ({
         name: item.path.split("/").pop(),
