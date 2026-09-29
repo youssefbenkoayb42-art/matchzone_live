@@ -24,6 +24,15 @@ const OPENFOOTBALL_WORLD_ROOTS = [
 const AVATAR_BASE = "https://ui-avatars.com/api/";
 const THESPORTSDB_ENRICH_LIMIT = 8;
 
+// Coverage Engine: ESPN is split into a fast current-day layer and a
+// rotating future-calendar layer. GitHub Actions refreshes one future slice
+// per run and keeps the other slices from the previous snapshot. This gives
+// broad coverage without hammering ESPN with thousands of requests every run.
+const ESPN_CURRENT_DAYS_BACK = 2;
+const ESPN_CURRENT_DAYS_FORWARD = 1;
+const ESPN_FUTURE_DAYS_FORWARD = 30;
+const ESPN_ROTATION_GROUPS = 12;
+
 /*
  * MatchZone data architecture
  *
@@ -679,14 +688,7 @@ async function fetchFootballDataMatches(from, to) {
   }
 }
 
-async function fetchEspnMatches(from, to) {
-  const output = [];
-
-  /*
-   * ESPN's public scoreboard endpoint currently rejects date ranges with HTTP
-   * 400. Use one request per calendar day instead. This is still free and
-   * keeps the provider as a supplemental source.
-   */
+function dayList(from, to) {
   const days = [];
   for (
     let cursor = new Date(from);
@@ -695,9 +697,50 @@ async function fetchEspnMatches(from, to) {
   ) {
     days.push(isoDay(cursor).replaceAll("-", ""));
   }
+  return days;
+}
 
-  for (const [leagueCode, leagueName, competitionType] of ESPN_LEAGUES) {
-    for (const day of days) {
+function espnRotationGroup(leagueIndex, rotationGroups = ESPN_ROTATION_GROUPS) {
+  return leagueIndex % rotationGroups;
+}
+
+function currentRotationGroup() {
+  // The workflow runs every 2 hours. Each group gets a fresh future window
+  // roughly once per day, while today's matches are refreshed every run.
+  const hour = new Date().getUTCHours();
+  return Math.floor(hour / 2) % ESPN_ROTATION_GROUPS;
+}
+
+async function fetchEspnMatches(from, to) {
+  const output = [];
+  const refreshedLeagueCodes = new Set();
+
+  const currentFrom = new Date(from);
+  currentFrom.setUTCDate(currentFrom.getUTCDate() - ESPN_CURRENT_DAYS_BACK);
+  const currentTo = new Date(from);
+  currentTo.setUTCDate(currentTo.getUTCDate() + ESPN_CURRENT_DAYS_FORWARD);
+  const currentDays = dayList(currentFrom, currentTo);
+
+  const futureTo = new Date(from);
+  futureTo.setUTCDate(futureTo.getUTCDate() + ESPN_FUTURE_DAYS_FORWARD);
+  const rotationGroup = currentRotationGroup();
+
+  for (let index = 0; index < ESPN_LEAGUES.length; index += 1) {
+    const [leagueCode, leagueName, competitionType] = ESPN_LEAGUES[index];
+
+    // Every league is checked for the immediate match window. Only the
+    // current rotation slice receives the full future-calendar refresh.
+    const days = [...currentDays];
+    if (espnRotationGroup(index) === rotationGroup) {
+      const futureFrom = new Date(from);
+      futureFrom.setUTCDate(futureFrom.getUTCDate() + 2);
+      days.push(...dayList(futureFrom, futureTo));
+      refreshedLeagueCodes.add(leagueCode);
+    }
+
+    const uniqueDays = [...new Set(days)];
+
+    for (const day of uniqueDays) {
       const url =
         ESPN_API +
         "/" +
@@ -719,7 +762,19 @@ async function fetchEspnMatches(from, to) {
     }
   }
 
-  return output;
+  return { matches: output, refreshedLeagueCodes };
+}
+
+async function loadPreviousEspnMatches() {
+  try {
+    const raw = await fs.readFile(DATA_FILE, "utf8");
+    const data = JSON.parse(raw);
+    return Array.isArray(data?.matches)
+      ? data.matches.filter((match) => match?.source === "espn")
+      : [];
+  } catch {
+    return [];
+  }
 }
 
 function normalizeTeamForSearch(value) {
@@ -892,8 +947,9 @@ async function main() {
     makeFootballDataMatch(item, identityLogos)
   );
 
-  const espnRaw = await fetchEspnMatches(from, to);
-  const espnMatches = espnRaw.map((item) =>
+  const previousEspnMatches = await loadPreviousEspnMatches();
+  const espnResult = await fetchEspnMatches(from, to);
+  const espnMatches = espnResult.matches.map((item) =>
     makeEspnMatch(
       item.event,
       item.leagueCode,
@@ -902,6 +958,21 @@ async function main() {
       identityLogos
     )
   );
+
+  // Keep the previous future-calendar slices that were not refreshed in this
+  // run. Old records are limited to the current rolling window so the snapshot
+  // cannot grow forever.
+  const retainedPreviousEspn = previousEspnMatches.filter((match) => {
+    const leagueCode = String(match?.externalIds?.["espn-league"] || "");
+    if (espnResult.refreshedLeagueCodes.has(leagueCode)) return false;
+
+    const date = new Date(match?.fixture?.date || 0);
+    return (
+      Number.isFinite(date.getTime()) &&
+      date >= new Date(isoDay(from) + "T00:00:00Z") &&
+      date <= new Date(isoDay(to) + "T23:59:59Z")
+    );
+  });
 
   /*
    * Football-Data.org already supplies Brazilian Série A in the current free
@@ -913,7 +984,7 @@ async function main() {
     openFootballRaw
   );
 
-  const supplemental = espnMatches.filter(
+  const supplemental = [...retainedPreviousEspn, ...espnMatches].filter(
     (match) => String(match?.externalIds?.["espn-league"] || "") !== "bra.1"
   );
 
@@ -963,6 +1034,7 @@ async function main() {
     sourcePolicy: {
       primary: "football-data.org",
       supplemental: "ESPN public site API + OpenFootball public-domain datasets",
+      coverageEngine: "ESPN current-window refresh + rotating future-calendar slices preserved across snapshots",
       detailEnrichment: "TheSportsDB V1 free API (existing matches only; no team identity/logo authority)",
       cacheStrategy: "GitHub Actions snapshot; visitors never call providers",
       note: "ESPN endpoint is public/undocumented; OpenFootball is used only for schedule/results coverage and never overrides verified provider identity or logos.",
@@ -979,6 +1051,9 @@ async function main() {
     counts: {
       footballData: footballDataMatches.length,
       espn: supplemental.length,
+      espnFreshRun: espnMatches.length,
+      espnRetained: retainedPreviousEspn.length,
+      espnFutureRotationGroup: currentRotationGroup(),
       openfootball: openFootballMatches.length,
       openfootballWorld: openFootballResult.matches.length,
       total: matches.length,
