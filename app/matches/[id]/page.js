@@ -102,7 +102,7 @@ function Team({ team, score, side }) {
 
 function StatusPill({ status }) {
   const live = status === "LIVE";
-  const finished = ["FT", "AET", "PEN"].includes(status);
+  const finished = ["FT", "AET", "PEN", "FINISHED"].includes(status);
   const label = live ? "● مباشر الآن" : finished ? "انتهت المباراة" : status === "POSTPONED" ? "تأجلت المباراة" : "لم تبدأ";
 
   return (
@@ -145,7 +145,7 @@ export default async function MatchPage({ params }) {
   const league = match.league || {};
   const events = Array.isArray(match.timeline) ? match.timeline : [];
   const stats = Array.isArray(match.stats) ? match.stats : [];
-  const isLive = status === "LIVE";
+  const isLive = ["LIVE", "1H", "2H", "HT", "ET", "BT", "P", "INT"].includes(status);
 
   const structuredData = {
     "@context": "https://schema.org",
