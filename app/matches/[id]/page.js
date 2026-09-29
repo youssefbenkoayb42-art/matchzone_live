@@ -1,3 +1,4 @@
+import { notFound } from "next/navigation";
 import LiveMatchRefresh from "./LiveMatchRefresh";
 
 const BASE_URL = "https://matchzone-live.vercel.app";
@@ -129,7 +130,145 @@ export default async function MatchPage({ params }) {
   const match = await getMatch(id);
 
   if (!match) {
-    return (
+    notFound();
+  }
+
+ort { notFound } from "next/navigation";
+import LiveMatchRefresh from "./LiveMatchRefresh";
+
+const BASE_URL = "https://matchzone-live.vercel.app";
+
+async function getMatch(id) {
+  try {
+    const response = await fetch(
+      `${BASE_URL}/api/match/${encodeURIComponent(id)}`,
+      { cache: "no-store" }
+    );
+    if (!response.ok) return null;
+    const data = await response.json();
+    return data?.response?.[0] || null;
+  } catch {
+    return null;
+  }
+}
+
+export async function generateMetadata({ params }) {
+  const { id } = await params;
+  const match = await getMatch(id);
+
+  if (!match) {
+    return {
+      title: "المباراة غير موجودة | MatchZone",
+      description: "تعذر العثور على تفاصيل المباراة المطلوبة.",
+    };
+  }
+
+  const home = match.teams?.home?.name || "الفريق المضيف";
+  const away = match.teams?.away?.name || "الفريق الضيف";
+  const league = match.league?.name || "كرة القدم";
+  const title = `${home} ضد ${away} | النتيجة والتفاصيل | MatchZone`;
+  const description = `موعد ونتيجة ${home} ضد ${away} في ${league} مع أحداث المباراة والإحصائيات المتاحة.`;
+  const url = `${BASE_URL}/matches/${encodeURIComponent(id)}`;
+
+  return {
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: {
+      title,
+      description,
+      url,
+      type: "website",
+      images: [match.teams?.home?.logo, match.teams?.away?.logo].filter(Boolean),
+    },
+    twitter: { card: "summary", title, description },
+  };
+}
+
+function Team({ team, score, side }) {
+  return (
+    <div style={{ minWidth: 0, textAlign: "center" }}>
+      <div
+        style={{
+          width: "clamp(68px, 20vw, 104px)",
+          height: "clamp(68px, 20vw, 104px)",
+          margin: "0 auto",
+          display: "grid",
+          placeItems: "center",
+          borderRadius: 22,
+          background: "#07100d",
+          border: "1px solid #284238",
+          overflow: "hidden",
+        }}
+      >
+        {team?.logo ? (
+          <img
+            src={team.logo}
+            alt={team.name || "شعار الفريق"}
+            width="88"
+            height="88"
+            style={{ width: "78%", height: "78%", objectFit: "contain" }}
+          />
+        ) : (
+          <span style={{ color: "#37e28a", fontWeight: 900, fontSize: 20 }}>FC</span>
+        )}
+      </div>
+      <h2
+        style={{
+          margin: "14px auto 0",
+          maxWidth: 190,
+          fontSize: "clamp(14px, 4vw, 20px)",
+          lineHeight: 1.35,
+          overflowWrap: "anywhere",
+        }}
+      >
+        <a
+          href={`/teams/${encodeURIComponent(team?.identity || team?.id || "")}`}
+          style={{ color: "#f4f8f6", textDecoration: "none" }}
+        >
+          {team?.name || "فريق غير معروف"}
+        </a>
+      </h2>
+      <span style={{ color: "#82968d", fontSize: 12 }}>
+        {side === "home" ? "المضيف" : "الضيف"}
+      </span>
+    </div>
+  );
+}
+
+function StatusPill({ status }) {
+  const live = status === "LIVE";
+  const finished = ["FT", "AET", "PEN", "FINISHED"].includes(status);
+  const label = live ? "● مباشر الآن" : finished ? "انتهت المباراة" : status === "POSTPONED" ? "تأجلت المباراة" : "لم تبدأ";
+
+  return (
+    <span
+      style={{
+        display: "inline-flex",
+        alignItems: "center",
+        gap: 7,
+        borderRadius: 999,
+        padding: "8px 14px",
+        border: "1px solid #284238",
+        background: live ? "#32171a" : "#0b1713",
+        color: live ? "#ff7b7b" : "#37e28a",
+        fontWeight: 900,
+      }}
+    >
+      {label}
+    </span>
+  );
+}
+
+export default async function MatchPage({ params }) {
+  const { id } = await params;
+  const match = await getMatch(id);
+
+  if (!match) {
+    notFound();
+  }
+
+  /*
       <main dir="rtl" style={{ minHeight: "100vh", background: "#07100d", color: "#f4f8f6", padding: 40, textAlign: "center" }}>
         <h1>لم يتم العثور على المباراة</h1>
         <a href="/" style={{ color: "#37e28a", textDecoration: "none", fontWeight: 800 }}>← العودة إلى MatchZone</a>
