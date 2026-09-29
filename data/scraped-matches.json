@@ -1,10 +1,10 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-09-29T16:31:30.205Z",
+  "updatedAt": "2026-09-29T21:19:53.701Z",
   "source": "football-data.org + ESPN + OpenFootball + TheSportsDB enrichment",
   "coverageWindow": {
-    "from": "2026-09-27T16:30:49.792Z",
-    "to": "2026-10-06T16:30:49.792Z"
+    "from": "2026-09-27T21:19:08.657Z",
+    "to": "2026-10-06T21:19:08.657Z"
   },
   "sourcePolicy": {
     "primary": "football-data.org",
@@ -24,13 +24,13 @@
   },
   "counts": {
     "footballData": 2,
-    "espn": 95,
+    "espn": 168,
     "openfootball": 0,
     "openfootballWorld": 0,
-    "total": 97,
-    "theSportsDbEnriched": 4
+    "total": 170,
+    "theSportsDbEnriched": 3
   },
-  "matchCount": 97,
+  "matchCount": 170,
   "leagues": [
     {
       "id": "openfootball-world:north-america-major-league-soccer-2005-mls",
@@ -1763,6 +1763,56 @@
       "currentCoverage": true
     },
     {
+      "id": "espn:esp.2",
+      "name": "الدوري الإسباني الدرجة الثانية",
+      "region": null,
+      "season": null,
+      "source": "espn",
+      "file": null,
+      "matchCount": 17,
+      "currentCoverage": true
+    },
+    {
+      "id": "espn:eng.3",
+      "name": "الدوري الإنجليزي الدرجة الأولى",
+      "region": null,
+      "season": null,
+      "source": "espn",
+      "file": null,
+      "matchCount": 9,
+      "currentCoverage": true
+    },
+    {
+      "id": "espn:eng.4",
+      "name": "الدوري الإنجليزي الدرجة الثانية",
+      "region": null,
+      "season": null,
+      "source": "espn",
+      "file": null,
+      "matchCount": 11,
+      "currentCoverage": true
+    },
+    {
+      "id": "espn:eng.5",
+      "name": "الدوري الإنجليزي الوطني",
+      "region": null,
+      "season": null,
+      "source": "espn",
+      "file": null,
+      "matchCount": 24,
+      "currentCoverage": true
+    },
+    {
+      "id": "espn:sco.2",
+      "name": "الدوري الاسكتلندي الدرجة الثانية",
+      "region": null,
+      "season": null,
+      "source": "espn",
+      "file": null,
+      "matchCount": 3,
+      "currentCoverage": true
+    },
+    {
       "id": "espn:col.1",
       "name": "الدوري الكولومبي",
       "region": null,
@@ -1783,6 +1833,16 @@
       "currentCoverage": true
     },
     {
+      "id": "espn:ned.2",
+      "name": "الدوري الهولندي الدرجة الثانية",
+      "region": null,
+      "season": null,
+      "source": "espn",
+      "file": null,
+      "matchCount": 9,
+      "currentCoverage": true
+    },
+    {
       "id": "espn:fifa.friendly",
       "name": "مباريات دولية ودية",
       "region": null,
@@ -1793,9 +1853,9 @@
       "currentCoverage": true
     }
   ],
-  "leagueCount": 176,
-  "currentLeagueCount": 6,
-  "catalogLeagueCount": 176,
+  "leagueCount": 182,
+  "currentLeagueCount": 12,
+  "catalogLeagueCount": 182,
   "matches": [
     {
       "fixture": {
@@ -2170,9 +2230,173 @@
             "intAway": "12"
           }
         ],
-        "updatedAt": "2026-09-29T16:31:20.295Z",
+        "updatedAt": "2026-09-29T21:19:46.562Z",
         "source": "primary provider + TheSportsDB enrichment",
         "theSportsDbEventId": "2598453"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-esp.2-401883197",
+        "providerMatchId": "401883197",
+        "date": "2026-09-27T12:00Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "95",
+          "espnId": "95",
+          "provider": "espn",
+          "identity": "espn:95",
+          "name": "Real Valladolid",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/95.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/95.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "8447",
+          "espnId": "8447",
+          "provider": "espn",
+          "identity": "espn:8447",
+          "name": "Córdoba",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/8447.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/8447.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 3,
+        "away": 1
+      },
+      "league": {
+        "id": "espn:esp.2",
+        "name": "الدوري الإسباني الدرجة الثانية",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401883197",
+      "externalIds": {
+        "espn": "401883197",
+        "espn-league": "esp.2",
+        "thesportsdb": "2505779"
+      },
+      "details": {
+        "events": [
+          {
+            "idTimeline": "1907832",
+            "idEvent": "2505779",
+            "strTimeline": "Card",
+            "strTimelineDetail": "Yellow Card",
+            "strHome": "Yes",
+            "strEvent": "Real Valladolid vs Córdoba",
+            "idAPIfootball": "1569947",
+            "idPlayer": "34199459",
+            "strPlayer": "Juanmi Latasa",
+            "strCutout": "https://r2.thesportsdb.com/images/media/player/cutout/4342901678795282.png",
+            "idAssist": "0",
+            "strAssist": "",
+            "intTime": "3",
+            "strPeriod": null,
+            "idTeam": "133841",
+            "strTeam": "Real Valladolid",
+            "strComment": "Foul",
+            "dateEvent": "2026-09-27",
+            "strSeason": "2026-2027"
+          },
+          {
+            "idTimeline": "1907833",
+            "idEvent": "2505779",
+            "strTimeline": "Goal",
+            "strTimelineDetail": "Own Goal",
+            "strHome": "No",
+            "strEvent": "Real Valladolid vs Córdoba",
+            "idAPIfootball": "1569947",
+            "idPlayer": "34177524",
+            "strPlayer": "Miguel Rubio",
+            "strCutout": "https://r2.thesportsdb.com/images/media/player/cutout/bn0k6s1762378910.png",
+            "idAssist": "0",
+            "strAssist": "",
+            "intTime": "4",
+            "strPeriod": null,
+            "idTeam": "134627",
+            "strTeam": "Córdoba",
+            "strComment": "NULL",
+            "dateEvent": "2026-09-27",
+            "strSeason": "2026-2027"
+          },
+          {
+            "idTimeline": "1907834",
+            "idEvent": "2505779",
+            "strTimeline": "Card",
+            "strTimelineDetail": "Yellow Card",
+            "strHome": "Yes",
+            "strEvent": "Real Valladolid vs Córdoba",
+            "idAPIfootball": "1569947",
+            "idPlayer": "34251336",
+            "strPlayer": "Luis Chacón",
+            "strCutout": "",
+            "idAssist": "0",
+            "strAssist": "",
+            "intTime": "23",
+            "strPeriod": null,
+            "idTeam": "133841",
+            "strTeam": "Real Valladolid",
+            "strComment": "Foul",
+            "dateEvent": "2026-09-27",
+            "strSeason": "2026-2027"
+          },
+          {
+            "idTimeline": "1907835",
+            "idEvent": "2505779",
+            "strTimeline": "Goal",
+            "strTimelineDetail": "Normal Goal",
+            "strHome": "Yes",
+            "strEvent": "Real Valladolid vs Córdoba",
+            "idAPIfootball": "1569947",
+            "idPlayer": "34337393",
+            "strPlayer": "Adrián Arnu",
+            "strCutout": "",
+            "idAssist": "34173368",
+            "strAssist": "Julien Ponceau",
+            "intTime": "38",
+            "strPeriod": null,
+            "idTeam": "133841",
+            "strTeam": "Real Valladolid",
+            "strComment": "NULL",
+            "dateEvent": "2026-09-27",
+            "strSeason": "2026-2027"
+          },
+          {
+            "idTimeline": "1907836",
+            "idEvent": "2505779",
+            "strTimeline": "Card",
+            "strTimelineDetail": "Yellow Card",
+            "strHome": "No",
+            "strEvent": "Real Valladolid vs Córdoba",
+            "idAPIfootball": "1569947",
+            "idPlayer": "34217347",
+            "strPlayer": "Kevin Medina",
+            "strCutout": "https://r2.thesportsdb.com/images/media/player/cutout/9rqgfw1784903836.png",
+            "idAssist": "0",
+            "strAssist": "",
+            "intTime": "45",
+            "strPeriod": null,
+            "idTeam": "134627",
+            "strTeam": "Córdoba",
+            "strComment": "Dissent",
+            "dateEvent": "2026-09-27",
+            "strSeason": "2026-2027"
+          }
+        ],
+        "statistics": [],
+        "updatedAt": "2026-09-29T21:19:48.940Z",
+        "source": "primary provider + TheSportsDB enrichment",
+        "theSportsDbEventId": "2505779"
       }
     },
     {
@@ -2233,6 +2457,338 @@
     },
     {
       "fixture": {
+        "id": "espn-ned.2-401875913",
+        "providerMatchId": "401875913",
+        "date": "2026-09-27T12:30Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "144",
+          "espnId": "144",
+          "provider": "espn",
+          "identity": "espn:144",
+          "name": "De Graafschap",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/144.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/144.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "271",
+          "espnId": "271",
+          "provider": "espn",
+          "identity": "espn:271",
+          "name": "FC Den Bosch",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/271.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/271.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 1,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:ned.2",
+        "name": "الدوري الهولندي الدرجة الثانية",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401875913",
+      "externalIds": {
+        "espn": "401875913",
+        "espn-league": "ned.2"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-esp.2-401883164",
+        "providerMatchId": "401883164",
+        "date": "2026-09-27T14:15Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "84",
+          "espnId": "84",
+          "provider": "espn",
+          "identity": "espn:84",
+          "name": "Mallorca",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/84.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/84.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "6832",
+          "espnId": "6832",
+          "provider": "espn",
+          "identity": "espn:6832",
+          "name": "Almería",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6832.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/6832.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 1
+      },
+      "league": {
+        "id": "espn:esp.2",
+        "name": "الدوري الإسباني الدرجة الثانية",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401883164",
+      "externalIds": {
+        "espn": "401883164",
+        "espn-league": "esp.2",
+        "thesportsdb": "2505780"
+      },
+      "details": {
+        "events": [
+          {
+            "idTimeline": "1907853",
+            "idEvent": "2505780",
+            "strTimeline": "subst",
+            "strTimelineDetail": "Substitution 1",
+            "strHome": "Yes",
+            "strEvent": "Mallorca vs Almería",
+            "idAPIfootball": "1569944",
+            "idPlayer": "34246500",
+            "strPlayer": "Antoniu Roca",
+            "strCutout": "https://r2.thesportsdb.com/images/media/player/cutout/yg8q1i1762378883.png",
+            "idAssist": "34219819",
+            "strAssist": "Josep Cerdà",
+            "intTime": "32",
+            "strPeriod": null,
+            "idTeam": "133733",
+            "strTeam": "Mallorca",
+            "strComment": "NULL",
+            "dateEvent": "2026-09-27",
+            "strSeason": "2026-2027"
+          },
+          {
+            "idTimeline": "1907854",
+            "idEvent": "2505780",
+            "strTimeline": "Goal",
+            "strTimelineDetail": "Normal Goal",
+            "strHome": "No",
+            "strEvent": "Mallorca vs Almería",
+            "idAPIfootball": "1569944",
+            "idPlayer": "34193676",
+            "strPlayer": "Miguel de la Fuente",
+            "strCutout": "https://r2.thesportsdb.com/images/media/player/cutout/3h6nxb1787220667.png",
+            "idAssist": "0",
+            "strAssist": "",
+            "intTime": "35",
+            "strPeriod": null,
+            "idTeam": "133817",
+            "strTeam": "Almería",
+            "strComment": "NULL",
+            "dateEvent": "2026-09-27",
+            "strSeason": "2026-2027"
+          },
+          {
+            "idTimeline": "1907855",
+            "idEvent": "2505780",
+            "strTimeline": "Card",
+            "strTimelineDetail": "Yellow Card",
+            "strHome": "No",
+            "strEvent": "Mallorca vs Almería",
+            "idAPIfootball": "1569944",
+            "idPlayer": "34167603",
+            "strPlayer": "Javi Muñoz",
+            "strCutout": "https://r2.thesportsdb.com/images/media/player/cutout/vgeccq1762430266.png",
+            "idAssist": "0",
+            "strAssist": "",
+            "intTime": "37",
+            "strPeriod": null,
+            "idTeam": "133817",
+            "strTeam": "Almería",
+            "strComment": "Foul",
+            "dateEvent": "2026-09-27",
+            "strSeason": "2026-2027"
+          },
+          {
+            "idTimeline": "1907856",
+            "idEvent": "2505780",
+            "strTimeline": "subst",
+            "strTimelineDetail": "Substitution 2",
+            "strHome": "Yes",
+            "strEvent": "Mallorca vs Almería",
+            "idAPIfootball": "1569944",
+            "idPlayer": "34175267",
+            "strPlayer": "Manu Morlanes",
+            "strCutout": "https://r2.thesportsdb.com/images/media/player/cutout/kev3rg1762524478.png",
+            "idAssist": "34175291",
+            "strAssist": "Sergi Darder",
+            "intTime": "45",
+            "strPeriod": null,
+            "idTeam": "133733",
+            "strTeam": "Mallorca",
+            "strComment": "NULL",
+            "dateEvent": "2026-09-27",
+            "strSeason": "2026-2027"
+          },
+          {
+            "idTimeline": "1907857",
+            "idEvent": "2505780",
+            "strTimeline": "subst",
+            "strTimelineDetail": "Substitution 3",
+            "strHome": "Yes",
+            "strEvent": "Mallorca vs Almería",
+            "idAPIfootball": "1569944",
+            "idPlayer": "34258976",
+            "strPlayer": "Adrian Liso",
+            "strCutout": "https://r2.thesportsdb.com/images/media/player/cutout/04i9yg1762430193.png",
+            "idAssist": "34199306",
+            "strAssist": "Arnau Puigmal",
+            "intTime": "62",
+            "strPeriod": null,
+            "idTeam": "133733",
+            "strTeam": "Mallorca",
+            "strComment": "NULL",
+            "dateEvent": "2026-09-27",
+            "strSeason": "2026-2027"
+          }
+        ],
+        "statistics": [],
+        "updatedAt": "2026-09-29T21:19:51.501Z",
+        "source": "primary provider + TheSportsDB enrichment",
+        "theSportsDbEventId": "2505780"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-esp.2-401883202",
+        "providerMatchId": "401883202",
+        "date": "2026-09-27T16:30Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "12597",
+          "espnId": "12597",
+          "provider": "espn",
+          "identity": "espn:12597",
+          "name": "Burgos",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/12597.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/12597.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "7320",
+          "espnId": "7320",
+          "provider": "espn",
+          "identity": "espn:7320",
+          "name": "Eldense",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7320.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/7320.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 1,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:esp.2",
+        "name": "الدوري الإسباني الدرجة الثانية",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401883202",
+      "externalIds": {
+        "espn": "401883202",
+        "espn-league": "esp.2"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-esp.2-401883201",
+        "providerMatchId": "401883201",
+        "date": "2026-09-27T16:30Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "3752",
+          "espnId": "3752",
+          "provider": "espn",
+          "identity": "espn:3752",
+          "name": "Eibar",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3752.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3752.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "98",
+          "espnId": "98",
+          "provider": "espn",
+          "identity": "espn:98",
+          "name": "Las Palmas",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/98.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/98.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 3,
+        "away": 2
+      },
+      "league": {
+        "id": "espn:esp.2",
+        "name": "الدوري الإسباني الدرجة الثانية",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401883201",
+      "externalIds": {
+        "espn": "401883201",
+        "espn-league": "esp.2"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
         "id": "espn-fifa.friendly-401905204",
         "providerMatchId": "401905204",
         "date": "2026-09-27T16:30Z",
@@ -2278,167 +2834,13 @@
       "externalId": "401905204",
       "externalIds": {
         "espn": "401905204",
-        "espn-league": "fifa.friendly",
-        "thesportsdb": "2578508"
+        "espn-league": "fifa.friendly"
       },
       "details": {
-        "events": [
-          {
-            "idTimeline": "1908685",
-            "idEvent": "2578508",
-            "strTimeline": "Goal",
-            "strTimelineDetail": "Missed Penalty",
-            "strHome": "No",
-            "strEvent": "Malta vs Liechtenstein",
-            "idAPIfootball": "1628998",
-            "idPlayer": "34199123",
-            "strPlayer": "Nicolas Hasler",
-            "strCutout": "https://r2.thesportsdb.com/images/media/player/cutout/wotfhi1784879626.png",
-            "idAssist": "0",
-            "strAssist": "",
-            "intTime": "12",
-            "strPeriod": null,
-            "idTeam": "136467",
-            "strTeam": "Liechtenstein",
-            "strComment": "NULL",
-            "dateEvent": "2026-09-27",
-            "strSeason": "2026"
-          },
-          {
-            "idTimeline": "1908686",
-            "idEvent": "2578508",
-            "strTimeline": "Goal",
-            "strTimelineDetail": "Normal Goal",
-            "strHome": "Yes",
-            "strEvent": "Malta vs Liechtenstein",
-            "idAPIfootball": "1628998",
-            "idPlayer": "34224733",
-            "strPlayer": "Jake Grech",
-            "strCutout": "",
-            "idAssist": "34224940",
-            "strAssist": "Brandon Paiber",
-            "intTime": "37",
-            "strPeriod": null,
-            "idTeam": "136465",
-            "strTeam": "Malta",
-            "strComment": "NULL",
-            "dateEvent": "2026-09-27",
-            "strSeason": "2026"
-          },
-          {
-            "idTimeline": "1908687",
-            "idEvent": "2578508",
-            "strTimeline": "subst",
-            "strTimelineDetail": "Substitution 1",
-            "strHome": "Yes",
-            "strEvent": "Malta vs Liechtenstein",
-            "idAPIfootball": "1628998",
-            "idPlayer": "34240827",
-            "strPlayer": "Basil Tuma",
-            "strCutout": "https://r2.thesportsdb.com/images/media/player/cutout/rt2mdm1757877606.png",
-            "idAssist": "34436205",
-            "strAssist": "Andrea Zammit",
-            "intTime": "46",
-            "strPeriod": null,
-            "idTeam": "136465",
-            "strTeam": "Malta",
-            "strComment": "NULL",
-            "dateEvent": "2026-09-27",
-            "strSeason": "2026"
-          },
-          {
-            "idTimeline": "1908688",
-            "idEvent": "2578508",
-            "strTimeline": "subst",
-            "strTimelineDetail": "Substitution 2",
-            "strHome": "Yes",
-            "strEvent": "Malta vs Liechtenstein",
-            "idAPIfootball": "1628998",
-            "idPlayer": "34224814",
-            "strPlayer": "Juan Corbalan",
-            "strCutout": "",
-            "idAssist": "34224968",
-            "strAssist": "Carlo Zammit Lonardelli",
-            "intTime": "46",
-            "strPeriod": null,
-            "idTeam": "136465",
-            "strTeam": "Malta",
-            "strComment": "NULL",
-            "dateEvent": "2026-09-27",
-            "strSeason": "2026"
-          },
-          {
-            "idTimeline": "1908689",
-            "idEvent": "2578508",
-            "strTimeline": "subst",
-            "strTimelineDetail": "Substitution 3",
-            "strHome": "Yes",
-            "strEvent": "Malta vs Liechtenstein",
-            "idAPIfootball": "1628998",
-            "idPlayer": "34346221",
-            "strPlayer": "Keyon Ewurum",
-            "strCutout": "",
-            "idAssist": "34224868",
-            "strAssist": "Paul Mbong",
-            "intTime": "46",
-            "strPeriod": null,
-            "idTeam": "136465",
-            "strTeam": "Malta",
-            "strComment": "NULL",
-            "dateEvent": "2026-09-27",
-            "strSeason": "2026"
-          }
-        ],
-        "statistics": [
-          {
-            "idStatistic": "722890",
-            "idEvent": "2578508",
-            "idApiFootball": "1628998",
-            "strEvent": "Malta vs Liechtenstein",
-            "strStat": "Shots on Goal",
-            "intHome": "0",
-            "intAway": "0"
-          },
-          {
-            "idStatistic": "722891",
-            "idEvent": "2578508",
-            "idApiFootball": "1628998",
-            "strEvent": "Malta vs Liechtenstein",
-            "strStat": "Shots off Goal",
-            "intHome": "0",
-            "intAway": "0"
-          },
-          {
-            "idStatistic": "722892",
-            "idEvent": "2578508",
-            "idApiFootball": "1628998",
-            "strEvent": "Malta vs Liechtenstein",
-            "strStat": "Total Shots",
-            "intHome": "0",
-            "intAway": "0"
-          },
-          {
-            "idStatistic": "722893",
-            "idEvent": "2578508",
-            "idApiFootball": "1628998",
-            "strEvent": "Malta vs Liechtenstein",
-            "strStat": "Blocked Shots",
-            "intHome": "0",
-            "intAway": "0"
-          },
-          {
-            "idStatistic": "722894",
-            "idEvent": "2578508",
-            "idApiFootball": "1628998",
-            "strEvent": "Malta vs Liechtenstein",
-            "strStat": "Shots insidebox",
-            "intHome": "0",
-            "intAway": "0"
-          }
-        ],
-        "updatedAt": "2026-09-29T16:31:22.982Z",
-        "source": "primary provider + TheSportsDB enrichment",
-        "theSportsDbEventId": "2578508"
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
       }
     },
     {
@@ -2488,125 +2890,13 @@
       "externalId": "401919977",
       "externalIds": {
         "espn": "401919977",
-        "espn-league": "fifa.friendly",
-        "thesportsdb": "2606337"
+        "espn-league": "fifa.friendly"
       },
       "details": {
-        "events": [
-          {
-            "idTimeline": "1908749",
-            "idEvent": "2606337",
-            "strTimeline": "Goal",
-            "strTimelineDetail": "Normal Goal",
-            "strHome": "Yes",
-            "strEvent": "Jordan vs Syria",
-            "idAPIfootball": "1640066",
-            "idPlayer": "34228977",
-            "strPlayer": "Ali Olwan",
-            "strCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ifvtit1781097232.png",
-            "idAssist": "0",
-            "strAssist": "",
-            "intTime": "38",
-            "strPeriod": null,
-            "idTeam": "140145",
-            "strTeam": "Jordan",
-            "strComment": "NULL",
-            "dateEvent": "2026-09-27",
-            "strSeason": "2026"
-          },
-          {
-            "idTimeline": "1908750",
-            "idEvent": "2606337",
-            "strTimeline": "Goal",
-            "strTimelineDetail": "Normal Goal",
-            "strHome": "No",
-            "strEvent": "Jordan vs Syria",
-            "idAPIfootball": "1640066",
-            "idPlayer": "34228977",
-            "strPlayer": "Ali Olwan",
-            "strCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ifvtit1781097232.png",
-            "idAssist": "0",
-            "strAssist": "",
-            "intTime": "52",
-            "strPeriod": null,
-            "idTeam": "140032",
-            "strTeam": "Syria",
-            "strComment": "NULL",
-            "dateEvent": "2026-09-27",
-            "strSeason": "2026"
-          },
-          {
-            "idTimeline": "1908751",
-            "idEvent": "2606337",
-            "strTimeline": "Card",
-            "strTimelineDetail": "Yellow Card",
-            "strHome": "Yes",
-            "strEvent": "Jordan vs Syria",
-            "idAPIfootball": "1640066",
-            "idPlayer": "34228977",
-            "strPlayer": "Ali Olwan",
-            "strCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ifvtit1781097232.png",
-            "idAssist": "0",
-            "strAssist": "",
-            "intTime": "90",
-            "strPeriod": null,
-            "idTeam": "140145",
-            "strTeam": "Jordan",
-            "strComment": "NULL",
-            "dateEvent": "2026-09-27",
-            "strSeason": "2026"
-          }
-        ],
-        "statistics": [
-          {
-            "idStatistic": "722962",
-            "idEvent": "2606337",
-            "idApiFootball": "1640066",
-            "strEvent": "Jordan vs Syria",
-            "strStat": "Shots on Goal",
-            "intHome": "0",
-            "intAway": "0"
-          },
-          {
-            "idStatistic": "722963",
-            "idEvent": "2606337",
-            "idApiFootball": "1640066",
-            "strEvent": "Jordan vs Syria",
-            "strStat": "Shots off Goal",
-            "intHome": "0",
-            "intAway": "0"
-          },
-          {
-            "idStatistic": "722964",
-            "idEvent": "2606337",
-            "idApiFootball": "1640066",
-            "strEvent": "Jordan vs Syria",
-            "strStat": "Total Shots",
-            "intHome": "0",
-            "intAway": "0"
-          },
-          {
-            "idStatistic": "722965",
-            "idEvent": "2606337",
-            "idApiFootball": "1640066",
-            "strEvent": "Jordan vs Syria",
-            "strStat": "Blocked Shots",
-            "intHome": "0",
-            "intAway": "0"
-          },
-          {
-            "idStatistic": "722966",
-            "idEvent": "2606337",
-            "idApiFootball": "1640066",
-            "strEvent": "Jordan vs Syria",
-            "strStat": "Shots insidebox",
-            "intHome": "0",
-            "intAway": "0"
-          }
-        ],
-        "updatedAt": "2026-09-29T16:31:25.489Z",
-        "source": "primary provider + TheSportsDB enrichment",
-        "theSportsDbEventId": "2606337"
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
       }
     },
     {
@@ -2656,167 +2946,69 @@
       "externalId": "401876958",
       "externalIds": {
         "espn": "401876958",
-        "espn-league": "mex.1",
-        "thesportsdb": "2487539"
+        "espn-league": "mex.1"
       },
       "details": {
-        "events": [
-          {
-            "idTimeline": "1908356",
-            "idEvent": "2487539",
-            "strTimeline": "Var",
-            "strTimelineDetail": "Penalty confirmed",
-            "strHome": "No",
-            "strEvent": "Pumas UNAM vs Atlético de San Luis",
-            "idAPIfootball": "1550981",
-            "idPlayer": "34180958",
-            "strPlayer": "Felipe Mora",
-            "strCutout": "https://r2.thesportsdb.com/images/media/player/cutout/o6xrrw1766760533.png",
-            "idAssist": "0",
-            "strAssist": "",
-            "intTime": "21",
-            "strPeriod": null,
-            "idTeam": "136856",
-            "strTeam": "Atlético de San Luis",
-            "strComment": "NULL",
-            "dateEvent": "2026-09-27",
-            "strSeason": "2026-2027"
-          },
-          {
-            "idTimeline": "1908357",
-            "idEvent": "2487539",
-            "strTimeline": "Goal",
-            "strTimelineDetail": "Penalty",
-            "strHome": "No",
-            "strEvent": "Pumas UNAM vs Atlético de San Luis",
-            "idAPIfootball": "1550981",
-            "idPlayer": "34233906",
-            "strPlayer": "Sébastien Salles-Lamonge",
-            "strCutout": "",
-            "idAssist": "0",
-            "strAssist": "",
-            "intTime": "23",
-            "strPeriod": null,
-            "idTeam": "136856",
-            "strTeam": "Atlético de San Luis",
-            "strComment": "NULL",
-            "dateEvent": "2026-09-27",
-            "strSeason": "2026-2027"
-          },
-          {
-            "idTimeline": "1908358",
-            "idEvent": "2487539",
-            "strTimeline": "Card",
-            "strTimelineDetail": "Yellow Card",
-            "strHome": "No",
-            "strEvent": "Pumas UNAM vs Atlético de San Luis",
-            "idAPIfootball": "1550981",
-            "idPlayer": "34247863",
-            "strPlayer": "Óscar Macías Mora",
-            "strCutout": "",
-            "idAssist": "0",
-            "strAssist": "",
-            "intTime": "45",
-            "strPeriod": null,
-            "idTeam": "136856",
-            "strTeam": "Atlético de San Luis",
-            "strComment": "Argument",
-            "dateEvent": "2026-09-27",
-            "strSeason": "2026-2027"
-          },
-          {
-            "idTimeline": "1908359",
-            "idEvent": "2487539",
-            "strTimeline": "Card",
-            "strTimelineDetail": "Yellow Card",
-            "strHome": "Yes",
-            "strEvent": "Pumas UNAM vs Atlético de San Luis",
-            "idAPIfootball": "1550981",
-            "idPlayer": "34221107",
-            "strPlayer": "César Huerta",
-            "strCutout": "https://r2.thesportsdb.com/images/media/player/cutout/u0d1li1768080617.png",
-            "idAssist": "0",
-            "strAssist": "",
-            "intTime": "45",
-            "strPeriod": null,
-            "idTeam": "134201",
-            "strTeam": "Pumas UNAM",
-            "strComment": "Argument",
-            "dateEvent": "2026-09-27",
-            "strSeason": "2026-2027"
-          },
-          {
-            "idTimeline": "1908360",
-            "idEvent": "2487539",
-            "strTimeline": "Goal",
-            "strTimelineDetail": "Normal Goal",
-            "strHome": "Yes",
-            "strEvent": "Pumas UNAM vs Atlético de San Luis",
-            "idAPIfootball": "1550981",
-            "idPlayer": "34221105",
-            "strPlayer": "Rodrigo López Quiñónes",
-            "strCutout": "",
-            "idAssist": "0",
-            "strAssist": "",
-            "intTime": "52",
-            "strPeriod": null,
-            "idTeam": "134201",
-            "strTeam": "Pumas UNAM",
-            "strComment": "NULL",
-            "dateEvent": "2026-09-27",
-            "strSeason": "2026-2027"
-          }
-        ],
-        "statistics": [
-          {
-            "idStatistic": "722568",
-            "idEvent": "2487539",
-            "idApiFootball": "1550981",
-            "strEvent": "Pumas UNAM vs Atlético de San Luis",
-            "strStat": "Passes accurate",
-            "intHome": "317",
-            "intAway": "280"
-          },
-          {
-            "idStatistic": "722569",
-            "idEvent": "2487539",
-            "idApiFootball": "1550981",
-            "strEvent": "Pumas UNAM vs Atlético de San Luis",
-            "strStat": "Shots insidebox",
-            "intHome": "8",
-            "intAway": "8"
-          },
-          {
-            "idStatistic": "722570",
-            "idEvent": "2487539",
-            "idApiFootball": "1550981",
-            "strEvent": "Pumas UNAM vs Atlético de San Luis",
-            "strStat": "Shots outsidebox",
-            "intHome": "7",
-            "intAway": "3"
-          },
-          {
-            "idStatistic": "722571",
-            "idEvent": "2487539",
-            "idApiFootball": "1550981",
-            "strEvent": "Pumas UNAM vs Atlético de San Luis",
-            "strStat": "Blocked Shots",
-            "intHome": "2",
-            "intAway": "1"
-          },
-          {
-            "idStatistic": "722572",
-            "idEvent": "2487539",
-            "idApiFootball": "1550981",
-            "strEvent": "Pumas UNAM vs Atlético de San Luis",
-            "strStat": "Free Kicks",
-            "intHome": "10",
-            "intAway": "12"
-          }
-        ],
-        "updatedAt": "2026-09-29T16:31:28.004Z",
-        "source": "primary provider + TheSportsDB enrichment",
-        "theSportsDbEventId": "2487539"
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-esp.2-401883198",
+        "providerMatchId": "401883198",
+        "date": "2026-09-27T19:00Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "92",
+          "espnId": "92",
+          "provider": "espn",
+          "identity": "espn:92",
+          "name": "Real Oviedo",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/92.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/92.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "3788",
+          "espnId": "3788",
+          "provider": "espn",
+          "identity": "espn:3788",
+          "name": "Sporting Gijón",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3788.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3788.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 2,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:esp.2",
+        "name": "الدوري الإسباني الدرجة الثانية",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401883198",
+      "externalIds": {
+        "espn": "401883198",
+        "espn-league": "esp.2"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
       }
     },
     {
@@ -3069,7 +3261,7 @@
           "espnId": "17851",
           "provider": "espn",
           "identity": "espn:17851",
-          "name": "FC Juarez",
+          "name": "FC Juárez",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17851.png",
           "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/17851.png",
           "logoSource": "ESPN team ID",
@@ -3437,6 +3629,62 @@
     },
     {
       "fixture": {
+        "id": "espn-esp.2-401883199",
+        "providerMatchId": "401883199",
+        "date": "2026-09-28T18:30Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "17534",
+          "espnId": "17534",
+          "provider": "espn",
+          "identity": "espn:17534",
+          "name": "Leganés",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17534.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/17534.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "4438",
+          "espnId": "4438",
+          "provider": "espn",
+          "identity": "espn:4438",
+          "name": "Castellón",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4438.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/4438.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 2
+      },
+      "league": {
+        "id": "espn:esp.2",
+        "name": "الدوري الإسباني الدرجة الثانية",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401883199",
+      "externalIds": {
+        "espn": "401883199",
+        "espn-league": "esp.2"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
         "id": "espn-fifa.friendly-401919572",
         "providerMatchId": "401919572",
         "date": "2026-09-28T22:00Z",
@@ -3553,7 +3801,7 @@
         "providerMatchId": "401911182",
         "date": "2026-09-29T16:00Z",
         "status": {
-          "short": "LIVE"
+          "short": "FT"
         }
       },
       "teams": {
@@ -3581,7 +3829,7 @@
         }
       },
       "goals": {
-        "home": 1,
+        "home": 2,
         "away": 0
       },
       "league": {
@@ -3605,11 +3853,571 @@
     },
     {
       "fixture": {
+        "id": "espn-eng.5-401889270",
+        "providerMatchId": "401889270",
+        "date": "2026-09-29T18:00Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "2595",
+          "espnId": "2595",
+          "provider": "espn",
+          "identity": "espn:2595",
+          "name": "Boreham Wood",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2595.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/2595.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "319",
+          "espnId": "319",
+          "provider": "espn",
+          "identity": "espn:319",
+          "name": "Kidderminster Harriers",
+          "logo": "https://ui-avatars.com/api/?name=Kidderminster%20Harriers&length=1&size=128&background=07100d&color=ffffff&bold=true&format=svg",
+          "logoPath": "https://ui-avatars.com/api/?name=Kidderminster%20Harriers&length=1&size=128&background=07100d&color=ffffff&bold=true&format=svg",
+          "logoSource": "UI Avatars",
+          "logoQuality": "avatar"
+        }
+      },
+      "goals": {
+        "home": 3,
+        "away": 1
+      },
+      "league": {
+        "id": "espn:eng.5",
+        "name": "الدوري الإنجليزي الوطني",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401889270",
+      "externalIds": {
+        "espn": "401889270",
+        "espn-league": "eng.5"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-eng.5-401889278",
+        "providerMatchId": "401889278",
+        "date": "2026-09-29T18:45Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "13884",
+          "espnId": "13884",
+          "provider": "espn",
+          "identity": "espn:13884",
+          "name": "AFC Fylde",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/13884.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/13884.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "322",
+          "espnId": "322",
+          "provider": "espn",
+          "identity": "espn:322",
+          "name": "Carlisle United",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/322.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/322.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 2
+      },
+      "league": {
+        "id": "espn:eng.5",
+        "name": "الدوري الإنجليزي الوطني",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401889278",
+      "externalIds": {
+        "espn": "401889278",
+        "espn-league": "eng.5"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-eng.5-401889424",
+        "providerMatchId": "401889424",
+        "date": "2026-09-29T18:45Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "10167",
+          "espnId": "10167",
+          "provider": "espn",
+          "identity": "espn:10167",
+          "name": "AFC Hornchurch",
+          "logo": "https://ui-avatars.com/api/?name=AFC%20Hornchurch&length=1&size=128&background=07100d&color=ffffff&bold=true&format=svg",
+          "logoPath": "https://ui-avatars.com/api/?name=AFC%20Hornchurch&length=1&size=128&background=07100d&color=ffffff&bold=true&format=svg",
+          "logoSource": "UI Avatars",
+          "logoQuality": "avatar"
+        },
+        "away": {
+          "id": "632",
+          "espnId": "632",
+          "provider": "espn",
+          "identity": "espn:632",
+          "name": "Aldershot Town",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/632.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/632.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 2,
+        "away": 1
+      },
+      "league": {
+        "id": "espn:eng.5",
+        "name": "الدوري الإنجليزي الوطني",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401889424",
+      "externalIds": {
+        "espn": "401889424",
+        "espn-league": "eng.5"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-eng.5-401889277",
+        "providerMatchId": "401889277",
+        "date": "2026-09-29T18:45Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "642",
+          "espnId": "642",
+          "provider": "espn",
+          "identity": "espn:642",
+          "name": "Barrow",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/642.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/642.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "313",
+          "espnId": "313",
+          "provider": "espn",
+          "identity": "espn:313",
+          "name": "Scunthorpe United",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/313.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/313.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 3,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:eng.5",
+        "name": "الدوري الإنجليزي الوطني",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401889277",
+      "externalIds": {
+        "espn": "401889277",
+        "espn-league": "eng.5"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-eng.5-401889276",
+        "providerMatchId": "401889276",
+        "date": "2026-09-29T18:45Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "312",
+          "espnId": "312",
+          "provider": "espn",
+          "identity": "espn:312",
+          "name": "FC Halifax Town",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/312.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/312.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "3256",
+          "espnId": "3256",
+          "provider": "espn",
+          "identity": "espn:3256",
+          "name": "Boston United",
+          "logo": "https://ui-avatars.com/api/?name=Boston%20United&length=1&size=128&background=07100d&color=ffffff&bold=true&format=svg",
+          "logoPath": "https://ui-avatars.com/api/?name=Boston%20United&length=1&size=128&background=07100d&color=ffffff&bold=true&format=svg",
+          "logoSource": "UI Avatars",
+          "logoQuality": "avatar"
+        }
+      },
+      "goals": {
+        "home": 1,
+        "away": 1
+      },
+      "league": {
+        "id": "espn:eng.5",
+        "name": "الدوري الإنجليزي الوطني",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401889276",
+      "externalIds": {
+        "espn": "401889276",
+        "espn-league": "eng.5"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-eng.5-401889275",
+        "providerMatchId": "401889275",
+        "date": "2026-09-29T18:45Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "282",
+          "espnId": "282",
+          "provider": "espn",
+          "identity": "espn:282",
+          "name": "Forest Green Rovers",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/282.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/282.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "3887",
+          "espnId": "3887",
+          "provider": "espn",
+          "identity": "espn:3887",
+          "name": "Wealdstone",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3887.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3887.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 1,
+        "away": 1
+      },
+      "league": {
+        "id": "espn:eng.5",
+        "name": "الدوري الإنجليزي الوطني",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401889275",
+      "externalIds": {
+        "espn": "401889275",
+        "espn-league": "eng.5"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-eng.5-401889274",
+        "providerMatchId": "401889274",
+        "date": "2026-09-29T18:45Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "3138",
+          "espnId": "3138",
+          "provider": "espn",
+          "identity": "espn:3138",
+          "name": "Gateshead",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3138.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3138.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "633",
+          "espnId": "633",
+          "provider": "espn",
+          "identity": "espn:633",
+          "name": "Altrincham",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/633.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/633.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 1
+      },
+      "league": {
+        "id": "espn:eng.5",
+        "name": "الدوري الإنجليزي الوطني",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401889274",
+      "externalIds": {
+        "espn": "401889274",
+        "espn-league": "eng.5"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-eng.5-401889273",
+        "providerMatchId": "401889273",
+        "date": "2026-09-29T18:45Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "323",
+          "espnId": "323",
+          "provider": "espn",
+          "identity": "espn:323",
+          "name": "Hartlepool United",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/323.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/323.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "19262",
+          "espnId": "19262",
+          "provider": "espn",
+          "identity": "espn:19262",
+          "name": "Harrogate Town",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/19262.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/19262.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 1
+      },
+      "league": {
+        "id": "espn:eng.5",
+        "name": "الدوري الإنجليزي الوطني",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401889273",
+      "externalIds": {
+        "espn": "401889273",
+        "espn-league": "eng.5"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-eng.5-401889272",
+        "providerMatchId": "401889272",
+        "date": "2026-09-29T18:45Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "290",
+          "espnId": "290",
+          "provider": "espn",
+          "identity": "espn:290",
+          "name": "Woking",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/290.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/290.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "13061",
+          "espnId": "13061",
+          "provider": "espn",
+          "identity": "espn:13061",
+          "name": "Solihull Moors",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/13061.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/13061.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 2,
+        "away": 4
+      },
+      "league": {
+        "id": "espn:eng.5",
+        "name": "الدوري الإنجليزي الوطني",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401889272",
+      "externalIds": {
+        "espn": "401889272",
+        "espn-league": "eng.5"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-eng.5-401889271",
+        "providerMatchId": "401889271",
+        "date": "2026-09-29T18:45Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "284",
+          "espnId": "284",
+          "provider": "espn",
+          "identity": "espn:284",
+          "name": "Yeovil Town",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/284.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/284.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "128663",
+          "espnId": "128663",
+          "provider": "espn",
+          "identity": "espn:128663",
+          "name": "Worthing",
+          "logo": "https://ui-avatars.com/api/?name=Worthing&length=1&size=128&background=07100d&color=ffffff&bold=true&format=svg",
+          "logoPath": "https://ui-avatars.com/api/?name=Worthing&length=1&size=128&background=07100d&color=ffffff&bold=true&format=svg",
+          "logoSource": "UI Avatars",
+          "logoQuality": "avatar"
+        }
+      },
+      "goals": {
+        "home": 1,
+        "away": 1
+      },
+      "league": {
+        "id": "espn:eng.5",
+        "name": "الدوري الإنجليزي الوطني",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401889271",
+      "externalIds": {
+        "espn": "401889271",
+        "espn-league": "eng.5"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
         "id": "espn-col.1-401877965",
         "providerMatchId": "401877965",
         "date": "2026-09-29T20:30Z",
         "status": {
-          "short": "NS"
+          "short": "LIVE"
         }
       },
       "teams": {
@@ -3638,7 +4446,7 @@
       },
       "goals": {
         "home": 0,
-        "away": 0
+        "away": 1
       },
       "league": {
         "id": "espn:col.1",
@@ -4155,6 +4963,118 @@
       "externalIds": {
         "espn": "401912455",
         "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-eng.5-401889269",
+        "providerMatchId": "401889269",
+        "date": "2026-09-30T18:45Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "3897",
+          "espnId": "3897",
+          "provider": "espn",
+          "identity": "espn:3897",
+          "name": "Eastleigh",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3897.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3897.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "310",
+          "espnId": "310",
+          "provider": "espn",
+          "identity": "espn:310",
+          "name": "Southend United",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/310.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/310.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:eng.5",
+        "name": "الدوري الإنجليزي الوطني",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401889269",
+      "externalIds": {
+        "espn": "401889269",
+        "espn-league": "eng.5"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-eng.5-401889268",
+        "providerMatchId": "401889268",
+        "date": "2026-09-30T18:45Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "645",
+          "espnId": "645",
+          "provider": "espn",
+          "identity": "espn:645",
+          "name": "Tamworth",
+          "logo": "https://ui-avatars.com/api/?name=Tamworth&length=1&size=128&background=07100d&color=ffffff&bold=true&format=svg",
+          "logoPath": "https://ui-avatars.com/api/?name=Tamworth&length=1&size=128&background=07100d&color=ffffff&bold=true&format=svg",
+          "logoSource": "UI Avatars",
+          "logoQuality": "avatar"
+        },
+        "away": {
+          "id": "3231",
+          "espnId": "3231",
+          "provider": "espn",
+          "identity": "espn:3231",
+          "name": "Sutton United",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3231.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3231.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:eng.5",
+        "name": "الدوري الإنجليزي الوطني",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401889268",
+      "externalIds": {
+        "espn": "401889268",
+        "espn-league": "eng.5"
       },
       "details": {
         "events": [],
@@ -4801,13 +5721,13 @@
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "7507",
-          "espnId": "7507",
+          "id": "6167",
+          "espnId": "6167",
           "provider": "espn",
-          "identity": "espn:7507",
-          "name": "Turkmenistan",
-          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/tkm.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/tkm.png",
+          "identity": "espn:6167",
+          "name": "Palestine",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/pal.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/pal.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -4883,6 +5803,118 @@
       "externalIds": {
         "espn": "401923178",
         "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-esp.2-401883193",
+        "providerMatchId": "401883193",
+        "date": "2026-10-02T18:30Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "7320",
+          "espnId": "7320",
+          "provider": "espn",
+          "identity": "espn:7320",
+          "name": "Eldense",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7320.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/7320.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "92",
+          "espnId": "92",
+          "provider": "espn",
+          "identity": "espn:92",
+          "name": "Real Oviedo",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/92.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/92.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:esp.2",
+        "name": "الدوري الإسباني الدرجة الثانية",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401883193",
+      "externalIds": {
+        "espn": "401883193",
+        "espn-league": "esp.2"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-ned.2-401875912",
+        "providerMatchId": "401875912",
+        "date": "2026-10-02T19:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "3775",
+          "espnId": "3775",
+          "provider": "espn",
+          "identity": "espn:3775",
+          "name": "Helmond Sport",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3775.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3775.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "3708",
+          "espnId": "3708",
+          "provider": "espn",
+          "identity": "espn:3708",
+          "name": "Heracles Almelo",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3708.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3708.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:ned.2",
+        "name": "الدوري الهولندي الدرجة الثانية",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401875912",
+      "externalIds": {
+        "espn": "401875912",
+        "espn-league": "ned.2"
       },
       "details": {
         "events": [],
@@ -5228,6 +6260,2022 @@
     },
     {
       "fixture": {
+        "id": "espn-eng.4-401881346",
+        "providerMatchId": "401881346",
+        "date": "2026-10-03T11:30Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "343",
+          "espnId": "343",
+          "provider": "espn",
+          "identity": "espn:343",
+          "name": "Chesterfield",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/343.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/343.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "345",
+          "espnId": "345",
+          "provider": "espn",
+          "identity": "espn:345",
+          "name": "Tranmere Rovers",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/345.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/345.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:eng.4",
+        "name": "الدوري الإنجليزي الدرجة الثانية",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401881346",
+      "externalIds": {
+        "espn": "401881346",
+        "espn-league": "eng.4"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-esp.2-401883196",
+        "providerMatchId": "401883196",
+        "date": "2026-10-03T12:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "2737",
+          "espnId": "2737",
+          "provider": "espn",
+          "identity": "espn:2737",
+          "name": "Albacete",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2737.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/2737.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "3752",
+          "espnId": "3752",
+          "provider": "espn",
+          "identity": "espn:3752",
+          "name": "Eibar",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3752.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3752.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:esp.2",
+        "name": "الدوري الإسباني الدرجة الثانية",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401883196",
+      "externalIds": {
+        "espn": "401883196",
+        "espn-league": "esp.2"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-eng.3-401880826",
+        "providerMatchId": "401880826",
+        "date": "2026-10-03T14:00Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "3802",
+          "espnId": "3802",
+          "provider": "espn",
+          "identity": "espn:3802",
+          "name": "AFC Wimbledon",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3802.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3802.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "285",
+          "espnId": "285",
+          "provider": "espn",
+          "identity": "espn:285",
+          "name": "Stevenage",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/285.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/285.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:eng.3",
+        "name": "الدوري الإنجليزي الدرجة الأولى",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401880826",
+      "externalIds": {
+        "espn": "401880826",
+        "espn-league": "eng.3"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-eng.3-401880825",
+        "providerMatchId": "401880825",
+        "date": "2026-10-03T14:00Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "397",
+          "espnId": "397",
+          "provider": "espn",
+          "identity": "espn:397",
+          "name": "Barnsley",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/397.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/397.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "390",
+          "espnId": "390",
+          "provider": "espn",
+          "identity": "espn:390",
+          "name": "Milton Keynes Dons",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/390.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/390.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:eng.3",
+        "name": "الدوري الإنجليزي الدرجة الأولى",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401880825",
+      "externalIds": {
+        "espn": "401880825",
+        "espn-league": "eng.3"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-eng.3-401880823",
+        "providerMatchId": "401880823",
+        "date": "2026-10-03T14:00Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "3129",
+          "espnId": "3129",
+          "provider": "espn",
+          "identity": "espn:3129",
+          "name": "Bromley",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3129.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3129.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "344",
+          "espnId": "344",
+          "provider": "espn",
+          "identity": "espn:344",
+          "name": "Wycombe Wanderers",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/344.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/344.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:eng.3",
+        "name": "الدوري الإنجليزي الدرجة الأولى",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401880823",
+      "externalIds": {
+        "espn": "401880823",
+        "espn-league": "eng.3"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-eng.3-401880822",
+        "providerMatchId": "401880822",
+        "date": "2026-10-03T14:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "2567",
+          "espnId": "2567",
+          "provider": "espn",
+          "identity": "espn:2567",
+          "name": "Burton Albion",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2567.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/2567.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "335",
+          "espnId": "335",
+          "provider": "espn",
+          "identity": "espn:335",
+          "name": "Huddersfield Town",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/335.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/335.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:eng.3",
+        "name": "الدوري الإنجليزي الدرجة الأولى",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401880822",
+      "externalIds": {
+        "espn": "401880822",
+        "espn-league": "eng.3"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-eng.3-401880821",
+        "providerMatchId": "401880821",
+        "date": "2026-10-03T14:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "309",
+          "espnId": "309",
+          "provider": "espn",
+          "identity": "espn:309",
+          "name": "Leyton Orient",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/309.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/309.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "307",
+          "espnId": "307",
+          "provider": "espn",
+          "identity": "espn:307",
+          "name": "Plymouth Argyle",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/307.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/307.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:eng.3",
+        "name": "الدوري الإنجليزي الدرجة الأولى",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401880821",
+      "externalIds": {
+        "espn": "401880821",
+        "espn-league": "eng.3"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-eng.3-401880820",
+        "providerMatchId": "401880820",
+        "date": "2026-10-03T14:00Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "301",
+          "espnId": "301",
+          "provider": "espn",
+          "identity": "espn:301",
+          "name": "Luton Town",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/301.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/301.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "279",
+          "espnId": "279",
+          "provider": "espn",
+          "identity": "espn:279",
+          "name": "Doncaster Rovers",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/279.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/279.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:eng.3",
+        "name": "الدوري الإنجليزي الدرجة الأولى",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401880820",
+      "externalIds": {
+        "espn": "401880820",
+        "espn-league": "eng.3"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-eng.3-401880818",
+        "providerMatchId": "401880818",
+        "date": "2026-10-03T14:00Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "342",
+          "espnId": "342",
+          "provider": "espn",
+          "identity": "espn:342",
+          "name": "Peterborough United",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/342.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/342.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "340",
+          "espnId": "340",
+          "provider": "espn",
+          "identity": "espn:340",
+          "name": "Notts County",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/340.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/340.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:eng.3",
+        "name": "الدوري الإنجليزي الدرجة الأولى",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401880818",
+      "externalIds": {
+        "espn": "401880818",
+        "espn-league": "eng.3"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-eng.3-401880817",
+        "providerMatchId": "401880817",
+        "date": "2026-10-03T14:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "338",
+          "espnId": "338",
+          "provider": "espn",
+          "identity": "espn:338",
+          "name": "Reading",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/338.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/338.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "387",
+          "espnId": "387",
+          "provider": "espn",
+          "identity": "espn:387",
+          "name": "Bradford City",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/387.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/387.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:eng.3",
+        "name": "الدوري الإنجليزي الدرجة الأولى",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401880817",
+      "externalIds": {
+        "espn": "401880817",
+        "espn-league": "eng.3"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-eng.3-401880815",
+        "providerMatchId": "401880815",
+        "date": "2026-10-03T14:00Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "350",
+          "espnId": "350",
+          "provider": "espn",
+          "identity": "espn:350",
+          "name": "Wigan Athletic",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/350.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/350.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "304",
+          "espnId": "304",
+          "provider": "espn",
+          "identity": "espn:304",
+          "name": "Mansfield Town",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/304.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/304.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:eng.3",
+        "name": "الدوري الإنجليزي الدرجة الأولى",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401880815",
+      "externalIds": {
+        "espn": "401880815",
+        "espn-league": "eng.3"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-eng.4-401881348",
+        "providerMatchId": "401881348",
+        "date": "2026-10-03T14:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "2731",
+          "espnId": "2731",
+          "provider": "espn",
+          "identity": "espn:2731",
+          "name": "Accrington Stanley",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2731.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/2731.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "320",
+          "espnId": "320",
+          "provider": "espn",
+          "identity": "espn:320",
+          "name": "Cheltenham Town",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/320.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/320.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:eng.4",
+        "name": "الدوري الإنجليزي الدرجة الثانية",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401881348",
+      "externalIds": {
+        "espn": "401881348",
+        "espn-league": "eng.4"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-eng.4-401881345",
+        "providerMatchId": "401881345",
+        "date": "2026-10-03T14:00Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "339",
+          "espnId": "339",
+          "provider": "espn",
+          "identity": "espn:339",
+          "name": "Colchester United",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/339.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/339.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "348",
+          "espnId": "348",
+          "provider": "espn",
+          "identity": "espn:348",
+          "name": "Port Vale",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/348.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/348.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:eng.4",
+        "name": "الدوري الإنجليزي الدرجة الثانية",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401881345",
+      "externalIds": {
+        "espn": "401881345",
+        "espn-league": "eng.4"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-eng.4-401881344",
+        "providerMatchId": "401881344",
+        "date": "2026-10-03T14:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "396",
+          "espnId": "396",
+          "provider": "espn",
+          "identity": "espn:396",
+          "name": "Crewe Alexandra",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/396.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/396.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "308",
+          "espnId": "308",
+          "provider": "espn",
+          "identity": "espn:308",
+          "name": "Bristol Rovers",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/308.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/308.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:eng.4",
+        "name": "الدوري الإنجليزي الدرجة الثانية",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401881344",
+      "externalIds": {
+        "espn": "401881344",
+        "espn-league": "eng.4"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-eng.4-401881343",
+        "providerMatchId": "401881343",
+        "date": "2026-10-03T14:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "324",
+          "espnId": "324",
+          "provider": "espn",
+          "identity": "espn:324",
+          "name": "Exeter City",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/324.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/324.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "402",
+          "espnId": "402",
+          "provider": "espn",
+          "identity": "espn:402",
+          "name": "Rotherham United",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/402.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/402.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:eng.4",
+        "name": "الدوري الإنجليزي الدرجة الثانية",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401881343",
+      "externalIds": {
+        "espn": "401881343",
+        "espn-league": "eng.4"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-eng.4-401881342",
+        "providerMatchId": "401881342",
+        "date": "2026-10-03T14:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "389",
+          "espnId": "389",
+          "provider": "espn",
+          "identity": "espn:389",
+          "name": "Gillingham",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/389.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/389.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "635",
+          "espnId": "635",
+          "provider": "espn",
+          "identity": "espn:635",
+          "name": "Newport County",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/635.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/635.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:eng.4",
+        "name": "الدوري الإنجليزي الدرجة الثانية",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401881342",
+      "externalIds": {
+        "espn": "401881342",
+        "espn-league": "eng.4"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-eng.4-401881341",
+        "providerMatchId": "401881341",
+        "date": "2026-10-03T14:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "386",
+          "espnId": "386",
+          "provider": "espn",
+          "identity": "espn:386",
+          "name": "Grimsby Town",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/386.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/386.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "302",
+          "espnId": "302",
+          "provider": "espn",
+          "identity": "espn:302",
+          "name": "Shrewsbury Town",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/302.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/302.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:eng.4",
+        "name": "الدوري الإنجليزي الدرجة الثانية",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401881341",
+      "externalIds": {
+        "espn": "401881341",
+        "espn-league": "eng.4"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-eng.4-401881340",
+        "providerMatchId": "401881340",
+        "date": "2026-10-03T14:00Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "353",
+          "espnId": "353",
+          "provider": "espn",
+          "identity": "espn:353",
+          "name": "Northampton Town",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/353.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/353.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "332",
+          "espnId": "332",
+          "provider": "espn",
+          "identity": "espn:332",
+          "name": "Oldham Athletic",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/332.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/332.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:eng.4",
+        "name": "الدوري الإنجليزي الدرجة الثانية",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401881340",
+      "externalIds": {
+        "espn": "401881340",
+        "espn-league": "eng.4"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-eng.4-401881339",
+        "providerMatchId": "401881339",
+        "date": "2026-10-03T14:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "303",
+          "espnId": "303",
+          "provider": "espn",
+          "identity": "espn:303",
+          "name": "Rochdale",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/303.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/303.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "341",
+          "espnId": "341",
+          "provider": "espn",
+          "identity": "espn:341",
+          "name": "Swindon Town",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/341.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/341.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:eng.4",
+        "name": "الدوري الإنجليزي الدرجة الثانية",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401881339",
+      "externalIds": {
+        "espn": "401881339",
+        "espn-league": "eng.4"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-eng.4-401881338",
+        "providerMatchId": "401881338",
+        "date": "2026-10-03T14:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "4703",
+          "espnId": "4703",
+          "provider": "espn",
+          "identity": "espn:4703",
+          "name": "Salford City",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4703.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/4703.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "3891",
+          "espnId": "3891",
+          "provider": "espn",
+          "identity": "espn:3891",
+          "name": "Fleetwood Town",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3891.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3891.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:eng.4",
+        "name": "الدوري الإنجليزي الدرجة الثانية",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401881338",
+      "externalIds": {
+        "espn": "401881338",
+        "espn-league": "eng.4"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-eng.4-401881337",
+        "providerMatchId": "401881337",
+        "date": "2026-10-03T14:00Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "401",
+          "espnId": "401",
+          "provider": "espn",
+          "identity": "espn:401",
+          "name": "Walsall",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/401.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/401.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "2594",
+          "espnId": "2594",
+          "provider": "espn",
+          "identity": "espn:2594",
+          "name": "Crawley Town",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2594.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/2594.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:eng.4",
+        "name": "الدوري الإنجليزي الدرجة الثانية",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401881337",
+      "externalIds": {
+        "espn": "401881337",
+        "espn-league": "eng.4"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-eng.5-401889267",
+        "providerMatchId": "401889267",
+        "date": "2026-10-03T14:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "632",
+          "espnId": "632",
+          "provider": "espn",
+          "identity": "espn:632",
+          "name": "Aldershot Town",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/632.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/632.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "322",
+          "espnId": "322",
+          "provider": "espn",
+          "identity": "espn:322",
+          "name": "Carlisle United",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/322.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/322.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:eng.5",
+        "name": "الدوري الإنجليزي الوطني",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401889267",
+      "externalIds": {
+        "espn": "401889267",
+        "espn-league": "eng.5"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-eng.5-401889266",
+        "providerMatchId": "401889266",
+        "date": "2026-10-03T14:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "642",
+          "espnId": "642",
+          "provider": "espn",
+          "identity": "espn:642",
+          "name": "Barrow",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/642.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/642.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "3887",
+          "espnId": "3887",
+          "provider": "espn",
+          "identity": "espn:3887",
+          "name": "Wealdstone",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3887.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3887.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:eng.5",
+        "name": "الدوري الإنجليزي الوطني",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401889266",
+      "externalIds": {
+        "espn": "401889266",
+        "espn-league": "eng.5"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-eng.5-401889265",
+        "providerMatchId": "401889265",
+        "date": "2026-10-03T14:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "2595",
+          "espnId": "2595",
+          "provider": "espn",
+          "identity": "espn:2595",
+          "name": "Boreham Wood",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2595.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/2595.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "633",
+          "espnId": "633",
+          "provider": "espn",
+          "identity": "espn:633",
+          "name": "Altrincham",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/633.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/633.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:eng.5",
+        "name": "الدوري الإنجليزي الوطني",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401889265",
+      "externalIds": {
+        "espn": "401889265",
+        "espn-league": "eng.5"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-eng.5-401889264",
+        "providerMatchId": "401889264",
+        "date": "2026-10-03T14:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "3897",
+          "espnId": "3897",
+          "provider": "espn",
+          "identity": "espn:3897",
+          "name": "Eastleigh",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3897.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3897.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "290",
+          "espnId": "290",
+          "provider": "espn",
+          "identity": "espn:290",
+          "name": "Woking",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/290.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/290.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:eng.5",
+        "name": "الدوري الإنجليزي الوطني",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401889264",
+      "externalIds": {
+        "espn": "401889264",
+        "espn-league": "eng.5"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-eng.5-401889263",
+        "providerMatchId": "401889263",
+        "date": "2026-10-03T14:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "3138",
+          "espnId": "3138",
+          "provider": "espn",
+          "identity": "espn:3138",
+          "name": "Gateshead",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3138.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3138.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "128663",
+          "espnId": "128663",
+          "provider": "espn",
+          "identity": "espn:128663",
+          "name": "Worthing",
+          "logo": "https://ui-avatars.com/api/?name=Worthing&length=1&size=128&background=07100d&color=ffffff&bold=true&format=svg",
+          "logoPath": "https://ui-avatars.com/api/?name=Worthing&length=1&size=128&background=07100d&color=ffffff&bold=true&format=svg",
+          "logoSource": "UI Avatars",
+          "logoQuality": "avatar"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:eng.5",
+        "name": "الدوري الإنجليزي الوطني",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401889263",
+      "externalIds": {
+        "espn": "401889263",
+        "espn-league": "eng.5"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-eng.5-401889423",
+        "providerMatchId": "401889423",
+        "date": "2026-10-03T14:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "19262",
+          "espnId": "19262",
+          "provider": "espn",
+          "identity": "espn:19262",
+          "name": "Harrogate Town",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/19262.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/19262.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "10167",
+          "espnId": "10167",
+          "provider": "espn",
+          "identity": "espn:10167",
+          "name": "AFC Hornchurch",
+          "logo": "https://ui-avatars.com/api/?name=AFC%20Hornchurch&length=1&size=128&background=07100d&color=ffffff&bold=true&format=svg",
+          "logoPath": "https://ui-avatars.com/api/?name=AFC%20Hornchurch&length=1&size=128&background=07100d&color=ffffff&bold=true&format=svg",
+          "logoSource": "UI Avatars",
+          "logoQuality": "avatar"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:eng.5",
+        "name": "الدوري الإنجليزي الوطني",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401889423",
+      "externalIds": {
+        "espn": "401889423",
+        "espn-league": "eng.5"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-eng.5-401889262",
+        "providerMatchId": "401889262",
+        "date": "2026-10-03T14:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "323",
+          "espnId": "323",
+          "provider": "espn",
+          "identity": "espn:323",
+          "name": "Hartlepool United",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/323.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/323.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "645",
+          "espnId": "645",
+          "provider": "espn",
+          "identity": "espn:645",
+          "name": "Tamworth",
+          "logo": "https://ui-avatars.com/api/?name=Tamworth&length=1&size=128&background=07100d&color=ffffff&bold=true&format=svg",
+          "logoPath": "https://ui-avatars.com/api/?name=Tamworth&length=1&size=128&background=07100d&color=ffffff&bold=true&format=svg",
+          "logoSource": "UI Avatars",
+          "logoQuality": "avatar"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:eng.5",
+        "name": "الدوري الإنجليزي الوطني",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401889262",
+      "externalIds": {
+        "espn": "401889262",
+        "espn-league": "eng.5"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-eng.5-401889261",
+        "providerMatchId": "401889261",
+        "date": "2026-10-03T14:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "319",
+          "espnId": "319",
+          "provider": "espn",
+          "identity": "espn:319",
+          "name": "Kidderminster Harriers",
+          "logo": "https://ui-avatars.com/api/?name=Kidderminster%20Harriers&length=1&size=128&background=07100d&color=ffffff&bold=true&format=svg",
+          "logoPath": "https://ui-avatars.com/api/?name=Kidderminster%20Harriers&length=1&size=128&background=07100d&color=ffffff&bold=true&format=svg",
+          "logoSource": "UI Avatars",
+          "logoQuality": "avatar"
+        },
+        "away": {
+          "id": "3231",
+          "espnId": "3231",
+          "provider": "espn",
+          "identity": "espn:3231",
+          "name": "Sutton United",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3231.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3231.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:eng.5",
+        "name": "الدوري الإنجليزي الوطني",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401889261",
+      "externalIds": {
+        "espn": "401889261",
+        "espn-league": "eng.5"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-eng.5-401889260",
+        "providerMatchId": "401889260",
+        "date": "2026-10-03T14:00Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "313",
+          "espnId": "313",
+          "provider": "espn",
+          "identity": "espn:313",
+          "name": "Scunthorpe United",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/313.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/313.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "282",
+          "espnId": "282",
+          "provider": "espn",
+          "identity": "espn:282",
+          "name": "Forest Green Rovers",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/282.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/282.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:eng.5",
+        "name": "الدوري الإنجليزي الوطني",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401889260",
+      "externalIds": {
+        "espn": "401889260",
+        "espn-league": "eng.5"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-eng.5-401889259",
+        "providerMatchId": "401889259",
+        "date": "2026-10-03T14:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "13061",
+          "espnId": "13061",
+          "provider": "espn",
+          "identity": "espn:13061",
+          "name": "Solihull Moors",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/13061.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/13061.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "312",
+          "espnId": "312",
+          "provider": "espn",
+          "identity": "espn:312",
+          "name": "FC Halifax Town",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/312.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/312.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:eng.5",
+        "name": "الدوري الإنجليزي الوطني",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401889259",
+      "externalIds": {
+        "espn": "401889259",
+        "espn-league": "eng.5"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-eng.5-401889258",
+        "providerMatchId": "401889258",
+        "date": "2026-10-03T14:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "310",
+          "espnId": "310",
+          "provider": "espn",
+          "identity": "espn:310",
+          "name": "Southend United",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/310.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/310.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "13884",
+          "espnId": "13884",
+          "provider": "espn",
+          "identity": "espn:13884",
+          "name": "AFC Fylde",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/13884.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/13884.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:eng.5",
+        "name": "الدوري الإنجليزي الوطني",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401889258",
+      "externalIds": {
+        "espn": "401889258",
+        "espn-league": "eng.5"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-eng.5-401889257",
+        "providerMatchId": "401889257",
+        "date": "2026-10-03T14:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "284",
+          "espnId": "284",
+          "provider": "espn",
+          "identity": "espn:284",
+          "name": "Yeovil Town",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/284.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/284.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "3256",
+          "espnId": "3256",
+          "provider": "espn",
+          "identity": "espn:3256",
+          "name": "Boston United",
+          "logo": "https://ui-avatars.com/api/?name=Boston%20United&length=1&size=128&background=07100d&color=ffffff&bold=true&format=svg",
+          "logoPath": "https://ui-avatars.com/api/?name=Boston%20United&length=1&size=128&background=07100d&color=ffffff&bold=true&format=svg",
+          "logoSource": "UI Avatars",
+          "logoQuality": "avatar"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:eng.5",
+        "name": "الدوري الإنجليزي الوطني",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401889257",
+      "externalIds": {
+        "espn": "401889257",
+        "espn-league": "eng.5"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-sco.2-401878556",
+        "providerMatchId": "401878556",
+        "date": "2026-10-03T14:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "411",
+          "espnId": "411",
+          "provider": "espn",
+          "identity": "espn:411",
+          "name": "Greenock Morton",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/411.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/411.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "249",
+          "espnId": "249",
+          "provider": "espn",
+          "identity": "espn:249",
+          "name": "Raith Rovers",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/249.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/249.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:sco.2",
+        "name": "الدوري الاسكتلندي الدرجة الثانية",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401878556",
+      "externalIds": {
+        "espn": "401878556",
+        "espn-league": "sco.2"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-sco.2-401878555",
+        "providerMatchId": "401878555",
+        "date": "2026-10-03T14:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "259",
+          "espnId": "259",
+          "provider": "espn",
+          "identity": "espn:259",
+          "name": "Livingston",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/259.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/259.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "248",
+          "espnId": "248",
+          "provider": "espn",
+          "identity": "espn:248",
+          "name": "Ayr United",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/248.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/248.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:sco.2",
+        "name": "الدوري الاسكتلندي الدرجة الثانية",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401878555",
+      "externalIds": {
+        "espn": "401878555",
+        "espn-league": "sco.2"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-sco.2-401878554",
+        "providerMatchId": "401878554",
+        "date": "2026-10-03T14:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "247",
+          "espnId": "247",
+          "provider": "espn",
+          "identity": "espn:247",
+          "name": "Partick Thistle",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/247.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/247.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "252",
+          "espnId": "252",
+          "provider": "espn",
+          "identity": "espn:252",
+          "name": "Arbroath",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/252.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/252.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:sco.2",
+        "name": "الدوري الاسكتلندي الدرجة الثانية",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401878554",
+      "externalIds": {
+        "espn": "401878554",
+        "espn-league": "sco.2"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
         "id": "espn-fifa.friendly-401903233",
         "providerMatchId": "401903233",
         "date": "2026-10-03T14:00Z",
@@ -5274,6 +8322,174 @@
       "externalIds": {
         "espn": "401903233",
         "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-esp.2-401883195",
+        "providerMatchId": "401883195",
+        "date": "2026-10-03T14:15Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "6832",
+          "espnId": "6832",
+          "provider": "espn",
+          "identity": "espn:6832",
+          "name": "Almería",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6832.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/6832.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "12597",
+          "espnId": "12597",
+          "provider": "espn",
+          "identity": "espn:12597",
+          "name": "Burgos",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/12597.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/12597.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:esp.2",
+        "name": "الدوري الإسباني الدرجة الثانية",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401883195",
+      "externalIds": {
+        "espn": "401883195",
+        "espn-league": "esp.2"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-ned.2-401875906",
+        "providerMatchId": "401875906",
+        "date": "2026-10-03T14:30Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "3728",
+          "espnId": "3728",
+          "provider": "espn",
+          "identity": "espn:3728",
+          "name": "TOP Oss",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3728.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3728.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "3730",
+          "espnId": "3730",
+          "provider": "espn",
+          "identity": "espn:3730",
+          "name": "MVV Maastricht",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3730.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3730.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:ned.2",
+        "name": "الدوري الهولندي الدرجة الثانية",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401875906",
+      "externalIds": {
+        "espn": "401875906",
+        "espn-league": "ned.2"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-ned.2-401875911",
+        "providerMatchId": "401875911",
+        "date": "2026-10-03T14:30Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "154",
+          "espnId": "154",
+          "provider": "espn",
+          "identity": "espn:154",
+          "name": "Vitesse",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/154.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/154.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "141",
+          "espnId": "141",
+          "provider": "espn",
+          "identity": "espn:141",
+          "name": "NAC Breda",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/141.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/141.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:ned.2",
+        "name": "الدوري الهولندي الدرجة الثانية",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401875911",
+      "externalIds": {
+        "espn": "401875911",
+        "espn-league": "ned.2"
       },
       "details": {
         "events": [],
@@ -5340,6 +8556,118 @@
     },
     {
       "fixture": {
+        "id": "espn-esp.2-401883194",
+        "providerMatchId": "401883194",
+        "date": "2026-10-03T16:30Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "3842",
+          "espnId": "3842",
+          "provider": "espn",
+          "identity": "espn:3842",
+          "name": "Cádiz",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3842.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3842.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "17534",
+          "espnId": "17534",
+          "provider": "espn",
+          "identity": "espn:17534",
+          "name": "Leganés",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17534.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/17534.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:esp.2",
+        "name": "الدوري الإسباني الدرجة الثانية",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401883194",
+      "externalIds": {
+        "espn": "401883194",
+        "espn-league": "esp.2"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-esp.2-401883190",
+        "providerMatchId": "401883190",
+        "date": "2026-10-03T16:30Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "11487",
+          "espnId": "11487",
+          "provider": "espn",
+          "identity": "espn:11487",
+          "name": "CD Sabadell",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11487.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/11487.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "20179",
+          "espnId": "20179",
+          "provider": "espn",
+          "identity": "espn:20179",
+          "name": "FC Andorra",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20179.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/20179.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:esp.2",
+        "name": "الدوري الإسباني الدرجة الثانية",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401883190",
+      "externalIds": {
+        "espn": "401883190",
+        "espn-league": "esp.2"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
         "id": "espn-arg.1-401841593",
         "providerMatchId": "401841593",
         "date": "2026-10-03T17:45Z",
@@ -5386,6 +8714,230 @@
       "externalIds": {
         "espn": "401841593",
         "espn-league": "arg.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-ned.2-401875910",
+        "providerMatchId": "401875910",
+        "date": "2026-10-03T18:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "5291",
+          "espnId": "5291",
+          "provider": "espn",
+          "identity": "espn:5291",
+          "name": "Almere City",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/5291.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/5291.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "2727",
+          "espnId": "2727",
+          "provider": "espn",
+          "identity": "espn:2727",
+          "name": "FC Volendam",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2727.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/2727.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:ned.2",
+        "name": "الدوري الهولندي الدرجة الثانية",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401875910",
+      "externalIds": {
+        "espn": "401875910",
+        "espn-league": "ned.2"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-ned.2-401875909",
+        "providerMatchId": "401875909",
+        "date": "2026-10-03T18:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "271",
+          "espnId": "271",
+          "provider": "espn",
+          "identity": "espn:271",
+          "name": "FC Den Bosch",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/271.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/271.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "4426",
+          "espnId": "4426",
+          "provider": "espn",
+          "identity": "espn:4426",
+          "name": "FC Dordrecht",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4426.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/4426.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:ned.2",
+        "name": "الدوري الهولندي الدرجة الثانية",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401875909",
+      "externalIds": {
+        "espn": "401875909",
+        "espn-league": "ned.2"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-ned.2-401875908",
+        "providerMatchId": "401875908",
+        "date": "2026-10-03T18:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "3732",
+          "espnId": "3732",
+          "provider": "espn",
+          "identity": "espn:3732",
+          "name": "FC Eindhoven",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3732.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3732.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "144",
+          "espnId": "144",
+          "provider": "espn",
+          "identity": "espn:144",
+          "name": "De Graafschap",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/144.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/144.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:ned.2",
+        "name": "الدوري الهولندي الدرجة الثانية",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401875908",
+      "externalIds": {
+        "espn": "401875908",
+        "espn-league": "ned.2"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-ned.2-401875907",
+        "providerMatchId": "401875907",
+        "date": "2026-10-03T18:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "155",
+          "espnId": "155",
+          "provider": "espn",
+          "identity": "espn:155",
+          "name": "RKC Waalwijk",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/155.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/155.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "3707",
+          "espnId": "3707",
+          "provider": "espn",
+          "identity": "espn:3707",
+          "name": "FC Emmen",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3707.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3707.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:ned.2",
+        "name": "الدوري الهولندي الدرجة الثانية",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401875907",
+      "externalIds": {
+        "espn": "401875907",
+        "espn-league": "ned.2"
       },
       "details": {
         "events": [],
@@ -5508,62 +9060,6 @@
     },
     {
       "fixture": {
-        "id": "espn-fifa.friendly-401916228",
-        "providerMatchId": "401916228",
-        "date": "2026-10-03T18:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "659",
-          "espnId": "659",
-          "provider": "espn",
-          "identity": "espn:659",
-          "name": "Tunisia",
-          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/tun.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/tun.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "2849",
-          "espnId": "2849",
-          "provider": "espn",
-          "identity": "espn:2849",
-          "name": "Mali",
-          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mli.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/mli.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:fifa.friendly",
-        "name": "مباريات دولية ودية",
-        "logo": null
-      },
-      "competitionType": "international-team",
-      "source": "espn",
-      "externalId": "401916228",
-      "externalIds": {
-        "espn": "401916228",
-        "espn-league": "fifa.friendly"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
         "id": "espn-col.1-401877776",
         "providerMatchId": "401877776",
         "date": "2026-10-03T19:00Z",
@@ -5665,6 +9161,62 @@
       "externalId": "401917861",
       "externalIds": {
         "espn": "401917861",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401916228",
+        "providerMatchId": "401916228",
+        "date": "2026-10-03T19:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "659",
+          "espnId": "659",
+          "provider": "espn",
+          "identity": "espn:659",
+          "name": "Tunisia",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/tun.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/tun.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "2849",
+          "espnId": "2849",
+          "provider": "espn",
+          "identity": "espn:2849",
+          "name": "Mali",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mli.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/mli.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401916228",
+      "externalIds": {
+        "espn": "401916228",
         "espn-league": "fifa.friendly"
       },
       "details": {
@@ -6011,6 +9563,118 @@
     },
     {
       "fixture": {
+        "id": "espn-esp.2-401883191",
+        "providerMatchId": "401883191",
+        "date": "2026-10-04T12:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "20983",
+          "espnId": "20983",
+          "provider": "espn",
+          "identity": "espn:20983",
+          "name": "Real Sociedad II",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20983.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/20983.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "3747",
+          "espnId": "3747",
+          "provider": "espn",
+          "identity": "espn:3747",
+          "name": "Granada",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3747.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3747.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:esp.2",
+        "name": "الدوري الإسباني الدرجة الثانية",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401883191",
+      "externalIds": {
+        "espn": "401883191",
+        "espn-league": "esp.2"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-ned.2-401875905",
+        "providerMatchId": "401875905",
+        "date": "2026-10-04T12:30Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "3731",
+          "espnId": "3731",
+          "provider": "espn",
+          "identity": "espn:3731",
+          "name": "VVV-Venlo",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3731.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3731.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "149",
+          "espnId": "149",
+          "provider": "espn",
+          "identity": "espn:149",
+          "name": "Roda JC Kerkrade",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/149.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/149.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:ned.2",
+        "name": "الدوري الهولندي الدرجة الثانية",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401875905",
+      "externalIds": {
+        "espn": "401875905",
+        "espn-league": "ned.2"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
         "id": "espn-fifa.friendly-401922038",
         "providerMatchId": "401922038",
         "date": "2026-10-04T13:00Z",
@@ -6113,6 +9777,174 @@
       "externalIds": {
         "espn": "401921339",
         "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-esp.2-401883311",
+        "providerMatchId": "401883311",
+        "date": "2026-10-04T14:15Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "3788",
+          "espnId": "3788",
+          "provider": "espn",
+          "identity": "espn:3788",
+          "name": "Sporting Gijón",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3788.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3788.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "131858",
+          "espnId": "131858",
+          "provider": "espn",
+          "identity": "espn:131858",
+          "name": "RC Celta Fortuna",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/131858.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/131858.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:esp.2",
+        "name": "الدوري الإسباني الدرجة الثانية",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401883311",
+      "externalIds": {
+        "espn": "401883311",
+        "espn-league": "esp.2"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-esp.2-401883162",
+        "providerMatchId": "401883162",
+        "date": "2026-10-04T16:30Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "4438",
+          "espnId": "4438",
+          "provider": "espn",
+          "identity": "espn:4438",
+          "name": "Castellón",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4438.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/4438.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "5404",
+          "espnId": "5404",
+          "provider": "espn",
+          "identity": "espn:5404",
+          "name": "Ceuta",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/5404.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/5404.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:esp.2",
+        "name": "الدوري الإسباني الدرجة الثانية",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401883162",
+      "externalIds": {
+        "espn": "401883162",
+        "espn-league": "esp.2"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-esp.2-401883192",
+        "providerMatchId": "401883192",
+        "date": "2026-10-04T16:30Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "98",
+          "espnId": "98",
+          "provider": "espn",
+          "identity": "espn:98",
+          "name": "Las Palmas",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/98.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/98.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "95",
+          "espnId": "95",
+          "provider": "espn",
+          "identity": "espn:95",
+          "name": "Real Valladolid",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/95.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/95.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:esp.2",
+        "name": "الدوري الإسباني الدرجة الثانية",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401883192",
+      "externalIds": {
+        "espn": "401883192",
+        "espn-league": "esp.2"
       },
       "details": {
         "events": [],
@@ -6337,6 +10169,62 @@
       "externalIds": {
         "espn": "401878051",
         "espn-league": "col.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-esp.2-401883160",
+        "providerMatchId": "401883160",
+        "date": "2026-10-04T19:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "9812",
+          "espnId": "9812",
+          "provider": "espn",
+          "identity": "espn:9812",
+          "name": "Girona",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9812.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/9812.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "84",
+          "espnId": "84",
+          "provider": "espn",
+          "identity": "espn:84",
+          "name": "Mallorca",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/84.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/84.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:esp.2",
+        "name": "الدوري الإسباني الدرجة الثانية",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401883160",
+      "externalIds": {
+        "espn": "401883160",
+        "espn-league": "esp.2"
       },
       "details": {
         "events": [],
@@ -6841,6 +10729,62 @@
       "externalIds": {
         "espn": "401918508",
         "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-esp.2-401883161",
+        "providerMatchId": "401883161",
+        "date": "2026-10-05T18:30Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "8447",
+          "espnId": "8447",
+          "provider": "espn",
+          "identity": "espn:8447",
+          "name": "Córdoba",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/8447.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/8447.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "245",
+          "espnId": "245",
+          "provider": "espn",
+          "identity": "espn:245",
+          "name": "Tenerife",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/245.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/245.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:esp.2",
+        "name": "الدوري الإسباني الدرجة الثانية",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "401883161",
+      "externalIds": {
+        "espn": "401883161",
+        "espn-league": "esp.2"
       },
       "details": {
         "events": [],
