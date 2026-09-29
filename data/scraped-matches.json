@@ -1,10 +1,10 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-09-29T21:38:13.033Z",
+  "updatedAt": "2026-09-29T22:15:11.319Z",
   "source": "football-data.org + ESPN + OpenFootball + TheSportsDB enrichment",
   "coverageWindow": {
-    "from": "2026-09-27T21:37:52.973Z",
-    "to": "2026-09-29T21:37:52.973Z"
+    "from": "2026-09-27T22:14:44.598Z",
+    "to": "2026-09-29T22:14:44.598Z"
   },
   "sourcePolicy": {
     "primary": "football-data.org",
@@ -2180,7 +2180,7 @@
             "intAway": "12"
           }
         ],
-        "updatedAt": "2026-09-29T21:38:05.876Z",
+        "updatedAt": "2026-09-29T22:15:03.754Z",
         "source": "primary provider + TheSportsDB enrichment",
         "theSportsDbEventId": "2598453"
       }
@@ -2344,7 +2344,7 @@
           }
         ],
         "statistics": [],
-        "updatedAt": "2026-09-29T21:38:08.263Z",
+        "updatedAt": "2026-09-29T22:15:06.277Z",
         "source": "primary provider + TheSportsDB enrichment",
         "theSportsDbEventId": "2505779"
       }
@@ -2620,7 +2620,7 @@
           }
         ],
         "statistics": [],
-        "updatedAt": "2026-09-29T21:38:10.833Z",
+        "updatedAt": "2026-09-29T22:15:09.118Z",
         "source": "primary provider + TheSportsDB enrichment",
         "theSportsDbEventId": "2505780"
       }
@@ -4396,7 +4396,7 @@
       },
       "goals": {
         "home": 1,
-        "away": 1
+        "away": 2
       },
       "league": {
         "id": "espn:col.1",
