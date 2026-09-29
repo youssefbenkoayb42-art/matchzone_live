@@ -125,17 +125,13 @@ function MatchRow({ match }) {
 
 export async function generateMetadata({ params }) {
   const { slug: id } = await params;
-  const team = await getTeamById(id);
+  const [team, matches] = await Promise.all([
+    getTeamById(id),
+    getTeamMatches(id),
+  ]);
 
-  if (!team || !matches.length) {
+  if (!team || matches.length === 0) {
     notFound();
-  }
-
-  if (!team) {
-    return {
-      title: "الفريق غير موجود | MatchZone",
-      description: "تعذر العثور على الفريق المطلوب في بيانات MatchZone الحالية.",
-    };
   }
 
   const title = team.name + " | المباريات والنتائج والإحصائيات | MatchZone";
@@ -171,6 +167,10 @@ export default async function TeamDetailPage({ params, searchParams }) {
     getTeamMatches(id),
     getMatchSnapshotMeta(),
   ]);
+
+  if (!team || matches.length === 0) {
+    notFound();
+  }
 
   if (!team) {
     return (
