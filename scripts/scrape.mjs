@@ -60,6 +60,7 @@ const ESPN_LEAGUES = [
   ["bra.1", "الدوري البرازيلي", "domestic"],
   ["arg.1", "الدوري الأرجنتيني", "domestic"],
   ["col.1", "الدوري الكولومبي", "domestic"],
+  ["ksa.1", "الدوري السعودي", "domestic"],
   ["nor.1", "الدوري النرويجي", "domestic"],
   ["swe.1", "الدوري السويدي", "domestic"],
   ["den.1", "الدوري الدنماركي", "domestic"],
