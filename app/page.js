@@ -3,11 +3,26 @@
 import { useEffect, useMemo, useState } from "react";
 
 const BASE_LEAGUES = [
-  ["premier-league", "الدوري الإنجليزي"],
-  ["la-liga", "الدوري الإسباني"],
-  ["serie-a", "الدوري الإيطالي"],
-  ["bundesliga", "الدوري الألماني"],
-  ["ligue-1", "الدوري الفرنسي"],
+  ["premier-league", "الدوري الإنجليزي", "legacy"],
+  ["la-liga", "الدوري الإسباني", "legacy"],
+  ["serie-a", "الدوري الإيطالي", "legacy"],
+  ["bundesliga", "الدوري الألماني", "legacy"],
+  ["ligue-1", "الدوري الفرنسي", "legacy"],
+  ["espn:eng.2", "التشامبيونشيب", "catalog"],
+  ["espn:esp.2", "الدوري الإسباني 2", "catalog"],
+  ["espn:ger.2", "الدوري الألماني 2", "catalog"],
+  ["espn:ita.2", "الدوري الإيطالي 2", "catalog"],
+  ["espn:fra.2", "الدوري الفرنسي 2", "catalog"],
+  ["espn:ned.1", "الدوري الهولندي", "catalog"],
+  ["espn:por.1", "الدوري البرتغالي", "catalog"],
+  ["espn:bel.1", "الدوري البلجيكي", "catalog"],
+  ["espn:aut.1", "الدوري النمساوي", "catalog"],
+  ["espn:gre.1", "الدوري اليوناني", "catalog"],
+  ["espn:tur.1", "الدوري التركي", "catalog"],
+  ["espn:sco.1", "الدوري الاسكتلندي", "catalog"],
+  ["espn:cyp.1", "الدوري القبرصي", "catalog"],
+  ["espn:irl.1", "الدوري الأيرلندي", "catalog"],
+  ["espn:rus.1", "الدوري الروسي", "catalog"],
 ];
 
 const LEAGUE_LOGOS = {
@@ -52,6 +67,11 @@ function TeamLogo({ src, alt, size = 48 }) {
       style={{ width: size, height: size }}
     />
   );
+}
+
+function CatalogLeagueMark({ name }) {
+  const label = String(name || "EU").trim().replace(/[^\p{L}\p{N}]/gu, "").slice(0, 2).toUpperCase();
+  return <span className="league-fallback catalog-league-mark">{label || "EU"}</span>;
 }
 
 function LeagueLogo({ slug, name }) {
@@ -460,18 +480,27 @@ export default function HomeDesign() {
             <div>
               <span className="section-kicker">TOP LEAGUES</span>
               <h2>أهم البطولات</h2>
-              <p>تابع أشهر الدوريات الأوروبية في لحظة.</p>
+              <p>تابع أشهر الدوريات الأوروبية المتاحة في MatchZone من مصادر مجانية.</p>
             </div>
             <a href="/leagues">كل البطولات ←</a>
           </div>
           <div className="league-strip">
-            {BASE_LEAGUES.map(([slug, name]) => (
-              <a href={`/leagues/${slug}`} key={slug} className="league-card">
-                <span className="league-icon-wrap"><LeagueLogo slug={slug} name={name} /></span>
-                <strong>{name}</strong>
-                <span className="league-arrow">←</span>
-              </a>
-            ))}
+            {BASE_LEAGUES.map(([slug, name, type]) => {
+              const href = type === "legacy"
+                ? `/leagues/${slug}`
+                : `/leagues/catalog/${encodeURIComponent(slug)}`;
+              return (
+                <a href={href} key={slug} className="league-card">
+                  <span className="league-icon-wrap">
+                    {type === "legacy"
+                      ? <LeagueLogo slug={slug} name={name} />
+                      : <CatalogLeagueMark name={name} />}
+                  </span>
+                  <strong>{name}</strong>
+                  <span className="league-arrow">←</span>
+                </a>
+              );
+            })}
           </div>
         </section>
 
