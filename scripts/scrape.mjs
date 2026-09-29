@@ -865,7 +865,7 @@ async function main() {
   from.setUTCDate(from.getUTCDate() - 2);
 
   const to = new Date(now);
-  to.setUTCDate(to.getUTCDate() + 7);
+  // Keep a useful rolling fixture calendar: past 2 days + next 30 days.\n  // The snapshot is refreshed by GitHub Actions, so visitors never hit providers directly.\n  to.setUTCDate(to.getUTCDate() + 30);
 
   const identityLogos = new Map();
 
