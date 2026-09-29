@@ -3142,3 +3142,35 @@ main {
   border-color:rgba(85,255,180,.42);
   background:rgba(35,180,115,.12);
 }
+
+
+/* Team performance intelligence */
+.mz-team-intelligence{
+  margin:22px 0;
+  padding:18px;
+  border:1px solid rgba(57,229,139,.13);
+  border-radius:20px;
+  background:radial-gradient(circle at 90% 0,rgba(57,229,139,.07),transparent 34%),linear-gradient(145deg,rgba(255,255,255,.035),rgba(255,255,255,.012));
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.035);
+}
+.mz-form-row{display:flex;align-items:center;gap:7px;flex-wrap:wrap}
+.mz-form-pill{display:inline-grid;place-items:center;width:38px;height:38px;border-radius:11px;border:1px solid rgba(255,255,255,.08);font:950 11px Arial,sans-serif;text-decoration:none;transition:transform .18s ease}
+.mz-form-pill:hover{transform:translateY(-2px)}
+.mz-form-w{color:#39e58b;border-color:rgba(57,229,139,.24);background:rgba(57,229,139,.08);box-shadow:0 0 14px rgba(57,229,139,.05)}
+.mz-form-d{color:#f5c542;border-color:rgba(245,197,66,.24);background:rgba(245,197,66,.07)}
+.mz-form-l{color:#ff6872;border-color:rgba(255,104,114,.24);background:rgba(255,104,114,.07)}
+.mz-form-empty{color:#61746a;font-size:11px}
+.mz-form-summary{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.mz-form-summary span{padding:7px 10px;border:1px solid rgba(255,255,255,.055);border-radius:9px;background:rgba(255,255,255,.02);color:#708279;font-size:9px;font-weight:800}
+.mz-form-summary strong{color:#eaf5ef;margin-inline-start:4px;font-size:11px}
+.mz-home-away-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin-top:12px}
+.mz-home-away-grid>div{padding:12px;border:1px solid rgba(255,255,255,.055);border-radius:13px;background:rgba(255,255,255,.018)}
+.mz-home-away-grid span{display:block;color:#39e58b;font-size:8px;font-weight:950;letter-spacing:.8px}
+.mz-home-away-grid strong{display:block;margin-top:6px;color:#eaf5ef;font-size:11px}
+.mz-home-away-grid small{display:block;margin-top:4px;color:#6f8379;font-size:8px}
+@media(max-width:650px){
+  .mz-team-intelligence{padding:13px;border-radius:18px}
+  .mz-form-pill{width:34px;height:34px;border-radius:9px}
+  .mz-home-away-grid{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){.mz-form-pill{transition:none}}
