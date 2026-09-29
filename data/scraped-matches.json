@@ -1,10 +1,10 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-09-28T22:00:44.436Z",
+  "updatedAt": "2026-09-29T01:59:45.147Z",
   "source": "football-data.org + ESPN + OpenFootball + TheSportsDB enrichment",
   "coverageWindow": {
-    "from": "2026-09-26T22:00:19.220Z",
-    "to": "2026-10-05T22:00:19.220Z"
+    "from": "2026-09-27T01:56:57.411Z",
+    "to": "2026-10-06T01:56:57.411Z"
   },
   "sourcePolicy": {
     "primary": "football-data.org",
@@ -24,13 +24,13 @@
   },
   "counts": {
     "footballData": 2,
-    "espn": 107,
+    "espn": 95,
     "openfootball": 0,
     "openfootballWorld": 0,
-    "total": 109,
-    "theSportsDbEnriched": 3
+    "total": 97,
+    "theSportsDbEnriched": 4
   },
-  "matchCount": 109,
+  "matchCount": 97,
   "leagues": [
     {
       "id": "openfootball-world:north-america-major-league-soccer-2005-mls",
@@ -1759,7 +1759,7 @@
       "season": null,
       "source": "espn",
       "file": null,
-      "matchCount": 16,
+      "matchCount": 4,
       "currentCoverage": true
     },
     {
@@ -1769,7 +1769,7 @@
       "season": null,
       "source": "espn",
       "file": null,
-      "matchCount": 18,
+      "matchCount": 15,
       "currentCoverage": true
     },
     {
@@ -1779,7 +1779,7 @@
       "season": null,
       "source": "espn",
       "file": null,
-      "matchCount": 7,
+      "matchCount": 3,
       "currentCoverage": true
     },
     {
@@ -1789,7 +1789,7 @@
       "season": null,
       "source": "espn",
       "file": null,
-      "matchCount": 52,
+      "matchCount": 59,
       "currentCoverage": true
     }
   ],
@@ -1797,1756 +1797,6 @@
   "currentLeagueCount": 6,
   "catalogLeagueCount": 176,
   "matches": [
-    {
-      "fixture": {
-        "id": "espn-fifa.friendly-401905203",
-        "providerMatchId": "401905203",
-        "date": "2026-09-26T20:30Z",
-        "status": {
-          "short": "FT"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "660",
-          "espnId": "660",
-          "provider": "espn",
-          "identity": "espn:660",
-          "name": "United States",
-          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "211",
-          "espnId": "211",
-          "provider": "espn",
-          "identity": "espn:211",
-          "name": "Peru",
-          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/per.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/per.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 4,
-        "away": 1
-      },
-      "league": {
-        "id": "espn:fifa.friendly",
-        "name": "مباريات دولية ودية",
-        "logo": null
-      },
-      "competitionType": "international-team",
-      "source": "espn",
-      "externalId": "401905203",
-      "externalIds": {
-        "espn": "401905203",
-        "espn-league": "fifa.friendly"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-col.1-401878047",
-        "providerMatchId": "401878047",
-        "date": "2026-09-26T21:00Z",
-        "status": {
-          "short": "FT"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "5486",
-          "espnId": "5486",
-          "provider": "espn",
-          "identity": "espn:5486",
-          "name": "Deportivo Pereira",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/5486.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/5486.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "7445",
-          "espnId": "7445",
-          "provider": "espn",
-          "identity": "espn:7445",
-          "name": "Internacional de Bogotá",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7445.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/7445.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:col.1",
-        "name": "الدوري الكولومبي",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401878047",
-      "externalIds": {
-        "espn": "401878047",
-        "espn-league": "col.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-mex.1-401876959",
-        "providerMatchId": "401876959",
-        "date": "2026-09-26T22:50Z",
-        "status": {
-          "short": "FT"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "218",
-          "espnId": "218",
-          "provider": "espn",
-          "identity": "espn:218",
-          "name": "Cruz Azul",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/218.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/218.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "223",
-          "espnId": "223",
-          "provider": "espn",
-          "identity": "espn:223",
-          "name": "Toluca",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/223.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/223.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 3,
-        "away": 3
-      },
-      "league": {
-        "id": "espn:mex.1",
-        "name": "الدوري المكسيكي",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401876959",
-      "externalIds": {
-        "espn": "401876959",
-        "espn-league": "mex.1",
-        "thesportsdb": "2487538"
-      },
-      "details": {
-        "events": [
-          {
-            "idTimeline": "1907084",
-            "idEvent": "2487538",
-            "strTimeline": "Goal",
-            "strTimelineDetail": "Normal Goal",
-            "strHome": "Yes",
-            "strEvent": "Cruz Azul vs Toluca",
-            "idAPIfootball": "1550980",
-            "idPlayer": "34221178",
-            "strPlayer": "Nicolás Ibáñez",
-            "strCutout": "",
-            "idAssist": "34192744",
-            "strAssist": "José Paradela",
-            "intTime": "7",
-            "strPeriod": null,
-            "idTeam": "134196",
-            "strTeam": "Cruz Azul",
-            "strComment": "NULL",
-            "dateEvent": "2026-09-26",
-            "strSeason": "2026-2027"
-          },
-          {
-            "idTimeline": "1907085",
-            "idEvent": "2487538",
-            "strTimeline": "Card",
-            "strTimelineDetail": "Yellow Card",
-            "strHome": "No",
-            "strEvent": "Cruz Azul vs Toluca",
-            "idAPIfootball": "1550980",
-            "idPlayer": "34221093",
-            "strPlayer": "Diego Barbosa",
-            "strCutout": "https://r2.thesportsdb.com/images/media/player/cutout/1rysal1776415984.png",
-            "idAssist": "0",
-            "strAssist": "",
-            "intTime": "37",
-            "strPeriod": null,
-            "idTeam": "134204",
-            "strTeam": "Toluca",
-            "strComment": "Foul",
-            "dateEvent": "2026-09-26",
-            "strSeason": "2026-2027"
-          },
-          {
-            "idTimeline": "1907086",
-            "idEvent": "2487538",
-            "strTimeline": "Goal",
-            "strTimelineDetail": "Normal Goal",
-            "strHome": "Yes",
-            "strEvent": "Cruz Azul vs Toluca",
-            "idAPIfootball": "1550980",
-            "idPlayer": "34175224",
-            "strPlayer": "Gabriel Leites",
-            "strCutout": "",
-            "idAssist": "34221178",
-            "strAssist": "Nicolás Ibáñez",
-            "intTime": "38",
-            "strPeriod": null,
-            "idTeam": "134196",
-            "strTeam": "Cruz Azul",
-            "strComment": "NULL",
-            "dateEvent": "2026-09-26",
-            "strSeason": "2026-2027"
-          },
-          {
-            "idTimeline": "1907087",
-            "idEvent": "2487538",
-            "strTimeline": "Card",
-            "strTimelineDetail": "Yellow Card",
-            "strHome": "Yes",
-            "strEvent": "Cruz Azul vs Toluca",
-            "idAPIfootball": "1550980",
-            "idPlayer": "34198447",
-            "strPlayer": "Agustín Palavecino",
-            "strCutout": "https://r2.thesportsdb.com/images/media/player/cutout/5g72cj1750666542.png",
-            "idAssist": "0",
-            "strAssist": "",
-            "intTime": "45",
-            "strPeriod": null,
-            "idTeam": "134196",
-            "strTeam": "Cruz Azul",
-            "strComment": "Dissent",
-            "dateEvent": "2026-09-26",
-            "strSeason": "2026-2027"
-          },
-          {
-            "idTimeline": "1907088",
-            "idEvent": "2487538",
-            "strTimeline": "subst",
-            "strTimelineDetail": "Substitution 1",
-            "strHome": "No",
-            "strEvent": "Cruz Azul vs Toluca",
-            "idAPIfootball": "1550980",
-            "idPlayer": "34221093",
-            "strPlayer": "Diego Barbosa",
-            "strCutout": "https://r2.thesportsdb.com/images/media/player/cutout/1rysal1776415984.png",
-            "idAssist": "34164186",
-            "strAssist": "Érick Gutiérrez",
-            "intTime": "45",
-            "strPeriod": null,
-            "idTeam": "134204",
-            "strTeam": "Toluca",
-            "strComment": "NULL",
-            "dateEvent": "2026-09-26",
-            "strSeason": "2026-2027"
-          }
-        ],
-        "statistics": [
-          {
-            "idStatistic": "720585",
-            "idEvent": "2487538",
-            "idApiFootball": "1550980",
-            "strEvent": "Cruz Azul vs Toluca",
-            "strStat": "Passes accurate",
-            "intHome": "251",
-            "intAway": "282"
-          },
-          {
-            "idStatistic": "720586",
-            "idEvent": "2487538",
-            "idApiFootball": "1550980",
-            "strEvent": "Cruz Azul vs Toluca",
-            "strStat": "Shots insidebox",
-            "intHome": "10",
-            "intAway": "10"
-          },
-          {
-            "idStatistic": "720587",
-            "idEvent": "2487538",
-            "idApiFootball": "1550980",
-            "strEvent": "Cruz Azul vs Toluca",
-            "strStat": "Shots outsidebox",
-            "intHome": "7",
-            "intAway": "8"
-          },
-          {
-            "idStatistic": "720588",
-            "idEvent": "2487538",
-            "idApiFootball": "1550980",
-            "strEvent": "Cruz Azul vs Toluca",
-            "strStat": "Blocked Shots",
-            "intHome": "3",
-            "intAway": "2"
-          },
-          {
-            "idStatistic": "720589",
-            "idEvent": "2487538",
-            "idApiFootball": "1550980",
-            "strEvent": "Cruz Azul vs Toluca",
-            "strStat": "Free Kicks",
-            "intHome": "16",
-            "intAway": "13"
-          }
-        ],
-        "updatedAt": "2026-09-28T22:00:36.947Z",
-        "source": "primary provider + TheSportsDB enrichment",
-        "theSportsDbEventId": "2487538"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-fifa.friendly-401900326",
-        "providerMatchId": "401900326",
-        "date": "2026-09-26T23:00Z",
-        "status": {
-          "short": "FT"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "206",
-          "espnId": "206",
-          "provider": "espn",
-          "identity": "espn:206",
-          "name": "Canada",
-          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "207",
-          "espnId": "207",
-          "provider": "espn",
-          "identity": "espn:207",
-          "name": "Chile",
-          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/chi.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/chi.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 1,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:fifa.friendly",
-        "name": "مباريات دولية ودية",
-        "logo": null
-      },
-      "competitionType": "international-team",
-      "source": "espn",
-      "externalId": "401900326",
-      "externalIds": {
-        "espn": "401900326",
-        "espn-league": "fifa.friendly",
-        "thesportsdb": "2558125"
-      },
-      "details": {
-        "events": [
-          {
-            "idTimeline": "1907329",
-            "idEvent": "2558125",
-            "strTimeline": "Goal",
-            "strTimelineDetail": "Normal Goal",
-            "strHome": "Yes",
-            "strEvent": "Canada vs Chile",
-            "idAPIfootball": "1610877",
-            "idPlayer": "34172150",
-            "strPlayer": "Jonathan David",
-            "strCutout": "https://r2.thesportsdb.com/images/media/player/cutout/nyd9d91759225738.png",
-            "idAssist": "34162178",
-            "strAssist": "Cyle Larin",
-            "intTime": "12",
-            "strPeriod": null,
-            "idTeam": "140073",
-            "strTeam": "Canada",
-            "strComment": "NULL",
-            "dateEvent": "2026-09-26",
-            "strSeason": "2026"
-          },
-          {
-            "idTimeline": "1907330",
-            "idEvent": "2558125",
-            "strTimeline": "Card",
-            "strTimelineDetail": "Yellow Card",
-            "strHome": "No",
-            "strEvent": "Canada vs Chile",
-            "idAPIfootball": "1610877",
-            "idPlayer": "34196995",
-            "strPlayer": "Gabriel Suazo",
-            "strCutout": "https://r2.thesportsdb.com/images/media/player/cutout/8o2ezj1762860532.png",
-            "idAssist": "0",
-            "strAssist": "",
-            "intTime": "29",
-            "strPeriod": null,
-            "idTeam": "134499",
-            "strTeam": "Chile",
-            "strComment": "NULL",
-            "dateEvent": "2026-09-26",
-            "strSeason": "2026"
-          },
-          {
-            "idTimeline": "1907331",
-            "idEvent": "2558125",
-            "strTimeline": "Card",
-            "strTimelineDetail": "Red Card",
-            "strHome": "No",
-            "strEvent": "Canada vs Chile",
-            "idAPIfootball": "1610877",
-            "idPlayer": "34217792",
-            "strPlayer": "Lucas Cepeda",
-            "strCutout": "https://r2.thesportsdb.com/images/media/player/cutout/8h82p91775220816.png",
-            "idAssist": "0",
-            "strAssist": "",
-            "intTime": "35",
-            "strPeriod": null,
-            "idTeam": "134499",
-            "strTeam": "Chile",
-            "strComment": "NULL",
-            "dateEvent": "2026-09-26",
-            "strSeason": "2026"
-          },
-          {
-            "idTimeline": "1907332",
-            "idEvent": "2558125",
-            "strTimeline": "Card",
-            "strTimelineDetail": "Yellow Card",
-            "strHome": "No",
-            "strEvent": "Canada vs Chile",
-            "idAPIfootball": "1610877",
-            "idPlayer": "34196995",
-            "strPlayer": "Gabriel Suazo",
-            "strCutout": "https://r2.thesportsdb.com/images/media/player/cutout/8o2ezj1762860532.png",
-            "idAssist": "0",
-            "strAssist": "",
-            "intTime": "50",
-            "strPeriod": null,
-            "idTeam": "134499",
-            "strTeam": "Chile",
-            "strComment": "NULL",
-            "dateEvent": "2026-09-26",
-            "strSeason": "2026"
-          },
-          {
-            "idTimeline": "1907333",
-            "idEvent": "2558125",
-            "strTimeline": "Card",
-            "strTimelineDetail": "Red Card",
-            "strHome": "No",
-            "strEvent": "Canada vs Chile",
-            "idAPIfootball": "1610877",
-            "idPlayer": "34196995",
-            "strPlayer": "Gabriel Suazo",
-            "strCutout": "https://r2.thesportsdb.com/images/media/player/cutout/8o2ezj1762860532.png",
-            "idAssist": "0",
-            "strAssist": "",
-            "intTime": "50",
-            "strPeriod": null,
-            "idTeam": "134499",
-            "strTeam": "Chile",
-            "strComment": "NULL",
-            "dateEvent": "2026-09-26",
-            "strSeason": "2026"
-          }
-        ],
-        "statistics": [
-          {
-            "idStatistic": "720824",
-            "idEvent": "2558125",
-            "idApiFootball": "1610877",
-            "strEvent": "Canada vs Chile",
-            "strStat": "Shots on Goal",
-            "intHome": "3",
-            "intAway": "2"
-          },
-          {
-            "idStatistic": "720825",
-            "idEvent": "2558125",
-            "idApiFootball": "1610877",
-            "strEvent": "Canada vs Chile",
-            "strStat": "Shots off Goal",
-            "intHome": "1",
-            "intAway": "0"
-          },
-          {
-            "idStatistic": "720826",
-            "idEvent": "2558125",
-            "idApiFootball": "1610877",
-            "strEvent": "Canada vs Chile",
-            "strStat": "Total Shots",
-            "intHome": "5",
-            "intAway": "3"
-          },
-          {
-            "idStatistic": "720827",
-            "idEvent": "2558125",
-            "idApiFootball": "1610877",
-            "strEvent": "Canada vs Chile",
-            "strStat": "Blocked Shots",
-            "intHome": "1",
-            "intAway": "1"
-          },
-          {
-            "idStatistic": "720828",
-            "idEvent": "2558125",
-            "idApiFootball": "1610877",
-            "strEvent": "Canada vs Chile",
-            "strStat": "Shots insidebox",
-            "intHome": "5",
-            "intAway": "1"
-          }
-        ],
-        "updatedAt": "2026-09-28T22:00:39.387Z",
-        "source": "primary provider + TheSportsDB enrichment",
-        "theSportsDbEventId": "2558125"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-mex.1-401876962",
-        "providerMatchId": "401876962",
-        "date": "2026-09-26T23:07Z",
-        "status": {
-          "short": "FT"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "219",
-          "espnId": "219",
-          "provider": "espn",
-          "identity": "espn:219",
-          "name": "Guadalajara",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/219.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/219.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "222",
-          "espnId": "222",
-          "provider": "espn",
-          "identity": "espn:222",
-          "name": "Querétaro",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/222.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/222.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 2
-      },
-      "league": {
-        "id": "espn:mex.1",
-        "name": "الدوري المكسيكي",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401876962",
-      "externalIds": {
-        "espn": "401876962",
-        "espn-league": "mex.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-col.1-401878058",
-        "providerMatchId": "401878058",
-        "date": "2026-09-26T23:15Z",
-        "status": {
-          "short": "FT"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "6101",
-          "espnId": "6101",
-          "provider": "espn",
-          "identity": "espn:6101",
-          "name": "Cúcuta Deportivo",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6101.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/6101.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "7915",
-          "espnId": "7915",
-          "provider": "espn",
-          "identity": "espn:7915",
-          "name": "Llaneros FC",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7915.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/7915.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 2,
-        "away": 1
-      },
-      "league": {
-        "id": "espn:col.1",
-        "name": "الدوري الكولومبي",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401878058",
-      "externalIds": {
-        "espn": "401878058",
-        "espn-league": "col.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-usa.1-761830",
-        "providerMatchId": "761830",
-        "date": "2026-09-26T23:30Z",
-        "status": {
-          "short": "FT"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "18418",
-          "espnId": "18418",
-          "provider": "espn",
-          "identity": "espn:18418",
-          "name": "Atlanta United FC",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18418.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/18418.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "17606",
-          "espnId": "17606",
-          "provider": "espn",
-          "identity": "espn:17606",
-          "name": "New York City FC",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17606.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/17606.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 2,
-        "away": 2
-      },
-      "league": {
-        "id": "espn:usa.1",
-        "name": "الدوري الأمريكي MLS",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "761830",
-      "externalIds": {
-        "espn": "761830",
-        "espn-league": "usa.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-usa.1-761831",
-        "providerMatchId": "761831",
-        "date": "2026-09-26T23:30Z",
-        "status": {
-          "short": "FT"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "9720",
-          "espnId": "9720",
-          "provider": "espn",
-          "identity": "espn:9720",
-          "name": "CF Montréal",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9720.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/9720.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "18267",
-          "espnId": "18267",
-          "provider": "espn",
-          "identity": "espn:18267",
-          "name": "FC Cincinnati",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18267.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/18267.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 3,
-        "away": 1
-      },
-      "league": {
-        "id": "espn:usa.1",
-        "name": "الدوري الأمريكي MLS",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "761831",
-      "externalIds": {
-        "espn": "761831",
-        "espn-league": "usa.1",
-        "thesportsdb": "2407100"
-      },
-      "details": {
-        "events": [
-          {
-            "idTimeline": "1907139",
-            "idEvent": "2407100",
-            "strTimeline": "subst",
-            "strTimelineDetail": "Substitution 1",
-            "strHome": "Yes",
-            "strEvent": "CF Montréal vs FC Cincinnati",
-            "idAPIfootball": "1490498",
-            "idPlayer": "34219175",
-            "strPlayer": "Brayan Ceballos",
-            "strCutout": "https://r2.thesportsdb.com/images/media/player/cutout/pdnjqc1766743591.png",
-            "idAssist": "34181101",
-            "strAssist": "Fabian Herbers",
-            "intTime": "11",
-            "strPeriod": null,
-            "idTeam": "134150",
-            "strTeam": "CF Montréal",
-            "strComment": "NULL",
-            "dateEvent": "2026-09-26",
-            "strSeason": "2026"
-          },
-          {
-            "idTimeline": "1907140",
-            "idEvent": "2407100",
-            "strTimeline": "Goal",
-            "strTimelineDetail": "Normal Goal",
-            "strHome": "Yes",
-            "strEvent": "CF Montréal vs FC Cincinnati",
-            "idAPIfootball": "1490498",
-            "idPlayer": "34199149",
-            "strPlayer": "Daniel Ríos",
-            "strCutout": "https://r2.thesportsdb.com/images/media/player/cutout/f3rs6k1777652115.png",
-            "idAssist": "0",
-            "strAssist": "",
-            "intTime": "25",
-            "strPeriod": null,
-            "idTeam": "134150",
-            "strTeam": "CF Montréal",
-            "strComment": "NULL",
-            "dateEvent": "2026-09-26",
-            "strSeason": "2026"
-          },
-          {
-            "idTimeline": "1907141",
-            "idEvent": "2407100",
-            "strTimeline": "Card",
-            "strTimelineDetail": "Yellow Card",
-            "strHome": "Yes",
-            "strEvent": "CF Montréal vs FC Cincinnati",
-            "idAPIfootball": "1490498",
-            "idPlayer": "34168327",
-            "strPlayer": "Matthew Longstaff",
-            "strCutout": "https://r2.thesportsdb.com/images/media/player/cutout/zbqkcj1766428841.png",
-            "idAssist": "0",
-            "strAssist": "",
-            "intTime": "33",
-            "strPeriod": null,
-            "idTeam": "134150",
-            "strTeam": "CF Montréal",
-            "strComment": "Foul",
-            "dateEvent": "2026-09-26",
-            "strSeason": "2026"
-          },
-          {
-            "idTimeline": "1907142",
-            "idEvent": "2407100",
-            "strTimeline": "Card",
-            "strTimelineDetail": "Yellow Card",
-            "strHome": "Yes",
-            "strEvent": "CF Montréal vs FC Cincinnati",
-            "idAPIfootball": "1490498",
-            "idPlayer": "34181101",
-            "strPlayer": "Fabian Herbers",
-            "strCutout": "https://r2.thesportsdb.com/images/media/player/cutout/1odsel1746346052.png",
-            "idAssist": "0",
-            "strAssist": "",
-            "intTime": "47",
-            "strPeriod": null,
-            "idTeam": "134150",
-            "strTeam": "CF Montréal",
-            "strComment": "Foul",
-            "dateEvent": "2026-09-26",
-            "strSeason": "2026"
-          },
-          {
-            "idTimeline": "1907143",
-            "idEvent": "2407100",
-            "strTimeline": "subst",
-            "strTimelineDetail": "Substitution 1",
-            "strHome": "No",
-            "strEvent": "CF Montréal vs FC Cincinnati",
-            "idAPIfootball": "1490498",
-            "idPlayer": "34231234",
-            "strPlayer": "Ayoub Jabbari",
-            "strCutout": "https://r2.thesportsdb.com/images/media/player/cutout/n2drzs1777991913.png",
-            "idAssist": "34221988",
-            "strAssist": "David Douděra",
-            "intTime": "58",
-            "strPeriod": null,
-            "idTeam": "136688",
-            "strTeam": "FC Cincinnati",
-            "strComment": "NULL",
-            "dateEvent": "2026-09-26",
-            "strSeason": "2026"
-          }
-        ],
-        "statistics": [
-          {
-            "idStatistic": "720633",
-            "idEvent": "2407100",
-            "idApiFootball": "1490498",
-            "strEvent": "CF Montréal vs FC Cincinnati",
-            "strStat": "Passes accurate",
-            "intHome": "386",
-            "intAway": "470"
-          },
-          {
-            "idStatistic": "720634",
-            "idEvent": "2407100",
-            "idApiFootball": "1490498",
-            "strEvent": "CF Montréal vs FC Cincinnati",
-            "strStat": "Shots insidebox",
-            "intHome": "9",
-            "intAway": "11"
-          },
-          {
-            "idStatistic": "720635",
-            "idEvent": "2407100",
-            "idApiFootball": "1490498",
-            "strEvent": "CF Montréal vs FC Cincinnati",
-            "strStat": "Shots outsidebox",
-            "intHome": "6",
-            "intAway": "7"
-          },
-          {
-            "idStatistic": "720636",
-            "idEvent": "2407100",
-            "idApiFootball": "1490498",
-            "strEvent": "CF Montréal vs FC Cincinnati",
-            "strStat": "Blocked Shots",
-            "intHome": "5",
-            "intAway": "3"
-          },
-          {
-            "idStatistic": "720637",
-            "idEvent": "2407100",
-            "idApiFootball": "1490498",
-            "strEvent": "CF Montréal vs FC Cincinnati",
-            "strStat": "Free Kicks",
-            "intHome": "7",
-            "intAway": "8"
-          }
-        ],
-        "updatedAt": "2026-09-28T22:00:42.237Z",
-        "source": "primary provider + TheSportsDB enrichment",
-        "theSportsDbEventId": "2407100"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-usa.1-761832",
-        "providerMatchId": "761832",
-        "date": "2026-09-26T23:30Z",
-        "status": {
-          "short": "FT"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "21300",
-          "espnId": "21300",
-          "provider": "espn",
-          "identity": "espn:21300",
-          "name": "Charlotte FC",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21300.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/21300.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "182",
-          "espnId": "182",
-          "provider": "espn",
-          "identity": "espn:182",
-          "name": "Chicago Fire FC",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/182.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/182.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 1
-      },
-      "league": {
-        "id": "espn:usa.1",
-        "name": "الدوري الأمريكي MLS",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "761832",
-      "externalIds": {
-        "espn": "761832",
-        "espn-league": "usa.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-usa.1-761834",
-        "providerMatchId": "761834",
-        "date": "2026-09-26T23:30Z",
-        "status": {
-          "short": "FT"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "10739",
-          "espnId": "10739",
-          "provider": "espn",
-          "identity": "espn:10739",
-          "name": "Philadelphia Union",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/10739.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/10739.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "12011",
-          "espnId": "12011",
-          "provider": "espn",
-          "identity": "espn:12011",
-          "name": "Orlando City SC",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/12011.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/12011.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 4,
-        "away": 2
-      },
-      "league": {
-        "id": "espn:usa.1",
-        "name": "الدوري الأمريكي MLS",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "761834",
-      "externalIds": {
-        "espn": "761834",
-        "espn-league": "usa.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-usa.1-761839",
-        "providerMatchId": "761839",
-        "date": "2026-09-27T00:30Z",
-        "status": {
-          "short": "FT"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "20906",
-          "espnId": "20906",
-          "provider": "espn",
-          "identity": "espn:20906",
-          "name": "Austin FC",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20906.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/20906.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "22529",
-          "espnId": "22529",
-          "provider": "espn",
-          "identity": "espn:22529",
-          "name": "San Diego FC",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/22529.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/22529.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 3,
-        "away": 3
-      },
-      "league": {
-        "id": "espn:usa.1",
-        "name": "الدوري الأمريكي MLS",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "761839",
-      "externalIds": {
-        "espn": "761839",
-        "espn-league": "usa.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-usa.1-761835",
-        "providerMatchId": "761835",
-        "date": "2026-09-27T00:30Z",
-        "status": {
-          "short": "FT"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "185",
-          "espnId": "185",
-          "provider": "espn",
-          "identity": "espn:185",
-          "name": "FC Dallas",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/185.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/185.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "18966",
-          "espnId": "18966",
-          "provider": "espn",
-          "identity": "espn:18966",
-          "name": "LAFC",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18966.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/18966.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 1,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:usa.1",
-        "name": "الدوري الأمريكي MLS",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "761835",
-      "externalIds": {
-        "espn": "761835",
-        "espn-league": "usa.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-usa.1-761836",
-        "providerMatchId": "761836",
-        "date": "2026-09-27T00:30Z",
-        "status": {
-          "short": "FT"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "6077",
-          "espnId": "6077",
-          "provider": "espn",
-          "identity": "espn:6077",
-          "name": "Houston Dynamo FC",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6077.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/6077.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "186",
-          "espnId": "186",
-          "provider": "espn",
-          "identity": "espn:186",
-          "name": "Sporting Kansas City",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/186.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/186.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 2
-      },
-      "league": {
-        "id": "espn:usa.1",
-        "name": "الدوري الأمريكي MLS",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "761836",
-      "externalIds": {
-        "espn": "761836",
-        "espn-league": "usa.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-usa.1-761838",
-        "providerMatchId": "761838",
-        "date": "2026-09-27T00:30Z",
-        "status": {
-          "short": "FT"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "18986",
-          "espnId": "18986",
-          "provider": "espn",
-          "identity": "espn:18986",
-          "name": "Nashville SC",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18986.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/18986.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "7318",
-          "espnId": "7318",
-          "provider": "espn",
-          "identity": "espn:7318",
-          "name": "Toronto FC",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7318.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/7318.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 2,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:usa.1",
-        "name": "الدوري الأمريكي MLS",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "761838",
-      "externalIds": {
-        "espn": "761838",
-        "espn-league": "usa.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-usa.1-761837",
-        "providerMatchId": "761837",
-        "date": "2026-09-27T00:30Z",
-        "status": {
-          "short": "FT"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "9726",
-          "espnId": "9726",
-          "provider": "espn",
-          "identity": "espn:9726",
-          "name": "Seattle Sounders FC",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9726.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/9726.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "17362",
-          "espnId": "17362",
-          "provider": "espn",
-          "identity": "espn:17362",
-          "name": "Minnesota United FC",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17362.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/17362.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 3,
-        "away": 1
-      },
-      "league": {
-        "id": "espn:usa.1",
-        "name": "الدوري الأمريكي MLS",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "761837",
-      "externalIds": {
-        "espn": "761837",
-        "espn-league": "usa.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-fifa.friendly-401903308",
-        "providerMatchId": "401903308",
-        "date": "2026-09-27T01:00Z",
-        "status": {
-          "short": "FT"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "203",
-          "espnId": "203",
-          "provider": "espn",
-          "identity": "espn:203",
-          "name": "Mexico",
-          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "208",
-          "espnId": "208",
-          "provider": "espn",
-          "identity": "espn:208",
-          "name": "Colombia",
-          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 1,
-        "away": 1
-      },
-      "league": {
-        "id": "espn:fifa.friendly",
-        "name": "مباريات دولية ودية",
-        "logo": null
-      },
-      "competitionType": "international-team",
-      "source": "espn",
-      "externalId": "401903308",
-      "externalIds": {
-        "espn": "401903308",
-        "espn-league": "fifa.friendly"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-col.1-401878060",
-        "providerMatchId": "401878060",
-        "date": "2026-09-27T01:20Z",
-        "status": {
-          "short": "FT"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "4815",
-          "espnId": "4815",
-          "provider": "espn",
-          "identity": "espn:4815",
-          "name": "Atlético Junior",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4815.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/4815.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "2690",
-          "espnId": "2690",
-          "provider": "espn",
-          "identity": "espn:2690",
-          "name": "Independiente Medellín",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2690.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/2690.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 2,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:col.1",
-        "name": "الدوري الكولومبي",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401878060",
-      "externalIds": {
-        "espn": "401878060",
-        "espn-league": "col.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-usa.1-761840",
-        "providerMatchId": "761840",
-        "date": "2026-09-27T01:30Z",
-        "status": {
-          "short": "FT"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "4771",
-          "espnId": "4771",
-          "provider": "espn",
-          "identity": "espn:4771",
-          "name": "Real Salt Lake",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4771.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/4771.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "189",
-          "espnId": "189",
-          "provider": "espn",
-          "identity": "espn:189",
-          "name": "New England Revolution",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/189.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/189.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 3,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:usa.1",
-        "name": "الدوري الأمريكي MLS",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "761840",
-      "externalIds": {
-        "espn": "761840",
-        "espn-league": "usa.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-usa.1-761841",
-        "providerMatchId": "761841",
-        "date": "2026-09-27T02:30Z",
-        "status": {
-          "short": "FT"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "187",
-          "espnId": "187",
-          "provider": "espn",
-          "identity": "espn:187",
-          "name": "LA Galaxy",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/187.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/187.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "184",
-          "espnId": "184",
-          "provider": "espn",
-          "identity": "espn:184",
-          "name": "Colorado Rapids",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/184.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/184.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 3,
-        "away": 2
-      },
-      "league": {
-        "id": "espn:usa.1",
-        "name": "الدوري الأمريكي MLS",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "761841",
-      "externalIds": {
-        "espn": "761841",
-        "espn-league": "usa.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-usa.1-761843",
-        "providerMatchId": "761843",
-        "date": "2026-09-27T02:30Z",
-        "status": {
-          "short": "FT"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "191",
-          "espnId": "191",
-          "provider": "espn",
-          "identity": "espn:191",
-          "name": "San Jose Earthquakes",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/191.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/191.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "9723",
-          "espnId": "9723",
-          "provider": "espn",
-          "identity": "espn:9723",
-          "name": "Portland Timbers",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9723.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/9723.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 3,
-        "away": 1
-      },
-      "league": {
-        "id": "espn:usa.1",
-        "name": "الدوري الأمريكي MLS",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "761843",
-      "externalIds": {
-        "espn": "761843",
-        "espn-league": "usa.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-usa.1-761842",
-        "providerMatchId": "761842",
-        "date": "2026-09-27T02:30Z",
-        "status": {
-          "short": "FT"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "9727",
-          "espnId": "9727",
-          "provider": "espn",
-          "identity": "espn:9727",
-          "name": "Vancouver Whitecaps",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9727.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/9727.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "193",
-          "espnId": "193",
-          "provider": "espn",
-          "identity": "espn:193",
-          "name": "D.C. United",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/193.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/193.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 3,
-        "away": 3
-      },
-      "league": {
-        "id": "espn:usa.1",
-        "name": "الدوري الأمريكي MLS",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "761842",
-      "externalIds": {
-        "espn": "761842",
-        "espn-league": "usa.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-mex.1-401876961",
-        "providerMatchId": "401876961",
-        "date": "2026-09-27T03:05Z",
-        "status": {
-          "short": "FT"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "225",
-          "espnId": "225",
-          "provider": "espn",
-          "identity": "espn:225",
-          "name": "Santos",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/225.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/225.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "234",
-          "espnId": "234",
-          "provider": "espn",
-          "identity": "espn:234",
-          "name": "Pachuca",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/234.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/234.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 1,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:mex.1",
-        "name": "الدوري المكسيكي",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401876961",
-      "externalIds": {
-        "espn": "401876961",
-        "espn-league": "mex.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-mex.1-401876960",
-        "providerMatchId": "401876960",
-        "date": "2026-09-27T03:10Z",
-        "status": {
-          "short": "FT"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "232",
-          "espnId": "232",
-          "provider": "espn",
-          "identity": "espn:232",
-          "name": "Tigres UANL",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/232.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/232.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "231",
-          "espnId": "231",
-          "provider": "espn",
-          "identity": "espn:231",
-          "name": "Puebla",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/231.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/231.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 1,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:mex.1",
-        "name": "الدوري المكسيكي",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401876960",
-      "externalIds": {
-        "espn": "401876960",
-        "espn-league": "mex.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
     {
       "fixture": {
         "id": "espn-fifa.friendly-401924630",
@@ -3762,13 +2012,167 @@
       "externalId": "401914142",
       "externalIds": {
         "espn": "401914142",
-        "espn-league": "fifa.friendly"
+        "espn-league": "fifa.friendly",
+        "thesportsdb": "2598453"
       },
       "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
+        "events": [
+          {
+            "idTimeline": "1908704",
+            "idEvent": "2598453",
+            "strTimeline": "Goal",
+            "strTimelineDetail": "Normal Goal",
+            "strHome": "No",
+            "strEvent": "China vs New Zealand",
+            "idAPIfootball": "1637601",
+            "idPlayer": "34222101",
+            "strPlayer": "Tyler Bindon",
+            "strCutout": "https://r2.thesportsdb.com/images/media/player/cutout/1wc7c81789131699.png",
+            "idAssist": "34200686",
+            "strAssist": "Callum McCowatt",
+            "intTime": "4",
+            "strPeriod": null,
+            "idTeam": "137449",
+            "strTeam": "New Zealand",
+            "strComment": "NULL",
+            "dateEvent": "2026-09-27",
+            "strSeason": "2026"
+          },
+          {
+            "idTimeline": "1908705",
+            "idEvent": "2598453",
+            "strTimeline": "Goal",
+            "strTimelineDetail": "Normal Goal",
+            "strHome": "No",
+            "strEvent": "China vs New Zealand",
+            "idAPIfootball": "1637601",
+            "idPlayer": "34181645",
+            "strPlayer": "Ben Waine",
+            "strCutout": "https://r2.thesportsdb.com/images/media/player/cutout/vwy9bu1766331018.png",
+            "idAssist": "34200684",
+            "strAssist": "Elijah Just",
+            "intTime": "29",
+            "strPeriod": null,
+            "idTeam": "137449",
+            "strTeam": "New Zealand",
+            "strComment": "NULL",
+            "dateEvent": "2026-09-27",
+            "strSeason": "2026"
+          },
+          {
+            "idTimeline": "1908706",
+            "idEvent": "2598453",
+            "strTimeline": "Card",
+            "strTimelineDetail": "Yellow Card",
+            "strHome": "No",
+            "strEvent": "China vs New Zealand",
+            "idAPIfootball": "1637601",
+            "idPlayer": "34200684",
+            "strPlayer": "Elijah Just",
+            "strCutout": "https://r2.thesportsdb.com/images/media/player/cutout/6xaj0e1789045529.png",
+            "idAssist": "0",
+            "strAssist": "",
+            "intTime": "33",
+            "strPeriod": null,
+            "idTeam": "137449",
+            "strTeam": "New Zealand",
+            "strComment": "Foul",
+            "dateEvent": "2026-09-27",
+            "strSeason": "2026"
+          },
+          {
+            "idTimeline": "1908707",
+            "idEvent": "2598453",
+            "strTimeline": "subst",
+            "strTimelineDetail": "Substitution 1",
+            "strHome": "Yes",
+            "strEvent": "China vs New Zealand",
+            "idAPIfootball": "1637601",
+            "idPlayer": "34221522",
+            "strPlayer": "Jiahui Huang",
+            "strCutout": "",
+            "idAssist": "0",
+            "strAssist": "",
+            "intTime": "46",
+            "strPeriod": null,
+            "idTeam": "134579",
+            "strTeam": "China",
+            "strComment": "NULL",
+            "dateEvent": "2026-09-27",
+            "strSeason": "2026"
+          },
+          {
+            "idTimeline": "1908708",
+            "idEvent": "2598453",
+            "strTimeline": "subst",
+            "strTimelineDetail": "Substitution 2",
+            "strHome": "Yes",
+            "strEvent": "China vs New Zealand",
+            "idAPIfootball": "1637601",
+            "idPlayer": "34221631",
+            "strPlayer": "Pu Chen",
+            "strCutout": "",
+            "idAssist": "34235649",
+            "strAssist": "Qianglong Tao",
+            "intTime": "46",
+            "strPeriod": null,
+            "idTeam": "134579",
+            "strTeam": "China",
+            "strComment": "NULL",
+            "dateEvent": "2026-09-27",
+            "strSeason": "2026"
+          }
+        ],
+        "statistics": [
+          {
+            "idStatistic": "722908",
+            "idEvent": "2598453",
+            "idApiFootball": "1637601",
+            "strEvent": "China vs New Zealand",
+            "strStat": "Shots on Goal",
+            "intHome": "2",
+            "intAway": "6"
+          },
+          {
+            "idStatistic": "722909",
+            "idEvent": "2598453",
+            "idApiFootball": "1637601",
+            "strEvent": "China vs New Zealand",
+            "strStat": "Shots off Goal",
+            "intHome": "4",
+            "intAway": "4"
+          },
+          {
+            "idStatistic": "722910",
+            "idEvent": "2598453",
+            "idApiFootball": "1637601",
+            "strEvent": "China vs New Zealand",
+            "strStat": "Total Shots",
+            "intHome": "8",
+            "intAway": "13"
+          },
+          {
+            "idStatistic": "722911",
+            "idEvent": "2598453",
+            "idApiFootball": "1637601",
+            "strEvent": "China vs New Zealand",
+            "strStat": "Blocked Shots",
+            "intHome": "2",
+            "intAway": "3"
+          },
+          {
+            "idStatistic": "722912",
+            "idEvent": "2598453",
+            "idApiFootball": "1637601",
+            "strEvent": "China vs New Zealand",
+            "strStat": "Shots insidebox",
+            "intHome": "3",
+            "intAway": "12"
+          }
+        ],
+        "updatedAt": "2026-09-29T01:59:35.312Z",
+        "source": "primary provider + TheSportsDB enrichment",
+        "theSportsDbEventId": "2598453"
       }
     },
     {
@@ -3874,13 +2278,167 @@
       "externalId": "401905204",
       "externalIds": {
         "espn": "401905204",
-        "espn-league": "fifa.friendly"
+        "espn-league": "fifa.friendly",
+        "thesportsdb": "2578508"
       },
       "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
+        "events": [
+          {
+            "idTimeline": "1908685",
+            "idEvent": "2578508",
+            "strTimeline": "Goal",
+            "strTimelineDetail": "Missed Penalty",
+            "strHome": "No",
+            "strEvent": "Malta vs Liechtenstein",
+            "idAPIfootball": "1628998",
+            "idPlayer": "34199123",
+            "strPlayer": "Nicolas Hasler",
+            "strCutout": "https://r2.thesportsdb.com/images/media/player/cutout/wotfhi1784879626.png",
+            "idAssist": "0",
+            "strAssist": "",
+            "intTime": "12",
+            "strPeriod": null,
+            "idTeam": "136467",
+            "strTeam": "Liechtenstein",
+            "strComment": "NULL",
+            "dateEvent": "2026-09-27",
+            "strSeason": "2026"
+          },
+          {
+            "idTimeline": "1908686",
+            "idEvent": "2578508",
+            "strTimeline": "Goal",
+            "strTimelineDetail": "Normal Goal",
+            "strHome": "Yes",
+            "strEvent": "Malta vs Liechtenstein",
+            "idAPIfootball": "1628998",
+            "idPlayer": "34224733",
+            "strPlayer": "Jake Grech",
+            "strCutout": "",
+            "idAssist": "34224940",
+            "strAssist": "Brandon Paiber",
+            "intTime": "37",
+            "strPeriod": null,
+            "idTeam": "136465",
+            "strTeam": "Malta",
+            "strComment": "NULL",
+            "dateEvent": "2026-09-27",
+            "strSeason": "2026"
+          },
+          {
+            "idTimeline": "1908687",
+            "idEvent": "2578508",
+            "strTimeline": "subst",
+            "strTimelineDetail": "Substitution 1",
+            "strHome": "Yes",
+            "strEvent": "Malta vs Liechtenstein",
+            "idAPIfootball": "1628998",
+            "idPlayer": "34240827",
+            "strPlayer": "Basil Tuma",
+            "strCutout": "https://r2.thesportsdb.com/images/media/player/cutout/rt2mdm1757877606.png",
+            "idAssist": "34436205",
+            "strAssist": "Andrea Zammit",
+            "intTime": "46",
+            "strPeriod": null,
+            "idTeam": "136465",
+            "strTeam": "Malta",
+            "strComment": "NULL",
+            "dateEvent": "2026-09-27",
+            "strSeason": "2026"
+          },
+          {
+            "idTimeline": "1908688",
+            "idEvent": "2578508",
+            "strTimeline": "subst",
+            "strTimelineDetail": "Substitution 2",
+            "strHome": "Yes",
+            "strEvent": "Malta vs Liechtenstein",
+            "idAPIfootball": "1628998",
+            "idPlayer": "34224814",
+            "strPlayer": "Juan Corbalan",
+            "strCutout": "",
+            "idAssist": "34224968",
+            "strAssist": "Carlo Zammit Lonardelli",
+            "intTime": "46",
+            "strPeriod": null,
+            "idTeam": "136465",
+            "strTeam": "Malta",
+            "strComment": "NULL",
+            "dateEvent": "2026-09-27",
+            "strSeason": "2026"
+          },
+          {
+            "idTimeline": "1908689",
+            "idEvent": "2578508",
+            "strTimeline": "subst",
+            "strTimelineDetail": "Substitution 3",
+            "strHome": "Yes",
+            "strEvent": "Malta vs Liechtenstein",
+            "idAPIfootball": "1628998",
+            "idPlayer": "34346221",
+            "strPlayer": "Keyon Ewurum",
+            "strCutout": "",
+            "idAssist": "34224868",
+            "strAssist": "Paul Mbong",
+            "intTime": "46",
+            "strPeriod": null,
+            "idTeam": "136465",
+            "strTeam": "Malta",
+            "strComment": "NULL",
+            "dateEvent": "2026-09-27",
+            "strSeason": "2026"
+          }
+        ],
+        "statistics": [
+          {
+            "idStatistic": "722890",
+            "idEvent": "2578508",
+            "idApiFootball": "1628998",
+            "strEvent": "Malta vs Liechtenstein",
+            "strStat": "Shots on Goal",
+            "intHome": "0",
+            "intAway": "0"
+          },
+          {
+            "idStatistic": "722891",
+            "idEvent": "2578508",
+            "idApiFootball": "1628998",
+            "strEvent": "Malta vs Liechtenstein",
+            "strStat": "Shots off Goal",
+            "intHome": "0",
+            "intAway": "0"
+          },
+          {
+            "idStatistic": "722892",
+            "idEvent": "2578508",
+            "idApiFootball": "1628998",
+            "strEvent": "Malta vs Liechtenstein",
+            "strStat": "Total Shots",
+            "intHome": "0",
+            "intAway": "0"
+          },
+          {
+            "idStatistic": "722893",
+            "idEvent": "2578508",
+            "idApiFootball": "1628998",
+            "strEvent": "Malta vs Liechtenstein",
+            "strStat": "Blocked Shots",
+            "intHome": "0",
+            "intAway": "0"
+          },
+          {
+            "idStatistic": "722894",
+            "idEvent": "2578508",
+            "idApiFootball": "1628998",
+            "strEvent": "Malta vs Liechtenstein",
+            "strStat": "Shots insidebox",
+            "intHome": "0",
+            "intAway": "0"
+          }
+        ],
+        "updatedAt": "2026-09-29T01:59:37.960Z",
+        "source": "primary provider + TheSportsDB enrichment",
+        "theSportsDbEventId": "2578508"
       }
     },
     {
@@ -3930,13 +2488,125 @@
       "externalId": "401919977",
       "externalIds": {
         "espn": "401919977",
-        "espn-league": "fifa.friendly"
+        "espn-league": "fifa.friendly",
+        "thesportsdb": "2606337"
       },
       "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
+        "events": [
+          {
+            "idTimeline": "1908749",
+            "idEvent": "2606337",
+            "strTimeline": "Goal",
+            "strTimelineDetail": "Normal Goal",
+            "strHome": "Yes",
+            "strEvent": "Jordan vs Syria",
+            "idAPIfootball": "1640066",
+            "idPlayer": "34228977",
+            "strPlayer": "Ali Olwan",
+            "strCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ifvtit1781097232.png",
+            "idAssist": "0",
+            "strAssist": "",
+            "intTime": "38",
+            "strPeriod": null,
+            "idTeam": "140145",
+            "strTeam": "Jordan",
+            "strComment": "NULL",
+            "dateEvent": "2026-09-27",
+            "strSeason": "2026"
+          },
+          {
+            "idTimeline": "1908750",
+            "idEvent": "2606337",
+            "strTimeline": "Goal",
+            "strTimelineDetail": "Normal Goal",
+            "strHome": "No",
+            "strEvent": "Jordan vs Syria",
+            "idAPIfootball": "1640066",
+            "idPlayer": "34228977",
+            "strPlayer": "Ali Olwan",
+            "strCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ifvtit1781097232.png",
+            "idAssist": "0",
+            "strAssist": "",
+            "intTime": "52",
+            "strPeriod": null,
+            "idTeam": "140032",
+            "strTeam": "Syria",
+            "strComment": "NULL",
+            "dateEvent": "2026-09-27",
+            "strSeason": "2026"
+          },
+          {
+            "idTimeline": "1908751",
+            "idEvent": "2606337",
+            "strTimeline": "Card",
+            "strTimelineDetail": "Yellow Card",
+            "strHome": "Yes",
+            "strEvent": "Jordan vs Syria",
+            "idAPIfootball": "1640066",
+            "idPlayer": "34228977",
+            "strPlayer": "Ali Olwan",
+            "strCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ifvtit1781097232.png",
+            "idAssist": "0",
+            "strAssist": "",
+            "intTime": "90",
+            "strPeriod": null,
+            "idTeam": "140145",
+            "strTeam": "Jordan",
+            "strComment": "NULL",
+            "dateEvent": "2026-09-27",
+            "strSeason": "2026"
+          }
+        ],
+        "statistics": [
+          {
+            "idStatistic": "722962",
+            "idEvent": "2606337",
+            "idApiFootball": "1640066",
+            "strEvent": "Jordan vs Syria",
+            "strStat": "Shots on Goal",
+            "intHome": "0",
+            "intAway": "0"
+          },
+          {
+            "idStatistic": "722963",
+            "idEvent": "2606337",
+            "idApiFootball": "1640066",
+            "strEvent": "Jordan vs Syria",
+            "strStat": "Shots off Goal",
+            "intHome": "0",
+            "intAway": "0"
+          },
+          {
+            "idStatistic": "722964",
+            "idEvent": "2606337",
+            "idApiFootball": "1640066",
+            "strEvent": "Jordan vs Syria",
+            "strStat": "Total Shots",
+            "intHome": "0",
+            "intAway": "0"
+          },
+          {
+            "idStatistic": "722965",
+            "idEvent": "2606337",
+            "idApiFootball": "1640066",
+            "strEvent": "Jordan vs Syria",
+            "strStat": "Blocked Shots",
+            "intHome": "0",
+            "intAway": "0"
+          },
+          {
+            "idStatistic": "722966",
+            "idEvent": "2606337",
+            "idApiFootball": "1640066",
+            "strEvent": "Jordan vs Syria",
+            "strStat": "Shots insidebox",
+            "intHome": "0",
+            "intAway": "0"
+          }
+        ],
+        "updatedAt": "2026-09-29T01:59:40.456Z",
+        "source": "primary provider + TheSportsDB enrichment",
+        "theSportsDbEventId": "2606337"
       }
     },
     {
@@ -3986,13 +2656,167 @@
       "externalId": "401876958",
       "externalIds": {
         "espn": "401876958",
-        "espn-league": "mex.1"
+        "espn-league": "mex.1",
+        "thesportsdb": "2487539"
       },
       "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
+        "events": [
+          {
+            "idTimeline": "1908356",
+            "idEvent": "2487539",
+            "strTimeline": "Var",
+            "strTimelineDetail": "Penalty confirmed",
+            "strHome": "No",
+            "strEvent": "Pumas UNAM vs Atlético de San Luis",
+            "idAPIfootball": "1550981",
+            "idPlayer": "34180958",
+            "strPlayer": "Felipe Mora",
+            "strCutout": "https://r2.thesportsdb.com/images/media/player/cutout/o6xrrw1766760533.png",
+            "idAssist": "0",
+            "strAssist": "",
+            "intTime": "21",
+            "strPeriod": null,
+            "idTeam": "136856",
+            "strTeam": "Atlético de San Luis",
+            "strComment": "NULL",
+            "dateEvent": "2026-09-27",
+            "strSeason": "2026-2027"
+          },
+          {
+            "idTimeline": "1908357",
+            "idEvent": "2487539",
+            "strTimeline": "Goal",
+            "strTimelineDetail": "Penalty",
+            "strHome": "No",
+            "strEvent": "Pumas UNAM vs Atlético de San Luis",
+            "idAPIfootball": "1550981",
+            "idPlayer": "34233906",
+            "strPlayer": "Sébastien Salles-Lamonge",
+            "strCutout": "",
+            "idAssist": "0",
+            "strAssist": "",
+            "intTime": "23",
+            "strPeriod": null,
+            "idTeam": "136856",
+            "strTeam": "Atlético de San Luis",
+            "strComment": "NULL",
+            "dateEvent": "2026-09-27",
+            "strSeason": "2026-2027"
+          },
+          {
+            "idTimeline": "1908358",
+            "idEvent": "2487539",
+            "strTimeline": "Card",
+            "strTimelineDetail": "Yellow Card",
+            "strHome": "No",
+            "strEvent": "Pumas UNAM vs Atlético de San Luis",
+            "idAPIfootball": "1550981",
+            "idPlayer": "34247863",
+            "strPlayer": "Óscar Macías Mora",
+            "strCutout": "",
+            "idAssist": "0",
+            "strAssist": "",
+            "intTime": "45",
+            "strPeriod": null,
+            "idTeam": "136856",
+            "strTeam": "Atlético de San Luis",
+            "strComment": "Argument",
+            "dateEvent": "2026-09-27",
+            "strSeason": "2026-2027"
+          },
+          {
+            "idTimeline": "1908359",
+            "idEvent": "2487539",
+            "strTimeline": "Card",
+            "strTimelineDetail": "Yellow Card",
+            "strHome": "Yes",
+            "strEvent": "Pumas UNAM vs Atlético de San Luis",
+            "idAPIfootball": "1550981",
+            "idPlayer": "34221107",
+            "strPlayer": "César Huerta",
+            "strCutout": "https://r2.thesportsdb.com/images/media/player/cutout/u0d1li1768080617.png",
+            "idAssist": "0",
+            "strAssist": "",
+            "intTime": "45",
+            "strPeriod": null,
+            "idTeam": "134201",
+            "strTeam": "Pumas UNAM",
+            "strComment": "Argument",
+            "dateEvent": "2026-09-27",
+            "strSeason": "2026-2027"
+          },
+          {
+            "idTimeline": "1908360",
+            "idEvent": "2487539",
+            "strTimeline": "Goal",
+            "strTimelineDetail": "Normal Goal",
+            "strHome": "Yes",
+            "strEvent": "Pumas UNAM vs Atlético de San Luis",
+            "idAPIfootball": "1550981",
+            "idPlayer": "34221105",
+            "strPlayer": "Rodrigo López Quiñónes",
+            "strCutout": "",
+            "idAssist": "0",
+            "strAssist": "",
+            "intTime": "52",
+            "strPeriod": null,
+            "idTeam": "134201",
+            "strTeam": "Pumas UNAM",
+            "strComment": "NULL",
+            "dateEvent": "2026-09-27",
+            "strSeason": "2026-2027"
+          }
+        ],
+        "statistics": [
+          {
+            "idStatistic": "722568",
+            "idEvent": "2487539",
+            "idApiFootball": "1550981",
+            "strEvent": "Pumas UNAM vs Atlético de San Luis",
+            "strStat": "Passes accurate",
+            "intHome": "317",
+            "intAway": "280"
+          },
+          {
+            "idStatistic": "722569",
+            "idEvent": "2487539",
+            "idApiFootball": "1550981",
+            "strEvent": "Pumas UNAM vs Atlético de San Luis",
+            "strStat": "Shots insidebox",
+            "intHome": "8",
+            "intAway": "8"
+          },
+          {
+            "idStatistic": "722570",
+            "idEvent": "2487539",
+            "idApiFootball": "1550981",
+            "strEvent": "Pumas UNAM vs Atlético de San Luis",
+            "strStat": "Shots outsidebox",
+            "intHome": "7",
+            "intAway": "3"
+          },
+          {
+            "idStatistic": "722571",
+            "idEvent": "2487539",
+            "idApiFootball": "1550981",
+            "strEvent": "Pumas UNAM vs Atlético de San Luis",
+            "strStat": "Blocked Shots",
+            "intHome": "2",
+            "intAway": "1"
+          },
+          {
+            "idStatistic": "722572",
+            "idEvent": "2487539",
+            "idApiFootball": "1550981",
+            "strEvent": "Pumas UNAM vs Atlético de San Luis",
+            "strStat": "Free Kicks",
+            "intHome": "10",
+            "intAway": "12"
+          }
+        ],
+        "updatedAt": "2026-09-29T01:59:42.947Z",
+        "source": "primary provider + TheSportsDB enrichment",
+        "theSportsDbEventId": "2487539"
       }
     },
     {
@@ -4617,7 +3441,7 @@
         "providerMatchId": "401919572",
         "date": "2026-09-28T22:00Z",
         "status": {
-          "short": "NS"
+          "short": "FT"
         }
       },
       "teams": {
@@ -4645,7 +3469,7 @@
         }
       },
       "goals": {
-        "home": 0,
+        "home": 5,
         "away": 0
       },
       "league": {
@@ -8353,6 +7177,622 @@
       "externalIds": {
         "espn": "401841595",
         "espn-league": "arg.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401902245",
+        "providerMatchId": "401902245",
+        "date": "2026-10-06T11:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "451",
+          "espnId": "451",
+          "provider": "espn",
+          "identity": "espn:451",
+          "name": "South Korea",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/kors.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/kors.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "2570",
+          "espnId": "2570",
+          "provider": "espn",
+          "identity": "espn:2570",
+          "name": "Uzbekistan",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/uzb.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/uzb.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401902245",
+      "externalIds": {
+        "espn": "401902245",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401914140",
+        "providerMatchId": "401914140",
+        "date": "2026-10-06T11:35Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "658",
+          "espnId": "658",
+          "provider": "espn",
+          "identity": "espn:658",
+          "name": "China",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/chn.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/chn.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "6723",
+          "espnId": "6723",
+          "provider": "espn",
+          "identity": "espn:6723",
+          "name": "Tajikistan",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/tjk.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/tjk.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401914140",
+      "externalIds": {
+        "espn": "401914140",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401914357",
+        "providerMatchId": "401914357",
+        "date": "2026-10-06T14:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "4385",
+          "espnId": "4385",
+          "provider": "espn",
+          "identity": "espn:4385",
+          "name": "India",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ind.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/ind.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "212",
+          "espnId": "212",
+          "provider": "espn",
+          "identity": "espn:212",
+          "name": "Uruguay",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/uru.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/uru.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401914357",
+      "externalIds": {
+        "espn": "401914357",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401917360",
+        "providerMatchId": "401917360",
+        "date": "2026-10-06T16:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "454",
+          "espnId": "454",
+          "provider": "espn",
+          "identity": "espn:454",
+          "name": "Russia",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rus.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/rus.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "657",
+          "espnId": "657",
+          "provider": "espn",
+          "identity": "espn:657",
+          "name": "Nigeria",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/nga.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/nga.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401917360",
+      "externalIds": {
+        "espn": "401917360",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401919976",
+        "providerMatchId": "401919976",
+        "date": "2026-10-06T17:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "2917",
+          "espnId": "2917",
+          "provider": "espn",
+          "identity": "espn:2917",
+          "name": "Jordan",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/jor.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/jor.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "213",
+          "espnId": "213",
+          "provider": "espn",
+          "identity": "espn:213",
+          "name": "Venezuela",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ven.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/ven.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401919976",
+      "externalIds": {
+        "espn": "401919976",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401917261",
+        "providerMatchId": "401917261",
+        "date": "2026-10-06T19:30Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "624",
+          "espnId": "624",
+          "provider": "espn",
+          "identity": "espn:624",
+          "name": "Algeria",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/alg.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/alg.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "8937",
+          "espnId": "8937",
+          "provider": "espn",
+          "identity": "espn:8937",
+          "name": "Niger",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/nig.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/nig.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401917261",
+      "externalIds": {
+        "espn": "401917261",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401921408",
+        "providerMatchId": "401921408",
+        "date": "2026-10-06T23:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "202",
+          "espnId": "202",
+          "provider": "espn",
+          "identity": "espn:202",
+          "name": "Argentina",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "2844",
+          "espnId": "2844",
+          "provider": "espn",
+          "identity": "espn:2844",
+          "name": "Benin",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ben.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/ben.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401921408",
+      "externalIds": {
+        "espn": "401921408",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401905188",
+        "providerMatchId": "401905188",
+        "date": "2026-10-07T00:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "660",
+          "espnId": "660",
+          "provider": "espn",
+          "identity": "espn:660",
+          "name": "United States",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "206",
+          "espnId": "206",
+          "provider": "espn",
+          "identity": "espn:206",
+          "name": "Canada",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401905188",
+      "externalIds": {
+        "espn": "401905188",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-usa.1-761660",
+        "providerMatchId": "761660",
+        "date": "2026-10-07T00:30Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "182",
+          "espnId": "182",
+          "provider": "espn",
+          "identity": "espn:182",
+          "name": "Chicago Fire FC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/182.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/182.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "9727",
+          "espnId": "9727",
+          "provider": "espn",
+          "identity": "espn:9727",
+          "name": "Vancouver Whitecaps",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9727.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/9727.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:usa.1",
+        "name": "الدوري الأمريكي MLS",
+        "logo": null
+      },
+      "competitionType": "domestic",
+      "source": "espn",
+      "externalId": "761660",
+      "externalIds": {
+        "espn": "761660",
+        "espn-league": "usa.1"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401903298",
+        "providerMatchId": "401903298",
+        "date": "2026-10-07T02:30Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "203",
+          "espnId": "203",
+          "provider": "espn",
+          "identity": "espn:203",
+          "name": "Mexico",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "207",
+          "espnId": "207",
+          "provider": "espn",
+          "identity": "espn:207",
+          "name": "Chile",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/chi.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/chi.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401903298",
+      "externalIds": {
+        "espn": "401903298",
+        "espn-league": "fifa.friendly"
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
+      }
+    },
+    {
+      "fixture": {
+        "id": "espn-fifa.friendly-401905332",
+        "providerMatchId": "401905332",
+        "date": "2026-10-07T03:00Z",
+        "status": {
+          "short": "NS"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": "208",
+          "espnId": "208",
+          "provider": "espn",
+          "identity": "espn:208",
+          "name": "Colombia",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": "211",
+          "espnId": "211",
+          "provider": "espn",
+          "identity": "espn:211",
+          "name": "Peru",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/per.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/countries/500/per.png",
+          "logoSource": "ESPN team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "league": {
+        "id": "espn:fifa.friendly",
+        "name": "مباريات دولية ودية",
+        "logo": null
+      },
+      "competitionType": "international-team",
+      "source": "espn",
+      "externalId": "401905332",
+      "externalIds": {
+        "espn": "401905332",
+        "espn-league": "fifa.friendly"
       },
       "details": {
         "events": [],
