@@ -289,6 +289,51 @@ export default function HomeDesign() {
     matches.find((match) => getStatusType(match.status) === "upcoming") ||
     matches[0];
 
+  const upcomingCalendar = useMemo(() => {
+    const now = new Date();
+    const start = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    const tomorrow = new Date(start);
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    const weekEnd = new Date(start);
+    weekEnd.setDate(weekEnd.getDate() + 7);
+
+    const dayKey = (value) => {
+      const date = new Date(value);
+      return Number.isNaN(date.getTime())
+        ? ""
+        : `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}-${String(date.getDate()).padStart(2, "0")}`;
+    };
+
+    const tomorrowKey = dayKey(tomorrow);
+    const startKey = dayKey(start);
+    const weekEndKey = dayKey(weekEnd);
+
+    const upcoming = matches
+      .filter((match) => getStatusType(match.status) === "upcoming" && match.date)
+      .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
+
+    return {
+      tomorrow: upcoming.filter((match) => dayKey(match.date) === tomorrowKey).slice(0, 8),
+      week: upcoming.filter((match) => {
+        const key = dayKey(match.date);
+        return key > startKey && key <= weekEndKey;
+      }).slice(0, 12),
+    };
+  }, [matches]);
+
+  const formatMatchDate = (date) => {
+    if (!date) return "";
+    try {
+      return new Date(date).toLocaleDateString("ar-MA", {
+        weekday: "short",
+        day: "numeric",
+        month: "short",
+      });
+    } catch {
+      return "";
+    }
+  };
+
   const internationalMatches = useMemo(
     () => matches.filter((match) => ["international-team", "international-club"].includes(match.competitionType)),
     [matches]
@@ -474,6 +519,79 @@ export default function HomeDesign() {
             <div className="featured-results-empty">لا توجد نتائج منتهية متاحة حاليًا.</div>
           )}
         </section>
+
+        {(upcomingCalendar.tomorrow.length > 0 || upcomingCalendar.week.length > 0) && (
+          <section className="upcoming-calendar-section">
+            <div className="section-heading">
+              <div>
+                <span className="section-kicker">FIXTURE CALENDAR</span>
+                <h2>المباريات القادمة</h2>
+                <p>مواعيد المباريات القادمة من نفس اللقطة المجانية، بدون طلبات إضافية من الزائر.</p>
+              </div>
+              <a href="/matches/today">كل المواعيد ←</a>
+            </div>
+
+            {upcomingCalendar.tomorrow.length > 0 && (
+              <div className="upcoming-day-block">
+                <div className="upcoming-day-title">
+                  <div>
+                    <span>غدًا</span>
+                    <strong>{formatMatchDate(upcomingCalendar.tomorrow[0].date)}</strong>
+                  </div>
+                  <b>{upcomingCalendar.tomorrow.length} مباريات</b>
+                </div>
+                <div className="upcoming-calendar-grid">
+                  {upcomingCalendar.tomorrow.map((match) => (
+                    <a href={`/matches/${match.id}`} className="upcoming-calendar-card" key={match.id}>
+                      <div className="upcoming-calendar-meta">
+                        <span>{match.arabicLeague}</span>
+                        <time>{match.time}</time>
+                      </div>
+                      <div className="upcoming-calendar-teams">
+                        <span>{match.home}</span>
+                        <TeamLogo src={match.homeLogo} alt={match.home} size={34} />
+                        <b>VS</b>
+                        <TeamLogo src={match.awayLogo} alt={match.away} size={34} />
+                        <span>{match.away}</span>
+                      </div>
+                      <small>تفاصيل المباراة ←</small>
+                    </a>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {upcomingCalendar.week.length > 0 && (
+              <div className="upcoming-day-block upcoming-week-block">
+                <div className="upcoming-day-title">
+                  <div>
+                    <span>هذا الأسبوع</span>
+                    <strong>مواعيد مرتبة حسب اليوم</strong>
+                  </div>
+                  <b>{upcomingCalendar.week.length} مباراة</b>
+                </div>
+                <div className="upcoming-calendar-grid">
+                  {upcomingCalendar.week.map((match) => (
+                    <a href={`/matches/${match.id}`} className="upcoming-calendar-card" key={match.id}>
+                      <div className="upcoming-calendar-meta">
+                        <span>{formatMatchDate(match.date)}</span>
+                        <time>{match.time}</time>
+                      </div>
+                      <div className="upcoming-calendar-teams">
+                        <span>{match.home}</span>
+                        <TeamLogo src={match.homeLogo} alt={match.home} size={34} />
+                        <b>VS</b>
+                        <TeamLogo src={match.awayLogo} alt={match.away} size={34} />
+                        <span>{match.away}</span>
+                      </div>
+                      <small>{match.arabicLeague} · تفاصيل ←</small>
+                    </a>
+                  ))}
+                </div>
+              </div>
+            )}
+          </section>
+        )}
 
         <section className="league-section">
           <div className="section-heading">
