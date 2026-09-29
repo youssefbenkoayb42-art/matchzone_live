@@ -58,11 +58,11 @@ export default function LiveMatchRefresh({ matchId, initialStatus, initialHome, 
 
     checkMatch();
 
-    // لا حاجة لاستدعاءات إضافية بعد انتهاء المباراة.
-    // للمباريات القادمة نستخدم فحصًا أبطأ لتقليل الضغط على الـ API.
-    const interval = FINISHED_STATUSES.has(initialStatus)
-      ? null
-      : window.setInterval(checkMatch, isLive ? 30000 : 60000);
+    // لا نحتاج polling للمباريات القادمة أو المنتهية.
+    // التحديث التلقائي مخصص للمباريات الحية فقط لتقليل استهلاك Vercel.
+    const interval = isLive
+      ? window.setInterval(checkMatch, 30000)
+      : null;
 
     return () => {
       cancelled = true;
