@@ -312,12 +312,29 @@ export default function HomeDesign() {
       .filter((match) => getStatusType(match.status) === "upcoming" && match.date)
       .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
 
+    const weekMatches = upcoming.filter((match) => {
+      const key = dayKey(match.date);
+      return key > startKey && key <= weekEndKey;
+    }).slice(0, 24);
+
+    const groupedWeek = [];
+    const grouped = new Map();
+    for (const match of weekMatches) {
+      const key = dayKey(match.date);
+      if (!grouped.has(key)) grouped.set(key, []);
+      grouped.get(key).push(match);
+    }
+    for (const [key, dayMatches] of grouped) {
+      groupedWeek.push({
+        key,
+        date: dayMatches[0]?.date,
+        matches: dayMatches.slice(0, 8),
+      });
+    }
+
     return {
       tomorrow: upcoming.filter((match) => dayKey(match.date) === tomorrowKey).slice(0, 8),
-      week: upcoming.filter((match) => {
-        const key = dayKey(match.date);
-        return key > startKey && key <= weekEndKey;
-      }).slice(0, 12),
+      week: groupedWeek,
     };
   }, [matches]);
 
@@ -562,32 +579,44 @@ export default function HomeDesign() {
             )}
 
             {upcomingCalendar.week.length > 0 && (
-              <div className="upcoming-day-block upcoming-week-block">
+              <div className="upcoming-week-list">
                 <div className="upcoming-day-title">
                   <div>
                     <span>هذا الأسبوع</span>
-                    <strong>مواعيد مرتبة حسب اليوم</strong>
+                    <strong>مواعيد مجمعة حسب كل يوم</strong>
                   </div>
-                  <b>{upcomingCalendar.week.length} مباراة</b>
+                  <b>{upcomingCalendar.week.reduce((total, day) => total + day.matches.length, 0)} مباراة</b>
                 </div>
-                <div className="upcoming-calendar-grid">
-                  {upcomingCalendar.week.map((match) => (
-                    <a href={`/matches/${match.id}`} className="upcoming-calendar-card" key={match.id}>
-                      <div className="upcoming-calendar-meta">
-                        <span>{formatMatchDate(match.date)}</span>
-                        <time>{match.time}</time>
+
+                {upcomingCalendar.week.map((day) => (
+                  <div className="upcoming-day-block upcoming-week-block" key={day.key}>
+                    <div className="upcoming-day-title">
+                      <div>
+                        <span>{formatMatchDate(day.date)}</span>
+                        <strong>{new Date(day.date).toLocaleDateString("ar-MA", { weekday: "long" })}</strong>
                       </div>
-                      <div className="upcoming-calendar-teams">
-                        <span>{match.home}</span>
-                        <TeamLogo src={match.homeLogo} alt={match.home} size={34} />
-                        <b>VS</b>
-                        <TeamLogo src={match.awayLogo} alt={match.away} size={34} />
-                        <span>{match.away}</span>
-                      </div>
-                      <small>{match.arabicLeague} · تفاصيل ←</small>
-                    </a>
-                  ))}
-                </div>
+                      <b>{day.matches.length} مباريات</b>
+                    </div>
+                    <div className="upcoming-calendar-grid">
+                      {day.matches.map((match) => (
+                        <a href={`/matches/${match.id}`} className="upcoming-calendar-card" key={match.id}>
+                          <div className="upcoming-calendar-meta">
+                            <span>{match.arabicLeague}</span>
+                            <time>{match.time}</time>
+                          </div>
+                          <div className="upcoming-calendar-teams">
+                            <span>{match.home}</span>
+                            <TeamLogo src={match.homeLogo} alt={match.home} size={34} />
+                            <b>VS</b>
+                            <TeamLogo src={match.awayLogo} alt={match.away} size={34} />
+                            <span>{match.away}</span>
+                          </div>
+                          <small>تفاصيل المباراة ←</small>
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                ))}
               </div>
             )}
           </section>
