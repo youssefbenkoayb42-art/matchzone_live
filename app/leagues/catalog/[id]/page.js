@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { notFound } from "next/navigation";
 import { getMatchSnapshot, getMatchSnapshotMeta, getTeamCatalog } from "../../../../lib/match-snapshot";
 
 export const dynamic = "force-dynamic";
@@ -48,8 +49,8 @@ export default async function CatalogLeaguePage({ params }) {
   );
   const leagueTeams = teams.filter((team) => leagueTeamIds.has(String(team.id)));
 
-  if (!league) {
-    return <main className="mz-league-detail" dir="rtl"><div className="mz-league-detail-shell"><h1>البطولة غير موجودة</h1><Link href="/leagues">← العودة إلى دليل الدوريات</Link></div></main>;
+  if (!league || leagueMatches.length === 0) {
+    notFound();
   }
 
   const sorted = [...leagueMatches].sort((a,b) => new Date(b?.fixture?.date || 0) - new Date(a?.fixture?.date || 0));
