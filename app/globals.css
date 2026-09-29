@@ -3247,3 +3247,44 @@ main {
   .mz-home-away-grid{grid-template-columns:1fr}
 }
 @media(prefers-reduced-motion:reduce){.mz-form-pill{transition:none}}
+
+/* MatchZone statistics center */
+.mz-stats-page{min-height:100vh;background:radial-gradient(circle at 50% -10%,rgba(57,229,139,.12),transparent 38%),#07100d;color:#eef8f3;padding:30px 16px 70px}
+.mz-stats-shell{max-width:1120px;margin:auto}
+.mz-stats-back{display:inline-block;color:#39e58b;text-decoration:none;font-weight:900;font-size:13px;margin-bottom:18px}
+.mz-stats-hero{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:28px;border:1px solid rgba(57,229,139,.14);border-radius:26px;background:linear-gradient(145deg,#10251c,#0a1511);box-shadow:0 18px 55px rgba(0,0,0,.2)}
+.mz-stats-hero h1{margin:6px 0 8px;font-size:clamp(28px,5vw,44px)}
+.mz-stats-hero p{margin:0;color:#8aa097;line-height:1.8;font-size:13px}
+.mz-stats-update{min-width:145px;padding:15px;border:1px solid rgba(57,229,139,.12);border-radius:16px;background:rgba(57,229,139,.045);text-align:center}
+.mz-stats-update span,.mz-stats-update small{display:block;color:#6f8379;font-size:9px}
+.mz-stats-update strong{display:block;color:#39e58b;margin:5px 0}
+.mz-stats-kpis{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:9px;margin:14px 0}
+.mz-stats-kpis article{padding:14px;border:1px solid rgba(255,255,255,.06);border-radius:16px;background:#0d1c15}
+.mz-stats-kpis span{display:block;color:#71857c;font-size:9px;font-weight:900}
+.mz-stats-kpis strong{display:block;margin-top:6px;font-size:24px;color:#39e58b}
+.mz-stats-kpis strong.live{color:#7dffbe}
+.mz-stats-kpis small{display:block;margin-top:3px;color:#536960;font-size:8px}
+.mz-stats-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:12px;margin-bottom:12px}
+.mz-stats-card{padding:18px;border:1px solid rgba(255,255,255,.06);border-radius:20px;background:rgba(13,28,21,.9)}
+.mz-stats-card-head{display:flex;justify-content:space-between;align-items:end;gap:12px;margin-bottom:14px}
+.mz-stats-card-head h2{margin:4px 0 0;font-size:19px}
+.mz-stats-card-head a{color:#39e58b;text-decoration:none;font-size:11px;font-weight:900;white-space:nowrap}
+.mz-league-stats-list{display:grid;gap:6px}
+.mz-league-stat-row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:11px 12px;border:1px solid rgba(255,255,255,.045);border-radius:13px;background:rgba(255,255,255,.018)}
+.mz-league-stat-row strong{display:block;font-size:12px}
+.mz-league-stat-row small{display:block;color:#63776e;font-size:8px;margin-top:4px}
+.mz-league-stat-row b{color:#39e58b;font-size:14px}
+.mz-goal-list{display:grid;gap:7px}
+.mz-goal-list a{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px;border:1px solid rgba(255,255,255,.045);border-radius:12px;color:inherit;text-decoration:none}
+.mz-goal-list a:hover,.mz-upcoming-stat-match:hover{border-color:rgba(57,229,139,.25)}
+.mz-goal-list strong,.mz-goal-list span{display:block;font-size:10px}
+.mz-goal-list span{color:#71857c;margin-top:3px}
+.mz-goal-list b{font-size:15px;color:#39e58b;white-space:nowrap}
+.mz-upcoming-stats-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}
+.mz-upcoming-stat-match{display:block;padding:12px;border:1px solid rgba(255,255,255,.045);border-radius:14px;color:inherit;text-decoration:none;background:rgba(255,255,255,.015)}
+.mz-upcoming-stat-match small{display:block;color:#39e58b;font-size:8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mz-upcoming-stat-match strong{display:block;font-size:10px;margin-top:8px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.mz-upcoming-stat-match span{display:block;text-align:center;color:#fff;font-weight:950;font-size:13px;margin:8px 0}
+.mz-stats-foot{margin-top:14px;color:#5f736a;font-size:9px;text-align:center}
+@media(max-width:900px){.mz-stats-kpis{grid-template-columns:repeat(3,1fr)}.mz-stats-grid{grid-template-columns:1fr}.mz-upcoming-stats-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.mz-stats-page{padding:20px 12px 55px}.mz-stats-hero{display:block;padding:20px}.mz-stats-update{margin-top:14px}.mz-stats-kpis{grid-template-columns:repeat(2,1fr)}.mz-stats-card{padding:14px;border-radius:17px}.mz-upcoming-stats-grid{grid-template-columns:1fr}.mz-stats-card-head h2{font-size:17px}}
