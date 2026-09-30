@@ -542,8 +542,16 @@ async function fetchOpenFootMatches(from, to) {
   }
 
   const output = [];
-  const windowStart = new Date(isoDay(from) + "T00:00:00Z");
-  const windowEnd = new Date(isoDay(to) + "T23:59:59Z");
+
+  // OpenFoot has its own season-wide response. Keep a slightly wider
+  // source-specific window than the main snapshot so local kickoff dates
+  // cannot be discarded just because another provider uses a tighter window.
+  const openFootFrom = new Date(from);
+  openFootFrom.setUTCDate(openFootFrom.getUTCDate() - 5);
+  const openFootTo = new Date(from);
+  openFootTo.setUTCDate(openFootTo.getUTCDate() + 30);
+  const windowStart = new Date(isoDay(openFootFrom) + "T00:00:00Z");
+  const windowEnd = new Date(isoDay(openFootTo) + "T23:59:59Z");
   const season = "2026/27";
 
   const status = (value) => {
