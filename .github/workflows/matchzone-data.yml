@@ -42,6 +42,7 @@ jobs:
       - name: Run clean scraper
         env:
           FOOTBALL_DATA_API_KEY: ${{ secrets.FOOTBALL_DATA_API_KEY }}
+          OPENFOOT_API_KEY: ${{ secrets.OPENFOOT_API_KEY }}
         run: node scripts/scrape.mjs
 
       - name: Remove legacy artifacts
