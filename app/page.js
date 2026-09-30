@@ -40,8 +40,28 @@ function getArabicLeague(league) {
     "Serie A": "الدوري الإيطالي",
     Bundesliga: "الدوري الألماني",
     "Ligue 1": "الدوري الفرنسي",
+    "Botola Pro": "الدوري المغربي",
+    "Botola Pro 1": "الدوري المغربي",
+    "Botola Pro2": "الدوري المغربي 2",
+    "Botola Pro 2": "الدوري المغربي 2",
   };
   return map[league] || league || "بطولة كرة القدم";
+}
+
+const COMPETITION_LOGOS = {
+  // Verified current Botola Pro identity; used only when the provider
+  // does not return a competition logo. Team logos are never substituted.
+  "openfoot:comp_botola_pro_mar": "https://logowik.com/content/uploads/images/botolapro2288.logowik.com.webp",
+};
+
+function getCompetitionLogo(leagueLogo, league) {
+  if (leagueLogo) return leagueLogo;
+  const id = String(league?.id || "");
+  const name = String(league?.name || "").trim();
+  return (
+    COMPETITION_LOGOS[id] ||
+    (/^botola pro(?: 1)?$/i.test(name) ? COMPETITION_LOGOS["openfoot:comp_botola_pro_mar"] : null)
+  );
 }
 
 function TeamLogo({ src, alt, size = 48 }) {
@@ -145,7 +165,7 @@ function normalizeMatch(item) {
     homeScore: item?.goals?.home !== undefined ? item.goals.home : null,
     awayScore: item?.goals?.away !== undefined ? item.goals.away : null,
     league: item?.league?.name || "Football",
-    leagueLogo: item?.league?.logo || null,
+    leagueLogo: getCompetitionLogo(item?.league?.logo, item?.league),
     competitionType: item?.competitionType || "domestic",
     arabicLeague: getArabicLeague(item?.league?.name),
   };
