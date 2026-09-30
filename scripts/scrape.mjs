@@ -1132,9 +1132,13 @@ async function main() {
       season: league?.season || null,
       source: source || league?.source || "unknown",
       file: league?.file || null,
+      logo: cleanHttpsUrl(league?.logo) || null,
       matchCount: 0,
     };
     existing.matchCount += matchCount;
+    if (!existing.logo && cleanHttpsUrl(league?.logo)) {
+      existing.logo = cleanHttpsUrl(league.logo);
+    }
     leagueMap.set(id, existing);
   };
 
