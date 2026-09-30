@@ -39,6 +39,15 @@ jobs:
             exit 1
           }
 
+      - name: Verify OpenFoot API secret
+        env:
+          OPENFOOT_API_KEY: ${{ secrets.OPENFOOT_API_KEY }}
+        run: |
+          test -n "$OPENFOOT_API_KEY" || {
+            echo "OPENFOOT_API_KEY is missing."; exit 1;
+          }
+          echo "OPENFOOT_API_KEY is available."
+
       - name: Run clean scraper
         env:
           FOOTBALL_DATA_API_KEY: ${{ secrets.FOOTBALL_DATA_API_KEY }}
