@@ -29,7 +29,11 @@ const CATALOG_LEAGUE_LOGOS = {
 };
 
 function leagueLogo(league) {
-  return CATALOG_LEAGUE_LOGOS[String(league?.id || "")] || null;
+  return (
+    league?.logo ||
+    CATALOG_LEAGUE_LOGOS[String(league?.id || "")] ||
+    null
+  );
 }
 
 export default async function LeaguesPage() {
