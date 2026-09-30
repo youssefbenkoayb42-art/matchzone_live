@@ -1,10 +1,10 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-09-30T19:07:22.047Z",
+  "updatedAt": "2026-09-30T19:35:36.682Z",
   "source": "football-data.org + ESPN + OpenFootball + TheSportsDB enrichment",
   "coverageWindow": {
-    "from": "2026-09-28T19:06:16.491Z",
-    "to": "2026-09-30T19:06:16.491Z"
+    "from": "2026-09-28T19:34:56.914Z",
+    "to": "2026-09-30T19:34:56.914Z"
   },
   "sourcePolicy": {
     "primary": "football-data.org",
@@ -44,6 +44,7 @@
       "season": "2005",
       "source": "openfootball-world",
       "file": "north-america/major-league-soccer/2005_mls.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -54,6 +55,7 @@
       "season": "2006",
       "source": "openfootball-world",
       "file": "north-america/major-league-soccer/2006_mls.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -64,6 +66,7 @@
       "season": "2007",
       "source": "openfootball-world",
       "file": "north-america/major-league-soccer/2007_mls.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -74,6 +77,7 @@
       "season": "2008",
       "source": "openfootball-world",
       "file": "north-america/major-league-soccer/2008_mls.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -84,6 +88,7 @@
       "season": "2009",
       "source": "openfootball-world",
       "file": "north-america/major-league-soccer/2009_mls.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -94,6 +99,7 @@
       "season": "2009-10",
       "source": "openfootball-world",
       "file": "africa/nigeria/2009-10_ng1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -104,6 +110,7 @@
       "season": "2010",
       "source": "openfootball-world",
       "file": "north-america/major-league-soccer/2010_mls.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -114,6 +121,7 @@
       "season": "2010-11",
       "source": "openfootball-world",
       "file": "north-america/champions-league/2010-11_concacafcl.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -124,6 +132,7 @@
       "season": "2010-11",
       "source": "openfootball-world",
       "file": "north-america/mexico/2010-11_mx1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -134,6 +143,7 @@
       "season": "2010-11",
       "source": "openfootball-world",
       "file": "north-america/mexico/2010-11_mx2ascenso.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -144,6 +154,7 @@
       "season": "2010-11",
       "source": "openfootball-world",
       "file": "africa/nigeria/2010-11_ng1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -154,6 +165,7 @@
       "season": "2011",
       "source": "openfootball-world",
       "file": "north-america/major-league-soccer/2011_mls.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -164,6 +176,7 @@
       "season": "2011-12",
       "source": "openfootball-world",
       "file": "north-america/champions-league/2011-12_concacafcl.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -174,6 +187,7 @@
       "season": "2011-12",
       "source": "openfootball-world",
       "file": "north-america/mexico/2011-12_mx1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -184,6 +198,7 @@
       "season": "2011-12",
       "source": "openfootball-world",
       "file": "north-america/mexico/2011-12_mx2ascenso.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -194,6 +209,7 @@
       "season": "2011-12",
       "source": "openfootball-world",
       "file": "africa/nigeria/2011-12_ng1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -204,6 +220,7 @@
       "season": "2012",
       "source": "openfootball-world",
       "file": "north-america/major-league-soccer/2012_mls.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -214,6 +231,7 @@
       "season": "2012-13",
       "source": "openfootball-world",
       "file": "north-america/champions-league/2012-13_concacafcl.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -224,6 +242,7 @@
       "season": "2012-13",
       "source": "openfootball-world",
       "file": "north-america/mexico/2012-13_mx1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -234,6 +253,7 @@
       "season": "2012-13",
       "source": "openfootball-world",
       "file": "north-america/mexico/2012-13_mx2ascenso.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -244,6 +264,7 @@
       "season": "2012-13",
       "source": "openfootball-world",
       "file": "africa/nigeria/2012-13_ng1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -254,6 +275,7 @@
       "season": "2013",
       "source": "openfootball-world",
       "file": "north-america/major-league-soccer/2013_mls.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -264,6 +286,7 @@
       "season": "2013-14",
       "source": "openfootball-world",
       "file": "north-america/champions-league/2013-14_concacafcl.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -274,6 +297,7 @@
       "season": "2013-14",
       "source": "openfootball-world",
       "file": "north-america/mexico/2013-14_mx1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -284,6 +308,7 @@
       "season": "2013-14",
       "source": "openfootball-world",
       "file": "north-america/mexico/2013-14_mx2ascenso.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -294,6 +319,7 @@
       "season": "2013-14",
       "source": "openfootball-world",
       "file": "africa/nigeria/2013-14_ng1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -304,6 +330,7 @@
       "season": "2014",
       "source": "openfootball-world",
       "file": "north-america/major-league-soccer/2014_mls.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -314,6 +341,7 @@
       "season": "2014-15",
       "source": "openfootball-world",
       "file": "north-america/champions-league/2014-15_concacafcl.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -324,6 +352,7 @@
       "season": "2014-15",
       "source": "openfootball-world",
       "file": "north-america/mexico/2014-15_mx1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -334,6 +363,7 @@
       "season": "2014-15",
       "source": "openfootball-world",
       "file": "north-america/mexico/2014-15_mx2ascenso.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -344,6 +374,7 @@
       "season": "2014-15",
       "source": "openfootball-world",
       "file": "africa/nigeria/2014-15_ng1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -354,6 +385,7 @@
       "season": "2015",
       "source": "openfootball-world",
       "file": "north-america/major-league-soccer/2015_mls.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -364,6 +396,7 @@
       "season": "2015-16",
       "source": "openfootball-world",
       "file": "north-america/champions-league/2015-16_concacafcl.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -374,6 +407,7 @@
       "season": "2015-16",
       "source": "openfootball-world",
       "file": "north-america/mexico/2015-16_mx1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -384,6 +418,7 @@
       "season": "2015-16",
       "source": "openfootball-world",
       "file": "north-america/mexico/2015-16_mx2ascenso.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -394,6 +429,7 @@
       "season": "2015-16",
       "source": "openfootball-world",
       "file": "africa/nigeria/2015-16_ng1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -404,6 +440,7 @@
       "season": "2016",
       "source": "openfootball-world",
       "file": "north-america/major-league-soccer/2016_mls.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -414,6 +451,7 @@
       "season": "2016-17",
       "source": "openfootball-world",
       "file": "north-america/champions-league/2016-17_concacafcl.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -424,6 +462,7 @@
       "season": "2016-17",
       "source": "openfootball-world",
       "file": "africa/ghana/2016-17_gh1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -434,6 +473,7 @@
       "season": "2016-17",
       "source": "openfootball-world",
       "file": "north-america/mexico/2016-17_mx1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -444,6 +484,7 @@
       "season": "2016-17",
       "source": "openfootball-world",
       "file": "north-america/mexico/2016-17_mx2ascenso.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -454,6 +495,7 @@
       "season": "2016-17",
       "source": "openfootball-world",
       "file": "africa/nigeria/2016-17_ng1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -464,6 +506,7 @@
       "season": "2017",
       "source": "openfootball-world",
       "file": "north-america/major-league-soccer/2017_mls.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -474,6 +517,7 @@
       "season": "2017-18",
       "source": "openfootball-world",
       "file": "north-america/mexico/2017-18_mx1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -484,6 +528,7 @@
       "season": "2017-18",
       "source": "openfootball-world",
       "file": "north-america/mexico/2017-18_mx2ascenso.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -494,6 +539,7 @@
       "season": "2017-18",
       "source": "openfootball-world",
       "file": "africa/nigeria/2017-18_ng1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -504,6 +550,7 @@
       "season": "2017-18",
       "source": "openfootball-world",
       "file": "africa/nigeria/2017-18_ng2.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -514,6 +561,7 @@
       "season": "2018",
       "source": "openfootball-world",
       "file": "asia/china/2018_cn1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -524,6 +572,7 @@
       "season": "2018",
       "source": "openfootball-world",
       "file": "north-america/champions-league/2018_concacafcl.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -534,6 +583,7 @@
       "season": "2018",
       "source": "openfootball-world",
       "file": "north-america/major-league-soccer/2018_mls.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -544,6 +594,7 @@
       "season": "2018-19",
       "source": "openfootball-world",
       "file": "pacific/australia/2018-19_au1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -554,6 +605,7 @@
       "season": "2018-19",
       "source": "openfootball-world",
       "file": "north-america/mexico/2018-19_mx1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -564,6 +616,7 @@
       "season": "2018-19",
       "source": "openfootball-world",
       "file": "north-america/mexico/2018-19_mx2ascenso.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -574,6 +627,7 @@
       "season": "2018-19",
       "source": "openfootball-world",
       "file": "africa/nigeria/2018-19_ng1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -584,6 +638,7 @@
       "season": "2018-19",
       "source": "openfootball-world",
       "file": "africa/nigeria/2018-19_ng2.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -594,6 +649,7 @@
       "season": "2019",
       "source": "openfootball-world",
       "file": "asia/china/2019_cn1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -604,6 +660,7 @@
       "season": "2019",
       "source": "openfootball-world",
       "file": "north-america/champions-league/2019_concacafcl.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -614,6 +671,7 @@
       "season": "2019",
       "source": "openfootball-world",
       "file": "asia/japan/2019_jp1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -624,6 +682,7 @@
       "season": "2019",
       "source": "openfootball-world",
       "file": "north-america/major-league-soccer/2019_mls.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -634,6 +693,7 @@
       "season": "2019-20",
       "source": "openfootball-world",
       "file": "pacific/australia/2019-20_au1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -644,6 +704,7 @@
       "season": "2019-20",
       "source": "openfootball-world",
       "file": "north-america/mexico/2019-20_mx1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -654,6 +715,7 @@
       "season": "2019-20",
       "source": "openfootball-world",
       "file": "north-america/mexico/2019-20_mx2ascenso.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -664,6 +726,7 @@
       "season": "2020",
       "source": "openfootball-world",
       "file": "asia/china/2020_cn1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -674,6 +737,7 @@
       "season": "2020",
       "source": "openfootball-world",
       "file": "north-america/champions-league/2020_concacafcl.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -684,6 +748,7 @@
       "season": "2020",
       "source": "openfootball-world",
       "file": "asia/japan/2020_jp1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -694,6 +759,7 @@
       "season": "2020",
       "source": "openfootball-world",
       "file": "north-america/major-league-soccer/2020_mls.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -704,6 +770,7 @@
       "season": "2020-21",
       "source": "openfootball-world",
       "file": "pacific/australia/2020-21_au1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -714,6 +781,7 @@
       "season": "2020-21",
       "source": "openfootball-world",
       "file": "africa/ghana/2020-21_gh1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -724,6 +792,7 @@
       "season": "2020-21",
       "source": "openfootball-world",
       "file": "north-america/mexico/2020-21_mx1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -734,6 +803,7 @@
       "season": "2020-21",
       "source": "openfootball-world",
       "file": "north-america/mexico/2020-21_mx2expansion.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -744,6 +814,7 @@
       "season": "2020-21",
       "source": "openfootball-world",
       "file": "africa/nigeria/2020-21_ng1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -754,6 +825,7 @@
       "season": "2020-21",
       "source": "openfootball-world",
       "file": "africa/nigeria/2020-21_ng2.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -764,6 +836,7 @@
       "season": "2020-21",
       "source": "openfootball-world",
       "file": "africa/senegal/2020-21_sn1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -774,6 +847,7 @@
       "season": "2020-21",
       "source": "openfootball-world",
       "file": "africa/tanzania/2020-21_tz1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -784,6 +858,7 @@
       "season": "2021",
       "source": "openfootball-world",
       "file": "asia/china/2021_cn1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -794,6 +869,7 @@
       "season": "2021",
       "source": "openfootball-world",
       "file": "north-america/champions-league/2021_concacafcl.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -804,6 +880,7 @@
       "season": "2021",
       "source": "openfootball-world",
       "file": "asia/japan/2021_jp1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -814,6 +891,7 @@
       "season": "2021",
       "source": "openfootball-world",
       "file": "north-america/major-league-soccer/2021_mls.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -824,6 +902,7 @@
       "season": "2021-22",
       "source": "openfootball-world",
       "file": "pacific/australia/2021-22_au1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -834,6 +913,7 @@
       "season": "2021-22",
       "source": "openfootball-world",
       "file": "africa/ghana/2021-22_gh1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -844,6 +924,7 @@
       "season": "2021-22",
       "source": "openfootball-world",
       "file": "north-america/mexico/2021-22_mx1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -854,6 +935,7 @@
       "season": "2021-22",
       "source": "openfootball-world",
       "file": "north-america/mexico/2021-22_mx2expansion.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -864,6 +946,7 @@
       "season": "2021-22",
       "source": "openfootball-world",
       "file": "africa/nigeria/2021-22_ng1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -874,6 +957,7 @@
       "season": "2021-22",
       "source": "openfootball-world",
       "file": "africa/nigeria/2021-22_ng2.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -884,6 +968,7 @@
       "season": "2021-22",
       "source": "openfootball-world",
       "file": "africa/rwanda/2021-22_rw1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -894,6 +979,7 @@
       "season": "2021-22",
       "source": "openfootball-world",
       "file": "africa/senegal/2021-22_sn1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -904,6 +990,7 @@
       "season": "2021-22",
       "source": "openfootball-world",
       "file": "africa/tanzania/2021-22_tz1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -914,6 +1001,7 @@
       "season": "2021-22",
       "source": "openfootball-world",
       "file": "africa/zambia/2021-22_zm1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -924,6 +1012,7 @@
       "season": "2021-22",
       "source": "openfootball-world",
       "file": "africa/zimbabwe/2021-22_zw1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -934,6 +1023,7 @@
       "season": "2022",
       "source": "openfootball-world",
       "file": "asia/china/2022_cn1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -944,6 +1034,7 @@
       "season": "2022",
       "source": "openfootball-world",
       "file": "north-america/champions-league/2022_concacafcl.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -954,6 +1045,7 @@
       "season": "2022",
       "source": "openfootball-world",
       "file": "asia/japan/2022_jp1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -964,6 +1056,7 @@
       "season": "2022",
       "source": "openfootball-world",
       "file": "north-america/major-league-soccer/2022_mls.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -974,6 +1067,7 @@
       "season": "2022-23",
       "source": "openfootball-world",
       "file": "pacific/australia/2022-23_au1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -984,6 +1078,7 @@
       "season": "2022-23",
       "source": "openfootball-world",
       "file": "africa/ghana/2022-23_gh1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -994,6 +1089,7 @@
       "season": "2022-23",
       "source": "openfootball-world",
       "file": "africa/kenya/2022-23_ke1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1004,6 +1100,7 @@
       "season": "2022-23",
       "source": "openfootball-world",
       "file": "north-america/mexico/2022-23_mx1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1014,6 +1111,7 @@
       "season": "2022-23",
       "source": "openfootball-world",
       "file": "north-america/mexico/2022-23_mx2expansion.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1024,6 +1122,7 @@
       "season": "2022-23",
       "source": "openfootball-world",
       "file": "africa/nigeria/2022-23_ng1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1034,6 +1133,7 @@
       "season": "2022-23",
       "source": "openfootball-world",
       "file": "africa/nigeria/2022-23_ng2.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1044,6 +1144,7 @@
       "season": "2022-23",
       "source": "openfootball-world",
       "file": "africa/rwanda/2022-23_rw1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1054,6 +1155,7 @@
       "season": "2022-23",
       "source": "openfootball-world",
       "file": "africa/senegal/2022-23_sn1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1064,6 +1166,7 @@
       "season": "2023",
       "source": "openfootball-world",
       "file": "africa/african-football-league/2023_afl.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1074,6 +1177,7 @@
       "season": "2023",
       "source": "openfootball-world",
       "file": "asia/china/2023_cn1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1084,6 +1188,7 @@
       "season": "2023",
       "source": "openfootball-world",
       "file": "north-america/champions-league/2023_concacafcl.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1094,6 +1199,7 @@
       "season": "2023",
       "source": "openfootball-world",
       "file": "asia/japan/2023_jp1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1104,6 +1210,7 @@
       "season": "2023",
       "source": "openfootball-world",
       "file": "asia/kazakhstan/2023_kz1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1114,6 +1221,7 @@
       "season": "2023",
       "source": "openfootball-world",
       "file": "north-america/major-league-soccer/2023_mls.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1124,6 +1232,7 @@
       "season": "2023",
       "source": "openfootball-world",
       "file": "africa/malawi/2023_mw1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1134,6 +1243,7 @@
       "season": "2023",
       "source": "openfootball-world",
       "file": "africa/zimbabwe/2023_zw1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1144,6 +1254,7 @@
       "season": "2023-24",
       "source": "openfootball-world",
       "file": "pacific/australia/2023-24_au1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1154,6 +1265,7 @@
       "season": "2023-24",
       "source": "openfootball-world",
       "file": "africa/champions-league/2023-24_cafcl.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1164,6 +1276,7 @@
       "season": "2023-24",
       "source": "openfootball-world",
       "file": "africa/algeria/2023-24_dz1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1174,6 +1287,7 @@
       "season": "2023-24",
       "source": "openfootball-world",
       "file": "africa/egypt/2023-24_eg1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1184,6 +1298,7 @@
       "season": "2023-24",
       "source": "openfootball-world",
       "file": "africa/ghana/2023-24_gh1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1194,6 +1309,7 @@
       "season": "2023-24",
       "source": "openfootball-world",
       "file": "middle-east/israel/2023-24_il1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1204,6 +1320,7 @@
       "season": "2023-24",
       "source": "openfootball-world",
       "file": "africa/kenya/2023-24_ke1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1214,6 +1331,7 @@
       "season": "2023-24",
       "source": "openfootball-world",
       "file": "africa/morocco/2023-24_ma1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1224,6 +1342,7 @@
       "season": "2023-24",
       "source": "openfootball-world",
       "file": "north-america/mexico/2023-24_mx1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1234,6 +1353,7 @@
       "season": "2023-24",
       "source": "openfootball-world",
       "file": "north-america/mexico/2023-24_mx2expansion.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1244,6 +1364,7 @@
       "season": "2023-24",
       "source": "openfootball-world",
       "file": "africa/nigeria/2023-24_ng1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1254,6 +1375,7 @@
       "season": "2023-24",
       "source": "openfootball-world",
       "file": "africa/nigeria/2023-24_ng2.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1264,6 +1386,7 @@
       "season": "2023-24",
       "source": "openfootball-world",
       "file": "africa/rwanda/2023-24_rw1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1274,6 +1397,7 @@
       "season": "2023-24",
       "source": "openfootball-world",
       "file": "africa/tanzania/2023-24_tz1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1284,6 +1408,7 @@
       "season": "2023-24",
       "source": "openfootball-world",
       "file": "africa/uganda/2023-24_ug1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1294,6 +1419,7 @@
       "season": "2023-24",
       "source": "openfootball-world",
       "file": "africa/zambia/2023-24_zm1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1304,6 +1430,7 @@
       "season": "2024",
       "source": "openfootball-world",
       "file": "asia/china/2024_cn1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1314,6 +1441,7 @@
       "season": "2024",
       "source": "openfootball-world",
       "file": "north-america/champions-league/2024_concacafcl.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1324,6 +1452,7 @@
       "season": "2024",
       "source": "openfootball-world",
       "file": "asia/japan/2024_jp1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1334,6 +1463,7 @@
       "season": "2024",
       "source": "openfootball-world",
       "file": "asia/kazakhstan/2024_kz1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1344,6 +1474,7 @@
       "season": "2024",
       "source": "openfootball-world",
       "file": "north-america/major-league-soccer/2024_mls.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1354,6 +1485,7 @@
       "season": "2024",
       "source": "openfootball-world",
       "file": "africa/malawi/2024_mw1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1364,6 +1496,7 @@
       "season": "2024",
       "source": "openfootball-world",
       "file": "africa/zimbabwe/2024_zw1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1374,6 +1507,7 @@
       "season": "2024-25",
       "source": "openfootball-world",
       "file": "pacific/australia/2024-25_au1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1384,6 +1518,7 @@
       "season": "2024-25",
       "source": "openfootball-world",
       "file": "africa/champions-league/2024-25_cafcl.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1394,6 +1529,7 @@
       "season": "2024-25",
       "source": "openfootball-world",
       "file": "central-america/costa-rica/2024-25_cr1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1404,6 +1540,7 @@
       "season": "2024-25",
       "source": "openfootball-world",
       "file": "africa/algeria/2024-25_dz1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1414,6 +1551,7 @@
       "season": "2024-25",
       "source": "openfootball-world",
       "file": "africa/egypt/2024-25_eg1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1424,6 +1562,7 @@
       "season": "2024-25",
       "source": "openfootball-world",
       "file": "africa/ghana/2024-25_gh1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1434,6 +1573,7 @@
       "season": "2024-25",
       "source": "openfootball-world",
       "file": "middle-east/israel/2024-25_il1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1444,6 +1584,7 @@
       "season": "2024-25",
       "source": "openfootball-world",
       "file": "middle-east/israel/2024-25_il2.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1454,6 +1595,7 @@
       "season": "2024-25",
       "source": "openfootball-world",
       "file": "middle-east/israel/2024-25_ilcup.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1464,6 +1606,7 @@
       "season": "2024-25",
       "source": "openfootball-world",
       "file": "africa/kenya/2024-25_ke1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1474,6 +1617,7 @@
       "season": "2024-25",
       "source": "openfootball-world",
       "file": "africa/morocco/2024-25_ma1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1484,6 +1628,7 @@
       "season": "2024-25",
       "source": "openfootball-world",
       "file": "north-america/mexico/2024-25_mx1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1494,6 +1639,7 @@
       "season": "2024-25",
       "source": "openfootball-world",
       "file": "north-america/mexico/2024-25_mx2expansion.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1504,6 +1650,7 @@
       "season": "2024-25",
       "source": "openfootball-world",
       "file": "africa/nigeria/2024-25_ng1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1514,6 +1661,7 @@
       "season": "2024-25",
       "source": "openfootball-world",
       "file": "africa/nigeria/2024-25_ng2.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1524,6 +1672,7 @@
       "season": "2024-25",
       "source": "openfootball-world",
       "file": "africa/rwanda/2024-25_rw1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1534,6 +1683,7 @@
       "season": "2024-25",
       "source": "openfootball-world",
       "file": "middle-east/saudi-arabia/2024-25_sa1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1544,6 +1694,7 @@
       "season": "2024-25",
       "source": "openfootball-world",
       "file": "africa/senegal/2024-25_sn1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1554,6 +1705,7 @@
       "season": "2024-25",
       "source": "openfootball-world",
       "file": "africa/tanzania/2024-25_tz1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1564,6 +1716,7 @@
       "season": "2024-25",
       "source": "openfootball-world",
       "file": "africa/uganda/2024-25_ug1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1574,6 +1727,7 @@
       "season": "2024-25",
       "source": "openfootball-world",
       "file": "africa/south-africa/2024-25_za1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1584,6 +1738,7 @@
       "season": "2024-25",
       "source": "openfootball-world",
       "file": "africa/zambia/2024-25_zm1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1594,6 +1749,7 @@
       "season": "2025",
       "source": "openfootball-world",
       "file": "asia/china/2025_cn1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1604,6 +1760,7 @@
       "season": "2025",
       "source": "openfootball-world",
       "file": "north-america/champions-league/2025_concacafcl.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1614,6 +1771,7 @@
       "season": "2025",
       "source": "openfootball-world",
       "file": "asia/japan/2025_jp1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1624,6 +1782,7 @@
       "season": "2025",
       "source": "openfootball-world",
       "file": "asia/kazakhstan/2025_kz1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1634,6 +1793,7 @@
       "season": "2025",
       "source": "openfootball-world",
       "file": "north-america/major-league-soccer/2025_mls.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1644,6 +1804,7 @@
       "season": "2025",
       "source": "openfootball-world",
       "file": "africa/malawi/2025_mw1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1654,6 +1815,7 @@
       "season": "2025",
       "source": "openfootball-world",
       "file": "africa/zimbabwe/2025_zw1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1664,6 +1826,7 @@
       "season": "2025-26",
       "source": "openfootball-world",
       "file": "africa/kenya/2025-26_ke1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1674,6 +1837,7 @@
       "season": "2025-26",
       "source": "openfootball-world",
       "file": "africa/nigeria/2025-26_ng2.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1684,6 +1848,7 @@
       "season": "2025-26",
       "source": "openfootball-world",
       "file": "africa/nigeria/2025-26_ng1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1694,6 +1859,7 @@
       "season": "2025-26",
       "source": "openfootball-world",
       "file": "africa/rwanda/2025-26_rw1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1704,6 +1870,7 @@
       "season": "2025-26",
       "source": "openfootball-world",
       "file": "africa/senegal/2025-26_sn1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1714,6 +1881,7 @@
       "season": "2025-26",
       "source": "openfootball-world",
       "file": "africa/tanzania/2025-26_tz1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1724,6 +1892,7 @@
       "season": "2025-26",
       "source": "openfootball-world",
       "file": "africa/uganda/2025-26_ug1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1734,6 +1903,7 @@
       "season": "2025-26",
       "source": "openfootball-world",
       "file": "africa/zambia/2025-26_zm1.txt",
+      "logo": null,
       "matchCount": 0,
       "currentCoverage": false
     },
@@ -1744,6 +1914,7 @@
       "season": null,
       "source": "espn",
       "file": null,
+      "logo": null,
       "matchCount": 15,
       "currentCoverage": true
     },
@@ -1754,6 +1925,7 @@
       "season": null,
       "source": "espn",
       "file": null,
+      "logo": null,
       "matchCount": 10,
       "currentCoverage": true
     },
@@ -1764,6 +1936,7 @@
       "season": null,
       "source": "espn",
       "file": null,
+      "logo": null,
       "matchCount": 7,
       "currentCoverage": true
     },
@@ -1774,6 +1947,7 @@
       "season": null,
       "source": "espn",
       "file": null,
+      "logo": null,
       "matchCount": 11,
       "currentCoverage": true
     },
@@ -1784,6 +1958,7 @@
       "season": null,
       "source": "espn",
       "file": null,
+      "logo": null,
       "matchCount": 22,
       "currentCoverage": true
     },
@@ -1794,6 +1969,7 @@
       "season": null,
       "source": "espn",
       "file": null,
+      "logo": null,
       "matchCount": 21,
       "currentCoverage": true
     },
@@ -1804,6 +1980,7 @@
       "season": null,
       "source": "espn",
       "file": null,
+      "logo": null,
       "matchCount": 27,
       "currentCoverage": true
     },
@@ -1814,6 +1991,7 @@
       "season": null,
       "source": "openfoot",
       "file": null,
+      "logo": null,
       "matchCount": 28,
       "currentCoverage": true
     },
@@ -1824,6 +2002,7 @@
       "season": null,
       "source": "espn",
       "file": null,
+      "logo": null,
       "matchCount": 8,
       "currentCoverage": true
     },
@@ -1834,6 +2013,7 @@
       "season": null,
       "source": "openfoot",
       "file": null,
+      "logo": null,
       "matchCount": 15,
       "currentCoverage": true
     },
@@ -1844,6 +2024,7 @@
       "season": null,
       "source": "espn",
       "file": null,
+      "logo": null,
       "matchCount": 7,
       "currentCoverage": true
     },
@@ -1854,6 +2035,7 @@
       "season": null,
       "source": "espn",
       "file": null,
+      "logo": null,
       "matchCount": 7,
       "currentCoverage": true
     },
@@ -1864,6 +2046,7 @@
       "season": null,
       "source": "espn",
       "file": null,
+      "logo": null,
       "matchCount": 21,
       "currentCoverage": true
     },
@@ -1874,6 +2057,7 @@
       "season": null,
       "source": "espn",
       "file": null,
+      "logo": null,
       "matchCount": 20,
       "currentCoverage": true
     }
@@ -2255,7 +2439,7 @@
             "intAway": "7"
           }
         ],
-        "updatedAt": "2026-09-30T19:07:07.474Z",
+        "updatedAt": "2026-09-30T19:35:22.355Z",
         "source": "primary provider + TheSportsDB enrichment",
         "theSportsDbEventId": "2500789"
       }
@@ -2633,7 +2817,7 @@
             "intAway": "11"
           }
         ],
-        "updatedAt": "2026-09-30T19:07:17.372Z",
+        "updatedAt": "2026-09-30T19:35:32.060Z",
         "source": "primary provider + TheSportsDB enrichment",
         "theSportsDbEventId": "2500786"
       }
@@ -2843,7 +3027,7 @@
             "intAway": "8"
           }
         ],
-        "updatedAt": "2026-09-30T19:07:19.847Z",
+        "updatedAt": "2026-09-30T19:35:34.481Z",
         "source": "primary provider + TheSportsDB enrichment",
         "theSportsDbEventId": "2500792"
       }
