@@ -23,6 +23,13 @@ const OPENFOOTBALL_WORLD_ROOTS = [
 ];
 const AVATAR_BASE = "https://ui-avatars.com/api/";
 const THESPORTSDB_ENRICH_LIMIT = 8;
+const OPENFOOT_API = "https://openfootapi.com/v1";
+const OPENFOOT_API_KEY = String(process.env.OPENFOOT_API_KEY || "").trim();
+const OPENFOOT_COMPETITIONS = [
+  ["comp_botola_pro_mar", "الدوري المغربي", "domestic"],
+  ["comp_ligue_1_dza", "الدوري الجزائري", "domestic"],
+  ["comp_egyptian_prem_egy", "الدوري المصري", "domestic"],
+];
 
 // Coverage Engine: ESPN is split into a fast current-day layer and a
 // rotating future-calendar layer. GitHub Actions refreshes one future slice
@@ -528,6 +535,95 @@ async function fetchOpenFootballWorldMatches(from, to) {
   }
   return { matches: output, catalog };
 }
+async function fetchOpenFootMatches(from, to) {
+  if (!OPENFOOT_API_KEY) {
+    console.warn("[OpenFoot] OPENFOOT_API_KEY missing; fallback skipped.");
+    return [];
+  }
+
+  const output = [];
+  const windowStart = new Date(isoDay(from) + "T00:00:00Z");
+  const windowEnd = new Date(isoDay(to) + "T23:59:59Z");
+  const season = "2026/27";
+
+  const status = (value) => {
+    switch (String(value || "").toLowerCase()) {
+      case "finished": return "FT";
+      case "live": return "LIVE";
+      case "postponed":
+      case "cancelled": return "POSTPONED";
+      default: return "NS";
+    }
+  };
+
+  const team = (raw) => {
+    const id = String(raw?.id || "").trim();
+    const name = String(raw?.name || "Unknown Team").trim();
+    const safe = avatar(name);
+    return {
+      id: id || null,
+      openFootId: id || null,
+      provider: "openfoot",
+      identity: id ? "openfoot:" + id : null,
+      name,
+      logo: safe,
+      logoPath: safe,
+      logoSource: "UI Avatars",
+      logoQuality: "schedule-only",
+    };
+  };
+
+  for (const [competitionId, competitionName, competitionType] of OPENFOOT_COMPETITIONS) {
+    const url = OPENFOOT_API + "/matches?competition=" +
+      encodeURIComponent(competitionId) + "&season=" + encodeURIComponent(season);
+
+    try {
+      const data = await fetchJson(url, {
+        headers: { Authorization: "Bearer " + OPENFOOT_API_KEY },
+      });
+      const records = Array.isArray(data?.data) ? data.data : [];
+
+      for (const item of records) {
+        const kickoff = new Date(String(item?.kickoffAt || ""));
+        if (Number.isNaN(kickoff.getTime()) || kickoff < windowStart || kickoff > windowEnd) continue;
+
+        const home = team(item?.homeTeam);
+        const away = team(item?.awayTeam);
+        if (!home.id || !away.id || !item?.id) continue;
+
+        const hs = Number(item?.homeScore);
+        const as = Number(item?.awayScore);
+
+        output.push({
+          fixture: {
+            id: "openfoot-" + String(item.id),
+            providerMatchId: String(item.id),
+            date: kickoff.toISOString(),
+            status: { short: status(item?.status) },
+          },
+          teams: { home, away },
+          goals: {
+            home: Number.isFinite(hs) ? hs : null,
+            away: Number.isFinite(as) ? as : null,
+          },
+          league: { id: competitionId, name: competitionName, logo: null },
+          competitionType,
+          source: "openfoot",
+          externalId: String(item.id),
+          externalIds: { openfoot: String(item.id), "openfoot-competition": competitionId },
+          details: { events: [], statistics: [], updatedAt: null, source: "openfoot" },
+        });
+      }
+
+      console.log("[OpenFoot]", competitionName, "records:", records.length);
+    } catch (error) {
+      console.warn("[OpenFoot] competition skipped", competitionId, "-", error.message);
+    }
+  }
+
+  return output;
+}
+
 async function fetchOpenFootballMatches(from, to) {
   /*
    * OpenFootball is public-domain/CC0-style open data. It has no team IDs,
@@ -906,8 +1002,9 @@ function dedupeMatches(matches) {
    * Keep the strongest source record so the UI does not show the same game twice.
    */
   const priority = {
-    "football-data.org": 3,
-    espn: 2,
+    "football-data.org": 4,
+    espn: 3,
+    openfoot: 2,
     openfootball: 1,
   };
   const byFixture = new Map();
@@ -943,6 +1040,7 @@ async function main() {
   const footballDataRaw = await fetchFootballDataMatches(from, to);
   const openFootballResult = await fetchOpenFootballMatches(from, to);
   const openFootballRaw = openFootballResult.matches;
+  const openFootRaw = await fetchOpenFootMatches(from, to);
   const footballDataMatches = footballDataRaw.map((item) =>
     makeFootballDataMatch(item, identityLogos)
   );
@@ -980,8 +1078,13 @@ async function main() {
    * This is a source configuration rule, not team-name matching.
    */
   const openFootballMatches = removeOpenFootballOverlaps(
-    footballDataMatches,
+    [...footballDataMatches, ...espnMatches, ...openFootRaw],
     openFootballRaw
+  );
+
+  const openFootMatches = removeOpenFootballOverlaps(
+    [...footballDataMatches, ...espnMatches],
+    openFootRaw
   );
 
   const supplemental = [...retainedPreviousEspn, ...espnMatches].filter(
@@ -989,7 +1092,7 @@ async function main() {
   );
 
   const matches = sanitizeMatches(
-    dedupeMatches([...footballDataMatches, ...supplemental, ...openFootballMatches])
+    dedupeMatches([...footballDataMatches, ...supplemental, ...openFootMatches, ...openFootballMatches])
   );
 
   // Unified league catalog: league identity is provider-scoped; names are display-only.
@@ -1033,11 +1136,11 @@ async function main() {
     },
     sourcePolicy: {
       primary: "football-data.org",
-      supplemental: "ESPN public site API + OpenFootball public-domain datasets",
+      supplemental: "ESPN public site API + OpenFootball public-domain datasets + OpenFoot fallback",
       coverageEngine: "ESPN current-window refresh + rotating future-calendar slices preserved across snapshots",
       detailEnrichment: "TheSportsDB V1 free API (existing matches only; no team identity/logo authority)",
       cacheStrategy: "GitHub Actions snapshot; visitors never call providers",
-      note: "ESPN endpoint is public/undocumented; OpenFootball is used only for schedule/results coverage and never overrides verified provider identity or logos.",
+      note: "ESPN endpoint is public/undocumented; OpenFootball is schedule/results-only; OpenFoot is a quota-limited fallback for selected leagues. Neither source overrides verified provider identity or logos.",
     },
     logoPolicy: {
       identityKey: "provider namespace + immutable numeric/string provider team ID",
@@ -1056,6 +1159,7 @@ async function main() {
       espnFutureRotationGroup: currentRotationGroup(),
       openfootball: openFootballMatches.length,
       openfootballWorld: openFootballResult.matches.length,
+      openfoot: openFootMatches.length,
       total: matches.length,
       theSportsDbEnriched,
     },
@@ -1073,6 +1177,7 @@ async function main() {
   console.log("[MATCHZONE] ESPN supplemental matches:", supplemental.length);
   console.log("[MATCHZONE] Total:", matches.length);
   console.log("[MATCHZONE] OpenFootball world matches:", openFootballResult.matches.length);
+  console.log("[MATCHZONE] OpenFoot fallback matches:", openFootMatches.length);
   console.log("[MATCHZONE] Unified league catalog:", leagues.length, "(current:", payload.currentLeagueCount + ")");
   console.log("[MATCHZONE] Leagues:", payload.leagueCount);
   console.log("[MATCHZONE] Snapshot written:", DATA_FILE);
