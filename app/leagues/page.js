@@ -24,6 +24,14 @@ function regionLabel(region) {
   return region || "دولي";
 }
 
+const CATALOG_LEAGUE_LOGOS = {
+  "openfoot:comp_botola_pro_mar": "https://logowik.com/content/uploads/images/botolapro2288.logowik.com.webp",
+};
+
+function leagueLogo(league) {
+  return CATALOG_LEAGUE_LOGOS[String(league?.id || "")] || null;
+}
+
 export default async function LeaguesPage() {
   const meta = await getMatchSnapshotMeta();
   const catalog = Array.isArray(meta.leagues) ? meta.leagues : [];
@@ -78,7 +86,7 @@ export default async function LeaguesPage() {
             <div className="mz-league-grid">
               {current.map((league) => (
                 <Link key={league.id} href={"/leagues/catalog/" + catalogSlug(league.id)} className="mz-league-card">
-                  <div className="mz-league-mark">LG</div>
+                  <div className="mz-league-mark">{leagueLogo(league) ? <img src={leagueLogo(league)} alt="" loading="lazy" /> : "LG"}</div>
                   <div className="mz-league-info">
                     <strong>{league.name}</strong>
                     <span>{regionLabel(league.region)} · {league.season || "الحالي"}</span>
