@@ -582,14 +582,27 @@ async function fetchOpenFootMatches(from, to) {
         headers: { Authorization: "Bearer " + OPENFOOT_API_KEY },
       });
       const records = Array.isArray(data?.data) ? data.data : [];
+      let invalidDate = 0;
+      let outsideWindow = 0;
+      let missingTeamsOrId = 0;
 
       for (const item of records) {
         const kickoff = new Date(String(item?.kickoffAt || ""));
-        if (Number.isNaN(kickoff.getTime()) || kickoff < windowStart || kickoff > windowEnd) continue;
+        if (Number.isNaN(kickoff.getTime())) {
+          invalidDate += 1;
+          continue;
+        }
+        if (kickoff < windowStart || kickoff > windowEnd) {
+          outsideWindow += 1;
+          continue;
+        }
 
         const home = team(item?.homeTeam);
         const away = team(item?.awayTeam);
-        if (!home.id || !away.id || !item?.id) continue;
+        if (!home.id || !away.id || !item?.id) {
+          missingTeamsOrId += 1;
+          continue;
+        }
 
         const hs = Number(item?.homeScore);
         const as = Number(item?.awayScore);
@@ -615,7 +628,11 @@ async function fetchOpenFootMatches(from, to) {
         });
       }
 
-      console.log("[OpenFoot]", competitionName, "records:", records.length);
+      console.log("[OpenFoot]", competitionName, "records:", records.length,
+        "accepted:", output.filter((m) => m.league?.id === competitionId).length,
+        "invalidDate:", invalidDate,
+        "outsideWindow:", outsideWindow,
+        "missingTeamsOrId:", missingTeamsOrId);
     } catch (error) {
       console.warn("[OpenFoot] competition skipped", competitionId, "-", error.message);
     }
