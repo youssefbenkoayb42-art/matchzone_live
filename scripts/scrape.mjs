@@ -1083,13 +1083,12 @@ async function main() {
     )
   );
 
-  // Keep the previous future-calendar slices that were not refreshed in this
-  // run. Old records are limited to the current rolling window so the snapshot
-  // cannot grow forever.
+  // Keep every previous ESPN fixture that is still inside the rolling window.
+  // Fresh ESPN records are placed before retained records below, so a fresh
+  // record with the same provider fixture ID always wins. This prevents a
+  // rotation run from accidentally shrinking coverage just because ESPN
+  // returned a temporarily incomplete future calendar for one league.
   const retainedPreviousEspn = previousEspnMatches.filter((match) => {
-    const leagueCode = String(match?.externalIds?.["espn-league"] || "");
-    if (espnResult.refreshedLeagueCodes.has(leagueCode)) return false;
-
     const date = new Date(match?.fixture?.date || 0);
     return (
       Number.isFinite(date.getTime()) &&
