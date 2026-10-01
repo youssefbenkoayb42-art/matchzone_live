@@ -137,7 +137,6 @@ export default async function LeaguePage({ params }) {
     .sort((a, b) => String(a.name).localeCompare(String(b.name)))
     .slice(0, 40);
 
-  const standing = null;
 
   const jsonLd = {
     "@context": "https://schema.org",
