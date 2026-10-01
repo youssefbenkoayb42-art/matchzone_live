@@ -288,7 +288,7 @@ export default async function StandingsPage({ params }) {
                         <td style={styles.teamCell}>
                           {badge ? <img src={badge} alt="" style={styles.teamLogo} loading="lazy" /> : null}
                           <Link
-                            href={`/teams/${encodeURIComponent(team?.strTeam || "فريق")}`}
+                            href={`/teams/${encodeURIComponent(String(team?.idTeam || ""))}`}
                             style={styles.teamLink}
                           >
                             {team?.strTeam || "فريق"}
@@ -338,7 +338,7 @@ export default async function StandingsPage({ params }) {
         <div style={styles.footerLinks} className="standings-footer-links">
           <Link href={`/leagues/${league.slug}`} style={styles.footerLink}><span className="ui-glyph mini-glyph">FC</span> مباريات {league.name}</Link>
           <Link href="/matches/today" style={styles.footerLink}><span className="ui-glyph mini-glyph">DATE</span> مباريات اليوم</Link>
-          <span style={styles.source}>مصدر البيانات: TheSportsDB</span>
+          <span style={styles.source}>مصدر البيانات: ESPN عبر لقطة MatchZone</span>
         </div>
       </div>
     </main>
