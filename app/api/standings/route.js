@@ -1,47 +1,46 @@
 import { NextResponse } from "next/server";
+import fs from "node:fs/promises";
+import pathNode from "node:path";
 
-const LEAGUES = {
-  "4328": "Premier League",
-  "4335": "LaLiga",
-  "4332": "Serie A",
-  "4331": "Bundesliga",
-  "4334": "Ligue 1",
+export const dynamic = "force-dynamic";
+
+const LEGACY = {
+  "4328": "eng.1",
+  "4335": "esp.1",
+  "4332": "ita.1",
+  "4331": "ger.1",
+  "4334": "fra.1",
 };
 
-export const revalidate = 300;
-
 export async function GET(request) {
-  const leagueId = new URL(request.url).searchParams.get("league");
-
-  if (!leagueId || !LEAGUES[leagueId]) {
-    return NextResponse.json(
-      { error: "دوري غير مدعوم", availableLeagues: LEAGUES },
-      { status: 400 }
-    );
-  }
-
   try {
-    const response = await fetch(
-      `https://www.thesportsdb.com/api/v1/json/123/lookuptable.php?l=${leagueId}`,
-      { next: { revalidate: 300 } }
+    const leagueParam = new URL(request.url).searchParams.get("league");
+    const raw = await fs.readFile(
+      pathNode.join(process.cwd(), "data", "scraped-matches.json"),
+      "utf8"
     );
+    const data = JSON.parse(raw);
+    const code = LEGACY[leagueParam] || String(leagueParam || "").replace(/^espn:/, "");
 
-    if (!response.ok) {
-      return NextResponse.json({ error: "تعذر جلب جدول الترتيب" }, { status: 502 });
+    if (!code || !data?.standings?.[code]) {
+      return NextResponse.json(
+        { error: "الترتيب غير متاح في اللقطة الحالية", availableLeagues: Object.keys(data?.standings || {}) },
+        { status: 404 }
+      );
     }
 
-    const data = await response.json();
-    const table = Array.isArray(data?.table) ? data.table : [];
-
-    return NextResponse.json(
-      { league: LEAGUES[leagueId], leagueId, table },
-      {
-        headers: {
-          "Cache-Control": "s-maxage=300, stale-while-revalidate=600",
-        },
-      }
-    );
+    return NextResponse.json({
+      league: data.standings[code].leagueName || code,
+      leagueCode: code,
+      season: data.standings[code].season || null,
+      groups: data.standings[code].groups || [],
+      updatedAt: data.standings[code].updatedAt || data.updatedAt || null,
+    }, {
+      headers: {
+        "Cache-Control": "s-maxage=300, stale-while-revalidate=600",
+      },
+    });
   } catch {
-    return NextResponse.json({ error: "حدث خطأ أثناء جلب الترتيب" }, { status: 500 });
+    return NextResponse.json({ error: "تعذر قراءة جدول الترتيب" }, { status: 500 });
   }
 }
