@@ -68,11 +68,13 @@ const ESPN_ROTATION_GROUPS = 12;
  *
  * 1) Football-Data.org is the authenticated primary source.
  * 2) ESPN's public site API is a free supplemental source for wider coverage.
- * 3) TheSportsDB is an optional detail-enrichment source only; it never creates
- *    primary matches and never supplies team identity or logos.
+ * 3) TheSportsDB is used only for optional OpenFoot presentation-logo enrichment
+ *    after a strict team-name + country match; it never creates primary matches
+ *    and never supplies the team's primary identity.
  * 4) Every primary provider keeps its own immutable identity namespace.
  * 5) Team names are display text only; they are NEVER used to identify a team.
- * 6) Logos come only from the exact primary provider team record.
+ * 6) Primary logos come from the exact provider team record; OpenFoot has no logo field
+ *    in its normalized fixture contract, so a strictly validated secondary logo may be used for display.
  * 7) If a provider returns a logo collision or conflicting logo for one ID,
  *    the affected team is downgraded to a UI Avatar.
  * 8) The scraper writes one static snapshot. Visitors never call these APIs.
