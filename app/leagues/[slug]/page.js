@@ -170,7 +170,7 @@ export default async function LeaguePage({ params }) {
         </div>
 
         <nav className="mz-league-command">
-          <Link href={"/standings/" + encodeURIComponent(params.slug)}><b>TAB</b><strong>الترتيب</strong><small>النقاط والمراكز</small></Link>
+          {LEAGUES[params.slug] ? <Link href={"/standings/" + encodeURIComponent(params.slug)}><b>TAB</b><strong>الترتيب</strong><small>النقاط والمراكز</small></Link> : <a href="#results"><b>DATA</b><strong>البيانات</strong><small>المباريات المتاحة</small></a>}
           <a href="#teams"><b>FC</b><strong>الفرق</strong><small>{leagueTeams.length} فريقًا</small></a>
           <a href="#upcoming"><b>NEXT</b><strong>القادمة</strong><small>المواجهات المقبلة</small></a>
           <a href="#results"><b>FT</b><strong>النتائج</strong><small>آخر المباريات</small></a>
@@ -233,7 +233,7 @@ export default async function LeaguePage({ params }) {
         </section>
 
         <nav className="mz-league-bottom-nav">
-          <Link href={"/standings/" + encodeURIComponent(params.slug)}>الترتيب</Link>
+          {LEAGUES[params.slug] ? <Link href={"/standings/" + encodeURIComponent(params.slug)}>الترتيب</Link> : null}
           <Link href="/results">النتائج</Link>
           <Link href="/teams">الفرق</Link>
           <Link href="/leagues">البطولات</Link>
