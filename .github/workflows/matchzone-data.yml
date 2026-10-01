@@ -63,23 +63,47 @@ jobs:
           rm -f lib/fallback-matches.js
 
       - name: Commit clean datastore
+        env:
+          FOOTBALL_DATA_API_KEY: ${{ secrets.FOOTBALL_DATA_API_KEY }}
+          OPENFOOT_API_KEY: ${{ secrets.OPENFOOT_API_KEY }}
         run: |
           git config user.name "matchzone-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A
-          echo "Clean sync:"
-          git status --short
-          git diff --cached --name-status
-          if git diff --cached --quiet; then
-            echo "No changes."
-            exit 0
-          fi
-          git commit -m "Update free multi-source football snapshot"
+
           for attempt in 1 2 3; do
+            git add -A
+
+            echo "Clean sync attempt $attempt:"
+            git status --short
+            git diff --cached --name-status
+
+            if git diff --cached --quiet; then
+              echo "No changes."
+              exit 0
+            fi
+
+            git commit -m "Update free multi-source football snapshot"
             git fetch origin main
-            git rebase origin/main && git push && exit 0
-            git rebase --abort || true
-            sleep $((attempt * 3))
+
+            if git push origin HEAD:main; then
+              echo "Snapshot pushed successfully."
+              exit 0
+            fi
+
+            echo "Remote changed while this run was preparing the snapshot."
+            echo "Resetting to the latest main and regenerating the snapshot..."
+            git reset --hard origin/main
+
+            if [ "$attempt" -lt 3 ]; then
+              node scripts/scrape.mjs
+              rm -rf public/teams
+              rm -f data/team-logo-registry.json
+              rm -f scripts/scrape-fallback.mjs
+              rm -f docs/fallback-scraper.md
+              rm -f lib/fallback-matches.js
+              sleep $((attempt * 3))
+            fi
           done
-          echo "Push failed after 3 attempts."
+
+          echo "Push failed after 3 regenerated attempts."
           exit 1
