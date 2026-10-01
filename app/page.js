@@ -51,7 +51,7 @@ function getArabicLeague(league) {
 const COMPETITION_LOGOS = {
   // Verified current Botola Pro identity; used only when the provider
   // does not return a competition logo. Team logos are never substituted.
-  "openfoot:comp_botola_pro_mar": "https://logowik.com/content/uploads/images/botolapro2288.logowik.com.webp",
+  "comp_botola_pro_mar": "https://logowik.com/content/uploads/images/botolapro2288.logowik.com.webp",
 };
 
 function getCompetitionLogo(leagueLogo, league) {
@@ -60,7 +60,7 @@ function getCompetitionLogo(leagueLogo, league) {
   const name = String(league?.name || "").trim();
   return (
     COMPETITION_LOGOS[id] ||
-    (/^botola pro(?: 1)?$/i.test(name) ? COMPETITION_LOGOS["openfoot:comp_botola_pro_mar"] : null)
+    (/^botola pro(?: 1)?$/i.test(name) ? COMPETITION_LOGOS["comp_botola_pro_mar"] : null)
   );
 }
 
