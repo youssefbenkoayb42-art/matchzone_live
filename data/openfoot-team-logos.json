@@ -1,0 +1,258 @@
+{
+  "team_far_rabat_moro": {
+    "name": "FAR Rabat",
+    "attempted": true,
+    "logo": null,
+    "sourceTeamId": null,
+    "sourceTeamName": null,
+    "updatedAt": "2026-10-01T20:12:45.821Z"
+  },
+  "team_raja_casablanca_moro": {
+    "name": "Raja Casablanca",
+    "attempted": true,
+    "logo": null,
+    "sourceTeamId": null,
+    "sourceTeamName": null,
+    "updatedAt": "2026-10-01T20:12:48.281Z"
+  },
+  "team_amal_tiznit_moro": {
+    "name": "Amal Tiznit",
+    "attempted": true,
+    "logo": null,
+    "sourceTeamId": null,
+    "sourceTeamName": null,
+    "updatedAt": "2026-10-01T20:12:50.579Z"
+  },
+  "team_ir_tanger_moro": {
+    "name": "IR Tanger",
+    "attempted": true,
+    "logo": null,
+    "sourceTeamId": null,
+    "sourceTeamName": null,
+    "updatedAt": "2026-10-01T20:12:57.479Z"
+  },
+  "team_union_touarga_sport_moro": {
+    "name": "Union Touarga Sport",
+    "attempted": true,
+    "logo": null,
+    "sourceTeamId": null,
+    "sourceTeamName": null,
+    "updatedAt": "2026-10-01T20:12:59.776Z"
+  },
+  "team_fus_rabat_moro": {
+    "name": "FUS Rabat",
+    "attempted": true,
+    "logo": null,
+    "sourceTeamId": null,
+    "sourceTeamName": null,
+    "updatedAt": "2026-10-01T20:13:02.074Z"
+  },
+  "team_difaa_hassani_el_jadidi_moro": {
+    "name": "Difaâ Hassani El Jadidi",
+    "attempted": true,
+    "logo": null,
+    "sourceTeamId": null,
+    "sourceTeamName": null,
+    "updatedAt": "2026-10-01T20:13:08.963Z"
+  },
+  "team_codm_meknes_moro": {
+    "name": "CODM de Meknès",
+    "attempted": true,
+    "logo": null,
+    "sourceTeamId": null,
+    "sourceTeamName": null,
+    "updatedAt": "2026-10-01T20:13:15.880Z"
+  },
+  "team_wydad_casablanca_moro": {
+    "name": "Wydad Casablanca",
+    "attempted": true,
+    "logo": null,
+    "sourceTeamId": null,
+    "sourceTeamName": null,
+    "updatedAt": "2026-10-01T20:13:18.179Z"
+  },
+  "team_widad_temara_moro": {
+    "name": "Widad Temara",
+    "attempted": true,
+    "logo": null,
+    "sourceTeamId": null,
+    "sourceTeamName": null,
+    "updatedAt": "2026-10-01T20:13:20.471Z"
+  },
+  "team_moghreb_tetouan_moro": {
+    "name": "Moghreb Tétouan",
+    "attempted": true,
+    "logo": null,
+    "sourceTeamId": null,
+    "sourceTeamName": null,
+    "updatedAt": "2026-10-01T20:13:22.767Z"
+  },
+  "team_rs_berkane_moro": {
+    "name": "RS Berkane",
+    "attempted": true,
+    "logo": null,
+    "sourceTeamId": null,
+    "sourceTeamName": null,
+    "updatedAt": "2026-10-01T20:13:29.572Z"
+  },
+  "team_maghreb_fez_moro": {
+    "name": "Maghreb Fez",
+    "attempted": true,
+    "logo": null,
+    "sourceTeamId": null,
+    "sourceTeamName": null,
+    "updatedAt": "2026-10-01T20:13:36.385Z"
+  },
+  "team_rca_zemamra_moro": {
+    "name": "RCA Zemamra",
+    "attempted": true,
+    "logo": null,
+    "sourceTeamId": null,
+    "sourceTeamName": null,
+    "updatedAt": "2026-10-01T20:13:43.188Z"
+  },
+  "team_kawkab_marrakech_moro": {
+    "name": "Kawkab Marrakech",
+    "attempted": true,
+    "logo": null,
+    "sourceTeamId": null,
+    "sourceTeamName": null,
+    "updatedAt": "2026-10-01T20:13:45.486Z"
+  },
+  "team_hassania_agadir_moro": {
+    "name": "Hassania Agadir",
+    "attempted": true,
+    "logo": null,
+    "sourceTeamId": null,
+    "sourceTeamName": null,
+    "updatedAt": "2026-10-01T20:13:47.785Z"
+  },
+  "team_js_kabylie_dz": {
+    "name": "JS Kabylie",
+    "attempted": true,
+    "logo": null,
+    "sourceTeamId": null,
+    "sourceTeamName": null,
+    "updatedAt": "2026-10-01T20:13:50.084Z"
+  },
+  "team_mc_alger_dz": {
+    "name": "MC Alger",
+    "attempted": true,
+    "logo": null,
+    "sourceTeamId": null,
+    "sourceTeamName": null,
+    "updatedAt": "2026-10-01T20:13:52.389Z"
+  },
+  "team_js_saoura_dz": {
+    "name": "JS Saoura",
+    "attempted": true,
+    "logo": null,
+    "sourceTeamId": null,
+    "sourceTeamName": null,
+    "updatedAt": "2026-10-01T20:13:54.689Z"
+  },
+  "team_usm_khenchela_dz": {
+    "name": "USM Khenchela",
+    "attempted": true,
+    "logo": null,
+    "sourceTeamId": null,
+    "sourceTeamName": null,
+    "updatedAt": "2026-10-01T20:13:56.985Z"
+  },
+  "team_cs_constantine_dz": {
+    "name": "CS Constantine",
+    "attempted": true,
+    "logo": null,
+    "sourceTeamId": null,
+    "sourceTeamName": null,
+    "updatedAt": "2026-10-01T20:13:59.281Z"
+  },
+  "team_biskra_dz": {
+    "name": "US Biskra",
+    "attempted": true,
+    "logo": null,
+    "sourceTeamId": null,
+    "sourceTeamName": null,
+    "updatedAt": "2026-10-01T20:14:01.577Z"
+  },
+  "team_es_ben_aknoun_dz": {
+    "name": "ES Ben Aknoun",
+    "attempted": true,
+    "logo": null,
+    "sourceTeamId": null,
+    "sourceTeamName": null,
+    "updatedAt": "2026-10-01T20:14:03.886Z"
+  },
+  "team_js_el_biar_dz": {
+    "name": "JS El Biar",
+    "attempted": true,
+    "logo": null,
+    "sourceTeamId": null,
+    "sourceTeamName": null,
+    "updatedAt": "2026-10-01T20:14:06.202Z"
+  },
+  "team_cr_belouizdad_dz": {
+    "name": "CR Bélouizdad",
+    "attempted": true,
+    "logo": null,
+    "sourceTeamId": null,
+    "sourceTeamName": null,
+    "updatedAt": "2026-10-01T20:14:13.032Z"
+  },
+  "team_olympique_akbou_dz": {
+    "name": "Olympique Akbou",
+    "attempted": true,
+    "logo": null,
+    "sourceTeamId": null,
+    "sourceTeamName": null,
+    "updatedAt": "2026-10-01T20:14:15.340Z"
+  },
+  "team_mb_rouissat_dz": {
+    "name": "MB Rouissat",
+    "attempted": true,
+    "logo": null,
+    "sourceTeamId": null,
+    "sourceTeamName": null,
+    "updatedAt": "2026-10-01T20:14:17.651Z"
+  },
+  "team_usm_alger_dz": {
+    "name": "USM Alger",
+    "attempted": true,
+    "logo": null,
+    "sourceTeamId": null,
+    "sourceTeamName": null,
+    "updatedAt": "2026-10-01T20:14:19.954Z"
+  },
+  "team_mc_oran_dz": {
+    "name": "MC Oran",
+    "attempted": true,
+    "logo": null,
+    "sourceTeamId": null,
+    "sourceTeamName": null,
+    "updatedAt": "2026-10-01T20:14:22.261Z"
+  },
+  "team_es_setif_dz": {
+    "name": "ES Sétif",
+    "attempted": true,
+    "logo": null,
+    "sourceTeamId": null,
+    "sourceTeamName": null,
+    "updatedAt": "2026-10-01T20:14:29.091Z"
+  },
+  "team_aso_chlef_dz": {
+    "name": "ASO Chlef",
+    "attempted": true,
+    "logo": null,
+    "sourceTeamId": null,
+    "sourceTeamName": null,
+    "updatedAt": "2026-10-01T20:14:31.408Z"
+  },
+  "team_cr_temouchent_dz": {
+    "name": "CR Temouchent",
+    "attempted": true,
+    "logo": null,
+    "sourceTeamId": null,
+    "sourceTeamName": null,
+    "updatedAt": "2026-10-01T20:14:38.236Z"
+  }
+}
