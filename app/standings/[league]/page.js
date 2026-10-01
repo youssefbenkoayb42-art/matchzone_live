@@ -170,7 +170,7 @@ export default async function StandingsPage({ params }) {
           <div>
             <span style={styles.eyebrow}>MATCHZONE • STANDINGS</span>
             <h1 style={styles.title}>ترتيب {league.name}</h1>
-            <p style={styles.muted}>جدول الترتيب الحالي مع النقاط ونتائج الفرق • يتجدد تلقائيًا كل 5 دقائق.</p>
+            <p style={styles.muted}>جدول الترتيب الحالي مع النقاط ونتائج الفرق • يتجدد تلقائيًا مع مزامنة بيانات MatchZone.</p>
             <div className="standings-legend" aria-label="مفتاح حالات الترتيب">
               <span><i className="standings-dot standings-dot-top" /> القمة</span>
               <span><i className="standings-dot standings-dot-europe" /> المراكز الأولى</span>
