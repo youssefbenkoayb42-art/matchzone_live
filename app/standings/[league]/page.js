@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getMatchSnapshot } from "../../../lib/match-snapshot";
+import { getStandingsSnapshot } from "../../../lib/match-snapshot";
 
 const BASE_URL = "https://matchzone-live.vercel.app";
 
@@ -44,7 +44,7 @@ async function getSnapshotStandings(leagueSlug) {
   const code = codeBySlug[leagueSlug];
   if (!code) return { table: [], recentForm: {} };
 
-  const snapshot = await getMatchSnapshot();
+  const snapshot = await getStandingsSnapshot();
   const raw = snapshot?.standings?.[code];
   const entries = raw?.groups?.[0]?.entries;
   const table = Array.isArray(entries)
