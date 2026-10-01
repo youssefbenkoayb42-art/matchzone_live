@@ -133,6 +133,16 @@ export default async function StandingsPage({ params }) {
     .filter((item) => item.streak.count > 0)
     .sort((a, b) => b.streak.count - a.streak.count)[0] || null;
 
+  const bestAttack = rankedTeams
+    .filter((item) => item.goalsFor != null)
+    .sort((a, b) => b.goalsFor - a.goalsFor || a.rank - b.rank)[0] || null;
+  const strongestDefense = rankedTeams
+    .filter((item) => item.goalsAgainst != null)
+    .sort((a, b) => a.goalsAgainst - b.goalsAgainst || a.rank - b.rank)[0] || null;
+  const bestDifference = rankedTeams
+    .filter((item) => item.goalDifference != null)
+    .sort((a, b) => b.goalDifference - a.goalDifference || a.rank - b.rank)[0] || null;
+
   const totalPlayed = rankedTeams.reduce((sum, item) => sum + Number(item.team?.intPlayed || 0), 0);
   const formPoints = (form) =>
     (form || []).reduce((sum, item) => sum + (item.result === "W" ? 3 : item.result === "D" ? 1 : 0), 0);
