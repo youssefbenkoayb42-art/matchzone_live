@@ -1108,7 +1108,7 @@ async function fetchEspnStandings(previousStandings = {}) {
         groups: tables.map((table) => ({
           name: table.name,
           entries: table.entries.map((entry, position) => ({
-            rank: Number(entry?.team?.uid ? position + 1 : entry?.team?.id || position + 1),
+            rank: position + 1,
             team: {
               id: String(entry?.team?.id || "").trim(),
               name: String(entry?.team?.displayName || entry?.team?.name || "فريق").trim(),
