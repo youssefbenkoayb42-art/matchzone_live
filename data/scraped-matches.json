@@ -1,10 +1,10 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-10-01T01:09:45.148Z",
+  "updatedAt": "2026-10-01T01:20:05.791Z",
   "source": "football-data.org + ESPN + OpenFootball + TheSportsDB enrichment",
   "coverageWindow": {
-    "from": "2026-09-29T01:08:59.866Z",
-    "to": "2026-10-01T01:08:59.866Z"
+    "from": "2026-09-29T01:19:05.104Z",
+    "to": "2026-10-01T01:19:05.104Z"
   },
   "sourcePolicy": {
     "primary": "football-data.org",
@@ -35,7 +35,7 @@
         "endDate": "2027-06-01T03:59Z",
         "displayName": "2026-27 English Premier League"
       },
-      "updatedAt": "2026-10-01T01:09:27.677Z",
+      "updatedAt": "2026-10-01T01:19:47.873Z",
       "groups": [
         {
           "name": "2026-27 English Premier League",
@@ -395,7 +395,7 @@
         "endDate": "2027-06-01T03:59Z",
         "displayName": "2026-27 Liga BBVA MX"
       },
-      "updatedAt": "2026-10-01T01:09:28.161Z",
+      "updatedAt": "2026-10-01T01:19:47.947Z",
       "groups": [
         {
           "name": "2026 Torneo Apertura",
@@ -721,7 +721,7 @@
         "endDate": "2027-06-01T03:59Z",
         "displayName": "2026-2027 Russian Premier League"
       },
-      "updatedAt": "2026-10-01T01:09:28.214Z",
+      "updatedAt": "2026-10-01T01:19:48.065Z",
       "groups": [
         {
           "name": "2026-27 Russian Premier League",
@@ -1013,7 +1013,7 @@
         "endDate": "2026-12-31T04:59Z",
         "displayName": "2026 FIFA World Cup"
       },
-      "updatedAt": "2026-10-01T01:09:28.267Z",
+      "updatedAt": "2026-10-01T01:19:48.114Z",
       "groups": [
         {
           "name": "Group A",
@@ -4560,7 +4560,7 @@
             "intAway": "12"
           }
         ],
-        "updatedAt": "2026-10-01T01:09:42.948Z",
+        "updatedAt": "2026-10-01T01:20:03.591Z",
         "source": "primary provider + TheSportsDB enrichment",
         "theSportsDbEventId": "2598453"
       }
