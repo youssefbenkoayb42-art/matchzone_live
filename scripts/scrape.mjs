@@ -26,11 +26,33 @@ const AVATAR_BASE = "https://ui-avatars.com/api/";
 const THESPORTSDB_ENRICH_LIMIT = 8;
 const OPENFOOT_API = "https://openfootapi.com/v1";
 const OPENFOOT_API_KEY = String(process.env.OPENFOOT_API_KEY || "").trim();
+const OPENFOOT_LOGO_CACHE_FILE = path.join(ROOT, "data", "openfoot-team-logos.json");
+const OPENFOOT_LOGO_DELAY_MS = 2200;
 const OPENFOOT_COMPETITIONS = [
   ["comp_botola_pro_mar", "الدوري المغربي", "domestic"],
   ["comp_ligue_1_dza", "الدوري الجزائري", "domestic"],
   ["comp_egyptian_prem_egy", "الدوري المصري", "domestic"],
 ];
+
+const OPENFOOT_LOGO_COUNTRIES = {
+  comp_botola_pro_mar: "Morocco",
+  comp_ligue_1_dza: "Algeria",
+  comp_egyptian_prem_egy: "Egypt",
+};
+
+const OPENFOOT_LOGO_ALIASES = {
+  "IR Tanger": ["Ittihad Tanger", "Ittihad Tangier"],
+  "Difaâ Hassani El Jadidi": ["Difaa El Jadida", "Difaâ El Jadida"],
+  "CODM de Meknès": ["COD Meknes", "CODM Meknes"],
+  "Maghreb Fez": ["Maghreb Fès", "Maghreb Fez"],
+  "RS Berkane": ["Renaissance Berkane", "RS Berkane"],
+  "RCA Zemamra": ["Renaissance Zemamra", "RCA Zemamra"],
+  "CR Bélouizdad": ["CR Belouizdad", "CR Bélouizdad"],
+  "ES Sétif": ["ES Setif", "ES Sétif"],
+  "CR Temouchent": ["CR Témouchent", "CR Temouchent"],
+};
+
+
 
 // Coverage Engine: ESPN is split into a fast current-day layer and a
 // rotating future-calendar layer. GitHub Actions refreshes one future slice
@@ -915,6 +937,147 @@ function sameTeamName(a, b) {
   return left && right && (left === right || left.includes(right) || right.includes(left));
 }
 
+
+function normalizeLogoName(value) {
+  return String(value || "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\\u0300-\\u036f]/g, "")
+    .replace(/\\b(fc|cf|afc|sc|ac|club|football club|football)\\b/gi, "")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+}
+
+function openFootLogoNameMatches(teamName, candidate) {
+  const wanted = new Set([
+    teamName,
+    ...(OPENFOOT_LOGO_ALIASES[teamName] || []),
+  ].map(normalizeLogoName).filter(Boolean));
+
+  const candidates = [
+    candidate?.strTeam,
+    candidate?.strTeamShort,
+    candidate?.strAlternate,
+  ].map(normalizeLogoName).filter(Boolean);
+
+  return candidates.some((value) => wanted.has(value));
+}
+
+async function loadOpenFootLogoCache() {
+  try {
+    const raw = await fs.readFile(OPENFOOT_LOGO_CACHE_FILE, "utf8");
+    const data = JSON.parse(raw);
+    return data && typeof data === "object" ? data : {};
+  } catch {
+    return {};
+  }
+}
+
+async function saveOpenFootLogoCache(cache) {
+  await fs.mkdir(path.dirname(OPENFOOT_LOGO_CACHE_FILE), { recursive: true });
+  await fs.writeFile(
+    OPENFOOT_LOGO_CACHE_FILE,
+    JSON.stringify(cache, null, 2) + "\n",
+    "utf8"
+  );
+}
+
+async function enrichOpenFootTeamLogos(matches) {
+  const teams = new Map();
+
+  for (const match of matches) {
+    if (match?.source !== "openfoot") continue;
+    const competitionId = String(match?.league?.id || "");
+    const country = OPENFOOT_LOGO_COUNTRIES[competitionId];
+    if (!country) continue;
+
+    for (const side of ["home", "away"]) {
+      const team = match?.teams?.[side];
+      if (!team?.id || !team?.name) continue;
+      const key = String(team.id);
+      if (!teams.has(key)) teams.set(key, { team, competitionId, country });
+    }
+  }
+
+  if (!teams.size) return { enriched: 0, searched: 0 };
+
+  const cache = await loadOpenFootLogoCache();
+  let enriched = 0;
+  let searched = 0;
+
+  for (const [teamId, item] of teams) {
+    const team = item.team;
+    const cached = cache[teamId];
+
+    if (cached?.logo && cached?.name === team.name) {
+      team.logo = cached.logo;
+      team.logoPath = cached.logo;
+      team.logoSource = "TheSportsDB logo enrichment";
+      team.logoQuality = "secondary-exact-match";
+      enriched += 1;
+      continue;
+    }
+
+    if (cached?.attempted && cached.name === team.name) continue;
+
+    const queries = [team.name, ...(OPENFOOT_LOGO_ALIASES[team.name] || [])];
+    let matched = null;
+
+    for (const query of queries) {
+      try {
+        const url =
+          THESPORTSDB_API +
+          "/searchteams.php?t=" +
+          encodeURIComponent(query);
+
+        const data = await fetchJson(url);
+        const candidates = Array.isArray(data?.teams) ? data.teams : [];
+        const exact = candidates.find((candidate) => {
+          const candidateCountry = normalizeLogoName(candidate?.strCountry);
+          const expectedCountry = normalizeLogoName(item.country);
+          return (
+            candidateCountry === expectedCountry &&
+            openFootLogoNameMatches(team.name, candidate) &&
+            cleanHttpsUrl(candidate?.strTeamBadge)
+          );
+        });
+
+        searched += 1;
+
+        if (exact) {
+          matched = exact;
+          break;
+        }
+      } catch (error) {
+        console.warn("[OpenFoot logos] search skipped", team.name, "-", error.message);
+      }
+
+      await sleep(OPENFOOT_LOGO_DELAY_MS);
+    }
+
+    cache[teamId] = {
+      name: team.name,
+      attempted: true,
+      logo: cleanHttpsUrl(matched?.strTeamBadge) || null,
+      sourceTeamId: matched?.idTeam ? String(matched.idTeam) : null,
+      sourceTeamName: matched?.strTeam || null,
+      updatedAt: new Date().toISOString(),
+    };
+
+    if (matched?.strTeamBadge) {
+      const logo = cleanHttpsUrl(matched.strTeamBadge);
+      team.logo = logo;
+      team.logoPath = logo;
+      team.logoSource = "TheSportsDB logo enrichment";
+      team.logoQuality = "secondary-exact-match";
+      enriched += 1;
+    }
+  }
+
+  await saveOpenFootLogoCache(cache);
+  return { enriched, searched };
+}
+
 function parseTheSportsDbEventDate(event) {
   const value = String(event?.strTimestamp || event?.dateEvent || "").trim();
   if (!value) return null;
@@ -1152,6 +1315,7 @@ async function main() {
   const openFootballResult = await fetchOpenFootballMatches(from, to);
   const openFootballRaw = openFootballResult.matches;
   const openFootRaw = await fetchOpenFootMatches(from, to);
+  const openFootLogoResult = await enrichOpenFootTeamLogos(openFootRaw);
   const footballDataMatches = footballDataRaw.map((item) =>
     makeFootballDataMatch(item, identityLogos)
   );
@@ -1262,7 +1426,7 @@ async function main() {
       identityKey: "provider namespace + immutable numeric/string provider team ID",
       nameLookup: false,
       localLogoCache: false,
-      secondaryLogoProvider: false,
+      secondaryLogoProvider: "TheSportsDB, exact team-name/country match only for OpenFoot presentation logos",
       detailProvider: "TheSportsDB may enrich events/statistics only",
       collisionPolicy: "different provider identities sharing a logo are replaced by UI Avatars",
       unknownTeamPolicy: "UI Avatars",
@@ -1277,6 +1441,8 @@ async function main() {
       openfootball: openFootballMatches.length,
       openfootballWorld: openFootballResult.matches.length,
       openfoot: openFootMatches.length,
+      openfootLogosEnriched: openFootLogoResult.enriched,
+      openfootLogoSearches: openFootLogoResult.searched,
       total: matches.length,
       theSportsDbEnriched,
       standingsRefreshed: standingsResult.refreshed,
@@ -1298,6 +1464,7 @@ async function main() {
   console.log("[MATCHZONE] Total:", matches.length);
   console.log("[MATCHZONE] OpenFootball world matches:", openFootballResult.matches.length);
   console.log("[MATCHZONE] OpenFoot fallback matches:", openFootMatches.length);
+  console.log("[MATCHZONE] OpenFoot team logos enriched:", openFootLogoResult.enriched, "searches:", openFootLogoResult.searched);
   console.log("[MATCHZONE] Unified league catalog:", leagues.length, "(current:", payload.currentLeagueCount + ")");
   console.log("[MATCHZONE] Leagues:", payload.leagueCount);
   console.log("[MATCHZONE] Standings refreshed:", standingsResult.refreshed, "rotation group:", standingsResult.rotationGroup, "cached leagues:", Object.keys(standingsResult.standings).length);
