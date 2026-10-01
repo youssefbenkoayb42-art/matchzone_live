@@ -1,10 +1,10 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-10-01T00:54:43.663Z",
+  "updatedAt": "2026-10-01T01:09:45.148Z",
   "source": "football-data.org + ESPN + OpenFootball + TheSportsDB enrichment",
   "coverageWindow": {
-    "from": "2026-09-29T00:53:52.297Z",
-    "to": "2026-10-01T00:53:52.297Z"
+    "from": "2026-09-29T01:08:59.866Z",
+    "to": "2026-10-01T01:08:59.866Z"
   },
   "sourcePolicy": {
     "primary": "football-data.org",
@@ -23,6 +23,1877 @@
     "collisionPolicy": "different provider identities sharing a logo are replaced by UI Avatars",
     "unknownTeamPolicy": "UI Avatars"
   },
+  "standings": {
+    "eng.1": {
+      "source": "espn",
+      "leagueCode": "eng.1",
+      "leagueName": "الدوري الإنجليزي",
+      "competitionType": "domestic",
+      "season": {
+        "year": 2026,
+        "startDate": "2026-06-01T04:00Z",
+        "endDate": "2027-06-01T03:59Z",
+        "displayName": "2026-27 English Premier League"
+      },
+      "updatedAt": "2026-10-01T01:09:27.677Z",
+      "groups": [
+        {
+          "name": "2026-27 English Premier League",
+          "entries": [
+            {
+              "rank": 1,
+              "team": {
+                "id": "382",
+                "name": "Manchester City",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/382.png"
+              },
+              "played": 5,
+              "wins": 5,
+              "draws": 0,
+              "losses": 0,
+              "points": 15,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 2,
+              "team": {
+                "id": "359",
+                "name": "Arsenal",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/359.png"
+              },
+              "played": 5,
+              "wins": 4,
+              "draws": 0,
+              "losses": 1,
+              "points": 12,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 3,
+              "team": {
+                "id": "331",
+                "name": "Brighton & Hove Albion",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/331.png"
+              },
+              "played": 5,
+              "wins": 3,
+              "draws": 1,
+              "losses": 1,
+              "points": 10,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 4,
+              "team": {
+                "id": "337",
+                "name": "Brentford",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/337.png"
+              },
+              "played": 5,
+              "wins": 2,
+              "draws": 3,
+              "losses": 0,
+              "points": 9,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 5,
+              "team": {
+                "id": "357",
+                "name": "Leeds United",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/357.png"
+              },
+              "played": 5,
+              "wins": 2,
+              "draws": 3,
+              "losses": 0,
+              "points": 9,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 6,
+              "team": {
+                "id": "364",
+                "name": "Liverpool",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/364.png"
+              },
+              "played": 5,
+              "wins": 2,
+              "draws": 3,
+              "losses": 0,
+              "points": 9,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 7,
+              "team": {
+                "id": "368",
+                "name": "Everton",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/368.png"
+              },
+              "played": 5,
+              "wins": 2,
+              "draws": 3,
+              "losses": 0,
+              "points": 9,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 8,
+              "team": {
+                "id": "306",
+                "name": "Hull City",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/306.png"
+              },
+              "played": 5,
+              "wins": 2,
+              "draws": 2,
+              "losses": 1,
+              "points": 8,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 9,
+              "team": {
+                "id": "361",
+                "name": "Newcastle United",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/361.png"
+              },
+              "played": 5,
+              "wins": 2,
+              "draws": 2,
+              "losses": 1,
+              "points": 8,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 10,
+              "team": {
+                "id": "363",
+                "name": "Chelsea",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/363.png"
+              },
+              "played": 5,
+              "wins": 2,
+              "draws": 1,
+              "losses": 2,
+              "points": 7,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 11,
+              "team": {
+                "id": "373",
+                "name": "Ipswich Town",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/373.png"
+              },
+              "played": 5,
+              "wins": 2,
+              "draws": 0,
+              "losses": 3,
+              "points": 6,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 12,
+              "team": {
+                "id": "360",
+                "name": "Manchester United",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/360.png"
+              },
+              "played": 5,
+              "wins": 1,
+              "draws": 2,
+              "losses": 2,
+              "points": 5,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 13,
+              "team": {
+                "id": "393",
+                "name": "Nottingham Forest",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/393.png"
+              },
+              "played": 5,
+              "wins": 1,
+              "draws": 2,
+              "losses": 2,
+              "points": 5,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 14,
+              "team": {
+                "id": "366",
+                "name": "Sunderland",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/366.png"
+              },
+              "played": 5,
+              "wins": 1,
+              "draws": 1,
+              "losses": 3,
+              "points": 4,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 15,
+              "team": {
+                "id": "384",
+                "name": "Crystal Palace",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/384.png"
+              },
+              "played": 5,
+              "wins": 1,
+              "draws": 1,
+              "losses": 3,
+              "points": 4,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 16,
+              "team": {
+                "id": "362",
+                "name": "Aston Villa",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/362.png"
+              },
+              "played": 5,
+              "wins": 1,
+              "draws": 1,
+              "losses": 3,
+              "points": 4,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 17,
+              "team": {
+                "id": "349",
+                "name": "AFC Bournemouth",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/349.png"
+              },
+              "played": 5,
+              "wins": 0,
+              "draws": 3,
+              "losses": 2,
+              "points": 3,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 18,
+              "team": {
+                "id": "388",
+                "name": "Coventry City",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/388.png"
+              },
+              "played": 5,
+              "wins": 1,
+              "draws": 0,
+              "losses": 4,
+              "points": 3,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 19,
+              "team": {
+                "id": "370",
+                "name": "Fulham",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/370.png"
+              },
+              "played": 5,
+              "wins": 0,
+              "draws": 2,
+              "losses": 3,
+              "points": 2,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 20,
+              "team": {
+                "id": "367",
+                "name": "Tottenham Hotspur",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/367.png"
+              },
+              "played": 5,
+              "wins": 0,
+              "draws": 2,
+              "losses": 3,
+              "points": 2,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            }
+          ]
+        }
+      ]
+    },
+    "mex.1": {
+      "source": "espn",
+      "leagueCode": "mex.1",
+      "leagueName": "الدوري المكسيكي",
+      "competitionType": "domestic",
+      "season": {
+        "year": 2026,
+        "startDate": "2026-06-01T04:00Z",
+        "endDate": "2027-06-01T03:59Z",
+        "displayName": "2026-27 Liga BBVA MX"
+      },
+      "updatedAt": "2026-10-01T01:09:28.161Z",
+      "groups": [
+        {
+          "name": "2026 Torneo Apertura",
+          "entries": [
+            {
+              "rank": 1,
+              "team": {
+                "id": "223",
+                "name": "Toluca",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/223.png"
+              },
+              "played": 10,
+              "wins": 6,
+              "draws": 2,
+              "losses": 2,
+              "points": 20,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 2,
+              "team": {
+                "id": "227",
+                "name": "América",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/227.png"
+              },
+              "played": 9,
+              "wins": 6,
+              "draws": 2,
+              "losses": 1,
+              "points": 20,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 3,
+              "team": {
+                "id": "219",
+                "name": "Guadalajara",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/219.png"
+              },
+              "played": 10,
+              "wins": 5,
+              "draws": 3,
+              "losses": 2,
+              "points": 18,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 4,
+              "team": {
+                "id": "222",
+                "name": "Querétaro",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/222.png"
+              },
+              "played": 9,
+              "wins": 5,
+              "draws": 2,
+              "losses": 2,
+              "points": 17,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 5,
+              "team": {
+                "id": "228",
+                "name": "León",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/228.png"
+              },
+              "played": 10,
+              "wins": 5,
+              "draws": 2,
+              "losses": 3,
+              "points": 17,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 6,
+              "team": {
+                "id": "216",
+                "name": "Atlas",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/216.png"
+              },
+              "played": 10,
+              "wins": 5,
+              "draws": 2,
+              "losses": 3,
+              "points": 17,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 7,
+              "team": {
+                "id": "218",
+                "name": "Cruz Azul",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/218.png"
+              },
+              "played": 10,
+              "wins": 5,
+              "draws": 1,
+              "losses": 4,
+              "points": 16,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 8,
+              "team": {
+                "id": "10125",
+                "name": "Tijuana",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/10125.png"
+              },
+              "played": 9,
+              "wins": 4,
+              "draws": 2,
+              "losses": 3,
+              "points": 14,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 9,
+              "team": {
+                "id": "231",
+                "name": "Puebla",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/231.png"
+              },
+              "played": 10,
+              "wins": 4,
+              "draws": 2,
+              "losses": 4,
+              "points": 14,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 10,
+              "team": {
+                "id": "220",
+                "name": "Monterrey",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/220.png"
+              },
+              "played": 9,
+              "wins": 4,
+              "draws": 1,
+              "losses": 4,
+              "points": 13,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 11,
+              "team": {
+                "id": "234",
+                "name": "Pachuca",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/234.png"
+              },
+              "played": 10,
+              "wins": 3,
+              "draws": 3,
+              "losses": 4,
+              "points": 12,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 12,
+              "team": {
+                "id": "233",
+                "name": "Pumas UNAM",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/233.png"
+              },
+              "played": 10,
+              "wins": 3,
+              "draws": 3,
+              "losses": 4,
+              "points": 12,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 13,
+              "team": {
+                "id": "15720",
+                "name": "Atlético de San Luis",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/15720.png"
+              },
+              "played": 10,
+              "wins": 3,
+              "draws": 3,
+              "losses": 4,
+              "points": 12,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 14,
+              "team": {
+                "id": "226",
+                "name": "Atlante",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/226.png"
+              },
+              "played": 10,
+              "wins": 2,
+              "draws": 5,
+              "losses": 3,
+              "points": 11,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 15,
+              "team": {
+                "id": "232",
+                "name": "Tigres UANL",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/232.png"
+              },
+              "played": 10,
+              "wins": 2,
+              "draws": 4,
+              "losses": 4,
+              "points": 10,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 16,
+              "team": {
+                "id": "225",
+                "name": "Santos",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/225.png"
+              },
+              "played": 10,
+              "wins": 3,
+              "draws": 1,
+              "losses": 6,
+              "points": 10,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 17,
+              "team": {
+                "id": "229",
+                "name": "Necaxa",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/229.png"
+              },
+              "played": 10,
+              "wins": 2,
+              "draws": 2,
+              "losses": 6,
+              "points": 8,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 18,
+              "team": {
+                "id": "17851",
+                "name": "FC Juárez",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17851.png"
+              },
+              "played": 10,
+              "wins": 1,
+              "draws": 0,
+              "losses": 9,
+              "points": 3,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            }
+          ]
+        }
+      ]
+    },
+    "rus.1": {
+      "source": "espn",
+      "leagueCode": "rus.1",
+      "leagueName": "الدوري الروسي",
+      "competitionType": "domestic",
+      "season": {
+        "year": 2026,
+        "startDate": "2026-06-01T04:00Z",
+        "endDate": "2027-06-01T03:59Z",
+        "displayName": "2026-2027 Russian Premier League"
+      },
+      "updatedAt": "2026-10-01T01:09:28.214Z",
+      "groups": [
+        {
+          "name": "2026-27 Russian Premier League",
+          "entries": [
+            {
+              "rank": 1,
+              "team": {
+                "id": "11336",
+                "name": "Krasnodar",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11336.png"
+              },
+              "played": 9,
+              "wins": 6,
+              "draws": 3,
+              "losses": 0,
+              "points": 21,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 2,
+              "team": {
+                "id": "1941",
+                "name": "Spartak Moscow",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1941.png"
+              },
+              "played": 9,
+              "wins": 6,
+              "draws": 1,
+              "losses": 2,
+              "points": 19,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 3,
+              "team": {
+                "id": "596",
+                "name": "Dinamo Moscow",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/596.png"
+              },
+              "played": 9,
+              "wins": 6,
+              "draws": 1,
+              "losses": 2,
+              "points": 19,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 4,
+              "team": {
+                "id": "1963",
+                "name": "CSKA Moscow",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1963.png"
+              },
+              "played": 9,
+              "wins": 5,
+              "draws": 4,
+              "losses": 0,
+              "points": 19,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 5,
+              "team": {
+                "id": "2533",
+                "name": "Zenit St Petersburg",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2533.png"
+              },
+              "played": 9,
+              "wins": 6,
+              "draws": 0,
+              "losses": 3,
+              "points": 18,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 6,
+              "team": {
+                "id": "3851",
+                "name": "Rubin Kazan",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3851.png"
+              },
+              "played": 9,
+              "wins": 2,
+              "draws": 6,
+              "losses": 1,
+              "points": 12,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 7,
+              "team": {
+                "id": "22300",
+                "name": "Dynamo Makhachkala",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/22300.png"
+              },
+              "played": 9,
+              "wins": 4,
+              "draws": 0,
+              "losses": 5,
+              "points": 12,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 8,
+              "team": {
+                "id": "21949",
+                "name": "FC Baltika Kaliningrad",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21949.png"
+              },
+              "played": 9,
+              "wins": 3,
+              "draws": 2,
+              "losses": 4,
+              "points": 11,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 9,
+              "team": {
+                "id": "3850",
+                "name": "Krylia Sovetov",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3850.png"
+              },
+              "played": 9,
+              "wins": 2,
+              "draws": 5,
+              "losses": 2,
+              "points": 11,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 10,
+              "team": {
+                "id": "2991",
+                "name": "Akhmat Grozny",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2991.png"
+              },
+              "played": 9,
+              "wins": 2,
+              "draws": 4,
+              "losses": 3,
+              "points": 10,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 11,
+              "team": {
+                "id": "18285",
+                "name": "Gazovik Orenburg",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18285.png"
+              },
+              "played": 9,
+              "wins": 1,
+              "draws": 6,
+              "losses": 2,
+              "points": 9,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 12,
+              "team": {
+                "id": "3852",
+                "name": "Rostov",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3852.png"
+              },
+              "played": 9,
+              "wins": 2,
+              "draws": 2,
+              "losses": 5,
+              "points": 8,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 13,
+              "team": {
+                "id": "22271",
+                "name": "Akron Tolyatti",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/22271.png"
+              },
+              "played": 9,
+              "wins": 1,
+              "draws": 5,
+              "losses": 3,
+              "points": 8,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 14,
+              "team": {
+                "id": "442",
+                "name": "Lokomotiv Moscow",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/442.png"
+              },
+              "played": 9,
+              "wins": 1,
+              "draws": 4,
+              "losses": 4,
+              "points": 7,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 15,
+              "team": {
+                "id": "21927",
+                "name": "Rodina Moscow",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21927.png"
+              },
+              "played": 9,
+              "wins": 1,
+              "draws": 2,
+              "losses": 6,
+              "points": 5,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 16,
+              "team": {
+                "id": "21539",
+                "name": "Fakel Voronezh",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21539.png"
+              },
+              "played": 9,
+              "wins": 0,
+              "draws": 3,
+              "losses": 6,
+              "points": 3,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            }
+          ]
+        }
+      ]
+    },
+    "fifa.world": {
+      "source": "espn",
+      "leagueCode": "fifa.world",
+      "leagueName": "كأس العالم",
+      "competitionType": "international-team",
+      "season": {
+        "year": 2026,
+        "startDate": "2026-06-11T04:00Z",
+        "endDate": "2026-12-31T04:59Z",
+        "displayName": "2026 FIFA World Cup"
+      },
+      "updatedAt": "2026-10-01T01:09:28.267Z",
+      "groups": [
+        {
+          "name": "Group A",
+          "entries": [
+            {
+              "rank": 1,
+              "team": {
+                "id": "203",
+                "name": "Mexico",
+                "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png"
+              },
+              "played": 3,
+              "wins": 3,
+              "draws": 0,
+              "losses": 0,
+              "points": 9,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 2,
+              "team": {
+                "id": "450",
+                "name": "Czechia",
+                "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cze.png"
+              },
+              "played": 3,
+              "wins": 0,
+              "draws": 1,
+              "losses": 2,
+              "points": 1,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 3,
+              "team": {
+                "id": "451",
+                "name": "South Korea",
+                "logo": "https://a.espncdn.com/i/teamlogos/countries/500/kors.png"
+              },
+              "played": 3,
+              "wins": 1,
+              "draws": 0,
+              "losses": 2,
+              "points": 3,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 4,
+              "team": {
+                "id": "467",
+                "name": "South Africa",
+                "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rsa.png"
+              },
+              "played": 3,
+              "wins": 1,
+              "draws": 1,
+              "losses": 1,
+              "points": 4,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            }
+          ]
+        },
+        {
+          "name": "Group B",
+          "entries": [
+            {
+              "rank": 1,
+              "team": {
+                "id": "206",
+                "name": "Canada",
+                "logo": "https://a.espncdn.com/i/teamlogos/countries/500/can.png"
+              },
+              "played": 3,
+              "wins": 1,
+              "draws": 1,
+              "losses": 1,
+              "points": 4,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 2,
+              "team": {
+                "id": "452",
+                "name": "Bosnia-Herzegovina",
+                "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bih.png"
+              },
+              "played": 3,
+              "wins": 1,
+              "draws": 1,
+              "losses": 1,
+              "points": 4,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 3,
+              "team": {
+                "id": "475",
+                "name": "Switzerland",
+                "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png"
+              },
+              "played": 3,
+              "wins": 2,
+              "draws": 1,
+              "losses": 0,
+              "points": 7,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 4,
+              "team": {
+                "id": "4398",
+                "name": "Qatar",
+                "logo": "https://a.espncdn.com/i/teamlogos/countries/500/qat.png"
+              },
+              "played": 3,
+              "wins": 0,
+              "draws": 1,
+              "losses": 2,
+              "points": 1,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            }
+          ]
+        },
+        {
+          "name": "Group C",
+          "entries": [
+            {
+              "rank": 1,
+              "team": {
+                "id": "205",
+                "name": "Brazil",
+                "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png"
+              },
+              "played": 3,
+              "wins": 2,
+              "draws": 1,
+              "losses": 0,
+              "points": 7,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 2,
+              "team": {
+                "id": "580",
+                "name": "Scotland",
+                "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sco.png"
+              },
+              "played": 3,
+              "wins": 1,
+              "draws": 0,
+              "losses": 2,
+              "points": 3,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 3,
+              "team": {
+                "id": "2654",
+                "name": "Haiti",
+                "logo": "https://a.espncdn.com/i/teamlogos/countries/500/hai.png"
+              },
+              "played": 3,
+              "wins": 0,
+              "draws": 0,
+              "losses": 3,
+              "points": 0,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 4,
+              "team": {
+                "id": "2869",
+                "name": "Morocco",
+                "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png"
+              },
+              "played": 3,
+              "wins": 2,
+              "draws": 1,
+              "losses": 0,
+              "points": 7,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            }
+          ]
+        },
+        {
+          "name": "Group D",
+          "entries": [
+            {
+              "rank": 1,
+              "team": {
+                "id": "210",
+                "name": "Paraguay",
+                "logo": "https://a.espncdn.com/i/teamlogos/countries/500/par.png"
+              },
+              "played": 3,
+              "wins": 1,
+              "draws": 1,
+              "losses": 1,
+              "points": 4,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 2,
+              "team": {
+                "id": "465",
+                "name": "Türkiye",
+                "logo": "https://a.espncdn.com/i/teamlogos/countries/500/tur.png"
+              },
+              "played": 3,
+              "wins": 1,
+              "draws": 0,
+              "losses": 2,
+              "points": 3,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 3,
+              "team": {
+                "id": "628",
+                "name": "Australia",
+                "logo": "https://a.espncdn.com/i/teamlogos/countries/500/aus.png"
+              },
+              "played": 3,
+              "wins": 1,
+              "draws": 1,
+              "losses": 1,
+              "points": 4,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 4,
+              "team": {
+                "id": "660",
+                "name": "United States",
+                "logo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png"
+              },
+              "played": 3,
+              "wins": 2,
+              "draws": 0,
+              "losses": 1,
+              "points": 6,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            }
+          ]
+        },
+        {
+          "name": "Group E",
+          "entries": [
+            {
+              "rank": 1,
+              "team": {
+                "id": "209",
+                "name": "Ecuador",
+                "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ecu.png"
+              },
+              "played": 3,
+              "wins": 1,
+              "draws": 1,
+              "losses": 1,
+              "points": 4,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 2,
+              "team": {
+                "id": "481",
+                "name": "Germany",
+                "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ger.png"
+              },
+              "played": 3,
+              "wins": 2,
+              "draws": 0,
+              "losses": 1,
+              "points": 6,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 3,
+              "team": {
+                "id": "4789",
+                "name": "Ivory Coast",
+                "logo": "https://a.espncdn.com/i/teamlogos/countries/500/civ.png"
+              },
+              "played": 3,
+              "wins": 2,
+              "draws": 0,
+              "losses": 1,
+              "points": 6,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 4,
+              "team": {
+                "id": "11678",
+                "name": "Curaçao",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11678.png"
+              },
+              "played": 3,
+              "wins": 0,
+              "draws": 1,
+              "losses": 2,
+              "points": 1,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            }
+          ]
+        },
+        {
+          "name": "Group F",
+          "entries": [
+            {
+              "rank": 1,
+              "team": {
+                "id": "449",
+                "name": "Netherlands",
+                "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png"
+              },
+              "played": 3,
+              "wins": 2,
+              "draws": 1,
+              "losses": 0,
+              "points": 7,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 2,
+              "team": {
+                "id": "466",
+                "name": "Sweden",
+                "logo": "https://a.espncdn.com/i/teamlogos/countries/500/swe.png"
+              },
+              "played": 3,
+              "wins": 1,
+              "draws": 1,
+              "losses": 1,
+              "points": 4,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 3,
+              "team": {
+                "id": "627",
+                "name": "Japan",
+                "logo": "https://a.espncdn.com/i/teamlogos/countries/500/jpn.png"
+              },
+              "played": 3,
+              "wins": 1,
+              "draws": 2,
+              "losses": 0,
+              "points": 5,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 4,
+              "team": {
+                "id": "659",
+                "name": "Tunisia",
+                "logo": "https://a.espncdn.com/i/teamlogos/countries/500/tun.png"
+              },
+              "played": 3,
+              "wins": 0,
+              "draws": 0,
+              "losses": 3,
+              "points": 0,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            }
+          ]
+        },
+        {
+          "name": "Group G",
+          "entries": [
+            {
+              "rank": 1,
+              "team": {
+                "id": "459",
+                "name": "Belgium",
+                "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png"
+              },
+              "played": 3,
+              "wins": 1,
+              "draws": 2,
+              "losses": 0,
+              "points": 5,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 2,
+              "team": {
+                "id": "469",
+                "name": "Iran",
+                "logo": "https://a.espncdn.com/i/teamlogos/countries/500/irn.png"
+              },
+              "played": 3,
+              "wins": 0,
+              "draws": 3,
+              "losses": 0,
+              "points": 3,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 3,
+              "team": {
+                "id": "2620",
+                "name": "Egypt",
+                "logo": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png"
+              },
+              "played": 3,
+              "wins": 1,
+              "draws": 2,
+              "losses": 0,
+              "points": 5,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 4,
+              "team": {
+                "id": "2666",
+                "name": "New Zealand",
+                "logo": "https://a.espncdn.com/i/teamlogos/countries/500/nzl.png"
+              },
+              "played": 3,
+              "wins": 0,
+              "draws": 1,
+              "losses": 2,
+              "points": 1,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            }
+          ]
+        },
+        {
+          "name": "Group H",
+          "entries": [
+            {
+              "rank": 1,
+              "team": {
+                "id": "164",
+                "name": "Spain",
+                "logo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png"
+              },
+              "played": 3,
+              "wins": 2,
+              "draws": 1,
+              "losses": 0,
+              "points": 7,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 2,
+              "team": {
+                "id": "212",
+                "name": "Uruguay",
+                "logo": "https://a.espncdn.com/i/teamlogos/countries/500/uru.png"
+              },
+              "played": 3,
+              "wins": 0,
+              "draws": 2,
+              "losses": 1,
+              "points": 2,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 3,
+              "team": {
+                "id": "655",
+                "name": "Saudi Arabia",
+                "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ksa.png"
+              },
+              "played": 3,
+              "wins": 0,
+              "draws": 2,
+              "losses": 1,
+              "points": 2,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 4,
+              "team": {
+                "id": "2597",
+                "name": "Cape Verde",
+                "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cpv.png"
+              },
+              "played": 3,
+              "wins": 0,
+              "draws": 3,
+              "losses": 0,
+              "points": 3,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            }
+          ]
+        },
+        {
+          "name": "Group I",
+          "entries": [
+            {
+              "rank": 1,
+              "team": {
+                "id": "464",
+                "name": "Norway",
+                "logo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png"
+              },
+              "played": 3,
+              "wins": 2,
+              "draws": 0,
+              "losses": 1,
+              "points": 6,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 2,
+              "team": {
+                "id": "478",
+                "name": "France",
+                "logo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png"
+              },
+              "played": 3,
+              "wins": 3,
+              "draws": 0,
+              "losses": 0,
+              "points": 9,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 3,
+              "team": {
+                "id": "654",
+                "name": "Senegal",
+                "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png"
+              },
+              "played": 3,
+              "wins": 1,
+              "draws": 0,
+              "losses": 2,
+              "points": 3,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 4,
+              "team": {
+                "id": "4375",
+                "name": "Iraq",
+                "logo": "https://a.espncdn.com/i/teamlogos/countries/500/irq.png"
+              },
+              "played": 3,
+              "wins": 0,
+              "draws": 0,
+              "losses": 3,
+              "points": 0,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            }
+          ]
+        },
+        {
+          "name": "Group J",
+          "entries": [
+            {
+              "rank": 1,
+              "team": {
+                "id": "202",
+                "name": "Argentina",
+                "logo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png"
+              },
+              "played": 3,
+              "wins": 3,
+              "draws": 0,
+              "losses": 0,
+              "points": 9,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 2,
+              "team": {
+                "id": "474",
+                "name": "Austria",
+                "logo": "https://a.espncdn.com/i/teamlogos/countries/500/aut.png"
+              },
+              "played": 3,
+              "wins": 1,
+              "draws": 1,
+              "losses": 1,
+              "points": 4,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 3,
+              "team": {
+                "id": "624",
+                "name": "Algeria",
+                "logo": "https://a.espncdn.com/i/teamlogos/countries/500/alg.png"
+              },
+              "played": 3,
+              "wins": 1,
+              "draws": 1,
+              "losses": 1,
+              "points": 4,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 4,
+              "team": {
+                "id": "2917",
+                "name": "Jordan",
+                "logo": "https://a.espncdn.com/i/teamlogos/countries/500/jor.png"
+              },
+              "played": 3,
+              "wins": 0,
+              "draws": 0,
+              "losses": 3,
+              "points": 0,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            }
+          ]
+        },
+        {
+          "name": "Group K",
+          "entries": [
+            {
+              "rank": 1,
+              "team": {
+                "id": "208",
+                "name": "Colombia",
+                "logo": "https://a.espncdn.com/i/teamlogos/countries/500/col.png"
+              },
+              "played": 3,
+              "wins": 2,
+              "draws": 1,
+              "losses": 0,
+              "points": 7,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 2,
+              "team": {
+                "id": "482",
+                "name": "Portugal",
+                "logo": "https://a.espncdn.com/i/teamlogos/countries/500/por.png"
+              },
+              "played": 3,
+              "wins": 1,
+              "draws": 2,
+              "losses": 0,
+              "points": 5,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 3,
+              "team": {
+                "id": "2570",
+                "name": "Uzbekistan",
+                "logo": "https://a.espncdn.com/i/teamlogos/countries/500/uzb.png"
+              },
+              "played": 3,
+              "wins": 0,
+              "draws": 0,
+              "losses": 3,
+              "points": 0,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 4,
+              "team": {
+                "id": "2850",
+                "name": "Congo DR",
+                "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rdc.png"
+              },
+              "played": 3,
+              "wins": 1,
+              "draws": 1,
+              "losses": 1,
+              "points": 4,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            }
+          ]
+        },
+        {
+          "name": "Group L",
+          "entries": [
+            {
+              "rank": 1,
+              "team": {
+                "id": "448",
+                "name": "England",
+                "logo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png"
+              },
+              "played": 3,
+              "wins": 2,
+              "draws": 1,
+              "losses": 0,
+              "points": 7,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 2,
+              "team": {
+                "id": "477",
+                "name": "Croatia",
+                "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cro.png"
+              },
+              "played": 3,
+              "wins": 2,
+              "draws": 0,
+              "losses": 1,
+              "points": 6,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 3,
+              "team": {
+                "id": "2659",
+                "name": "Panama",
+                "logo": "https://a.espncdn.com/i/teamlogos/countries/500/pan.png"
+              },
+              "played": 3,
+              "wins": 0,
+              "draws": 0,
+              "losses": 3,
+              "points": 0,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 4,
+              "team": {
+                "id": "4469",
+                "name": "Ghana",
+                "logo": "https://a.espncdn.com/i/teamlogos/countries/500/gha.png"
+              },
+              "played": 3,
+              "wins": 1,
+              "draws": 1,
+              "losses": 1,
+              "points": 4,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            }
+          ]
+        }
+      ]
+    }
+  },
   "counts": {
     "footballData": 0,
     "espn": 174,
@@ -33,7 +1904,10 @@
     "openfootballWorld": 0,
     "openfoot": 33,
     "total": 179,
-    "theSportsDbEnriched": 1
+    "theSportsDbEnriched": 1,
+    "standingsRefreshed": 4,
+    "standingsRotationGroup": 0,
+    "standingsLeagues": 4
   },
   "matchCount": 179,
   "leagues": [
@@ -2686,7 +4560,7 @@
             "intAway": "12"
           }
         ],
-        "updatedAt": "2026-10-01T00:54:41.463Z",
+        "updatedAt": "2026-10-01T01:09:42.948Z",
         "source": "primary provider + TheSportsDB enrichment",
         "theSportsDbEventId": "2598453"
       }
