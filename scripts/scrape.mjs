@@ -944,8 +944,8 @@ function normalizeLogoName(value) {
   return String(value || "")
     .toLowerCase()
     .normalize("NFD")
-    .replace(/[\\u0300-\\u036f]/g, "")
-    .replace(/\\b(fc|cf|afc|sc|ac|club|football club|football)\\b/gi, "")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/\b(fc|cf|afc|sc|ac|club|football club|football)\b/gi, "")
     .replace(/[^a-z0-9]+/g, " ")
     .trim();
 }
