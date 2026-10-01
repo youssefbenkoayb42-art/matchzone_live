@@ -1,10 +1,10 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-10-01T20:15:28.457Z",
+  "updatedAt": "2026-10-01T20:26:48.895Z",
   "source": "football-data.org + ESPN + OpenFootball + TheSportsDB enrichment",
   "coverageWindow": {
-    "from": "2026-09-29T20:12:38.994Z",
-    "to": "2026-10-01T20:12:38.994Z"
+    "from": "2026-09-29T20:26:03.712Z",
+    "to": "2026-10-01T20:26:03.712Z"
   },
   "sourcePolicy": {
     "primary": "football-data.org",
@@ -5300,7 +5300,7 @@
         "endDate": "2027-06-01T03:59Z",
         "displayName": "2026-27 Scottish Premiership"
       },
-      "updatedAt": "2026-10-01T20:15:06.546Z",
+      "updatedAt": "2026-10-01T20:26:31.697Z",
       "groups": [
         {
           "name": "2026-27 Scottish Premiership",
@@ -5524,7 +5524,7 @@
         "endDate": "2026-06-01T03:59Z",
         "displayName": "2025-26 Cypriot First Division"
       },
-      "updatedAt": "2026-10-01T20:15:06.584Z",
+      "updatedAt": "2026-10-01T20:26:31.764Z",
       "groups": [
         {
           "name": "Group Championship",
@@ -5787,7 +5787,7 @@
         "endDate": "2026-06-01T03:59Z",
         "displayName": "2025-26 Scottish League One"
       },
-      "updatedAt": "2026-10-01T20:15:06.650Z",
+      "updatedAt": "2026-10-01T20:26:31.810Z",
       "groups": [
         {
           "name": "2025-2026 Scottish Division Two",
@@ -5977,9 +5977,9 @@
     "openfootballWorld": 0,
     "openfoot": 43,
     "openfootLogosEnriched": 0,
-    "openfootLogoSearches": 50,
+    "openfootLogoSearches": 0,
     "total": 122,
-    "theSportsDbEnriched": 0,
+    "theSportsDbEnriched": 1,
     "standingsRefreshed": 3,
     "standingsRotationGroup": 10,
     "standingsLeagues": 17
@@ -8466,13 +8466,167 @@
       "externalId": "401914142",
       "externalIds": {
         "espn": "401914142",
-        "espn-league": "fifa.friendly"
+        "espn-league": "fifa.friendly",
+        "thesportsdb": "2598453"
       },
       "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
+        "events": [
+          {
+            "idTimeline": "1908704",
+            "idEvent": "2598453",
+            "strTimeline": "Goal",
+            "strTimelineDetail": "Normal Goal",
+            "strHome": "No",
+            "strEvent": "China vs New Zealand",
+            "idAPIfootball": "1637601",
+            "idPlayer": "34222101",
+            "strPlayer": "Tyler Bindon",
+            "strCutout": "https://r2.thesportsdb.com/images/media/player/cutout/1wc7c81789131699.png",
+            "idAssist": "34200686",
+            "strAssist": "Callum McCowatt",
+            "intTime": "4",
+            "strPeriod": null,
+            "idTeam": "137449",
+            "strTeam": "New Zealand",
+            "strComment": "NULL",
+            "dateEvent": "2026-09-27",
+            "strSeason": "2026"
+          },
+          {
+            "idTimeline": "1908705",
+            "idEvent": "2598453",
+            "strTimeline": "Goal",
+            "strTimelineDetail": "Normal Goal",
+            "strHome": "No",
+            "strEvent": "China vs New Zealand",
+            "idAPIfootball": "1637601",
+            "idPlayer": "34181645",
+            "strPlayer": "Ben Waine",
+            "strCutout": "https://r2.thesportsdb.com/images/media/player/cutout/vwy9bu1766331018.png",
+            "idAssist": "34200684",
+            "strAssist": "Elijah Just",
+            "intTime": "29",
+            "strPeriod": null,
+            "idTeam": "137449",
+            "strTeam": "New Zealand",
+            "strComment": "NULL",
+            "dateEvent": "2026-09-27",
+            "strSeason": "2026"
+          },
+          {
+            "idTimeline": "1908706",
+            "idEvent": "2598453",
+            "strTimeline": "Card",
+            "strTimelineDetail": "Yellow Card",
+            "strHome": "No",
+            "strEvent": "China vs New Zealand",
+            "idAPIfootball": "1637601",
+            "idPlayer": "34200684",
+            "strPlayer": "Elijah Just",
+            "strCutout": "https://r2.thesportsdb.com/images/media/player/cutout/6xaj0e1789045529.png",
+            "idAssist": "0",
+            "strAssist": "",
+            "intTime": "33",
+            "strPeriod": null,
+            "idTeam": "137449",
+            "strTeam": "New Zealand",
+            "strComment": "Foul",
+            "dateEvent": "2026-09-27",
+            "strSeason": "2026"
+          },
+          {
+            "idTimeline": "1908707",
+            "idEvent": "2598453",
+            "strTimeline": "subst",
+            "strTimelineDetail": "Substitution 1",
+            "strHome": "Yes",
+            "strEvent": "China vs New Zealand",
+            "idAPIfootball": "1637601",
+            "idPlayer": "34221522",
+            "strPlayer": "Jiahui Huang",
+            "strCutout": "",
+            "idAssist": "0",
+            "strAssist": "",
+            "intTime": "46",
+            "strPeriod": null,
+            "idTeam": "134579",
+            "strTeam": "China",
+            "strComment": "NULL",
+            "dateEvent": "2026-09-27",
+            "strSeason": "2026"
+          },
+          {
+            "idTimeline": "1908708",
+            "idEvent": "2598453",
+            "strTimeline": "subst",
+            "strTimelineDetail": "Substitution 2",
+            "strHome": "Yes",
+            "strEvent": "China vs New Zealand",
+            "idAPIfootball": "1637601",
+            "idPlayer": "34221631",
+            "strPlayer": "Pu Chen",
+            "strCutout": "",
+            "idAssist": "34235649",
+            "strAssist": "Qianglong Tao",
+            "intTime": "46",
+            "strPeriod": null,
+            "idTeam": "134579",
+            "strTeam": "China",
+            "strComment": "NULL",
+            "dateEvent": "2026-09-27",
+            "strSeason": "2026"
+          }
+        ],
+        "statistics": [
+          {
+            "idStatistic": "722908",
+            "idEvent": "2598453",
+            "idApiFootball": "1637601",
+            "strEvent": "China vs New Zealand",
+            "strStat": "Shots on Goal",
+            "intHome": "2",
+            "intAway": "6"
+          },
+          {
+            "idStatistic": "722909",
+            "idEvent": "2598453",
+            "idApiFootball": "1637601",
+            "strEvent": "China vs New Zealand",
+            "strStat": "Shots off Goal",
+            "intHome": "4",
+            "intAway": "4"
+          },
+          {
+            "idStatistic": "722910",
+            "idEvent": "2598453",
+            "idApiFootball": "1637601",
+            "strEvent": "China vs New Zealand",
+            "strStat": "Total Shots",
+            "intHome": "8",
+            "intAway": "13"
+          },
+          {
+            "idStatistic": "722911",
+            "idEvent": "2598453",
+            "idApiFootball": "1637601",
+            "strEvent": "China vs New Zealand",
+            "strStat": "Blocked Shots",
+            "intHome": "2",
+            "intAway": "3"
+          },
+          {
+            "idStatistic": "722912",
+            "idEvent": "2598453",
+            "idApiFootball": "1637601",
+            "strEvent": "China vs New Zealand",
+            "strStat": "Shots insidebox",
+            "intHome": "3",
+            "intAway": "12"
+          }
+        ],
+        "updatedAt": "2026-10-01T20:26:46.694Z",
+        "source": "primary provider + TheSportsDB enrichment",
+        "theSportsDbEventId": "2598453"
       }
     },
     {
