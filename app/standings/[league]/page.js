@@ -288,7 +288,7 @@ export default async function StandingsPage({ params }) {
                         <td style={styles.teamCell}>
                           {badge ? <img src={badge} alt="" style={styles.teamLogo} loading="lazy" /> : null}
                           <Link
-                            href={`/teams/${encodeURIComponent(String(team?.idTeam || ""))}`}
+                            href={`/teams/${encodeURIComponent(`espn:${String(team?.idTeam || "")}`)}`}
                             style={styles.teamLink}
                           >
                             {team?.strTeam || "فريق"}
