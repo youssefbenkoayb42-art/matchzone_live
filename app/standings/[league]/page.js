@@ -1,10 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import {
-  buildOpenFootballForm,
-  getOpenFootballMatches,
-  getOpenFootballStandings,
-} from "../../../lib/openfootball";
+import { getMatchSnapshot } from "../../../lib/match-snapshot";
 
 const BASE_URL = "https://matchzone-live.vercel.app";
 
@@ -37,92 +33,77 @@ export async function generateMetadata({ params }) {
 }
 
 
-async function getRecentForm(leagueSlug, leagueId) {
-  try {
-    const openFootballMatches = await getOpenFootballMatches({
-      slugs: [leagueSlug],
-    });
+async function getSnapshotStandings(leagueSlug) {
+  const codeBySlug = {
+    "premier-league": "eng.1",
+    "la-liga": "esp.1",
+    "serie-a": "ita.1",
+    bundesliga: "ger.1",
+    "ligue-1": "fra.1",
+  };
+  const code = codeBySlug[leagueSlug];
+  if (!code) return { table: [], recentForm: {} };
 
-    if (openFootballMatches.length) {
-      return buildOpenFootballForm(openFootballMatches);
-    }
-  } catch {
-    // fallback to TheSportsDB below
+  const snapshot = await getMatchSnapshot();
+  const raw = snapshot?.standings?.[code];
+  const entries = raw?.groups?.[0]?.entries;
+  const table = Array.isArray(entries)
+    ? entries.map((entry) => ({
+        intRank: entry.rank,
+        strTeam: entry.team?.name,
+        idTeam: entry.team?.id,
+        strBadge: entry.team?.logo,
+        intPlayed: entry.played,
+        intWin: entry.wins,
+        intDraw: entry.draws,
+        intLoss: entry.losses,
+        intPoints: entry.points,
+        intGoalsFor: entry.goalsFor,
+        intGoalsAgainst: entry.goalsAgainst,
+        intGoalDifference: entry.goalDifference,
+      }))
+    : [];
+
+  const relevantMatches = snapshot.matches.filter(
+    (match) =>
+      match?.externalIds?.["espn-league"] === code &&
+      ["FT", "AET", "PEN", "FINISHED"].includes(String(match?.fixture?.status?.short || "").toUpperCase())
+  );
+
+  const recentForm = {};
+  const byTeam = new Map();
+
+  for (const match of relevantMatches) {
+    const date = new Date(match?.fixture?.date || 0).getTime();
+    if (!Number.isFinite(date)) continue;
+    const home = match?.teams?.home;
+    const away = match?.teams?.away;
+    if (!home?.id || !away?.id) continue;
+
+    const homeGoals = Number(match?.goals?.home ?? 0);
+    const awayGoals = Number(match?.goals?.away ?? 0);
+    const add = (team, result, opponent, score) => {
+      const id = String(team.id);
+      if (!byTeam.has(id)) byTeam.set(id, []);
+      byTeam.get(id).push({ date, result, opponent, score });
+    };
+
+    add(home, homeGoals > awayGoals ? "W" : homeGoals < awayGoals ? "L" : "D", away.name || "الخصم", homeGoals + "-" + awayGoals);
+    add(away, awayGoals > homeGoals ? "W" : awayGoals < homeGoals ? "L" : "D", home.name || "الخصم", awayGoals + "-" + homeGoals);
   }
 
-  try {
-    const response = await fetch(
-      `https://www.thesportsdb.com/api/v1/json/123/eventspastleague.php?id=${leagueId}`,
-      { next: { revalidate: 300 } }
-    );
-    if (!response.ok) return {};
-    const data = await response.json();
-    const events = Array.isArray(data?.events) ? data.events : [];
-    const finished = events
-      .filter((event) => event?.idEvent && event?.idHomeTeam && event?.idAwayTeam && event?.intHomeScore != null && event?.intAwayScore != null)
-      .sort((a, b) => {
-        const aTime = new Date((a.dateEvent || "") + "T" + (a.strTime || "00:00:00")).getTime();
-        const bTime = new Date((b.dateEvent || "") + "T" + (b.strTime || "00:00:00")).getTime();
-        return bTime - aTime;
-      });
-
-    const form = {};
-    for (const event of finished) {
-      const homeId = String(event.idHomeTeam);
-      const awayId = String(event.idAwayTeam);
-      const homeScore = Number(event.intHomeScore);
-      const awayScore = Number(event.intAwayScore);
-      if (!form[homeId]) form[homeId] = [];
-      if (!form[awayId]) form[awayId] = [];
-      if (form[homeId].length < 5) {
-        form[homeId].push({
-          result: homeScore > awayScore ? "W" : homeScore < awayScore ? "L" : "D",
-          opponent: event.strAwayTeam || "الخصم",
-          score: homeScore + "-" + awayScore,
-        });
-      }
-      if (form[awayId].length < 5) {
-        form[awayId].push({
-          result: awayScore > homeScore ? "W" : awayScore < homeScore ? "L" : "D",
-          opponent: event.strHomeTeam || "الخصم",
-          score: awayScore + "-" + homeScore,
-        });
-      }
-    }
-    return form;
-  } catch {
-    return {};
-  }
-}
-
-async function getStandings(leagueSlug, leagueId) {
-  try {
-    const openFootballTable = await getOpenFootballStandings(leagueSlug);
-    if (openFootballTable.length) {
-      return openFootballTable;
-    }
-  } catch {
-    // fallback to TheSportsDB below
+  for (const [id, games] of byTeam) {
+    recentForm[id] = games.sort((a, b) => b.date - a.date).slice(0, 5);
   }
 
-  try {
-    const response = await fetch(
-      `https://www.thesportsdb.com/api/v1/json/123/lookuptable.php?l=${leagueId}`,
-      { next: { revalidate: 300 } }
-    );
-    if (!response.ok) return [];
-    const data = await response.json();
-    return Array.isArray(data?.table) ? data.table : [];
-  } catch {
-    return [];
-  }
+  return { table, recentForm };
 }
 
 export default async function StandingsPage({ params }) {
   const league = LEAGUES.find((item) => item.slug === params.league);
   if (!league) notFound();
 
-  const [table, recentForm] = await Promise.all([getStandings(league.slug, league.id), getRecentForm(league.slug, league.id)]);
+  const { table, recentForm } = await getSnapshotStandings(league.slug);
 
   const rankedTeams = table
     .map((team, index) => ({
@@ -162,9 +143,7 @@ export default async function StandingsPage({ params }) {
     .filter((item) => item.streak.count > 0)
     .sort((a, b) => b.streak.count - a.streak.count)[0] || null;
 
-  const totalGoals = rankedTeams.reduce((sum, item) => sum + item.goalsFor, 0);
   const totalPlayed = rankedTeams.reduce((sum, item) => sum + Number(item.team?.intPlayed || 0), 0);
-  const leagueGoalsPerMatch = totalPlayed > 0 ? (totalGoals / (totalPlayed / 2)).toFixed(2) : "0.00";
   const formPoints = (form) =>
     (form || []).reduce((sum, item) => sum + (item.result === "W" ? 3 : item.result === "D" ? 1 : 0), 0);
   const momentumLeader = rankedTeams
@@ -225,8 +204,8 @@ export default async function StandingsPage({ params }) {
             <small>مؤشرات مستخرجة من جدول البطولة وآخر النتائج المتاحة</small>
           </div>
           <div className="standings-metric-strip" aria-label="مؤشرات البطولة">
-            <div><span>GOALS</span><strong>{totalGoals}</strong><small>أهداف مسجلة</small></div>
-            <div><span>AVG</span><strong>{leagueGoalsPerMatch}</strong><small>هدف لكل مباراة</small></div>
+            <div><span>TEAMS</span><strong>{rankedTeams.length}</strong><small>فرق في الجدول</small></div>
+            <div><span>PLAYED</span><strong>{Math.round(totalPlayed / 2)}</strong><small>مباريات محتسبة</small></div>
             <div><span>MOMENTUM</span><strong>{momentumLeader?.team?.strTeam || "—"}</strong><small>{momentumLeader ? momentumLeader.recentPoints + " نقاط من آخر 5" : "لا بيانات"}</small></div>
             <div><span>EFFICIENCY</span><strong>{efficiencyLeader?.team?.strTeam || "—"}</strong><small>{efficiencyLeader ? efficiencyLeader.ppg.toFixed(2) + " نقطة/مباراة" : "لا بيانات"}</small></div>
           </div>
