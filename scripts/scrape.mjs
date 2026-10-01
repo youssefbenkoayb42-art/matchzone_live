@@ -1,3 +1,4 @@
+// MatchZone scheduled data sync trigger.
 import fs from "node:fs/promises";
 import path from "node:path";
 
