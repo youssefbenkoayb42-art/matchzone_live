@@ -25,7 +25,7 @@ function regionLabel(region) {
 }
 
 const CATALOG_LEAGUE_LOGOS = {
-  "openfoot:comp_botola_pro_mar": "https://logowik.com/content/uploads/images/botolapro2288.logowik.com.webp",
+  "comp_botola_pro_mar": "https://logowik.com/content/uploads/images/botolapro2288.logowik.com.webp",
 };
 
 function leagueLogo(league) {
