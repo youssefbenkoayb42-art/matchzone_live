@@ -1,10 +1,10 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-10-01T20:26:48.895Z",
+  "updatedAt": "2026-10-01T20:35:19.166Z",
   "source": "football-data.org + ESPN + OpenFootball + TheSportsDB enrichment",
   "coverageWindow": {
-    "from": "2026-09-29T20:26:03.712Z",
-    "to": "2026-10-01T20:26:03.712Z"
+    "from": "2026-09-29T20:34:40.792Z",
+    "to": "2026-10-01T20:34:40.792Z"
   },
   "sourcePolicy": {
     "primary": "football-data.org",
@@ -5300,7 +5300,7 @@
         "endDate": "2027-06-01T03:59Z",
         "displayName": "2026-27 Scottish Premiership"
       },
-      "updatedAt": "2026-10-01T20:26:31.697Z",
+      "updatedAt": "2026-10-01T20:35:01.451Z",
       "groups": [
         {
           "name": "2026-27 Scottish Premiership",
@@ -5524,7 +5524,7 @@
         "endDate": "2026-06-01T03:59Z",
         "displayName": "2025-26 Cypriot First Division"
       },
-      "updatedAt": "2026-10-01T20:26:31.764Z",
+      "updatedAt": "2026-10-01T20:35:01.500Z",
       "groups": [
         {
           "name": "Group Championship",
@@ -5787,7 +5787,7 @@
         "endDate": "2026-06-01T03:59Z",
         "displayName": "2025-26 Scottish League One"
       },
-      "updatedAt": "2026-10-01T20:26:31.810Z",
+      "updatedAt": "2026-10-01T20:35:01.546Z",
       "groups": [
         {
           "name": "2025-2026 Scottish Division Two",
@@ -8624,7 +8624,7 @@
             "intAway": "12"
           }
         ],
-        "updatedAt": "2026-10-01T20:26:46.694Z",
+        "updatedAt": "2026-10-01T20:35:16.965Z",
         "source": "primary provider + TheSportsDB enrichment",
         "theSportsDbEventId": "2598453"
       }
