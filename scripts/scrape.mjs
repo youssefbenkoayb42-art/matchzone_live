@@ -1050,6 +1050,91 @@ function dedupeMatches(matches) {
   );
 }
 
+
+async function loadPreviousStandings() {
+  try {
+    const raw = await fs.readFile(DATA_FILE, "utf8");
+    const data = JSON.parse(raw);
+    return data?.standings && typeof data.standings === "object" ? data.standings : {};
+  } catch {
+    return {};
+  }
+}
+
+function readEspnStandingStat(entry, name) {
+  const stat = Array.isArray(entry?.stats)
+    ? entry.stats.find((item) => String(item?.name || "").toLowerCase() === name)
+    : null;
+  if (!stat) return null;
+  const value = Number(stat.value);
+  return Number.isFinite(value) ? value : stat.displayValue ?? null;
+}
+
+async function fetchEspnStandings(previousStandings = {}) {
+  const result = { ...previousStandings };
+  const group = currentRotationGroup();
+  let refreshed = 0;
+
+  for (let index = 0; index < ESPN_LEAGUES.length; index += 1) {
+    if (espnRotationGroup(index) !== group) continue;
+
+    const [leagueCode, leagueName, competitionType] = ESPN_LEAGUES[index];
+    const url =
+      "https://site.api.espn.com/apis/v2/sports/soccer/" +
+      encodeURIComponent(leagueCode) +
+      "/standings";
+
+    try {
+      const data = await fetchJson(url);
+      const groups = Array.isArray(data?.children) ? data.children : [];
+      const tables = groups
+        .map((child) => ({
+          name: child?.name || "الترتيب",
+          entries: Array.isArray(child?.standings?.entries)
+            ? child.standings.entries
+            : [],
+        }))
+        .filter((group) => group.entries.length);
+
+      if (!tables.length) continue;
+
+      result[leagueCode] = {
+        source: "espn",
+        leagueCode,
+        leagueName,
+        competitionType,
+        season: data?.season || null,
+        updatedAt: new Date().toISOString(),
+        groups: tables.map((table) => ({
+          name: table.name,
+          entries: table.entries.map((entry, position) => ({
+            rank: Number(entry?.team?.uid ? position + 1 : entry?.team?.id || position + 1),
+            team: {
+              id: String(entry?.team?.id || "").trim(),
+              name: String(entry?.team?.displayName || entry?.team?.name || "فريق").trim(),
+              logo: cleanHttpsUrl(entry?.team?.logos?.[0]?.href) || null,
+            },
+            played: readEspnStandingStat(entry, "gamesplayed"),
+            wins: readEspnStandingStat(entry, "wins"),
+            draws: readEspnStandingStat(entry, "ties"),
+            losses: readEspnStandingStat(entry, "losses"),
+            points: readEspnStandingStat(entry, "points"),
+            goalsFor: readEspnStandingStat(entry, "goalsfor"),
+            goalsAgainst: readEspnStandingStat(entry, "goalsagainst"),
+            goalDifference: readEspnStandingStat(entry, "goaldifference"),
+            form: readEspnStandingStat(entry, "form"),
+          })),
+        })),
+      };
+      refreshed += 1;
+    } catch (error) {
+      console.warn("[ESPN standings] skipped", leagueCode, "-", error.message);
+    }
+  }
+
+  return { standings: result, refreshed, rotationGroup: group };
+}
+
 async function main() {
   await fs.mkdir(path.dirname(DATA_FILE), { recursive: true });
   await fs.rm(OLD_LOGO_DIR, { recursive: true, force: true });
@@ -1072,7 +1157,9 @@ async function main() {
   );
 
   const previousEspnMatches = await loadPreviousEspnMatches();
+  const previousStandings = await loadPreviousStandings();
   const espnResult = await fetchEspnMatches(from, to);
+  const standingsResult = await fetchEspnStandings(previousStandings);
   const espnMatches = espnResult.matches.map((item) =>
     makeEspnMatch(
       item.event,
@@ -1180,6 +1267,7 @@ async function main() {
       collisionPolicy: "different provider identities sharing a logo are replaced by UI Avatars",
       unknownTeamPolicy: "UI Avatars",
     },
+    standings: standingsResult.standings,
     counts: {
       footballData: footballDataMatches.length,
       espn: supplemental.length,
@@ -1191,6 +1279,9 @@ async function main() {
       openfoot: openFootMatches.length,
       total: matches.length,
       theSportsDbEnriched,
+      standingsRefreshed: standingsResult.refreshed,
+      standingsRotationGroup: standingsResult.rotationGroup,
+      standingsLeagues: Object.keys(standingsResult.standings).length,
     },
     matchCount: matches.length,
     leagues,
@@ -1209,6 +1300,7 @@ async function main() {
   console.log("[MATCHZONE] OpenFoot fallback matches:", openFootMatches.length);
   console.log("[MATCHZONE] Unified league catalog:", leagues.length, "(current:", payload.currentLeagueCount + ")");
   console.log("[MATCHZONE] Leagues:", payload.leagueCount);
+  console.log("[MATCHZONE] Standings refreshed:", standingsResult.refreshed, "rotation group:", standingsResult.rotationGroup, "cached leagues:", Object.keys(standingsResult.standings).length);
   console.log("[MATCHZONE] Snapshot written:", DATA_FILE);
 }
 
