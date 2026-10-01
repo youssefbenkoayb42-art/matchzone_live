@@ -29,7 +29,7 @@ export async function GET() {
       {
         response: finished,
         results: finished.length,
-        source: "football-data.org",
+        source: "MatchZone snapshot",
         snapshot,
         updatedAt: new Date().toISOString(),
       },
