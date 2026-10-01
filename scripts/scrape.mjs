@@ -984,7 +984,26 @@ async function saveOpenFootLogoCache(cache) {
   );
 }
 
-async function enrichOpenFootTeamLogos(matches) {
+async function enrichOpenFootTeamLogos(matches, providerMatches = []) {
+  const providerLogoByName = new Map();
+
+  for (const match of providerMatches) {
+    if (!["espn", "football-data.org"].includes(String(match?.source || ""))) continue;
+
+    for (const side of ["home", "away"]) {
+      const team = match?.teams?.[side];
+      const logo = cleanHttpsUrl(team?.logo);
+      const name = normalizeLogoName(team?.name);
+      if (!logo || !name) continue;
+      if (!providerLogoByName.has(name)) {
+        providerLogoByName.set(name, {
+          logo,
+          source: String(match.source),
+          teamId: String(team?.identity || team?.id || "").trim() || null,
+        });
+      }
+    }
+  }
   const teams = new Map();
 
   for (const match of matches) {
@@ -1016,6 +1035,35 @@ async function enrichOpenFootTeamLogos(matches) {
       team.logoPath = cached.logo;
       team.logoSource = "TheSportsDB logo enrichment";
       team.logoQuality = "secondary-exact-match";
+      enriched += 1;
+      continue;
+    }
+
+    const providerNames = [
+      team.name,
+      ...(OPENFOOT_LOGO_ALIASES[team.name] || []),
+    ]
+      .map(normalizeLogoName)
+      .filter(Boolean);
+
+    const providerMatch = providerNames
+      .map((name) => providerLogoByName.get(name))
+      .find(Boolean);
+
+    if (providerMatch) {
+      cache[teamId] = {
+        name: team.name,
+        attempted: true,
+        logo: providerMatch.logo,
+        sourceTeamId: providerMatch.teamId,
+        sourceTeamName: team.name,
+        sourceProvider: providerMatch.source,
+        updatedAt: new Date().toISOString(),
+      };
+      team.logo = providerMatch.logo;
+      team.logoPath = providerMatch.logo;
+      team.logoSource = providerMatch.source + " team ID/name";
+      team.logoQuality = "secondary-provider-exact-name";
       enriched += 1;
       continue;
     }
@@ -1317,7 +1365,6 @@ async function main() {
   const openFootballResult = await fetchOpenFootballMatches(from, to);
   const openFootballRaw = openFootballResult.matches;
   const openFootRaw = await fetchOpenFootMatches(from, to);
-  const openFootLogoResult = await enrichOpenFootTeamLogos(openFootRaw);
   const footballDataMatches = footballDataRaw.map((item) =>
     makeFootballDataMatch(item, identityLogos)
   );
@@ -1334,6 +1381,14 @@ async function main() {
       item.competitionType,
       identityLogos
     )
+  );
+
+  // Prefer logos already available from our primary/supplemental providers.
+  // TheSportsDB remains only the strict fallback for OpenFoot teams that
+  // cannot be matched to an existing provider logo.
+  const openFootLogoResult = await enrichOpenFootTeamLogos(
+    openFootRaw,
+    [...footballDataMatches, ...espnMatches]
   );
 
   // Keep every previous ESPN fixture that is still inside the rolling window.
