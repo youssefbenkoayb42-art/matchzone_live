@@ -109,22 +109,12 @@ export default async function StandingsPage({ params }) {
     .map((team, index) => ({
       team,
       rank: Number(team?.intRank || index + 1),
-      goalsFor: Number(team?.intGoalsFor || 0),
-      goalsAgainst: Number(team?.intGoalsAgainst || 0),
-      goalDifference: Number(team?.intGoalDifference || 0),
+      goalsFor: Number.isFinite(Number(team?.intGoalsFor)) ? Number(team.intGoalsFor) : null,
+      goalsAgainst: Number.isFinite(Number(team?.intGoalsAgainst)) ? Number(team.intGoalsAgainst) : null,
+      goalDifference: Number.isFinite(Number(team?.intGoalDifference)) ? Number(team.intGoalDifference) : null,
       form: recentForm[team?.strTeam] || recentForm[String(team?.idTeam)] || [],
     }))
     .filter((item) => item.team?.strTeam);
-
-  const bestAttack = rankedTeams.length
-    ? rankedTeams.reduce((best, item) => item.goalsFor > best.goalsFor ? item : best, rankedTeams[0])
-    : null;
-  const strongestDefense = rankedTeams.length
-    ? rankedTeams.reduce((best, item) => item.goalsAgainst < best.goalsAgainst ? item : best, rankedTeams[0])
-    : null;
-  const bestDifference = rankedTeams.length
-    ? rankedTeams.reduce((best, item) => item.goalDifference > best.goalDifference ? item : best, rankedTeams[0])
-    : null;
 
   const getStreak = (form) => {
     if (!form?.length) return { label: "لا بيانات", result: "none", count: 0 };
@@ -265,7 +255,7 @@ export default async function StandingsPage({ params }) {
                     const played = Number(team?.intPlayed || 0);
                     const pointsPerGame = played > 0 ? (points / played).toFixed(2) : "0.00";
                     const badge = team?.strBadge;
-                    const goalDifference = Number(team?.intGoalDifference || 0);
+                    const goalDifference = Number.isFinite(Number(team?.intGoalDifference)) ? Number(team.intGoalDifference) : null;
                     const rankStyle =
                       rank === 1 ? styles.firstRank :
                       rank === 2 ? styles.secondRank :
@@ -313,10 +303,10 @@ export default async function StandingsPage({ params }) {
                         <td style={styles.td}>{team?.intWin ?? 0}</td>
                         <td style={styles.td}>{team?.intDraw ?? 0}</td>
                         <td style={styles.td}>{team?.intLoss ?? 0}</td>
-                        <td style={styles.td}>{team?.intGoalsFor ?? 0}</td>
-                        <td style={styles.td}>{team?.intGoalsAgainst ?? 0}</td>
-                        <td style={{ ...styles.td, color: goalDifference > 0 ? "#2ecc71" : goalDifference < 0 ? "#ff7b7b" : "#dce7e2", fontWeight: 800 }}>
-                          {goalDifference > 0 ? "+" + goalDifference : goalDifference}
+                        <td style={styles.td}>{team?.intGoalsFor ?? "—"}</td>
+                        <td style={styles.td}>{team?.intGoalsAgainst ?? "—"}</td>
+                        <td style={{ ...styles.td, color: goalDifference == null ? "#6f8c80" : goalDifference > 0 ? "#2ecc71" : goalDifference < 0 ? "#ff7b7b" : "#dce7e2", fontWeight: 800 }}>
+                          {goalDifference == null ? "—" : goalDifference > 0 ? "+" + goalDifference : goalDifference}
                         </td>
                         <td style={{ ...styles.td, ...styles.points }}>{points}</td>
                         <td style={{ ...styles.td, color: "#8ff4b8", fontWeight: 800 }}>{pointsPerGame}</td>
