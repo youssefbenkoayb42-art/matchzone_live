@@ -1016,8 +1016,8 @@ async function enrichOpenFootTeamLogos(matches, providerMatches = []) {
       }
     }
   }
-  const teams = new Map();
 
+  const teams = new Map();
   for (const match of matches) {
     if (match?.source !== "openfoot") continue;
     const competitionId = String(match?.league?.id || "");
@@ -1035,8 +1035,31 @@ async function enrichOpenFootTeamLogos(matches, providerMatches = []) {
   if (!teams.size) return { enriched: 0, searched: 0 };
 
   const cache = await loadOpenFootLogoCache();
+  const countryCatalogs = new Map();
   let enriched = 0;
   let searched = 0;
+
+  // IMPORTANT: TheSportsDB free searchteams.php is limited to one result/query.
+  // Instead of guessing across several name searches, fetch each country's
+  // football-team catalog once, then accept only an exact name/alias + country match.
+  for (const country of new Set([...teams.values()].map((item) => item.country))) {
+    try {
+      const url =
+        THESPORTSDB_API +
+        "/search_all_teams.php?s=Soccer&c=" +
+        encodeURIComponent(country);
+      const data = await fetchJson(url);
+      const candidates = Array.isArray(data?.teams) ? data.teams : [];
+      countryCatalogs.set(country, candidates);
+      searched += 1;
+    } catch (error) {
+      console.warn("[OpenFoot logos] country catalog skipped", country, "-", error.message);
+      countryCatalogs.set(country, []);
+    }
+
+    // Stay comfortably below the free-tier request rate.
+    await sleep(OPENFOOT_LOGO_DELAY_MS);
+  }
 
   for (const [teamId, item] of teams) {
     const team = item.team;
@@ -1054,9 +1077,7 @@ async function enrichOpenFootTeamLogos(matches, providerMatches = []) {
     const providerNames = [
       team.name,
       ...(OPENFOOT_LOGO_ALIASES[team.name] || []),
-    ]
-      .map(normalizeLogoName)
-      .filter(Boolean);
+    ].map(normalizeLogoName).filter(Boolean);
 
     const providerMatch = providerNames
       .map((name) => providerLogoByName.get(name))
@@ -1090,40 +1111,29 @@ async function enrichOpenFootTeamLogos(matches, providerMatches = []) {
 
     if (cachedNegativeIsFresh) continue;
 
-    const queries = [team.name, ...(OPENFOOT_LOGO_ALIASES[team.name] || [])];
-    let matched = null;
+    const wantedNames = new Set([
+      team.name,
+      ...(OPENFOOT_LOGO_ALIASES[team.name] || []),
+    ].map(normalizeLogoName).filter(Boolean));
 
-    for (const query of queries) {
-      try {
-        const url =
-          THESPORTSDB_API +
-          "/searchteams.php?t=" +
-          encodeURIComponent(query);
+    const expectedCountry = normalizeLogoName(item.country);
+    const candidates = countryCatalogs.get(item.country) || [];
 
-        const data = await fetchJson(url);
-        const candidates = Array.isArray(data?.teams) ? data.teams : [];
-        const exact = candidates.find((candidate) => {
-          const candidateCountry = normalizeLogoName(candidate?.strCountry);
-          const expectedCountry = normalizeLogoName(item.country);
-          return (
-            candidateCountry === expectedCountry &&
-            openFootLogoNameMatches(team.name, candidate) &&
-            cleanHttpsUrl(candidate?.strTeamBadge)
-          );
-        });
+    const matched = candidates.find((candidate) => {
+      const candidateCountry = normalizeLogoName(candidate?.strCountry);
+      if (candidateCountry !== expectedCountry) return false;
 
-        searched += 1;
+      const candidateNames = [
+        candidate?.strTeam,
+        candidate?.strTeamShort,
+        candidate?.strAlternate,
+      ].map(normalizeLogoName).filter(Boolean);
 
-        if (exact) {
-          matched = exact;
-          break;
-        }
-      } catch (error) {
-        console.warn("[OpenFoot logos] search skipped", team.name, "-", error.message);
-      }
-
-      await sleep(OPENFOOT_LOGO_DELAY_MS);
-    }
+      return (
+        candidateNames.some((name) => wantedNames.has(name)) &&
+        Boolean(cleanHttpsUrl(candidate?.strTeamBadge))
+      );
+    });
 
     cache[teamId] = {
       name: team.name,
@@ -1131,6 +1141,7 @@ async function enrichOpenFootTeamLogos(matches, providerMatches = []) {
       logo: cleanHttpsUrl(matched?.strTeamBadge) || null,
       sourceTeamId: matched?.idTeam ? String(matched.idTeam) : null,
       sourceTeamName: matched?.strTeam || null,
+      sourceProvider: matched ? "TheSportsDB" : null,
       updatedAt: new Date().toISOString(),
     };
 
