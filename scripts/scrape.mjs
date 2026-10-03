@@ -28,6 +28,9 @@ const OPENFOOT_API = "https://openfootapi.com/v1";
 const OPENFOOT_API_KEY = String(process.env.OPENFOOT_API_KEY || "").trim();
 const OPENFOOT_LOGO_CACHE_FILE = path.join(ROOT, "data", "openfoot-team-logos.json");
 const OPENFOOT_LOGO_DELAY_MS = 2200;
+// A failed logo lookup is not permanent. Retry negative cache entries periodically
+// so a temporary provider miss can recover without repeatedly spending API quota.
+const OPENFOOT_LOGO_NEGATIVE_RETRY_MS = 6 * 60 * 60 * 1000;
 const OPENFOOT_COMPETITIONS = [
   ["comp_botola_pro_mar", "الدوري المغربي", "domestic"],
   ["comp_ligue_1_dza", "الدوري الجزائري", "domestic"],
@@ -1068,7 +1071,15 @@ async function enrichOpenFootTeamLogos(matches, providerMatches = []) {
       continue;
     }
 
-    if (cached?.attempted && cached.name === team.name) continue;
+    const cachedUpdatedAt = cached?.updatedAt ? new Date(cached.updatedAt).getTime() : 0;
+    const cachedNegativeIsFresh =
+      cached?.attempted &&
+      !cached?.logo &&
+      cached.name === team.name &&
+      Number.isFinite(cachedUpdatedAt) &&
+      Date.now() - cachedUpdatedAt < OPENFOOT_LOGO_NEGATIVE_RETRY_MS;
+
+    if (cachedNegativeIsFresh) continue;
 
     const queries = [team.name, ...(OPENFOOT_LOGO_ALIASES[team.name] || [])];
     let matched = null;
