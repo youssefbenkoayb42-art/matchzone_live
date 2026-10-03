@@ -65,6 +65,15 @@ const ESPN_CURRENT_DAYS_BACK = 2;
 const ESPN_CURRENT_DAYS_FORWARD = 1;
 const ESPN_FUTURE_DAYS_FORWARD = 30;
 const ESPN_ROTATION_GROUPS = 12;
+// Keep the most searched competitions fresh on every sync. Other leagues
+// continue using the rotation to control free-provider request volume.
+const ESPN_PRIORITY_STANDINGS = new Set([
+  "eng.1",
+  "esp.1",
+  "ita.1",
+  "ger.1",
+  "fra.1",
+]);
 
 /*
  * MatchZone data architecture
@@ -1300,9 +1309,9 @@ async function fetchEspnStandings(previousStandings = {}) {
   let refreshed = 0;
 
   for (let index = 0; index < ESPN_LEAGUES.length; index += 1) {
-    if (espnRotationGroup(index) !== group) continue;
-
     const [leagueCode, leagueName, competitionType] = ESPN_LEAGUES[index];
+    const isPriority = ESPN_PRIORITY_STANDINGS.has(leagueCode);
+    if (!isPriority && espnRotationGroup(index) !== group) continue;
     const url =
       "https://site.api.espn.com/apis/v2/sports/soccer/" +
       encodeURIComponent(leagueCode) +
