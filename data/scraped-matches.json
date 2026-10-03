@@ -1,10 +1,10 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-10-03T20:19:19.059Z",
+  "updatedAt": "2026-10-03T20:25:04.016Z",
   "source": "football-data.org + ESPN + OpenFootball + TheSportsDB enrichment",
   "coverageWindow": {
-    "from": "2026-10-01T20:18:39.359Z",
-    "to": "2026-10-03T20:18:39.359Z"
+    "from": "2026-10-01T20:24:23.859Z",
+    "to": "2026-10-03T20:24:23.859Z"
   },
   "sourcePolicy": {
     "primary": "football-data.org",
@@ -35,7 +35,7 @@
         "endDate": "2027-06-01T03:59Z",
         "displayName": "2026-27 English Premier League"
       },
-      "updatedAt": "2026-10-03T20:19:04.227Z",
+      "updatedAt": "2026-10-03T20:24:44.333Z",
       "groups": [
         {
           "name": "2026-27 English Premier League",
@@ -1904,7 +1904,7 @@
         "endDate": "2027-07-01T03:59Z",
         "displayName": "2026-27 Italian Serie A"
       },
-      "updatedAt": "2026-10-03T20:19:04.336Z",
+      "updatedAt": "2026-10-03T20:24:44.475Z",
       "groups": [
         {
           "name": "2026-2027 Italian Serie A",
@@ -5300,7 +5300,7 @@
         "endDate": "2027-06-01T03:59Z",
         "displayName": "2026-27 Scottish Premiership"
       },
-      "updatedAt": "2026-10-03T20:19:04.431Z",
+      "updatedAt": "2026-10-03T20:24:44.592Z",
       "groups": [
         {
           "name": "2026-27 Scottish Premiership",
@@ -5524,7 +5524,7 @@
         "endDate": "2026-06-01T03:59Z",
         "displayName": "2025-26 Cypriot First Division"
       },
-      "updatedAt": "2026-10-03T20:19:04.540Z",
+      "updatedAt": "2026-10-03T20:24:44.640Z",
       "groups": [
         {
           "name": "Group Championship",
@@ -5787,7 +5787,7 @@
         "endDate": "2026-06-01T03:59Z",
         "displayName": "2025-26 Scottish League One"
       },
-      "updatedAt": "2026-10-03T20:19:04.578Z",
+      "updatedAt": "2026-10-03T20:24:44.682Z",
       "groups": [
         {
           "name": "2025-2026 Scottish Division Two",
@@ -6702,7 +6702,7 @@
         "endDate": "2027-06-01T03:59Z",
         "displayName": "2026-27 Spanish LALIGA"
       },
-      "updatedAt": "2026-10-03T20:19:04.264Z",
+      "updatedAt": "2026-10-03T20:24:44.391Z",
       "groups": [
         {
           "name": "2026-27 LALIGA",
@@ -9602,7 +9602,7 @@
         "endDate": "2027-06-01T03:59Z",
         "displayName": "2026-27 French Ligue 1"
       },
-      "updatedAt": "2026-10-03T20:19:04.382Z",
+      "updatedAt": "2026-10-03T20:24:44.514Z",
       "groups": [
         {
           "name": "French Ligue 1 2026-27",
@@ -11178,7 +11178,7 @@
         "endDate": "2027-07-01T03:59Z",
         "displayName": "2026-27 German Bundesliga"
       },
-      "updatedAt": "2026-10-03T20:19:04.302Z",
+      "updatedAt": "2026-10-03T20:24:44.439Z",
       "groups": [
         {
           "name": "2026-27 German Bundesliga",
@@ -11504,7 +11504,7 @@
     "openfootballWorld": 0,
     "openfoot": 31,
     "openfootLogosEnriched": 0,
-    "openfootLogoSearches": 0,
+    "openfootLogoSearches": 2,
     "total": 128,
     "theSportsDbEnriched": 1,
     "standingsRefreshed": 8,
@@ -13949,7 +13949,7 @@
             "intAway": "3"
           }
         ],
-        "updatedAt": "2026-10-03T20:19:12.020Z",
+        "updatedAt": "2026-10-03T20:24:56.945Z",
         "source": "primary provider + TheSportsDB enrichment",
         "theSportsDbEventId": "2583244"
       }
