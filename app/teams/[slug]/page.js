@@ -106,14 +106,50 @@ function MatchRow({ match }) {
     >
       <div className="mz-team-match-date">{formatDate(match?.fixture?.date)}</div>
 
-      <div className="mz-team-match-teams">
-        <span>{home?.name || "الفريق المضيف"}</span>
-        <strong>
+      <div
+        className="mz-team-match-teams"
+        style={{
+          display: "grid",
+          gridTemplateColumns: "minmax(0, 1fr) auto minmax(0, 1fr)",
+          alignItems: "center",
+          gap: "10px",
+        }}
+      >
+        <span style={{ display: "flex", alignItems: "center", justifyContent: "flex-start", gap: "8px", minWidth: 0 }}>
+          {home?.logo ? (
+            <img
+              src={home.logo}
+              alt=""
+              width="28"
+              height="28"
+              loading="lazy"
+              style={{ width: 28, height: 28, objectFit: "contain", flex: "0 0 28px" }}
+            />
+          ) : null}
+          <span style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
+            {home?.name || "الفريق المضيف"}
+          </span>
+        </span>
+        <strong style={{ whiteSpace: "nowrap" }}>
           {finished
             ? (match?.goals?.home ?? "—") + " : " + (match?.goals?.away ?? "—")
             : "— : —"}
         </strong>
-        <span>{away?.name || "الفريق الضيف"}</span>
+        <span style={{ display: "flex", alignItems: "center", justifyContent: "flex-end", gap: "8px", minWidth: 0 }}>
+          <span style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
+            {away?.name || "الفريق الضيف"}
+          </span>
+          {away?.logo ? (
+            <img
+              src={away.logo}
+              alt=""
+              width="28"
+              height="28"
+              loading="lazy"
+              style={{ width: 28, height: 28, objectFit: "contain", flex: "0 0 28px" }}
+            />
+          ) : null}
+        </span>
       </div>
 
       <span className="mz-team-match-status">
@@ -256,6 +292,11 @@ export default async function TeamDetailPage({ params, searchParams }) {
               <p>
                 {team.provider || "مزود البيانات"} · {team.providerId || team.id}
               </p>
+              {meta.updatedAt ? (
+                <p style={{ opacity: 0.7, fontSize: "0.82rem", marginTop: "6px" }}>
+                  آخر مزامنة للبيانات: {formatDate(meta.updatedAt)}
+                </p>
+              ) : null}
               {leagues.length > 0 ? (
                 <div className="mz-team-leagues">
                   {leagues.slice(0, 6).map((league) => (
