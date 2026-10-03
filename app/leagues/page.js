@@ -29,11 +29,9 @@ const CATALOG_LEAGUE_LOGOS = {
 };
 
 function leagueLogo(league) {
-  return (
-    league?.logo ||
-    CATALOG_LEAGUE_LOGOS[String(league?.id || "")] ||
-    null
-  );
+  // بعض مزودي البيانات يعيدون شعار الراعي بدل شعار البطولة.
+  // لذلك نستخدم فقط الشعارات الموثوقة والمحددة يدويًا في MatchZone.
+  return CATALOG_LEAGUE_LOGOS[String(league?.id || "")] || null;
 }
 
 export default async function LeaguesPage() {
