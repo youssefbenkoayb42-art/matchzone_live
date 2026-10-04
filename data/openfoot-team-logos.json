@@ -13,7 +13,8 @@
     "logo": null,
     "sourceTeamId": null,
     "sourceTeamName": null,
-    "updatedAt": "2026-10-01T20:12:48.281Z"
+    "sourceProvider": null,
+    "updatedAt": "2026-10-04T15:22:42.491Z"
   },
   "team_amal_tiznit_moro": {
     "name": "Amal Tiznit",
@@ -21,7 +22,8 @@
     "logo": null,
     "sourceTeamId": null,
     "sourceTeamName": null,
-    "updatedAt": "2026-10-01T20:12:50.579Z"
+    "sourceProvider": null,
+    "updatedAt": "2026-10-04T15:22:42.491Z"
   },
   "team_ir_tanger_moro": {
     "name": "IR Tanger",
@@ -29,7 +31,8 @@
     "logo": null,
     "sourceTeamId": null,
     "sourceTeamName": null,
-    "updatedAt": "2026-10-01T20:12:57.479Z"
+    "sourceProvider": null,
+    "updatedAt": "2026-10-04T15:22:42.491Z"
   },
   "team_union_touarga_sport_moro": {
     "name": "Union Touarga Sport",
@@ -37,7 +40,8 @@
     "logo": null,
     "sourceTeamId": null,
     "sourceTeamName": null,
-    "updatedAt": "2026-10-03T17:38:55.479Z"
+    "sourceProvider": null,
+    "updatedAt": "2026-10-04T15:22:42.491Z"
   },
   "team_fus_rabat_moro": {
     "name": "FUS Rabat",
@@ -45,7 +49,8 @@
     "logo": null,
     "sourceTeamId": null,
     "sourceTeamName": null,
-    "updatedAt": "2026-10-03T17:38:57.937Z"
+    "sourceProvider": null,
+    "updatedAt": "2026-10-04T15:22:42.491Z"
   },
   "team_difaa_hassani_el_jadidi_moro": {
     "name": "Difaâ Hassani El Jadidi",
@@ -53,7 +58,8 @@
     "logo": null,
     "sourceTeamId": null,
     "sourceTeamName": null,
-    "updatedAt": "2026-10-03T17:39:05.812Z"
+    "sourceProvider": null,
+    "updatedAt": "2026-10-04T15:22:42.491Z"
   },
   "team_codm_meknes_moro": {
     "name": "CODM de Meknès",
@@ -61,7 +67,8 @@
     "logo": null,
     "sourceTeamId": null,
     "sourceTeamName": null,
-    "updatedAt": "2026-10-03T17:39:13.223Z"
+    "sourceProvider": null,
+    "updatedAt": "2026-10-04T15:22:42.491Z"
   },
   "team_wydad_casablanca_moro": {
     "name": "Wydad Casablanca",
@@ -69,7 +76,8 @@
     "logo": null,
     "sourceTeamId": null,
     "sourceTeamName": null,
-    "updatedAt": "2026-10-03T17:39:15.692Z"
+    "sourceProvider": null,
+    "updatedAt": "2026-10-04T15:22:42.491Z"
   },
   "team_widad_temara_moro": {
     "name": "Widad Temara",
@@ -77,7 +85,8 @@
     "logo": null,
     "sourceTeamId": null,
     "sourceTeamName": null,
-    "updatedAt": "2026-10-03T17:39:18.068Z"
+    "sourceProvider": null,
+    "updatedAt": "2026-10-04T15:22:42.491Z"
   },
   "team_moghreb_tetouan_moro": {
     "name": "Moghreb Tétouan",
@@ -85,7 +94,8 @@
     "logo": null,
     "sourceTeamId": null,
     "sourceTeamName": null,
-    "updatedAt": "2026-10-01T20:13:22.767Z"
+    "sourceProvider": null,
+    "updatedAt": "2026-10-04T15:22:42.490Z"
   },
   "team_rs_berkane_moro": {
     "name": "RS Berkane",
@@ -93,7 +103,8 @@
     "logo": null,
     "sourceTeamId": null,
     "sourceTeamName": null,
-    "updatedAt": "2026-10-01T20:13:29.572Z"
+    "sourceProvider": null,
+    "updatedAt": "2026-10-04T15:22:42.490Z"
   },
   "team_maghreb_fez_moro": {
     "name": "Maghreb Fez",
@@ -101,7 +112,8 @@
     "logo": null,
     "sourceTeamId": null,
     "sourceTeamName": null,
-    "updatedAt": "2026-10-01T20:13:36.385Z"
+    "sourceProvider": null,
+    "updatedAt": "2026-10-04T15:22:42.491Z"
   },
   "team_rca_zemamra_moro": {
     "name": "RCA Zemamra",
@@ -109,7 +121,8 @@
     "logo": null,
     "sourceTeamId": null,
     "sourceTeamName": null,
-    "updatedAt": "2026-10-01T20:13:43.188Z"
+    "sourceProvider": null,
+    "updatedAt": "2026-10-04T15:22:42.491Z"
   },
   "team_kawkab_marrakech_moro": {
     "name": "Kawkab Marrakech",
@@ -117,7 +130,8 @@
     "logo": null,
     "sourceTeamId": null,
     "sourceTeamName": null,
-    "updatedAt": "2026-10-01T20:13:45.486Z"
+    "sourceProvider": null,
+    "updatedAt": "2026-10-04T15:22:42.491Z"
   },
   "team_hassania_agadir_moro": {
     "name": "Hassania Agadir",
@@ -125,7 +139,8 @@
     "logo": null,
     "sourceTeamId": null,
     "sourceTeamName": null,
-    "updatedAt": "2026-10-01T20:13:47.785Z"
+    "sourceProvider": null,
+    "updatedAt": "2026-10-04T15:22:42.491Z"
   },
   "team_js_kabylie_dz": {
     "name": "JS Kabylie",
@@ -134,7 +149,7 @@
     "sourceTeamId": null,
     "sourceTeamName": null,
     "sourceProvider": null,
-    "updatedAt": "2026-10-04T08:27:05.493Z"
+    "updatedAt": "2026-10-04T15:22:42.491Z"
   },
   "team_mc_alger_dz": {
     "name": "MC Alger",
@@ -143,7 +158,7 @@
     "sourceTeamId": null,
     "sourceTeamName": null,
     "sourceProvider": null,
-    "updatedAt": "2026-10-04T08:27:05.493Z"
+    "updatedAt": "2026-10-04T15:22:42.491Z"
   },
   "team_js_saoura_dz": {
     "name": "JS Saoura",
@@ -152,7 +167,7 @@
     "sourceTeamId": null,
     "sourceTeamName": null,
     "sourceProvider": null,
-    "updatedAt": "2026-10-04T08:27:05.493Z"
+    "updatedAt": "2026-10-04T15:22:42.491Z"
   },
   "team_usm_khenchela_dz": {
     "name": "USM Khenchela",
@@ -161,7 +176,7 @@
     "sourceTeamId": null,
     "sourceTeamName": null,
     "sourceProvider": null,
-    "updatedAt": "2026-10-04T08:27:05.494Z"
+    "updatedAt": "2026-10-04T15:22:42.491Z"
   },
   "team_cs_constantine_dz": {
     "name": "CS Constantine",
@@ -170,7 +185,7 @@
     "sourceTeamId": null,
     "sourceTeamName": null,
     "sourceProvider": null,
-    "updatedAt": "2026-10-04T08:27:05.494Z"
+    "updatedAt": "2026-10-04T15:22:42.491Z"
   },
   "team_biskra_dz": {
     "name": "US Biskra",
@@ -179,7 +194,7 @@
     "sourceTeamId": null,
     "sourceTeamName": null,
     "sourceProvider": null,
-    "updatedAt": "2026-10-04T08:27:05.494Z"
+    "updatedAt": "2026-10-04T15:22:42.491Z"
   },
   "team_es_ben_aknoun_dz": {
     "name": "ES Ben Aknoun",
@@ -188,7 +203,7 @@
     "sourceTeamId": null,
     "sourceTeamName": null,
     "sourceProvider": null,
-    "updatedAt": "2026-10-04T08:27:05.494Z"
+    "updatedAt": "2026-10-04T15:22:42.491Z"
   },
   "team_js_el_biar_dz": {
     "name": "JS El Biar",
@@ -197,7 +212,7 @@
     "sourceTeamId": null,
     "sourceTeamName": null,
     "sourceProvider": null,
-    "updatedAt": "2026-10-04T08:27:05.494Z"
+    "updatedAt": "2026-10-04T15:22:42.491Z"
   },
   "team_cr_belouizdad_dz": {
     "name": "CR Bélouizdad",
@@ -206,7 +221,7 @@
     "sourceTeamId": null,
     "sourceTeamName": null,
     "sourceProvider": null,
-    "updatedAt": "2026-10-04T08:27:05.494Z"
+    "updatedAt": "2026-10-04T15:22:42.491Z"
   },
   "team_olympique_akbou_dz": {
     "name": "Olympique Akbou",
@@ -215,7 +230,7 @@
     "sourceTeamId": null,
     "sourceTeamName": null,
     "sourceProvider": null,
-    "updatedAt": "2026-10-04T08:27:05.494Z"
+    "updatedAt": "2026-10-04T15:22:42.491Z"
   },
   "team_mb_rouissat_dz": {
     "name": "MB Rouissat",
@@ -224,7 +239,7 @@
     "sourceTeamId": null,
     "sourceTeamName": null,
     "sourceProvider": null,
-    "updatedAt": "2026-10-04T08:27:05.494Z"
+    "updatedAt": "2026-10-04T15:22:42.491Z"
   },
   "team_usm_alger_dz": {
     "name": "USM Alger",
@@ -233,7 +248,7 @@
     "sourceTeamId": null,
     "sourceTeamName": null,
     "sourceProvider": null,
-    "updatedAt": "2026-10-04T08:27:05.494Z"
+    "updatedAt": "2026-10-04T15:22:42.491Z"
   },
   "team_mc_oran_dz": {
     "name": "MC Oran",
@@ -242,7 +257,7 @@
     "sourceTeamId": null,
     "sourceTeamName": null,
     "sourceProvider": null,
-    "updatedAt": "2026-10-04T08:27:05.494Z"
+    "updatedAt": "2026-10-04T15:22:42.491Z"
   },
   "team_es_setif_dz": {
     "name": "ES Sétif",
@@ -251,7 +266,7 @@
     "sourceTeamId": null,
     "sourceTeamName": null,
     "sourceProvider": null,
-    "updatedAt": "2026-10-04T08:27:05.494Z"
+    "updatedAt": "2026-10-04T15:22:42.491Z"
   },
   "team_aso_chlef_dz": {
     "name": "ASO Chlef",
@@ -260,7 +275,7 @@
     "sourceTeamId": null,
     "sourceTeamName": null,
     "sourceProvider": null,
-    "updatedAt": "2026-10-04T08:27:05.494Z"
+    "updatedAt": "2026-10-04T15:22:42.491Z"
   },
   "team_cr_temouchent_dz": {
     "name": "CR Temouchent",
@@ -269,6 +284,6 @@
     "sourceTeamId": null,
     "sourceTeamName": null,
     "sourceProvider": null,
-    "updatedAt": "2026-10-04T08:27:05.494Z"
+    "updatedAt": "2026-10-04T15:22:42.491Z"
   }
 }
