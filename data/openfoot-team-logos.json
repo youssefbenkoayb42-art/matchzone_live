@@ -133,7 +133,8 @@
     "logo": null,
     "sourceTeamId": null,
     "sourceTeamName": null,
-    "updatedAt": "2026-10-03T17:39:20.492Z"
+    "sourceProvider": null,
+    "updatedAt": "2026-10-04T00:37:34.077Z"
   },
   "team_mc_alger_dz": {
     "name": "MC Alger",
@@ -141,7 +142,8 @@
     "logo": null,
     "sourceTeamId": null,
     "sourceTeamName": null,
-    "updatedAt": "2026-10-03T17:39:23.070Z"
+    "sourceProvider": null,
+    "updatedAt": "2026-10-04T00:37:34.077Z"
   },
   "team_js_saoura_dz": {
     "name": "JS Saoura",
@@ -149,7 +151,8 @@
     "logo": null,
     "sourceTeamId": null,
     "sourceTeamName": null,
-    "updatedAt": "2026-10-03T17:39:25.680Z"
+    "sourceProvider": null,
+    "updatedAt": "2026-10-04T00:37:34.077Z"
   },
   "team_usm_khenchela_dz": {
     "name": "USM Khenchela",
@@ -157,7 +160,8 @@
     "logo": null,
     "sourceTeamId": null,
     "sourceTeamName": null,
-    "updatedAt": "2026-10-03T17:39:28.213Z"
+    "sourceProvider": null,
+    "updatedAt": "2026-10-04T00:37:34.077Z"
   },
   "team_cs_constantine_dz": {
     "name": "CS Constantine",
@@ -165,7 +169,8 @@
     "logo": null,
     "sourceTeamId": null,
     "sourceTeamName": null,
-    "updatedAt": "2026-10-03T17:39:30.593Z"
+    "sourceProvider": null,
+    "updatedAt": "2026-10-04T00:37:34.077Z"
   },
   "team_biskra_dz": {
     "name": "US Biskra",
@@ -173,7 +178,8 @@
     "logo": null,
     "sourceTeamId": null,
     "sourceTeamName": null,
-    "updatedAt": "2026-10-03T17:39:32.989Z"
+    "sourceProvider": null,
+    "updatedAt": "2026-10-04T00:37:34.077Z"
   },
   "team_es_ben_aknoun_dz": {
     "name": "ES Ben Aknoun",
@@ -181,7 +187,8 @@
     "logo": null,
     "sourceTeamId": null,
     "sourceTeamName": null,
-    "updatedAt": "2026-10-03T17:39:35.555Z"
+    "sourceProvider": null,
+    "updatedAt": "2026-10-04T00:37:34.077Z"
   },
   "team_js_el_biar_dz": {
     "name": "JS El Biar",
@@ -189,7 +196,8 @@
     "logo": null,
     "sourceTeamId": null,
     "sourceTeamName": null,
-    "updatedAt": "2026-10-03T17:39:38.143Z"
+    "sourceProvider": null,
+    "updatedAt": "2026-10-04T00:37:34.077Z"
   },
   "team_cr_belouizdad_dz": {
     "name": "CR Bélouizdad",
@@ -197,7 +205,8 @@
     "logo": null,
     "sourceTeamId": null,
     "sourceTeamName": null,
-    "updatedAt": "2026-10-03T17:39:45.208Z"
+    "sourceProvider": null,
+    "updatedAt": "2026-10-04T00:37:34.077Z"
   },
   "team_olympique_akbou_dz": {
     "name": "Olympique Akbou",
@@ -205,7 +214,8 @@
     "logo": null,
     "sourceTeamId": null,
     "sourceTeamName": null,
-    "updatedAt": "2026-10-03T17:39:47.588Z"
+    "sourceProvider": null,
+    "updatedAt": "2026-10-04T00:37:34.077Z"
   },
   "team_mb_rouissat_dz": {
     "name": "MB Rouissat",
@@ -213,7 +223,8 @@
     "logo": null,
     "sourceTeamId": null,
     "sourceTeamName": null,
-    "updatedAt": "2026-10-03T17:39:50.079Z"
+    "sourceProvider": null,
+    "updatedAt": "2026-10-04T00:37:34.077Z"
   },
   "team_usm_alger_dz": {
     "name": "USM Alger",
@@ -221,7 +232,8 @@
     "logo": null,
     "sourceTeamId": null,
     "sourceTeamName": null,
-    "updatedAt": "2026-10-03T17:39:52.455Z"
+    "sourceProvider": null,
+    "updatedAt": "2026-10-04T00:37:34.077Z"
   },
   "team_mc_oran_dz": {
     "name": "MC Oran",
@@ -229,7 +241,8 @@
     "logo": null,
     "sourceTeamId": null,
     "sourceTeamName": null,
-    "updatedAt": "2026-10-03T17:39:54.930Z"
+    "sourceProvider": null,
+    "updatedAt": "2026-10-04T00:37:34.077Z"
   },
   "team_es_setif_dz": {
     "name": "ES Sétif",
@@ -237,7 +250,8 @@
     "logo": null,
     "sourceTeamId": null,
     "sourceTeamName": null,
-    "updatedAt": "2026-10-03T17:40:02.923Z"
+    "sourceProvider": null,
+    "updatedAt": "2026-10-04T00:37:34.077Z"
   },
   "team_aso_chlef_dz": {
     "name": "ASO Chlef",
@@ -245,7 +259,8 @@
     "logo": null,
     "sourceTeamId": null,
     "sourceTeamName": null,
-    "updatedAt": "2026-10-03T17:40:05.318Z"
+    "sourceProvider": null,
+    "updatedAt": "2026-10-04T00:37:34.077Z"
   },
   "team_cr_temouchent_dz": {
     "name": "CR Temouchent",
@@ -253,6 +268,7 @@
     "logo": null,
     "sourceTeamId": null,
     "sourceTeamName": null,
-    "updatedAt": "2026-10-03T17:40:12.615Z"
+    "sourceProvider": null,
+    "updatedAt": "2026-10-04T00:37:34.077Z"
   }
 }
