@@ -1,10 +1,10 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-10-07T12:12:58.576Z",
+  "updatedAt": "2026-10-07T12:21:43.560Z",
   "source": "football-data.org + ESPN + OpenFootball + TheSportsDB enrichment",
   "coverageWindow": {
-    "from": "2026-10-05T12:12:10.543Z",
-    "to": "2026-10-07T12:12:10.543Z"
+    "from": "2026-10-05T12:18:55.078Z",
+    "to": "2026-10-07T12:18:55.078Z"
   },
   "sourcePolicy": {
     "primary": "football-data.org",
@@ -35,7 +35,7 @@
         "endDate": "2027-06-01T03:59Z",
         "displayName": "2026-27 English Premier League"
       },
-      "updatedAt": "2026-10-07T12:12:38.945Z",
+      "updatedAt": "2026-10-07T12:19:13.632Z",
       "groups": [
         {
           "name": "2026-27 English Premier League",
@@ -1904,7 +1904,7 @@
         "endDate": "2027-07-01T03:59Z",
         "displayName": "2026-27 Italian Serie A"
       },
-      "updatedAt": "2026-10-07T12:12:39.116Z",
+      "updatedAt": "2026-10-07T12:19:13.763Z",
       "groups": [
         {
           "name": "2026-2027 Italian Serie A",
@@ -6702,7 +6702,7 @@
         "endDate": "2027-06-01T03:59Z",
         "displayName": "2026-27 Spanish LALIGA"
       },
-      "updatedAt": "2026-10-07T12:12:38.986Z",
+      "updatedAt": "2026-10-07T12:19:13.679Z",
       "groups": [
         {
           "name": "2026-27 LALIGA",
@@ -8025,7 +8025,7 @@
         "endDate": "2027-06-01T03:59Z",
         "displayName": "2026-27 Dutch Eredivisie"
       },
-      "updatedAt": "2026-10-07T12:12:39.251Z",
+      "updatedAt": "2026-10-07T12:19:13.901Z",
       "groups": [
         {
           "name": "2026-2027 Dutch Eredivisie",
@@ -8351,7 +8351,7 @@
         "endDate": "2026-12-01T04:59Z",
         "displayName": "2026 Swedish Allsvenskan"
       },
-      "updatedAt": "2026-10-07T12:12:39.298Z",
+      "updatedAt": "2026-10-07T12:19:13.944Z",
       "groups": [
         {
           "name": "2026 Swedish Allsvenskan",
@@ -8643,7 +8643,7 @@
         "endDate": "2027-07-01T03:59Z",
         "displayName": "2026-27 Italian Serie B"
       },
-      "updatedAt": "2026-10-07T12:12:39.338Z",
+      "updatedAt": "2026-10-07T12:19:13.999Z",
       "groups": [
         {
           "name": "2026-2027 Italian Serie B",
@@ -9003,7 +9003,7 @@
         "endDate": "2027-01-01T04:59Z",
         "displayName": "2026 CONMEBOL Libertadores"
       },
-      "updatedAt": "2026-10-07T12:12:39.396Z",
+      "updatedAt": "2026-10-07T12:19:14.045Z",
       "groups": [
         {
           "name": "Group A",
@@ -9602,7 +9602,7 @@
         "endDate": "2027-06-01T03:59Z",
         "displayName": "2026-27 French Ligue 1"
       },
-      "updatedAt": "2026-10-07T12:12:39.202Z",
+      "updatedAt": "2026-10-07T12:19:13.864Z",
       "groups": [
         {
           "name": "French Ligue 1 2026-27",
@@ -11178,7 +11178,7 @@
         "endDate": "2027-07-01T03:59Z",
         "displayName": "2026-27 German Bundesliga"
       },
-      "updatedAt": "2026-10-07T12:12:39.057Z",
+      "updatedAt": "2026-10-07T12:19:13.719Z",
       "groups": [
         {
           "name": "2026-27 German Bundesliga",
@@ -14399,9 +14399,9 @@
     "openfootballWorld": 0,
     "openfoot": 28,
     "openfootLogosEnriched": 0,
-    "openfootLogoSearches": 1,
+    "openfootLogoSearches": 30,
     "total": 257,
-    "theSportsDbEnriched": 3,
+    "theSportsDbEnriched": 0,
     "standingsRefreshed": 9,
     "standingsRotationGroup": 6,
     "standingsLeagues": 38
@@ -16607,167 +16607,13 @@
       "externalId": "401881346",
       "externalIds": {
         "espn": "401881346",
-        "espn-league": "eng.4",
-        "thesportsdb": "2500244"
+        "espn-league": "eng.4"
       },
       "details": {
-        "events": [
-          {
-            "idTimeline": "1913316",
-            "idEvent": "2500244",
-            "strTimeline": "Goal",
-            "strTimelineDetail": "Normal Goal",
-            "strHome": "Yes",
-            "strEvent": "Chesterfield vs Tranmere Rovers",
-            "idAPIfootball": "1563781",
-            "idPlayer": "34216368",
-            "strPlayer": "Dilan Markanday",
-            "strCutout": "https://r2.thesportsdb.com/images/media/player/cutout/7eixo51694617549.png",
-            "idAssist": "34195893",
-            "strAssist": "Remeao Andrew Hutton",
-            "intTime": "15",
-            "strPeriod": null,
-            "idTeam": "134366",
-            "strTeam": "Chesterfield",
-            "strComment": "NULL",
-            "dateEvent": "2026-10-03",
-            "strSeason": "2026-2027"
-          },
-          {
-            "idTimeline": "1913317",
-            "idEvent": "2500244",
-            "strTimeline": "Card",
-            "strTimelineDetail": "Yellow Card",
-            "strHome": "No",
-            "strEvent": "Chesterfield vs Tranmere Rovers",
-            "idAPIfootball": "1563781",
-            "idPlayer": "34158943",
-            "strPlayer": "Tom Conlon",
-            "strCutout": "",
-            "idAssist": "0",
-            "strAssist": "",
-            "intTime": "18",
-            "strPeriod": null,
-            "idTeam": "134267",
-            "strTeam": "Tranmere Rovers",
-            "strComment": "Foul",
-            "dateEvent": "2026-10-03",
-            "strSeason": "2026-2027"
-          },
-          {
-            "idTimeline": "1913318",
-            "idEvent": "2500244",
-            "strTimeline": "Card",
-            "strTimelineDetail": "Yellow Card",
-            "strHome": "Yes",
-            "strEvent": "Chesterfield vs Tranmere Rovers",
-            "idAPIfootball": "1563781",
-            "idPlayer": "34248326",
-            "strPlayer": "Lee Bonis",
-            "strCutout": "",
-            "idAssist": "0",
-            "strAssist": "",
-            "intTime": "21",
-            "strPeriod": null,
-            "idTeam": "134366",
-            "strTeam": "Chesterfield",
-            "strComment": "Foul",
-            "dateEvent": "2026-10-03",
-            "strSeason": "2026-2027"
-          },
-          {
-            "idTimeline": "1913319",
-            "idEvent": "2500244",
-            "strTimeline": "subst",
-            "strTimelineDetail": "Substitution 1",
-            "strHome": "No",
-            "strEvent": "Chesterfield vs Tranmere Rovers",
-            "idAPIfootball": "1563781",
-            "idPlayer": "34298873",
-            "strPlayer": "Zane Okoro",
-            "strCutout": "",
-            "idAssist": "34436449",
-            "strAssist": "Dylan Jones",
-            "intTime": "34",
-            "strPeriod": null,
-            "idTeam": "134267",
-            "strTeam": "Tranmere Rovers",
-            "strComment": "NULL",
-            "dateEvent": "2026-10-03",
-            "strSeason": "2026-2027"
-          },
-          {
-            "idTimeline": "1913320",
-            "idEvent": "2500244",
-            "strTimeline": "Card",
-            "strTimelineDetail": "Yellow Card",
-            "strHome": "No",
-            "strEvent": "Chesterfield vs Tranmere Rovers",
-            "idAPIfootball": "1563781",
-            "idPlayer": "34159018",
-            "strPlayer": "Joe Ironside",
-            "strCutout": "",
-            "idAssist": "0",
-            "strAssist": "",
-            "intTime": "41",
-            "strPeriod": null,
-            "idTeam": "134267",
-            "strTeam": "Tranmere Rovers",
-            "strComment": "Foul",
-            "dateEvent": "2026-10-03",
-            "strSeason": "2026-2027"
-          }
-        ],
-        "statistics": [
-          {
-            "idStatistic": "725150",
-            "idEvent": "2500244",
-            "idApiFootball": "1563781",
-            "strEvent": "Chesterfield vs Tranmere Rovers",
-            "strStat": "Passes accurate",
-            "intHome": "437",
-            "intAway": "181"
-          },
-          {
-            "idStatistic": "725151",
-            "idEvent": "2500244",
-            "idApiFootball": "1563781",
-            "strEvent": "Chesterfield vs Tranmere Rovers",
-            "strStat": "Shots insidebox",
-            "intHome": "18",
-            "intAway": "3"
-          },
-          {
-            "idStatistic": "725152",
-            "idEvent": "2500244",
-            "idApiFootball": "1563781",
-            "strEvent": "Chesterfield vs Tranmere Rovers",
-            "strStat": "Shots outsidebox",
-            "intHome": "8",
-            "intAway": "3"
-          },
-          {
-            "idStatistic": "725153",
-            "idEvent": "2500244",
-            "idApiFootball": "1563781",
-            "strEvent": "Chesterfield vs Tranmere Rovers",
-            "strStat": "Blocked Shots",
-            "intHome": "7",
-            "intAway": "2"
-          },
-          {
-            "idStatistic": "725154",
-            "idEvent": "2500244",
-            "idApiFootball": "1563781",
-            "strEvent": "Chesterfield vs Tranmere Rovers",
-            "strStat": "Free Kicks",
-            "intHome": "13",
-            "intAway": "10"
-          }
-        ],
-        "updatedAt": "2026-10-07T12:12:44.470Z",
-        "source": "primary provider + TheSportsDB enrichment",
-        "theSportsDbEventId": "2500244"
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
       }
     },
     {
@@ -16817,121 +16663,13 @@
       "externalId": "401883196",
       "externalIds": {
         "espn": "401883196",
-        "espn-league": "esp.2",
-        "thesportsdb": "2505787"
+        "espn-league": "esp.2"
       },
       "details": {
-        "events": [
-          {
-            "idTimeline": "1912670",
-            "idEvent": "2505787",
-            "strTimeline": "Goal",
-            "strTimelineDetail": "Normal Goal",
-            "strHome": "Yes",
-            "strEvent": "Albacete vs Eibar",
-            "idAPIfootball": "1569948",
-            "idPlayer": "34175097",
-            "strPlayer": "Roberto Bayón",
-            "strCutout": "https://r2.thesportsdb.com/images/media/player/cutout/i8o6251787141220.png",
-            "idAssist": "0",
-            "strAssist": "",
-            "intTime": "3",
-            "strPeriod": null,
-            "idTeam": "134232",
-            "strTeam": "Albacete",
-            "strComment": "NULL",
-            "dateEvent": "2026-10-03",
-            "strSeason": "2026-2027"
-          },
-          {
-            "idTimeline": "1912671",
-            "idEvent": "2505787",
-            "strTimeline": "Goal",
-            "strTimelineDetail": "Normal Goal",
-            "strHome": "No",
-            "strEvent": "Albacete vs Eibar",
-            "idAPIfootball": "1569948",
-            "idPlayer": "34258237",
-            "strPlayer": "Ander Madariaga",
-            "strCutout": "",
-            "idAssist": "0",
-            "strAssist": "",
-            "intTime": "48",
-            "strPeriod": null,
-            "idTeam": "134626",
-            "strTeam": "Eibar",
-            "strComment": "NULL",
-            "dateEvent": "2026-10-03",
-            "strSeason": "2026-2027"
-          },
-          {
-            "idTimeline": "1912672",
-            "idEvent": "2505787",
-            "strTimeline": "Card",
-            "strTimelineDetail": "Yellow Card",
-            "strHome": "Yes",
-            "strEvent": "Albacete vs Eibar",
-            "idAPIfootball": "1569948",
-            "idPlayer": "34175289",
-            "strPlayer": "Lluís López",
-            "strCutout": "https://r2.thesportsdb.com/images/media/player/cutout/bzwpcq1787140656.png",
-            "idAssist": "0",
-            "strAssist": "",
-            "intTime": "51",
-            "strPeriod": null,
-            "idTeam": "134232",
-            "strTeam": "Albacete",
-            "strComment": "Foul",
-            "dateEvent": "2026-10-03",
-            "strSeason": "2026-2027"
-          },
-          {
-            "idTimeline": "1912673",
-            "idEvent": "2505787",
-            "strTimeline": "subst",
-            "strTimelineDetail": "Substitution 1",
-            "strHome": "No",
-            "strEvent": "Albacete vs Eibar",
-            "idAPIfootball": "1569948",
-            "idPlayer": "34195204",
-            "strPlayer": "Iván Gil",
-            "strCutout": "https://r2.thesportsdb.com/images/media/player/cutout/glfal41724171596.png",
-            "idAssist": "34202564",
-            "strAssist": "Jon Magunazelaia",
-            "intTime": "59",
-            "strPeriod": null,
-            "idTeam": "134626",
-            "strTeam": "Eibar",
-            "strComment": "NULL",
-            "dateEvent": "2026-10-03",
-            "strSeason": "2026-2027"
-          },
-          {
-            "idTimeline": "1912674",
-            "idEvent": "2505787",
-            "strTimeline": "Goal",
-            "strTimelineDetail": "Own Goal",
-            "strHome": "No",
-            "strEvent": "Albacete vs Eibar",
-            "idAPIfootball": "1569948",
-            "idPlayer": "34175289",
-            "strPlayer": "Lluís López",
-            "strCutout": "https://r2.thesportsdb.com/images/media/player/cutout/bzwpcq1787140656.png",
-            "idAssist": "0",
-            "strAssist": "",
-            "intTime": "66",
-            "strPeriod": null,
-            "idTeam": "134626",
-            "strTeam": "Eibar",
-            "strComment": "NULL",
-            "dateEvent": "2026-10-03",
-            "strSeason": "2026-2027"
-          }
-        ],
+        "events": [],
         "statistics": [],
-        "updatedAt": "2026-10-07T12:12:46.853Z",
-        "source": "primary provider + TheSportsDB enrichment",
-        "theSportsDbEventId": "2505787"
+        "updatedAt": null,
+        "source": "espn"
       }
     },
     {
@@ -17149,167 +16887,13 @@
       "externalId": "401880822",
       "externalIds": {
         "espn": "401880822",
-        "espn-league": "eng.3",
-        "thesportsdb": "2500797"
+        "espn-league": "eng.3"
       },
       "details": {
-        "events": [
-          {
-            "idTimeline": "1913278",
-            "idEvent": "2500797",
-            "strTimeline": "Card",
-            "strTimelineDetail": "Yellow Card",
-            "strHome": "No",
-            "strEvent": "Burton Albion vs Huddersfield Town",
-            "idAPIfootball": "1564335",
-            "idPlayer": "34148903",
-            "strPlayer": "Murray Wallace",
-            "strCutout": "https://r2.thesportsdb.com/images/media/player/cutout/a7rb1k1766144666.png",
-            "idAssist": "0",
-            "strAssist": "",
-            "intTime": "6",
-            "strPeriod": null,
-            "idTeam": "133932",
-            "strTeam": "Huddersfield Town",
-            "strComment": "Time Wasting",
-            "dateEvent": "2026-10-03",
-            "strSeason": "2026-2027"
-          },
-          {
-            "idTimeline": "1913279",
-            "idEvent": "2500797",
-            "strTimeline": "Goal",
-            "strTimelineDetail": "Normal Goal",
-            "strHome": "No",
-            "strEvent": "Burton Albion vs Huddersfield Town",
-            "idAPIfootball": "1564335",
-            "idPlayer": "34220686",
-            "strPlayer": "Derensili Sanches Fernandes",
-            "strCutout": "https://r2.thesportsdb.com/images/media/player/cutout/2kr19y1759575340.png",
-            "idAssist": "0",
-            "strAssist": "",
-            "intTime": "22",
-            "strPeriod": null,
-            "idTeam": "133932",
-            "strTeam": "Huddersfield Town",
-            "strComment": "NULL",
-            "dateEvent": "2026-10-03",
-            "strSeason": "2026-2027"
-          },
-          {
-            "idTimeline": "1913280",
-            "idEvent": "2500797",
-            "strTimeline": "Goal",
-            "strTimelineDetail": "Normal Goal",
-            "strHome": "Yes",
-            "strEvent": "Burton Albion vs Huddersfield Town",
-            "idAPIfootball": "1564335",
-            "idPlayer": "34294025",
-            "strPlayer": "Finn Delap",
-            "strCutout": "https://r2.thesportsdb.com/images/media/player/cutout/fqgrhw1791038849.png",
-            "idAssist": "0",
-            "strAssist": "",
-            "intTime": "33",
-            "strPeriod": null,
-            "idTeam": "134376",
-            "strTeam": "Burton Albion",
-            "strComment": "NULL",
-            "dateEvent": "2026-10-03",
-            "strSeason": "2026-2027"
-          },
-          {
-            "idTimeline": "1913281",
-            "idEvent": "2500797",
-            "strTimeline": "Goal",
-            "strTimelineDetail": "Normal Goal",
-            "strHome": "No",
-            "strEvent": "Burton Albion vs Huddersfield Town",
-            "idAPIfootball": "1564335",
-            "idPlayer": "34178576",
-            "strPlayer": "Bali Mumba",
-            "strCutout": "https://r2.thesportsdb.com/images/media/player/cutout/xnyl5q1755674929.png",
-            "idAssist": "34220686",
-            "strAssist": "Derensili Sanches Fernandes",
-            "intTime": "39",
-            "strPeriod": null,
-            "idTeam": "133932",
-            "strTeam": "Huddersfield Town",
-            "strComment": "NULL",
-            "dateEvent": "2026-10-03",
-            "strSeason": "2026-2027"
-          },
-          {
-            "idTimeline": "1913282",
-            "idEvent": "2500797",
-            "strTimeline": "subst",
-            "strTimelineDetail": "Substitution 1",
-            "strHome": "Yes",
-            "strEvent": "Burton Albion vs Huddersfield Town",
-            "idAPIfootball": "1564335",
-            "idPlayer": "34178576",
-            "strPlayer": "Bali Mumba",
-            "strCutout": "https://r2.thesportsdb.com/images/media/player/cutout/xnyl5q1755674929.png",
-            "idAssist": "34222299",
-            "strAssist": "Matthew Dennis",
-            "intTime": "45",
-            "strPeriod": null,
-            "idTeam": "134376",
-            "strTeam": "Burton Albion",
-            "strComment": "NULL",
-            "dateEvent": "2026-10-03",
-            "strSeason": "2026-2027"
-          }
-        ],
-        "statistics": [
-          {
-            "idStatistic": "725102",
-            "idEvent": "2500797",
-            "idApiFootball": "1564335",
-            "strEvent": "Burton Albion vs Huddersfield Town",
-            "strStat": "Passes accurate",
-            "intHome": "403",
-            "intAway": "264"
-          },
-          {
-            "idStatistic": "725103",
-            "idEvent": "2500797",
-            "idApiFootball": "1564335",
-            "strEvent": "Burton Albion vs Huddersfield Town",
-            "strStat": "Shots insidebox",
-            "intHome": "1",
-            "intAway": "11"
-          },
-          {
-            "idStatistic": "725104",
-            "idEvent": "2500797",
-            "idApiFootball": "1564335",
-            "strEvent": "Burton Albion vs Huddersfield Town",
-            "strStat": "Shots outsidebox",
-            "intHome": "3",
-            "intAway": "2"
-          },
-          {
-            "idStatistic": "725105",
-            "idEvent": "2500797",
-            "idApiFootball": "1564335",
-            "strEvent": "Burton Albion vs Huddersfield Town",
-            "strStat": "Free Kicks",
-            "intHome": "12",
-            "intAway": "7"
-          },
-          {
-            "idStatistic": "725106",
-            "idEvent": "2500797",
-            "idApiFootball": "1564335",
-            "strEvent": "Burton Albion vs Huddersfield Town",
-            "strStat": "Shots on Goal",
-            "intHome": "2",
-            "intAway": "8"
-          }
-        ],
-        "updatedAt": "2026-10-07T12:12:56.375Z",
-        "source": "primary provider + TheSportsDB enrichment",
-        "theSportsDbEventId": "2500797"
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "espn"
       }
     },
     {
