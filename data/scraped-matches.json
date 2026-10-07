@@ -1,10 +1,10 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-10-07T12:03:17.541Z",
+  "updatedAt": "2026-10-07T12:12:58.576Z",
   "source": "football-data.org + ESPN + OpenFootball + TheSportsDB enrichment",
   "coverageWindow": {
-    "from": "2026-10-05T12:02:37.842Z",
-    "to": "2026-10-07T12:02:37.842Z"
+    "from": "2026-10-05T12:12:10.543Z",
+    "to": "2026-10-07T12:12:10.543Z"
   },
   "sourcePolicy": {
     "primary": "football-data.org",
@@ -35,7 +35,7 @@
         "endDate": "2027-06-01T03:59Z",
         "displayName": "2026-27 English Premier League"
       },
-      "updatedAt": "2026-10-07T12:02:57.917Z",
+      "updatedAt": "2026-10-07T12:12:38.945Z",
       "groups": [
         {
           "name": "2026-27 English Premier League",
@@ -1904,7 +1904,7 @@
         "endDate": "2027-07-01T03:59Z",
         "displayName": "2026-27 Italian Serie A"
       },
-      "updatedAt": "2026-10-07T12:02:58.036Z",
+      "updatedAt": "2026-10-07T12:12:39.116Z",
       "groups": [
         {
           "name": "2026-2027 Italian Serie A",
@@ -6702,7 +6702,7 @@
         "endDate": "2027-06-01T03:59Z",
         "displayName": "2026-27 Spanish LALIGA"
       },
-      "updatedAt": "2026-10-07T12:02:57.947Z",
+      "updatedAt": "2026-10-07T12:12:38.986Z",
       "groups": [
         {
           "name": "2026-27 LALIGA",
@@ -8025,7 +8025,7 @@
         "endDate": "2027-06-01T03:59Z",
         "displayName": "2026-27 Dutch Eredivisie"
       },
-      "updatedAt": "2026-10-07T12:02:58.150Z",
+      "updatedAt": "2026-10-07T12:12:39.251Z",
       "groups": [
         {
           "name": "2026-2027 Dutch Eredivisie",
@@ -8351,7 +8351,7 @@
         "endDate": "2026-12-01T04:59Z",
         "displayName": "2026 Swedish Allsvenskan"
       },
-      "updatedAt": "2026-10-07T12:02:58.245Z",
+      "updatedAt": "2026-10-07T12:12:39.298Z",
       "groups": [
         {
           "name": "2026 Swedish Allsvenskan",
@@ -8643,7 +8643,7 @@
         "endDate": "2027-07-01T03:59Z",
         "displayName": "2026-27 Italian Serie B"
       },
-      "updatedAt": "2026-10-07T12:02:58.352Z",
+      "updatedAt": "2026-10-07T12:12:39.338Z",
       "groups": [
         {
           "name": "2026-2027 Italian Serie B",
@@ -9003,7 +9003,7 @@
         "endDate": "2027-01-01T04:59Z",
         "displayName": "2026 CONMEBOL Libertadores"
       },
-      "updatedAt": "2026-10-07T12:02:58.405Z",
+      "updatedAt": "2026-10-07T12:12:39.396Z",
       "groups": [
         {
           "name": "Group A",
@@ -9602,7 +9602,7 @@
         "endDate": "2027-06-01T03:59Z",
         "displayName": "2026-27 French Ligue 1"
       },
-      "updatedAt": "2026-10-07T12:02:58.090Z",
+      "updatedAt": "2026-10-07T12:12:39.202Z",
       "groups": [
         {
           "name": "French Ligue 1 2026-27",
@@ -11178,7 +11178,7 @@
         "endDate": "2027-07-01T03:59Z",
         "displayName": "2026-27 German Bundesliga"
       },
-      "updatedAt": "2026-10-07T12:02:57.983Z",
+      "updatedAt": "2026-10-07T12:12:39.057Z",
       "groups": [
         {
           "name": "2026-27 German Bundesliga",
@@ -14409,6 +14409,1876 @@
   "matchCount": 257,
   "leagues": [
     {
+      "id": "openfootball-world:north-america-major-league-soccer-2005-mls",
+      "name": "2005_mls",
+      "region": "أمريكا الشمالية",
+      "season": "2005",
+      "source": "openfootball-world",
+      "file": "north-america/major-league-soccer/2005_mls.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-major-league-soccer-2006-mls",
+      "name": "2006_mls",
+      "region": "أمريكا الشمالية",
+      "season": "2006",
+      "source": "openfootball-world",
+      "file": "north-america/major-league-soccer/2006_mls.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-major-league-soccer-2007-mls",
+      "name": "2007_mls",
+      "region": "أمريكا الشمالية",
+      "season": "2007",
+      "source": "openfootball-world",
+      "file": "north-america/major-league-soccer/2007_mls.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-major-league-soccer-2008-mls",
+      "name": "2008_mls",
+      "region": "أمريكا الشمالية",
+      "season": "2008",
+      "source": "openfootball-world",
+      "file": "north-america/major-league-soccer/2008_mls.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-major-league-soccer-2009-mls",
+      "name": "2009_mls",
+      "region": "أمريكا الشمالية",
+      "season": "2009",
+      "source": "openfootball-world",
+      "file": "north-america/major-league-soccer/2009_mls.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-nigeria-2009-10-ng1",
+      "name": "2009-10_ng1",
+      "region": "أفريقيا",
+      "season": "2009-10",
+      "source": "openfootball-world",
+      "file": "africa/nigeria/2009-10_ng1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-major-league-soccer-2010-mls",
+      "name": "2010_mls",
+      "region": "أمريكا الشمالية",
+      "season": "2010",
+      "source": "openfootball-world",
+      "file": "north-america/major-league-soccer/2010_mls.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-champions-league-2010-11-concacafcl",
+      "name": "2010-11_concacafcl",
+      "region": "أمريكا الشمالية",
+      "season": "2010-11",
+      "source": "openfootball-world",
+      "file": "north-america/champions-league/2010-11_concacafcl.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-mexico-2010-11-mx1",
+      "name": "2010-11_mx1",
+      "region": "أمريكا الشمالية",
+      "season": "2010-11",
+      "source": "openfootball-world",
+      "file": "north-america/mexico/2010-11_mx1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-mexico-2010-11-mx2ascenso",
+      "name": "2010-11_mx2ascenso",
+      "region": "أمريكا الشمالية",
+      "season": "2010-11",
+      "source": "openfootball-world",
+      "file": "north-america/mexico/2010-11_mx2ascenso.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-nigeria-2010-11-ng1",
+      "name": "2010-11_ng1",
+      "region": "أفريقيا",
+      "season": "2010-11",
+      "source": "openfootball-world",
+      "file": "africa/nigeria/2010-11_ng1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-major-league-soccer-2011-mls",
+      "name": "2011_mls",
+      "region": "أمريكا الشمالية",
+      "season": "2011",
+      "source": "openfootball-world",
+      "file": "north-america/major-league-soccer/2011_mls.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-champions-league-2011-12-concacafcl",
+      "name": "2011-12_concacafcl",
+      "region": "أمريكا الشمالية",
+      "season": "2011-12",
+      "source": "openfootball-world",
+      "file": "north-america/champions-league/2011-12_concacafcl.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-mexico-2011-12-mx1",
+      "name": "2011-12_mx1",
+      "region": "أمريكا الشمالية",
+      "season": "2011-12",
+      "source": "openfootball-world",
+      "file": "north-america/mexico/2011-12_mx1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-mexico-2011-12-mx2ascenso",
+      "name": "2011-12_mx2ascenso",
+      "region": "أمريكا الشمالية",
+      "season": "2011-12",
+      "source": "openfootball-world",
+      "file": "north-america/mexico/2011-12_mx2ascenso.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-nigeria-2011-12-ng1",
+      "name": "2011-12_ng1",
+      "region": "أفريقيا",
+      "season": "2011-12",
+      "source": "openfootball-world",
+      "file": "africa/nigeria/2011-12_ng1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-major-league-soccer-2012-mls",
+      "name": "2012_mls",
+      "region": "أمريكا الشمالية",
+      "season": "2012",
+      "source": "openfootball-world",
+      "file": "north-america/major-league-soccer/2012_mls.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-champions-league-2012-13-concacafcl",
+      "name": "2012-13_concacafcl",
+      "region": "أمريكا الشمالية",
+      "season": "2012-13",
+      "source": "openfootball-world",
+      "file": "north-america/champions-league/2012-13_concacafcl.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-mexico-2012-13-mx1",
+      "name": "2012-13_mx1",
+      "region": "أمريكا الشمالية",
+      "season": "2012-13",
+      "source": "openfootball-world",
+      "file": "north-america/mexico/2012-13_mx1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-mexico-2012-13-mx2ascenso",
+      "name": "2012-13_mx2ascenso",
+      "region": "أمريكا الشمالية",
+      "season": "2012-13",
+      "source": "openfootball-world",
+      "file": "north-america/mexico/2012-13_mx2ascenso.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-nigeria-2012-13-ng1",
+      "name": "2012-13_ng1",
+      "region": "أفريقيا",
+      "season": "2012-13",
+      "source": "openfootball-world",
+      "file": "africa/nigeria/2012-13_ng1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-major-league-soccer-2013-mls",
+      "name": "2013_mls",
+      "region": "أمريكا الشمالية",
+      "season": "2013",
+      "source": "openfootball-world",
+      "file": "north-america/major-league-soccer/2013_mls.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-champions-league-2013-14-concacafcl",
+      "name": "2013-14_concacafcl",
+      "region": "أمريكا الشمالية",
+      "season": "2013-14",
+      "source": "openfootball-world",
+      "file": "north-america/champions-league/2013-14_concacafcl.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-mexico-2013-14-mx1",
+      "name": "2013-14_mx1",
+      "region": "أمريكا الشمالية",
+      "season": "2013-14",
+      "source": "openfootball-world",
+      "file": "north-america/mexico/2013-14_mx1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-mexico-2013-14-mx2ascenso",
+      "name": "2013-14_mx2ascenso",
+      "region": "أمريكا الشمالية",
+      "season": "2013-14",
+      "source": "openfootball-world",
+      "file": "north-america/mexico/2013-14_mx2ascenso.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-nigeria-2013-14-ng1",
+      "name": "2013-14_ng1",
+      "region": "أفريقيا",
+      "season": "2013-14",
+      "source": "openfootball-world",
+      "file": "africa/nigeria/2013-14_ng1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-major-league-soccer-2014-mls",
+      "name": "2014_mls",
+      "region": "أمريكا الشمالية",
+      "season": "2014",
+      "source": "openfootball-world",
+      "file": "north-america/major-league-soccer/2014_mls.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-champions-league-2014-15-concacafcl",
+      "name": "2014-15_concacafcl",
+      "region": "أمريكا الشمالية",
+      "season": "2014-15",
+      "source": "openfootball-world",
+      "file": "north-america/champions-league/2014-15_concacafcl.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-mexico-2014-15-mx1",
+      "name": "2014-15_mx1",
+      "region": "أمريكا الشمالية",
+      "season": "2014-15",
+      "source": "openfootball-world",
+      "file": "north-america/mexico/2014-15_mx1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-mexico-2014-15-mx2ascenso",
+      "name": "2014-15_mx2ascenso",
+      "region": "أمريكا الشمالية",
+      "season": "2014-15",
+      "source": "openfootball-world",
+      "file": "north-america/mexico/2014-15_mx2ascenso.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-nigeria-2014-15-ng1",
+      "name": "2014-15_ng1",
+      "region": "أفريقيا",
+      "season": "2014-15",
+      "source": "openfootball-world",
+      "file": "africa/nigeria/2014-15_ng1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-major-league-soccer-2015-mls",
+      "name": "2015_mls",
+      "region": "أمريكا الشمالية",
+      "season": "2015",
+      "source": "openfootball-world",
+      "file": "north-america/major-league-soccer/2015_mls.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-champions-league-2015-16-concacafcl",
+      "name": "2015-16_concacafcl",
+      "region": "أمريكا الشمالية",
+      "season": "2015-16",
+      "source": "openfootball-world",
+      "file": "north-america/champions-league/2015-16_concacafcl.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-mexico-2015-16-mx1",
+      "name": "2015-16_mx1",
+      "region": "أمريكا الشمالية",
+      "season": "2015-16",
+      "source": "openfootball-world",
+      "file": "north-america/mexico/2015-16_mx1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-mexico-2015-16-mx2ascenso",
+      "name": "2015-16_mx2ascenso",
+      "region": "أمريكا الشمالية",
+      "season": "2015-16",
+      "source": "openfootball-world",
+      "file": "north-america/mexico/2015-16_mx2ascenso.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-nigeria-2015-16-ng1",
+      "name": "2015-16_ng1",
+      "region": "أفريقيا",
+      "season": "2015-16",
+      "source": "openfootball-world",
+      "file": "africa/nigeria/2015-16_ng1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-major-league-soccer-2016-mls",
+      "name": "2016_mls",
+      "region": "أمريكا الشمالية",
+      "season": "2016",
+      "source": "openfootball-world",
+      "file": "north-america/major-league-soccer/2016_mls.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-champions-league-2016-17-concacafcl",
+      "name": "2016-17_concacafcl",
+      "region": "أمريكا الشمالية",
+      "season": "2016-17",
+      "source": "openfootball-world",
+      "file": "north-america/champions-league/2016-17_concacafcl.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-ghana-2016-17-gh1",
+      "name": "2016-17_gh1",
+      "region": "أفريقيا",
+      "season": "2016-17",
+      "source": "openfootball-world",
+      "file": "africa/ghana/2016-17_gh1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-mexico-2016-17-mx1",
+      "name": "2016-17_mx1",
+      "region": "أمريكا الشمالية",
+      "season": "2016-17",
+      "source": "openfootball-world",
+      "file": "north-america/mexico/2016-17_mx1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-mexico-2016-17-mx2ascenso",
+      "name": "2016-17_mx2ascenso",
+      "region": "أمريكا الشمالية",
+      "season": "2016-17",
+      "source": "openfootball-world",
+      "file": "north-america/mexico/2016-17_mx2ascenso.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-nigeria-2016-17-ng1",
+      "name": "2016-17_ng1",
+      "region": "أفريقيا",
+      "season": "2016-17",
+      "source": "openfootball-world",
+      "file": "africa/nigeria/2016-17_ng1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-major-league-soccer-2017-mls",
+      "name": "2017_mls",
+      "region": "أمريكا الشمالية",
+      "season": "2017",
+      "source": "openfootball-world",
+      "file": "north-america/major-league-soccer/2017_mls.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-mexico-2017-18-mx1",
+      "name": "2017-18_mx1",
+      "region": "أمريكا الشمالية",
+      "season": "2017-18",
+      "source": "openfootball-world",
+      "file": "north-america/mexico/2017-18_mx1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-mexico-2017-18-mx2ascenso",
+      "name": "2017-18_mx2ascenso",
+      "region": "أمريكا الشمالية",
+      "season": "2017-18",
+      "source": "openfootball-world",
+      "file": "north-america/mexico/2017-18_mx2ascenso.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-nigeria-2017-18-ng1",
+      "name": "2017-18_ng1",
+      "region": "أفريقيا",
+      "season": "2017-18",
+      "source": "openfootball-world",
+      "file": "africa/nigeria/2017-18_ng1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-nigeria-2017-18-ng2",
+      "name": "2017-18_ng2",
+      "region": "أفريقيا",
+      "season": "2017-18",
+      "source": "openfootball-world",
+      "file": "africa/nigeria/2017-18_ng2.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:asia-china-2018-cn1",
+      "name": "2018_cn1",
+      "region": "آسيا",
+      "season": "2018",
+      "source": "openfootball-world",
+      "file": "asia/china/2018_cn1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-champions-league-2018-concacafcl",
+      "name": "2018_concacafcl",
+      "region": "أمريكا الشمالية",
+      "season": "2018",
+      "source": "openfootball-world",
+      "file": "north-america/champions-league/2018_concacafcl.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-major-league-soccer-2018-mls",
+      "name": "2018_mls",
+      "region": "أمريكا الشمالية",
+      "season": "2018",
+      "source": "openfootball-world",
+      "file": "north-america/major-league-soccer/2018_mls.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:pacific-australia-2018-19-au1",
+      "name": "2018-19_au1",
+      "region": "المحيط الهادئ",
+      "season": "2018-19",
+      "source": "openfootball-world",
+      "file": "pacific/australia/2018-19_au1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-mexico-2018-19-mx1",
+      "name": "2018-19_mx1",
+      "region": "أمريكا الشمالية",
+      "season": "2018-19",
+      "source": "openfootball-world",
+      "file": "north-america/mexico/2018-19_mx1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-mexico-2018-19-mx2ascenso",
+      "name": "2018-19_mx2ascenso",
+      "region": "أمريكا الشمالية",
+      "season": "2018-19",
+      "source": "openfootball-world",
+      "file": "north-america/mexico/2018-19_mx2ascenso.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-nigeria-2018-19-ng1",
+      "name": "2018-19_ng1",
+      "region": "أفريقيا",
+      "season": "2018-19",
+      "source": "openfootball-world",
+      "file": "africa/nigeria/2018-19_ng1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-nigeria-2018-19-ng2",
+      "name": "2018-19_ng2",
+      "region": "أفريقيا",
+      "season": "2018-19",
+      "source": "openfootball-world",
+      "file": "africa/nigeria/2018-19_ng2.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:asia-china-2019-cn1",
+      "name": "2019_cn1",
+      "region": "آسيا",
+      "season": "2019",
+      "source": "openfootball-world",
+      "file": "asia/china/2019_cn1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-champions-league-2019-concacafcl",
+      "name": "2019_concacafcl",
+      "region": "أمريكا الشمالية",
+      "season": "2019",
+      "source": "openfootball-world",
+      "file": "north-america/champions-league/2019_concacafcl.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:asia-japan-2019-jp1",
+      "name": "2019_jp1",
+      "region": "آسيا",
+      "season": "2019",
+      "source": "openfootball-world",
+      "file": "asia/japan/2019_jp1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-major-league-soccer-2019-mls",
+      "name": "2019_mls",
+      "region": "أمريكا الشمالية",
+      "season": "2019",
+      "source": "openfootball-world",
+      "file": "north-america/major-league-soccer/2019_mls.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:pacific-australia-2019-20-au1",
+      "name": "2019-20_au1",
+      "region": "المحيط الهادئ",
+      "season": "2019-20",
+      "source": "openfootball-world",
+      "file": "pacific/australia/2019-20_au1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-mexico-2019-20-mx1",
+      "name": "2019-20_mx1",
+      "region": "أمريكا الشمالية",
+      "season": "2019-20",
+      "source": "openfootball-world",
+      "file": "north-america/mexico/2019-20_mx1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-mexico-2019-20-mx2ascenso",
+      "name": "2019-20_mx2ascenso",
+      "region": "أمريكا الشمالية",
+      "season": "2019-20",
+      "source": "openfootball-world",
+      "file": "north-america/mexico/2019-20_mx2ascenso.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:asia-china-2020-cn1",
+      "name": "2020_cn1",
+      "region": "آسيا",
+      "season": "2020",
+      "source": "openfootball-world",
+      "file": "asia/china/2020_cn1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-champions-league-2020-concacafcl",
+      "name": "2020_concacafcl",
+      "region": "أمريكا الشمالية",
+      "season": "2020",
+      "source": "openfootball-world",
+      "file": "north-america/champions-league/2020_concacafcl.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:asia-japan-2020-jp1",
+      "name": "2020_jp1",
+      "region": "آسيا",
+      "season": "2020",
+      "source": "openfootball-world",
+      "file": "asia/japan/2020_jp1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-major-league-soccer-2020-mls",
+      "name": "2020_mls",
+      "region": "أمريكا الشمالية",
+      "season": "2020",
+      "source": "openfootball-world",
+      "file": "north-america/major-league-soccer/2020_mls.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:pacific-australia-2020-21-au1",
+      "name": "2020-21_au1",
+      "region": "المحيط الهادئ",
+      "season": "2020-21",
+      "source": "openfootball-world",
+      "file": "pacific/australia/2020-21_au1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-ghana-2020-21-gh1",
+      "name": "2020-21_gh1",
+      "region": "أفريقيا",
+      "season": "2020-21",
+      "source": "openfootball-world",
+      "file": "africa/ghana/2020-21_gh1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-mexico-2020-21-mx1",
+      "name": "2020-21_mx1",
+      "region": "أمريكا الشمالية",
+      "season": "2020-21",
+      "source": "openfootball-world",
+      "file": "north-america/mexico/2020-21_mx1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-mexico-2020-21-mx2expansion",
+      "name": "2020-21_mx2expansion",
+      "region": "أمريكا الشمالية",
+      "season": "2020-21",
+      "source": "openfootball-world",
+      "file": "north-america/mexico/2020-21_mx2expansion.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-nigeria-2020-21-ng1",
+      "name": "2020-21_ng1",
+      "region": "أفريقيا",
+      "season": "2020-21",
+      "source": "openfootball-world",
+      "file": "africa/nigeria/2020-21_ng1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-nigeria-2020-21-ng2",
+      "name": "2020-21_ng2",
+      "region": "أفريقيا",
+      "season": "2020-21",
+      "source": "openfootball-world",
+      "file": "africa/nigeria/2020-21_ng2.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-senegal-2020-21-sn1",
+      "name": "2020-21_sn1",
+      "region": "أفريقيا",
+      "season": "2020-21",
+      "source": "openfootball-world",
+      "file": "africa/senegal/2020-21_sn1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-tanzania-2020-21-tz1",
+      "name": "2020-21_tz1",
+      "region": "أفريقيا",
+      "season": "2020-21",
+      "source": "openfootball-world",
+      "file": "africa/tanzania/2020-21_tz1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:asia-china-2021-cn1",
+      "name": "2021_cn1",
+      "region": "آسيا",
+      "season": "2021",
+      "source": "openfootball-world",
+      "file": "asia/china/2021_cn1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-champions-league-2021-concacafcl",
+      "name": "2021_concacafcl",
+      "region": "أمريكا الشمالية",
+      "season": "2021",
+      "source": "openfootball-world",
+      "file": "north-america/champions-league/2021_concacafcl.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:asia-japan-2021-jp1",
+      "name": "2021_jp1",
+      "region": "آسيا",
+      "season": "2021",
+      "source": "openfootball-world",
+      "file": "asia/japan/2021_jp1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-major-league-soccer-2021-mls",
+      "name": "2021_mls",
+      "region": "أمريكا الشمالية",
+      "season": "2021",
+      "source": "openfootball-world",
+      "file": "north-america/major-league-soccer/2021_mls.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:pacific-australia-2021-22-au1",
+      "name": "2021-22_au1",
+      "region": "المحيط الهادئ",
+      "season": "2021-22",
+      "source": "openfootball-world",
+      "file": "pacific/australia/2021-22_au1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-ghana-2021-22-gh1",
+      "name": "2021-22_gh1",
+      "region": "أفريقيا",
+      "season": "2021-22",
+      "source": "openfootball-world",
+      "file": "africa/ghana/2021-22_gh1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-mexico-2021-22-mx1",
+      "name": "2021-22_mx1",
+      "region": "أمريكا الشمالية",
+      "season": "2021-22",
+      "source": "openfootball-world",
+      "file": "north-america/mexico/2021-22_mx1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-mexico-2021-22-mx2expansion",
+      "name": "2021-22_mx2expansion",
+      "region": "أمريكا الشمالية",
+      "season": "2021-22",
+      "source": "openfootball-world",
+      "file": "north-america/mexico/2021-22_mx2expansion.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-nigeria-2021-22-ng1",
+      "name": "2021-22_ng1",
+      "region": "أفريقيا",
+      "season": "2021-22",
+      "source": "openfootball-world",
+      "file": "africa/nigeria/2021-22_ng1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-nigeria-2021-22-ng2",
+      "name": "2021-22_ng2",
+      "region": "أفريقيا",
+      "season": "2021-22",
+      "source": "openfootball-world",
+      "file": "africa/nigeria/2021-22_ng2.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-rwanda-2021-22-rw1",
+      "name": "2021-22_rw1",
+      "region": "أفريقيا",
+      "season": "2021-22",
+      "source": "openfootball-world",
+      "file": "africa/rwanda/2021-22_rw1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-senegal-2021-22-sn1",
+      "name": "2021-22_sn1",
+      "region": "أفريقيا",
+      "season": "2021-22",
+      "source": "openfootball-world",
+      "file": "africa/senegal/2021-22_sn1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-tanzania-2021-22-tz1",
+      "name": "2021-22_tz1",
+      "region": "أفريقيا",
+      "season": "2021-22",
+      "source": "openfootball-world",
+      "file": "africa/tanzania/2021-22_tz1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-zambia-2021-22-zm1",
+      "name": "2021-22_zm1",
+      "region": "أفريقيا",
+      "season": "2021-22",
+      "source": "openfootball-world",
+      "file": "africa/zambia/2021-22_zm1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-zimbabwe-2021-22-zw1",
+      "name": "2021-22_zw1",
+      "region": "أفريقيا",
+      "season": "2021-22",
+      "source": "openfootball-world",
+      "file": "africa/zimbabwe/2021-22_zw1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:asia-china-2022-cn1",
+      "name": "2022_cn1",
+      "region": "آسيا",
+      "season": "2022",
+      "source": "openfootball-world",
+      "file": "asia/china/2022_cn1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-champions-league-2022-concacafcl",
+      "name": "2022_concacafcl",
+      "region": "أمريكا الشمالية",
+      "season": "2022",
+      "source": "openfootball-world",
+      "file": "north-america/champions-league/2022_concacafcl.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:asia-japan-2022-jp1",
+      "name": "2022_jp1",
+      "region": "آسيا",
+      "season": "2022",
+      "source": "openfootball-world",
+      "file": "asia/japan/2022_jp1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-major-league-soccer-2022-mls",
+      "name": "2022_mls",
+      "region": "أمريكا الشمالية",
+      "season": "2022",
+      "source": "openfootball-world",
+      "file": "north-america/major-league-soccer/2022_mls.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:pacific-australia-2022-23-au1",
+      "name": "2022-23_au1",
+      "region": "المحيط الهادئ",
+      "season": "2022-23",
+      "source": "openfootball-world",
+      "file": "pacific/australia/2022-23_au1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-ghana-2022-23-gh1",
+      "name": "2022-23_gh1",
+      "region": "أفريقيا",
+      "season": "2022-23",
+      "source": "openfootball-world",
+      "file": "africa/ghana/2022-23_gh1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-kenya-2022-23-ke1",
+      "name": "2022-23_ke1",
+      "region": "أفريقيا",
+      "season": "2022-23",
+      "source": "openfootball-world",
+      "file": "africa/kenya/2022-23_ke1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-mexico-2022-23-mx1",
+      "name": "2022-23_mx1",
+      "region": "أمريكا الشمالية",
+      "season": "2022-23",
+      "source": "openfootball-world",
+      "file": "north-america/mexico/2022-23_mx1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-mexico-2022-23-mx2expansion",
+      "name": "2022-23_mx2expansion",
+      "region": "أمريكا الشمالية",
+      "season": "2022-23",
+      "source": "openfootball-world",
+      "file": "north-america/mexico/2022-23_mx2expansion.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-nigeria-2022-23-ng1",
+      "name": "2022-23_ng1",
+      "region": "أفريقيا",
+      "season": "2022-23",
+      "source": "openfootball-world",
+      "file": "africa/nigeria/2022-23_ng1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-nigeria-2022-23-ng2",
+      "name": "2022-23_ng2",
+      "region": "أفريقيا",
+      "season": "2022-23",
+      "source": "openfootball-world",
+      "file": "africa/nigeria/2022-23_ng2.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-rwanda-2022-23-rw1",
+      "name": "2022-23_rw1",
+      "region": "أفريقيا",
+      "season": "2022-23",
+      "source": "openfootball-world",
+      "file": "africa/rwanda/2022-23_rw1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-senegal-2022-23-sn1",
+      "name": "2022-23_sn1",
+      "region": "أفريقيا",
+      "season": "2022-23",
+      "source": "openfootball-world",
+      "file": "africa/senegal/2022-23_sn1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-african-football-league-2023-afl",
+      "name": "2023_afl",
+      "region": "أفريقيا",
+      "season": "2023",
+      "source": "openfootball-world",
+      "file": "africa/african-football-league/2023_afl.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:asia-china-2023-cn1",
+      "name": "2023_cn1",
+      "region": "آسيا",
+      "season": "2023",
+      "source": "openfootball-world",
+      "file": "asia/china/2023_cn1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-champions-league-2023-concacafcl",
+      "name": "2023_concacafcl",
+      "region": "أمريكا الشمالية",
+      "season": "2023",
+      "source": "openfootball-world",
+      "file": "north-america/champions-league/2023_concacafcl.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:asia-japan-2023-jp1",
+      "name": "2023_jp1",
+      "region": "آسيا",
+      "season": "2023",
+      "source": "openfootball-world",
+      "file": "asia/japan/2023_jp1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:asia-kazakhstan-2023-kz1",
+      "name": "2023_kz1",
+      "region": "آسيا",
+      "season": "2023",
+      "source": "openfootball-world",
+      "file": "asia/kazakhstan/2023_kz1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-major-league-soccer-2023-mls",
+      "name": "2023_mls",
+      "region": "أمريكا الشمالية",
+      "season": "2023",
+      "source": "openfootball-world",
+      "file": "north-america/major-league-soccer/2023_mls.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-malawi-2023-mw1",
+      "name": "2023_mw1",
+      "region": "أفريقيا",
+      "season": "2023",
+      "source": "openfootball-world",
+      "file": "africa/malawi/2023_mw1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-zimbabwe-2023-zw1",
+      "name": "2023_zw1",
+      "region": "أفريقيا",
+      "season": "2023",
+      "source": "openfootball-world",
+      "file": "africa/zimbabwe/2023_zw1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:pacific-australia-2023-24-au1",
+      "name": "2023-24_au1",
+      "region": "المحيط الهادئ",
+      "season": "2023-24",
+      "source": "openfootball-world",
+      "file": "pacific/australia/2023-24_au1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-champions-league-2023-24-cafcl",
+      "name": "2023-24_cafcl",
+      "region": "أفريقيا",
+      "season": "2023-24",
+      "source": "openfootball-world",
+      "file": "africa/champions-league/2023-24_cafcl.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-algeria-2023-24-dz1",
+      "name": "2023-24_dz1",
+      "region": "أفريقيا",
+      "season": "2023-24",
+      "source": "openfootball-world",
+      "file": "africa/algeria/2023-24_dz1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-egypt-2023-24-eg1",
+      "name": "2023-24_eg1",
+      "region": "أفريقيا",
+      "season": "2023-24",
+      "source": "openfootball-world",
+      "file": "africa/egypt/2023-24_eg1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-ghana-2023-24-gh1",
+      "name": "2023-24_gh1",
+      "region": "أفريقيا",
+      "season": "2023-24",
+      "source": "openfootball-world",
+      "file": "africa/ghana/2023-24_gh1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:middle-east-israel-2023-24-il1",
+      "name": "2023-24_il1",
+      "region": "الشرق الأوسط",
+      "season": "2023-24",
+      "source": "openfootball-world",
+      "file": "middle-east/israel/2023-24_il1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-kenya-2023-24-ke1",
+      "name": "2023-24_ke1",
+      "region": "أفريقيا",
+      "season": "2023-24",
+      "source": "openfootball-world",
+      "file": "africa/kenya/2023-24_ke1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-morocco-2023-24-ma1",
+      "name": "2023-24_ma1",
+      "region": "أفريقيا",
+      "season": "2023-24",
+      "source": "openfootball-world",
+      "file": "africa/morocco/2023-24_ma1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-mexico-2023-24-mx1",
+      "name": "2023-24_mx1",
+      "region": "أمريكا الشمالية",
+      "season": "2023-24",
+      "source": "openfootball-world",
+      "file": "north-america/mexico/2023-24_mx1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-mexico-2023-24-mx2expansion",
+      "name": "2023-24_mx2expansion",
+      "region": "أمريكا الشمالية",
+      "season": "2023-24",
+      "source": "openfootball-world",
+      "file": "north-america/mexico/2023-24_mx2expansion.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-nigeria-2023-24-ng1",
+      "name": "2023-24_ng1",
+      "region": "أفريقيا",
+      "season": "2023-24",
+      "source": "openfootball-world",
+      "file": "africa/nigeria/2023-24_ng1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-nigeria-2023-24-ng2",
+      "name": "2023-24_ng2",
+      "region": "أفريقيا",
+      "season": "2023-24",
+      "source": "openfootball-world",
+      "file": "africa/nigeria/2023-24_ng2.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-rwanda-2023-24-rw1",
+      "name": "2023-24_rw1",
+      "region": "أفريقيا",
+      "season": "2023-24",
+      "source": "openfootball-world",
+      "file": "africa/rwanda/2023-24_rw1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-tanzania-2023-24-tz1",
+      "name": "2023-24_tz1",
+      "region": "أفريقيا",
+      "season": "2023-24",
+      "source": "openfootball-world",
+      "file": "africa/tanzania/2023-24_tz1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-uganda-2023-24-ug1",
+      "name": "2023-24_ug1",
+      "region": "أفريقيا",
+      "season": "2023-24",
+      "source": "openfootball-world",
+      "file": "africa/uganda/2023-24_ug1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-zambia-2023-24-zm1",
+      "name": "2023-24_zm1",
+      "region": "أفريقيا",
+      "season": "2023-24",
+      "source": "openfootball-world",
+      "file": "africa/zambia/2023-24_zm1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:asia-china-2024-cn1",
+      "name": "2024_cn1",
+      "region": "آسيا",
+      "season": "2024",
+      "source": "openfootball-world",
+      "file": "asia/china/2024_cn1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-champions-league-2024-concacafcl",
+      "name": "2024_concacafcl",
+      "region": "أمريكا الشمالية",
+      "season": "2024",
+      "source": "openfootball-world",
+      "file": "north-america/champions-league/2024_concacafcl.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:asia-japan-2024-jp1",
+      "name": "2024_jp1",
+      "region": "آسيا",
+      "season": "2024",
+      "source": "openfootball-world",
+      "file": "asia/japan/2024_jp1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:asia-kazakhstan-2024-kz1",
+      "name": "2024_kz1",
+      "region": "آسيا",
+      "season": "2024",
+      "source": "openfootball-world",
+      "file": "asia/kazakhstan/2024_kz1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-major-league-soccer-2024-mls",
+      "name": "2024_mls",
+      "region": "أمريكا الشمالية",
+      "season": "2024",
+      "source": "openfootball-world",
+      "file": "north-america/major-league-soccer/2024_mls.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-malawi-2024-mw1",
+      "name": "2024_mw1",
+      "region": "أفريقيا",
+      "season": "2024",
+      "source": "openfootball-world",
+      "file": "africa/malawi/2024_mw1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-zimbabwe-2024-zw1",
+      "name": "2024_zw1",
+      "region": "أفريقيا",
+      "season": "2024",
+      "source": "openfootball-world",
+      "file": "africa/zimbabwe/2024_zw1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:pacific-australia-2024-25-au1",
+      "name": "2024-25_au1",
+      "region": "المحيط الهادئ",
+      "season": "2024-25",
+      "source": "openfootball-world",
+      "file": "pacific/australia/2024-25_au1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-champions-league-2024-25-cafcl",
+      "name": "2024-25_cafcl",
+      "region": "أفريقيا",
+      "season": "2024-25",
+      "source": "openfootball-world",
+      "file": "africa/champions-league/2024-25_cafcl.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:central-america-costa-rica-2024-25-cr1",
+      "name": "2024-25_cr1",
+      "region": "أمريكا الوسطى",
+      "season": "2024-25",
+      "source": "openfootball-world",
+      "file": "central-america/costa-rica/2024-25_cr1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-algeria-2024-25-dz1",
+      "name": "2024-25_dz1",
+      "region": "أفريقيا",
+      "season": "2024-25",
+      "source": "openfootball-world",
+      "file": "africa/algeria/2024-25_dz1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-egypt-2024-25-eg1",
+      "name": "2024-25_eg1",
+      "region": "أفريقيا",
+      "season": "2024-25",
+      "source": "openfootball-world",
+      "file": "africa/egypt/2024-25_eg1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-ghana-2024-25-gh1",
+      "name": "2024-25_gh1",
+      "region": "أفريقيا",
+      "season": "2024-25",
+      "source": "openfootball-world",
+      "file": "africa/ghana/2024-25_gh1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:middle-east-israel-2024-25-il1",
+      "name": "2024-25_il1",
+      "region": "الشرق الأوسط",
+      "season": "2024-25",
+      "source": "openfootball-world",
+      "file": "middle-east/israel/2024-25_il1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:middle-east-israel-2024-25-il2",
+      "name": "2024-25_il2",
+      "region": "الشرق الأوسط",
+      "season": "2024-25",
+      "source": "openfootball-world",
+      "file": "middle-east/israel/2024-25_il2.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:middle-east-israel-2024-25-ilcup",
+      "name": "2024-25_ilcup",
+      "region": "الشرق الأوسط",
+      "season": "2024-25",
+      "source": "openfootball-world",
+      "file": "middle-east/israel/2024-25_ilcup.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-kenya-2024-25-ke1",
+      "name": "2024-25_ke1",
+      "region": "أفريقيا",
+      "season": "2024-25",
+      "source": "openfootball-world",
+      "file": "africa/kenya/2024-25_ke1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-morocco-2024-25-ma1",
+      "name": "2024-25_ma1",
+      "region": "أفريقيا",
+      "season": "2024-25",
+      "source": "openfootball-world",
+      "file": "africa/morocco/2024-25_ma1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-mexico-2024-25-mx1",
+      "name": "2024-25_mx1",
+      "region": "أمريكا الشمالية",
+      "season": "2024-25",
+      "source": "openfootball-world",
+      "file": "north-america/mexico/2024-25_mx1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-mexico-2024-25-mx2expansion",
+      "name": "2024-25_mx2expansion",
+      "region": "أمريكا الشمالية",
+      "season": "2024-25",
+      "source": "openfootball-world",
+      "file": "north-america/mexico/2024-25_mx2expansion.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-nigeria-2024-25-ng1",
+      "name": "2024-25_ng1",
+      "region": "أفريقيا",
+      "season": "2024-25",
+      "source": "openfootball-world",
+      "file": "africa/nigeria/2024-25_ng1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-nigeria-2024-25-ng2",
+      "name": "2024-25_ng2",
+      "region": "أفريقيا",
+      "season": "2024-25",
+      "source": "openfootball-world",
+      "file": "africa/nigeria/2024-25_ng2.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-rwanda-2024-25-rw1",
+      "name": "2024-25_rw1",
+      "region": "أفريقيا",
+      "season": "2024-25",
+      "source": "openfootball-world",
+      "file": "africa/rwanda/2024-25_rw1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:middle-east-saudi-arabia-2024-25-sa1",
+      "name": "2024-25_sa1",
+      "region": "الشرق الأوسط",
+      "season": "2024-25",
+      "source": "openfootball-world",
+      "file": "middle-east/saudi-arabia/2024-25_sa1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-senegal-2024-25-sn1",
+      "name": "2024-25_sn1",
+      "region": "أفريقيا",
+      "season": "2024-25",
+      "source": "openfootball-world",
+      "file": "africa/senegal/2024-25_sn1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-tanzania-2024-25-tz1",
+      "name": "2024-25_tz1",
+      "region": "أفريقيا",
+      "season": "2024-25",
+      "source": "openfootball-world",
+      "file": "africa/tanzania/2024-25_tz1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-uganda-2024-25-ug1",
+      "name": "2024-25_ug1",
+      "region": "أفريقيا",
+      "season": "2024-25",
+      "source": "openfootball-world",
+      "file": "africa/uganda/2024-25_ug1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-south-africa-2024-25-za1",
+      "name": "2024-25_za1",
+      "region": "أفريقيا",
+      "season": "2024-25",
+      "source": "openfootball-world",
+      "file": "africa/south-africa/2024-25_za1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-zambia-2024-25-zm1",
+      "name": "2024-25_zm1",
+      "region": "أفريقيا",
+      "season": "2024-25",
+      "source": "openfootball-world",
+      "file": "africa/zambia/2024-25_zm1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:asia-china-2025-cn1",
+      "name": "2025_cn1",
+      "region": "آسيا",
+      "season": "2025",
+      "source": "openfootball-world",
+      "file": "asia/china/2025_cn1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-champions-league-2025-concacafcl",
+      "name": "2025_concacafcl",
+      "region": "أمريكا الشمالية",
+      "season": "2025",
+      "source": "openfootball-world",
+      "file": "north-america/champions-league/2025_concacafcl.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:asia-japan-2025-jp1",
+      "name": "2025_jp1",
+      "region": "آسيا",
+      "season": "2025",
+      "source": "openfootball-world",
+      "file": "asia/japan/2025_jp1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:asia-kazakhstan-2025-kz1",
+      "name": "2025_kz1",
+      "region": "آسيا",
+      "season": "2025",
+      "source": "openfootball-world",
+      "file": "asia/kazakhstan/2025_kz1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:north-america-major-league-soccer-2025-mls",
+      "name": "2025_mls",
+      "region": "أمريكا الشمالية",
+      "season": "2025",
+      "source": "openfootball-world",
+      "file": "north-america/major-league-soccer/2025_mls.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-malawi-2025-mw1",
+      "name": "2025_mw1",
+      "region": "أفريقيا",
+      "season": "2025",
+      "source": "openfootball-world",
+      "file": "africa/malawi/2025_mw1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-zimbabwe-2025-zw1",
+      "name": "2025_zw1",
+      "region": "أفريقيا",
+      "season": "2025",
+      "source": "openfootball-world",
+      "file": "africa/zimbabwe/2025_zw1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-kenya-2025-26-ke1",
+      "name": "Kenya | Premier League 2025/26",
+      "region": "أفريقيا",
+      "season": "2025-26",
+      "source": "openfootball-world",
+      "file": "africa/kenya/2025-26_ke1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-nigeria-2025-26-ng2",
+      "name": "Nigeria National League 2025/2026",
+      "region": "أفريقيا",
+      "season": "2025-26",
+      "source": "openfootball-world",
+      "file": "africa/nigeria/2025-26_ng2.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-nigeria-2025-26-ng1",
+      "name": "Nigeria Professional League 2025/2026",
+      "region": "أفريقيا",
+      "season": "2025-26",
+      "source": "openfootball-world",
+      "file": "africa/nigeria/2025-26_ng1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-rwanda-2025-26-rw1",
+      "name": "Rwanda | Premier League 2025/26",
+      "region": "أفريقيا",
+      "season": "2025-26",
+      "source": "openfootball-world",
+      "file": "africa/rwanda/2025-26_rw1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-senegal-2025-26-sn1",
+      "name": "Senegal | Ligue 1 2025/26",
+      "region": "أفريقيا",
+      "season": "2025-26",
+      "source": "openfootball-world",
+      "file": "africa/senegal/2025-26_sn1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-tanzania-2025-26-tz1",
+      "name": "Tanzania | Premier League 2025/26",
+      "region": "أفريقيا",
+      "season": "2025-26",
+      "source": "openfootball-world",
+      "file": "africa/tanzania/2025-26_tz1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-uganda-2025-26-ug1",
+      "name": "Uganda Premier League 2025/2026",
+      "region": "أفريقيا",
+      "season": "2025-26",
+      "source": "openfootball-world",
+      "file": "africa/uganda/2025-26_ug1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
+      "id": "openfootball-world:africa-zambia-2025-26-zm1",
+      "name": "Zambia Super League 2025/2026",
+      "region": "أفريقيا",
+      "season": "2025-26",
+      "source": "openfootball-world",
+      "file": "africa/zambia/2025-26_zm1.txt",
+      "logo": null,
+      "matchCount": 0,
+      "currentCoverage": false
+    },
+    {
       "id": "espn:arg.1",
       "name": "الدوري الأرجنتيني",
       "region": null,
@@ -14574,9 +16444,9 @@
       "currentCoverage": true
     }
   ],
-  "leagueCount": 15,
+  "leagueCount": 185,
   "currentLeagueCount": 15,
-  "catalogLeagueCount": 15,
+  "catalogLeagueCount": 185,
   "matches": [
     {
       "fixture": {
@@ -14895,7 +16765,7 @@
             "intAway": "10"
           }
         ],
-        "updatedAt": "2026-10-07T12:03:03.434Z",
+        "updatedAt": "2026-10-07T12:12:44.470Z",
         "source": "primary provider + TheSportsDB enrichment",
         "theSportsDbEventId": "2500244"
       }
@@ -15059,7 +16929,7 @@
           }
         ],
         "statistics": [],
-        "updatedAt": "2026-10-07T12:03:05.813Z",
+        "updatedAt": "2026-10-07T12:12:46.853Z",
         "source": "primary provider + TheSportsDB enrichment",
         "theSportsDbEventId": "2505787"
       }
@@ -15437,7 +17307,7 @@
             "intAway": "8"
           }
         ],
-        "updatedAt": "2026-10-07T12:03:15.342Z",
+        "updatedAt": "2026-10-07T12:12:56.375Z",
         "source": "primary provider + TheSportsDB enrichment",
         "theSportsDbEventId": "2500797"
       }
