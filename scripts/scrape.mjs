@@ -10,6 +10,7 @@ const FOOTBALL_DATA_API = "https://api.football-data.org/v4";
 const FOOTBALL_DATA_TOKEN = String(process.env.FOOTBALL_DATA_API_KEY || "").trim();
 const ESPN_API = "https://site.api.espn.com/apis/site/v2/sports/soccer";
 const THESPORTSDB_API = "https://www.thesportsdb.com/api/v1/json/123";
+let THE_SPORTS_DB_RATE_LIMITED = false;
 const OPENFOOTBALL_API = "https://api.github.com/repos/openfootball/football.json/contents/2026-27";
 const OPENFOOTBALL_WORLD_API = "https://api.github.com/repos/openfootball/world/contents";
 const OPENFOOTBALL_WORLD_ROOTS = [
@@ -451,6 +452,7 @@ function sanitizeMatches(matches) {
 }
 
 async function fetchJson(url, options = {}) {
+  const isTheSportsDb = String(url || "").startsWith(THESPORTSDB_API);
   for (let attempt = 1; attempt <= 2; attempt += 1) {
     const response = await fetch(url, {
       ...options,
@@ -461,9 +463,26 @@ async function fetchJson(url, options = {}) {
       },
     });
 
-    if (response.status === 429 && attempt === 1) {
-      await sleep(5000);
-      continue;
+    if (response.status === 429) {
+      const body = await response.text();
+      const error = new Error("HTTP 429: " + body.slice(0, 240));
+      error.status = 429;
+      error.rateLimited = true;
+
+      if (isTheSportsDb) {
+        // Cloudflare 1015 is provider-level throttling. Do not retry other
+        // TheSportsDB endpoints in this run; continuing only burns time and
+        // makes the provider block the runner harder.
+        THE_SPORTS_DB_RATE_LIMITED = true;
+        throw error;
+      }
+
+      if (attempt === 1) {
+        await sleep(5000);
+        continue;
+      }
+
+      throw error;
     }
 
     if (!response.ok) {
@@ -1074,6 +1093,8 @@ async function enrichOpenFootTeamLogos(matches, providerMatches = []) {
   };
 
   const searchTeamCatalog = async (team, country) => {
+    if (THE_SPORTS_DB_RATE_LIMITED) return null;
+
     const wantedNames = new Set([
       team.name,
       ...(OPENFOOT_LOGO_ALIASES[team.name] || []),
@@ -1095,6 +1116,7 @@ async function enrichOpenFootTeamLogos(matches, providerMatches = []) {
       if (matched) return matched;
     } catch (error) {
       console.warn("[OpenFoot logos] country catalog skipped", country, "-", error.message);
+      if (THE_SPORTS_DB_RATE_LIMITED) return null;
     }
 
     // Targeted search is the reliable fallback for leagues whose country
@@ -1115,6 +1137,7 @@ async function enrichOpenFootTeamLogos(matches, providerMatches = []) {
         if (matched) return matched;
       } catch (error) {
         console.warn("[OpenFoot logos] targeted search skipped", searchName, "-", error.message);
+        if (THE_SPORTS_DB_RATE_LIMITED) return null;
       }
 
       // Keep the total below the free-tier request rate even when aliases
@@ -1179,6 +1202,12 @@ async function enrichOpenFootTeamLogos(matches, providerMatches = []) {
 
     const matched = await searchTeamCatalog(team, item.country);
 
+    if (THE_SPORTS_DB_RATE_LIMITED) {
+      // Do not write negative cache entries when the provider itself is
+      // throttling us. A 429 is not evidence that the team has no logo.
+      break;
+    }
+
     cache[teamId] = {
       name: team.name,
       attempted: true,
@@ -1227,6 +1256,8 @@ function eventMatchesPrimary(match, event) {
 }
 
 async function enrichWithTheSportsDb(matches) {
+  if (THE_SPORTS_DB_RATE_LIMITED) return 0;
+
   const candidates = matches
     .filter((match) => match?.fixture?.status?.short === "FT")
     .filter((match) => !match?.details?.events?.length && !match?.details?.statistics?.length)
@@ -1287,6 +1318,7 @@ async function enrichWithTheSportsDb(matches) {
       }
     } catch (error) {
       console.warn("[TheSportsDB] skipped", match?.fixture?.id, "-", error.message);
+      if (THE_SPORTS_DB_RATE_LIMITED) break;
     }
 
     // Free tier is 30 requests/minute. Keep this enrichment deliberately low.
