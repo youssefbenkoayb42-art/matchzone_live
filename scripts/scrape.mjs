@@ -468,7 +468,10 @@ async function fetchJson(url, options = {}) {
 
     if (!response.ok) {
       const body = await response.text();
-      throw new Error("HTTP " + response.status + ": " + body.slice(0, 240));
+      const error = new Error("HTTP " + response.status + ": " + body.slice(0, 240));
+      error.status = response.status;
+      error.rateLimited = response.status === 403 && /rate limit exceeded/i.test(body);
+      throw error;
     }
 
     return response.json();
@@ -478,8 +481,13 @@ async function fetchJson(url, options = {}) {
 }
 
 let OPENFOOTBALL_WORLD_TREE_PROMISE = null;
+let OPENFOOTBALL_WORLD_RATE_LIMITED = false;
 
 async function listOpenFootballWorldFiles(pathPart = "", _depth = 0, limit = 250) {
+  // GitHub's unauthenticated REST API can rate-limit the Actions runner IP.
+  // Once that happens, do not repeat the same failing request for every region.
+  if (OPENFOOTBALL_WORLD_RATE_LIMITED) return [];
+
   if (!OPENFOOTBALL_WORLD_TREE_PROMISE) {
     OPENFOOTBALL_WORLD_TREE_PROMISE = fetchJson(
       "https://api.github.com/repos/openfootball/world/git/trees/master?recursive=1",
@@ -514,7 +522,12 @@ async function listOpenFootballWorldFiles(pathPart = "", _depth = 0, limit = 250
         download_url: "https://raw.githubusercontent.com/openfootball/world/master/" + item.path,
       }));
   } catch (error) {
-    console.warn("[OpenFootball World] tree unavailable:", error.message);
+    if (error?.rateLimited) {
+      OPENFOOTBALL_WORLD_RATE_LIMITED = true;
+      console.warn("[OpenFootball World] GitHub API rate limit reached; skipping this source for this run.");
+    } else {
+      console.warn("[OpenFootball World] tree unavailable:", error.message);
+    }
     return [];
   }
 }
@@ -797,7 +810,11 @@ async function fetchOpenFootballMatches(from, to) {
       }
     }
   } catch (error) {
-    console.warn("[OpenFootball] catalog unavailable:", error.message);
+    if (error?.rateLimited) {
+      console.warn("[OpenFootball] GitHub API rate limit reached; skipping this source for this run.");
+    } else {
+      console.warn("[OpenFootball] catalog unavailable:", error.message);
+    }
   }
 
   const world = await fetchOpenFootballWorldMatches(from, to);
