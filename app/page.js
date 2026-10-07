@@ -582,7 +582,7 @@ export default function HomeDesign() {
                     <a href={`/matches/${match.id}`} className="upcoming-calendar-card" key={match.id}>
                       <div className="upcoming-calendar-meta">
                         <span>{match.arabicLeague}</span>
-                        <time>{match.time}</time>
+                        <time>{formatMatchDate(match.date)} · {match.time}</time>
                       </div>
                       <div className="upcoming-calendar-teams">
                         <span>{match.home}</span>
@@ -622,7 +622,7 @@ export default function HomeDesign() {
                         <a href={`/matches/${match.id}`} className="upcoming-calendar-card" key={match.id}>
                           <div className="upcoming-calendar-meta">
                             <span>{match.arabicLeague}</span>
-                            <time>{match.time}</time>
+                            <time>{formatMatchDate(match.date)} · {match.time}</time>
                           </div>
                           <div className="upcoming-calendar-teams">
                             <span>{match.home}</span>
