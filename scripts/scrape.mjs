@@ -31,6 +31,8 @@ const OPENFOOT_LOGO_DELAY_MS = 2200;
 // A failed logo lookup is not permanent. Retry negative cache entries periodically
 // so a temporary provider miss can recover without repeatedly spending API quota.
 const OPENFOOT_LOGO_NEGATIVE_RETRY_MS = 6 * 60 * 60 * 1000;
+// Bump this when the resolver changes so stale negative entries are retried immediately.
+const OPENFOOT_LOGO_RESOLVER_VERSION = 2;
 const OPENFOOT_COMPETITIONS = [
   ["comp_botola_pro_mar", "الدوري المغربي", "domestic"],
   ["comp_ligue_1_dza", "الدوري الجزائري", "domestic"],
@@ -1091,6 +1093,7 @@ async function enrichOpenFootTeamLogos(matches, providerMatches = []) {
         sourceTeamId: providerMatch.teamId,
         sourceTeamName: team.name,
         sourceProvider: providerMatch.source,
+        resolverVersion: OPENFOOT_LOGO_RESOLVER_VERSION,
         updatedAt: new Date().toISOString(),
       };
       team.logo = providerMatch.logo;
@@ -1106,6 +1109,7 @@ async function enrichOpenFootTeamLogos(matches, providerMatches = []) {
       cached?.attempted &&
       !cached?.logo &&
       cached.name === team.name &&
+      cached.resolverVersion === OPENFOOT_LOGO_RESOLVER_VERSION &&
       Number.isFinite(cachedUpdatedAt) &&
       Date.now() - cachedUpdatedAt < OPENFOOT_LOGO_NEGATIVE_RETRY_MS;
 
@@ -1142,6 +1146,7 @@ async function enrichOpenFootTeamLogos(matches, providerMatches = []) {
       sourceTeamId: matched?.idTeam ? String(matched.idTeam) : null,
       sourceTeamName: matched?.strTeam || null,
       sourceProvider: matched ? "TheSportsDB" : null,
+      resolverVersion: OPENFOOT_LOGO_RESOLVER_VERSION,
       updatedAt: new Date().toISOString(),
     };
 
