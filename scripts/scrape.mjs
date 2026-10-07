@@ -32,7 +32,7 @@ const OPENFOOT_LOGO_DELAY_MS = 2200;
 // so a temporary provider miss can recover without repeatedly spending API quota.
 const OPENFOOT_LOGO_NEGATIVE_RETRY_MS = 6 * 60 * 60 * 1000;
 // Bump this when the resolver changes so stale negative entries are retried immediately.
-const OPENFOOT_LOGO_RESOLVER_VERSION = 2;
+const OPENFOOT_LOGO_RESOLVER_VERSION = 3;
 const OPENFOOT_COMPETITIONS = [
   ["comp_botola_pro_mar", "الدوري المغربي", "domestic"],
   ["comp_ligue_1_dza", "الدوري الجزائري", "domestic"],
