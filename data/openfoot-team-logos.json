@@ -164,7 +164,7 @@
     "sourceTeamName": null,
     "sourceProvider": null,
     "resolverVersion": 3,
-    "updatedAt": "2026-10-11T18:54:19.427Z"
+    "updatedAt": "2026-10-12T05:57:36.294Z"
   },
   "team_mc_alger_dz": {
     "name": "MC Alger",
@@ -174,7 +174,7 @@
     "sourceTeamName": null,
     "sourceProvider": null,
     "resolverVersion": 3,
-    "updatedAt": "2026-10-11T18:54:21.883Z"
+    "updatedAt": "2026-10-12T05:57:38.816Z"
   },
   "team_js_saoura_dz": {
     "name": "JS Saoura",
@@ -184,7 +184,7 @@
     "sourceTeamName": null,
     "sourceProvider": null,
     "resolverVersion": 3,
-    "updatedAt": "2026-10-11T18:54:24.326Z"
+    "updatedAt": "2026-10-12T05:57:41.319Z"
   },
   "team_usm_khenchela_dz": {
     "name": "USM Khenchela",
@@ -194,7 +194,7 @@
     "sourceTeamName": null,
     "sourceProvider": null,
     "resolverVersion": 3,
-    "updatedAt": "2026-10-11T18:54:26.756Z"
+    "updatedAt": "2026-10-12T05:57:43.803Z"
   },
   "team_cs_constantine_dz": {
     "name": "CS Constantine",
@@ -204,7 +204,7 @@
     "sourceTeamName": null,
     "sourceProvider": null,
     "resolverVersion": 3,
-    "updatedAt": "2026-10-11T18:54:29.213Z"
+    "updatedAt": "2026-10-12T05:57:46.317Z"
   },
   "team_biskra_dz": {
     "name": "US Biskra",
@@ -214,7 +214,7 @@
     "sourceTeamName": null,
     "sourceProvider": null,
     "resolverVersion": 3,
-    "updatedAt": "2026-10-11T18:54:31.652Z"
+    "updatedAt": "2026-10-12T05:57:48.800Z"
   },
   "team_es_ben_aknoun_dz": {
     "name": "ES Ben Aknoun",
@@ -224,7 +224,7 @@
     "sourceTeamName": null,
     "sourceProvider": null,
     "resolverVersion": 3,
-    "updatedAt": "2026-10-11T18:54:34.092Z"
+    "updatedAt": "2026-10-12T05:57:51.331Z"
   },
   "team_js_el_biar_dz": {
     "name": "JS El Biar",
@@ -234,7 +234,7 @@
     "sourceTeamName": null,
     "sourceProvider": null,
     "resolverVersion": 3,
-    "updatedAt": "2026-10-11T18:54:36.521Z"
+    "updatedAt": "2026-10-12T05:57:53.822Z"
   },
   "team_cr_belouizdad_dz": {
     "name": "CR Bélouizdad",
@@ -244,7 +244,7 @@
     "sourceTeamName": null,
     "sourceProvider": null,
     "resolverVersion": 3,
-    "updatedAt": "2026-10-11T18:54:43.526Z"
+    "updatedAt": "2026-10-12T05:58:00.937Z"
   },
   "team_olympique_akbou_dz": {
     "name": "Olympique Akbou",
@@ -254,7 +254,7 @@
     "sourceTeamName": null,
     "sourceProvider": null,
     "resolverVersion": 3,
-    "updatedAt": "2026-10-11T18:54:45.960Z"
+    "updatedAt": "2026-10-12T05:58:03.423Z"
   },
   "team_mb_rouissat_dz": {
     "name": "MB Rouissat",
@@ -264,7 +264,7 @@
     "sourceTeamName": null,
     "sourceProvider": null,
     "resolverVersion": 3,
-    "updatedAt": "2026-10-11T18:54:48.406Z"
+    "updatedAt": "2026-10-12T05:58:05.928Z"
   },
   "team_usm_alger_dz": {
     "name": "USM Alger",
@@ -274,7 +274,7 @@
     "sourceTeamName": null,
     "sourceProvider": null,
     "resolverVersion": 3,
-    "updatedAt": "2026-10-11T18:54:50.836Z"
+    "updatedAt": "2026-10-12T05:58:08.418Z"
   },
   "team_mc_oran_dz": {
     "name": "MC Oran",
@@ -284,7 +284,7 @@
     "sourceTeamName": null,
     "sourceProvider": null,
     "resolverVersion": 3,
-    "updatedAt": "2026-10-11T18:54:53.267Z"
+    "updatedAt": "2026-10-12T05:58:10.912Z"
   },
   "team_es_setif_dz": {
     "name": "ES Sétif",
@@ -294,7 +294,7 @@
     "sourceTeamName": null,
     "sourceProvider": null,
     "resolverVersion": 3,
-    "updatedAt": "2026-10-11T23:39:54.370Z"
+    "updatedAt": "2026-10-12T05:58:18.008Z"
   },
   "team_aso_chlef_dz": {
     "name": "ASO Chlef",
@@ -304,7 +304,7 @@
     "sourceTeamName": null,
     "sourceProvider": null,
     "resolverVersion": 3,
-    "updatedAt": "2026-10-11T23:39:56.817Z"
+    "updatedAt": "2026-10-12T05:58:20.510Z"
   },
   "team_cr_temouchent_dz": {
     "name": "CR Temouchent",
@@ -314,6 +314,6 @@
     "sourceTeamName": null,
     "sourceProvider": null,
     "resolverVersion": 3,
-    "updatedAt": "2026-10-11T23:40:03.850Z"
+    "updatedAt": "2026-10-12T05:58:27.708Z"
   }
 }
