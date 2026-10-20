@@ -184,7 +184,7 @@
     "sourceTeamName": null,
     "sourceProvider": null,
     "resolverVersion": 3,
-    "updatedAt": "2026-10-16T13:16:13.299Z"
+    "updatedAt": "2026-10-20T04:50:25.226Z"
   },
   "team_usm_khenchela_dz": {
     "name": "USM Khenchela",
@@ -264,7 +264,7 @@
     "sourceTeamName": null,
     "sourceProvider": null,
     "resolverVersion": 3,
-    "updatedAt": "2026-10-16T13:16:15.521Z"
+    "updatedAt": "2026-10-20T04:50:34.655Z"
   },
   "team_usm_alger_dz": {
     "name": "USM Alger",
@@ -314,6 +314,6 @@
     "sourceTeamName": null,
     "sourceProvider": null,
     "resolverVersion": 3,
-    "updatedAt": "2026-10-16T21:07:47.064Z"
+    "updatedAt": "2026-10-20T04:50:32.219Z"
   }
 }
