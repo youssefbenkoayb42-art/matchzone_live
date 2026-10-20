@@ -1,10 +1,10 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-10-20T17:10:30.156Z",
+  "updatedAt": "2026-10-20T21:37:25.532Z",
   "source": "football-data.org + ESPN + OpenFootball + TheSportsDB enrichment",
   "coverageWindow": {
-    "from": "2026-10-18T17:09:44.627Z",
-    "to": "2026-10-20T17:09:44.627Z"
+    "from": "2026-10-18T21:36:51.227Z",
+    "to": "2026-10-20T21:36:51.227Z"
   },
   "sourcePolicy": {
     "primary": "football-data.org",
@@ -35,7 +35,7 @@
         "endDate": "2027-06-01T03:59Z",
         "displayName": "2026-27 English Premier League"
       },
-      "updatedAt": "2026-10-20T17:10:13.730Z",
+      "updatedAt": "2026-10-20T21:37:12.714Z",
       "groups": [
         {
           "name": "2026-27 English Premier League",
@@ -1904,7 +1904,7 @@
         "endDate": "2027-07-01T03:59Z",
         "displayName": "2026-27 Italian Serie A"
       },
-      "updatedAt": "2026-10-20T17:10:13.929Z",
+      "updatedAt": "2026-10-20T21:37:12.826Z",
       "groups": [
         {
           "name": "2026-2027 Italian Serie A",
@@ -5300,7 +5300,7 @@
         "endDate": "2027-06-01T03:59Z",
         "displayName": "2026-27 Scottish Premiership"
       },
-      "updatedAt": "2026-10-16T21:07:32.232Z",
+      "updatedAt": "2026-10-20T21:37:13.053Z",
       "groups": [
         {
           "name": "2026-27 Scottish Premiership",
@@ -5312,11 +5312,11 @@
                 "name": "Celtic",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/256.png"
               },
-              "played": 8,
-              "wins": 7,
+              "played": 9,
+              "wins": 8,
               "draws": 0,
               "losses": 1,
-              "points": 21,
+              "points": 24,
               "goalsFor": null,
               "goalsAgainst": null,
               "goalDifference": null,
@@ -5329,11 +5329,11 @@
                 "name": "Rangers",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/257.png"
               },
-              "played": 8,
+              "played": 9,
               "wins": 6,
-              "draws": 1,
+              "draws": 2,
               "losses": 1,
-              "points": 19,
+              "points": 20,
               "goalsFor": null,
               "goalsAgainst": null,
               "goalDifference": null,
@@ -5346,10 +5346,10 @@
                 "name": "Heart of Midlothian",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/262.png"
               },
-              "played": 8,
+              "played": 9,
               "wins": 5,
               "draws": 1,
-              "losses": 2,
+              "losses": 3,
               "points": 16,
               "goalsFor": null,
               "goalsAgainst": null,
@@ -5363,11 +5363,11 @@
                 "name": "Dundee",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/261.png"
               },
-              "played": 8,
+              "played": 9,
               "wins": 4,
-              "draws": 1,
+              "draws": 2,
               "losses": 3,
-              "points": 13,
+              "points": 14,
               "goalsFor": null,
               "goalsAgainst": null,
               "goalDifference": null,
@@ -5380,11 +5380,11 @@
                 "name": "St Johnstone",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/267.png"
               },
-              "played": 8,
+              "played": 9,
               "wins": 3,
-              "draws": 2,
+              "draws": 3,
               "losses": 3,
-              "points": 11,
+              "points": 12,
               "goalsFor": null,
               "goalsAgainst": null,
               "goalDifference": null,
@@ -5397,11 +5397,11 @@
                 "name": "Dundee United",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/264.png"
               },
-              "played": 8,
+              "played": 9,
               "wins": 3,
-              "draws": 2,
+              "draws": 3,
               "losses": 3,
-              "points": 11,
+              "points": 12,
               "goalsFor": null,
               "goalsAgainst": null,
               "goalDifference": null,
@@ -5410,15 +5410,15 @@
             {
               "rank": 7,
               "team": {
-                "id": "250",
-                "name": "St Mirren",
-                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/250.png"
+                "id": "263",
+                "name": "Aberdeen",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/263.png"
               },
-              "played": 8,
+              "played": 9,
               "wins": 3,
-              "draws": 1,
+              "draws": 2,
               "losses": 4,
-              "points": 10,
+              "points": 11,
               "goalsFor": null,
               "goalsAgainst": null,
               "goalDifference": null,
@@ -5427,15 +5427,15 @@
             {
               "rank": 8,
               "team": {
-                "id": "263",
-                "name": "Aberdeen",
-                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/263.png"
+                "id": "250",
+                "name": "St Mirren",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/250.png"
               },
-              "played": 8,
-              "wins": 2,
-              "draws": 2,
-              "losses": 4,
-              "points": 8,
+              "played": 9,
+              "wins": 3,
+              "draws": 1,
+              "losses": 5,
+              "points": 10,
               "goalsFor": null,
               "goalsAgainst": null,
               "goalDifference": null,
@@ -5444,15 +5444,15 @@
             {
               "rank": 9,
               "team": {
-                "id": "266",
-                "name": "Motherwell",
-                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/266.png"
+                "id": "254",
+                "name": "Falkirk",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/254.png"
               },
-              "played": 8,
+              "played": 9,
               "wins": 2,
-              "draws": 2,
+              "draws": 3,
               "losses": 4,
-              "points": 8,
+              "points": 9,
               "goalsFor": null,
               "goalsAgainst": null,
               "goalDifference": null,
@@ -5461,15 +5461,15 @@
             {
               "rank": 10,
               "team": {
-                "id": "258",
-                "name": "Hibernian",
-                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/258.png"
+                "id": "266",
+                "name": "Motherwell",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/266.png"
               },
-              "played": 8,
+              "played": 9,
               "wins": 2,
-              "draws": 1,
+              "draws": 2,
               "losses": 5,
-              "points": 7,
+              "points": 8,
               "goalsFor": null,
               "goalsAgainst": null,
               "goalDifference": null,
@@ -5478,15 +5478,15 @@
             {
               "rank": 11,
               "team": {
-                "id": "254",
-                "name": "Falkirk",
-                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/254.png"
+                "id": "260",
+                "name": "Kilmarnock",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/260.png"
               },
-              "played": 8,
-              "wins": 1,
-              "draws": 3,
-              "losses": 4,
-              "points": 6,
+              "played": 9,
+              "wins": 2,
+              "draws": 2,
+              "losses": 5,
+              "points": 8,
               "goalsFor": null,
               "goalsAgainst": null,
               "goalDifference": null,
@@ -5495,15 +5495,15 @@
             {
               "rank": 12,
               "team": {
-                "id": "260",
-                "name": "Kilmarnock",
-                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/260.png"
+                "id": "258",
+                "name": "Hibernian",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/258.png"
               },
-              "played": 8,
-              "wins": 1,
-              "draws": 2,
-              "losses": 5,
-              "points": 5,
+              "played": 9,
+              "wins": 2,
+              "draws": 1,
+              "losses": 6,
+              "points": 7,
               "goalsFor": null,
               "goalsAgainst": null,
               "goalDifference": null,
@@ -5524,7 +5524,7 @@
         "endDate": "2026-06-01T03:59Z",
         "displayName": "2025-26 Cypriot First Division"
       },
-      "updatedAt": "2026-10-16T21:07:32.327Z",
+      "updatedAt": "2026-10-20T21:37:13.118Z",
       "groups": [
         {
           "name": "Group Championship",
@@ -5787,7 +5787,7 @@
         "endDate": "2026-06-01T03:59Z",
         "displayName": "2025-26 Scottish League One"
       },
-      "updatedAt": "2026-10-16T21:07:32.431Z",
+      "updatedAt": "2026-10-20T21:37:13.159Z",
       "groups": [
         {
           "name": "2025-2026 Scottish Division Two",
@@ -6702,7 +6702,7 @@
         "endDate": "2027-06-01T03:59Z",
         "displayName": "2026-27 Spanish LALIGA"
       },
-      "updatedAt": "2026-10-20T17:10:13.797Z",
+      "updatedAt": "2026-10-20T21:37:12.749Z",
       "groups": [
         {
           "name": "2026-27 LALIGA",
@@ -9602,7 +9602,7 @@
         "endDate": "2027-06-01T03:59Z",
         "displayName": "2026-27 French Ligue 1"
       },
-      "updatedAt": "2026-10-20T17:10:13.990Z",
+      "updatedAt": "2026-10-20T21:37:12.901Z",
       "groups": [
         {
           "name": "French Ligue 1 2026-27",
@@ -11178,7 +11178,7 @@
         "endDate": "2027-07-01T03:59Z",
         "displayName": "2026-27 German Bundesliga"
       },
-      "updatedAt": "2026-10-20T17:10:13.861Z",
+      "updatedAt": "2026-10-20T21:37:12.788Z",
       "groups": [
         {
           "name": "2026-27 German Bundesliga",
@@ -14391,22 +14391,22 @@
   },
   "counts": {
     "footballData": 35,
-    "espn": 454,
-    "espnFreshRun": 351,
+    "espn": 393,
+    "espnFreshRun": 290,
     "espnRetained": 113,
-    "espnFutureRotationGroup": 8,
+    "espnFutureRotationGroup": 10,
     "openfootball": 1,
     "openfootballWorld": 29,
     "openfoot": 16,
     "openfootLogosEnriched": 0,
     "openfootLogoSearches": 10,
-    "total": 396,
+    "total": 335,
     "theSportsDbEnriched": 0,
     "standingsRefreshed": 8,
-    "standingsRotationGroup": 8,
+    "standingsRotationGroup": 10,
     "standingsLeagues": 38
   },
-  "matchCount": 396,
+  "matchCount": 335,
   "leagues": [
     {
       "id": "openfootball-world:north-america-major-league-soccer-2005-mls",
@@ -16517,7 +16517,7 @@
       "source": "espn",
       "file": null,
       "logo": null,
-      "matchCount": 6,
+      "matchCount": 28,
       "currentCoverage": true
     },
     {
@@ -16540,17 +16540,6 @@
       "file": null,
       "logo": null,
       "matchCount": 1,
-      "currentCoverage": true
-    },
-    {
-      "id": "espn:bel.1",
-      "name": "الدوري البلجيكي",
-      "region": null,
-      "season": null,
-      "source": "espn",
-      "file": null,
-      "logo": null,
-      "matchCount": 27,
       "currentCoverage": true
     },
     {
@@ -16682,7 +16671,7 @@
       "source": "espn",
       "file": null,
       "logo": null,
-      "matchCount": 24,
+      "matchCount": 6,
       "currentCoverage": true
     },
     {
@@ -16704,7 +16693,7 @@
       "source": "espn",
       "file": null,
       "logo": null,
-      "matchCount": 48,
+      "matchCount": 10,
       "currentCoverage": true
     },
     {
@@ -16719,9 +16708,9 @@
       "currentCoverage": true
     }
   ],
-  "leagueCount": 210,
-  "currentLeagueCount": 40,
-  "catalogLeagueCount": 210,
+  "leagueCount": 209,
+  "currentLeagueCount": 39,
+  "catalogLeagueCount": 209,
   "matches": [
     {
       "fixture": {
@@ -27752,8 +27741,8 @@
     },
     {
       "fixture": {
-        "id": "fd-560609",
-        "providerMatchId": 560609,
+        "id": "fd-560605",
+        "providerMatchId": 560605,
         "date": "2026-10-18T13:00:00Z",
         "status": {
           "short": "FT"
@@ -27761,31 +27750,31 @@
       },
       "teams": {
         "home": {
-          "id": 397,
-          "footballDataId": 397,
+          "id": 341,
+          "footballDataId": 341,
           "provider": "football-data.org",
-          "identity": "football-data.org:397",
-          "name": "Brighton & Hove Albion FC",
-          "logo": "https://crests.football-data.org/397.png",
-          "logoPath": "https://crests.football-data.org/397.png",
+          "identity": "football-data.org:341",
+          "name": "Leeds United FC",
+          "logo": "https://crests.football-data.org/341.png",
+          "logoPath": "https://crests.football-data.org/341.png",
           "logoSource": "Football-Data.org team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": 354,
-          "footballDataId": 354,
+          "id": 66,
+          "footballDataId": 66,
           "provider": "football-data.org",
-          "identity": "football-data.org:354",
-          "name": "Crystal Palace FC",
-          "logo": "https://crests.football-data.org/354.png",
-          "logoPath": "https://crests.football-data.org/354.png",
+          "identity": "football-data.org:66",
+          "name": "Manchester United FC",
+          "logo": "https://crests.football-data.org/66.png",
+          "logoPath": "https://crests.football-data.org/66.png",
           "logoSource": "Football-Data.org team ID",
           "logoQuality": "verified-id"
         }
       },
       "goals": {
-        "home": 5,
-        "away": 0
+        "home": 1,
+        "away": 1
       },
       "league": {
         "id": 2021,
@@ -27794,9 +27783,64 @@
       },
       "competitionType": "domestic",
       "source": "football-data.org",
-      "externalId": 560609,
+      "externalId": 560605,
       "externalIds": {
-        "football-data.org": 560609
+        "football-data.org": 560605
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "football-data.org"
+      }
+    },
+    {
+      "fixture": {
+        "id": "fd-558577",
+        "providerMatchId": 558577,
+        "date": "2026-10-18T13:00:00Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": 99,
+          "footballDataId": 99,
+          "provider": "football-data.org",
+          "identity": "football-data.org:99",
+          "name": "ACF Fiorentina",
+          "logo": "https://crests.football-data.org/99.png",
+          "logoPath": "https://crests.football-data.org/99.png",
+          "logoSource": "Football-Data.org team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": 7397,
+          "footballDataId": 7397,
+          "provider": "football-data.org",
+          "identity": "football-data.org:7397",
+          "name": "Como 1907",
+          "logo": "https://crests.football-data.org/7397.png",
+          "logoPath": "https://crests.football-data.org/7397.png",
+          "logoSource": "Football-Data.org team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 1,
+        "away": 3
+      },
+      "league": {
+        "id": 2019,
+        "name": "Serie A",
+        "logo": "https://crests.football-data.org/c111.png"
+      },
+      "competitionType": "domestic",
+      "source": "football-data.org",
+      "externalId": 558577,
+      "externalIds": {
+        "football-data.org": 558577
       },
       "details": {
         "events": [],
@@ -27917,8 +27961,8 @@
     },
     {
       "fixture": {
-        "id": "fd-558577",
-        "providerMatchId": 558577,
+        "id": "fd-560609",
+        "providerMatchId": 560609,
         "date": "2026-10-18T13:00:00Z",
         "status": {
           "short": "FT"
@@ -27926,86 +27970,31 @@
       },
       "teams": {
         "home": {
-          "id": 99,
-          "footballDataId": 99,
+          "id": 397,
+          "footballDataId": 397,
           "provider": "football-data.org",
-          "identity": "football-data.org:99",
-          "name": "ACF Fiorentina",
-          "logo": "https://crests.football-data.org/99.png",
-          "logoPath": "https://crests.football-data.org/99.png",
+          "identity": "football-data.org:397",
+          "name": "Brighton & Hove Albion FC",
+          "logo": "https://crests.football-data.org/397.png",
+          "logoPath": "https://crests.football-data.org/397.png",
           "logoSource": "Football-Data.org team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": 7397,
-          "footballDataId": 7397,
+          "id": 354,
+          "footballDataId": 354,
           "provider": "football-data.org",
-          "identity": "football-data.org:7397",
-          "name": "Como 1907",
-          "logo": "https://crests.football-data.org/7397.png",
-          "logoPath": "https://crests.football-data.org/7397.png",
+          "identity": "football-data.org:354",
+          "name": "Crystal Palace FC",
+          "logo": "https://crests.football-data.org/354.png",
+          "logoPath": "https://crests.football-data.org/354.png",
           "logoSource": "Football-Data.org team ID",
           "logoQuality": "verified-id"
         }
       },
       "goals": {
-        "home": 1,
-        "away": 3
-      },
-      "league": {
-        "id": 2019,
-        "name": "Serie A",
-        "logo": "https://crests.football-data.org/c111.png"
-      },
-      "competitionType": "domestic",
-      "source": "football-data.org",
-      "externalId": 558577,
-      "externalIds": {
-        "football-data.org": 558577
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "football-data.org"
-      }
-    },
-    {
-      "fixture": {
-        "id": "fd-560605",
-        "providerMatchId": 560605,
-        "date": "2026-10-18T13:00:00Z",
-        "status": {
-          "short": "FT"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": 341,
-          "footballDataId": 341,
-          "provider": "football-data.org",
-          "identity": "football-data.org:341",
-          "name": "Leeds United FC",
-          "logo": "https://crests.football-data.org/341.png",
-          "logoPath": "https://crests.football-data.org/341.png",
-          "logoSource": "Football-Data.org team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": 66,
-          "footballDataId": 66,
-          "provider": "football-data.org",
-          "identity": "football-data.org:66",
-          "name": "Manchester United FC",
-          "logo": "https://crests.football-data.org/66.png",
-          "logoPath": "https://crests.football-data.org/66.png",
-          "logoSource": "Football-Data.org team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 1,
-        "away": 1
+        "home": 5,
+        "away": 0
       },
       "league": {
         "id": 2021,
@@ -28014,9 +28003,9 @@
       },
       "competitionType": "domestic",
       "source": "football-data.org",
-      "externalId": 560605,
+      "externalId": 560609,
       "externalIds": {
-        "football-data.org": 560605
+        "football-data.org": 560609
       },
       "details": {
         "events": [],
@@ -29424,8 +29413,8 @@
     },
     {
       "fixture": {
-        "id": "fd-559658",
-        "providerMatchId": 559658,
+        "id": "fd-559657",
+        "providerMatchId": 559657,
         "date": "2026-10-18T15:15:00Z",
         "status": {
           "short": "FT"
@@ -29433,31 +29422,31 @@
       },
       "teams": {
         "home": {
-          "id": 1045,
-          "footballDataId": 1045,
+          "id": 525,
+          "footballDataId": 525,
           "provider": "football-data.org",
-          "identity": "football-data.org:1045",
-          "name": "Paris FC",
-          "logo": "https://crests.football-data.org/1045.png",
-          "logoPath": "https://crests.football-data.org/1045.png",
+          "identity": "football-data.org:525",
+          "name": "FC Lorient",
+          "logo": "https://crests.football-data.org/525.png",
+          "logoPath": "https://crests.football-data.org/525.png",
           "logoSource": "Football-Data.org team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": 529,
-          "footballDataId": 529,
+          "id": 548,
+          "footballDataId": 548,
           "provider": "football-data.org",
-          "identity": "football-data.org:529",
-          "name": "Stade Rennais FC 1901",
-          "logo": "https://crests.football-data.org/529.png",
-          "logoPath": "https://crests.football-data.org/529.png",
+          "identity": "football-data.org:548",
+          "name": "AS Monaco FC",
+          "logo": "https://crests.football-data.org/548.png",
+          "logoPath": "https://crests.football-data.org/548.png",
           "logoSource": "Football-Data.org team ID",
           "logoQuality": "verified-id"
         }
       },
       "goals": {
-        "home": 4,
-        "away": 3
+        "home": 1,
+        "away": 0
       },
       "league": {
         "id": 2015,
@@ -29466,9 +29455,9 @@
       },
       "competitionType": "domestic",
       "source": "football-data.org",
-      "externalId": 559658,
+      "externalId": 559657,
       "externalIds": {
-        "football-data.org": 559658
+        "football-data.org": 559657
       },
       "details": {
         "events": [],
@@ -29534,8 +29523,8 @@
     },
     {
       "fixture": {
-        "id": "fd-559657",
-        "providerMatchId": 559657,
+        "id": "fd-559658",
+        "providerMatchId": 559658,
         "date": "2026-10-18T15:15:00Z",
         "status": {
           "short": "FT"
@@ -29543,31 +29532,31 @@
       },
       "teams": {
         "home": {
-          "id": 525,
-          "footballDataId": 525,
+          "id": 1045,
+          "footballDataId": 1045,
           "provider": "football-data.org",
-          "identity": "football-data.org:525",
-          "name": "FC Lorient",
-          "logo": "https://crests.football-data.org/525.png",
-          "logoPath": "https://crests.football-data.org/525.png",
+          "identity": "football-data.org:1045",
+          "name": "Paris FC",
+          "logo": "https://crests.football-data.org/1045.png",
+          "logoPath": "https://crests.football-data.org/1045.png",
           "logoSource": "Football-Data.org team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": 548,
-          "footballDataId": 548,
+          "id": 529,
+          "footballDataId": 529,
           "provider": "football-data.org",
-          "identity": "football-data.org:548",
-          "name": "AS Monaco FC",
-          "logo": "https://crests.football-data.org/548.png",
-          "logoPath": "https://crests.football-data.org/548.png",
+          "identity": "football-data.org:529",
+          "name": "Stade Rennais FC 1901",
+          "logo": "https://crests.football-data.org/529.png",
+          "logoPath": "https://crests.football-data.org/529.png",
           "logoSource": "Football-Data.org team ID",
           "logoQuality": "verified-id"
         }
       },
       "goals": {
-        "home": 1,
-        "away": 0
+        "home": 4,
+        "away": 3
       },
       "league": {
         "id": 2015,
@@ -29576,9 +29565,9 @@
       },
       "competitionType": "domestic",
       "source": "football-data.org",
-      "externalId": 559657,
+      "externalId": 559658,
       "externalIds": {
-        "football-data.org": 559657
+        "football-data.org": 559658
       },
       "details": {
         "events": [],
@@ -29701,61 +29690,6 @@
     },
     {
       "fixture": {
-        "id": "fd-560608",
-        "providerMatchId": 560608,
-        "date": "2026-10-18T15:30:00Z",
-        "status": {
-          "short": "FT"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": 351,
-          "footballDataId": 351,
-          "provider": "football-data.org",
-          "identity": "football-data.org:351",
-          "name": "Nottingham Forest FC",
-          "logo": "https://crests.football-data.org/351.png",
-          "logoPath": "https://crests.football-data.org/351.png",
-          "logoSource": "Football-Data.org team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": 57,
-          "footballDataId": 57,
-          "provider": "football-data.org",
-          "identity": "football-data.org:57",
-          "name": "Arsenal FC",
-          "logo": "https://crests.football-data.org/57.png",
-          "logoPath": "https://crests.football-data.org/57.png",
-          "logoSource": "Football-Data.org team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 1
-      },
-      "league": {
-        "id": 2021,
-        "name": "Premier League",
-        "logo": "https://crests.football-data.org/PL.png"
-      },
-      "competitionType": "domestic",
-      "source": "football-data.org",
-      "externalId": 560608,
-      "externalIds": {
-        "football-data.org": 560608
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "football-data.org"
-      }
-    },
-    {
-      "fixture": {
         "id": "fd-565826",
         "providerMatchId": 565826,
         "date": "2026-10-18T15:30:00Z",
@@ -29801,6 +29735,61 @@
       "externalId": 565826,
       "externalIds": {
         "football-data.org": 565826
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "football-data.org"
+      }
+    },
+    {
+      "fixture": {
+        "id": "fd-560608",
+        "providerMatchId": 560608,
+        "date": "2026-10-18T15:30:00Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": 351,
+          "footballDataId": 351,
+          "provider": "football-data.org",
+          "identity": "football-data.org:351",
+          "name": "Nottingham Forest FC",
+          "logo": "https://crests.football-data.org/351.png",
+          "logoPath": "https://crests.football-data.org/351.png",
+          "logoSource": "Football-Data.org team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": 57,
+          "footballDataId": 57,
+          "provider": "football-data.org",
+          "identity": "football-data.org:57",
+          "name": "Arsenal FC",
+          "logo": "https://crests.football-data.org/57.png",
+          "logoPath": "https://crests.football-data.org/57.png",
+          "logoSource": "Football-Data.org team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 1
+      },
+      "league": {
+        "id": 2021,
+        "name": "Premier League",
+        "logo": "https://crests.football-data.org/PL.png"
+      },
+      "competitionType": "domestic",
+      "source": "football-data.org",
+      "externalId": 560608,
+      "externalIds": {
+        "football-data.org": 560608
       },
       "details": {
         "events": [],
@@ -30593,61 +30582,6 @@
     },
     {
       "fixture": {
-        "id": "fd-558870",
-        "providerMatchId": 558870,
-        "date": "2026-10-18T18:00:00Z",
-        "status": {
-          "short": "FT"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": 1915,
-          "footballDataId": 1915,
-          "provider": "football-data.org",
-          "identity": "football-data.org:1915",
-          "name": "NEC",
-          "logo": "https://crests.football-data.org/1915.png",
-          "logoPath": "https://crests.football-data.org/1915.png",
-          "logoSource": "Football-Data.org team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": 1920,
-          "footballDataId": 1920,
-          "provider": "football-data.org",
-          "identity": "football-data.org:1920",
-          "name": "Fortuna Sittard",
-          "logo": "https://crests.football-data.org/1920.png",
-          "logoPath": "https://crests.football-data.org/1920.png",
-          "logoSource": "Football-Data.org team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 2,
-        "away": 2
-      },
-      "league": {
-        "id": 2003,
-        "name": "Eredivisie",
-        "logo": "https://crests.football-data.org/ED.png"
-      },
-      "competitionType": "domestic",
-      "source": "football-data.org",
-      "externalId": 558870,
-      "externalIds": {
-        "football-data.org": 558870
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "football-data.org"
-      }
-    },
-    {
-      "fixture": {
         "id": "fd-558866",
         "providerMatchId": 558866,
         "date": "2026-10-18T18:00:00Z",
@@ -30693,6 +30627,61 @@
       "externalId": 558866,
       "externalIds": {
         "football-data.org": 558866
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "football-data.org"
+      }
+    },
+    {
+      "fixture": {
+        "id": "fd-558870",
+        "providerMatchId": 558870,
+        "date": "2026-10-18T18:00:00Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": 1915,
+          "footballDataId": 1915,
+          "provider": "football-data.org",
+          "identity": "football-data.org:1915",
+          "name": "NEC",
+          "logo": "https://crests.football-data.org/1915.png",
+          "logoPath": "https://crests.football-data.org/1915.png",
+          "logoSource": "Football-Data.org team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": 1920,
+          "footballDataId": 1920,
+          "provider": "football-data.org",
+          "identity": "football-data.org:1920",
+          "name": "Fortuna Sittard",
+          "logo": "https://crests.football-data.org/1920.png",
+          "logoPath": "https://crests.football-data.org/1920.png",
+          "logoSource": "Football-Data.org team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 2,
+        "away": 2
+      },
+      "league": {
+        "id": 2003,
+        "name": "Eredivisie",
+        "logo": "https://crests.football-data.org/ED.png"
+      },
+      "competitionType": "domestic",
+      "source": "football-data.org",
+      "externalId": 558870,
+      "externalIds": {
+        "football-data.org": 558870
       },
       "details": {
         "events": [],
@@ -30983,61 +30972,6 @@
     },
     {
       "fixture": {
-        "id": "fd-558570",
-        "providerMatchId": 558570,
-        "date": "2026-10-18T18:45:00Z",
-        "status": {
-          "short": "FT"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": 109,
-          "footballDataId": 109,
-          "provider": "football-data.org",
-          "identity": "football-data.org:109",
-          "name": "Juventus FC",
-          "logo": "https://crests.football-data.org/109.png",
-          "logoPath": "https://crests.football-data.org/109.png",
-          "logoSource": "Football-Data.org team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": 110,
-          "footballDataId": 110,
-          "provider": "football-data.org",
-          "identity": "football-data.org:110",
-          "name": "SS Lazio",
-          "logo": "https://crests.football-data.org/110.png",
-          "logoPath": "https://crests.football-data.org/110.png",
-          "logoSource": "Football-Data.org team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 3
-      },
-      "league": {
-        "id": 2019,
-        "name": "Serie A",
-        "logo": "https://crests.football-data.org/c111.png"
-      },
-      "competitionType": "domestic",
-      "source": "football-data.org",
-      "externalId": 558570,
-      "externalIds": {
-        "football-data.org": 558570
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "football-data.org"
-      }
-    },
-    {
-      "fixture": {
         "id": "fd-559665",
         "providerMatchId": 559665,
         "date": "2026-10-18T18:45:00Z",
@@ -31083,6 +31017,61 @@
       "externalId": 559665,
       "externalIds": {
         "football-data.org": 559665
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "football-data.org"
+      }
+    },
+    {
+      "fixture": {
+        "id": "fd-558570",
+        "providerMatchId": 558570,
+        "date": "2026-10-18T18:45:00Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": 109,
+          "footballDataId": 109,
+          "provider": "football-data.org",
+          "identity": "football-data.org:109",
+          "name": "Juventus FC",
+          "logo": "https://crests.football-data.org/109.png",
+          "logoPath": "https://crests.football-data.org/109.png",
+          "logoSource": "Football-Data.org team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": 110,
+          "footballDataId": 110,
+          "provider": "football-data.org",
+          "identity": "football-data.org:110",
+          "name": "SS Lazio",
+          "logo": "https://crests.football-data.org/110.png",
+          "logoPath": "https://crests.football-data.org/110.png",
+          "logoSource": "Football-Data.org team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 3
+      },
+      "league": {
+        "id": 2019,
+        "name": "Serie A",
+        "logo": "https://crests.football-data.org/c111.png"
+      },
+      "competitionType": "domestic",
+      "source": "football-data.org",
+      "externalId": 558570,
+      "externalIds": {
+        "football-data.org": 558570
       },
       "details": {
         "events": [],
@@ -31205,8 +31194,8 @@
     },
     {
       "fixture": {
-        "id": "fd-555045",
-        "providerMatchId": 555045,
+        "id": "fd-555046",
+        "providerMatchId": 555046,
         "date": "2026-10-18T19:00:00Z",
         "status": {
           "short": "FT"
@@ -31214,31 +31203,31 @@
       },
       "teams": {
         "home": {
-          "id": 1765,
-          "footballDataId": 1765,
+          "id": 1767,
+          "footballDataId": 1767,
           "provider": "football-data.org",
-          "identity": "football-data.org:1765",
-          "name": "Fluminense FC",
-          "logo": "https://crests.football-data.org/1765.png",
-          "logoPath": "https://crests.football-data.org/1765.png",
+          "identity": "football-data.org:1767",
+          "name": "Grêmio FBPA",
+          "logo": "https://crests.football-data.org/1767.png",
+          "logoPath": "https://crests.football-data.org/1767.png",
           "logoSource": "Football-Data.org team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": 6685,
-          "footballDataId": 6685,
+          "id": 1771,
+          "footballDataId": 1771,
           "provider": "football-data.org",
-          "identity": "football-data.org:6685",
-          "name": "Santos FC",
-          "logo": "https://crests.football-data.org/6685.png",
-          "logoPath": "https://crests.football-data.org/6685.png",
+          "identity": "football-data.org:1771",
+          "name": "Cruzeiro EC",
+          "logo": "https://crests.football-data.org/1771.png",
+          "logoPath": "https://crests.football-data.org/1771.png",
           "logoSource": "Football-Data.org team ID",
           "logoQuality": "verified-id"
         }
       },
       "goals": {
-        "home": 1,
-        "away": 2
+        "home": 2,
+        "away": 4
       },
       "league": {
         "id": 2013,
@@ -31247,9 +31236,9 @@
       },
       "competitionType": "domestic",
       "source": "football-data.org",
-      "externalId": 555045,
+      "externalId": 555046,
       "externalIds": {
-        "football-data.org": 555045
+        "football-data.org": 555046
       },
       "details": {
         "events": [],
@@ -31315,8 +31304,8 @@
     },
     {
       "fixture": {
-        "id": "fd-555046",
-        "providerMatchId": 555046,
+        "id": "fd-555045",
+        "providerMatchId": 555045,
         "date": "2026-10-18T19:00:00Z",
         "status": {
           "short": "FT"
@@ -31324,31 +31313,31 @@
       },
       "teams": {
         "home": {
-          "id": 1767,
-          "footballDataId": 1767,
+          "id": 1765,
+          "footballDataId": 1765,
           "provider": "football-data.org",
-          "identity": "football-data.org:1767",
-          "name": "Grêmio FBPA",
-          "logo": "https://crests.football-data.org/1767.png",
-          "logoPath": "https://crests.football-data.org/1767.png",
+          "identity": "football-data.org:1765",
+          "name": "Fluminense FC",
+          "logo": "https://crests.football-data.org/1765.png",
+          "logoPath": "https://crests.football-data.org/1765.png",
           "logoSource": "Football-Data.org team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": 1771,
-          "footballDataId": 1771,
+          "id": 6685,
+          "footballDataId": 6685,
           "provider": "football-data.org",
-          "identity": "football-data.org:1771",
-          "name": "Cruzeiro EC",
-          "logo": "https://crests.football-data.org/1771.png",
-          "logoPath": "https://crests.football-data.org/1771.png",
+          "identity": "football-data.org:6685",
+          "name": "Santos FC",
+          "logo": "https://crests.football-data.org/6685.png",
+          "logoPath": "https://crests.football-data.org/6685.png",
           "logoSource": "Football-Data.org team ID",
           "logoQuality": "verified-id"
         }
       },
       "goals": {
-        "home": 2,
-        "away": 4
+        "home": 1,
+        "away": 2
       },
       "league": {
         "id": 2013,
@@ -31357,9 +31346,9 @@
       },
       "competitionType": "domestic",
       "source": "football-data.org",
-      "externalId": 555046,
+      "externalId": 555045,
       "externalIds": {
-        "football-data.org": 555046
+        "football-data.org": 555045
       },
       "details": {
         "events": [],
@@ -32934,61 +32923,6 @@
     },
     {
       "fixture": {
-        "id": "fd-560606",
-        "providerMatchId": 560606,
-        "date": "2026-10-19T19:00:00Z",
-        "status": {
-          "short": "FT"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": 73,
-          "footballDataId": 73,
-          "provider": "football-data.org",
-          "identity": "football-data.org:73",
-          "name": "Tottenham Hotspur FC",
-          "logo": "https://crests.football-data.org/73.png",
-          "logoPath": "https://crests.football-data.org/73.png",
-          "logoSource": "Football-Data.org team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": 1076,
-          "footballDataId": 1076,
-          "provider": "football-data.org",
-          "identity": "football-data.org:1076",
-          "name": "Coventry City FC",
-          "logo": "https://crests.football-data.org/1076.png",
-          "logoPath": "https://crests.football-data.org/1076.png",
-          "logoSource": "Football-Data.org team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 3,
-        "away": 1
-      },
-      "league": {
-        "id": 2021,
-        "name": "Premier League",
-        "logo": "https://crests.football-data.org/PL.png"
-      },
-      "competitionType": "domestic",
-      "source": "football-data.org",
-      "externalId": 560606,
-      "externalIds": {
-        "football-data.org": 560606
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "football-data.org"
-      }
-    },
-    {
-      "fixture": {
         "id": "fd-564717",
         "providerMatchId": 564717,
         "date": "2026-10-19T19:00:00Z",
@@ -33034,6 +32968,61 @@
       "externalId": 564717,
       "externalIds": {
         "football-data.org": 564717
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "football-data.org"
+      }
+    },
+    {
+      "fixture": {
+        "id": "fd-560606",
+        "providerMatchId": 560606,
+        "date": "2026-10-19T19:00:00Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": 73,
+          "footballDataId": 73,
+          "provider": "football-data.org",
+          "identity": "football-data.org:73",
+          "name": "Tottenham Hotspur FC",
+          "logo": "https://crests.football-data.org/73.png",
+          "logoPath": "https://crests.football-data.org/73.png",
+          "logoSource": "Football-Data.org team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": 1076,
+          "footballDataId": 1076,
+          "provider": "football-data.org",
+          "identity": "football-data.org:1076",
+          "name": "Coventry City FC",
+          "logo": "https://crests.football-data.org/1076.png",
+          "logoPath": "https://crests.football-data.org/1076.png",
+          "logoSource": "Football-Data.org team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 3,
+        "away": 1
+      },
+      "league": {
+        "id": 2021,
+        "name": "Premier League",
+        "logo": "https://crests.football-data.org/PL.png"
+      },
+      "competitionType": "domestic",
+      "source": "football-data.org",
+      "externalId": 560606,
+      "externalIds": {
+        "football-data.org": 560606
       },
       "details": {
         "events": [],
@@ -34215,624 +34204,8 @@
     },
     {
       "fixture": {
-        "id": "espn-aut.1-401881763",
-        "providerMatchId": "401881763",
-        "date": "2026-10-23T17:30Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "4405",
-          "espnId": "4405",
-          "provider": "espn",
-          "identity": "espn:4405",
-          "name": "SC Rheindorf Altach",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4405.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/4405.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "1382",
-          "espnId": "1382",
-          "provider": "espn",
-          "identity": "espn:1382",
-          "name": "Austria Vienna",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1382.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/1382.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:aut.1",
-        "name": "الدوري النمساوي",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401881763",
-      "externalIds": {
-        "espn": "401881763",
-        "espn-league": "aut.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-ned.2-401875884",
-        "providerMatchId": "401875884",
-        "date": "2026-10-23T18:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "5291",
-          "espnId": "5291",
-          "provider": "espn",
-          "identity": "espn:5291",
-          "name": "Almere City",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/5291.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/5291.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "149",
-          "espnId": "149",
-          "provider": "espn",
-          "identity": "espn:149",
-          "name": "Roda JC Kerkrade",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/149.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/149.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:ned.2",
-        "name": "الدوري الهولندي الدرجة الثانية",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401875884",
-      "externalIds": {
-        "espn": "401875884",
-        "espn-league": "ned.2"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-ned.2-401875883",
-        "providerMatchId": "401875883",
-        "date": "2026-10-23T18:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "144",
-          "espnId": "144",
-          "provider": "espn",
-          "identity": "espn:144",
-          "name": "De Graafschap",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/144.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/144.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "155",
-          "espnId": "155",
-          "provider": "espn",
-          "identity": "espn:155",
-          "name": "RKC Waalwijk",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/155.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/155.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:ned.2",
-        "name": "الدوري الهولندي الدرجة الثانية",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401875883",
-      "externalIds": {
-        "espn": "401875883",
-        "espn-league": "ned.2"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-ned.2-401875882",
-        "providerMatchId": "401875882",
-        "date": "2026-10-23T18:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "271",
-          "espnId": "271",
-          "provider": "espn",
-          "identity": "espn:271",
-          "name": "FC Den Bosch",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/271.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/271.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "3730",
-          "espnId": "3730",
-          "provider": "espn",
-          "identity": "espn:3730",
-          "name": "MVV Maastricht",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3730.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3730.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:ned.2",
-        "name": "الدوري الهولندي الدرجة الثانية",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401875882",
-      "externalIds": {
-        "espn": "401875882",
-        "espn-league": "ned.2"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-ned.2-401875881",
-        "providerMatchId": "401875881",
-        "date": "2026-10-23T18:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "3732",
-          "espnId": "3732",
-          "provider": "espn",
-          "identity": "espn:3732",
-          "name": "FC Eindhoven",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3732.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3732.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "9983",
-          "espnId": "9983",
-          "provider": "espn",
-          "identity": "espn:9983",
-          "name": "Jong PSV",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9983.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/9983.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:ned.2",
-        "name": "الدوري الهولندي الدرجة الثانية",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401875881",
-      "externalIds": {
-        "espn": "401875881",
-        "espn-league": "ned.2"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-ned.2-401875880",
-        "providerMatchId": "401875880",
-        "date": "2026-10-23T18:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "2727",
-          "espnId": "2727",
-          "provider": "espn",
-          "identity": "espn:2727",
-          "name": "FC Volendam",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2727.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/2727.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "18278",
-          "espnId": "18278",
-          "provider": "espn",
-          "identity": "espn:18278",
-          "name": "Jong FC Utrecht",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18278.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/18278.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:ned.2",
-        "name": "الدوري الهولندي الدرجة الثانية",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401875880",
-      "externalIds": {
-        "espn": "401875880",
-        "espn-league": "ned.2"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-ned.2-401875879",
-        "providerMatchId": "401875879",
-        "date": "2026-10-23T18:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "18748",
-          "espnId": "18748",
-          "provider": "espn",
-          "identity": "espn:18748",
-          "name": "Jong AZ",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18748.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/18748.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "3775",
-          "espnId": "3775",
-          "provider": "espn",
-          "identity": "espn:3775",
-          "name": "Helmond Sport",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3775.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3775.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:ned.2",
-        "name": "الدوري الهولندي الدرجة الثانية",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401875879",
-      "externalIds": {
-        "espn": "401875879",
-        "espn-league": "ned.2"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-ned.2-401875878",
-        "providerMatchId": "401875878",
-        "date": "2026-10-23T18:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "141",
-          "espnId": "141",
-          "provider": "espn",
-          "identity": "espn:141",
-          "name": "NAC Breda",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/141.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/141.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "3708",
-          "espnId": "3708",
-          "provider": "espn",
-          "identity": "espn:3708",
-          "name": "Heracles Almelo",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3708.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3708.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:ned.2",
-        "name": "الدوري الهولندي الدرجة الثانية",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401875878",
-      "externalIds": {
-        "espn": "401875878",
-        "espn-league": "ned.2"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-ned.2-401875877",
-        "providerMatchId": "401875877",
-        "date": "2026-10-23T18:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "3728",
-          "espnId": "3728",
-          "provider": "espn",
-          "identity": "espn:3728",
-          "name": "TOP Oss",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3728.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3728.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "10597",
-          "espnId": "10597",
-          "provider": "espn",
-          "identity": "espn:10597",
-          "name": "Jong Ajax",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/10597.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/10597.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:ned.2",
-        "name": "الدوري الهولندي الدرجة الثانية",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401875877",
-      "externalIds": {
-        "espn": "401875877",
-        "espn-league": "ned.2"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-ned.2-401875876",
-        "providerMatchId": "401875876",
-        "date": "2026-10-23T18:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "154",
-          "espnId": "154",
-          "provider": "espn",
-          "identity": "espn:154",
-          "name": "Vitesse",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/154.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/154.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "3707",
-          "espnId": "3707",
-          "provider": "espn",
-          "identity": "espn:3707",
-          "name": "FC Emmen",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3707.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3707.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:ned.2",
-        "name": "الدوري الهولندي الدرجة الثانية",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401875876",
-      "externalIds": {
-        "espn": "401875876",
-        "espn-league": "ned.2"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-bel.1-401878967",
-        "providerMatchId": "401878967",
-        "date": "2026-10-23T18:45Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "5786",
-          "espnId": "5786",
-          "provider": "espn",
-          "identity": "espn:5786",
-          "name": "KV Kortrijk",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/5786.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/5786.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "7879",
-          "espnId": "7879",
-          "provider": "espn",
-          "identity": "espn:7879",
-          "name": "KV Mechelen",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7879.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/7879.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:bel.1",
-        "name": "الدوري البلجيكي",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401878967",
-      "externalIds": {
-        "espn": "401878967",
-        "espn-league": "bel.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-bel.1-401878968",
-        "providerMatchId": "401878968",
+        "id": "espn-sco.1-401878362",
+        "providerMatchId": "401878362",
         "date": "2026-10-24T14:00Z",
         "status": {
           "short": "NS"
@@ -34840,24 +34213,24 @@
       },
       "teams": {
         "home": {
-          "id": "17544",
-          "espnId": "17544",
+          "id": "264",
+          "espnId": "264",
           "provider": "espn",
-          "identity": "espn:17544",
-          "name": "Antwerp",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17544.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/17544.png",
+          "identity": "espn:264",
+          "name": "Dundee United",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/264.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/264.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "3616",
-          "espnId": "3616",
+          "id": "263",
+          "espnId": "263",
           "provider": "espn",
-          "identity": "espn:3616",
-          "name": "Royal Charleroi SC",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3616.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3616.png",
+          "identity": "espn:263",
+          "name": "Aberdeen",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/263.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/263.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -34867,16 +34240,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:bel.1",
-        "name": "الدوري البلجيكي",
+        "id": "espn:sco.1",
+        "name": "الدوري الاسكتلندي",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401878968",
+      "externalId": "401878362",
       "externalIds": {
-        "espn": "401878968",
-        "espn-league": "bel.1"
+        "espn": "401878362",
+        "espn-league": "sco.1"
       },
       "details": {
         "events": [],
@@ -34887,33 +34260,33 @@
     },
     {
       "fixture": {
-        "id": "espn-ned.2-401875875",
-        "providerMatchId": "401875875",
-        "date": "2026-10-24T14:30Z",
+        "id": "espn-sco.1-401878361",
+        "providerMatchId": "401878361",
+        "date": "2026-10-24T14:00Z",
         "status": {
           "short": "NS"
         }
       },
       "teams": {
         "home": {
-          "id": "4426",
-          "espnId": "4426",
+          "id": "254",
+          "espnId": "254",
           "provider": "espn",
-          "identity": "espn:4426",
-          "name": "FC Dordrecht",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4426.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/4426.png",
+          "identity": "espn:254",
+          "name": "Falkirk",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/254.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/254.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "3731",
-          "espnId": "3731",
+          "id": "260",
+          "espnId": "260",
           "provider": "espn",
-          "identity": "espn:3731",
-          "name": "VVV-Venlo",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3731.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3731.png",
+          "identity": "espn:260",
+          "name": "Kilmarnock",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/260.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/260.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -34923,16 +34296,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:ned.2",
-        "name": "الدوري الهولندي الدرجة الثانية",
+        "id": "espn:sco.1",
+        "name": "الدوري الاسكتلندي",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401875875",
+      "externalId": "401878361",
       "externalIds": {
-        "espn": "401875875",
-        "espn-league": "ned.2"
+        "espn": "401878361",
+        "espn-league": "sco.1"
       },
       "details": {
         "events": [],
@@ -34943,33 +34316,33 @@
     },
     {
       "fixture": {
-        "id": "espn-aut.1-401881764",
-        "providerMatchId": "401881764",
-        "date": "2026-10-24T15:00Z",
+        "id": "espn-sco.1-401878358",
+        "providerMatchId": "401878358",
+        "date": "2026-10-24T14:00Z",
         "status": {
           "short": "NS"
         }
       },
       "teams": {
         "home": {
-          "id": "6907",
-          "espnId": "6907",
+          "id": "257",
+          "espnId": "257",
           "provider": "espn",
-          "identity": "espn:6907",
-          "name": "TSV Hartberg",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6907.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/6907.png",
+          "identity": "espn:257",
+          "name": "Rangers",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/257.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/257.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "13294",
-          "espnId": "13294",
+          "id": "267",
+          "espnId": "267",
           "provider": "espn",
-          "identity": "espn:13294",
-          "name": "Wolfsberger",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/13294.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/13294.png",
+          "identity": "espn:267",
+          "name": "St Johnstone",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/267.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/267.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -34979,16 +34352,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:aut.1",
-        "name": "الدوري النمساوي",
+        "id": "espn:sco.1",
+        "name": "الدوري الاسكتلندي",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401881764",
+      "externalId": "401878358",
       "externalIds": {
-        "espn": "401881764",
-        "espn-league": "aut.1"
+        "espn": "401878358",
+        "espn-league": "sco.1"
       },
       "details": {
         "events": [],
@@ -34999,33 +34372,33 @@
     },
     {
       "fixture": {
-        "id": "espn-aut.1-401881762",
-        "providerMatchId": "401881762",
-        "date": "2026-10-24T15:00Z",
+        "id": "espn-sco.1-401878357",
+        "providerMatchId": "401878357",
+        "date": "2026-10-24T14:00Z",
         "status": {
           "short": "NS"
         }
       },
       "teams": {
         "home": {
-          "id": "18794",
-          "espnId": "18794",
+          "id": "250",
+          "espnId": "250",
           "provider": "espn",
-          "identity": "espn:18794",
-          "name": "WSG Swarovski Tirol",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18794.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/18794.png",
+          "identity": "espn:250",
+          "name": "St Mirren",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/250.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/250.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "21846",
-          "espnId": "21846",
+          "id": "261",
+          "espnId": "261",
           "provider": "espn",
-          "identity": "espn:21846",
-          "name": "Grazer AK",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21846.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/21846.png",
+          "identity": "espn:261",
+          "name": "Dundee",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/261.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/261.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -35035,16 +34408,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:aut.1",
-        "name": "الدوري النمساوي",
+        "id": "espn:sco.1",
+        "name": "الدوري الاسكتلندي",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401881762",
+      "externalId": "401878357",
       "externalIds": {
-        "espn": "401881762",
-        "espn-league": "aut.1"
+        "espn": "401878357",
+        "espn-league": "sco.1"
       },
       "details": {
         "events": [],
@@ -35055,33 +34428,33 @@
     },
     {
       "fixture": {
-        "id": "espn-bel.1-401878969",
-        "providerMatchId": "401878969",
-        "date": "2026-10-24T16:15Z",
+        "id": "espn-sco.1-401878360",
+        "providerMatchId": "401878360",
+        "date": "2026-10-25T12:00Z",
         "status": {
           "short": "NS"
         }
       },
       "teams": {
         "home": {
-          "id": "5579",
-          "espnId": "5579",
+          "id": "258",
+          "espnId": "258",
           "provider": "espn",
-          "identity": "espn:5579",
-          "name": "OH Leuven",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/5579.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/5579.png",
+          "identity": "espn:258",
+          "name": "Hibernian",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/258.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/258.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "22269",
-          "espnId": "22269",
+          "id": "256",
+          "espnId": "256",
           "provider": "espn",
-          "identity": "espn:22269",
-          "name": "Lommel SK",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/22269.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/22269.png",
+          "identity": "espn:256",
+          "name": "Celtic",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/256.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/256.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -35091,16 +34464,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:bel.1",
-        "name": "الدوري البلجيكي",
+        "id": "espn:sco.1",
+        "name": "الدوري الاسكتلندي",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401878969",
+      "externalId": "401878360",
       "externalIds": {
-        "espn": "401878969",
-        "espn-league": "bel.1"
+        "espn": "401878360",
+        "espn-league": "sco.1"
       },
       "details": {
         "events": [],
@@ -35111,33 +34484,33 @@
     },
     {
       "fixture": {
-        "id": "espn-aut.1-401881765",
-        "providerMatchId": "401881765",
-        "date": "2026-10-24T17:30Z",
+        "id": "espn-sco.1-401878359",
+        "providerMatchId": "401878359",
+        "date": "2026-10-25T14:00Z",
         "status": {
           "short": "NS"
         }
       },
       "teams": {
         "home": {
-          "id": "519",
-          "espnId": "519",
+          "id": "266",
+          "espnId": "266",
           "provider": "espn",
-          "identity": "espn:519",
-          "name": "Rapid Vienna",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/519.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/519.png",
+          "identity": "espn:266",
+          "name": "Motherwell",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/266.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/266.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "21540",
-          "espnId": "21540",
+          "id": "262",
+          "espnId": "262",
           "provider": "espn",
-          "identity": "espn:21540",
-          "name": "Austria Lustenau",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21540.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/21540.png",
+          "identity": "espn:262",
+          "name": "Heart of Midlothian",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/262.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/262.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -35147,16 +34520,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:aut.1",
-        "name": "الدوري النمساوي",
+        "id": "espn:sco.1",
+        "name": "الدوري الاسكتلندي",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401881765",
+      "externalId": "401878359",
       "externalIds": {
-        "espn": "401881765",
-        "espn-league": "aut.1"
+        "espn": "401878359",
+        "espn-league": "sco.1"
       },
       "details": {
         "events": [],
@@ -35167,33 +34540,33 @@
     },
     {
       "fixture": {
-        "id": "espn-bel.1-401878965",
-        "providerMatchId": "401878965",
-        "date": "2026-10-24T18:45Z",
+        "id": "espn-sco.1-401878356",
+        "providerMatchId": "401878356",
+        "date": "2026-10-28T19:45Z",
         "status": {
           "short": "NS"
         }
       },
       "teams": {
         "home": {
-          "id": "606",
-          "espnId": "606",
+          "id": "263",
+          "espnId": "263",
           "provider": "espn",
-          "identity": "espn:606",
-          "name": "KVC Westerlo",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/606.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/606.png",
+          "identity": "espn:263",
+          "name": "Aberdeen",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/263.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/263.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "13450",
-          "espnId": "13450",
+          "id": "254",
+          "espnId": "254",
           "provider": "espn",
-          "identity": "espn:13450",
-          "name": "Waasland-Beveren",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/13450.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/13450.png",
+          "identity": "espn:254",
+          "name": "Falkirk",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/254.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/254.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -35203,16 +34576,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:bel.1",
-        "name": "الدوري البلجيكي",
+        "id": "espn:sco.1",
+        "name": "الدوري الاسكتلندي",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401878965",
+      "externalId": "401878356",
       "externalIds": {
-        "espn": "401878965",
-        "espn-league": "bel.1"
+        "espn": "401878356",
+        "espn-league": "sco.1"
       },
       "details": {
         "events": [],
@@ -35223,33 +34596,33 @@
     },
     {
       "fixture": {
-        "id": "espn-bel.1-401878966",
-        "providerMatchId": "401878966",
-        "date": "2026-10-24T18:45Z",
+        "id": "espn-sco.1-401878355",
+        "providerMatchId": "401878355",
+        "date": "2026-10-28T19:45Z",
         "status": {
           "short": "NS"
         }
       },
       "teams": {
         "home": {
-          "id": "131235",
-          "espnId": "131235",
+          "id": "256",
+          "espnId": "256",
           "provider": "espn",
-          "identity": "espn:131235",
-          "name": "RAAL La Louvière",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/131235.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/131235.png",
+          "identity": "espn:256",
+          "name": "Celtic",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/256.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/256.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "4691",
-          "espnId": "4691",
+          "id": "264",
+          "espnId": "264",
           "provider": "espn",
-          "identity": "espn:4691",
-          "name": "Zulte-Waregem",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4691.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/4691.png",
+          "identity": "espn:264",
+          "name": "Dundee United",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/264.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/264.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -35259,16 +34632,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:bel.1",
-        "name": "الدوري البلجيكي",
+        "id": "espn:sco.1",
+        "name": "الدوري الاسكتلندي",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401878966",
+      "externalId": "401878355",
       "externalIds": {
-        "espn": "401878966",
-        "espn-league": "bel.1"
+        "espn": "401878355",
+        "espn-league": "sco.1"
       },
       "details": {
         "events": [],
@@ -35279,33 +34652,33 @@
     },
     {
       "fixture": {
-        "id": "espn-bel.1-401878963",
-        "providerMatchId": "401878963",
-        "date": "2026-10-25T12:30Z",
+        "id": "espn-sco.1-401878354",
+        "providerMatchId": "401878354",
+        "date": "2026-10-28T19:45Z",
         "status": {
           "short": "NS"
         }
       },
       "teams": {
         "home": {
-          "id": "938",
-          "espnId": "938",
+          "id": "261",
+          "espnId": "261",
           "provider": "espn",
-          "identity": "espn:938",
-          "name": "Racing Genk",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/938.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/938.png",
+          "identity": "espn:261",
+          "name": "Dundee",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/261.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/261.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "559",
-          "espnId": "559",
+          "id": "260",
+          "espnId": "260",
           "provider": "espn",
-          "identity": "espn:559",
-          "name": "Standard Liege",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/559.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/559.png",
+          "identity": "espn:260",
+          "name": "Kilmarnock",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/260.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/260.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -35315,16 +34688,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:bel.1",
-        "name": "الدوري البلجيكي",
+        "id": "espn:sco.1",
+        "name": "الدوري الاسكتلندي",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401878963",
+      "externalId": "401878354",
       "externalIds": {
-        "espn": "401878963",
-        "espn-league": "bel.1"
+        "espn": "401878354",
+        "espn-league": "sco.1"
       },
       "details": {
         "events": [],
@@ -35335,33 +34708,33 @@
     },
     {
       "fixture": {
-        "id": "espn-aut.1-401881767",
-        "providerMatchId": "401881767",
-        "date": "2026-10-25T13:30Z",
+        "id": "espn-sco.1-401878352",
+        "providerMatchId": "401878352",
+        "date": "2026-10-28T19:45Z",
         "status": {
           "short": "NS"
         }
       },
       "teams": {
         "home": {
-          "id": "3746",
-          "espnId": "3746",
+          "id": "267",
+          "espnId": "267",
           "provider": "espn",
-          "identity": "espn:3746",
-          "name": "SK Sturm Graz",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3746.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3746.png",
+          "identity": "espn:267",
+          "name": "St Johnstone",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/267.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/267.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "3759",
-          "espnId": "3759",
+          "id": "266",
+          "espnId": "266",
           "provider": "espn",
-          "identity": "espn:3759",
-          "name": "SV Josko Ried",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3759.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3759.png",
+          "identity": "espn:266",
+          "name": "Motherwell",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/266.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/266.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -35371,16 +34744,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:aut.1",
-        "name": "الدوري النمساوي",
+        "id": "espn:sco.1",
+        "name": "الدوري الاسكتلندي",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401881767",
+      "externalId": "401878352",
       "externalIds": {
-        "espn": "401881767",
-        "espn-league": "aut.1"
+        "espn": "401878352",
+        "espn-league": "sco.1"
       },
       "details": {
         "events": [],
@@ -35391,33 +34764,33 @@
     },
     {
       "fixture": {
-        "id": "espn-bel.1-401878964",
-        "providerMatchId": "401878964",
-        "date": "2026-10-25T15:00Z",
+        "id": "espn-sco.1-401878351",
+        "providerMatchId": "401878351",
+        "date": "2026-10-28T19:45Z",
         "status": {
           "short": "NS"
         }
       },
       "teams": {
         "home": {
-          "id": "570",
-          "espnId": "570",
+          "id": "250",
+          "espnId": "250",
           "provider": "espn",
-          "identity": "espn:570",
-          "name": "Club Brugge",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/570.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/570.png",
+          "identity": "espn:250",
+          "name": "St Mirren",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/250.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/250.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "936",
-          "espnId": "936",
+          "id": "258",
+          "espnId": "258",
           "provider": "espn",
-          "identity": "espn:936",
-          "name": "Sint-Truidense",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/936.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/936.png",
+          "identity": "espn:258",
+          "name": "Hibernian",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/258.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/258.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -35427,16 +34800,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:bel.1",
-        "name": "الدوري البلجيكي",
+        "id": "espn:sco.1",
+        "name": "الدوري الاسكتلندي",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401878964",
+      "externalId": "401878351",
       "externalIds": {
-        "espn": "401878964",
-        "espn-league": "bel.1"
+        "espn": "401878351",
+        "espn-league": "sco.1"
       },
       "details": {
         "events": [],
@@ -35447,33 +34820,33 @@
     },
     {
       "fixture": {
-        "id": "espn-aut.1-401881766",
-        "providerMatchId": "401881766",
-        "date": "2026-10-25T16:00Z",
+        "id": "espn-sco.1-401878353",
+        "providerMatchId": "401878353",
+        "date": "2026-10-28T20:00Z",
         "status": {
           "short": "NS"
         }
       },
       "teams": {
         "home": {
-          "id": "4411",
-          "espnId": "4411",
+          "id": "262",
+          "espnId": "262",
           "provider": "espn",
-          "identity": "espn:4411",
-          "name": "LASK Linz",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4411.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/4411.png",
+          "identity": "espn:262",
+          "name": "Heart of Midlothian",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/262.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/262.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "2790",
-          "espnId": "2790",
+          "id": "257",
+          "espnId": "257",
           "provider": "espn",
-          "identity": "espn:2790",
-          "name": "RB Salzburg",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2790.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/2790.png",
+          "identity": "espn:257",
+          "name": "Rangers",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/257.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/257.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -35483,16 +34856,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:aut.1",
-        "name": "الدوري النمساوي",
+        "id": "espn:sco.1",
+        "name": "الدوري الاسكتلندي",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401881766",
+      "externalId": "401878353",
       "externalIds": {
-        "espn": "401881766",
-        "espn-league": "aut.1"
+        "espn": "401878353",
+        "espn-league": "sco.1"
       },
       "details": {
         "events": [],
@@ -35503,33 +34876,33 @@
     },
     {
       "fixture": {
-        "id": "espn-bel.1-401878962",
-        "providerMatchId": "401878962",
-        "date": "2026-10-25T17:30Z",
+        "id": "espn-sco.1-401878350",
+        "providerMatchId": "401878350",
+        "date": "2026-10-31T15:00Z",
         "status": {
-          "short": "NS"
+          "short": "FT"
         }
       },
       "teams": {
         "home": {
-          "id": "3611",
-          "espnId": "3611",
+          "id": "264",
+          "espnId": "264",
           "provider": "espn",
-          "identity": "espn:3611",
-          "name": "KAA Gent",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3611.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3611.png",
+          "identity": "espn:264",
+          "name": "Dundee United",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/264.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/264.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "441",
-          "espnId": "441",
+          "id": "262",
+          "espnId": "262",
           "provider": "espn",
-          "identity": "espn:441",
-          "name": "Anderlecht",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/441.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/441.png",
+          "identity": "espn:262",
+          "name": "Heart of Midlothian",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/262.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/262.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -35539,16 +34912,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:bel.1",
-        "name": "الدوري البلجيكي",
+        "id": "espn:sco.1",
+        "name": "الدوري الاسكتلندي",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401878962",
+      "externalId": "401878350",
       "externalIds": {
-        "espn": "401878962",
-        "espn-league": "bel.1"
+        "espn": "401878350",
+        "espn-league": "sco.1"
       },
       "details": {
         "events": [],
@@ -35559,400 +34932,8 @@
     },
     {
       "fixture": {
-        "id": "espn-bel.1-401878961",
-        "providerMatchId": "401878961",
-        "date": "2026-10-25T18:15Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "5807",
-          "espnId": "5807",
-          "provider": "espn",
-          "identity": "espn:5807",
-          "name": "Union St.-Gilloise",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/5807.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/5807.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "3610",
-          "espnId": "3610",
-          "provider": "espn",
-          "identity": "espn:3610",
-          "name": "Cercle Brugge KSV",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3610.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3610.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:bel.1",
-        "name": "الدوري البلجيكي",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401878961",
-      "externalIds": {
-        "espn": "401878961",
-        "espn-league": "bel.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-aut.1-401881757",
-        "providerMatchId": "401881757",
-        "date": "2026-10-30T18:30Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "21846",
-          "espnId": "21846",
-          "provider": "espn",
-          "identity": "espn:21846",
-          "name": "Grazer AK",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21846.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/21846.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "6907",
-          "espnId": "6907",
-          "provider": "espn",
-          "identity": "espn:6907",
-          "name": "TSV Hartberg",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6907.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/6907.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:aut.1",
-        "name": "الدوري النمساوي",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401881757",
-      "externalIds": {
-        "espn": "401881757",
-        "espn-league": "aut.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-ned.2-401875873",
-        "providerMatchId": "401875873",
-        "date": "2026-10-30T19:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "2727",
-          "espnId": "2727",
-          "provider": "espn",
-          "identity": "espn:2727",
-          "name": "FC Volendam",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2727.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/2727.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "144",
-          "espnId": "144",
-          "provider": "espn",
-          "identity": "espn:144",
-          "name": "De Graafschap",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/144.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/144.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:ned.2",
-        "name": "الدوري الهولندي الدرجة الثانية",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401875873",
-      "externalIds": {
-        "espn": "401875873",
-        "espn-league": "ned.2"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-ned.2-401875872",
-        "providerMatchId": "401875872",
-        "date": "2026-10-30T19:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "3775",
-          "espnId": "3775",
-          "provider": "espn",
-          "identity": "espn:3775",
-          "name": "Helmond Sport",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3775.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3775.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "3732",
-          "espnId": "3732",
-          "provider": "espn",
-          "identity": "espn:3732",
-          "name": "FC Eindhoven",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3732.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3732.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:ned.2",
-        "name": "الدوري الهولندي الدرجة الثانية",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401875872",
-      "externalIds": {
-        "espn": "401875872",
-        "espn-league": "ned.2"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-ned.2-401875870",
-        "providerMatchId": "401875870",
-        "date": "2026-10-30T19:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "155",
-          "espnId": "155",
-          "provider": "espn",
-          "identity": "espn:155",
-          "name": "RKC Waalwijk",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/155.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/155.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "5291",
-          "espnId": "5291",
-          "provider": "espn",
-          "identity": "espn:5291",
-          "name": "Almere City",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/5291.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/5291.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:ned.2",
-        "name": "الدوري الهولندي الدرجة الثانية",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401875870",
-      "externalIds": {
-        "espn": "401875870",
-        "espn-league": "ned.2"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-ned.2-401875869",
-        "providerMatchId": "401875869",
-        "date": "2026-10-30T19:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "149",
-          "espnId": "149",
-          "provider": "espn",
-          "identity": "espn:149",
-          "name": "Roda JC Kerkrade",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/149.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/149.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "18748",
-          "espnId": "18748",
-          "provider": "espn",
-          "identity": "espn:18748",
-          "name": "Jong AZ",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18748.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/18748.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:ned.2",
-        "name": "الدوري الهولندي الدرجة الثانية",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401875869",
-      "externalIds": {
-        "espn": "401875869",
-        "espn-league": "ned.2"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-bel.1-401878956",
-        "providerMatchId": "401878956",
-        "date": "2026-10-30T19:45Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "4691",
-          "espnId": "4691",
-          "provider": "espn",
-          "identity": "espn:4691",
-          "name": "Zulte-Waregem",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4691.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/4691.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "570",
-          "espnId": "570",
-          "provider": "espn",
-          "identity": "espn:570",
-          "name": "Club Brugge",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/570.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/570.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:bel.1",
-        "name": "الدوري البلجيكي",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401878956",
-      "externalIds": {
-        "espn": "401878956",
-        "espn-league": "bel.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-bel.1-401878958",
-        "providerMatchId": "401878958",
+        "id": "espn-sco.1-401878347",
+        "providerMatchId": "401878347",
         "date": "2026-10-31T15:00Z",
         "status": {
           "short": "NS"
@@ -35960,24 +34941,24 @@
       },
       "teams": {
         "home": {
-          "id": "7879",
-          "espnId": "7879",
+          "id": "260",
+          "espnId": "260",
           "provider": "espn",
-          "identity": "espn:7879",
-          "name": "KV Mechelen",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7879.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/7879.png",
+          "identity": "espn:260",
+          "name": "Kilmarnock",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/260.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/260.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "938",
-          "espnId": "938",
+          "id": "267",
+          "espnId": "267",
           "provider": "espn",
-          "identity": "espn:938",
-          "name": "Racing Genk",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/938.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/938.png",
+          "identity": "espn:267",
+          "name": "St Johnstone",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/267.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/267.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -35987,16 +34968,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:bel.1",
-        "name": "الدوري البلجيكي",
+        "id": "espn:sco.1",
+        "name": "الدوري الاسكتلندي",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401878958",
+      "externalId": "401878347",
       "externalIds": {
-        "espn": "401878958",
-        "espn-league": "bel.1"
+        "espn": "401878347",
+        "espn-league": "sco.1"
       },
       "details": {
         "events": [],
@@ -36007,33 +34988,33 @@
     },
     {
       "fixture": {
-        "id": "espn-ned.2-401875868",
-        "providerMatchId": "401875868",
-        "date": "2026-10-31T15:30Z",
+        "id": "espn-sco.1-401878346",
+        "providerMatchId": "401878346",
+        "date": "2026-10-31T15:00Z",
         "status": {
           "short": "NS"
         }
       },
       "teams": {
         "home": {
-          "id": "3730",
-          "espnId": "3730",
+          "id": "266",
+          "espnId": "266",
           "provider": "espn",
-          "identity": "espn:3730",
-          "name": "MVV Maastricht",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3730.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3730.png",
+          "identity": "espn:266",
+          "name": "Motherwell",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/266.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/266.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "3731",
-          "espnId": "3731",
+          "id": "250",
+          "espnId": "250",
           "provider": "espn",
-          "identity": "espn:3731",
-          "name": "VVV-Venlo",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3731.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3731.png",
+          "identity": "espn:250",
+          "name": "St Mirren",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/250.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/250.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -36043,16 +35024,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:ned.2",
-        "name": "الدوري الهولندي الدرجة الثانية",
+        "id": "espn:sco.1",
+        "name": "الدوري الاسكتلندي",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401875868",
+      "externalId": "401878346",
       "externalIds": {
-        "espn": "401875868",
-        "espn-league": "ned.2"
+        "espn": "401878346",
+        "espn-league": "sco.1"
       },
       "details": {
         "events": [],
@@ -36063,33 +35044,33 @@
     },
     {
       "fixture": {
-        "id": "espn-aut.1-401881756",
-        "providerMatchId": "401881756",
-        "date": "2026-10-31T16:00Z",
+        "id": "espn-sco.1-401878349",
+        "providerMatchId": "401878349",
+        "date": "2026-11-01T13:00Z",
         "status": {
           "short": "NS"
         }
       },
       "teams": {
         "home": {
-          "id": "4405",
-          "espnId": "4405",
+          "id": "254",
+          "espnId": "254",
           "provider": "espn",
-          "identity": "espn:4405",
-          "name": "SC Rheindorf Altach",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4405.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/4405.png",
+          "identity": "espn:254",
+          "name": "Falkirk",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/254.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/254.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "3759",
-          "espnId": "3759",
+          "id": "256",
+          "espnId": "256",
           "provider": "espn",
-          "identity": "espn:3759",
-          "name": "SV Josko Ried",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3759.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3759.png",
+          "identity": "espn:256",
+          "name": "Celtic",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/256.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/256.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -36099,16 +35080,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:aut.1",
-        "name": "الدوري النمساوي",
+        "id": "espn:sco.1",
+        "name": "الدوري الاسكتلندي",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401881756",
+      "externalId": "401878349",
       "externalIds": {
-        "espn": "401881756",
-        "espn-league": "aut.1"
+        "espn": "401878349",
+        "espn-league": "sco.1"
       },
       "details": {
         "events": [],
@@ -36119,1408 +35100,8 @@
     },
     {
       "fixture": {
-        "id": "espn-bel.1-401878953",
-        "providerMatchId": "401878953",
-        "date": "2026-10-31T17:15Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "559",
-          "espnId": "559",
-          "provider": "espn",
-          "identity": "espn:559",
-          "name": "Standard Liege",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/559.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/559.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "5786",
-          "espnId": "5786",
-          "provider": "espn",
-          "identity": "espn:5786",
-          "name": "KV Kortrijk",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/5786.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/5786.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:bel.1",
-        "name": "الدوري البلجيكي",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401878953",
-      "externalIds": {
-        "espn": "401878953",
-        "espn-league": "bel.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-aut.1-401881760",
-        "providerMatchId": "401881760",
-        "date": "2026-10-31T18:30Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "4411",
-          "espnId": "4411",
-          "provider": "espn",
-          "identity": "espn:4411",
-          "name": "LASK Linz",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4411.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/4411.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "18794",
-          "espnId": "18794",
-          "provider": "espn",
-          "identity": "espn:18794",
-          "name": "WSG Swarovski Tirol",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18794.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/18794.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:aut.1",
-        "name": "الدوري النمساوي",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401881760",
-      "externalIds": {
-        "espn": "401881760",
-        "espn-league": "aut.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-bel.1-401878960",
-        "providerMatchId": "401878960",
-        "date": "2026-10-31T19:45Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "441",
-          "espnId": "441",
-          "provider": "espn",
-          "identity": "espn:441",
-          "name": "Anderlecht",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/441.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/441.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "606",
-          "espnId": "606",
-          "provider": "espn",
-          "identity": "espn:606",
-          "name": "KVC Westerlo",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/606.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/606.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:bel.1",
-        "name": "الدوري البلجيكي",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401878960",
-      "externalIds": {
-        "espn": "401878960",
-        "espn-league": "bel.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-bel.1-401878957",
-        "providerMatchId": "401878957",
-        "date": "2026-10-31T19:45Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "13450",
-          "espnId": "13450",
-          "provider": "espn",
-          "identity": "espn:13450",
-          "name": "Waasland-Beveren",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/13450.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/13450.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "5807",
-          "espnId": "5807",
-          "provider": "espn",
-          "identity": "espn:5807",
-          "name": "Union St.-Gilloise",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/5807.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/5807.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:bel.1",
-        "name": "الدوري البلجيكي",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401878957",
-      "externalIds": {
-        "espn": "401878957",
-        "espn-league": "bel.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-bel.1-401878959",
-        "providerMatchId": "401878959",
-        "date": "2026-11-01T12:30Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "3610",
-          "espnId": "3610",
-          "provider": "espn",
-          "identity": "espn:3610",
-          "name": "Cercle Brugge KSV",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3610.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3610.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "17544",
-          "espnId": "17544",
-          "provider": "espn",
-          "identity": "espn:17544",
-          "name": "Antwerp",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17544.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/17544.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:bel.1",
-        "name": "الدوري البلجيكي",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401878959",
-      "externalIds": {
-        "espn": "401878959",
-        "espn-league": "bel.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-aut.1-401881761",
-        "providerMatchId": "401881761",
-        "date": "2026-11-01T13:30Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "2790",
-          "espnId": "2790",
-          "provider": "espn",
-          "identity": "espn:2790",
-          "name": "RB Salzburg",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2790.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/2790.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "21540",
-          "espnId": "21540",
-          "provider": "espn",
-          "identity": "espn:21540",
-          "name": "Austria Lustenau",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21540.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/21540.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:aut.1",
-        "name": "الدوري النمساوي",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401881761",
-      "externalIds": {
-        "espn": "401881761",
-        "espn-league": "aut.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-aut.1-401881759",
-        "providerMatchId": "401881759",
-        "date": "2026-11-01T13:30Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "13294",
-          "espnId": "13294",
-          "provider": "espn",
-          "identity": "espn:13294",
-          "name": "Wolfsberger",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/13294.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/13294.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "3746",
-          "espnId": "3746",
-          "provider": "espn",
-          "identity": "espn:3746",
-          "name": "SK Sturm Graz",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3746.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3746.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:aut.1",
-        "name": "الدوري النمساوي",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401881759",
-      "externalIds": {
-        "espn": "401881759",
-        "espn-league": "aut.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-ned.2-401875874",
-        "providerMatchId": "401875874",
-        "date": "2026-11-01T13:30Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "3707",
-          "espnId": "3707",
-          "provider": "espn",
-          "identity": "espn:3707",
-          "name": "FC Emmen",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3707.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3707.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "271",
-          "espnId": "271",
-          "provider": "espn",
-          "identity": "espn:271",
-          "name": "FC Den Bosch",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/271.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/271.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:ned.2",
-        "name": "الدوري الهولندي الدرجة الثانية",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401875874",
-      "externalIds": {
-        "espn": "401875874",
-        "espn-league": "ned.2"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-bel.1-401878952",
-        "providerMatchId": "401878952",
-        "date": "2026-11-01T15:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "936",
-          "espnId": "936",
-          "provider": "espn",
-          "identity": "espn:936",
-          "name": "Sint-Truidense",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/936.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/936.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "5579",
-          "espnId": "5579",
-          "provider": "espn",
-          "identity": "espn:5579",
-          "name": "OH Leuven",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/5579.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/5579.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:bel.1",
-        "name": "الدوري البلجيكي",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401878952",
-      "externalIds": {
-        "espn": "401878952",
-        "espn-league": "bel.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-aut.1-401881758",
-        "providerMatchId": "401881758",
-        "date": "2026-11-01T16:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "1382",
-          "espnId": "1382",
-          "provider": "espn",
-          "identity": "espn:1382",
-          "name": "Austria Vienna",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1382.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/1382.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "519",
-          "espnId": "519",
-          "provider": "espn",
-          "identity": "espn:519",
-          "name": "Rapid Vienna",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/519.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/519.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:aut.1",
-        "name": "الدوري النمساوي",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401881758",
-      "externalIds": {
-        "espn": "401881758",
-        "espn-league": "aut.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-bel.1-401878954",
-        "providerMatchId": "401878954",
-        "date": "2026-11-01T17:30Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "22269",
-          "espnId": "22269",
-          "provider": "espn",
-          "identity": "espn:22269",
-          "name": "Lommel SK",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/22269.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/22269.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "3611",
-          "espnId": "3611",
-          "provider": "espn",
-          "identity": "espn:3611",
-          "name": "KAA Gent",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3611.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3611.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:bel.1",
-        "name": "الدوري البلجيكي",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401878954",
-      "externalIds": {
-        "espn": "401878954",
-        "espn-league": "bel.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-bel.1-401878955",
-        "providerMatchId": "401878955",
-        "date": "2026-11-01T18:15Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "3616",
-          "espnId": "3616",
-          "provider": "espn",
-          "identity": "espn:3616",
-          "name": "Royal Charleroi SC",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3616.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3616.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "131235",
-          "espnId": "131235",
-          "provider": "espn",
-          "identity": "espn:131235",
-          "name": "RAAL La Louvière",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/131235.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/131235.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:bel.1",
-        "name": "الدوري البلجيكي",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401878955",
-      "externalIds": {
-        "espn": "401878955",
-        "espn-league": "bel.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-ned.2-401875871",
-        "providerMatchId": "401875871",
-        "date": "2026-11-02T19:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "3708",
-          "espnId": "3708",
-          "provider": "espn",
-          "identity": "espn:3708",
-          "name": "Heracles Almelo",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3708.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3708.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "3728",
-          "espnId": "3728",
-          "provider": "espn",
-          "identity": "espn:3728",
-          "name": "TOP Oss",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3728.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3728.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:ned.2",
-        "name": "الدوري الهولندي الدرجة الثانية",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401875871",
-      "externalIds": {
-        "espn": "401875871",
-        "espn-league": "ned.2"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-ned.2-401875867",
-        "providerMatchId": "401875867",
-        "date": "2026-11-02T19:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "10597",
-          "espnId": "10597",
-          "provider": "espn",
-          "identity": "espn:10597",
-          "name": "Jong Ajax",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/10597.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/10597.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "154",
-          "espnId": "154",
-          "provider": "espn",
-          "identity": "espn:154",
-          "name": "Vitesse",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/154.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/154.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:ned.2",
-        "name": "الدوري الهولندي الدرجة الثانية",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401875867",
-      "externalIds": {
-        "espn": "401875867",
-        "espn-league": "ned.2"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-ned.2-401875866",
-        "providerMatchId": "401875866",
-        "date": "2026-11-02T19:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "18278",
-          "espnId": "18278",
-          "provider": "espn",
-          "identity": "espn:18278",
-          "name": "Jong FC Utrecht",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18278.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/18278.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "4426",
-          "espnId": "4426",
-          "provider": "espn",
-          "identity": "espn:4426",
-          "name": "FC Dordrecht",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4426.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/4426.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:ned.2",
-        "name": "الدوري الهولندي الدرجة الثانية",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401875866",
-      "externalIds": {
-        "espn": "401875866",
-        "espn-league": "ned.2"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-ned.2-401875865",
-        "providerMatchId": "401875865",
-        "date": "2026-11-02T19:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "9983",
-          "espnId": "9983",
-          "provider": "espn",
-          "identity": "espn:9983",
-          "name": "Jong PSV",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9983.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/9983.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "141",
-          "espnId": "141",
-          "provider": "espn",
-          "identity": "espn:141",
-          "name": "NAC Breda",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/141.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/141.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:ned.2",
-        "name": "الدوري الهولندي الدرجة الثانية",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401875865",
-      "externalIds": {
-        "espn": "401875865",
-        "espn-league": "ned.2"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-aut.1-401881754",
-        "providerMatchId": "401881754",
-        "date": "2026-11-06T18:30Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "519",
-          "espnId": "519",
-          "provider": "espn",
-          "identity": "espn:519",
-          "name": "Rapid Vienna",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/519.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/519.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "13294",
-          "espnId": "13294",
-          "provider": "espn",
-          "identity": "espn:13294",
-          "name": "Wolfsberger",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/13294.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/13294.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:aut.1",
-        "name": "الدوري النمساوي",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401881754",
-      "externalIds": {
-        "espn": "401881754",
-        "espn-league": "aut.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-ned.2-401875864",
-        "providerMatchId": "401875864",
-        "date": "2026-11-06T19:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "4426",
-          "espnId": "4426",
-          "provider": "espn",
-          "identity": "espn:4426",
-          "name": "FC Dordrecht",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4426.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/4426.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "141",
-          "espnId": "141",
-          "provider": "espn",
-          "identity": "espn:141",
-          "name": "NAC Breda",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/141.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/141.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:ned.2",
-        "name": "الدوري الهولندي الدرجة الثانية",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401875864",
-      "externalIds": {
-        "espn": "401875864",
-        "espn-league": "ned.2"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-ned.2-401875863",
-        "providerMatchId": "401875863",
-        "date": "2026-11-06T19:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "3732",
-          "espnId": "3732",
-          "provider": "espn",
-          "identity": "espn:3732",
-          "name": "FC Eindhoven",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3732.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3732.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "10597",
-          "espnId": "10597",
-          "provider": "espn",
-          "identity": "espn:10597",
-          "name": "Jong Ajax",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/10597.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/10597.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:ned.2",
-        "name": "الدوري الهولندي الدرجة الثانية",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401875863",
-      "externalIds": {
-        "espn": "401875863",
-        "espn-league": "ned.2"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-ned.2-401875862",
-        "providerMatchId": "401875862",
-        "date": "2026-11-06T19:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "3775",
-          "espnId": "3775",
-          "provider": "espn",
-          "identity": "espn:3775",
-          "name": "Helmond Sport",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3775.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3775.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "2727",
-          "espnId": "2727",
-          "provider": "espn",
-          "identity": "espn:2727",
-          "name": "FC Volendam",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2727.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/2727.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:ned.2",
-        "name": "الدوري الهولندي الدرجة الثانية",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401875862",
-      "externalIds": {
-        "espn": "401875862",
-        "espn-league": "ned.2"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-ned.2-401875861",
-        "providerMatchId": "401875861",
-        "date": "2026-11-06T19:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "3708",
-          "espnId": "3708",
-          "provider": "espn",
-          "identity": "espn:3708",
-          "name": "Heracles Almelo",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3708.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3708.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "149",
-          "espnId": "149",
-          "provider": "espn",
-          "identity": "espn:149",
-          "name": "Roda JC Kerkrade",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/149.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/149.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:ned.2",
-        "name": "الدوري الهولندي الدرجة الثانية",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401875861",
-      "externalIds": {
-        "espn": "401875861",
-        "espn-league": "ned.2"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-ned.2-401875860",
-        "providerMatchId": "401875860",
-        "date": "2026-11-06T19:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "18748",
-          "espnId": "18748",
-          "provider": "espn",
-          "identity": "espn:18748",
-          "name": "Jong AZ",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18748.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/18748.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "5291",
-          "espnId": "5291",
-          "provider": "espn",
-          "identity": "espn:5291",
-          "name": "Almere City",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/5291.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/5291.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:ned.2",
-        "name": "الدوري الهولندي الدرجة الثانية",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401875860",
-      "externalIds": {
-        "espn": "401875860",
-        "espn-league": "ned.2"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-ned.2-401875859",
-        "providerMatchId": "401875859",
-        "date": "2026-11-06T19:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "3728",
-          "espnId": "3728",
-          "provider": "espn",
-          "identity": "espn:3728",
-          "name": "TOP Oss",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3728.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3728.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "155",
-          "espnId": "155",
-          "provider": "espn",
-          "identity": "espn:155",
-          "name": "RKC Waalwijk",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/155.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/155.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:ned.2",
-        "name": "الدوري الهولندي الدرجة الثانية",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401875859",
-      "externalIds": {
-        "espn": "401875859",
-        "espn-league": "ned.2"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-ned.2-401875858",
-        "providerMatchId": "401875858",
-        "date": "2026-11-06T19:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "3731",
-          "espnId": "3731",
-          "provider": "espn",
-          "identity": "espn:3731",
-          "name": "VVV-Venlo",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3731.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3731.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "9983",
-          "espnId": "9983",
-          "provider": "espn",
-          "identity": "espn:9983",
-          "name": "Jong PSV",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9983.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/9983.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:ned.2",
-        "name": "الدوري الهولندي الدرجة الثانية",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401875858",
-      "externalIds": {
-        "espn": "401875858",
-        "espn-league": "ned.2"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-bel.1-401878951",
-        "providerMatchId": "401878951",
-        "date": "2026-11-06T19:45Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "559",
-          "espnId": "559",
-          "provider": "espn",
-          "identity": "espn:559",
-          "name": "Standard Liege",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/559.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/559.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "13450",
-          "espnId": "13450",
-          "provider": "espn",
-          "identity": "espn:13450",
-          "name": "Waasland-Beveren",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/13450.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/13450.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:bel.1",
-        "name": "الدوري البلجيكي",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401878951",
-      "externalIds": {
-        "espn": "401878951",
-        "espn-league": "bel.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-bel.1-401878947",
-        "providerMatchId": "401878947",
+        "id": "espn-sco.1-401878342",
+        "providerMatchId": "401878342",
         "date": "2026-11-07T15:00Z",
         "status": {
           "short": "NS"
@@ -37528,24 +35109,24 @@
       },
       "teams": {
         "home": {
-          "id": "606",
-          "espnId": "606",
+          "id": "264",
+          "espnId": "264",
           "provider": "espn",
-          "identity": "espn:606",
-          "name": "KVC Westerlo",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/606.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/606.png",
+          "identity": "espn:264",
+          "name": "Dundee United",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/264.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/264.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "3616",
-          "espnId": "3616",
+          "id": "266",
+          "espnId": "266",
           "provider": "espn",
-          "identity": "espn:3616",
-          "name": "Royal Charleroi SC",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3616.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3616.png",
+          "identity": "espn:266",
+          "name": "Motherwell",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/266.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/266.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -37555,16 +35136,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:bel.1",
-        "name": "الدوري البلجيكي",
+        "id": "espn:sco.1",
+        "name": "الدوري الاسكتلندي",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401878947",
+      "externalId": "401878342",
       "externalIds": {
-        "espn": "401878947",
-        "espn-league": "bel.1"
+        "espn": "401878342",
+        "espn-league": "sco.1"
       },
       "details": {
         "events": [],
@@ -37575,33 +35156,33 @@
     },
     {
       "fixture": {
-        "id": "espn-ned.2-401875857",
-        "providerMatchId": "401875857",
-        "date": "2026-11-07T15:30Z",
+        "id": "espn-sco.1-401878341",
+        "providerMatchId": "401878341",
+        "date": "2026-11-07T15:00Z",
         "status": {
           "short": "NS"
         }
       },
       "teams": {
         "home": {
-          "id": "271",
-          "espnId": "271",
+          "id": "267",
+          "espnId": "267",
           "provider": "espn",
-          "identity": "espn:271",
-          "name": "FC Den Bosch",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/271.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/271.png",
+          "identity": "espn:267",
+          "name": "St Johnstone",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/267.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/267.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "18278",
-          "espnId": "18278",
+          "id": "261",
+          "espnId": "261",
           "provider": "espn",
-          "identity": "espn:18278",
-          "name": "Jong FC Utrecht",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18278.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/18278.png",
+          "identity": "espn:261",
+          "name": "Dundee",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/261.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/261.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -37611,16 +35192,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:ned.2",
-        "name": "الدوري الهولندي الدرجة الثانية",
+        "id": "espn:sco.1",
+        "name": "الدوري الاسكتلندي",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401875857",
+      "externalId": "401878341",
       "externalIds": {
-        "espn": "401875857",
-        "espn-league": "ned.2"
+        "espn": "401878341",
+        "espn-league": "sco.1"
       },
       "details": {
         "events": [],
@@ -37631,33 +35212,33 @@
     },
     {
       "fixture": {
-        "id": "espn-aut.1-401881750",
-        "providerMatchId": "401881750",
-        "date": "2026-11-07T16:00Z",
+        "id": "espn-sco.1-401878344",
+        "providerMatchId": "401878344",
+        "date": "2026-11-07T17:45Z",
         "status": {
           "short": "NS"
         }
       },
       "teams": {
         "home": {
-          "id": "21540",
-          "espnId": "21540",
+          "id": "263",
+          "espnId": "263",
           "provider": "espn",
-          "identity": "espn:21540",
-          "name": "Austria Lustenau",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21540.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/21540.png",
+          "identity": "espn:263",
+          "name": "Aberdeen",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/263.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/263.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "21846",
-          "espnId": "21846",
+          "id": "258",
+          "espnId": "258",
           "provider": "espn",
-          "identity": "espn:21846",
-          "name": "Grazer AK",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21846.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/21846.png",
+          "identity": "espn:258",
+          "name": "Hibernian",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/258.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/258.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -37667,16 +35248,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:aut.1",
-        "name": "الدوري النمساوي",
+        "id": "espn:sco.1",
+        "name": "الدوري الاسكتلندي",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401881750",
+      "externalId": "401878344",
       "externalIds": {
-        "espn": "401881750",
-        "espn-league": "aut.1"
+        "espn": "401878344",
+        "espn-league": "sco.1"
       },
       "details": {
         "events": [],
@@ -37687,33 +35268,33 @@
     },
     {
       "fixture": {
-        "id": "espn-bel.1-401878949",
-        "providerMatchId": "401878949",
-        "date": "2026-11-07T17:15Z",
+        "id": "espn-sco.1-401878340",
+        "providerMatchId": "401878340",
+        "date": "2026-11-07T20:00Z",
         "status": {
           "short": "NS"
         }
       },
       "teams": {
         "home": {
-          "id": "5579",
-          "espnId": "5579",
+          "id": "250",
+          "espnId": "250",
           "provider": "espn",
-          "identity": "espn:5579",
-          "name": "OH Leuven",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/5579.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/5579.png",
+          "identity": "espn:250",
+          "name": "St Mirren",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/250.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/250.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "7879",
-          "espnId": "7879",
+          "id": "257",
+          "espnId": "257",
           "provider": "espn",
-          "identity": "espn:7879",
-          "name": "KV Mechelen",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7879.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/7879.png",
+          "identity": "espn:257",
+          "name": "Rangers",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/257.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/257.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -37723,16 +35304,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:bel.1",
-        "name": "الدوري البلجيكي",
+        "id": "espn:sco.1",
+        "name": "الدوري الاسكتلندي",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401878949",
+      "externalId": "401878340",
       "externalIds": {
-        "espn": "401878949",
-        "espn-league": "bel.1"
+        "espn": "401878340",
+        "espn-league": "sco.1"
       },
       "details": {
         "events": [],
@@ -37743,400 +35324,8 @@
     },
     {
       "fixture": {
-        "id": "espn-aut.1-401881752",
-        "providerMatchId": "401881752",
-        "date": "2026-11-07T18:30Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "3759",
-          "espnId": "3759",
-          "provider": "espn",
-          "identity": "espn:3759",
-          "name": "SV Josko Ried",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3759.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3759.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "4411",
-          "espnId": "4411",
-          "provider": "espn",
-          "identity": "espn:4411",
-          "name": "LASK Linz",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4411.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/4411.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:aut.1",
-        "name": "الدوري النمساوي",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401881752",
-      "externalIds": {
-        "espn": "401881752",
-        "espn-league": "aut.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-bel.1-401878950",
-        "providerMatchId": "401878950",
-        "date": "2026-11-07T19:45Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "17544",
-          "espnId": "17544",
-          "provider": "espn",
-          "identity": "espn:17544",
-          "name": "Antwerp",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17544.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/17544.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "22269",
-          "espnId": "22269",
-          "provider": "espn",
-          "identity": "espn:22269",
-          "name": "Lommel SK",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/22269.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/22269.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:bel.1",
-        "name": "الدوري البلجيكي",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401878950",
-      "externalIds": {
-        "espn": "401878950",
-        "espn-league": "bel.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-bel.1-401878948",
-        "providerMatchId": "401878948",
-        "date": "2026-11-07T19:45Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "131235",
-          "espnId": "131235",
-          "provider": "espn",
-          "identity": "espn:131235",
-          "name": "RAAL La Louvière",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/131235.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/131235.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "3610",
-          "espnId": "3610",
-          "provider": "espn",
-          "identity": "espn:3610",
-          "name": "Cercle Brugge KSV",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3610.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3610.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:bel.1",
-        "name": "الدوري البلجيكي",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401878948",
-      "externalIds": {
-        "espn": "401878948",
-        "espn-league": "bel.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-ned.2-401875856",
-        "providerMatchId": "401875856",
-        "date": "2026-11-08T11:15Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "154",
-          "espnId": "154",
-          "provider": "espn",
-          "identity": "espn:154",
-          "name": "Vitesse",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/154.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/154.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "144",
-          "espnId": "144",
-          "provider": "espn",
-          "identity": "espn:144",
-          "name": "De Graafschap",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/144.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/144.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:ned.2",
-        "name": "الدوري الهولندي الدرجة الثانية",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401875856",
-      "externalIds": {
-        "espn": "401875856",
-        "espn-league": "ned.2"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-bel.1-401878946",
-        "providerMatchId": "401878946",
-        "date": "2026-11-08T12:30Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "570",
-          "espnId": "570",
-          "provider": "espn",
-          "identity": "espn:570",
-          "name": "Club Brugge",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/570.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/570.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "441",
-          "espnId": "441",
-          "provider": "espn",
-          "identity": "espn:441",
-          "name": "Anderlecht",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/441.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/441.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:bel.1",
-        "name": "الدوري البلجيكي",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401878946",
-      "externalIds": {
-        "espn": "401878946",
-        "espn-league": "bel.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-aut.1-401881753",
-        "providerMatchId": "401881753",
-        "date": "2026-11-08T13:30Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "6907",
-          "espnId": "6907",
-          "provider": "espn",
-          "identity": "espn:6907",
-          "name": "TSV Hartberg",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6907.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/6907.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "4405",
-          "espnId": "4405",
-          "provider": "espn",
-          "identity": "espn:4405",
-          "name": "SC Rheindorf Altach",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4405.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/4405.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:aut.1",
-        "name": "الدوري النمساوي",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401881753",
-      "externalIds": {
-        "espn": "401881753",
-        "espn-league": "aut.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-aut.1-401881751",
-        "providerMatchId": "401881751",
-        "date": "2026-11-08T13:30Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "18794",
-          "espnId": "18794",
-          "provider": "espn",
-          "identity": "espn:18794",
-          "name": "WSG Swarovski Tirol",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18794.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/18794.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "1382",
-          "espnId": "1382",
-          "provider": "espn",
-          "identity": "espn:1382",
-          "name": "Austria Vienna",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1382.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/1382.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:aut.1",
-        "name": "الدوري النمساوي",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401881751",
-      "externalIds": {
-        "espn": "401881751",
-        "espn-league": "aut.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-bel.1-401878945",
-        "providerMatchId": "401878945",
+        "id": "espn-sco.1-401878339",
+        "providerMatchId": "401878339",
         "date": "2026-11-08T15:00Z",
         "status": {
           "short": "NS"
@@ -38144,24 +35333,24 @@
       },
       "teams": {
         "home": {
-          "id": "3611",
-          "espnId": "3611",
+          "id": "262",
+          "espnId": "262",
           "provider": "espn",
-          "identity": "espn:3611",
-          "name": "KAA Gent",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3611.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3611.png",
+          "identity": "espn:262",
+          "name": "Heart of Midlothian",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/262.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/262.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "5786",
-          "espnId": "5786",
+          "id": "254",
+          "espnId": "254",
           "provider": "espn",
-          "identity": "espn:5786",
-          "name": "KV Kortrijk",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/5786.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/5786.png",
+          "identity": "espn:254",
+          "name": "Falkirk",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/254.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/254.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -38171,16 +35360,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:bel.1",
-        "name": "الدوري البلجيكي",
+        "id": "espn:sco.1",
+        "name": "الدوري الاسكتلندي",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401878945",
+      "externalId": "401878339",
       "externalIds": {
-        "espn": "401878945",
-        "espn-league": "bel.1"
+        "espn": "401878339",
+        "espn-league": "sco.1"
       },
       "details": {
         "events": [],
@@ -38191,64 +35380,8 @@
     },
     {
       "fixture": {
-        "id": "espn-ned.2-401875855",
-        "providerMatchId": "401875855",
-        "date": "2026-11-08T15:45Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "3707",
-          "espnId": "3707",
-          "provider": "espn",
-          "identity": "espn:3707",
-          "name": "FC Emmen",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3707.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3707.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "3730",
-          "espnId": "3730",
-          "provider": "espn",
-          "identity": "espn:3730",
-          "name": "MVV Maastricht",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3730.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3730.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:ned.2",
-        "name": "الدوري الهولندي الدرجة الثانية",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401875855",
-      "externalIds": {
-        "espn": "401875855",
-        "espn-league": "ned.2"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-aut.1-401881755",
-        "providerMatchId": "401881755",
+        "id": "espn-sco.1-401878343",
+        "providerMatchId": "401878343",
         "date": "2026-11-08T16:00Z",
         "status": {
           "short": "NS"
@@ -38256,24 +35389,24 @@
       },
       "teams": {
         "home": {
-          "id": "3746",
-          "espnId": "3746",
+          "id": "256",
+          "espnId": "256",
           "provider": "espn",
-          "identity": "espn:3746",
-          "name": "SK Sturm Graz",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3746.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3746.png",
+          "identity": "espn:256",
+          "name": "Celtic",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/256.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/256.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "2790",
-          "espnId": "2790",
+          "id": "260",
+          "espnId": "260",
           "provider": "espn",
-          "identity": "espn:2790",
-          "name": "RB Salzburg",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2790.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/2790.png",
+          "identity": "espn:260",
+          "name": "Kilmarnock",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/260.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/260.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -38283,576 +35416,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:aut.1",
-        "name": "الدوري النمساوي",
+        "id": "espn:sco.1",
+        "name": "الدوري الاسكتلندي",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401881755",
+      "externalId": "401878343",
       "externalIds": {
-        "espn": "401881755",
-        "espn-league": "aut.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-bel.1-401878943",
-        "providerMatchId": "401878943",
-        "date": "2026-11-08T17:30Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "5807",
-          "espnId": "5807",
-          "provider": "espn",
-          "identity": "espn:5807",
-          "name": "Union St.-Gilloise",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/5807.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/5807.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "938",
-          "espnId": "938",
-          "provider": "espn",
-          "identity": "espn:938",
-          "name": "Racing Genk",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/938.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/938.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:bel.1",
-        "name": "الدوري البلجيكي",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401878943",
-      "externalIds": {
-        "espn": "401878943",
-        "espn-league": "bel.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-bel.1-401878944",
-        "providerMatchId": "401878944",
-        "date": "2026-11-08T18:15Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "936",
-          "espnId": "936",
-          "provider": "espn",
-          "identity": "espn:936",
-          "name": "Sint-Truidense",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/936.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/936.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "4691",
-          "espnId": "4691",
-          "provider": "espn",
-          "identity": "espn:4691",
-          "name": "Zulte-Waregem",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4691.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/4691.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:bel.1",
-        "name": "الدوري البلجيكي",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401878944",
-      "externalIds": {
-        "espn": "401878944",
-        "espn-league": "bel.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-ned.2-401875854",
-        "providerMatchId": "401875854",
-        "date": "2026-11-14T15:30Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "141",
-          "espnId": "141",
-          "provider": "espn",
-          "identity": "espn:141",
-          "name": "NAC Breda",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/141.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/141.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "3707",
-          "espnId": "3707",
-          "provider": "espn",
-          "identity": "espn:3707",
-          "name": "FC Emmen",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3707.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3707.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:ned.2",
-        "name": "الدوري الهولندي الدرجة الثانية",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401875854",
-      "externalIds": {
-        "espn": "401875854",
-        "espn-league": "ned.2"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-ned.2-401875853",
-        "providerMatchId": "401875853",
-        "date": "2026-11-14T19:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "5291",
-          "espnId": "5291",
-          "provider": "espn",
-          "identity": "espn:5291",
-          "name": "Almere City",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/5291.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/5291.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "3775",
-          "espnId": "3775",
-          "provider": "espn",
-          "identity": "espn:3775",
-          "name": "Helmond Sport",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3775.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3775.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:ned.2",
-        "name": "الدوري الهولندي الدرجة الثانية",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401875853",
-      "externalIds": {
-        "espn": "401875853",
-        "espn-league": "ned.2"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-ned.2-401875852",
-        "providerMatchId": "401875852",
-        "date": "2026-11-14T19:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "144",
-          "espnId": "144",
-          "provider": "espn",
-          "identity": "espn:144",
-          "name": "De Graafschap",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/144.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/144.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "3728",
-          "espnId": "3728",
-          "provider": "espn",
-          "identity": "espn:3728",
-          "name": "TOP Oss",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3728.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3728.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:ned.2",
-        "name": "الدوري الهولندي الدرجة الثانية",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401875852",
-      "externalIds": {
-        "espn": "401875852",
-        "espn-league": "ned.2"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-ned.2-401875851",
-        "providerMatchId": "401875851",
-        "date": "2026-11-14T19:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "4426",
-          "espnId": "4426",
-          "provider": "espn",
-          "identity": "espn:4426",
-          "name": "FC Dordrecht",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4426.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/4426.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "3708",
-          "espnId": "3708",
-          "provider": "espn",
-          "identity": "espn:3708",
-          "name": "Heracles Almelo",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3708.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3708.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:ned.2",
-        "name": "الدوري الهولندي الدرجة الثانية",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401875851",
-      "externalIds": {
-        "espn": "401875851",
-        "espn-league": "ned.2"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-ned.2-401875850",
-        "providerMatchId": "401875850",
-        "date": "2026-11-14T19:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "155",
-          "espnId": "155",
-          "provider": "espn",
-          "identity": "espn:155",
-          "name": "RKC Waalwijk",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/155.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/155.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "271",
-          "espnId": "271",
-          "provider": "espn",
-          "identity": "espn:271",
-          "name": "FC Den Bosch",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/271.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/271.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:ned.2",
-        "name": "الدوري الهولندي الدرجة الثانية",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401875850",
-      "externalIds": {
-        "espn": "401875850",
-        "espn-league": "ned.2"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-ned.2-401875849",
-        "providerMatchId": "401875849",
-        "date": "2026-11-14T19:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "149",
-          "espnId": "149",
-          "provider": "espn",
-          "identity": "espn:149",
-          "name": "Roda JC Kerkrade",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/149.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/149.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "2727",
-          "espnId": "2727",
-          "provider": "espn",
-          "identity": "espn:2727",
-          "name": "FC Volendam",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2727.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/2727.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:ned.2",
-        "name": "الدوري الهولندي الدرجة الثانية",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401875849",
-      "externalIds": {
-        "espn": "401875849",
-        "espn-league": "ned.2"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-ned.2-401875848",
-        "providerMatchId": "401875848",
-        "date": "2026-11-14T19:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "3731",
-          "espnId": "3731",
-          "provider": "espn",
-          "identity": "espn:3731",
-          "name": "VVV-Venlo",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3731.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3731.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "3732",
-          "espnId": "3732",
-          "provider": "espn",
-          "identity": "espn:3732",
-          "name": "FC Eindhoven",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3732.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3732.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:ned.2",
-        "name": "الدوري الهولندي الدرجة الثانية",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401875848",
-      "externalIds": {
-        "espn": "401875848",
-        "espn-league": "ned.2"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-ned.2-401875847",
-        "providerMatchId": "401875847",
-        "date": "2026-11-15T13:30Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "3730",
-          "espnId": "3730",
-          "provider": "espn",
-          "identity": "espn:3730",
-          "name": "MVV Maastricht",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3730.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/3730.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "154",
-          "espnId": "154",
-          "provider": "espn",
-          "identity": "espn:154",
-          "name": "Vitesse",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/154.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/154.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:ned.2",
-        "name": "الدوري الهولندي الدرجة الثانية",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401875847",
-      "externalIds": {
-        "espn": "401875847",
-        "espn-league": "ned.2"
+        "espn": "401878343",
+        "espn-league": "sco.1"
       },
       "details": {
         "events": [],
