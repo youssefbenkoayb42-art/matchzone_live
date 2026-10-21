@@ -264,7 +264,7 @@
     "sourceTeamName": null,
     "sourceProvider": null,
     "resolverVersion": 3,
-    "updatedAt": "2026-10-20T17:10:27.362Z"
+    "updatedAt": "2026-10-21T00:37:38.203Z"
   },
   "team_usm_alger_dz": {
     "name": "USM Alger",
@@ -294,7 +294,7 @@
     "sourceTeamName": null,
     "sourceProvider": null,
     "resolverVersion": 3,
-    "updatedAt": "2026-10-16T13:16:22.168Z"
+    "updatedAt": "2026-10-21T00:37:45.214Z"
   },
   "team_aso_chlef_dz": {
     "name": "ASO Chlef",
@@ -314,6 +314,6 @@
     "sourceTeamName": null,
     "sourceProvider": null,
     "resolverVersion": 3,
-    "updatedAt": "2026-10-20T17:10:24.632Z"
+    "updatedAt": "2026-10-21T00:37:35.746Z"
   }
 }
