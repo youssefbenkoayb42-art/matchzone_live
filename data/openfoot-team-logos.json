@@ -184,7 +184,7 @@
     "sourceTeamName": null,
     "sourceProvider": null,
     "resolverVersion": 3,
-    "updatedAt": "2026-10-23T23:08:59.996Z"
+    "updatedAt": "2026-10-24T15:56:43.873Z"
   },
   "team_usm_khenchela_dz": {
     "name": "USM Khenchela",
@@ -204,7 +204,7 @@
     "sourceTeamName": null,
     "sourceProvider": null,
     "resolverVersion": 3,
-    "updatedAt": "2026-10-19T19:56:49.918Z"
+    "updatedAt": "2026-10-24T15:56:55.783Z"
   },
   "team_biskra_dz": {
     "name": "US Biskra",
@@ -214,7 +214,7 @@
     "sourceTeamName": null,
     "sourceProvider": null,
     "resolverVersion": 3,
-    "updatedAt": "2026-10-24T04:36:23.132Z"
+    "updatedAt": "2026-10-24T15:56:53.317Z"
   },
   "team_es_ben_aknoun_dz": {
     "name": "ES Ben Aknoun",
@@ -314,6 +314,6 @@
     "sourceTeamName": null,
     "sourceProvider": null,
     "resolverVersion": 3,
-    "updatedAt": "2026-10-24T04:36:20.527Z"
+    "updatedAt": "2026-10-24T15:56:50.863Z"
   }
 }
