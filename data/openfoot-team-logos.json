@@ -214,7 +214,7 @@
     "sourceTeamName": null,
     "sourceProvider": null,
     "resolverVersion": 3,
-    "updatedAt": "2026-10-20T21:37:15.670Z"
+    "updatedAt": "2026-10-24T04:36:23.132Z"
   },
   "team_es_ben_aknoun_dz": {
     "name": "ES Ben Aknoun",
@@ -244,7 +244,7 @@
     "sourceTeamName": null,
     "sourceProvider": null,
     "resolverVersion": 3,
-    "updatedAt": "2026-10-23T18:21:16.055Z"
+    "updatedAt": "2026-10-24T04:36:13.264Z"
   },
   "team_olympique_akbou_dz": {
     "name": "Olympique Akbou",
@@ -314,6 +314,6 @@
     "sourceTeamName": null,
     "sourceProvider": null,
     "resolverVersion": 3,
-    "updatedAt": "2026-10-21T23:19:00.331Z"
+    "updatedAt": "2026-10-24T04:36:20.527Z"
   }
 }
