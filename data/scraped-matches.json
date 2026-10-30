@@ -1,10 +1,10 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-10-30T19:21:57.574Z",
+  "updatedAt": "2026-10-30T23:46:19.571Z",
   "source": "football-data.org + ESPN + OpenFootball + TheSportsDB enrichment",
   "coverageWindow": {
-    "from": "2026-10-28T19:21:22.443Z",
-    "to": "2026-10-30T19:21:22.443Z"
+    "from": "2026-10-28T23:45:34.719Z",
+    "to": "2026-10-30T23:45:34.719Z"
   },
   "sourcePolicy": {
     "primary": "football-data.org",
@@ -35,7 +35,7 @@
         "endDate": "2027-06-01T03:59Z",
         "displayName": "2026-27 English Premier League"
       },
-      "updatedAt": "2026-10-30T19:21:44.779Z",
+      "updatedAt": "2026-10-30T23:46:08.408Z",
       "groups": [
         {
           "name": "2026-27 English Premier League",
@@ -1904,7 +1904,7 @@
         "endDate": "2027-07-01T03:59Z",
         "displayName": "2026-27 Italian Serie A"
       },
-      "updatedAt": "2026-10-30T19:21:44.920Z",
+      "updatedAt": "2026-10-30T23:46:08.759Z",
       "groups": [
         {
           "name": "2026-2027 Italian Serie A",
@@ -5972,12 +5972,12 @@
       "leagueName": "الدوري الأمريكي MLS",
       "competitionType": "domestic",
       "season": {
-        "year": 2026,
-        "startDate": "2026-01-01T10:00Z",
-        "endDate": "2026-12-31T04:59Z",
-        "displayName": "2026 MLS"
+        "year": 2027,
+        "startDate": "2027-01-01T10:00Z",
+        "endDate": "2027-06-01T03:59Z",
+        "displayName": "2027 MLS"
       },
-      "updatedAt": "2026-10-29T23:57:05.667Z",
+      "updatedAt": "2026-10-30T23:46:09.034Z",
       "groups": [
         {
           "name": "Eastern Conference",
@@ -6512,7 +6512,7 @@
         "endDate": "2026-06-01T03:59Z",
         "displayName": "2025-26 Scottish League Two"
       },
-      "updatedAt": "2026-10-29T23:57:05.942Z",
+      "updatedAt": "2026-10-30T23:46:09.296Z",
       "groups": [
         {
           "name": "2025-26 Scottish League Two",
@@ -6702,7 +6702,7 @@
         "endDate": "2027-06-01T03:59Z",
         "displayName": "2026-27 Spanish LALIGA"
       },
-      "updatedAt": "2026-10-30T19:21:44.830Z",
+      "updatedAt": "2026-10-30T23:46:08.508Z",
       "groups": [
         {
           "name": "2026-27 LALIGA",
@@ -6867,10 +6867,10 @@
                 "name": "Villarreal",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png"
               },
-              "played": 10,
+              "played": 11,
               "wins": 3,
               "draws": 3,
-              "losses": 4,
+              "losses": 5,
               "points": 12,
               "goalsFor": null,
               "goalsAgainst": null,
@@ -6897,6 +6897,23 @@
             {
               "rank": 12,
               "team": {
+                "id": "88",
+                "name": "Espanyol",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/88.png"
+              },
+              "played": 11,
+              "wins": 3,
+              "draws": 2,
+              "losses": 6,
+              "points": 11,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 13,
+              "team": {
                 "id": "97",
                 "name": "Osasuna",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/97.png"
@@ -6912,7 +6929,7 @@
               "form": null
             },
             {
-              "rank": 13,
+              "rank": 14,
               "team": {
                 "id": "87",
                 "name": "Racing Santander",
@@ -6929,7 +6946,7 @@
               "form": null
             },
             {
-              "rank": 14,
+              "rank": 15,
               "team": {
                 "id": "1538",
                 "name": "Levante",
@@ -6946,7 +6963,7 @@
               "form": null
             },
             {
-              "rank": 15,
+              "rank": 16,
               "team": {
                 "id": "3751",
                 "name": "Elche",
@@ -6963,7 +6980,7 @@
               "form": null
             },
             {
-              "rank": 16,
+              "rank": 17,
               "team": {
                 "id": "101",
                 "name": "Rayo Vallecano",
@@ -6980,7 +6997,7 @@
               "form": null
             },
             {
-              "rank": 17,
+              "rank": 18,
               "team": {
                 "id": "2922",
                 "name": "Getafe",
@@ -6991,23 +7008,6 @@
               "draws": 3,
               "losses": 5,
               "points": 9,
-              "goalsFor": null,
-              "goalsAgainst": null,
-              "goalDifference": null,
-              "form": null
-            },
-            {
-              "rank": 18,
-              "team": {
-                "id": "88",
-                "name": "Espanyol",
-                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/88.png"
-              },
-              "played": 10,
-              "wins": 2,
-              "draws": 2,
-              "losses": 6,
-              "points": 8,
               "goalsFor": null,
               "goalsAgainst": null,
               "goalDifference": null,
@@ -9602,7 +9602,7 @@
         "endDate": "2027-06-01T03:59Z",
         "displayName": "2026-27 French Ligue 1"
       },
-      "updatedAt": "2026-10-30T19:21:44.965Z",
+      "updatedAt": "2026-10-30T23:46:08.942Z",
       "groups": [
         {
           "name": "French Ligue 1 2026-27",
@@ -9614,11 +9614,11 @@
                 "name": "Paris Saint-Germain",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/160.png"
               },
-              "played": 8,
-              "wins": 5,
+              "played": 9,
+              "wins": 6,
               "draws": 2,
               "losses": 1,
-              "points": 17,
+              "points": 20,
               "goalsFor": null,
               "goalsAgainst": null,
               "goalDifference": null,
@@ -9627,15 +9627,15 @@
             {
               "rank": 2,
               "team": {
-                "id": "169",
-                "name": "Stade Rennais",
-                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/169.png"
+                "id": "166",
+                "name": "Lille",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/166.png"
               },
-              "played": 8,
+              "played": 9,
               "wins": 5,
-              "draws": 1,
-              "losses": 2,
-              "points": 16,
+              "draws": 3,
+              "losses": 1,
+              "points": 18,
               "goalsFor": null,
               "goalsAgainst": null,
               "goalDifference": null,
@@ -9644,15 +9644,15 @@
             {
               "rank": 3,
               "team": {
-                "id": "166",
-                "name": "Lille",
-                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/166.png"
+                "id": "169",
+                "name": "Stade Rennais",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/169.png"
               },
-              "played": 8,
-              "wins": 4,
-              "draws": 3,
-              "losses": 1,
-              "points": 15,
+              "played": 9,
+              "wins": 5,
+              "draws": 1,
+              "losses": 3,
+              "points": 16,
               "goalsFor": null,
               "goalsAgainst": null,
               "goalDifference": null,
@@ -9712,15 +9712,15 @@
             {
               "rank": 7,
               "team": {
-                "id": "175",
-                "name": "Lens",
-                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/175.png"
+                "id": "2502",
+                "name": "Nice",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2502.png"
               },
-              "played": 8,
+              "played": 9,
               "wins": 4,
-              "draws": 1,
+              "draws": 2,
               "losses": 3,
-              "points": 13,
+              "points": 14,
               "goalsFor": null,
               "goalsAgainst": null,
               "goalDifference": null,
@@ -9728,6 +9728,23 @@
             },
             {
               "rank": 8,
+              "team": {
+                "id": "175",
+                "name": "Lens",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/175.png"
+              },
+              "played": 9,
+              "wins": 4,
+              "draws": 1,
+              "losses": 4,
+              "points": 13,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 9,
               "team": {
                 "id": "176",
                 "name": "Marseille",
@@ -9744,7 +9761,7 @@
               "form": null
             },
             {
-              "rank": 9,
+              "rank": 10,
               "team": {
                 "id": "273",
                 "name": "Lorient",
@@ -9755,23 +9772,6 @@
               "draws": 3,
               "losses": 2,
               "points": 12,
-              "goalsFor": null,
-              "goalsAgainst": null,
-              "goalDifference": null,
-              "form": null
-            },
-            {
-              "rank": 10,
-              "team": {
-                "id": "2502",
-                "name": "Nice",
-                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2502.png"
-              },
-              "played": 8,
-              "wins": 3,
-              "draws": 2,
-              "losses": 3,
-              "points": 11,
               "goalsFor": null,
               "goalsAgainst": null,
               "goalDifference": null,
@@ -9903,10 +9903,10 @@
                 "name": "Le Havre AC",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3236.png"
               },
-              "played": 8,
+              "played": 9,
               "wins": 0,
               "draws": 2,
-              "losses": 6,
+              "losses": 7,
               "points": 2,
               "goalsFor": null,
               "goalsAgainst": null,
@@ -11178,7 +11178,7 @@
         "endDate": "2027-07-01T03:59Z",
         "displayName": "2026-27 German Bundesliga"
       },
-      "updatedAt": "2026-10-30T19:21:44.880Z",
+      "updatedAt": "2026-10-30T23:46:08.583Z",
       "groups": [
         {
           "name": "2026-27 German Bundesliga",
@@ -11254,6 +11254,23 @@
             {
               "rank": 5,
               "team": {
+                "id": "10388",
+                "name": "SV Elversberg",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/10388.png"
+              },
+              "played": 8,
+              "wins": 4,
+              "draws": 1,
+              "losses": 3,
+              "points": 13,
+              "goalsFor": null,
+              "goalsAgainst": null,
+              "goalDifference": null,
+              "form": null
+            },
+            {
+              "rank": 6,
+              "team": {
                 "id": "11420",
                 "name": "RB Leipzig",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11420.png"
@@ -11269,7 +11286,7 @@
               "form": null
             },
             {
-              "rank": 6,
+              "rank": 7,
               "team": {
                 "id": "137",
                 "name": "Werder Bremen",
@@ -11286,33 +11303,16 @@
               "form": null
             },
             {
-              "rank": 7,
+              "rank": 8,
               "team": {
                 "id": "2950",
                 "name": "Mainz",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2950.png"
               },
-              "played": 7,
+              "played": 8,
               "wins": 3,
               "draws": 1,
-              "losses": 3,
-              "points": 10,
-              "goalsFor": null,
-              "goalsAgainst": null,
-              "goalDifference": null,
-              "form": null
-            },
-            {
-              "rank": 8,
-              "team": {
-                "id": "10388",
-                "name": "SV Elversberg",
-                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/10388.png"
-              },
-              "played": 7,
-              "wins": 3,
-              "draws": 1,
-              "losses": 3,
+              "losses": 4,
               "points": 10,
               "goalsFor": null,
               "goalsAgainst": null,
@@ -14391,22 +14391,22 @@
   },
   "counts": {
     "footballData": 14,
-    "espn": 217,
-    "espnFreshRun": 174,
-    "espnRetained": 53,
-    "espnFutureRotationGroup": 9,
+    "espn": 179,
+    "espnFreshRun": 134,
+    "espnRetained": 55,
+    "espnFutureRotationGroup": 11,
     "openfootball": 5,
     "openfootballWorld": 12,
     "openfoot": 4,
     "openfootLogosEnriched": 0,
-    "openfootLogoSearches": 10,
-    "total": 191,
+    "openfootLogoSearches": 4,
+    "total": 153,
     "theSportsDbEnriched": 0,
-    "standingsRefreshed": 8,
-    "standingsRotationGroup": 9,
+    "standingsRefreshed": 7,
+    "standingsRotationGroup": 11,
     "standingsLeagues": 38
   },
-  "matchCount": 191,
+  "matchCount": 153,
   "leagues": [
     {
       "id": "openfootball-world:north-america-major-league-soccer-2005-mls",
@@ -16363,7 +16363,7 @@
       "source": "espn",
       "file": null,
       "logo": null,
-      "matchCount": 14,
+      "matchCount": 44,
       "currentCoverage": true
     },
     {
@@ -16462,7 +16462,7 @@
       "source": "espn",
       "file": null,
       "logo": null,
-      "matchCount": 21,
+      "matchCount": 2,
       "currentCoverage": true
     },
     {
@@ -16484,7 +16484,7 @@
       "source": "espn",
       "file": null,
       "logo": null,
-      "matchCount": 32,
+      "matchCount": 4,
       "currentCoverage": true
     },
     {
@@ -16574,22 +16574,11 @@
       "logo": null,
       "matchCount": 1,
       "currentCoverage": true
-    },
-    {
-      "id": "espn:gre.1",
-      "name": "الدوري اليوناني",
-      "region": null,
-      "season": null,
-      "source": "espn",
-      "file": null,
-      "logo": null,
-      "matchCount": 21,
-      "currentCoverage": true
     }
   ],
-  "leagueCount": 198,
-  "currentLeagueCount": 28,
-  "catalogLeagueCount": 198,
+  "leagueCount": 197,
+  "currentLeagueCount": 27,
+  "catalogLeagueCount": 197,
   "matches": [
     {
       "fixture": {
@@ -19448,61 +19437,6 @@
     },
     {
       "fixture": {
-        "id": "fd-558549",
-        "providerMatchId": 558549,
-        "date": "2026-10-28T17:30:00Z",
-        "status": {
-          "short": "FT"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": 98,
-          "footballDataId": 98,
-          "provider": "football-data.org",
-          "identity": "football-data.org:98",
-          "name": "AC Milan",
-          "logo": "https://crests.football-data.org/98.png",
-          "logoPath": "https://crests.football-data.org/98.png",
-          "logoSource": "Football-Data.org team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": 103,
-          "footballDataId": 103,
-          "provider": "football-data.org",
-          "identity": "football-data.org:103",
-          "name": "Bologna FC 1909",
-          "logo": "https://crests.football-data.org/103.png",
-          "logoPath": "https://crests.football-data.org/103.png",
-          "logoSource": "Football-Data.org team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 2,
-        "away": 4
-      },
-      "league": {
-        "id": 2019,
-        "name": "Serie A",
-        "logo": "https://crests.football-data.org/c111.png"
-      },
-      "competitionType": "domestic",
-      "source": "football-data.org",
-      "externalId": 558549,
-      "externalIds": {
-        "football-data.org": 558549
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "football-data.org"
-      }
-    },
-    {
-      "fixture": {
         "id": "fd-558553",
         "providerMatchId": 558553,
         "date": "2026-10-28T17:30:00Z",
@@ -19548,6 +19482,61 @@
       "externalId": 558553,
       "externalIds": {
         "football-data.org": 558553
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "football-data.org"
+      }
+    },
+    {
+      "fixture": {
+        "id": "fd-558549",
+        "providerMatchId": 558549,
+        "date": "2026-10-28T17:30:00Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": 98,
+          "footballDataId": 98,
+          "provider": "football-data.org",
+          "identity": "football-data.org:98",
+          "name": "AC Milan",
+          "logo": "https://crests.football-data.org/98.png",
+          "logoPath": "https://crests.football-data.org/98.png",
+          "logoSource": "Football-Data.org team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": 103,
+          "footballDataId": 103,
+          "provider": "football-data.org",
+          "identity": "football-data.org:103",
+          "name": "Bologna FC 1909",
+          "logo": "https://crests.football-data.org/103.png",
+          "logoPath": "https://crests.football-data.org/103.png",
+          "logoSource": "Football-Data.org team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 2,
+        "away": 4
+      },
+      "league": {
+        "id": 2019,
+        "name": "Serie A",
+        "logo": "https://crests.football-data.org/c111.png"
+      },
+      "competitionType": "domestic",
+      "source": "football-data.org",
+      "externalId": 558549,
+      "externalIds": {
+        "football-data.org": 558549
       },
       "details": {
         "events": [],
@@ -20118,61 +20107,6 @@
     },
     {
       "fixture": {
-        "id": "fd-558554",
-        "providerMatchId": 558554,
-        "date": "2026-10-28T19:45:00Z",
-        "status": {
-          "short": "FT"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": 5911,
-          "footballDataId": 5911,
-          "provider": "football-data.org",
-          "identity": "football-data.org:5911",
-          "name": "AC Monza",
-          "logo": "https://crests.football-data.org/5911.png",
-          "logoPath": "https://crests.football-data.org/5911.png",
-          "logoSource": "Football-Data.org team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": 113,
-          "footballDataId": 113,
-          "provider": "football-data.org",
-          "identity": "football-data.org:113",
-          "name": "SSC Napoli",
-          "logo": "https://crests.football-data.org/113.png",
-          "logoPath": "https://crests.football-data.org/113.png",
-          "logoSource": "Football-Data.org team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 1,
-        "away": 4
-      },
-      "league": {
-        "id": 2019,
-        "name": "Serie A",
-        "logo": "https://crests.football-data.org/c111.png"
-      },
-      "competitionType": "domestic",
-      "source": "football-data.org",
-      "externalId": 558554,
-      "externalIds": {
-        "football-data.org": 558554
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "football-data.org"
-      }
-    },
-    {
-      "fixture": {
         "id": "fd-558552",
         "providerMatchId": 558552,
         "date": "2026-10-28T19:45:00Z",
@@ -20218,6 +20152,61 @@
       "externalId": 558552,
       "externalIds": {
         "football-data.org": 558552
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "football-data.org"
+      }
+    },
+    {
+      "fixture": {
+        "id": "fd-558554",
+        "providerMatchId": 558554,
+        "date": "2026-10-28T19:45:00Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": 5911,
+          "footballDataId": 5911,
+          "provider": "football-data.org",
+          "identity": "football-data.org:5911",
+          "name": "AC Monza",
+          "logo": "https://crests.football-data.org/5911.png",
+          "logoPath": "https://crests.football-data.org/5911.png",
+          "logoSource": "Football-Data.org team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": 113,
+          "footballDataId": 113,
+          "provider": "football-data.org",
+          "identity": "football-data.org:113",
+          "name": "SSC Napoli",
+          "logo": "https://crests.football-data.org/113.png",
+          "logoPath": "https://crests.football-data.org/113.png",
+          "logoSource": "Football-Data.org team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 1,
+        "away": 4
+      },
+      "league": {
+        "id": 2019,
+        "name": "Serie A",
+        "logo": "https://crests.football-data.org/c111.png"
+      },
+      "competitionType": "domestic",
+      "source": "football-data.org",
+      "externalId": 558554,
+      "externalIds": {
+        "football-data.org": 558554
       },
       "details": {
         "events": [],
@@ -20899,61 +20888,6 @@
     },
     {
       "fixture": {
-        "id": "fd-555065",
-        "providerMatchId": 555065,
-        "date": "2026-10-28T22:30:00Z",
-        "status": {
-          "short": "FT"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": 1765,
-          "footballDataId": 1765,
-          "provider": "football-data.org",
-          "identity": "football-data.org:1765",
-          "name": "Fluminense FC",
-          "logo": "https://crests.football-data.org/1765.png",
-          "logoPath": "https://crests.football-data.org/1765.png",
-          "logoSource": "Football-Data.org team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": 6684,
-          "footballDataId": 6684,
-          "provider": "football-data.org",
-          "identity": "football-data.org:6684",
-          "name": "SC Internacional",
-          "logo": "https://crests.football-data.org/6684.png",
-          "logoPath": "https://crests.football-data.org/6684.png",
-          "logoSource": "Football-Data.org team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 2,
-        "away": 1
-      },
-      "league": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "logo": "https://crests.football-data.org/bsa.png"
-      },
-      "competitionType": "domestic",
-      "source": "football-data.org",
-      "externalId": 555065,
-      "externalIds": {
-        "football-data.org": 555065
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "football-data.org"
-      }
-    },
-    {
-      "fixture": {
         "id": "fd-555068",
         "providerMatchId": 555068,
         "date": "2026-10-28T22:30:00Z",
@@ -20999,6 +20933,61 @@
       "externalId": 555068,
       "externalIds": {
         "football-data.org": 555068
+      },
+      "details": {
+        "events": [],
+        "statistics": [],
+        "updatedAt": null,
+        "source": "football-data.org"
+      }
+    },
+    {
+      "fixture": {
+        "id": "fd-555065",
+        "providerMatchId": 555065,
+        "date": "2026-10-28T22:30:00Z",
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": 1765,
+          "footballDataId": 1765,
+          "provider": "football-data.org",
+          "identity": "football-data.org:1765",
+          "name": "Fluminense FC",
+          "logo": "https://crests.football-data.org/1765.png",
+          "logoPath": "https://crests.football-data.org/1765.png",
+          "logoSource": "Football-Data.org team ID",
+          "logoQuality": "verified-id"
+        },
+        "away": {
+          "id": 6684,
+          "footballDataId": 6684,
+          "provider": "football-data.org",
+          "identity": "football-data.org:6684",
+          "name": "SC Internacional",
+          "logo": "https://crests.football-data.org/6684.png",
+          "logoPath": "https://crests.football-data.org/6684.png",
+          "logoSource": "Football-Data.org team ID",
+          "logoQuality": "verified-id"
+        }
+      },
+      "goals": {
+        "home": 2,
+        "away": 1
+      },
+      "league": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "logo": "https://crests.football-data.org/bsa.png"
+      },
+      "competitionType": "domestic",
+      "source": "football-data.org",
+      "externalId": 555065,
+      "externalIds": {
+        "football-data.org": 555065
       },
       "details": {
         "events": [],
@@ -23452,400 +23441,8 @@
     },
     {
       "fixture": {
-        "id": "espn-tur.1-401888373",
-        "providerMatchId": "401888373",
-        "date": "2026-10-31T10:30Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "19267",
-          "espnId": "19267",
-          "provider": "espn",
-          "identity": "espn:19267",
-          "name": "Erzurum BB",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/19267.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/19267.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "132334",
-          "espnId": "132334",
-          "provider": "espn",
-          "identity": "espn:132334",
-          "name": "Çorum FK",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/132334.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/132334.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:tur.1",
-        "name": "الدوري التركي",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401888373",
-      "externalIds": {
-        "espn": "401888373",
-        "espn-league": "tur.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-tur.1-401888257",
-        "providerMatchId": "401888257",
-        "date": "2026-10-31T13:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "995",
-          "espnId": "995",
-          "provider": "espn",
-          "identity": "espn:995",
-          "name": "Kocaelispor",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/995.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/995.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "7656",
-          "espnId": "7656",
-          "provider": "espn",
-          "identity": "espn:7656",
-          "name": "Caykur Rizespor",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7656.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/7656.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:tur.1",
-        "name": "الدوري التركي",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401888257",
-      "externalIds": {
-        "espn": "401888257",
-        "espn-league": "tur.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-sco.2-401878536",
-        "providerMatchId": "401878536",
-        "date": "2026-10-31T15:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "252",
-          "espnId": "252",
-          "provider": "espn",
-          "identity": "espn:252",
-          "name": "Arbroath",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/252.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/252.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "249",
-          "espnId": "249",
-          "provider": "espn",
-          "identity": "espn:249",
-          "name": "Raith Rovers",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/249.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/249.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:sco.2",
-        "name": "الدوري الاسكتلندي الدرجة الثانية",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401878536",
-      "externalIds": {
-        "espn": "401878536",
-        "espn-league": "sco.2"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-sco.2-401878535",
-        "providerMatchId": "401878535",
-        "date": "2026-10-31T15:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "248",
-          "espnId": "248",
-          "provider": "espn",
-          "identity": "espn:248",
-          "name": "Ayr United",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/248.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/248.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "422",
-          "espnId": "422",
-          "provider": "espn",
-          "identity": "espn:422",
-          "name": "Queen's Park",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/422.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/422.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:sco.2",
-        "name": "الدوري الاسكتلندي الدرجة الثانية",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401878535",
-      "externalIds": {
-        "espn": "401878535",
-        "espn-league": "sco.2"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-sco.2-401878534",
-        "providerMatchId": "401878534",
-        "date": "2026-10-31T15:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "265",
-          "espnId": "265",
-          "provider": "espn",
-          "identity": "espn:265",
-          "name": "Dunfermline Athletic",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/265.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/265.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "253",
-          "espnId": "253",
-          "provider": "espn",
-          "identity": "espn:253",
-          "name": "Inverness Caledonian Thistle",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/253.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/253.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:sco.2",
-        "name": "الدوري الاسكتلندي الدرجة الثانية",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401878534",
-      "externalIds": {
-        "espn": "401878534",
-        "espn-league": "sco.2"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-sco.2-401878533",
-        "providerMatchId": "401878533",
-        "date": "2026-10-31T15:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "247",
-          "espnId": "247",
-          "provider": "espn",
-          "identity": "espn:247",
-          "name": "Partick Thistle",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/247.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/247.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "411",
-          "espnId": "411",
-          "provider": "espn",
-          "identity": "espn:411",
-          "name": "Greenock Morton",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/411.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/411.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:sco.2",
-        "name": "الدوري الاسكتلندي الدرجة الثانية",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401878533",
-      "externalIds": {
-        "espn": "401878533",
-        "espn-league": "sco.2"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-tur.1-401888258",
-        "providerMatchId": "401888258",
-        "date": "2026-10-31T16:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "436",
-          "espnId": "436",
-          "provider": "espn",
-          "identity": "espn:436",
-          "name": "Fenerbahce",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/436.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/436.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "789",
-          "espnId": "789",
-          "provider": "espn",
-          "identity": "espn:789",
-          "name": "Goztepe",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/789.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/789.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:tur.1",
-        "name": "الدوري التركي",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401888258",
-      "externalIds": {
-        "espn": "401888258",
-        "espn-league": "tur.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-gre.1-401896738",
-        "providerMatchId": "401896738",
+        "id": "espn-usa.1-761922",
+        "providerMatchId": "761922",
         "date": "2026-10-31T17:00Z",
         "status": {
           "short": "NS"
@@ -23853,24 +23450,24 @@
       },
       "teams": {
         "home": {
-          "id": "21969",
-          "espnId": "21969",
+          "id": "21300",
+          "espnId": "21300",
           "provider": "espn",
-          "identity": "espn:21969",
-          "name": "Kifisia",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21969.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/21969.png",
+          "identity": "espn:21300",
+          "name": "Charlotte FC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21300.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/21300.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "435",
-          "espnId": "435",
+          "id": "12011",
+          "espnId": "12011",
           "provider": "espn",
-          "identity": "espn:435",
-          "name": "Olympiacos",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/435.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/435.png",
+          "identity": "espn:12011",
+          "name": "Orlando City SC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/12011.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/12011.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -23880,16 +23477,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:gre.1",
-        "name": "الدوري اليوناني",
+        "id": "espn:usa.1",
+        "name": "الدوري الأمريكي MLS",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401896738",
+      "externalId": "761922",
       "externalIds": {
-        "espn": "401896738",
-        "espn-league": "gre.1"
+        "espn": "761922",
+        "espn-league": "usa.1"
       },
       "details": {
         "events": [],
@@ -23900,33 +23497,33 @@
     },
     {
       "fixture": {
-        "id": "espn-tur.1-401888374",
-        "providerMatchId": "401888374",
-        "date": "2026-11-01T10:30Z",
+        "id": "espn-usa.1-761924",
+        "providerMatchId": "761924",
+        "date": "2026-10-31T18:00Z",
         "status": {
           "short": "NS"
         }
       },
       "teams": {
         "home": {
-          "id": "132335",
-          "espnId": "132335",
+          "id": "183",
+          "espnId": "183",
           "provider": "espn",
-          "identity": "espn:132335",
-          "name": "Amed SFK",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/132335.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/132335.png",
+          "identity": "espn:183",
+          "name": "Columbus Crew",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/183.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/183.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "20729",
-          "espnId": "20729",
+          "id": "193",
+          "espnId": "193",
           "provider": "espn",
-          "identity": "espn:20729",
-          "name": "Eyupspor",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20729.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/20729.png",
+          "identity": "espn:193",
+          "name": "D.C. United",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/193.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/193.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -23936,16 +23533,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:tur.1",
-        "name": "الدوري التركي",
+        "id": "espn:usa.1",
+        "name": "الدوري الأمريكي MLS",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401888374",
+      "externalId": "761924",
       "externalIds": {
-        "espn": "401888374",
-        "espn-league": "tur.1"
+        "espn": "761924",
+        "espn-league": "usa.1"
       },
       "details": {
         "events": [],
@@ -23956,33 +23553,33 @@
     },
     {
       "fixture": {
-        "id": "espn-tur.1-401888261",
-        "providerMatchId": "401888261",
-        "date": "2026-11-01T13:00Z",
+        "id": "espn-usa.1-761919",
+        "providerMatchId": "761919",
+        "date": "2026-10-31T18:00Z",
         "status": {
           "short": "NS"
         }
       },
       "teams": {
         "home": {
-          "id": "7914",
-          "espnId": "7914",
+          "id": "18267",
+          "espnId": "18267",
           "provider": "espn",
-          "identity": "espn:7914",
-          "name": "Istanbul Basaksehir",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7914.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/7914.png",
+          "identity": "espn:18267",
+          "name": "FC Cincinnati",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18267.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/18267.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "11429",
-          "espnId": "11429",
+          "id": "10739",
+          "espnId": "10739",
           "provider": "espn",
-          "identity": "espn:11429",
-          "name": "Samsunspor",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11429.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/11429.png",
+          "identity": "espn:10739",
+          "name": "Philadelphia Union",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/10739.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/10739.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -23992,16 +23589,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:tur.1",
-        "name": "الدوري التركي",
+        "id": "espn:usa.1",
+        "name": "الدوري الأمريكي MLS",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401888261",
+      "externalId": "761919",
       "externalIds": {
-        "espn": "401888261",
-        "espn-league": "tur.1"
+        "espn": "761919",
+        "espn-league": "usa.1"
       },
       "details": {
         "events": [],
@@ -24012,33 +23609,33 @@
     },
     {
       "fixture": {
-        "id": "espn-tur.1-401888263",
-        "providerMatchId": "401888263",
-        "date": "2026-11-01T13:00Z",
+        "id": "espn-usa.1-761930",
+        "providerMatchId": "761930",
+        "date": "2026-10-31T18:00Z",
         "status": {
           "short": "NS"
         }
       },
       "teams": {
         "home": {
-          "id": "997",
-          "espnId": "997",
+          "id": "17606",
+          "espnId": "17606",
           "provider": "espn",
-          "identity": "espn:997",
-          "name": "Trabzonspor",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/997.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/997.png",
+          "identity": "espn:17606",
+          "name": "New York City FC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17606.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/17606.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "20070",
-          "espnId": "20070",
+          "id": "9720",
+          "espnId": "9720",
           "provider": "espn",
-          "identity": "espn:20070",
-          "name": "Gaziantep FK",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20070.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/20070.png",
+          "identity": "espn:9720",
+          "name": "CF Montréal",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9720.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/9720.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -24048,16 +23645,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:tur.1",
-        "name": "الدوري التركي",
+        "id": "espn:usa.1",
+        "name": "الدوري الأمريكي MLS",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401888263",
+      "externalId": "761930",
       "externalIds": {
-        "espn": "401888263",
-        "espn-league": "tur.1"
+        "espn": "761930",
+        "espn-league": "usa.1"
       },
       "details": {
         "events": [],
@@ -24068,33 +23665,33 @@
     },
     {
       "fixture": {
-        "id": "espn-gre.1-401896737",
-        "providerMatchId": "401896737",
-        "date": "2026-11-01T15:00Z",
+        "id": "espn-usa.1-761928",
+        "providerMatchId": "761928",
+        "date": "2026-10-31T19:00Z",
         "status": {
           "short": "NS"
         }
       },
       "teams": {
         "home": {
-          "id": "5276",
-          "espnId": "5276",
+          "id": "186",
+          "espnId": "186",
           "provider": "espn",
-          "identity": "espn:5276",
-          "name": "Levadiakos",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/5276.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/5276.png",
+          "identity": "espn:186",
+          "name": "Sporting Kansas City",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/186.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/186.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "11553",
-          "espnId": "11553",
+          "id": "185",
+          "espnId": "185",
           "provider": "espn",
-          "identity": "espn:11553",
-          "name": "Aris",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11553.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/11553.png",
+          "identity": "espn:185",
+          "name": "FC Dallas",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/185.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/185.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -24104,16 +23701,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:gre.1",
-        "name": "الدوري اليوناني",
+        "id": "espn:usa.1",
+        "name": "الدوري الأمريكي MLS",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401896737",
+      "externalId": "761928",
       "externalIds": {
-        "espn": "401896737",
-        "espn-league": "gre.1"
+        "espn": "761928",
+        "espn-league": "usa.1"
       },
       "details": {
         "events": [],
@@ -24124,33 +23721,33 @@
     },
     {
       "fixture": {
-        "id": "espn-tur.1-401888262",
-        "providerMatchId": "401888262",
-        "date": "2026-11-01T16:00Z",
+        "id": "espn-usa.1-761926",
+        "providerMatchId": "761926",
+        "date": "2026-10-31T19:00Z",
         "status": {
           "short": "NS"
         }
       },
       "teams": {
         "home": {
-          "id": "6870",
-          "espnId": "6870",
+          "id": "21812",
+          "espnId": "21812",
           "provider": "espn",
-          "identity": "espn:6870",
-          "name": "Kasimpasa",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6870.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/6870.png",
+          "identity": "espn:21812",
+          "name": "St. Louis CITY SC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21812.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/21812.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "1895",
-          "espnId": "1895",
+          "id": "22529",
+          "espnId": "22529",
           "provider": "espn",
-          "identity": "espn:1895",
-          "name": "Besiktas",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1895.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/1895.png",
+          "identity": "espn:22529",
+          "name": "San Diego FC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/22529.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/22529.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -24160,16 +23757,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:tur.1",
-        "name": "الدوري التركي",
+        "id": "espn:usa.1",
+        "name": "الدوري الأمريكي MLS",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401888262",
+      "externalId": "761926",
       "externalIds": {
-        "espn": "401888262",
-        "espn-league": "tur.1"
+        "espn": "761926",
+        "espn-league": "usa.1"
       },
       "details": {
         "events": [],
@@ -24180,33 +23777,33 @@
     },
     {
       "fixture": {
-        "id": "espn-gre.1-401896735",
-        "providerMatchId": "401896735",
-        "date": "2026-11-01T16:00Z",
+        "id": "espn-usa.1-761925",
+        "providerMatchId": "761925",
+        "date": "2026-10-31T21:00Z",
         "status": {
           "short": "NS"
         }
       },
       "teams": {
         "home": {
-          "id": "11431",
-          "espnId": "11431",
+          "id": "187",
+          "espnId": "187",
           "provider": "espn",
-          "identity": "espn:11431",
-          "name": "Panetolikos",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11431.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/11431.png",
+          "identity": "espn:187",
+          "name": "LA Galaxy",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/187.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/187.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "1010",
-          "espnId": "1010",
+          "id": "20906",
+          "espnId": "20906",
           "provider": "espn",
-          "identity": "espn:1010",
-          "name": "OFI Crete",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1010.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/1010.png",
+          "identity": "espn:20906",
+          "name": "Austin FC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20906.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/20906.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -24216,16 +23813,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:gre.1",
-        "name": "الدوري اليوناني",
+        "id": "espn:usa.1",
+        "name": "الدوري الأمريكي MLS",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401896735",
+      "externalId": "761925",
       "externalIds": {
-        "espn": "401896735",
-        "espn-league": "gre.1"
+        "espn": "761925",
+        "espn-league": "usa.1"
       },
       "details": {
         "events": [],
@@ -24236,33 +23833,33 @@
     },
     {
       "fixture": {
-        "id": "espn-gre.1-401896734",
-        "providerMatchId": "401896734",
-        "date": "2026-11-01T17:00Z",
+        "id": "espn-usa.1-761929",
+        "providerMatchId": "761929",
+        "date": "2026-10-31T21:00Z",
         "status": {
           "short": "NS"
         }
       },
       "teams": {
         "home": {
-          "id": "605",
-          "espnId": "605",
+          "id": "191",
+          "espnId": "191",
           "provider": "espn",
-          "identity": "espn:605",
-          "name": "PAOK",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/605.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/605.png",
+          "identity": "espn:191",
+          "name": "San Jose Earthquakes",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/191.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/191.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "8354",
-          "espnId": "8354",
+          "id": "4771",
+          "espnId": "4771",
           "provider": "espn",
-          "identity": "espn:8354",
-          "name": "Asteras Tripoli",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/8354.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/8354.png",
+          "identity": "espn:4771",
+          "name": "Real Salt Lake",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4771.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/4771.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -24272,16 +23869,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:gre.1",
-        "name": "الدوري اليوناني",
+        "id": "espn:usa.1",
+        "name": "الدوري الأمريكي MLS",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401896734",
+      "externalId": "761929",
       "externalIds": {
-        "espn": "401896734",
-        "espn-league": "gre.1"
+        "espn": "761929",
+        "espn-league": "usa.1"
       },
       "details": {
         "events": [],
@@ -24292,33 +23889,33 @@
     },
     {
       "fixture": {
-        "id": "espn-gre.1-401896736",
-        "providerMatchId": "401896736",
-        "date": "2026-11-01T17:30Z",
+        "id": "espn-usa.1-761923",
+        "providerMatchId": "761923",
+        "date": "2026-11-01T01:30Z",
         "status": {
           "short": "NS"
         }
       },
       "teams": {
         "home": {
-          "id": "443",
-          "espnId": "443",
+          "id": "184",
+          "espnId": "184",
           "provider": "espn",
-          "identity": "espn:443",
-          "name": "Panathinaikos",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/443.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/443.png",
+          "identity": "espn:184",
+          "name": "Colorado Rapids",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/184.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/184.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "887",
-          "espnId": "887",
+          "id": "182",
+          "espnId": "182",
           "provider": "espn",
-          "identity": "espn:887",
-          "name": "AEK Athens",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/887.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/887.png",
+          "identity": "espn:182",
+          "name": "Chicago Fire FC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/182.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/182.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -24328,16 +23925,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:gre.1",
-        "name": "الدوري اليوناني",
+        "id": "espn:usa.1",
+        "name": "الدوري الأمريكي MLS",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401896736",
+      "externalId": "761923",
       "externalIds": {
-        "espn": "401896736",
-        "espn-league": "gre.1"
+        "espn": "761923",
+        "espn-league": "usa.1"
       },
       "details": {
         "events": [],
@@ -24348,33 +23945,33 @@
     },
     {
       "fixture": {
-        "id": "espn-gre.1-401896739",
-        "providerMatchId": "401896739",
-        "date": "2026-11-02T16:00Z",
+        "id": "espn-usa.1-761927",
+        "providerMatchId": "761927",
+        "date": "2026-11-01T20:30Z",
         "status": {
           "short": "NS"
         }
       },
       "teams": {
         "home": {
-          "id": "6790",
-          "espnId": "6790",
+          "id": "9727",
+          "espnId": "9727",
           "provider": "espn",
-          "identity": "espn:6790",
-          "name": "Atromitos",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6790.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/6790.png",
+          "identity": "espn:9727",
+          "name": "Vancouver Whitecaps",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9727.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/9727.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "20043",
-          "espnId": "20043",
+          "id": "9726",
+          "espnId": "9726",
           "provider": "espn",
-          "identity": "espn:20043",
-          "name": "Volos NFC",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20043.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/20043.png",
+          "identity": "espn:9726",
+          "name": "Seattle Sounders FC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9726.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/9726.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -24384,16 +23981,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:gre.1",
-        "name": "الدوري اليوناني",
+        "id": "espn:usa.1",
+        "name": "الدوري الأمريكي MLS",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401896739",
+      "externalId": "761927",
       "externalIds": {
-        "espn": "401896739",
-        "espn-league": "gre.1"
+        "espn": "761927",
+        "espn-league": "usa.1"
       },
       "details": {
         "events": [],
@@ -24404,33 +24001,33 @@
     },
     {
       "fixture": {
-        "id": "espn-tur.1-401888260",
-        "providerMatchId": "401888260",
-        "date": "2026-11-02T17:00Z",
+        "id": "espn-usa.1-761931",
+        "providerMatchId": "761931",
+        "date": "2026-11-01T21:30Z",
         "status": {
           "short": "NS"
         }
       },
       "teams": {
         "home": {
-          "id": "996",
-          "espnId": "996",
+          "id": "18418",
+          "espnId": "18418",
           "provider": "espn",
-          "identity": "espn:996",
-          "name": "Genclerbirligi",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/996.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/996.png",
+          "identity": "espn:18418",
+          "name": "Atlanta United FC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18418.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/18418.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "9078",
-          "espnId": "9078",
+          "id": "7318",
+          "espnId": "7318",
           "provider": "espn",
-          "identity": "espn:9078",
-          "name": "Alanyaspor",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9078.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/9078.png",
+          "identity": "espn:7318",
+          "name": "Toronto FC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7318.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/7318.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -24440,16 +24037,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:tur.1",
-        "name": "الدوري التركي",
+        "id": "espn:usa.1",
+        "name": "الدوري الأمريكي MLS",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401888260",
+      "externalId": "761931",
       "externalIds": {
-        "espn": "401888260",
-        "espn-league": "tur.1"
+        "espn": "761931",
+        "espn-league": "usa.1"
       },
       "details": {
         "events": [],
@@ -24460,33 +24057,33 @@
     },
     {
       "fixture": {
-        "id": "espn-gre.1-401896813",
-        "providerMatchId": "401896813",
-        "date": "2026-11-02T17:30Z",
+        "id": "espn-usa.1-761920",
+        "providerMatchId": "761920",
+        "date": "2026-11-01T21:30Z",
         "status": {
           "short": "NS"
         }
       },
       "teams": {
         "home": {
-          "id": "132429",
-          "espnId": "132429",
+          "id": "18986",
+          "espnId": "18986",
           "provider": "espn",
-          "identity": "espn:132429",
-          "name": "Kalamata",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/132429.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/132429.png",
+          "identity": "espn:18986",
+          "name": "Nashville SC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18986.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/18986.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "2575",
-          "espnId": "2575",
+          "id": "190",
+          "espnId": "190",
           "provider": "espn",
-          "identity": "espn:2575",
-          "name": "Iraklis",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2575.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/2575.png",
+          "identity": "espn:190",
+          "name": "Red Bull New York",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/190.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/190.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -24496,16 +24093,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:gre.1",
-        "name": "الدوري اليوناني",
+        "id": "espn:usa.1",
+        "name": "الدوري الأمريكي MLS",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401896813",
+      "externalId": "761920",
       "externalIds": {
-        "espn": "401896813",
-        "espn-league": "gre.1"
+        "espn": "761920",
+        "espn-league": "usa.1"
       },
       "details": {
         "events": [],
@@ -24516,33 +24113,33 @@
     },
     {
       "fixture": {
-        "id": "espn-tur.1-401888256",
-        "providerMatchId": "401888256",
-        "date": "2026-11-06T17:00Z",
+        "id": "espn-usa.1-761932",
+        "providerMatchId": "761932",
+        "date": "2026-11-02T00:00Z",
         "status": {
           "short": "NS"
         }
       },
       "teams": {
         "home": {
-          "id": "20070",
-          "espnId": "20070",
+          "id": "189",
+          "espnId": "189",
           "provider": "espn",
-          "identity": "espn:20070",
-          "name": "Gaziantep FK",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20070.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/20070.png",
+          "identity": "espn:189",
+          "name": "New England Revolution",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/189.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/189.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "6870",
-          "espnId": "6870",
+          "id": "20232",
+          "espnId": "20232",
           "provider": "espn",
-          "identity": "espn:6870",
-          "name": "Kasimpasa",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6870.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/6870.png",
+          "identity": "espn:20232",
+          "name": "Inter Miami CF",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20232.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/20232.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -24552,16 +24149,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:tur.1",
-        "name": "الدوري التركي",
+        "id": "espn:usa.1",
+        "name": "الدوري الأمريكي MLS",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401888256",
+      "externalId": "761932",
       "externalIds": {
-        "espn": "401888256",
-        "espn-league": "tur.1"
+        "espn": "761932",
+        "espn-league": "usa.1"
       },
       "details": {
         "events": [],
@@ -24572,33 +24169,33 @@
     },
     {
       "fixture": {
-        "id": "espn-sco.2-401878527",
-        "providerMatchId": "401878527",
-        "date": "2026-11-06T19:30Z",
+        "id": "espn-usa.1-761921",
+        "providerMatchId": "761921",
+        "date": "2026-11-02T01:30Z",
         "status": {
           "short": "NS"
         }
       },
       "teams": {
         "home": {
-          "id": "249",
-          "espnId": "249",
+          "id": "18966",
+          "espnId": "18966",
           "provider": "espn",
-          "identity": "espn:249",
-          "name": "Raith Rovers",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/249.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/249.png",
+          "identity": "espn:18966",
+          "name": "LAFC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18966.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/18966.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "265",
-          "espnId": "265",
+          "id": "17362",
+          "espnId": "17362",
           "provider": "espn",
-          "identity": "espn:265",
-          "name": "Dunfermline Athletic",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/265.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/265.png",
+          "identity": "espn:17362",
+          "name": "Minnesota United FC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17362.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/17362.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -24608,16 +24205,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:sco.2",
-        "name": "الدوري الاسكتلندي الدرجة الثانية",
+        "id": "espn:usa.1",
+        "name": "الدوري الأمريكي MLS",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401878527",
+      "externalId": "761921",
       "externalIds": {
-        "espn": "401878527",
-        "espn-league": "sco.2"
+        "espn": "761921",
+        "espn-league": "usa.1"
       },
       "details": {
         "events": [],
@@ -24628,33 +24225,33 @@
     },
     {
       "fixture": {
-        "id": "espn-tur.1-401888255",
-        "providerMatchId": "401888255",
-        "date": "2026-11-07T10:30Z",
+        "id": "espn-usa.1-761933",
+        "providerMatchId": "761933",
+        "date": "2026-11-02T02:45Z",
         "status": {
           "short": "NS"
         }
       },
       "teams": {
         "home": {
-          "id": "20729",
-          "espnId": "20729",
+          "id": "9723",
+          "espnId": "9723",
           "provider": "espn",
-          "identity": "espn:20729",
-          "name": "Eyupspor",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20729.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/20729.png",
+          "identity": "espn:9723",
+          "name": "Portland Timbers",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9723.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/9723.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "995",
-          "espnId": "995",
+          "id": "6077",
+          "espnId": "6077",
           "provider": "espn",
-          "identity": "espn:995",
-          "name": "Kocaelispor",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/995.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/995.png",
+          "identity": "espn:6077",
+          "name": "Houston Dynamo FC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6077.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/6077.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -24664,16 +24261,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:tur.1",
-        "name": "الدوري التركي",
+        "id": "espn:usa.1",
+        "name": "الدوري الأمريكي MLS",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401888255",
+      "externalId": "761933",
       "externalIds": {
-        "espn": "401888255",
-        "espn-league": "tur.1"
+        "espn": "761933",
+        "espn-league": "usa.1"
       },
       "details": {
         "events": [],
@@ -24684,33 +24281,33 @@
     },
     {
       "fixture": {
-        "id": "espn-tur.1-401888250",
-        "providerMatchId": "401888250",
-        "date": "2026-11-07T13:00Z",
+        "id": "espn-usa.1-761934",
+        "providerMatchId": "761934",
+        "date": "2026-11-07T21:00Z",
         "status": {
           "short": "NS"
         }
       },
       "teams": {
         "home": {
-          "id": "11429",
-          "espnId": "11429",
+          "id": "9720",
+          "espnId": "9720",
           "provider": "espn",
-          "identity": "espn:11429",
-          "name": "Samsunspor",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11429.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/11429.png",
+          "identity": "espn:9720",
+          "name": "CF Montréal",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9720.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/9720.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "7648",
-          "espnId": "7648",
+          "id": "9727",
+          "espnId": "9727",
           "provider": "espn",
-          "identity": "espn:7648",
-          "name": "Konyaspor",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7648.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/7648.png",
+          "identity": "espn:9727",
+          "name": "Vancouver Whitecaps",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9727.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/9727.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -24720,16 +24317,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:tur.1",
-        "name": "الدوري التركي",
+        "id": "espn:usa.1",
+        "name": "الدوري الأمريكي MLS",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401888250",
+      "externalId": "761934",
       "externalIds": {
-        "espn": "401888250",
-        "espn-league": "tur.1"
+        "espn": "761934",
+        "espn-league": "usa.1"
       },
       "details": {
         "events": [],
@@ -24740,33 +24337,33 @@
     },
     {
       "fixture": {
-        "id": "espn-gre.1-401896731",
-        "providerMatchId": "401896731",
-        "date": "2026-11-07T15:00Z",
+        "id": "espn-usa.1-761935",
+        "providerMatchId": "761935",
+        "date": "2026-11-07T21:00Z",
         "status": {
           "short": "NS"
         }
       },
       "teams": {
         "home": {
-          "id": "20043",
-          "espnId": "20043",
+          "id": "182",
+          "espnId": "182",
           "provider": "espn",
-          "identity": "espn:20043",
-          "name": "Volos NFC",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20043.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/20043.png",
+          "identity": "espn:182",
+          "name": "Chicago Fire FC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/182.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/182.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "21969",
-          "espnId": "21969",
+          "id": "183",
+          "espnId": "183",
           "provider": "espn",
-          "identity": "espn:21969",
-          "name": "Kifisia",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21969.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/21969.png",
+          "identity": "espn:183",
+          "name": "Columbus Crew",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/183.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/183.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -24776,16 +24373,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:gre.1",
-        "name": "الدوري اليوناني",
+        "id": "espn:usa.1",
+        "name": "الدوري الأمريكي MLS",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401896731",
+      "externalId": "761935",
       "externalIds": {
-        "espn": "401896731",
-        "espn-league": "gre.1"
+        "espn": "761935",
+        "espn-league": "usa.1"
       },
       "details": {
         "events": [],
@@ -24796,33 +24393,33 @@
     },
     {
       "fixture": {
-        "id": "espn-sco.2-401878531",
-        "providerMatchId": "401878531",
-        "date": "2026-11-07T15:00Z",
+        "id": "espn-usa.1-761936",
+        "providerMatchId": "761936",
+        "date": "2026-11-07T21:00Z",
         "status": {
           "short": "NS"
         }
       },
       "teams": {
         "home": {
-          "id": "252",
-          "espnId": "252",
+          "id": "193",
+          "espnId": "193",
           "provider": "espn",
-          "identity": "espn:252",
-          "name": "Arbroath",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/252.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/252.png",
+          "identity": "espn:193",
+          "name": "D.C. United",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/193.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/193.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "248",
-          "espnId": "248",
+          "id": "17606",
+          "espnId": "17606",
           "provider": "espn",
-          "identity": "espn:248",
-          "name": "Ayr United",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/248.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/248.png",
+          "identity": "espn:17606",
+          "name": "New York City FC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17606.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/17606.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -24832,16 +24429,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:sco.2",
-        "name": "الدوري الاسكتلندي الدرجة الثانية",
+        "id": "espn:usa.1",
+        "name": "الدوري الأمريكي MLS",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401878531",
+      "externalId": "761936",
       "externalIds": {
-        "espn": "401878531",
-        "espn-league": "sco.2"
+        "espn": "761936",
+        "espn-league": "usa.1"
       },
       "details": {
         "events": [],
@@ -24852,33 +24449,33 @@
     },
     {
       "fixture": {
-        "id": "espn-sco.2-401878530",
-        "providerMatchId": "401878530",
-        "date": "2026-11-07T15:00Z",
+        "id": "espn-usa.1-761937",
+        "providerMatchId": "761937",
+        "date": "2026-11-07T21:00Z",
         "status": {
           "short": "NS"
         }
       },
       "teams": {
         "home": {
-          "id": "411",
-          "espnId": "411",
+          "id": "18267",
+          "espnId": "18267",
           "provider": "espn",
-          "identity": "espn:411",
-          "name": "Greenock Morton",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/411.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/411.png",
+          "identity": "espn:18267",
+          "name": "FC Cincinnati",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18267.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/18267.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "405",
-          "espnId": "405",
+          "id": "18986",
+          "espnId": "18986",
           "provider": "espn",
-          "identity": "espn:405",
-          "name": "Stenhousemuir",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/405.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/405.png",
+          "identity": "espn:18986",
+          "name": "Nashville SC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18986.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/18986.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -24888,16 +24485,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:sco.2",
-        "name": "الدوري الاسكتلندي الدرجة الثانية",
+        "id": "espn:usa.1",
+        "name": "الدوري الأمريكي MLS",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401878530",
+      "externalId": "761937",
       "externalIds": {
-        "espn": "401878530",
-        "espn-league": "sco.2"
+        "espn": "761937",
+        "espn-league": "usa.1"
       },
       "details": {
         "events": [],
@@ -24908,33 +24505,33 @@
     },
     {
       "fixture": {
-        "id": "espn-sco.2-401878529",
-        "providerMatchId": "401878529",
-        "date": "2026-11-07T15:00Z",
+        "id": "espn-usa.1-761938",
+        "providerMatchId": "761938",
+        "date": "2026-11-07T21:00Z",
         "status": {
           "short": "NS"
         }
       },
       "teams": {
         "home": {
-          "id": "253",
-          "espnId": "253",
+          "id": "20232",
+          "espnId": "20232",
           "provider": "espn",
-          "identity": "espn:253",
-          "name": "Inverness Caledonian Thistle",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/253.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/253.png",
+          "identity": "espn:20232",
+          "name": "Inter Miami CF",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20232.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/20232.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "259",
-          "espnId": "259",
+          "id": "21300",
+          "espnId": "21300",
           "provider": "espn",
-          "identity": "espn:259",
-          "name": "Livingston",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/259.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/259.png",
+          "identity": "espn:21300",
+          "name": "Charlotte FC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21300.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/21300.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -24944,16 +24541,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:sco.2",
-        "name": "الدوري الاسكتلندي الدرجة الثانية",
+        "id": "espn:usa.1",
+        "name": "الدوري الأمريكي MLS",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401878529",
+      "externalId": "761938",
       "externalIds": {
-        "espn": "401878529",
-        "espn-league": "sco.2"
+        "espn": "761938",
+        "espn-league": "usa.1"
       },
       "details": {
         "events": [],
@@ -24964,33 +24561,33 @@
     },
     {
       "fixture": {
-        "id": "espn-sco.2-401878528",
-        "providerMatchId": "401878528",
-        "date": "2026-11-07T15:00Z",
+        "id": "espn-usa.1-761940",
+        "providerMatchId": "761940",
+        "date": "2026-11-07T21:00Z",
         "status": {
           "short": "NS"
         }
       },
       "teams": {
         "home": {
-          "id": "422",
-          "espnId": "422",
+          "id": "12011",
+          "espnId": "12011",
           "provider": "espn",
-          "identity": "espn:422",
-          "name": "Queen's Park",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/422.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/422.png",
+          "identity": "espn:12011",
+          "name": "Orlando City SC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/12011.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/12011.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "247",
-          "espnId": "247",
+          "id": "189",
+          "espnId": "189",
           "provider": "espn",
-          "identity": "espn:247",
-          "name": "Partick Thistle",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/247.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/247.png",
+          "identity": "espn:189",
+          "name": "New England Revolution",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/189.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/189.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -25000,16 +24597,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:sco.2",
-        "name": "الدوري الاسكتلندي الدرجة الثانية",
+        "id": "espn:usa.1",
+        "name": "الدوري الأمريكي MLS",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401878528",
+      "externalId": "761940",
       "externalIds": {
-        "espn": "401878528",
-        "espn-league": "sco.2"
+        "espn": "761940",
+        "espn-league": "usa.1"
       },
       "details": {
         "events": [],
@@ -25020,33 +24617,33 @@
     },
     {
       "fixture": {
-        "id": "espn-tur.1-401888371",
-        "providerMatchId": "401888371",
-        "date": "2026-11-07T16:00Z",
+        "id": "espn-usa.1-761941",
+        "providerMatchId": "761941",
+        "date": "2026-11-07T21:00Z",
         "status": {
           "short": "NS"
         }
       },
       "teams": {
         "home": {
-          "id": "432",
-          "espnId": "432",
+          "id": "10739",
+          "espnId": "10739",
           "provider": "espn",
-          "identity": "espn:432",
-          "name": "Galatasaray",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/432.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/432.png",
+          "identity": "espn:10739",
+          "name": "Philadelphia Union",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/10739.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/10739.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "132335",
-          "espnId": "132335",
+          "id": "7318",
+          "espnId": "7318",
           "provider": "espn",
-          "identity": "espn:132335",
-          "name": "Amed SFK",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/132335.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/132335.png",
+          "identity": "espn:7318",
+          "name": "Toronto FC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7318.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/7318.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -25056,16 +24653,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:tur.1",
-        "name": "الدوري التركي",
+        "id": "espn:usa.1",
+        "name": "الدوري الأمريكي MLS",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401888371",
+      "externalId": "761941",
       "externalIds": {
-        "espn": "401888371",
-        "espn-league": "tur.1"
+        "espn": "761941",
+        "espn-league": "usa.1"
       },
       "details": {
         "events": [],
@@ -25076,33 +24673,33 @@
     },
     {
       "fixture": {
-        "id": "espn-tur.1-401888252",
-        "providerMatchId": "401888252",
-        "date": "2026-11-07T16:00Z",
+        "id": "espn-usa.1-761939",
+        "providerMatchId": "761939",
+        "date": "2026-11-07T21:00Z",
         "status": {
           "short": "NS"
         }
       },
       "teams": {
         "home": {
-          "id": "789",
-          "espnId": "789",
+          "id": "190",
+          "espnId": "190",
           "provider": "espn",
-          "identity": "espn:789",
-          "name": "Goztepe",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/789.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/789.png",
+          "identity": "espn:190",
+          "name": "Red Bull New York",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/190.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/190.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "7914",
-          "espnId": "7914",
+          "id": "18418",
+          "espnId": "18418",
           "provider": "espn",
-          "identity": "espn:7914",
-          "name": "Istanbul Basaksehir",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7914.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/7914.png",
+          "identity": "espn:18418",
+          "name": "Atlanta United FC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18418.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/18418.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -25112,16 +24709,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:tur.1",
-        "name": "الدوري التركي",
+        "id": "espn:usa.1",
+        "name": "الدوري الأمريكي MLS",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401888252",
+      "externalId": "761939",
       "externalIds": {
-        "espn": "401888252",
-        "espn-league": "tur.1"
+        "espn": "761939",
+        "espn-league": "usa.1"
       },
       "details": {
         "events": [],
@@ -25132,33 +24729,33 @@
     },
     {
       "fixture": {
-        "id": "espn-gre.1-401896732",
-        "providerMatchId": "401896732",
-        "date": "2026-11-07T17:30Z",
+        "id": "espn-usa.1-761942",
+        "providerMatchId": "761942",
+        "date": "2026-11-08T00:00Z",
         "status": {
           "short": "NS"
         }
       },
       "teams": {
         "home": {
-          "id": "11553",
-          "espnId": "11553",
+          "id": "20906",
+          "espnId": "20906",
           "provider": "espn",
-          "identity": "espn:11553",
-          "name": "Aris",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11553.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/11553.png",
+          "identity": "espn:20906",
+          "name": "Austin FC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20906.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/20906.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "11431",
-          "espnId": "11431",
+          "id": "9723",
+          "espnId": "9723",
           "provider": "espn",
-          "identity": "espn:11431",
-          "name": "Panetolikos",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11431.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/11431.png",
+          "identity": "espn:9723",
+          "name": "Portland Timbers",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9723.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/9723.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -25168,16 +24765,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:gre.1",
-        "name": "الدوري اليوناني",
+        "id": "espn:usa.1",
+        "name": "الدوري الأمريكي MLS",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401896732",
+      "externalId": "761942",
       "externalIds": {
-        "espn": "401896732",
-        "espn-league": "gre.1"
+        "espn": "761942",
+        "espn-league": "usa.1"
       },
       "details": {
         "events": [],
@@ -25188,33 +24785,33 @@
     },
     {
       "fixture": {
-        "id": "espn-tur.1-401888253",
-        "providerMatchId": "401888253",
-        "date": "2026-11-08T10:30Z",
+        "id": "espn-usa.1-761943",
+        "providerMatchId": "761943",
+        "date": "2026-11-08T00:00Z",
         "status": {
           "short": "NS"
         }
       },
       "teams": {
         "home": {
-          "id": "7656",
-          "espnId": "7656",
+          "id": "185",
+          "espnId": "185",
           "provider": "espn",
-          "identity": "espn:7656",
-          "name": "Caykur Rizespor",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7656.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/7656.png",
+          "identity": "espn:185",
+          "name": "FC Dallas",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/185.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/185.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "19267",
-          "espnId": "19267",
+          "id": "184",
+          "espnId": "184",
           "provider": "espn",
-          "identity": "espn:19267",
-          "name": "Erzurum BB",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/19267.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/19267.png",
+          "identity": "espn:184",
+          "name": "Colorado Rapids",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/184.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/184.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -25224,16 +24821,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:tur.1",
-        "name": "الدوري التركي",
+        "id": "espn:usa.1",
+        "name": "الدوري الأمريكي MLS",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401888253",
+      "externalId": "761943",
       "externalIds": {
-        "espn": "401888253",
-        "espn-league": "tur.1"
+        "espn": "761943",
+        "espn-league": "usa.1"
       },
       "details": {
         "events": [],
@@ -25244,33 +24841,33 @@
     },
     {
       "fixture": {
-        "id": "espn-tur.1-401888372",
-        "providerMatchId": "401888372",
-        "date": "2026-11-08T13:00Z",
+        "id": "espn-usa.1-761944",
+        "providerMatchId": "761944",
+        "date": "2026-11-08T00:00Z",
         "status": {
           "short": "NS"
         }
       },
       "teams": {
         "home": {
-          "id": "132334",
-          "espnId": "132334",
+          "id": "6077",
+          "espnId": "6077",
           "provider": "espn",
-          "identity": "espn:132334",
-          "name": "Çorum FK",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/132334.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/132334.png",
+          "identity": "espn:6077",
+          "name": "Houston Dynamo FC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6077.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/6077.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "436",
-          "espnId": "436",
+          "id": "21812",
+          "espnId": "21812",
           "provider": "espn",
-          "identity": "espn:436",
-          "name": "Fenerbahce",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/436.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/436.png",
+          "identity": "espn:21812",
+          "name": "St. Louis CITY SC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21812.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/21812.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -25280,16 +24877,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:tur.1",
-        "name": "الدوري التركي",
+        "id": "espn:usa.1",
+        "name": "الدوري الأمريكي MLS",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401888372",
+      "externalId": "761944",
       "externalIds": {
-        "espn": "401888372",
-        "espn-league": "tur.1"
+        "espn": "761944",
+        "espn-league": "usa.1"
       },
       "details": {
         "events": [],
@@ -25300,33 +24897,33 @@
     },
     {
       "fixture": {
-        "id": "espn-gre.1-401896733",
-        "providerMatchId": "401896733",
-        "date": "2026-11-08T15:00Z",
+        "id": "espn-usa.1-761945",
+        "providerMatchId": "761945",
+        "date": "2026-11-08T00:00Z",
         "status": {
           "short": "NS"
         }
       },
       "teams": {
         "home": {
-          "id": "887",
-          "espnId": "887",
+          "id": "17362",
+          "espnId": "17362",
           "provider": "espn",
-          "identity": "espn:887",
-          "name": "AEK Athens",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/887.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/887.png",
+          "identity": "espn:17362",
+          "name": "Minnesota United FC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17362.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/17362.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "5276",
-          "espnId": "5276",
+          "id": "191",
+          "espnId": "191",
           "provider": "espn",
-          "identity": "espn:5276",
-          "name": "Levadiakos",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/5276.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/5276.png",
+          "identity": "espn:191",
+          "name": "San Jose Earthquakes",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/191.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/191.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -25336,16 +24933,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:gre.1",
-        "name": "الدوري اليوناني",
+        "id": "espn:usa.1",
+        "name": "الدوري الأمريكي MLS",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401896733",
+      "externalId": "761945",
       "externalIds": {
-        "espn": "401896733",
-        "espn-league": "gre.1"
+        "espn": "761945",
+        "espn-league": "usa.1"
       },
       "details": {
         "events": [],
@@ -25356,33 +24953,33 @@
     },
     {
       "fixture": {
-        "id": "espn-gre.1-401896812",
-        "providerMatchId": "401896812",
-        "date": "2026-11-08T15:00Z",
+        "id": "espn-usa.1-761946",
+        "providerMatchId": "761946",
+        "date": "2026-11-08T00:00Z",
         "status": {
           "short": "NS"
         }
       },
       "teams": {
         "home": {
-          "id": "8354",
-          "espnId": "8354",
+          "id": "4771",
+          "espnId": "4771",
           "provider": "espn",
-          "identity": "espn:8354",
-          "name": "Asteras Tripoli",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/8354.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/8354.png",
+          "identity": "espn:4771",
+          "name": "Real Salt Lake",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4771.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/4771.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "132429",
-          "espnId": "132429",
+          "id": "187",
+          "espnId": "187",
           "provider": "espn",
-          "identity": "espn:132429",
-          "name": "Kalamata",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/132429.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/132429.png",
+          "identity": "espn:187",
+          "name": "LA Galaxy",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/187.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/187.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -25392,16 +24989,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:gre.1",
-        "name": "الدوري اليوناني",
+        "id": "espn:usa.1",
+        "name": "الدوري الأمريكي MLS",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401896812",
+      "externalId": "761946",
       "externalIds": {
-        "espn": "401896812",
-        "espn-league": "gre.1"
+        "espn": "761946",
+        "espn-league": "usa.1"
       },
       "details": {
         "events": [],
@@ -25412,33 +25009,33 @@
     },
     {
       "fixture": {
-        "id": "espn-tur.1-401888254",
-        "providerMatchId": "401888254",
-        "date": "2026-11-08T15:30Z",
+        "id": "espn-usa.1-761947",
+        "providerMatchId": "761947",
+        "date": "2026-11-08T00:00Z",
         "status": {
           "short": "NS"
         }
       },
       "teams": {
         "home": {
-          "id": "9078",
-          "espnId": "9078",
+          "id": "22529",
+          "espnId": "22529",
           "provider": "espn",
-          "identity": "espn:9078",
-          "name": "Alanyaspor",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9078.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/9078.png",
+          "identity": "espn:22529",
+          "name": "San Diego FC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/22529.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/22529.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "997",
-          "espnId": "997",
+          "id": "186",
+          "espnId": "186",
           "provider": "espn",
-          "identity": "espn:997",
-          "name": "Trabzonspor",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/997.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/997.png",
+          "identity": "espn:186",
+          "name": "Sporting Kansas City",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/186.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/186.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -25448,16 +25045,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:tur.1",
-        "name": "الدوري التركي",
+        "id": "espn:usa.1",
+        "name": "الدوري الأمريكي MLS",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401888254",
+      "externalId": "761947",
       "externalIds": {
-        "espn": "401888254",
-        "espn-league": "tur.1"
+        "espn": "761947",
+        "espn-league": "usa.1"
       },
       "details": {
         "events": [],
@@ -25468,33 +25065,33 @@
     },
     {
       "fixture": {
-        "id": "espn-gre.1-401896811",
-        "providerMatchId": "401896811",
-        "date": "2026-11-08T15:30Z",
+        "id": "espn-usa.1-761948",
+        "providerMatchId": "761948",
+        "date": "2026-11-08T00:00Z",
         "status": {
           "short": "NS"
         }
       },
       "teams": {
         "home": {
-          "id": "2575",
-          "espnId": "2575",
+          "id": "9726",
+          "espnId": "9726",
           "provider": "espn",
-          "identity": "espn:2575",
-          "name": "Iraklis",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2575.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/2575.png",
+          "identity": "espn:9726",
+          "name": "Seattle Sounders FC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9726.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/9726.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         },
         "away": {
-          "id": "443",
-          "espnId": "443",
+          "id": "18966",
+          "espnId": "18966",
           "provider": "espn",
-          "identity": "espn:443",
-          "name": "Panathinaikos",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/443.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/443.png",
+          "identity": "espn:18966",
+          "name": "LAFC",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18966.png",
+          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/18966.png",
           "logoSource": "ESPN team ID",
           "logoQuality": "verified-id"
         }
@@ -25504,1752 +25101,16 @@
         "away": 0
       },
       "league": {
-        "id": "espn:gre.1",
-        "name": "الدوري اليوناني",
+        "id": "espn:usa.1",
+        "name": "الدوري الأمريكي MLS",
         "logo": null
       },
       "competitionType": "domestic",
       "source": "espn",
-      "externalId": "401896811",
+      "externalId": "761948",
       "externalIds": {
-        "espn": "401896811",
-        "espn-league": "gre.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-gre.1-401896729",
-        "providerMatchId": "401896729",
-        "date": "2026-11-08T16:30Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "1010",
-          "espnId": "1010",
-          "provider": "espn",
-          "identity": "espn:1010",
-          "name": "OFI Crete",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1010.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/1010.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "6790",
-          "espnId": "6790",
-          "provider": "espn",
-          "identity": "espn:6790",
-          "name": "Atromitos",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6790.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/6790.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:gre.1",
-        "name": "الدوري اليوناني",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401896729",
-      "externalIds": {
-        "espn": "401896729",
-        "espn-league": "gre.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-tur.1-401888251",
-        "providerMatchId": "401888251",
-        "date": "2026-11-08T18:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "1895",
-          "espnId": "1895",
-          "provider": "espn",
-          "identity": "espn:1895",
-          "name": "Besiktas",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1895.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/1895.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "996",
-          "espnId": "996",
-          "provider": "espn",
-          "identity": "espn:996",
-          "name": "Genclerbirligi",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/996.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/996.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:tur.1",
-        "name": "الدوري التركي",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401888251",
-      "externalIds": {
-        "espn": "401888251",
-        "espn-league": "tur.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-gre.1-401896730",
-        "providerMatchId": "401896730",
-        "date": "2026-11-08T19:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "435",
-          "espnId": "435",
-          "provider": "espn",
-          "identity": "espn:435",
-          "name": "Olympiacos",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/435.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/435.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "605",
-          "espnId": "605",
-          "provider": "espn",
-          "identity": "espn:605",
-          "name": "PAOK",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/605.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/605.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:gre.1",
-        "name": "الدوري اليوناني",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401896730",
-      "externalIds": {
-        "espn": "401896730",
-        "espn-league": "gre.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-sco.2-401878526",
-        "providerMatchId": "401878526",
-        "date": "2026-11-14T15:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "248",
-          "espnId": "248",
-          "provider": "espn",
-          "identity": "espn:248",
-          "name": "Ayr United",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/248.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/248.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "249",
-          "espnId": "249",
-          "provider": "espn",
-          "identity": "espn:249",
-          "name": "Raith Rovers",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/249.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/249.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:sco.2",
-        "name": "الدوري الاسكتلندي الدرجة الثانية",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401878526",
-      "externalIds": {
-        "espn": "401878526",
-        "espn-league": "sco.2"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-sco.2-401878525",
-        "providerMatchId": "401878525",
-        "date": "2026-11-14T15:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "265",
-          "espnId": "265",
-          "provider": "espn",
-          "identity": "espn:265",
-          "name": "Dunfermline Athletic",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/265.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/265.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "252",
-          "espnId": "252",
-          "provider": "espn",
-          "identity": "espn:252",
-          "name": "Arbroath",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/252.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/252.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:sco.2",
-        "name": "الدوري الاسكتلندي الدرجة الثانية",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401878525",
-      "externalIds": {
-        "espn": "401878525",
-        "espn-league": "sco.2"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-sco.2-401878524",
-        "providerMatchId": "401878524",
-        "date": "2026-11-14T15:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "259",
-          "espnId": "259",
-          "provider": "espn",
-          "identity": "espn:259",
-          "name": "Livingston",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/259.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/259.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "411",
-          "espnId": "411",
-          "provider": "espn",
-          "identity": "espn:411",
-          "name": "Greenock Morton",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/411.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/411.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:sco.2",
-        "name": "الدوري الاسكتلندي الدرجة الثانية",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401878524",
-      "externalIds": {
-        "espn": "401878524",
-        "espn-league": "sco.2"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-sco.2-401878523",
-        "providerMatchId": "401878523",
-        "date": "2026-11-14T15:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "247",
-          "espnId": "247",
-          "provider": "espn",
-          "identity": "espn:247",
-          "name": "Partick Thistle",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/247.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/247.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "253",
-          "espnId": "253",
-          "provider": "espn",
-          "identity": "espn:253",
-          "name": "Inverness Caledonian Thistle",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/253.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/253.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:sco.2",
-        "name": "الدوري الاسكتلندي الدرجة الثانية",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401878523",
-      "externalIds": {
-        "espn": "401878523",
-        "espn-league": "sco.2"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-sco.2-401878522",
-        "providerMatchId": "401878522",
-        "date": "2026-11-14T15:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "405",
-          "espnId": "405",
-          "provider": "espn",
-          "identity": "espn:405",
-          "name": "Stenhousemuir",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/405.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/405.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "422",
-          "espnId": "422",
-          "provider": "espn",
-          "identity": "espn:422",
-          "name": "Queen's Park",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/422.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/422.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:sco.2",
-        "name": "الدوري الاسكتلندي الدرجة الثانية",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401878522",
-      "externalIds": {
-        "espn": "401878522",
-        "espn-league": "sco.2"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-sco.2-401878519",
-        "providerMatchId": "401878519",
-        "date": "2026-11-20T19:30Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "253",
-          "espnId": "253",
-          "provider": "espn",
-          "identity": "espn:253",
-          "name": "Inverness Caledonian Thistle",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/253.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/253.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "248",
-          "espnId": "248",
-          "provider": "espn",
-          "identity": "espn:248",
-          "name": "Ayr United",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/248.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/248.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:sco.2",
-        "name": "الدوري الاسكتلندي الدرجة الثانية",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401878519",
-      "externalIds": {
-        "espn": "401878519",
-        "espn-league": "sco.2"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-tur.1-401888247",
-        "providerMatchId": "401888247",
-        "date": "2026-11-21T10:30Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "996",
-          "espnId": "996",
-          "provider": "espn",
-          "identity": "espn:996",
-          "name": "Genclerbirligi",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/996.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/996.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "20070",
-          "espnId": "20070",
-          "provider": "espn",
-          "identity": "espn:20070",
-          "name": "Gaziantep FK",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20070.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/20070.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:tur.1",
-        "name": "الدوري التركي",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401888247",
-      "externalIds": {
-        "espn": "401888247",
-        "espn-league": "tur.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-tur.1-401888369",
-        "providerMatchId": "401888369",
-        "date": "2026-11-21T13:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "132335",
-          "espnId": "132335",
-          "provider": "espn",
-          "identity": "espn:132335",
-          "name": "Amed SFK",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/132335.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/132335.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "7656",
-          "espnId": "7656",
-          "provider": "espn",
-          "identity": "espn:7656",
-          "name": "Caykur Rizespor",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7656.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/7656.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:tur.1",
-        "name": "الدوري التركي",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401888369",
-      "externalIds": {
-        "espn": "401888369",
-        "espn-league": "tur.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-tur.1-401888245",
-        "providerMatchId": "401888245",
-        "date": "2026-11-21T13:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "432",
-          "espnId": "432",
-          "provider": "espn",
-          "identity": "espn:432",
-          "name": "Galatasaray",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/432.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/432.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "11429",
-          "espnId": "11429",
-          "provider": "espn",
-          "identity": "espn:11429",
-          "name": "Samsunspor",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11429.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/11429.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:tur.1",
-        "name": "الدوري التركي",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401888245",
-      "externalIds": {
-        "espn": "401888245",
-        "espn-league": "tur.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-sco.2-401878521",
-        "providerMatchId": "401878521",
-        "date": "2026-11-21T15:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "252",
-          "espnId": "252",
-          "provider": "espn",
-          "identity": "espn:252",
-          "name": "Arbroath",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/252.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/252.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "405",
-          "espnId": "405",
-          "provider": "espn",
-          "identity": "espn:405",
-          "name": "Stenhousemuir",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/405.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/405.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:sco.2",
-        "name": "الدوري الاسكتلندي الدرجة الثانية",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401878521",
-      "externalIds": {
-        "espn": "401878521",
-        "espn-league": "sco.2"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-sco.2-401878520",
-        "providerMatchId": "401878520",
-        "date": "2026-11-21T15:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "265",
-          "espnId": "265",
-          "provider": "espn",
-          "identity": "espn:265",
-          "name": "Dunfermline Athletic",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/265.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/265.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "411",
-          "espnId": "411",
-          "provider": "espn",
-          "identity": "espn:411",
-          "name": "Greenock Morton",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/411.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/411.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:sco.2",
-        "name": "الدوري الاسكتلندي الدرجة الثانية",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401878520",
-      "externalIds": {
-        "espn": "401878520",
-        "espn-league": "sco.2"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-sco.2-401878518",
-        "providerMatchId": "401878518",
-        "date": "2026-11-21T15:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "422",
-          "espnId": "422",
-          "provider": "espn",
-          "identity": "espn:422",
-          "name": "Queen's Park",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/422.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/422.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "259",
-          "espnId": "259",
-          "provider": "espn",
-          "identity": "espn:259",
-          "name": "Livingston",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/259.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/259.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:sco.2",
-        "name": "الدوري الاسكتلندي الدرجة الثانية",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401878518",
-      "externalIds": {
-        "espn": "401878518",
-        "espn-league": "sco.2"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-sco.2-401878517",
-        "providerMatchId": "401878517",
-        "date": "2026-11-21T15:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "249",
-          "espnId": "249",
-          "provider": "espn",
-          "identity": "espn:249",
-          "name": "Raith Rovers",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/249.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/249.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "247",
-          "espnId": "247",
-          "provider": "espn",
-          "identity": "espn:247",
-          "name": "Partick Thistle",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/247.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/247.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:sco.2",
-        "name": "الدوري الاسكتلندي الدرجة الثانية",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401878517",
-      "externalIds": {
-        "espn": "401878517",
-        "espn-league": "sco.2"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-tur.1-401888244",
-        "providerMatchId": "401888244",
-        "date": "2026-11-21T16:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "995",
-          "espnId": "995",
-          "provider": "espn",
-          "identity": "espn:995",
-          "name": "Kocaelispor",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/995.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/995.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "436",
-          "espnId": "436",
-          "provider": "espn",
-          "identity": "espn:436",
-          "name": "Fenerbahce",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/436.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/436.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:tur.1",
-        "name": "الدوري التركي",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401888244",
-      "externalIds": {
-        "espn": "401888244",
-        "espn-league": "tur.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-gre.1-401896810",
-        "providerMatchId": "401896810",
-        "date": "2026-11-21T17:30Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "132429",
-          "espnId": "132429",
-          "provider": "espn",
-          "identity": "espn:132429",
-          "name": "Kalamata",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/132429.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/132429.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "887",
-          "espnId": "887",
-          "provider": "espn",
-          "identity": "espn:887",
-          "name": "AEK Athens",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/887.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/887.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:gre.1",
-        "name": "الدوري اليوناني",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401896810",
-      "externalIds": {
-        "espn": "401896810",
-        "espn-league": "gre.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-tur.1-401888243",
-        "providerMatchId": "401888243",
-        "date": "2026-11-22T10:30Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "19267",
-          "espnId": "19267",
-          "provider": "espn",
-          "identity": "espn:19267",
-          "name": "Erzurum BB",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/19267.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/19267.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "789",
-          "espnId": "789",
-          "provider": "espn",
-          "identity": "espn:789",
-          "name": "Goztepe",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/789.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/789.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:tur.1",
-        "name": "الدوري التركي",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401888243",
-      "externalIds": {
-        "espn": "401888243",
-        "espn-league": "tur.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-tur.1-401888248",
-        "providerMatchId": "401888248",
-        "date": "2026-11-22T13:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "6870",
-          "espnId": "6870",
-          "provider": "espn",
-          "identity": "espn:6870",
-          "name": "Kasimpasa",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6870.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/6870.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "9078",
-          "espnId": "9078",
-          "provider": "espn",
-          "identity": "espn:9078",
-          "name": "Alanyaspor",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9078.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/9078.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:tur.1",
-        "name": "الدوري التركي",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401888248",
-      "externalIds": {
-        "espn": "401888248",
-        "espn-league": "tur.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-tur.1-401888246",
-        "providerMatchId": "401888246",
-        "date": "2026-11-22T13:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "7648",
-          "espnId": "7648",
-          "provider": "espn",
-          "identity": "espn:7648",
-          "name": "Konyaspor",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7648.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/7648.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "1895",
-          "espnId": "1895",
-          "provider": "espn",
-          "identity": "espn:1895",
-          "name": "Besiktas",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1895.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/1895.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:tur.1",
-        "name": "الدوري التركي",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401888246",
-      "externalIds": {
-        "espn": "401888246",
-        "espn-league": "tur.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-gre.1-401896727",
-        "providerMatchId": "401896727",
-        "date": "2026-11-22T14:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "5276",
-          "espnId": "5276",
-          "provider": "espn",
-          "identity": "espn:5276",
-          "name": "Levadiakos",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/5276.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/5276.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "6790",
-          "espnId": "6790",
-          "provider": "espn",
-          "identity": "espn:6790",
-          "name": "Atromitos",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6790.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/6790.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:gre.1",
-        "name": "الدوري اليوناني",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401896727",
-      "externalIds": {
-        "espn": "401896727",
-        "espn-league": "gre.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-gre.1-401896725",
-        "providerMatchId": "401896725",
-        "date": "2026-11-22T15:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "11431",
-          "espnId": "11431",
-          "provider": "espn",
-          "identity": "espn:11431",
-          "name": "Panetolikos",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11431.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/11431.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "20043",
-          "espnId": "20043",
-          "provider": "espn",
-          "identity": "espn:20043",
-          "name": "Volos NFC",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20043.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/20043.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:gre.1",
-        "name": "الدوري اليوناني",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401896725",
-      "externalIds": {
-        "espn": "401896725",
-        "espn-league": "gre.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-gre.1-401896726",
-        "providerMatchId": "401896726",
-        "date": "2026-11-22T15:30Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "443",
-          "espnId": "443",
-          "provider": "espn",
-          "identity": "espn:443",
-          "name": "Panathinaikos",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/443.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/443.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "1010",
-          "espnId": "1010",
-          "provider": "espn",
-          "identity": "espn:1010",
-          "name": "OFI Crete",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1010.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/1010.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:gre.1",
-        "name": "الدوري اليوناني",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401896726",
-      "externalIds": {
-        "espn": "401896726",
-        "espn-league": "gre.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-tur.1-401888249",
-        "providerMatchId": "401888249",
-        "date": "2026-11-22T16:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "997",
-          "espnId": "997",
-          "provider": "espn",
-          "identity": "espn:997",
-          "name": "Trabzonspor",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/997.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/997.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "20729",
-          "espnId": "20729",
-          "provider": "espn",
-          "identity": "espn:20729",
-          "name": "Eyupspor",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20729.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/20729.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:tur.1",
-        "name": "الدوري التركي",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401888249",
-      "externalIds": {
-        "espn": "401888249",
-        "espn-league": "tur.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-gre.1-401896809",
-        "providerMatchId": "401896809",
-        "date": "2026-11-22T17:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "435",
-          "espnId": "435",
-          "provider": "espn",
-          "identity": "espn:435",
-          "name": "Olympiacos",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/435.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/435.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "2575",
-          "espnId": "2575",
-          "provider": "espn",
-          "identity": "espn:2575",
-          "name": "Iraklis",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2575.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/2575.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:gre.1",
-        "name": "الدوري اليوناني",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401896809",
-      "externalIds": {
-        "espn": "401896809",
-        "espn-league": "gre.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-gre.1-401896724",
-        "providerMatchId": "401896724",
-        "date": "2026-11-22T17:30Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "605",
-          "espnId": "605",
-          "provider": "espn",
-          "identity": "espn:605",
-          "name": "PAOK",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/605.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/605.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "21969",
-          "espnId": "21969",
-          "provider": "espn",
-          "identity": "espn:21969",
-          "name": "Kifisia",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21969.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/21969.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:gre.1",
-        "name": "الدوري اليوناني",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401896724",
-      "externalIds": {
-        "espn": "401896724",
-        "espn-league": "gre.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-gre.1-401896728",
-        "providerMatchId": "401896728",
-        "date": "2026-11-23T15:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "8354",
-          "espnId": "8354",
-          "provider": "espn",
-          "identity": "espn:8354",
-          "name": "Asteras Tripoli",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/8354.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/8354.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "11553",
-          "espnId": "11553",
-          "provider": "espn",
-          "identity": "espn:11553",
-          "name": "Aris",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11553.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/11553.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:gre.1",
-        "name": "الدوري اليوناني",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401896728",
-      "externalIds": {
-        "espn": "401896728",
-        "espn-league": "gre.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-tur.1-401888370",
-        "providerMatchId": "401888370",
-        "date": "2026-11-23T17:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "7914",
-          "espnId": "7914",
-          "provider": "espn",
-          "identity": "espn:7914",
-          "name": "Istanbul Basaksehir",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7914.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/7914.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "132334",
-          "espnId": "132334",
-          "provider": "espn",
-          "identity": "espn:132334",
-          "name": "Çorum FK",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/132334.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/132334.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:tur.1",
-        "name": "الدوري التركي",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401888370",
-      "externalIds": {
-        "espn": "401888370",
-        "espn-league": "tur.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-tur.1-401888241",
-        "providerMatchId": "401888241",
-        "date": "2026-11-27T17:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "9078",
-          "espnId": "9078",
-          "provider": "espn",
-          "identity": "espn:9078",
-          "name": "Alanyaspor",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9078.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/9078.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "7648",
-          "espnId": "7648",
-          "provider": "espn",
-          "identity": "espn:7648",
-          "name": "Konyaspor",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7648.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/7648.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:tur.1",
-        "name": "الدوري التركي",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401888241",
-      "externalIds": {
-        "espn": "401888241",
-        "espn-league": "tur.1"
-      },
-      "details": {
-        "events": [],
-        "statistics": [],
-        "updatedAt": null,
-        "source": "espn"
-      }
-    },
-    {
-      "fixture": {
-        "id": "espn-tur.1-401888240",
-        "providerMatchId": "401888240",
-        "date": "2026-11-27T17:00Z",
-        "status": {
-          "short": "NS"
-        }
-      },
-      "teams": {
-        "home": {
-          "id": "7656",
-          "espnId": "7656",
-          "provider": "espn",
-          "identity": "espn:7656",
-          "name": "Caykur Rizespor",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7656.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/7656.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        },
-        "away": {
-          "id": "6870",
-          "espnId": "6870",
-          "provider": "espn",
-          "identity": "espn:6870",
-          "name": "Kasimpasa",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6870.png",
-          "logoPath": "https://a.espncdn.com/i/teamlogos/soccer/500/6870.png",
-          "logoSource": "ESPN team ID",
-          "logoQuality": "verified-id"
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "league": {
-        "id": "espn:tur.1",
-        "name": "الدوري التركي",
-        "logo": null
-      },
-      "competitionType": "domestic",
-      "source": "espn",
-      "externalId": "401888240",
-      "externalIds": {
-        "espn": "401888240",
-        "espn-league": "tur.1"
+        "espn": "761948",
+        "espn-league": "usa.1"
       },
       "details": {
         "events": [],
